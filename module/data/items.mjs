@@ -229,6 +229,7 @@ export class ManoeuvreData extends BaseItemData {
       deuxMains: bool(false),
       inadapte: str(""),
       peuAdapte: str(""),
+      strategie: bool(false),     // destreza : mouvement de base retenu dans la stratégie
       auto: new f.SchemaField({
         bonusD: int(0), bonusFac: int(0), malusFacAdv: int(0), bonusS: int(0), bonusDegats: int(0),
         armure: int(0), invulnerable: bool(false), annuleAdv: bool(false), choixLoc: bool(false)

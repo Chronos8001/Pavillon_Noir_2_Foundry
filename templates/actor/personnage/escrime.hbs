@@ -28,18 +28,28 @@
         <label title="Points d'escrime supplémentaires (École de renom, Trempe…)">Bonus <input type="number" name="system.escrime.{{e.key}}.pointsBonus" value="{{e.pointsBonus}}"></label>
         <span class="points {{#if (lt e.reste 0)}}alerte{{/if}}" title="Une manœuvre de même combinaison qu'une manœuvre déjà acquise ne coûte qu'un point{{#if e.pointsTrempe}} — dont {{e.pointsTrempe}} de Trempe, utilisables avec cette arme seulement{{/if}}">Points : {{e.depenses}} / {{e.points}}</span>
         {{else}}
-        <span class="points">Science : {{e.science}} mouvements — Stratégie : {{e.strategie}}</span>
+        <span class="points {{#if (gt e.scienceActuelle e.science)}}alerte{{/if}}" title="Science : 2 × Niveau mouvements de base connus">Science : {{e.scienceActuelle}} / {{e.science}}</span>
+        <span class="points {{#if (gt e.strategieActuelle e.strategie)}}alerte{{/if}}" title="Stratégie : Niveau mouvements retenus pour le combat (changer un mouvement coûte une Action)">Stratégie : {{e.strategieActuelle}} / {{e.strategie}}</span>
+        <a class="pn2-mini-btn" data-action="acheterManoeuvres" data-escrime="destreza" title="Apprendre des mouvements de base (science)"><i class="fa-solid fa-cart-plus"></i></a>
         {{/unless}}
         <label title="Cases d'expérience : chaque manœuvre réalisée (ou subie) coche autant de cases que son Niveau" class="{{#if e.xpPratique}}xp-ok{{/if}}">Exp. <input type="number" name="system.escrime.{{e.key}}.xp" value="{{e.xp}}" min="0">{{#if e.xpPratique}} <i class="fa-solid fa-star" title="Expérience pratique acquise"></i>{{/if}}</label>
         {{#unless e.destreza}}<a class="pn2-mini-btn" data-action="acheterManoeuvres" data-escrime="{{e.key}}" title="Acheter des manœuvres avec les Points d'escrime"><i class="fa-solid fa-cart-plus"></i></a>{{/unless}}
         <a class="pn2-mini-btn" data-action="itemCreate" data-type="manoeuvre" data-escrime="{{e.key}}" title="Nouvelle manœuvre"><i class="fa-solid fa-plus"></i></a>
       </div>
+      {{#if e.destreza}}{{#if e.value}}
+      <div class="destreza-options hint">
+        <label class="checkbox" title="Nécessaire pour Manteau : offensive (5) et Manteau : parade (0)"><input type="checkbox" name="system.escrime.manteau" {{checked ../system.escrime.manteau}}> Manteau enroulé au bras</label>
+        <label title="Ordre de protection des Pasos (clés séparées par des virgules : torse, tete, brasD, jambeD, brasG, jambeG)">Pasos : <input type="text" name="system.escrime.pasosOrdre" value="{{../system.escrime.pasosOrdre}}"></label>
+        <span>{{../pasosOrdre}}</span>
+      </div>
+      <p class="hint">Les dés qui correspondent aux mouvements de la stratégie forment la treta, résolue automatiquement par ordre croissant (Géométrie et Tacto choisissent au mieux les dés à modifier). Contre un bretteur, la plus forte puissance passe.</p>
+      {{/if}}{{/if}}
       {{#if e.manoeuvres.length}}
       <table class="pn2-table manoeuvres">
         {{#each e.manoeuvres}}
         <tr class="item" data-item-id="{{id}}">
           <td class="niv">N{{niveau}}</td><td class="combo">{{{combo}}}</td>
-          <td><a class="nom" data-action="itemShow">{{name}}</a>{{#if ecole}} <span class="tag">école</span>{{/if}}</td>
+          <td>{{#if ../destreza}}<a data-action="itemToggle" data-field="system.strategie" class="{{#if strategie}}on{{/if}}" title="Dans la stratégie"><i class="fa-solid fa-chess"></i></a> {{/if}}<a class="nom" data-action="itemShow">{{name}}</a>{{#if ecole}} <span class="tag">école</span>{{/if}}{{#if strategie}} <span class="tag">stratégie</span>{{/if}}</td>
           <td class="hint effet">{{effet}}</td><td class="puissance" title="Puissance">{{puissance}}</td>
           <td><a data-action="itemEdit"><i class="fa-solid fa-pen"></i></a><a data-action="itemDelete"><i class="fa-solid fa-trash"></i></a></td>
         </tr>

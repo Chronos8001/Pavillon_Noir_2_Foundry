@@ -3,6 +3,7 @@ import {
   render, lancerDes, compterSucces, opportunites, getSkill, findSpec, preparerTest, depenserReputation
 } from "./dice.mjs";
 import { libelleMarge } from "../helpers/tables.mjs";
+import { resoudreTreta, experienceDestreza, compteValeur } from "./destreza.mjs";
 
 const SYS = PN2.id;
 const setting = k => game.settings.get(SYS, k);
@@ -59,7 +60,8 @@ export function escrimesPour(actor, arme) {
   const cat = arme?.system?.escrime ?? "autre";
   const types = [];
   const has = t => (esc[t]?.value ?? 0) > 0;
-  if (cat === "epee") { if (has("epee")) types.push("epee"); if (has("destreza")) types.push("destreza"); }
+  const epeeCourte = /courte/i.test(arme?.name ?? "");
+  if (cat === "epee") { if (has("epee")) types.push("epee"); if (has("destreza") && !epeeCourte) types.push("destreza"); }
   if (cat === "sabre" && has("sabre")) types.push("sabre");
   if (cat === "hache" && has("hache")) types.push("hache");
   if (cat === "baionnette" && has("baionnette")) types.push("baionnette");
@@ -105,7 +107,7 @@ export function manoeuvresPossibles(actor, types, opps, armeAdverse = null) {
   const out = [];
   for (const it of actor.items) {
     if (it.type !== "manoeuvre") continue;
-    if (!types.includes(it.system.escrime)) continue;
+    if (!types.includes(it.system.escrime) || it.system.escrime === "destreza") continue;
     const combo = it.system.combo;
     if (!combo.length || !comboPresent(combo, opps)) continue;
     const ad = adequation(it, armeAdverse);
@@ -291,7 +293,14 @@ export async function rollAttaque(actor, arme, { defense = false, adverse = null
   if (!tir && faces === 10 && !longFeu?.longFeu) {
     const opps = opportunites(vals);
     escrime.opps = opps;
-    if (escrime.mode === "avance" && typesUtilises.length) {
+    if (escrime.mode === "avance" && typesUtilises.includes("destreza")) {
+      // Destreza : incompatible avec les autres escrimes, le diestro choisit au début du combat
+      if (typesUtilises.length > 1) notes.push("Destreza : les autres escrimes ne sont pas utilisées.");
+      const treta = await resoudreTreta(actor, { values: vals, fac, armeCat: arme.system.escrime, armeAdverse: adverse ?? armeAdverse(cible?.actorUuid) });
+      if (treta?.rolls) { rolls.push(...treta.rolls); delete treta.rolls; }
+      escrime.treta = treta;
+      if (treta && !treta.vide) await experienceDestreza(actor, treta);
+    } else if (escrime.mode === "avance" && typesUtilises.length) {
       const adv = adverse ?? armeAdverse(cible?.actorUuid);
       escrime.matches = manoeuvresPossibles(actor, typesUtilises, opps, adv);
     } else if (escrime.mode === "base") {
@@ -377,9 +386,16 @@ export async function defendre(message, mode) {
     rolls.push(roll);
     const res = compterSucces(values, p.fac);
     if (skill.value >= 1 && res.succes >= skill.value && actor.isOwner) await actor.update({ [skill.xpPath]: true });
+    const escrime = { matches: [], choisie: null };
+    if (setting("escrimeMode") === "avance" && (actor.system.escrime?.destreza?.value ?? 0) > 0 && faces === 10) {
+      const treta = await resoudreTreta(actor, { values, fac: p.fac, esquive: true, armeAdverse: att.escrimeArme });
+      if (treta?.rolls) { rolls.push(...treta.rolls); delete treta.rolls; }
+      escrime.treta = treta;
+      if (treta && !treta.vide) await experienceDestreza(actor, treta);
+    }
     def = {
       mode: "esquive", actorUuid: actor.uuid, nom: actor.name, img: actor.img, eff: Math.round(p.eff), fac: p.fac, faces, values, ...res,
-      formule: `${Math.round(p.eff)}F${p.fac}`, notes: p.notes, posture: form.posture || "attentive", escrime: { matches: [], choisie: null }
+      formule: `${Math.round(p.eff)}F${p.fac}`, notes: p.notes, posture: form.posture || "attentive", escrime
     };
   } else {
     const armes = actor.items.filter(i => i.type === "arme" && i.system.categorie === "blanche");
@@ -416,11 +432,16 @@ export async function defendre(message, mode) {
 const compte1 = v => v.filter(x => x === 1).length;
 const compte0 = v => v.filter(x => x === 10).length;
 
-/** Calcule les Succès finaux d'un combattant compte tenu des manœuvres. */
-function succesFinal(c, facMod, manPasse) {
+/** Treta exploitable d'un combattant (null si absente ou vide). */
+const tretaDe = c => (c?.escrime?.treta && !c.escrime.treta.vide ? c.escrime.treta : null);
+
+/** Calcule les Succès finaux d'un combattant compte tenu des manœuvres et de la treta. */
+function succesFinal(c, facMod, manPasse, tretaPasse = false) {
   if (!c || c.mode === "aucune") return 0;
-  let fac = c.fac + facMod;
-  let s = compterSucces(c.values, fac).succes;
+  const t = tretaPasse ? tretaDe(c) : null;
+  let fac = c.fac + facMod + (t?.bonusFac ?? 0);
+  let s = compterSucces(t ? t.values : c.values, fac).succes;
+  if (t?.extraValues?.length) s += compterSucces(t.extraValues, fac).brut;
   if (c.escrime?.base) {
     const b = c.escrime.base;
     if (b.extraValues) s += compterSucces(b.extraValues, fac).brut;
@@ -438,26 +459,71 @@ function succesFinal(c, facMod, manPasse) {
  * Résout un échange (attaque contre défense, ou attaque simple).
  * Résultat sérialisable stocké dans le message.
  */
-export async function creerResolution(att, def, { locJet = null } = {}) {
+export async function creerResolution(att, def, { locJet = null, estocadaJets = [] } = {}) {
   const r = { lignes: [] };
   const mA = att.escrime?.choisie ?? null;
   const mD = def?.escrime?.choisie ?? null;
+  const tA = tretaDe(att), tD = def?.mode !== "aucune" ? tretaDe(def) : null;
   let passA = !!mA, passD = !!mD;
+  let passTA = !!tA, passTD = !!tD;
   if (mA && mD) {
     const pA = mA.puissance, pD = mD.puissance;
     if (pA > pD) { passD = false; r.lignes.push(`La manœuvre « ${mA.nom} » (${pA}) l'emporte sur « ${mD.nom} » (${pD}).`); }
     else if (pD > pA) { passA = false; r.lignes.push(`La manœuvre « ${mD.nom} » (${pD}) l'emporte sur « ${mA.nom} » (${pA}).`); }
     else { r.coupFourre = true; r.lignes.push(`Coup fourré : « ${mA.nom} » et « ${mD.nom} » passent toutes les deux.`); }
   }
-  r.passA = passA; r.passD = passD;
-  const facA = (passA ? (mA.auto.bonusFac ?? 0) : 0) - (passD ? (mD.auto.malusFacAdv ?? 0) : 0);
-  const facD = (passD ? (mD.auto.bonusFac ?? 0) : 0) - (passA ? (mA.auto.malusFacAdv ?? 0) : 0);
-  let aS = att.critique ? 0 : succesFinal(att, facA, passA);
-  let dS = def && def.mode !== "aucune" ? (def.critique ? 0 : succesFinal(def, facD, passD)) : 0;
+  // Diestro contre bretteur : la plus forte puissance passe ; en cas d'égalité, ni l'une ni l'autre
+  const duel = (t, m, nomT, setT, setM) => {
+    if (!t || !m) return;
+    if (t.puissance > m.puissance) { setM(false); r.lignes.push(`La treta de ${nomT} (${t.puissance}) l'emporte sur « ${m.nom} » (${m.puissance}).`); }
+    else if (m.puissance > t.puissance) { setT(false); r.lignes.push(`« ${m.nom} » (${m.puissance}) l'emporte sur la treta de ${nomT} (${t.puissance}).`); }
+    else { setT(false); setM(false); r.lignes.push(`Égalité de puissance (${t.puissance}) : ni la treta ni la manœuvre ne passent.`); }
+  };
+  duel(tA, mD, att.nom, v => { passTA = v; }, v => { passD = v; });
+  duel(tD, mA, def?.nom, v => { passTD = v; }, v => { passA = v; });
+  if (passTA) r.lignes.push(`Treta de ${att.nom} : ${tA.libelle}.`);
+  if (passTD) r.lignes.push(`Treta de ${def.nom} : ${tD.libelle}.`);
+  if (att.escrime?.treta) att.escrime.tretaPasse = passTA;
+  if (def?.escrime?.treta) def.escrime.tretaPasse = passTD;
+  r.passA = passA; r.passD = passD; r.passTA = passTA; r.passTD = passTD;
+  const facA = (passA ? (mA.auto.bonusFac ?? 0) : 0) - (passD ? (mD.auto.malusFacAdv ?? 0) : 0) - (passTD ? tD.malusFacAdv : 0);
+  const facD = (passD ? (mD.auto.bonusFac ?? 0) : 0) - (passA ? (mA.auto.malusFacAdv ?? 0) : 0) - (passTA ? tA.malusFacAdv : 0);
+  let aS = att.critique ? 0 : succesFinal(att, facA, passA, passTA);
+  let dS = def && def.mode !== "aucune" ? (def.critique ? 0 : succesFinal(def, facD, passD, passTD)) : 0;
   if (passA && mA.auto.annuleAdv) { dS = 0; r.lignes.push("La Réussite du défenseur est annulée."); }
   if (passD && mD.auto.annuleAdv) { aS = 0; r.lignes.push("La Réussite de l'attaquant est annulée."); }
+
+  // Desvio (4) : si la Réussite du diestro est au moins égale, il retire ses « 4 » à l'adversaire et riposte
+  const desvio = (t, nomT, sT, sAdv, adv) => {
+    if (!t?.desvio || adv?.mode === "aucune" || !adv) return sAdv;
+    if (sT < sAdv) { r.lignes.push(`Desvio de ${nomT} sans effet (Réussite inférieure).`); return sAdv; }
+    const riposte = t.desvio + (adv.degatsFixe ?? 0);
+    r.lignes.push(`Desvio : ${nomT} retire ${t.desvio} Succès à ${adv.nom} et retourne son attaque contre lui ou un allié proche (${t.desvio} + ${adv.degatsFixe ?? 0} = ${riposte} dégâts).`);
+    (r.desvios ??= []).push({ de: nomT, degats: riposte, contre: adv.nom, cibleUuid: adv.actorUuid });
+    return Math.max(0, sAdv - t.desvio);
+  };
+  if (passTD && def.mode === "attaque") aS = desvio(tD, def.nom, dS, aS, att);
+  if (passTA && def?.mode === "attaque") dS = desvio(tA, att.nom, aS, dS, def);
+
+  // Manteau : offensive (5) : autant de « 5 » que l'adversaire annule sa Réussite
+  if (passTD && tD.manteau5 && tD.manteau5 >= compteValeur(att, 5)) { aS = 0; r.lignes.push(`Manteau : ${def.nom} annule la Réussite de ${att.nom}.`); }
+  if (passTA && tA.manteau5 && def && def.mode !== "aucune" && tA.manteau5 >= compteValeur(def, 5)) { dS = 0; r.lignes.push(`Manteau : ${att.nom} annule la Réussite de ${def.nom}.`); }
   if (att.longFeu?.longFeu) { aS = 0; r.lignes.push("Long feu : l'attaque échoue."); }
   r.succesA = aS; r.succesD = dS;
+
+  // Estocada (9) : 3 dégâts par « 9 » après l'attaque, que celle-ci touche ou non
+  let jet = 0;
+  const estocada = async (t, auteur, cible, mCible, tCible) => {
+    if (!t?.estocada || !cible || cible.mode === "aucune" && !cible.actorUuid) return;
+    const d = estocadaJets[jet++] ?? (await new Roll("1d6").evaluate()).total;
+    const loc = PN2.localisations[d]?.key ?? "torse";
+    const protege = (tCible?.pasos ?? []).includes(loc) || !!mCible?.auto?.invulnerable;
+    (r.estocadas ??= []).push({ de: auteur.nom, jet: d, loc, locLabel: PN2.locLabels[loc], degats: protege ? 0 : t.estocada, cibleUuid: cible.actorUuid ?? null, cibleNom: cible.nom, protege });
+    r.lignes.push(`Estocada de ${auteur.nom} : ${t.estocada} dégâts au ${PN2.locLabels[loc]}${protege ? " — annulés (Localisation protégée)" : ""}.`);
+  };
+  const cibleAtt = def ?? (att.cible ? { actorUuid: att.cible.actorUuid, nom: att.cible.nom } : null);
+  if (passTA) await estocada(tA, att, cibleAtt, passD ? mD : null, passTD ? tD : null);
+  if (passTD) await estocada(tD, def, att, passA ? mA : null, passTA ? tA : null);
 
   let gagnant = null, marge = 0;
   const mode = def?.mode ?? "aucune";
@@ -478,6 +544,8 @@ export async function creerResolution(att, def, { locJet = null } = {}) {
   const L = gagnant === "att" ? def : att;
   const mW = gagnant === "att" ? (passA ? mA : null) : (passD ? mD : null);
   const mL = gagnant === "att" ? (passD ? mD : null) : (passA ? mA : null);
+  const tW = gagnant === "att" ? (passTA ? tA : null) : (passTD ? tD : null);
+  const tL = gagnant === "att" ? (passTD ? tD : null) : (passTA ? tA : null);
   r.touche = true;
   r.attaquantUuid = W.actorUuid; r.attaquantNom = W.nom;
   r.cibleUuid = gagnant === "att" ? (def?.actorUuid ?? att.cible?.actorUuid ?? null) : att.actorUuid;
@@ -507,6 +575,7 @@ export async function creerResolution(att, def, { locJet = null } = {}) {
   let deg = marge + (W.degatsFixe ?? 0);
   const detail = [`Marge ${marge}`, `Arme et MD ${W.degatsFixe >= 0 ? "+" : ""}${W.degatsFixe ?? 0}`];
   if (mW?.auto?.bonusDegats) { deg += mW.auto.bonusDegats; detail.push(`Manœuvre +${mW.auto.bonusDegats}`); }
+  if (tW?.bonusDegats) { deg += tW.bonusDegats; detail.push(`Arrebatar +${tW.bonusDegats}`); }
   if (setting("postures") && opposeCAC) {
     // Pointe légère : bonus de dégâts et protection des postures doublés pour la lame qui en dispose
     if (att.posture === "offensive" || def?.posture === "offensive") {
@@ -520,6 +589,7 @@ export async function creerResolution(att, def, { locJet = null } = {}) {
   }
   if (L?.escrime?.base?.nb0) { deg -= L.escrime.base.nb0; detail.push(`Escrime (0) -${L.escrime.base.nb0}`); }
   if (mL?.auto?.armure) { deg -= mL.auto.armure; detail.push(`Manœuvre défensive -${mL.auto.armure}`); }
+  if (tL?.armure) { deg -= tL.armure; detail.push(`Manteau (parade) -${tL.armure}`); }
   if (mL?.auto?.invulnerable) { deg = 0; detail.push("Invulnérable (manœuvre)"); }
   r.degats = Math.max(0, deg);
   r.detailDegats = detail.join(", ");
@@ -540,8 +610,20 @@ export async function creerResolution(att, def, { locJet = null } = {}) {
   r.loc = PN2.localisations[loc]?.key ?? "torse";
   r.locLabel = PN2.locLabels[r.loc];
   r.choixLoc = !!(mW?.auto?.choixLoc);
+  // Pasos (7) : les premières Localisations de l'ordre choisi sont protégées
+  if (tL?.pasos?.includes(r.loc)) { r.degats = 0; r.detailDegats += `, Pasos : ${r.locLabel} protégé(e)`; }
   if (r.avantage) r.degats = 0;
   return r;
+}
+
+/** Applique les dégâts d'une Estocada (index dans la résolution). */
+export async function appliquerEstocada(message, index) {
+  const e = message.flags[SYS]?.resolution?.estocadas?.[Number(index)];
+  if (!e || !e.degats) return;
+  const actor = e.cibleUuid ? fromUuidSync(e.cibleUuid) : canvas.tokens?.controlled?.[0]?.actor;
+  if (!actor) return ui.notifications.warn("Sélectionnez le jeton touché.");
+  if (!actor.isOwner) return ui.notifications.warn("Demandez au MJ d'appliquer les dégâts.");
+  await actor.appliquerDegats(e.loc, e.degats);
 }
 
 /** Prolongement du bras : le vainqueur choisit de prendre l'avantage. */
@@ -603,7 +685,7 @@ export async function choisirManoeuvre(message, cote, idx) {
   }
   const locJet = flags.resolution?.locJet ?? null;
   if (flags.type === "resolution" || flags.resolution) {
-    flags.resolution = await creerResolution(flags.att, flags.def ?? null, { locJet });
+    flags.resolution = await creerResolution(flags.att, flags.def ?? null, { locJet, estocadaJets: (flags.resolution?.estocadas ?? []).map(e => e.jet) });
   }
   const tpl = flags.type === "resolution" ? "chat/resolution.hbs" : "chat/attaque.hbs";
   const content = await render(tpl, { att: flags.att, def: flags.def, resolution: flags.resolution, peutDefendre: !flags.att.tir && !!flags.att.cible });

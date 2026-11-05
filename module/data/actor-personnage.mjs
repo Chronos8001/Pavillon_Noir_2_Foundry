@@ -57,6 +57,8 @@ export class PersonnageData extends foundry.abstract.TypeDataModel {
       escrime: new f.SchemaField({
         ...escrime, ecole: str(""), arme: str(""),
         ecoleCle: str(""),                 // clé de PN2.ecoles
+        manteau: bool(),                   // manteau enroulé autour du bras (destreza : 5 et 0)
+        pasosOrdre: str("torse,tete,brasD,jambeD,brasG,jambeG"), // ordre de protection des Pasos
         traitDague: bool(), traitDeuxArmes: bool() // Traits de réputation (À feu et à sang)
       }),
       sante: new f.SchemaField({ loc: new f.SchemaField(loc) }),
@@ -140,8 +142,12 @@ export class PersonnageData extends foundry.abstract.TypeDataModel {
       e.points = (e.predilection ? (n * (n + 3)) / 2 : (n * (n + 1)) / 2) + (e.pointsBonus ?? 0) + e.pointsTrempe;
     }
     if (s.escrime.destreza) {
-      s.escrime.destreza.science = s.escrime.destreza.value * 2;
-      s.escrime.destreza.strategie = s.escrime.destreza.value;
+      const d = s.escrime.destreza;
+      d.science = d.value * 2;
+      d.strategie = d.value;
+      const mouv = actor?.items ? actor.items.filter(i => i.type === "manoeuvre" && i.system.escrime === "destreza") : [];
+      d.scienceActuelle = mouv.length;
+      d.strategieActuelle = mouv.filter(i => i.system.strategie).length;
     }
     s.escrimeur = Object.entries(s.escrime).some(([k, v]) => typeof v === "object" && v.value > 0) || s.skills.escrime.value > 0;
   }

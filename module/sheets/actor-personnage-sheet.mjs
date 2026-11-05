@@ -155,12 +155,14 @@ export class PN2PersonnageSheet extends HandlebarsApplicationMixin(foundry.appli
         xpPratique: e.value > 0 && e.xp > e.value,
         pointsBonus: e.pointsBonus, points: e.points, depenses, reste: (e.points ?? 0) - depenses, destreza: k === "destreza",
         science: e.science, strategie: e.strategie,
-        manoeuvres: list.map(m => ({ id: m.id, name: m.name, niveau: m.system.niveau, combo: comboHTML(m.system.combo), puissance: m.system.puissance, effet: m.system.effet, ecole: m.system.ecole }))
+        scienceActuelle: e.scienceActuelle, strategieActuelle: e.strategieActuelle,
+        manoeuvres: list.map(m => ({ id: m.id, name: m.name, niveau: m.system.niveau, combo: comboHTML(m.system.combo), puissance: m.system.puissance, effet: m.system.effet, ecole: m.system.ecole, strategie: m.system.strategie }))
       };
     });
     context.bottes = manoeuvres.filter(m => m.system.escrime === "botte").map(m => ({ id: m.id, name: m.name, combo: comboHTML(m.system.combo), effet: m.system.effet }));
     context.escrimeMode = game.settings.get(PN2.id, "escrimeMode");
     context.ecolesOptions = Object.fromEntries(Object.entries(PN2.ecoles).map(([k, d]) => [k, d.label]));
+    context.pasosOrdre = String(sys.escrime.pasosOrdre || "torse,tete,brasD,jambeD,brasG,jambeG").split(",").map(k => PN2.locLabels[k.trim()]).filter(Boolean).join(" → ");
 
     // Santé : silhouette par localisation
     const lvlKeys = ["L", "S", "G", "Cr", "Co", "M"];

@@ -1,6 +1,8 @@
 import { PN2 } from "../config.mjs";
 import { NAVIRES } from "../data/navires-catalogue.mjs";
 import { statsBatterie, CANONS } from "../rolls/naval.mjs";
+import { competencesDestreza } from "../rolls/destreza.mjs";
+import { findSpec } from "../rolls/dice.mjs";
 
 export class PN2Actor extends Actor {
 
@@ -14,6 +16,24 @@ export class PN2Actor extends Actor {
     }
     if (this.type === "navire" && !data.img) proto.img = "systems/pavillon-noir-2/assets/icons/navire.svg";
     if (Object.keys(proto).length) this.updateSource(proto);
+  }
+
+  /**
+   * Destreza (L'Art de l'escrime, p. 170) : Sciences, Art (Danse), Connaissance spé. (Philosophie)
+   * et Religion (Chrétienne) doivent valoir au moins Destreza - 2 ; elles suivent sa progression.
+   */
+  async _preUpdate(changes, options, user) {
+    const r = await super._preUpdate(changes, options, user);
+    if (r === false) return false;
+    const nv = foundry.utils.getProperty(changes, "system.escrime.destreza.value");
+    if (this.type !== "navire" && nv != null && nv > (this.system.escrime?.destreza?.value ?? 0)) {
+      const upd = competencesDestreza(this, nv, findSpec);
+      if (Object.keys(upd).length) {
+        foundry.utils.mergeObject(changes, foundry.utils.expandObject(upd));
+        ui.notifications?.info(`${this.name} : compétences de la destreza ajustées (Sciences, Danse, Philosophie, Religion chrétienne ≥ ${nv - 2}).`);
+      }
+    }
+    return r;
   }
 
   /* -------------------------------------------- */

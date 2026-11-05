@@ -17,6 +17,12 @@
       {{#if c.escrime.base.nb5}}{{c.escrime.base.nb5}}× « 5 » ({{c.escrime.base.bonus5}} Succès{{#if c.escrime.base.loc5}}, ±{{c.escrime.base.loc5}} localisation{{/if}}) {{/if}}
       {{#if c.escrime.base.nb0}}{{c.escrime.base.nb0}}× « 0 » (-{{c.escrime.base.nb0}} dégât(s) subis){{/if}}</div>
   {{/if}}
+  {{#if c.escrime.treta}}
+    <div class="escrime treta {{#if (eq c.escrime.tretaPasse false)}}annulee{{/if}}"><i class="fa-solid fa-circle-nodes"></i> <strong>Destreza</strong>{{#if c.escrime.treta.vide}} : la stratégie ne se concrétise pas.{{else}} — treta : {{c.escrime.treta.libelle}} <span class="combo">(puissance {{c.escrime.treta.puissance}})</span>{{/if}}
+      {{#if c.escrime.treta.lignes.length}}<ul>{{#each c.escrime.treta.lignes}}<li>{{this}}</li>{{/each}}</ul>{{/if}}
+      {{#if c.escrime.treta.extraValues.length}}<div class="hint">Dés d'Atajo : {{#each c.escrime.treta.extraValues}}{{#if (eq this 10)}}0{{else}}{{this}}{{/if}} {{/each}}</div>{{/if}}
+    </div>
+  {{/if}}
   {{#if c.escrime.choisie}}
     <div class="escrime choisie"><i class="fa-solid fa-khanda"></i> <strong>{{c.escrime.choisie.nom}}</strong> <span class="combo">({{c.escrime.choisie.combo}}, puissance {{c.escrime.choisie.puissance}})</span>
       {{#if c.escrime.choisie.extraValues}}<br>Dés supplémentaires : {{#each c.escrime.choisie.extraValues}}{{#if (eq this 10)}}0{{else}}{{this}}{{/if}} {{/each}}{{/if}}

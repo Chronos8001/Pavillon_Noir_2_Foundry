@@ -1,5 +1,6 @@
 <div class="pn2-resolution">
   {{#each r.lignes}}<p class="ligne">{{this}}</p>{{/each}}
+  {{#each r.estocadas}}{{#if degats}}<a class="pn2-btn petit" data-pn2-action="estocada" data-index="{{@index}}"><i class="fa-solid fa-khanda"></i> Estocada : {{degats}} dégâts au {{locLabel}} ({{cibleNom}})</a>{{/if}}{{/each}}
   {{#if r.touche}}
     <p class="touche"><strong>{{r.attaquantNom}}</strong> touche <strong>{{r.cibleNom}}</strong> (marge {{r.marge}})</p>
     <div class="degats-box">

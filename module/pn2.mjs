@@ -108,6 +108,7 @@ Hooks.on("renderChatMessageHTML", (message, html) => {
             if (!message.isOwner) return;
             return await combat.changerLocalisation(message, el.value);
           case "appliquer": return await combat.appliquerResolution(message);
+          case "estocada": return await combat.appliquerEstocada(message, el.dataset.index);
           case "avantage":
             if (!message.isOwner) return;
             return await combat.prendreAvantage(message);

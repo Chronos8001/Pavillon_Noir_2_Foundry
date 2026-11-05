@@ -132,12 +132,15 @@ export async function acheterManoeuvres(actor, type, { ecole = false, nombre = 0
   if (!dispo.length) return ui.notifications.info("Aucune manœuvre disponible.");
   const e = actor.system.escrime?.[type];
   const deja = possedees.filter(m => m.system.escrime === type);
-  const budget = ecole ? nombre - deja.filter(m => m.system.ecole).length : (e?.points ?? 0) - coutManoeuvres(deja);
-  if (budget <= 0) return ui.notifications.warn(ecole ? "Toutes les manœuvres d'école ont déjà été choisies." : "Plus aucun Point d'escrime disponible pour ce type d'escrime.");
+  // Destreza : la science compte des mouvements de base (2 par Niveau), pas des Points d'escrime
+  const parNombre = ecole || type === "destreza";
+  const budget = ecole ? nombre - deja.filter(m => m.system.ecole).length
+    : (type === "destreza" ? (e?.science ?? 0) - deja.length : (e?.points ?? 0) - coutManoeuvres(deja));
+  if (budget <= 0) return ui.notifications.warn(ecole ? "Toutes les manœuvres d'école ont déjà été choisies." : (type === "destreza" ? "La science de destreza est complète (2 mouvements par Niveau)." : "Plus aucun Point d'escrime disponible pour ce type d'escrime."));
   const esc = s => String(s ?? "").replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/"/g, "&quot;");
   const lignes = dispo.map((d, i) => `<label class="choix" title="${esc(d.system.effet)}"><input type="checkbox" name="m_${i}" data-niveau="${d.system.niveau}" data-combo="${esc(d.system.combinaison)}">
     <span class="niv">N${d.system.niveau}</span> <strong>${esc(d.name)}</strong> <span class="combo">[${esc(d.system.combinaison)}]</span><br><span class="hint">${esc(d.system.effet)}</span></label>`).join("");
-  const content = `<div class="pn2-dialog pn2-assistant"><p>${ecole ? `Choisissez <strong>${budget}</strong> manœuvre(s) d'école (gratuites).` : `Points d'escrime disponibles : <strong>${budget}</strong>. Coût = Niveau ; 1 point si une manœuvre de même combinaison est déjà acquise.`}</p>
+  const content = `<div class="pn2-dialog pn2-assistant"><p>${parNombre ? `Choisissez <strong>${budget}</strong> ${ecole ? "manœuvre(s) d'école (gratuites)" : "mouvement(s) de base pour votre science"}.` : `Points d'escrime disponibles : <strong>${budget}</strong>. Coût = Niveau ; 1 point si une manœuvre de même combinaison est déjà acquise.`}</p>
     <p class="compteur">Sélection : <strong data-total>0</strong> / ${budget}</p><div class="choix-competences liste-manoeuvres">${lignes}</div></div>`;
   for (;;) {
     const form = await foundry.applications.api.DialogV2.wait({
@@ -147,7 +150,7 @@ export async function acheterManoeuvres(actor, type, { ecole = false, nombre = 0
         const el = dialog.element ?? event?.target?.element;
         const maj = () => {
           const sel = dispo.filter((d, i) => el.querySelector(`[name="m_${i}"]`)?.checked);
-          const total = ecole ? sel.length : coutManoeuvres([...deja, ...sel]) - coutManoeuvres(deja);
+          const total = parNombre ? sel.length : coutManoeuvres([...deja, ...sel]) - coutManoeuvres(deja);
           const t = el.querySelector("[data-total]");
           if (t) { t.textContent = total; t.classList.toggle("alerte", total > budget); }
         };
@@ -158,9 +161,17 @@ export async function acheterManoeuvres(actor, type, { ecole = false, nombre = 0
     });
     if (!form || form === "cancel") return;
     const sel = dispo.filter((d, i) => form[`m_${i}`]);
-    const total = ecole ? sel.length : coutManoeuvres([...deja, ...sel]) - coutManoeuvres(deja);
+    const total = parNombre ? sel.length : coutManoeuvres([...deja, ...sel]) - coutManoeuvres(deja);
     if (total > budget) { ui.notifications.warn(`${total} point(s) pour ${budget} disponible(s).`); continue; }
-    if (sel.length) await actor.createEmbeddedDocuments("Item", sel.map(d => d.toObject()));
+    if (sel.length) {
+      // Destreza : les premiers mouvements appris complètent la stratégie
+      let place = type === "destreza" ? (e?.strategie ?? 0) - deja.filter(m => m.system.strategie).length : 0;
+      await actor.createEmbeddedDocuments("Item", sel.map(d => {
+        const o = d.toObject();
+        if (type === "destreza") o.system.strategie = place-- > 0;
+        return o;
+      }));
+    }
     return sel.length;
   }
 }

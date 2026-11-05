@@ -80,8 +80,8 @@
       <p class="choisi">{{#if escrime.ecole}}{{escrime.ecole.label}} — {{/if}}{{escrime.arme}} — prédilection : {{escrime.predilections}} <a data-action="annulerEscrime" title="Annuler"><i class="fa-solid fa-xmark"></i></a></p>
       <table class="pn2-table">
         {{#each escrime.types}}<tr><td>{{label}}{{#if predilection}} <span class="tag">prédilection</span>{{/if}}</td><td>Niveau {{value}}</td>
-          <td>{{#unless destreza}}Points {{depenses}} / {{points}}{{/unless}}</td>
-          <td>{{#unless destreza}}<a class="pn2-btn petit" data-action="acheterManoeuvres" data-type="{{key}}"><i class="fa-solid fa-cart-plus"></i> Manœuvres</a>{{/unless}}</td></tr>{{/each}}
+          <td>{{#if destreza}}Science {{science}} / {{scienceMax}} — stratégie {{strategie}} / {{value}}{{else}}Points {{depenses}} / {{points}}{{/if}}</td>
+          <td><a class="pn2-btn petit" data-action="acheterManoeuvres" data-type="{{key}}"><i class="fa-solid fa-cart-plus"></i> {{#if destreza}}Mouvements{{else}}Manœuvres{{/if}}</a></td></tr>{{/each}}
       </table>
       {{#if escrime.ecole.manoeuvres}}<a class="pn2-btn" data-action="manoeuvresEcole"><i class="fa-solid fa-scroll"></i> Manœuvres d'école ({{escrime.ecole.choisies}}/{{escrime.ecole.manoeuvres}})</a>{{/if}}
     {{else}}

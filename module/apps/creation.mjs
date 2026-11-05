@@ -245,7 +245,8 @@ export class PN2CreationApp extends HandlebarsApplicationMixin(ApplicationV2) {
       const list = this.actor.items.filter(i => i.type === "manoeuvre" && i.system.escrime === k);
       return {
         key: k, label: d.label, value: e.value, acces: e.acces, predilection: e.predilection, points: e.points ?? 0,
-        depenses: coutManoeuvres(list), destreza: k === "destreza"
+        depenses: coutManoeuvres(list), destreza: k === "destreza",
+        science: list.length, scienceMax: 2 * e.value, strategie: list.filter(m => m.system.strategie).length
       };
     }).filter(t => t.acces || t.value > 0);
     const ecole = PN2.ecoles[sys.escrime.ecoleCle];
