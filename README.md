@@ -10,10 +10,10 @@ Compatible Foundry VTT **v13 et v14**.
 Dans Foundry : *Systèmes de jeu → Installer un système*, puis coller l'URL du manifeste :
 
 ```
-https://raw.githubusercontent.com/Chronos8001/Pavillon_Noir_2_Foundry/main/system.json
+https://github.com/Chronos8001/Pavillon_Noir_2_Foundry/releases/latest/download/system.json
 ```
 
-Installation manuelle : copier le dépôt dans `Data/systems/pavillon-noir-2` (le nom du dossier doit être `pavillon-noir-2`).
+Installation manuelle : télécharger `pavillon-noir-2.zip` depuis la dernière release et l'extraire dans `Data/systems/pavillon-noir-2` (le nom du dossier doit être `pavillon-noir-2`).
 
 ## Contenu
 

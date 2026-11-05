@@ -47,6 +47,6 @@
   "grid": { "distance": 1, "units": "m" },
   "socket": false,
   "url": "https://github.com/Chronos8001/Pavillon_Noir_2_Foundry",
-  "manifest": "https://raw.githubusercontent.com/Chronos8001/Pavillon_Noir_2_Foundry/main/system.json",
-  "download": "https://github.com/Chronos8001/Pavillon_Noir_2_Foundry/archive/refs/heads/main.zip"
+  "manifest": "https://github.com/Chronos8001/Pavillon_Noir_2_Foundry/releases/latest/download/system.json",
+  "download": "https://github.com/Chronos8001/Pavillon_Noir_2_Foundry/releases/download/v0.1.0/pavillon-noir-2.zip"
 }
