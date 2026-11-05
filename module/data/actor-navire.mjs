@@ -1,5 +1,6 @@
 import { PN2 } from "../config.mjs";
 import { pnRound, seuilsStructure, etatStructure, valeurDeMesure } from "../helpers/tables.mjs";
+import { bourseField, totalBourse } from "../helpers/monnaie.mjs";
 
 const f = foundry.data.fields;
 const int = (initial = 0, opts = {}) => new f.NumberField({ required: true, integer: true, initial, ...opts });
@@ -36,7 +37,11 @@ export class NavireData extends foundry.abstract.TypeDataModel {
       reserves: new f.SchemaField({
         eau: num(45), vivres: num(60), vivresFrais: num(3), bois: num(60), munitions: num(20), trousse: num(200)
       }),
-      cargaison: new TypedObject(new f.SchemaField({ nom: str(), tonnage: num(0), valeur: num(0) })),
+      cargaison: new TypedObject(new f.SchemaField({
+        nom: str(), tonnage: num(0), valeur: num(0), quantite: num(1, { min: 0 }), unite: str(""), tonnageUnite: num(0, { min: 0 }),
+        prix: new f.SchemaField({ penurie: num(0), normal: num(0), exces: num(0) }), cours: str("normal")
+      })),
+      coffre: bourseField(0),
       carenage: int(0, { min: 0 }),
       structure: new f.SchemaField({
         mature: new f.SchemaField({ max: int(0, { min: 0 }), artimon: int(0), grandMat: int(0), misaine: int(0) }),
@@ -86,8 +91,17 @@ export class NavireData extends foundry.abstract.TypeDataModel {
     // Charge et encombrement
     let chargeCanons = 0;
     for (const b of Object.values(s.batteries ?? {})) chargeCanons += Number(b.tonnage) || 0;
-    let chargeCargo = 0;
-    for (const c of Object.values(s.cargaison ?? {})) chargeCargo += Number(c.tonnage) || 0;
+    let chargeCargo = 0, valeurCargo = 0;
+    for (const c of Object.values(s.cargaison ?? {})) {
+      // Marchandise issue du compendium : tonnage et valeur calculés selon la quantité et le cours
+      if (c.tonnageUnite > 0) c.tonnage = Math.round(c.quantite * c.tonnageUnite * 100) / 100;
+      const pu = c.prix?.[c.cours] ?? 0;
+      if (pu > 0) c.valeur = Math.round(c.quantite * pu * 100) / 100;
+      chargeCargo += Number(c.tonnage) || 0;
+      valeurCargo += Number(c.valeur) || 0;
+    }
+    s.valeurCargaison = Math.round(valeurCargo * 100) / 100;
+    s.coffre.total = totalBourse(s.coffre);
     const r1 = x => Math.round(x * 10) / 10;
     s.charge = { canons: r1(chargeCanons), cargaison: r1(chargeCargo), total: r1(chargeCanons + chargeCargo) };
     s.charge.pourcent = s.infos.tonnageUtile > 0 ? Math.round(100 * s.charge.total / s.infos.tonnageUtile) : 0;

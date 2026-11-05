@@ -10,7 +10,8 @@
       "armure": "Armure",
       "equipement": "Équipement",
       "avantage": "Avantage / Faiblesse",
-      "manoeuvre": "Manœuvre d'escrime"
+      "manoeuvre": "Manœuvre d'escrime",
+      "marchandise": "Marchandise"
     }
   }
 }

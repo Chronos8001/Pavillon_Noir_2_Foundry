@@ -4,6 +4,7 @@ import { computeGroupSkills, acteurPoste, matureActives, niveauCompetence } from
 import { seuilsStructure } from "../helpers/tables.mjs";
 import { testGroupe, tirBatterie, rechargerBatterie, tourNaval, statsBatterie } from "../rolls/naval.mjs";
 import { dialogTest } from "../rolls/dice.mjs";
+import { contexteBourse, operationBourse, formatPieces } from "../helpers/monnaie.mjs";
 
 const { HandlebarsApplicationMixin } = foundry.applications.api;
 const TPL = "systems/pavillon-noir-2/templates/actor/navire";
@@ -29,7 +30,10 @@ export class PN2NavireSheet extends HandlebarsApplicationMixin(foundry.applicati
       posteOuvrir: PN2NavireSheet.#onPosteOuvrir,
       posteTest: PN2NavireSheet.#onPosteTest,
       blessureEquipage: PN2NavireSheet.#onBlessureEquipage,
-      reparer: PN2NavireSheet.#onReparer
+      reparer: PN2NavireSheet.#onReparer,
+      bourse: PN2NavireSheet.#onBourse,
+      bourseToutes: PN2NavireSheet.#onBourseToutes,
+      vendreCargaison: PN2NavireSheet.#onVendreCargaison
     }
   };
 
@@ -122,7 +126,10 @@ export class PN2NavireSheet extends HandlebarsApplicationMixin(foundry.applicati
     context.niveauxMatelots = { 0: "0 (-3)", 1: "1 (-2)", 2: "2 (-1)", 3: "3 (+0)", 4: "4 (+1)", 5: "5 (+2)", 6: "6 (+3)" };
 
     // Cargaison
-    context.cargaison = Object.entries(s.cargaison ?? {}).map(([id, c]) => ({ id, ...c }));
+    context.cargaison = Object.entries(s.cargaison ?? {}).map(([id, c]) => ({ id, ...c, marchandise: c.tonnageUnite > 0 || (c.prix?.normal ?? 0) > 0 }));
+    context.cours = PN2.cours;
+    context.valeurCargaison = formatPieces(s.valeurCargaison);
+    context.bourse = contexteBourse(s.coffre, this._bourseToutes ?? false);
     context.notesHTML = await foundry.applications.ux.TextEditor.implementation.enrichHTML(s.notes ?? "", { async: true, relativeTo: actor });
     return context;
   }
@@ -138,6 +145,18 @@ export class PN2NavireSheet extends HandlebarsApplicationMixin(foundry.applicati
   async _onDrop(event) {
     const data = foundry.applications.ux.TextEditor.implementation.getDragEventData(event);
     const poste = event.target.closest("[data-poste]");
+    if (data?.type === "Item") {
+      const item = await fromUuid(data.uuid);
+      if (item?.type === "marchandise") {
+        const m = item.system;
+        await this.document.update({ [`system.cargaison.${foundry.utils.randomID()}`]: {
+          nom: item.name, quantite: m.quantite || 1, unite: m.unite, tonnageUnite: m.tonnageUnite,
+          prix: { penurie: m.prix.penurie, normal: m.prix.normal, exces: m.prix.exces }, cours: m.cours || "normal",
+          tonnage: (m.quantite || 1) * m.tonnageUnite, valeur: 0
+        } });
+        return;
+      }
+    }
     if (data?.type === "Actor" && poste) {
       const actor = await fromUuid(data.uuid);
       if (!actor || actor.type === "navire") return;
@@ -221,6 +240,29 @@ export class PN2NavireSheet extends HandlebarsApplicationMixin(foundry.applicati
     const idx = Number(target.dataset.index);
     const cur = this.document.system.santeEquipage.coches;
     await this.document.update({ "system.santeEquipage.coches": cur === idx ? idx - 1 : idx });
+  }
+
+  static async #onBourse(event, target) {
+    await operationBourse(this.document, "system.coffre", target.dataset.op);
+  }
+
+  static #onBourseToutes() {
+    this._bourseToutes = !this._bourseToutes;
+    this.render();
+  }
+
+  /** Vend une marchandise de la cale au cours choisi : la valeur va dans le coffre. */
+  static async #onVendreCargaison(event, target) {
+    const id = target.closest("[data-cargo]")?.dataset.cargo;
+    const c = this.document.system.cargaison?.[id];
+    if (!c) return;
+    const ok = await foundry.applications.api.DialogV2.confirm({
+      window: { title: "Vendre la cargaison" },
+      content: `<p>Vendre <strong>${c.nom}</strong> pour <strong>${formatPieces(c.valeur)}</strong> pièces de huit (cours ${PN2.cours[c.cours] ?? c.cours}) ?</p><p class="hint">Le produit de la vente est versé dans le coffre de l'équipage.</p>`
+    });
+    if (!ok) return;
+    await this.document.update({ "system.coffre.pieces": (this.document.system.coffre.pieces ?? 0) + (c.valeur ?? 0), [`system.cargaison.-=${id}`]: null });
+    await ChatMessage.create({ speaker: ChatMessage.getSpeaker({ actor: this.document }), content: `<div class="pn2-card"><p><i class="fa-solid fa-scale-balanced"></i> ${this.document.name} vend ${c.nom} pour ${formatPieces(c.valeur)} pièces de huit.</p></div>` });
   }
 
   /** Réparation : remonte une localisation au niveau de dommages supérieur. */

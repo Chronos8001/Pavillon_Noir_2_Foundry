@@ -11,7 +11,8 @@ export class PN2Item extends Item {
       armure: "systems/pavillon-noir-2/assets/icons/armure.svg",
       equipement: "systems/pavillon-noir-2/assets/icons/equipement.svg",
       avantage: "systems/pavillon-noir-2/assets/icons/avantage.svg",
-      manoeuvre: "systems/pavillon-noir-2/assets/icons/manoeuvre.svg"
+      manoeuvre: "systems/pavillon-noir-2/assets/icons/manoeuvre.svg",
+      marchandise: "systems/pavillon-noir-2/assets/icons/marchandise.svg"
     };
     if (icons[this.type]) this.updateSource({ img: icons[this.type] });
   }

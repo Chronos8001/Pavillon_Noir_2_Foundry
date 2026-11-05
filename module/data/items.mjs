@@ -75,6 +75,20 @@ export class EquipementData extends BaseItemData {
   }
 }
 
+export class MarchandiseData extends BaseItemData {
+  static defineSchema() {
+    return {
+      ...super.defineSchema(),
+      unite: str("1 T"),                  // unité de vente (1 T, 100 kg, par homme pour 15 jours…)
+      tonnageUnite: num(1, { min: 0 }),   // tonnage d'une unité (0 si négligeable)
+      quantite: num(1, { min: 0 }),
+      prix: new f.SchemaField({ penurie: num(0, { min: 0 }), normal: num(0, { min: 0 }), exces: num(0, { min: 0 }) }),
+      cours: str("normal")
+    };
+  }
+  get valeur() { return (this.prix?.[this.cours] ?? 0) * (this.quantite ?? 0); }
+}
+
 export class AvantageData extends BaseItemData {
   static defineSchema() {
     return {

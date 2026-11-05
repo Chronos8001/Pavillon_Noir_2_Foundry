@@ -289,3 +289,14 @@
 .pn2 .skill input[type="number"].niveau { height: 20px; width: 2.4em; }
 .pn2 .skill { min-height: 24px; }
 .pn2 .skill .nom { margin-left: 2px; }
+
+/* Bourse et cargaison */
+.pn2 .pn2-bourse { border: 1px solid var(--pn2-bord); border-radius: 4px; padding: 4px 6px; background: rgba(255,255,255,0.35); }
+.pn2 .bourse-total { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }
+.pn2 .bourse-total strong { font-size: 16px; color: var(--pn2-rouge); }
+.pn2 .bourse-actions { margin-left: auto; }
+.pn2 .pn2-table.bourse input { width: 5em; }
+.pn2 .pn2-table.bourse tr.principale { font-weight: bold; }
+.pn2 .pn2-table.cargaison input[type="text"] { width: 100%; }
+.pn2 .pn2-table.cargaison input[type="number"] { width: 5em; }
+.pn2 .pn2-table tr.total td { border-top: 2px solid var(--pn2-bord); }

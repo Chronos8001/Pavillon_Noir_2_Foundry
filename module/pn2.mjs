@@ -5,7 +5,7 @@ import { PN2 } from "./config.mjs";
 import { PersonnageData } from "./data/actor-personnage.mjs";
 import { PNJData } from "./data/actor-pnj.mjs";
 import { NavireData } from "./data/actor-navire.mjs";
-import { ArmeData, ArmureData, EquipementData, AvantageData, ManoeuvreData } from "./data/items.mjs";
+import { ArmeData, ArmureData, EquipementData, AvantageData, ManoeuvreData, MarchandiseData } from "./data/items.mjs";
 import { PN2Actor } from "./documents/actor.mjs";
 import { PN2Item } from "./documents/item.mjs";
 import { PN2PersonnageSheet } from "./sheets/actor-personnage-sheet.mjs";
@@ -25,7 +25,7 @@ Hooks.once("init", () => {
   CONFIG.Item.documentClass = PN2Item;
   CONFIG.Actor.dataModels = { personnage: PersonnageData, pnj: PNJData, navire: NavireData };
   CONFIG.Item.dataModels = {
-    arme: ArmeData, armure: ArmureData, equipement: EquipementData, avantage: AvantageData, manoeuvre: ManoeuvreData
+    arme: ArmeData, armure: ArmureData, equipement: EquipementData, avantage: AvantageData, manoeuvre: ManoeuvreData, marchandise: MarchandiseData
   };
   CONFIG.Actor.trackableAttributes = {
     personnage: { bar: [], value: ["initiative", "chance"] },
@@ -49,7 +49,8 @@ Hooks.once("init", () => {
     "systems/pavillon-noir-2/templates/chat/test.hbs",
     "systems/pavillon-noir-2/templates/chat/partials/des.hbs",
     "systems/pavillon-noir-2/templates/chat/partials/combattant.hbs",
-    "systems/pavillon-noir-2/templates/chat/partials/resolution.hbs"
+    "systems/pavillon-noir-2/templates/chat/partials/resolution.hbs",
+    "systems/pavillon-noir-2/templates/actor/partials/bourse.hbs"
   ]);
 });
 

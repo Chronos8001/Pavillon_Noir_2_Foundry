@@ -256,6 +256,36 @@ PN2.qualitesArme = {
 PN2.deLongFeu = { mauvaise: "1d6", mediocre: "1d10", normale: "1d12", exceptionnelle: "1d20" };
 
 /* -------------------------------------------- */
+/*  Monnaies (La Révolte, p. 287-289)           */
+/*  valeur = équivalent en pièces de huit       */
+/*  compte = monnaie d'échange (pas de pièce)   */
+/* -------------------------------------------- */
+
+PN2.monnaies = {
+  doublon: { label: "Doublon", pays: "Espagne", valeur: 2 },
+  reale: { label: "Réal", pays: "Espagne", valeur: 0.125 },
+  maravedi: { label: "Maravédi", pays: "Espagne", valeur: 0.0035 },
+  pistole: { label: "Pistole", pays: "Espagne", valeur: 4, compte: true },
+  louis: { label: "Louis d'or", pays: "France", valeur: 12 },
+  ecu: { label: "Écu d'argent", pays: "France", valeur: 1.5 },
+  livreTournois: { label: "Livre tournois", pays: "France", valeur: 0.5, compte: true },
+  sol: { label: "Sol", pays: "France", valeur: 0.025 },
+  denier: { label: "Denier", pays: "France", valeur: 0.002 },
+  guinee: { label: "Guinée", pays: "Angleterre", valeur: 6.5 },
+  livreSterling: { label: "Livre sterling", pays: "Angleterre", valeur: 6, compte: true },
+  couronne: { label: "Couronne (crown)", pays: "Angleterre", valeur: 1.5 },
+  shilling: { label: "Shilling", pays: "Angleterre", valeur: 0.3 },
+  penny: { label: "Penny", pays: "Angleterre", valeur: 0.025 },
+  florin: { label: "Florin", pays: "Hollande", valeur: 0.5 },
+  stiver: { label: "Stiver", pays: "Hollande", valeur: 0.025 },
+  moidore: { label: "Moïdore", pays: "Portugal", valeur: 7.5 },
+  cruzade: { label: "Nouvelle cruzade", pays: "Portugal", valeur: 0.75 }
+};
+
+/** Cours du marché pour les marchandises. */
+PN2.cours = { penurie: "Pénurie", normal: "Normal", exces: "Excès" };
+
+/* -------------------------------------------- */
 /*  Gloire & Infamie                            */
 /* -------------------------------------------- */
 

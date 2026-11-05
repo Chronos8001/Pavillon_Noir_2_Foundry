@@ -54,6 +54,20 @@
   </div>
   {{/if}}
 
+  {{#if isType.marchandise}}
+  <div class="grid-2">
+    <div class="ligne"><label>Unité de vente</label><input type="text" name="system.unite" value="{{system.unite}}"></div>
+    <div class="ligne"><label>Tonnage par unité (T)</label><input type="number" step="any" name="system.tonnageUnite" value="{{system.tonnageUnite}}"></div>
+    <div class="ligne"><label>Prix en pénurie (p8)</label><input type="number" step="any" name="system.prix.penurie" value="{{system.prix.penurie}}"></div>
+    <div class="ligne"><label>Prix normal (p8)</label><input type="number" step="any" name="system.prix.normal" value="{{system.prix.normal}}"></div>
+    <div class="ligne"><label>Prix en excès (p8)</label><input type="number" step="any" name="system.prix.exces" value="{{system.prix.exces}}"></div>
+    <div class="ligne"><label>Cours actuel</label><select name="system.cours">{{selectOptions cours selected=system.cours}}</select></div>
+    <div class="ligne"><label>Quantité (unités)</label><input type="number" step="any" name="system.quantite" value="{{system.quantite}}"></div>
+    <div class="ligne"><label>Valeur</label><strong>{{valeurMarchandise}} pièces de huit</strong></div>
+  </div>
+  <p class="hint">Glissez une marchandise sur la fiche d'un navire pour la charger dans la cale.</p>
+  {{/if}}
+
   {{#if isType.avantage}}
   <div class="grid-2">
     <div class="ligne"><label>Nature</label><select name="system.nature">{{selectOptions natures selected=system.nature}}</select></div>

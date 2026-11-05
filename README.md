@@ -38,9 +38,14 @@ Installation manuelle : télécharger `pavillon-noir-2.zip` depuis la dernière 
 - Artillerie : canonnade (Table des Mesures et des Valeurs, taille et orientation de la cible, portée), dégâts et pertes appliqués au navire ciblé, recharge et décompte des Tours de combat naval.
 - **Équipage** : glissez des personnages sur les postes de commandement et de gestion ; les six compétences de groupe (Manœuvre, Ruse, Canonnade, Recharge, Combat, Tir) sont calculées automatiquement, avec la santé de l'équipage.
 
+### Monnaie et commerce
+- Bourse par monnaie (pièces de huit, doublons, réaux, louis d'or, écus, guinées, florins…) avec le tableau de change de *La Révolte* ; total en pièces de huit.
+- Boutons Payer, Recevoir, Changer et Tout convertir : le paiement puise dans la bonne monnaie puis découpe les pièces en quartiers et rend la monnaie en pièces de huit.
+- Coffre de l'équipage sur le navire ; cargaisons glissées depuis le compendium, tonnage et valeur calculés selon le cours (pénurie, normal, excès), vente versée au coffre.
+
 ### Compendiums
 - Avantages et faiblesses (avec malus appliqués automatiquement)
-- Équipement : armes, armures, vêtements, instruments, remèdes, artillerie
+- Équipement : armes, armures, vêtements, instruments, remèdes, artillerie, services et cargaisons (sucre, rhum, tabac, cacao…)
 - Manœuvres d'escrime (toutes les techniques de *L'Art de l'escrime* + destreza)
 - PNJ : archétypes et animaux
 - Navires : chaque type dans chacune de ses configurations d'armement

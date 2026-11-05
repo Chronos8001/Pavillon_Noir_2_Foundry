@@ -1,22 +1,29 @@
 <section class="tab {{#if active}}active{{/if}}" data-group="primary" data-tab="cargaison">
-  <h2>Cargaison <a class="pn2-mini-btn" data-action="cargaisonAdd"><i class="fa-solid fa-plus"></i></a></h2>
-  <table class="pn2-table">
-    <thead><tr><th>Marchandise</th><th>Tonnage</th><th>Valeur (pièces de huit)</th><th></th></tr></thead>
+  <h2>Cargaison <a class="pn2-mini-btn" data-action="cargaisonAdd" title="Ligne libre"><i class="fa-solid fa-plus"></i></a>
+    <span class="hint">Glissez des marchandises depuis le compendium « Équipement » (dossier Cargaisons).</span></h2>
+  <table class="pn2-table cargaison">
+    <thead><tr><th>Marchandise</th><th>Quantité</th><th>Unité</th><th>Cours</th><th>Tonnage (T)</th><th>Valeur (p8)</th><th></th></tr></thead>
     {{#each cargaison}}
     <tr data-cargo="{{id}}">
       <td><input type="text" name="system.cargaison.{{id}}.nom" value="{{nom}}"></td>
-      <td><input type="number" step="any" name="system.cargaison.{{id}}.tonnage" value="{{tonnage}}"></td>
-      <td><input type="number" step="any" name="system.cargaison.{{id}}.valeur" value="{{valeur}}"></td>
-      <td><a data-action="cargaisonDelete"><i class="fa-solid fa-trash"></i></a></td>
+      <td><input type="number" step="any" name="system.cargaison.{{id}}.quantite" value="{{quantite}}"></td>
+      <td>{{#if marchandise}}{{unite}}{{else}}—{{/if}}</td>
+      <td>{{#if marchandise}}<select name="system.cargaison.{{id}}.cours">{{selectOptions @root.cours selected=cours}}</select>{{else}}—{{/if}}</td>
+      <td>{{#if tonnageUnite}}{{tonnage}}{{else}}<input type="number" step="any" name="system.cargaison.{{id}}.tonnage" value="{{tonnage}}">{{/if}}</td>
+      <td>{{#if prix.normal}}{{valeur}}{{else}}<input type="number" step="any" name="system.cargaison.{{id}}.valeur" value="{{valeur}}">{{/if}}</td>
+      <td><a data-action="vendreCargaison" title="Vendre (la valeur va au coffre)"><i class="fa-solid fa-scale-balanced"></i></a> <a data-action="cargaisonDelete"><i class="fa-solid fa-trash"></i></a></td>
     </tr>
     {{/each}}
+    <tr class="total"><td><strong>Total</strong></td><td></td><td></td><td></td><td><strong>{{system.charge.cargaison}}</strong></td><td><strong>{{valeurCargaison}}</strong></td><td></td></tr>
   </table>
+  <h2>Coffre de l'équipage</h2>
+  {{> "systems/pavillon-noir-2/templates/actor/partials/bourse.hbs" bourse=bourse path="system.coffre"}}
   <h2>Possessions</h2>
   <div class="grid-3 possessions">
     <div><h3>Cartes</h3><textarea name="system.possessions.cartes" rows="5">{{system.possessions.cartes}}</textarea></div>
     <div><h3>Journaux de bord</h3><textarea name="system.possessions.journaux" rows="5">{{system.possessions.journaux}}</textarea></div>
     <div><h3>Instruments de navigation</h3><textarea name="system.possessions.instruments" rows="5">{{system.possessions.instruments}}</textarea></div>
-    <div><h3>Or</h3><textarea name="system.possessions.or" rows="5">{{system.possessions.or}}</textarea></div>
+    <div><h3>Bijoux et objets précieux</h3><textarea name="system.possessions.or" rows="5">{{system.possessions.or}}</textarea></div>
     <div><h3>Pavillons</h3><textarea name="system.possessions.pavillons" rows="5">{{system.possessions.pavillons}}</textarea></div>
     <div><h3>Otages</h3><textarea name="system.possessions.otages" rows="5">{{system.possessions.otages}}</textarea></div>
   </div>

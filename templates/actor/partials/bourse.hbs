@@ -1,0 +1,25 @@
+<div class="pn2-bourse" data-path="{{path}}">
+  <div class="bourse-total">
+    <img src="systems/pavillon-noir-2/assets/icons/monnaie.svg" width="28" height="28">
+    <span>Total : <strong>{{bourse.totalLabel}}</strong> pièces de huit</span>
+    <span class="bourse-actions">
+      <a class="pn2-btn petit" data-action="bourse" data-op="recevoir" title="Recevoir de l'argent"><i class="fa-solid fa-plus"></i> Recevoir</a>
+      <a class="pn2-btn petit" data-action="bourse" data-op="payer" title="Payer (les pièces sont coupées en quartiers au besoin)"><i class="fa-solid fa-minus"></i> Payer</a>
+      <a class="pn2-btn petit" data-action="bourse" data-op="changer" title="Échanger une monnaie contre une autre"><i class="fa-solid fa-right-left"></i> Changer</a>
+      <a class="pn2-btn petit" data-action="bourse" data-op="convertir" title="Tout convertir en pièces de huit"><i class="fa-solid fa-coins"></i> Tout en pièces de huit</a>
+    </span>
+  </div>
+  <table class="pn2-table bourse">
+    <thead><tr><th>Monnaie</th><th>Pays</th><th title="Équivalent en pièces de huit">Valeur (p8)</th><th>Quantité</th><th>Sous-total (p8)</th></tr></thead>
+    {{#each bourse.lignes}}
+    <tr class="{{#if principale}}principale{{/if}}">
+      <td>{{label}}{{#if compte}} <span class="hint" title="Monnaie de compte : n'existe pas en pièces">(compte)</span>{{/if}}</td>
+      <td class="hint">{{pays}}</td>
+      <td>{{valeurLabel}}</td>
+      <td><input type="number" step="any" min="0" name="{{../path}}.{{#if principale}}pieces{{else}}monnaies.{{key}}{{/if}}" value="{{quantite}}"></td>
+      <td>{{sousTotalLabel}}</td>
+    </tr>
+    {{/each}}
+  </table>
+  <a class="hint" data-action="bourseToutes">{{#if bourse.toutes}}Masquer les monnaies vides{{else}}Afficher toutes les monnaies (doublons, louis d'or, guinées…){{/if}}</a>
+</div>

@@ -2,6 +2,7 @@ import { PN2 } from "../config.mjs";
 import {
   valeurMetier, mdForce, mdAdresse, casesParNiveau, niveauBlessure, etatGeneral, niveauReputation, listeCases
 } from "../helpers/tables.mjs";
+import { bourseField, totalBourse } from "../helpers/monnaie.mjs";
 
 const f = foundry.data.fields;
 
@@ -60,7 +61,7 @@ export class PersonnageData extends foundry.abstract.TypeDataModel {
         infamie: new f.SchemaField({ score: int(0, { min: 0 }), depenses: int(0, { min: 0 }) })
       }),
       combat: new f.SchemaField({ posture: str("attentive") }),
-      richesse: new f.SchemaField({ pieces: new f.NumberField({ required: true, initial: 5 }) }),
+      richesse: bourseField(5),
       contacts: str(),
       notes: html(),
       biographie: html()
@@ -113,6 +114,8 @@ export class PersonnageData extends foundry.abstract.TypeDataModel {
     s.etatLabel = PN2.etatsSante[s.etat];
     s.malusSante = PN2.malusSante[s.etat];
     s.inconscient = s.etat >= 5;
+
+    s.richesse.total = totalBourse(s.richesse);
 
     // Réputation
     for (const r of ["gloire", "infamie"]) {

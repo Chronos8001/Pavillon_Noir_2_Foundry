@@ -2,6 +2,7 @@ import { PN2 } from "../config.mjs";
 import { dialogTest, testChance } from "../rolls/dice.mjs";
 import { attaquer, competenceArme, degatsFixes } from "../rolls/combat.mjs";
 import { comboHTML } from "../documents/item.mjs";
+import { contexteBourse, operationBourse, formatPieces } from "../helpers/monnaie.mjs";
 
 const { HandlebarsApplicationMixin } = foundry.applications.api;
 const TPL = "systems/pavillon-noir-2/templates/actor";
@@ -30,7 +31,9 @@ export class PN2PersonnageSheet extends HandlebarsApplicationMixin(foundry.appli
       reputation: PN2PersonnageSheet.#onReputation,
       recupererReputation: PN2PersonnageSheet.#onRecupererReputation,
       xpReset: PN2PersonnageSheet.#onXpReset,
-      ouvrirCompendium: PN2PersonnageSheet.#onOuvrirCompendium
+      ouvrirCompendium: PN2PersonnageSheet.#onOuvrirCompendium,
+      bourse: PN2PersonnageSheet.#onBourse,
+      bourseToutes: PN2PersonnageSheet.#onBourseToutes
     }
   };
 
@@ -122,6 +125,9 @@ export class PN2PersonnageSheet extends HandlebarsApplicationMixin(foundry.appli
       locs: PN2.locKeys.filter(k => i.system.localisations[k]).map(k => PN2.locLabels[k]).join(", ")
     }));
     context.equipements = items.filter(i => i.type === "equipement");
+    context.marchandises = items.filter(i => i.type === "marchandise").map(i => ({ id: i.id, name: i.name, img: i.img, system: i.system, cours: PN2.cours[i.system.cours], valeur: formatPieces(i.system.valeur) }));
+    context.bourse = contexteBourse(sys.richesse, this._bourseToutes ?? false);
+    context.totalBourse = formatPieces(sys.richesse.total);
     context.avantages = items.filter(i => i.type === "avantage" && i.system.nature !== "faiblesse");
     context.faiblesses = items.filter(i => i.type === "avantage" && i.system.nature === "faiblesse");
 
@@ -278,6 +284,15 @@ export class PN2PersonnageSheet extends HandlebarsApplicationMixin(foundry.appli
     for (const k of Object.keys(PN2.skills)) upd[`system.skills.${k}.xp`] = false;
     for (const id of Object.keys(this.document.system.specs ?? {})) upd[`system.specs.${id}.xp`] = false;
     await this.document.update(upd);
+  }
+
+  static async #onBourse(event, target) {
+    await operationBourse(this.document, "system.richesse", target.dataset.op);
+  }
+
+  static #onBourseToutes() {
+    this._bourseToutes = !this._bourseToutes;
+    this.render();
   }
 
   static #onOuvrirCompendium(event, target) {
