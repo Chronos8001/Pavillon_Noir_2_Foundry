@@ -25,8 +25,13 @@ Installation manuelle : télécharger `pavillon-noir-2.zip` depuis la dernière 
 - Gloire et Infamie : niveau, qualificatif et points dépensés.
 - PNJ : Facilité par catégorie de compétences, comme les archétypes du livre.
 
+### Assistant de création de personnage
+- Bouton « Création » sur la fiche : les 9 étapes de *La Révolte* dans une seule fenêtre.
+- Caractéristiques (45 points, 3 à 7, Résistance 5 minimum), peuple, origine sociale, enfance et adolescence, profession (94 professions : +1 en caractéristique, 12 points à répartir, niveau 3 max. ; règles optionnelles plusieurs professions ou aucune), avantages et faiblesses, personnalisation (10 + faiblesses − avantages + points restants), religion, armes de départ et pécule.
+- La Valeur de métier est renseignée automatiquement ; chaque étape peut être annulée.
+
 ### Historique du personnage (création)
-- Compendium « Historiques » : 10 peuples et pays d'origine, 10 origines sociales, 11 événements de jeunesse et 11 religions.
+- Compendium « Historiques » : 10 peuples et pays d'origine, 10 origines sociales, 11 événements de jeunesse, 94 professions et 11 religions.
 - Glissez-les sur la fiche : un assistant applique les règles de création (pays, compétences culturelles au niveau 2, caractéristique +1 au choix, 5 compétences au niveau 2 pour l'origine sociale et au niveau 1 pour l'enfance et l'adolescence, en respectant les maximums par catégorie et les compétences de métier accessibles).
 - Retirer un historique annule ses effets.
 
