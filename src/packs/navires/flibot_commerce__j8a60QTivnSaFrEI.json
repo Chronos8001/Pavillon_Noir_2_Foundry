@@ -1,0 +1,199 @@
+{
+  "_id": "j8a60QTivnSaFrEI",
+  "_key": "!actors!j8a60QTivnSaFrEI",
+  "name": "Flibot (Commerce)",
+  "type": "navire",
+  "img": "systems/pavillon-noir-2/assets/icons/navire.svg",
+  "system": {
+    "modele": {
+      "type": "Flibot",
+      "configuration": "Commerce"
+    },
+    "infos": {
+      "capitaine": "",
+      "figureProue": "",
+      "greement": "Voiles carrées (2 ou 3 mâts)",
+      "taille": "Sloop",
+      "mats": 1,
+      "tonnage": 60.0,
+      "tonnageUtile": 50.0,
+      "tirantEau": "1,5 m",
+      "fonction": "Flibuste et transport fluvial",
+      "epoque": "Aventuriers (Europe, fin de la période, navire des Provinces Unies exclusivement), flibuste (Europe et Caraïbes), pirate",
+      "armement": "Commerce (12 matelots)",
+      "manoeuvrabilite": 2,
+      "avirons": "",
+      "vitMoyenne": 80.0,
+      "calibreMax": 9,
+      "longueur": "Immergée 20m, hors tout 25m"
+    },
+    "vitesses": {
+      "pres": 3.0,
+      "largue": 9.0,
+      "grandLargue": 10.0,
+      "ventArriere": 7.5
+    },
+    "qualites": {
+      "modVitesse": 0,
+      "modManoeuvre": 0
+    },
+    "navigation": {
+      "voilure": 0,
+      "vent": 0,
+      "allure": "largue"
+    },
+    "equipage": {
+      "max": 70,
+      "actuel": 12,
+      "convalescents": 0,
+      "manoeuvre": 12,
+      "recharge": 12,
+      "gardesMarines": 0,
+      "soldats": 0
+    },
+    "reserves": {
+      "eau": 45,
+      "vivres": 60,
+      "vivresFrais": 3,
+      "bois": 60,
+      "munitions": 20,
+      "trousse": 200
+    },
+    "cargaison": {},
+    "carenage": 0,
+    "structure": {
+      "mature": {
+        "max": 6,
+        "artimon": 6,
+        "grandMat": 6,
+        "misaine": 6
+      },
+      "coque": {
+        "max": 5,
+        "poupe": 5,
+        "babord": 5,
+        "tribord": 5,
+        "proue": 5
+      }
+    },
+    "batteries": {},
+    "commandement": {
+      "capitaine": {
+        "uuid": "",
+        "nom": ""
+      },
+      "second": {
+        "uuid": "",
+        "nom": ""
+      },
+      "canonnier": {
+        "uuid": "",
+        "nom": ""
+      },
+      "quartierMaitre": {
+        "uuid": "",
+        "nom": ""
+      },
+      "maitreEquipage": {
+        "uuid": "",
+        "nom": ""
+      },
+      "maitreCanonnier": {
+        "uuid": "",
+        "nom": ""
+      }
+    },
+    "gestion": {
+      "capitaineG": {
+        "uuid": "",
+        "nom": ""
+      },
+      "pilote": {
+        "uuid": "",
+        "nom": ""
+      },
+      "calfat": {
+        "uuid": "",
+        "nom": ""
+      },
+      "charpentier": {
+        "uuid": "",
+        "nom": ""
+      },
+      "voilier": {
+        "uuid": "",
+        "nom": ""
+      },
+      "chirurgien": {
+        "uuid": "",
+        "nom": ""
+      },
+      "quartierMaitreG": {
+        "uuid": "",
+        "nom": ""
+      },
+      "cambusier": {
+        "uuid": "",
+        "nom": ""
+      },
+      "grenadier": {
+        "uuid": "",
+        "nom": ""
+      },
+      "vigie": {
+        "uuid": "",
+        "nom": ""
+      }
+    },
+    "matelots": {
+      "manoeuvre": 3,
+      "ruse": 3,
+      "canonnade": 3,
+      "recharge": 3,
+      "combat": 3,
+      "tir": 3
+    },
+    "santeEquipage": {
+      "coches": 0
+    },
+    "possessions": {
+      "cartes": "",
+      "journaux": "",
+      "instruments": "",
+      "or": "",
+      "pavillons": "",
+      "otages": ""
+    },
+    "notes": ""
+  },
+  "items": [],
+  "effects": [],
+  "folder": "47PQsdqVNHPJIYei",
+  "sort": 370,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.345",
+    "systemId": "pavillon-noir-2",
+    "systemVersion": "0.1.0",
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": null
+  },
+  "prototypeToken": {
+    "name": "Flibot (Commerce)",
+    "actorLink": false,
+    "disposition": 0,
+    "texture": {
+      "src": "systems/pavillon-noir-2/assets/icons/navire.svg"
+    },
+    "displayName": 20,
+    "sight": {
+      "enabled": true
+    }
+  }
+}

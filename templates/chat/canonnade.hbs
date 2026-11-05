@@ -1,0 +1,21 @@
+<div class="pn2-card pn2-canonnade">
+  <header class="card-header"><h3><i class="fa-solid fa-bomb"></i> {{navire}} : {{tir.batterie}}</h3><div class="sous-titre">{{tir.munitionLabel}}</div></header>
+  <div class="formule">{{tir.result.formule}}</div>
+  {{> "systems/pavillon-noir-2/templates/chat/partials/des.hbs" details=tir.result.details extra=tir.result.extra}}
+  <div class="resultat {{#if tir.result.critique}}critique{{else if tir.result.succes}}reussite{{else}}echec{{/if}}"><span class="succes">{{tir.result.succes}} Succès</span> <span class="marge">{{tir.result.marge}}</span></div>
+  {{#if tir.touche}}
+    <p>Valeur {{pn2Signed tir.valeur}} → Mesure <strong>{{tir.mesureLabel}}</strong>{{#if tir.cibleNom}} sur <strong>{{tir.cibleNom}}</strong>{{/if}}</p>
+    <div class="degats-box">
+      {{#if tir.degats}}<div class="degats"><span class="valeur">{{tir.degats}}</span> PS</div>{{/if}}
+      <div class="degats"><span class="valeur">{{tir.pertes}}</span> pertes</div>
+      <div class="loc">D6 = {{tir.d6}} : <strong>{{tir.locLabel}}</strong></div>
+    </div>
+    {{#if tir.blesseLeger}}<p class="hint">Mesure inférieure à 1 : un blessé léger.</p>{{/if}}
+    {{#if tir.incendie}}<p class="alerte">Boulets rouges : lancez {{tir.incendie}}D6, un 6 déclenche un incendie.</p>{{/if}}
+    <p class="hint">Les PJ du navire touché font un Test de Chance (dégâts : {{tir.pjDegats}}).</p>
+    <a class="pn2-btn" data-pn2-action="canonnade"><i class="fa-solid fa-burst"></i> Appliquer au navire ciblé</a>
+  {{else}}
+    <p class="ligne">Les boulets manquent leur cible.</p>
+  {{/if}}
+  {{#if notes.length}}<details class="notes"><summary>Détails</summary><ul>{{#each notes}}<li>{{this}}</li>{{/each}}</ul></details>{{/if}}
+</div>

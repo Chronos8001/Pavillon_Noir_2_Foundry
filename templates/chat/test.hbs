@@ -1,0 +1,21 @@
+<div class="pn2-card pn2-test">
+  <header class="card-header">
+    <h3>{{titre}}</h3>
+    {{#if sousTitre}}<div class="sous-titre">{{sousTitre}}</div>{{/if}}
+  </header>
+  <div class="formule">{{result.formule}}</div>
+  {{> "systems/pavillon-noir-2/templates/chat/partials/des.hbs" details=result.details extra=result.extra}}
+  <div class="resultat {{#if result.critique}}critique{{else if result.succes}}reussite{{else}}echec{{/if}}">
+    <span class="succes">{{result.succes}} Succès</span>
+    <span class="marge">{{result.marge}}</span>
+  </div>
+  {{#if result.bonusS}}<div class="hint">Modificateur de Réussite inclus : {{pn2Signed result.bonusS}}S</div>{{/if}}
+  {{#if result.experience}}<div class="xp"><i class="fa-solid fa-star"></i> Expérience par la pratique acquise !</div>{{/if}}
+  {{#if texte}}<p>{{{texte}}}</p>{{/if}}
+  {{#if duree}}
+  <table class="pn2-mini"><tr><th>Action longue</th><th>Action courte</th><th>Durée des effets</th></tr>
+    <tr><td>{{duree.longue}} UT</td><td>{{duree.courte}} UT</td><td>{{duree.effets}} UT</td></tr></table>
+  {{/if}}
+  {{#if numerique}}<p>Action numérique : Mesure {{numerique.mesure}} (Valeur {{pn2Signed numerique.valeur}}) → <strong>{{numerique.resultat}}</strong></p>{{/if}}
+  {{#if notes.length}}<details class="notes"><summary>Détails</summary><ul>{{#each notes}}<li>{{this}}</li>{{/each}}</ul></details>{{/if}}
+</div>

@@ -1,0 +1,48 @@
+{
+  "_id": "TO1ZNZeQLUwwiXdm",
+  "_key": "!items!TO1ZNZeQLUwwiXdm",
+  "name": "Contre de Tierce",
+  "type": "manoeuvre",
+  "img": "systems/pavillon-noir-2/assets/icons/manoeuvre.svg",
+  "system": {
+    "description": "",
+    "source": "L'Art de l'escrime",
+    "escrime": "epee",
+    "niveau": 2,
+    "combinaison": "5 0",
+    "effet": "Vous bénéficiez d’une armure de 2 points (réduction des dégâts). Votre Torse, votre Bras Gauche et votre Jambe Droite sont intouchables. Inefficace contre : hache. Peu adapté contre : sabre.",
+    "ecole": false,
+    "secondeMain": false,
+    "deuxMains": false,
+    "inadapte": "hache",
+    "peuAdapte": "sabre",
+    "auto": {
+      "bonusD": 0,
+      "bonusFac": 0,
+      "malusFacAdv": 0,
+      "bonusS": 0,
+      "bonusDegats": 0,
+      "armure": 2,
+      "invulnerable": false,
+      "annuleAdv": false,
+      "choixLoc": false
+    }
+  },
+  "effects": [],
+  "folder": "IQJA1cBSGWHttpFX",
+  "sort": 210,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.345",
+    "systemId": "pavillon-noir-2",
+    "systemVersion": "0.1.0",
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": null
+  }
+}

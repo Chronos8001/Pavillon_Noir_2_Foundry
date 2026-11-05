@@ -1,0 +1,51 @@
+<section class="tab {{#if active}}active{{/if}}" data-group="primary" data-tab="equipage">
+  <p class="hint">Glissez des personnages (PJ ou PNJ) depuis la barre latérale sur chaque poste : les compétences de groupe se calculent automatiquement.</p>
+  <div class="pn2-columns">
+    <div class="col">
+      <h2>Commandement</h2>
+      <table class="pn2-table postes">
+        <thead><tr><th>Poste</th><th>Nom</th><th>VC</th><th></th></tr></thead>
+        {{#each commandement}}
+        <tr class="poste drop-zone" data-poste="{{key}}" data-groupe="commandement">
+          <td>{{label}}</td>
+          <td>{{#if uuid}}{{#if img}}<img src="{{img}}" width="22" height="22">{{/if}} <a data-action="posteOuvrir">{{nom}}</a>{{#if manquant}} <span class="alerte">(introuvable)</span>{{/if}}{{else}}<span class="hint">déposer un personnage</span>{{/if}}</td>
+          <td class="valeur">{{vc}}</td>
+          <td>{{#if uuid}}<a data-action="posteRetirer" title="Retirer"><i class="fa-solid fa-xmark"></i></a>{{/if}}</td>
+        </tr>
+        {{/each}}
+      </table>
+
+      <h2>État général de l'équipage</h2>
+      <div class="sante-equipage">
+        {{#each casesEquipage}}<a class="case n-{{niveau}} {{#if coche}}cochee{{/if}}" data-action="blessureEquipage" data-index="{{index}}" title="{{niveau}}"></a>{{/each}}
+        <span>{{system.etatEquipageLabel}} ({{system.malusEquipage}})</span>
+      </div>
+      <p class="hint">Cases selon (Modif. Combat + Modif. Recharge des matelots). Le malus s'applique à tous les Tests de groupe.</p>
+    </div>
+    <div class="col">
+      <h2>Compétences de groupe</h2>
+      <table class="pn2-table groupe">
+        <thead><tr><th>Compétence</th><th title="Moyenne des compétences du commandement">Efficacité</th><th title="Moyenne des VC">VC</th><th>Matelots</th><th>Chances</th></tr></thead>
+        {{#each groupe}}
+        <tr>
+          <td><a class="rollable" data-action="testGroupe" data-groupe="{{key}}"><i class="fa-solid fa-dice-d10"></i> {{label}}</a></td>
+          <td title="{{#each details}}{{poste}} ({{skill}}) : {{valeur}}&#10;{{/each}}">{{eff}}</td>
+          <td title="{{#each facDetails}}{{poste}} : {{vc}}{{#if (gt mult 1)}} ×{{mult}}{{/if}}&#10;{{/each}}">{{facBase}}</td>
+          <td><select name="system.matelots.{{key}}">{{selectOptions @root.niveauxMatelots selected=matelots}}</select></td>
+          <td><strong>{{chances}}</strong></td>
+        </tr>
+        {{/each}}
+      </table>
+      <p class="hint">Efficacité = moyenne des 4 compétences de commandement ; Facilité = moyenne des Valeurs de commandement + Modif. des matelots (niveau - 3). Survolez pour le détail.</p>
+    </div>
+  </div>
+  <h2>Gestion — membres essentiels</h2>
+  <div class="gestion">
+    {{#each gestion}}
+    <div class="poste-gestion drop-zone" data-poste="{{key}}" data-groupe="gestion">
+      <div class="titre"><strong>{{label}}</strong> {{#if uuid}}— <a data-action="posteOuvrir">{{nom}}</a> <a data-action="posteRetirer"><i class="fa-solid fa-xmark"></i></a>{{else}}<span class="hint">déposer</span>{{/if}}</div>
+      <div class="skills">{{#each skills}}<a class="rollable" data-action="posteTest" data-skill="{{key}}">{{label}} <strong>{{value}}</strong></a>{{/each}}</div>
+    </div>
+    {{/each}}
+  </div>
+</section>

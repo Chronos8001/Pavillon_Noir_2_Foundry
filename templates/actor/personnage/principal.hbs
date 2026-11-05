@@ -1,0 +1,85 @@
+<section class="tab {{#if active}}active{{/if}}" data-group="primary" data-tab="principal">
+  <div class="pn2-columns">
+    <div class="col">
+      <h2>Caractéristiques</h2>
+      <div class="rose-des-vents">
+        {{#each (pn2Array "exp" "adr" "for" "per" "pou" "res" "cha" "eru" "ada") as |k|}}
+          {{#with (lookup ../caracMap k) as |c|}}
+          <div class="carac carac-{{c.key}}">
+            <a class="rollable" data-action="rollCarac" data-carac="{{c.key}}" title="Test de {{c.label}} (2 dés)">{{c.label}}</a>
+            <input type="number" name="system.caracs.{{c.key}}.value" value="{{c.value}}" min="0">
+            {{#if c.modifiee}}<span class="effective" title="Valeur modifiée par une faiblesse">→ {{c.effective}}</span>{{/if}}
+          </div>
+          {{/with}}
+        {{/each}}
+      </div>
+      <h2>Caractéristiques secondaires</h2>
+      <div class="grid-2 secondaires">
+        <div class="ligne"><label>Bonus de Chance</label><input type="number" name="system.secondaires.chanceBonus" value="{{system.secondaires.chanceBonus}}"></div>
+        <div class="ligne"><label>Bonus d'Initiative</label><input type="number" name="system.secondaires.initiativeBonus" value="{{system.secondaires.initiativeBonus}}"></div>
+        <div class="ligne"><label>Actions supplémentaires</label><input type="number" name="system.secondaires.actionsBonus" value="{{system.secondaires.actionsBonus}}"></div>
+        <div class="ligne"><label>Pièces de huit</label><input type="number" step="any" name="system.richesse.pieces" value="{{system.richesse.pieces}}"></div>
+      </div>
+      <h3>Valeur de métier</h3>
+      <div class="metier">
+        <input type="text" name="system.metier.nom" value="{{system.metier.nom}}" placeholder="Métier exercé">
+        (<select name="system.metier.carac1">{{selectOptions caracOptions selected=system.metier.carac1}}</select>
+        + <select name="system.metier.carac2">{{selectOptions caracOptions selected=system.metier.carac2}}</select>) / 2
+        = <strong class="valeur">{{#if system.valeurMetier}}{{system.valeurMetier}}{{else}}—{{/if}}</strong>
+      </div>
+      <h3>Valeurs de commandement</h3>
+      <table class="pn2-table vc">
+        {{#each vc}}<tr><td>{{label}}</td><td class="hint">{{formule}}</td><td class="valeur">{{value}}</td></tr>{{/each}}
+      </table>
+    </div>
+    <div class="col">
+      <h2>Identité</h2>
+      <div class="grid-2 infos">
+        <div class="ligne"><label>Titre</label><input type="text" name="system.infos.titre" value="{{system.infos.titre}}"></div>
+        <div class="ligne"><label>Peuple et pays</label><input type="text" name="system.infos.peuple" value="{{system.infos.peuple}}"></div>
+        <div class="ligne"><label>Origines sociales</label><input type="text" name="system.infos.origines" value="{{system.infos.origines}}"></div>
+        <div class="ligne"><label>Jeunesse</label><input type="text" name="system.infos.jeunesse" value="{{system.infos.jeunesse}}"></div>
+        <div class="ligne"><label>Religion</label><input type="text" name="system.infos.religion" value="{{system.infos.religion}}"></div>
+        <div class="ligne"><label>Âge</label><input type="text" name="system.infos.age" value="{{system.infos.age}}"></div>
+        <div class="ligne"><label>Taille</label><input type="text" name="system.infos.taille" value="{{system.infos.taille}}"></div>
+        <div class="ligne"><label>Poids</label><input type="text" name="system.infos.poids" value="{{system.infos.poids}}"></div>
+      </div>
+      <div class="ligne"><label>Description physique</label><textarea name="system.infos.description" rows="2">{{system.infos.description}}</textarea></div>
+
+      <h2>Réputation</h2>
+      <div class="reputation">
+        {{#each (pn2Array "gloire" "infamie") as |r|}}
+        {{#with (lookup @root r) as |rep|}}
+        <div class="rep rep-{{r}}">
+          <h3>{{#if (eq r "gloire")}}Gloire{{else}}Infamie{{/if}}</h3>
+          <div class="ligne"><label>Score</label><input type="number" name="system.reputation.{{r}}.score" value="{{rep.score}}" min="0"></div>
+          <div class="ligne"><label>Niveau</label><strong>{{rep.niveau}}</strong> <em>{{rep.qualificatif}}</em></div>
+          <div class="ligne"><label>Points dépensés</label>
+            <span class="cases">{{#each rep.cases}}<a class="case {{#unless dispo}}noircie{{/unless}} {{#if depense}}cochee{{/if}}" {{#if dispo}}data-action="reputation" data-rep="{{r}}" data-index="{{i}}"{{/if}}></a>{{/each}}</span></div>
+        </div>
+        {{/with}}
+        {{/each}}
+        <p class="hint">Gloire : +1D par point dépensé. Infamie : +1 Facilité par point. 4 points maximum par action. <a data-action="recupererReputation"><i class="fa-solid fa-rotate"></i> Fin de partie : récupérer les points</a></p>
+      </div>
+
+      <h2>Avantages <a class="pn2-mini-btn" data-action="itemCreate" data-type="avantage" data-nature="avantage" title="Créer"><i class="fa-solid fa-plus"></i></a>
+        <a class="pn2-mini-btn" data-action="ouvrirCompendium" data-pack="avantages-faiblesses" title="Compendium"><i class="fa-solid fa-book"></i></a></h2>
+      <ul class="item-list">
+        {{#each avantages}}
+        <li class="item" data-item-id="{{id}}"><img src="{{img}}" width="20" height="20"><a class="nom" data-action="itemShow">{{name}}</a><span class="cout">{{system.cout}}</span>
+          <a data-action="itemEdit"><i class="fa-solid fa-pen"></i></a><a data-action="itemDelete"><i class="fa-solid fa-trash"></i></a></li>
+        {{/each}}
+      </ul>
+      <h2>Faiblesses <a class="pn2-mini-btn" data-action="itemCreate" data-type="avantage" data-nature="faiblesse" title="Créer"><i class="fa-solid fa-plus"></i></a></h2>
+      <ul class="item-list">
+        {{#each faiblesses}}
+        <li class="item" data-item-id="{{id}}"><img src="{{img}}" width="20" height="20"><a class="nom" data-action="itemShow">{{name}}</a><span class="cout">{{system.cout}}</span>
+          {{#if system.modificateurs}}<span class="hint" title="Modificateurs appliqués automatiquement">{{system.modificateurs}}</span>{{/if}}
+          <a data-action="itemEdit"><i class="fa-solid fa-pen"></i></a><a data-action="itemDelete"><i class="fa-solid fa-trash"></i></a></li>
+        {{/each}}
+      </ul>
+      <h2>Contacts & alliés</h2>
+      <textarea name="system.contacts" rows="3">{{system.contacts}}</textarea>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,434 @@
+{
+  "_id": "162pkO3VaTHgzjoL",
+  "_key": "!actors!162pkO3VaTHgzjoL",
+  "name": "Singe Sapajou",
+  "type": "pnj",
+  "img": "systems/pavillon-noir-2/assets/icons/animal.svg",
+  "system": {
+    "caracs": {
+      "adr": {
+        "value": 5
+      },
+      "for": {
+        "value": 5
+      },
+      "res": {
+        "value": 2
+      },
+      "ada": {
+        "value": 5
+      },
+      "eru": {
+        "value": 5
+      },
+      "per": {
+        "value": 5
+      },
+      "cha": {
+        "value": 5
+      },
+      "exp": {
+        "value": 5
+      },
+      "pou": {
+        "value": 5
+      }
+    },
+    "infos": {
+      "titre": "",
+      "profession": "",
+      "poste": "",
+      "peuple": "",
+      "origines": "",
+      "jeunesse": "",
+      "religion": "",
+      "age": "",
+      "taille": "",
+      "poids": "",
+      "surnom": "",
+      "description": ""
+    },
+    "metier": {
+      "nom": "",
+      "carac1": "adr",
+      "carac2": "per"
+    },
+    "secondaires": {
+      "actionsBonus": 0,
+      "initiativeBonus": 0,
+      "chanceBonus": 0
+    },
+    "skills": {
+      "balistique": {
+        "value": 0,
+        "xp": false
+      },
+      "cartographie": {
+        "value": 0,
+        "xp": false
+      },
+      "commerce": {
+        "value": 0,
+        "xp": false
+      },
+      "droit": {
+        "value": 0,
+        "xp": false
+      },
+      "geographie": {
+        "value": 0,
+        "xp": false
+      },
+      "histoire": {
+        "value": 0,
+        "xp": false
+      },
+      "herboristerie": {
+        "value": 0,
+        "xp": false
+      },
+      "ingenierieNavale": {
+        "value": 0,
+        "xp": false
+      },
+      "intendance": {
+        "value": 0,
+        "xp": false
+      },
+      "lireEcrire": {
+        "value": 0,
+        "xp": false
+      },
+      "medecine": {
+        "value": 0,
+        "xp": false
+      },
+      "sciences": {
+        "value": 0,
+        "xp": false
+      },
+      "tactique": {
+        "value": 0,
+        "xp": false
+      },
+      "pointage": {
+        "value": 0,
+        "xp": false
+      },
+      "recharge": {
+        "value": 0,
+        "xp": false
+      },
+      "calfatage": {
+        "value": 0,
+        "xp": false
+      },
+      "charpenterie": {
+        "value": 0,
+        "xp": false
+      },
+      "voilerie": {
+        "value": 0,
+        "xp": false
+      },
+      "cuisine": {
+        "value": 0,
+        "xp": false
+      },
+      "chasse": {
+        "value": 0,
+        "xp": false
+      },
+      "chirurgie": {
+        "value": 0,
+        "xp": false
+      },
+      "dressage": {
+        "value": 0,
+        "xp": false
+      },
+      "premiersSoins": {
+        "value": 0,
+        "xp": false
+      },
+      "connNautiques": {
+        "value": 0,
+        "xp": false
+      },
+      "connNavires": {
+        "value": 0,
+        "xp": false
+      },
+      "connSignalisation": {
+        "value": 0,
+        "xp": false
+      },
+      "hydrographie": {
+        "value": 0,
+        "xp": false
+      },
+      "navigation": {
+        "value": 0,
+        "xp": false
+      },
+      "peche": {
+        "value": 0,
+        "xp": false
+      },
+      "pratiqueNautique": {
+        "value": 0,
+        "xp": false
+      },
+      "timonerie": {
+        "value": 0,
+        "xp": false
+      },
+      "acrobatie": {
+        "value": 4,
+        "xp": false
+      },
+      "athletisme": {
+        "value": 0,
+        "xp": false
+      },
+      "discretion": {
+        "value": 3,
+        "xp": false
+      },
+      "equitation": {
+        "value": 0,
+        "xp": false
+      },
+      "larcins": {
+        "value": 0,
+        "xp": false
+      },
+      "natation": {
+        "value": 0,
+        "xp": false
+      },
+      "survie": {
+        "value": 0,
+        "xp": false
+      },
+      "vigilance": {
+        "value": 3,
+        "xp": false
+      },
+      "comedie": {
+        "value": 0,
+        "xp": false
+      },
+      "empathie": {
+        "value": 0,
+        "xp": false
+      },
+      "enseignement": {
+        "value": 0,
+        "xp": false
+      },
+      "etiquette": {
+        "value": 0,
+        "xp": false
+      },
+      "intimidation": {
+        "value": 0,
+        "xp": false
+      },
+      "jeu": {
+        "value": 0,
+        "xp": false
+      },
+      "meneurHommes": {
+        "value": 0,
+        "xp": false
+      },
+      "persuasion": {
+        "value": 0,
+        "xp": false
+      },
+      "politique": {
+        "value": 0,
+        "xp": false
+      },
+      "seduction": {
+        "value": 0,
+        "xp": false
+      },
+      "mousquet": {
+        "value": 0,
+        "xp": false
+      },
+      "pistolet": {
+        "value": 0,
+        "xp": false
+      },
+      "grenade": {
+        "value": 0,
+        "xp": false
+      },
+      "mainsNues": {
+        "value": 4,
+        "xp": false
+      },
+      "escrime": {
+        "value": 0,
+        "xp": false
+      },
+      "esquive": {
+        "value": 3,
+        "xp": false
+      }
+    },
+    "specs": {
+      "4ddLngNYcQe2YNob": {
+        "group": "connSpe",
+        "name": "Apprendre un tour",
+        "value": 3,
+        "xp": false,
+        "metier": false,
+        "carac": ""
+      }
+    },
+    "armesFeuMetier": false,
+    "escrime": {
+      "epee": {
+        "value": 0,
+        "xp": 0,
+        "predilection": false,
+        "pointsBonus": 0
+      },
+      "dague": {
+        "value": 0,
+        "xp": 0,
+        "predilection": false,
+        "pointsBonus": 0
+      },
+      "deuxarmes": {
+        "value": 0,
+        "xp": 0,
+        "predilection": false,
+        "pointsBonus": 0
+      },
+      "sabre": {
+        "value": 0,
+        "xp": 0,
+        "predilection": false,
+        "pointsBonus": 0
+      },
+      "baionnette": {
+        "value": 0,
+        "xp": 0,
+        "predilection": false,
+        "pointsBonus": 0
+      },
+      "hache": {
+        "value": 0,
+        "xp": 0,
+        "predilection": false,
+        "pointsBonus": 0
+      },
+      "pont": {
+        "value": 0,
+        "xp": 0,
+        "predilection": false,
+        "pointsBonus": 0
+      },
+      "destreza": {
+        "value": 0,
+        "xp": 0,
+        "predilection": false,
+        "pointsBonus": 0
+      },
+      "ecole": "",
+      "arme": ""
+    },
+    "sante": {
+      "loc": {
+        "jambeG": {
+          "coches": 0,
+          "protection": 0
+        },
+        "jambeD": {
+          "coches": 0,
+          "protection": 0
+        },
+        "torse": {
+          "coches": 0,
+          "protection": 0
+        },
+        "brasG": {
+          "coches": 0,
+          "protection": 0
+        },
+        "brasD": {
+          "coches": 0,
+          "protection": 0
+        },
+        "tete": {
+          "coches": 0,
+          "protection": 0
+        }
+      }
+    },
+    "reputation": {
+      "gloire": {
+        "score": 0,
+        "depenses": 0
+      },
+      "infamie": {
+        "score": 0,
+        "depenses": 0
+      }
+    },
+    "combat": {
+      "posture": "attentive"
+    },
+    "richesse": {
+      "pieces": 5
+    },
+    "contacts": "",
+    "notes": "<p>Acrobatie 4, Apprendre un tour 3,Combat 4 (dég.-2),Discrétion 3,Esquive 3,Vigilance 3.</p>",
+    "biographie": "",
+    "facilites": {
+      "connaissances": 6,
+      "techniques": 6,
+      "maritimes": 6,
+      "physiques": 6,
+      "sociales": 6,
+      "combat": 6
+    },
+    "role": "Animal",
+    "importance": "mineure"
+  },
+  "items": [],
+  "effects": [],
+  "folder": "faJz0jm3ENCIxSxa",
+  "sort": 20,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.345",
+    "systemId": "pavillon-noir-2",
+    "systemVersion": "0.1.0",
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": null
+  },
+  "prototypeToken": {
+    "name": "Singe Sapajou",
+    "actorLink": false,
+    "disposition": -1,
+    "texture": {
+      "src": "systems/pavillon-noir-2/assets/icons/animal.svg"
+    },
+    "displayName": 20,
+    "sight": {
+      "enabled": true
+    }
+  }
+}

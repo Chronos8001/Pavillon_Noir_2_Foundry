@@ -1,0 +1,296 @@
+{
+  "_id": "JJGAajjbdD28ecH5",
+  "_key": "!actors!JJGAajjbdD28ecH5",
+  "name": "Trois-ponts (Guerre moyen)",
+  "type": "navire",
+  "img": "systems/pavillon-noir-2/assets/icons/navire.svg",
+  "system": {
+    "modele": {
+      "type": "Trois-ponts",
+      "configuration": "Guerre moyen"
+    },
+    "infos": {
+      "capitaine": "",
+      "figureProue": "",
+      "greement": "Voiles carrées (3 mâts) recharge = 70 hommes) et 2×8 canons de muraille en bordée",
+      "taille": "Vaisseau de ligne",
+      "mats": 3,
+      "tonnage": 1600.0,
+      "tonnageUtile": 1250.0,
+      "tirantEau": "10m (VD = +22, recharge = 427 hommes), 2",
+      "fonction": "Royale de 24 en chasse (VD = +13, recharge = 54 hommes), 2 pièces de 36, 2 pièce",
+      "epoque": "Flibuste, piraterie et Royale",
+      "armement": "Guerre moyen (Vaisseau de rang 2, 723 matelots)",
+      "manoeuvrabilite": -3,
+      "avirons": "",
+      "vitMoyenne": 70.0,
+      "calibreMax": 42,
+      "longueur": "Immergée 65m, hors tout 90m chasse ("
+    },
+    "vitesses": {
+      "pres": 1.5,
+      "largue": 6.0,
+      "grandLargue": 6.5,
+      "ventArriere": 4.5
+    },
+    "qualites": {
+      "modVitesse": 0,
+      "modManoeuvre": 0
+    },
+    "navigation": {
+      "voilure": 0,
+      "vent": 0,
+      "allure": "largue"
+    },
+    "equipage": {
+      "max": 1200,
+      "actuel": 723,
+      "convalescents": 0,
+      "manoeuvre": 100,
+      "recharge": 723,
+      "gardesMarines": 24,
+      "soldats": 200
+    },
+    "reserves": {
+      "eau": 45,
+      "vivres": 60,
+      "vivresFrais": 3,
+      "bois": 60,
+      "munitions": 20,
+      "trousse": 200
+    },
+    "cargaison": {},
+    "carenage": 0,
+    "structure": {
+      "mature": {
+        "max": 250,
+        "artimon": 250,
+        "grandMat": 250,
+        "misaine": 250
+      },
+      "coque": {
+        "max": 250,
+        "poupe": 250,
+        "babord": 250,
+        "tribord": 250,
+        "proue": 250
+      }
+    },
+    "batteries": {
+      "CObXyhPiTOg5TRdM": {
+        "nom": "Bordée — 2×13 pièces de 9 et 2×6 pièces de 6",
+        "position": "bordée",
+        "nombre": 0,
+        "calibre": 9,
+        "vd": 22,
+        "hommes": 427,
+        "modRecharge": 0,
+        "tonnage": 0,
+        "munition": "boulet",
+        "chargee": true,
+        "restant": 0,
+        "cote": "babord",
+        "ordre": 0,
+        "description": "2×13 pièces de 9 et 2×6 pièces de 6"
+      },
+      "DenW7LdZxSbHx7tU": {
+        "nom": "Chasse — 2 pièces de 24 et 2 pièces de 12",
+        "position": "chasse",
+        "nombre": 0,
+        "calibre": 24,
+        "vd": 14,
+        "hommes": 70,
+        "modRecharge": -1,
+        "tonnage": 0,
+        "munition": "boulet",
+        "chargee": true,
+        "restant": 0,
+        "cote": "babord",
+        "ordre": 1,
+        "description": "2 pièces de 24 et 2 pièces de 12"
+      },
+      "SFSF2NalYRq5L9bB": {
+        "nom": "Fuite — 2 pièces de 24 et 2 pièces de 18 et 2 pièces de 9",
+        "position": "fuite",
+        "nombre": 0,
+        "calibre": 24,
+        "vd": 15,
+        "hommes": 86,
+        "modRecharge": -1,
+        "tonnage": 0,
+        "munition": "boulet",
+        "chargee": true,
+        "restant": 0,
+        "cote": "babord",
+        "ordre": 2,
+        "description": "2 pièces de 24 et 2 pièces de 18 et 2 pièces de 9"
+      },
+      "ud8ArMRsAsPxaGRm": {
+        "nom": "Bordée — 2×10 canons de muraille",
+        "position": "muraille",
+        "nombre": 0,
+        "calibre": 2,
+        "vd": 6,
+        "hommes": 20,
+        "modRecharge": 2,
+        "tonnage": 0,
+        "munition": "boulet",
+        "chargee": true,
+        "restant": 0,
+        "cote": "babord",
+        "ordre": 3,
+        "description": "2×10 canons de muraille"
+      },
+      "yWmL0EbqWXcFnidb": {
+        "nom": "Chasse — 6 canons de muraille (prises sur la bordée)",
+        "position": "muraille",
+        "nombre": 0,
+        "calibre": 2,
+        "vd": 3,
+        "hommes": 12,
+        "modRecharge": 2,
+        "tonnage": 0,
+        "munition": "boulet",
+        "chargee": true,
+        "restant": 0,
+        "cote": "babord",
+        "ordre": 4,
+        "description": "6 canons de muraille (prises sur la bordée)"
+      },
+      "gjr32oWtWC0oWN8q": {
+        "nom": "Fuite — 14 canons de muraille (prises sur la bordée)",
+        "position": "muraille",
+        "nombre": 0,
+        "calibre": 2,
+        "vd": 7,
+        "hommes": 28,
+        "modRecharge": 2,
+        "tonnage": 0,
+        "munition": "boulet",
+        "chargee": true,
+        "restant": 0,
+        "cote": "babord",
+        "ordre": 5,
+        "description": "14 canons de muraille (prises sur la bordée)"
+      }
+    },
+    "commandement": {
+      "capitaine": {
+        "uuid": "",
+        "nom": ""
+      },
+      "second": {
+        "uuid": "",
+        "nom": ""
+      },
+      "canonnier": {
+        "uuid": "",
+        "nom": ""
+      },
+      "quartierMaitre": {
+        "uuid": "",
+        "nom": ""
+      },
+      "maitreEquipage": {
+        "uuid": "",
+        "nom": ""
+      },
+      "maitreCanonnier": {
+        "uuid": "",
+        "nom": ""
+      }
+    },
+    "gestion": {
+      "capitaineG": {
+        "uuid": "",
+        "nom": ""
+      },
+      "pilote": {
+        "uuid": "",
+        "nom": ""
+      },
+      "calfat": {
+        "uuid": "",
+        "nom": ""
+      },
+      "charpentier": {
+        "uuid": "",
+        "nom": ""
+      },
+      "voilier": {
+        "uuid": "",
+        "nom": ""
+      },
+      "chirurgien": {
+        "uuid": "",
+        "nom": ""
+      },
+      "quartierMaitreG": {
+        "uuid": "",
+        "nom": ""
+      },
+      "cambusier": {
+        "uuid": "",
+        "nom": ""
+      },
+      "grenadier": {
+        "uuid": "",
+        "nom": ""
+      },
+      "vigie": {
+        "uuid": "",
+        "nom": ""
+      }
+    },
+    "matelots": {
+      "manoeuvre": 3,
+      "ruse": 3,
+      "canonnade": 3,
+      "recharge": 3,
+      "combat": 3,
+      "tir": 3
+    },
+    "santeEquipage": {
+      "coches": 0
+    },
+    "possessions": {
+      "cartes": "",
+      "journaux": "",
+      "instruments": "",
+      "or": "",
+      "pavillons": "",
+      "otages": ""
+    },
+    "notes": ""
+  },
+  "items": [],
+  "effects": [],
+  "folder": "EU8DxPIQMp2GzcKN",
+  "sort": 830,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.345",
+    "systemId": "pavillon-noir-2",
+    "systemVersion": "0.1.0",
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": null
+  },
+  "prototypeToken": {
+    "name": "Trois-ponts (Guerre moyen)",
+    "actorLink": false,
+    "disposition": 0,
+    "texture": {
+      "src": "systems/pavillon-noir-2/assets/icons/navire.svg"
+    },
+    "displayName": 20,
+    "sight": {
+      "enabled": true
+    }
+  }
+}

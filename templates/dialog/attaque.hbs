@@ -1,0 +1,54 @@
+<div class="pn2-dialog">
+  <p class="intro"><strong>{{arme.name}}</strong> — {{skill.label}} : {{skill.value}}{{#unless skill.value}} <span class="hint">(profane : {{#if skill.metier}}1D20{{else}}1D12{{/if}})</span>{{/unless}} — dégâts fixes {{pn2Signed degats}}
+    {{#if cible}}<br>Cible : <strong>{{cible.nom}}</strong>{{/if}}</p>
+  <div class="form-group">
+    <label>Caractéristique</label>
+    <select name="carac">{{#each caracs as |c k|}}<option value="{{k}}" {{#if (eq k ../caracDef)}}selected{{/if}}>{{c.label}}</option>{{/each}}</select>
+  </div>
+  <div class="form-group"><label>Difficulté</label><select name="difficulte">{{selectOptions difficultes selected="0"}}</select></div>
+  <div class="form-row">
+    <div class="form-group"><label>Mod. Efficacité</label><input type="number" name="modEff" value="0"></div>
+    <div class="form-group"><label>Mod. Facilité</label><input type="number" name="modFac" value="0"></div>
+  </div>
+  <div class="form-row">
+    <div class="form-group"><label>Viser : +1D par Action (max 3)</label><input type="number" name="viserEff" value="0" min="0" max="3"></div>
+    <div class="form-group"><label>Viser une localisation (±1 par Action)</label><input type="number" name="viserLoc" value="0" min="0" max="3"></div>
+  </div>
+  <div class="form-group"><label>Localisation visée</label>
+    <select name="locCible"><option value="">—</option>{{#each locs as |l k|}}<option value="{{k}}">{{l}}</option>{{/each}}</select></div>
+  {{#if tir}}
+    <div class="form-row">
+      <div class="form-group"><label>Distance (m) — portée {{arme.system.portee}} m</label><input type="number" name="distance" value="0" min="0"></div>
+      <div class="form-group"><label>Bout portant (+2D)</label><input type="checkbox" name="boutPortant"></div>
+    </div>
+    {{#if armeFeu}}{{#if longFeu}}
+      <div class="form-row">
+        <div class="form-group"><label>Long feu : circonstances (humidité, recharge…)</label><input type="number" name="longFeuCirc" value="0"></div>
+        <div class="form-group"><label>Ignorer le long feu</label><input type="checkbox" name="sansLongFeu"></div>
+      </div>
+    {{/if}}{{/if}}
+  {{/if}}
+  <div class="form-row">
+    <div class="form-group"><label>Main gauche (-3)</label><input type="checkbox" name="mainGauche" {{#if arme.system.mainGauche}}checked{{/if}}></div>
+    <div class="form-group"><label>Combat à deux armes (-3)</label><input type="checkbox" name="deuxArmes"></div>
+  </div>
+  {{#if arme.system.bonusAbordage}}<div class="form-group"><label>À l'abordage (+1, sinon -1)</label><input type="checkbox" name="abordage" checked></div>{{/if}}
+  {{#if usePostures}}<div class="form-group"><label>Posture</label><select name="posture">{{selectOptions postures selected=posture}}</select></div>{{/if}}
+  {{#unless tir}}
+    {{#if (eq escrimeMode "avance")}}
+      {{#if types.length}}
+      <fieldset><legend>Escrime utilisée</legend>
+        {{#each types}}<label class="checkbox"><input type="checkbox" name="esc_{{key}}" {{#unless (eq key "pont")}}checked{{/unless}}> {{label}}</label>{{/each}}
+        <p class="hint">Combat de pont + épée, sabre ou hache : -1.</p>
+      </fieldset>
+      {{/if}}
+    {{else if (eq escrimeMode "base")}}
+      {{#if escrimeBase}}<p class="hint">Escrime (La Révolte) : les Opportunités 1, 5 et 0 seront exploitées automatiquement.</p>{{/if}}
+    {{/if}}
+  {{/unless}}
+  <div class="form-row">
+    <div class="form-group"><label>Gloire (+1D, {{gloireDispo}})</label><input type="number" name="gloire" value="0" min="0" max="{{gloireDispo}}"></div>
+    <div class="form-group"><label>Infamie (+1, {{infamieDispo}})</label><input type="number" name="infamie" value="0" min="0" max="{{infamieDispo}}"></div>
+  </div>
+  {{#if malusSante}}<p class="hint">Blessures : {{malusSante}}.</p>{{/if}}
+</div>

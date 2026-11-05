@@ -1,0 +1,32 @@
+{
+  "_id": "42h8lXoPvf7hkbNW",
+  "_key": "!items!42h8lXoPvf7hkbNW",
+  "name": "Poudre (10 charges)",
+  "type": "equipement",
+  "img": "systems/pavillon-noir-2/assets/icons/armefeu.svg",
+  "system": {
+    "description": "",
+    "source": "La Révolte",
+    "categorie": "Munitions",
+    "quantite": 1,
+    "prix": "0,2",
+    "modificateur": ""
+  },
+  "effects": [],
+  "folder": "M41q5VplIWmUFCuB",
+  "sort": 560,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.345",
+    "systemId": "pavillon-noir-2",
+    "systemVersion": "0.1.0",
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": null
+  }
+}

@@ -1,0 +1,280 @@
+{
+  "_id": "Lc08MdFVXCCDa9L3",
+  "_key": "!actors!Lc08MdFVXCCDa9L3",
+  "name": "Brick (Aviso)",
+  "type": "navire",
+  "img": "systems/pavillon-noir-2/assets/icons/navire.svg",
+  "system": {
+    "modele": {
+      "type": "Brick",
+      "configuration": "Aviso"
+    },
+    "infos": {
+      "capitaine": "",
+      "figureProue": "",
+      "greement": "Voiles carrées (2 mâts)",
+      "taille": "Goélette",
+      "mats": 2,
+      "tonnage": 200.0,
+      "tonnageUtile": 140.0,
+      "tirantEau": "5m",
+      "fonction": "Transport, flibuste, commerce triangulaire, pirates ou Royale",
+      "epoque": "Piraterie et Royale",
+      "armement": "Aviso (76 matelots)",
+      "manoeuvrabilite": 0,
+      "avirons": "",
+      "vitMoyenne": 100.0,
+      "calibreMax": 9,
+      "longueur": "Immergée 40m, hors tout 55m"
+    },
+    "vitesses": {
+      "pres": 3.0,
+      "largue": 11.0,
+      "grandLargue": 12.0,
+      "ventArriere": 8.0
+    },
+    "qualites": {
+      "modVitesse": 0,
+      "modManoeuvre": 0
+    },
+    "navigation": {
+      "voilure": 0,
+      "vent": 0,
+      "allure": "largue"
+    },
+    "equipage": {
+      "max": 150,
+      "actuel": 76,
+      "convalescents": 0,
+      "manoeuvre": 22,
+      "recharge": 76,
+      "gardesMarines": 3,
+      "soldats": 35
+    },
+    "reserves": {
+      "eau": 45,
+      "vivres": 60,
+      "vivresFrais": 3,
+      "bois": 60,
+      "munitions": 20,
+      "trousse": 200
+    },
+    "cargaison": {},
+    "carenage": 0,
+    "structure": {
+      "mature": {
+        "max": 17,
+        "artimon": 17,
+        "grandMat": 17,
+        "misaine": 17
+      },
+      "coque": {
+        "max": 16,
+        "poupe": 16,
+        "babord": 16,
+        "tribord": 16,
+        "proue": 16
+      }
+    },
+    "batteries": {
+      "12fZoeaUTuggPRIb": {
+        "nom": "Bordée — 2×8 pièces de 6",
+        "position": "bordée",
+        "nombre": 0,
+        "calibre": 6,
+        "vd": 9,
+        "hommes": 32,
+        "modRecharge": 1,
+        "tonnage": 16,
+        "munition": "boulet",
+        "chargee": true,
+        "restant": 0,
+        "cote": "babord",
+        "ordre": 0,
+        "description": "2×8 pièces de 6"
+      },
+      "knvlfrHSiTXSTNXZ": {
+        "nom": "Chasse — une pièce de 9",
+        "position": "chasse",
+        "nombre": 0,
+        "calibre": 9,
+        "vd": 2,
+        "hommes": 6,
+        "modRecharge": 0,
+        "tonnage": 0,
+        "munition": "boulet",
+        "chargee": true,
+        "restant": 0,
+        "cote": "babord",
+        "ordre": 1,
+        "description": "une pièce de 9"
+      },
+      "sTbml7S6qrlhYUJI": {
+        "nom": "Bordée — 2×8 pierriers",
+        "position": "muraille",
+        "nombre": 0,
+        "calibre": 1,
+        "vd": 2,
+        "hommes": 8,
+        "modRecharge": 2,
+        "tonnage": 0,
+        "munition": "boulet",
+        "chargee": true,
+        "restant": 0,
+        "cote": "babord",
+        "ordre": 2,
+        "description": "2×8 pierriers"
+      },
+      "EyB0PQgD8xK2L2te": {
+        "nom": "Fuite — 10 pierriers (prises sur la bordée)",
+        "position": "muraille",
+        "nombre": 0,
+        "calibre": 1,
+        "vd": 3,
+        "hommes": 10,
+        "modRecharge": 2,
+        "tonnage": 0,
+        "munition": "boulet",
+        "chargee": true,
+        "restant": 0,
+        "cote": "babord",
+        "ordre": 3,
+        "description": "10 pierriers (prises sur la bordée)"
+      },
+      "DHFHn7YXgWGTLYmR": {
+        "nom": "Chasse — 6 pierriers (prises sur la bordée)",
+        "position": "muraille",
+        "nombre": 0,
+        "calibre": 1,
+        "vd": 0,
+        "hommes": 6,
+        "modRecharge": 2,
+        "tonnage": 0,
+        "munition": "boulet",
+        "chargee": true,
+        "restant": 0,
+        "cote": "babord",
+        "ordre": 4,
+        "description": "6 pierriers (prises sur la bordée)"
+      }
+    },
+    "commandement": {
+      "capitaine": {
+        "uuid": "",
+        "nom": ""
+      },
+      "second": {
+        "uuid": "",
+        "nom": ""
+      },
+      "canonnier": {
+        "uuid": "",
+        "nom": ""
+      },
+      "quartierMaitre": {
+        "uuid": "",
+        "nom": ""
+      },
+      "maitreEquipage": {
+        "uuid": "",
+        "nom": ""
+      },
+      "maitreCanonnier": {
+        "uuid": "",
+        "nom": ""
+      }
+    },
+    "gestion": {
+      "capitaineG": {
+        "uuid": "",
+        "nom": ""
+      },
+      "pilote": {
+        "uuid": "",
+        "nom": ""
+      },
+      "calfat": {
+        "uuid": "",
+        "nom": ""
+      },
+      "charpentier": {
+        "uuid": "",
+        "nom": ""
+      },
+      "voilier": {
+        "uuid": "",
+        "nom": ""
+      },
+      "chirurgien": {
+        "uuid": "",
+        "nom": ""
+      },
+      "quartierMaitreG": {
+        "uuid": "",
+        "nom": ""
+      },
+      "cambusier": {
+        "uuid": "",
+        "nom": ""
+      },
+      "grenadier": {
+        "uuid": "",
+        "nom": ""
+      },
+      "vigie": {
+        "uuid": "",
+        "nom": ""
+      }
+    },
+    "matelots": {
+      "manoeuvre": 3,
+      "ruse": 3,
+      "canonnade": 3,
+      "recharge": 3,
+      "combat": 3,
+      "tir": 3
+    },
+    "santeEquipage": {
+      "coches": 0
+    },
+    "possessions": {
+      "cartes": "",
+      "journaux": "",
+      "instruments": "",
+      "or": "",
+      "pavillons": "",
+      "otages": ""
+    },
+    "notes": ""
+  },
+  "items": [],
+  "effects": [],
+  "folder": "s2EXefKqZ8Ip9HR2",
+  "sort": 80,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.345",
+    "systemId": "pavillon-noir-2",
+    "systemVersion": "0.1.0",
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": null
+  },
+  "prototypeToken": {
+    "name": "Brick (Aviso)",
+    "actorLink": false,
+    "disposition": 0,
+    "texture": {
+      "src": "systems/pavillon-noir-2/assets/icons/navire.svg"
+    },
+    "displayName": 20,
+    "sight": {
+      "enabled": true
+    }
+  }
+}

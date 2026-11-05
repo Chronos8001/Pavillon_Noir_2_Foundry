@@ -1,0 +1,16 @@
+{
+  "TYPES": {
+    "Actor": {
+      "personnage": "Personnage",
+      "pnj": "PNJ",
+      "navire": "Navire"
+    },
+    "Item": {
+      "arme": "Arme",
+      "armure": "Armure",
+      "equipement": "Équipement",
+      "avantage": "Avantage / Faiblesse",
+      "manoeuvre": "Manœuvre d'escrime"
+    }
+  }
+}

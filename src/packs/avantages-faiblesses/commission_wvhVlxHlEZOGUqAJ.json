@@ -1,0 +1,32 @@
+{
+  "_id": "wvhVlxHlEZOGUqAJ",
+  "_key": "!items!wvhVlxHlEZOGUqAJ",
+  "name": "Commission",
+  "type": "avantage",
+  "img": "systems/pavillon-noir-2/assets/icons/equipement.svg",
+  "system": {
+    "description": "<p>Autorisation d'une activité sur un territoire et pour une durée donnés.</p>",
+    "source": "La Révolte",
+    "nature": "avantage",
+    "categorie": "Possessions",
+    "cout": "-1 PC",
+    "modificateurs": ""
+  },
+  "effects": [],
+  "folder": "gkEujYDoiQVr92oN",
+  "sort": 310,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.345",
+    "systemId": "pavillon-noir-2",
+    "systemVersion": "0.1.0",
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": null
+  }
+}

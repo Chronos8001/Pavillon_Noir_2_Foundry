@@ -1,0 +1,77 @@
+<section class="tab {{#if active}}active{{/if}}" data-group="primary" data-tab="combat">
+  <h2>Armes
+    <a class="pn2-mini-btn" data-action="itemCreate" data-type="arme" title="Créer une arme"><i class="fa-solid fa-plus"></i></a>
+    <a class="pn2-mini-btn" data-action="ouvrirCompendium" data-pack="equipement" title="Compendium d'équipement"><i class="fa-solid fa-book"></i></a>
+    <span class="posture">Posture : <select name="system.combat.posture">{{selectOptions config.postures selected=system.combat.posture}}</select></span>
+  </h2>
+  <table class="pn2-table armes">
+    <thead><tr><th></th><th>Nom</th><th>Compétence</th><th>Chances</th><th>Dégâts</th><th>Taille / Portée</th><th>Recharge</th><th title="Risque de long feu (sur D20) / dé de long feu">Long feu</th><th title="Équipée / main gauche">Main</th><th></th></tr></thead>
+    <tbody>
+    {{#each armes}}
+      <tr class="item" data-item-id="{{id}}">
+        <td><img src="{{img}}" width="24" height="24"></td>
+        <td><a class="rollable nom" data-action="attaque" title="Attaquer"><i class="fa-solid fa-dice-d10"></i> {{name}}</a></td>
+        <td>{{skill}} ({{niveau}})</td>
+        <td>{{chances}}{{#if system.modEff}} {{pn2Signed system.modEff}}D{{/if}}{{#if system.modFac}} F{{pn2Signed system.modFac}}{{/if}}</td>
+        <td><strong>{{pn2Signed degats}}</strong></td>
+        <td>{{#if system.portee}}{{system.portee}} m{{else}}{{taille}}{{/if}}</td>
+        <td>{{system.recharge}}</td>
+        <td>{{#if longFeu includeZero=true}}{{longFeu}} / {{deLongFeu}}{{/if}}</td>
+        <td>
+          <a data-action="itemToggle" data-field="system.equipee" title="Équipée" class="{{#if system.equipee}}on{{/if}}"><i class="fa-solid fa-hand-fist"></i></a>
+          <a data-action="itemToggle" data-field="system.mainGauche" title="Main gauche" class="{{#if system.mainGauche}}on{{/if}}"><i class="fa-solid fa-hand"></i></a>
+        </td>
+        <td><a data-action="itemEdit"><i class="fa-solid fa-pen"></i></a> <a data-action="itemDelete"><i class="fa-solid fa-trash"></i></a></td>
+      </tr>
+    {{else}}
+      <tr><td colspan="10" class="hint">Glissez des armes depuis le compendium « Équipement ».</td></tr>
+    {{/each}}
+    </tbody>
+  </table>
+  <p class="hint">Ciblez un jeton avant d'attaquer : la cible pourra parer, contre-attaquer ou esquiver depuis le chat. Les manœuvres d'escrime correspondant aux dés sont proposées automatiquement.</p>
+
+  <div class="pn2-columns">
+    <div class="col">
+      <h2>État de santé <a class="pn2-mini-btn" data-action="soinsTotal" title="Soigner toutes les blessures"><i class="fa-solid fa-kit-medical"></i></a></h2>
+      <div class="etats">
+        {{#each etats}}<div class="etat {{#if actif}}actif{{/if}}">{{label}}<span>{{#if malus includeZero=true}}{{malus}}{{else}}—{{/if}}</span></div>{{/each}}
+      </div>
+      <p class="hint">Cliquez sur les cases pour cocher les blessures (dans l'ordre : Légère, Sérieuse, Grave, Critique, Coma, Mortelle). Les cases noires n'existent pas pour cette Résistance ({{system.c.res}}).</p>
+      <div class="silhouette">
+        {{#each locs}}
+        <div class="localisation loc-{{key}} niveau-{{niveau}}" data-loc="{{key}}">
+          <div class="loc-titre">{{num}} — {{label}} <span class="etat-loc">{{etat}}</span></div>
+          <div class="cases">
+            {{#each cases}}
+              {{#if dispo}}<a class="case n-{{niveau}} {{#if coche}}cochee{{/if}}" data-action="blessure" data-index="{{index}}" title="{{niveau}}"></a>
+              {{else}}<span class="case n-{{niveau}} noircie"></span>{{/if}}
+            {{/each}}
+          </div>
+          <div class="legende-cases"><span>L</span><span>S</span><span>G</span><span>Cr</span><span>Co</span><span>M</span></div>
+          <div class="protection">Protec. : <strong>{{protection}}</strong> <span class="hint">(bonus manuel <input type="number" name="system.sante.loc.{{key}}.protection" value="{{protManuelle}}">)</span></div>
+        </div>
+        {{/each}}
+      </div>
+    </div>
+    <div class="col">
+      <h2>Armures <a class="pn2-mini-btn" data-action="itemCreate" data-type="armure"><i class="fa-solid fa-plus"></i></a></h2>
+      <ul class="item-list">
+        {{#each armures}}
+        <li class="item" data-item-id="{{id}}"><img src="{{img}}" width="20" height="20">
+          <a class="nom" data-action="itemShow">{{name}}</a> <span class="hint">{{locs}} (+{{system.protection}})</span>
+          <a data-action="itemToggle" data-field="system.equipee" class="{{#if system.equipee}}on{{/if}}" title="Portée"><i class="fa-solid fa-shirt"></i></a>
+          <a data-action="itemEdit"><i class="fa-solid fa-pen"></i></a><a data-action="itemDelete"><i class="fa-solid fa-trash"></i></a></li>
+        {{/each}}
+      </ul>
+      <h3>Rappels</h3>
+      <ul class="rappels">
+        <li>Dégâts = Marge de réussite + MD + bonus de l'arme − protection.</li>
+        <li>Corps à corps : arme longue vs courte à plus de 2 m : -2 / +2 (inversé à moins de 2 m).</li>
+        <li>Tir : -1 par segment complet de portée ; bout portant +2D ; viser +1D par Action.</li>
+        <li>Adversaire au sol +2, immobilisé +3, attaquant surélevé +1, obscurité -2 à -6.</li>
+        <li>Arme ou mousquet de la main gauche -3 (pistolet sans malus) ; deux armes -3.</li>
+        <li>Coma : tous les tests physiques échouent.</li>
+      </ul>
+    </div>
+  </div>
+</section>

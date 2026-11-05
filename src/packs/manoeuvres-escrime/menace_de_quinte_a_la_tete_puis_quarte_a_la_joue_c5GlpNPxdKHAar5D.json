@@ -1,0 +1,48 @@
+{
+  "_id": "c5GlpNPxdKHAar5D",
+  "_key": "!items!c5GlpNPxdKHAar5D",
+  "name": "Menacé de quinte à la tête, puis quarte à la joue",
+  "type": "manoeuvre",
+  "img": "systems/pavillon-noir-2/assets/icons/manoeuvre.svg",
+  "system": {
+    "description": "",
+    "source": "L'Art de l'escrime",
+    "escrime": "sabre",
+    "niveau": 2,
+    "combinaison": "5 5",
+    "effet": "Votre attaque est Facile (+2) (ne pas relancer les dés). Elle cible la Tête de votre adversaire. Recalculez votre réussite sans relancer les dés.",
+    "ecole": false,
+    "secondeMain": false,
+    "deuxMains": false,
+    "inadapte": "",
+    "peuAdapte": "",
+    "auto": {
+      "bonusD": 0,
+      "bonusFac": 2,
+      "malusFacAdv": 0,
+      "bonusS": 0,
+      "bonusDegats": 0,
+      "armure": 0,
+      "invulnerable": false,
+      "annuleAdv": false,
+      "choixLoc": false
+    }
+  },
+  "effects": [],
+  "folder": "a8DzpTvtn60u3Rud",
+  "sort": 990,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.345",
+    "systemId": "pavillon-noir-2",
+    "systemVersion": "0.1.0",
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": null
+  }
+}

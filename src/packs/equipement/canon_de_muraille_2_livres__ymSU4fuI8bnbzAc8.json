@@ -1,0 +1,32 @@
+{
+  "_id": "ymSU4fuI8bnbzAc8",
+  "_key": "!items!ymSU4fuI8bnbzAc8",
+  "name": "Canon de muraille (2 livres)",
+  "type": "equipement",
+  "img": "systems/pavillon-noir-2/assets/icons/arme.svg",
+  "system": {
+    "description": "<p>Poids 120 kg. 20 charges (boulets & mitraille) : 9 / ramé 15 pièces de huit. Canons de chasse : poids et prix × 1,5.</p>",
+    "source": "La Révolte",
+    "categorie": "Artillerie",
+    "quantite": 1,
+    "prix": "80",
+    "modificateur": ""
+  },
+  "effects": [],
+  "folder": "VdQHY7qXdU7A2Tha",
+  "sort": 680,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.345",
+    "systemId": "pavillon-noir-2",
+    "systemVersion": "0.1.0",
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": null
+  }
+}

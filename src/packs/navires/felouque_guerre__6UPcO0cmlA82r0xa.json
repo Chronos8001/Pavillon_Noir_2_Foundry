@@ -1,0 +1,248 @@
+{
+  "_id": "6UPcO0cmlA82r0xa",
+  "_key": "!actors!6UPcO0cmlA82r0xa",
+  "name": "Felouque (Guerre)",
+  "type": "navire",
+  "img": "systems/pavillon-noir-2/assets/icons/navire.svg",
+  "system": {
+    "modele": {
+      "type": "Felouque",
+      "configuration": "Guerre"
+    },
+    "infos": {
+      "capitaine": "",
+      "figureProue": "",
+      "greement": "Voiles latines (1, 2 ou 3 mâts), avirons",
+      "taille": "Sloop",
+      "mats": 1,
+      "tonnage": 45.0,
+      "tonnageUtile": 35.0,
+      "tirantEau": "1m",
+      "fonction": "Transport fluvial et navire de guerre maure",
+      "epoque": "Aventuriers (Méditerranée et Arabie), flibuste (Europe et Arabie), piraterie et Royale (rare dans les Indes ailleurs qu’",
+      "armement": "Guerre (24 matelots)",
+      "manoeuvrabilite": 0,
+      "avirons": "3 nœuds",
+      "vitMoyenne": 100.0,
+      "calibreMax": 3,
+      "longueur": "Immergée 20m, hors tout 24m"
+    },
+    "vitesses": {
+      "pres": 5.0,
+      "largue": 10.0,
+      "grandLargue": 8.0,
+      "ventArriere": 4.5
+    },
+    "qualites": {
+      "modVitesse": 0,
+      "modManoeuvre": 0
+    },
+    "navigation": {
+      "voilure": 0,
+      "vent": 0,
+      "allure": "largue"
+    },
+    "equipage": {
+      "max": 35,
+      "actuel": 24,
+      "convalescents": 0,
+      "manoeuvre": 11,
+      "recharge": 24,
+      "gardesMarines": 0,
+      "soldats": 0
+    },
+    "reserves": {
+      "eau": 45,
+      "vivres": 60,
+      "vivresFrais": 3,
+      "bois": 60,
+      "munitions": 20,
+      "trousse": 200
+    },
+    "cargaison": {},
+    "carenage": 0,
+    "structure": {
+      "mature": {
+        "max": 7,
+        "artimon": 7,
+        "grandMat": 7,
+        "misaine": 7
+      },
+      "coque": {
+        "max": 7,
+        "poupe": 7,
+        "babord": 7,
+        "tribord": 7,
+        "proue": 7
+      }
+    },
+    "batteries": {
+      "e7qam6hcSJDVStKh": {
+        "nom": "Bordée — 2×3 pièces de 3",
+        "position": "bordée",
+        "nombre": 0,
+        "calibre": 3,
+        "vd": 2,
+        "hommes": 9,
+        "modRecharge": 1,
+        "tonnage": 3.6,
+        "munition": "boulet",
+        "chargee": true,
+        "restant": 0,
+        "cote": "babord",
+        "ordre": 0,
+        "description": "2×3 pièces de 3"
+      },
+      "8ycCIeIYlaSUrrdW": {
+        "nom": "Bordée — 2×1 canon de muraille",
+        "position": "muraille",
+        "nombre": 0,
+        "calibre": 2,
+        "vd": -4,
+        "hommes": 2,
+        "modRecharge": 2,
+        "tonnage": 0,
+        "munition": "boulet",
+        "chargee": true,
+        "restant": 0,
+        "cote": "babord",
+        "ordre": 1,
+        "description": "2×1 canon de muraille"
+      },
+      "IxyJm7kSQygDDyit": {
+        "nom": "Chasse — 2 canon de muraille (prises sur la bordée)",
+        "position": "muraille",
+        "nombre": 0,
+        "calibre": 2,
+        "vd": -1,
+        "hommes": 4,
+        "modRecharge": 2,
+        "tonnage": 0,
+        "munition": "boulet",
+        "chargee": true,
+        "restant": 0,
+        "cote": "babord",
+        "ordre": 2,
+        "description": "2 canon de muraille (prises sur la bordée)"
+      }
+    },
+    "commandement": {
+      "capitaine": {
+        "uuid": "",
+        "nom": ""
+      },
+      "second": {
+        "uuid": "",
+        "nom": ""
+      },
+      "canonnier": {
+        "uuid": "",
+        "nom": ""
+      },
+      "quartierMaitre": {
+        "uuid": "",
+        "nom": ""
+      },
+      "maitreEquipage": {
+        "uuid": "",
+        "nom": ""
+      },
+      "maitreCanonnier": {
+        "uuid": "",
+        "nom": ""
+      }
+    },
+    "gestion": {
+      "capitaineG": {
+        "uuid": "",
+        "nom": ""
+      },
+      "pilote": {
+        "uuid": "",
+        "nom": ""
+      },
+      "calfat": {
+        "uuid": "",
+        "nom": ""
+      },
+      "charpentier": {
+        "uuid": "",
+        "nom": ""
+      },
+      "voilier": {
+        "uuid": "",
+        "nom": ""
+      },
+      "chirurgien": {
+        "uuid": "",
+        "nom": ""
+      },
+      "quartierMaitreG": {
+        "uuid": "",
+        "nom": ""
+      },
+      "cambusier": {
+        "uuid": "",
+        "nom": ""
+      },
+      "grenadier": {
+        "uuid": "",
+        "nom": ""
+      },
+      "vigie": {
+        "uuid": "",
+        "nom": ""
+      }
+    },
+    "matelots": {
+      "manoeuvre": 3,
+      "ruse": 3,
+      "canonnade": 3,
+      "recharge": 3,
+      "combat": 3,
+      "tir": 3
+    },
+    "santeEquipage": {
+      "coches": 0
+    },
+    "possessions": {
+      "cartes": "",
+      "journaux": "",
+      "instruments": "",
+      "or": "",
+      "pavillons": "",
+      "otages": ""
+    },
+    "notes": ""
+  },
+  "items": [],
+  "effects": [],
+  "folder": "47PQsdqVNHPJIYei",
+  "sort": 360,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.345",
+    "systemId": "pavillon-noir-2",
+    "systemVersion": "0.1.0",
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": null
+  },
+  "prototypeToken": {
+    "name": "Felouque (Guerre)",
+    "actorLink": false,
+    "disposition": 0,
+    "texture": {
+      "src": "systems/pavillon-noir-2/assets/icons/navire.svg"
+    },
+    "displayName": 20,
+    "sight": {
+      "enabled": true
+    }
+  }
+}

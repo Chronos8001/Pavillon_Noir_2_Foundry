@@ -1,0 +1,48 @@
+{
+  "_id": "UDceAm47HB0WV9Ud",
+  "_key": "!items!UDceAm47HB0WV9Ud",
+  "name": "Charge",
+  "type": "manoeuvre",
+  "img": "systems/pavillon-noir-2/assets/icons/manoeuvre.svg",
+  "system": {
+    "description": "",
+    "source": "L'Art de l'escrime",
+    "escrime": "baionnette",
+    "niveau": 2,
+    "combinaison": "1 5",
+    "effet": "Votre attaque est Facile (+2) tandis que celle de votre adversaire est Difficile (-2) (ne pas relancer les dés).",
+    "ecole": false,
+    "secondeMain": false,
+    "deuxMains": false,
+    "inadapte": "",
+    "peuAdapte": "",
+    "auto": {
+      "bonusD": 0,
+      "bonusFac": 2,
+      "malusFacAdv": 2,
+      "bonusS": 0,
+      "bonusDegats": 0,
+      "armure": 0,
+      "invulnerable": false,
+      "annuleAdv": false,
+      "choixLoc": false
+    }
+  },
+  "effects": [],
+  "folder": "JSC2CFfY3kquwlgh",
+  "sort": 1320,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.345",
+    "systemId": "pavillon-noir-2",
+    "systemVersion": "0.1.0",
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": null
+  }
+}

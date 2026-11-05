@@ -1,0 +1,75 @@
+<section class="tab {{#if active}}active{{/if}}" data-group="primary" data-tab="navire">
+  <div class="pn2-columns">
+    <div class="col">
+      <h2>Le navire</h2>
+      <div class="grid-2">
+        <div class="ligne"><label>Capitaine</label><input type="text" name="system.infos.capitaine" value="{{system.infos.capitaine}}"></div>
+        <div class="ligne"><label>Figure de proue</label><input type="text" name="system.infos.figureProue" value="{{system.infos.figureProue}}"></div>
+        <div class="ligne"><label>Gréement</label><input type="text" name="system.infos.greement" value="{{system.infos.greement}}"></div>
+        <div class="ligne"><label>Catégorie de taille</label><select name="system.infos.taille">{{selectOptions tailles selected=system.infos.taille}}</select></div>
+        <div class="ligne"><label>Nombre de mâts</label><input type="number" name="system.infos.mats" value="{{system.infos.mats}}" min="0" max="3"></div>
+        <div class="ligne"><label>Tirant d'eau</label><input type="text" name="system.infos.tirantEau" value="{{system.infos.tirantEau}}"></div>
+        <div class="ligne"><label>Tonnage (tonneaux)</label><input type="number" step="any" name="system.infos.tonnage" value="{{system.infos.tonnage}}"></div>
+        <div class="ligne"><label>Tonnage utile</label><input type="number" step="any" name="system.infos.tonnageUtile" value="{{system.infos.tonnageUtile}}"></div>
+        <div class="ligne"><label>Longueur</label><input type="text" name="system.infos.longueur" value="{{system.infos.longueur}}"></div>
+        <div class="ligne"><label>Calibre maximal</label><input type="number" step="any" name="system.infos.calibreMax" value="{{system.infos.calibreMax}}"></div>
+        <div class="ligne"><label>Fonction</label><input type="text" name="system.infos.fonction" value="{{system.infos.fonction}}"></div>
+        <div class="ligne"><label>Époque</label><input type="text" name="system.infos.epoque" value="{{system.infos.epoque}}"></div>
+        <div class="ligne"><label>Armement</label><input type="text" name="system.infos.armement" value="{{system.infos.armement}}"></div>
+        <div class="ligne"><label>Rotation max. / Tour</label><span>{{system.tailleInfo.rotation}}</span></div>
+      </div>
+
+      <h2>Équipage</h2>
+      <div class="grid-2">
+        <div class="ligne"><label>Équipage maximal</label><input type="number" name="system.equipage.max" value="{{system.equipage.max}}"></div>
+        <div class="ligne"><label>Équipage actuel</label><input type="number" name="system.equipage.actuel" value="{{system.equipage.actuel}}"></div>
+        <div class="ligne"><label>Minimal pour manœuvrer</label><input type="number" name="system.equipage.manoeuvre" value="{{system.equipage.manoeuvre}}"></div>
+        <div class="ligne"><label>Minimal pour recharger (matelots)</label><input type="number" name="system.equipage.recharge" value="{{system.equipage.recharge}}"></div>
+        <div class="ligne"><label>Convalescents</label><input type="number" name="system.equipage.convalescents" value="{{system.equipage.convalescents}}"></div>
+        <div class="ligne"><label>Gardes-marines / soldats</label><span><input type="number" class="court" name="system.equipage.gardesMarines" value="{{system.equipage.gardesMarines}}"> / <input type="number" class="court" name="system.equipage.soldats" value="{{system.equipage.soldats}}"></span></div>
+      </div>
+      {{#if system.malusEquipageManoeuvre}}<p class="alerte">Équipage insuffisant pour manœuvrer : {{system.malusEquipageManoeuvre}} aux Tests de Manœuvre.</p>{{/if}}
+
+      <h2>Réserves</h2>
+      <div class="grid-2 reserves">
+        <div class="ligne"><label>Eau (jours, /45)</label><input type="number" step="any" name="system.reserves.eau" value="{{system.reserves.eau}}"></div>
+        <div class="ligne"><label>Vivres (jours, /60)</label><input type="number" step="any" name="system.reserves.vivres" value="{{system.reserves.vivres}}"></div>
+        <div class="ligne"><label>Vivres frais (jours, /3)</label><input type="number" step="any" name="system.reserves.vivresFrais" value="{{system.reserves.vivresFrais}}"></div>
+        <div class="ligne"><label>Bois (jours, /60)</label><input type="number" step="any" name="system.reserves.bois" value="{{system.reserves.bois}}"></div>
+        <div class="ligne"><label>Boulets & poudre (bordées, /20)</label><input type="number" step="any" name="system.reserves.munitions" value="{{system.reserves.munitions}}"></div>
+        <div class="ligne"><label>Trousse de soins (blessés, /200)</label><input type="number" step="any" name="system.reserves.trousse" value="{{system.reserves.trousse}}"></div>
+      </div>
+    </div>
+    <div class="col">
+      <h2>Navigation</h2>
+      <div class="grid-2">
+        <div class="ligne"><label>Manœuvrabilité de base</label><input type="number" name="system.infos.manoeuvrabilite" value="{{system.infos.manoeuvrabilite}}"></div>
+        <div class="ligne"><label>Vitesse moyenne (milles/jour)</label><input type="number" step="any" name="system.infos.vitMoyenne" value="{{system.infos.vitMoyenne}}"></div>
+        <div class="ligne"><label>Voilure</label><select name="system.navigation.voilure">{{selectOptions voilures selected=system.navigation.voilure}}</select></div>
+        <div class="ligne"><label>Force du vent</label><select name="system.navigation.vent">{{selectOptions vents selected=system.navigation.vent}}</select></div>
+        <div class="ligne"><label>Allure</label><select name="system.navigation.allure">{{selectOptions allures selected=system.navigation.allure}}</select></div>
+        <div class="ligne"><label>Avirons</label><input type="text" name="system.infos.avirons" value="{{system.infos.avirons}}"></div>
+        <div class="ligne"><label>Qualités : mod. vitesse</label><input type="number" name="system.qualites.modVitesse" value="{{system.qualites.modVitesse}}"></div>
+        <div class="ligne"><label>Qualités : mod. manœuvre</label><input type="number" name="system.qualites.modManoeuvre" value="{{system.qualites.modManoeuvre}}"></div>
+      </div>
+      {{#if ventSpecial}}<p class="hint">{{ventSpecial}}</p>{{/if}}
+      <table class="pn2-table vitesses">
+        <thead><tr><th>Allure</th><th>Base (nœuds)</th><th>Effective</th></tr></thead>
+        {{#each allureList}}
+        <tr class="{{#if actif}}actif{{/if}}"><td>{{label}}</td><td><input type="number" step="any" name="system.vitesses.{{key}}" value="{{base}}"></td><td><strong>{{eff}}</strong></td></tr>
+        {{/each}}
+      </table>
+      <p class="hint">Modificateur total de vitesse : {{pn2Signed system.modNav.vitesse}} (mâture {{system.etatMature.malus}}, encombrement {{pn2Signed system.charge.modVitesse}}, carénage {{pn2Signed system.carenageMod}}). Distance par Tour de combat naval = vitesse × 50 m.</p>
+
+      <h2>Charge et carénage</h2>
+      <div class="grid-2">
+        <div class="ligne"><label>Canons (T)</label><span>{{system.charge.canons}}</span></div>
+        <div class="ligne"><label>Cargaison (T)</label><span>{{system.charge.cargaison}}</span></div>
+        <div class="ligne"><label>Charge totale</label><span>{{system.charge.total}} / {{system.infos.tonnageUtile}} T ({{system.charge.pourcent}} %)</span></div>
+        <div class="ligne"><label>Encombrement</label><span>{{pn2Signed system.charge.modVitesse}} en vitesse</span></div>
+        <div class="ligne"><label>Dernier carénage (mois)</label><input type="number" name="system.carenage" value="{{system.carenage}}" min="0"></div>
+        <div class="ligne"><label>Effet du carénage</label><span>{{pn2Signed system.carenageMod}} en vitesse</span></div>
+      </div>
+    </div>
+  </div>
+</section>

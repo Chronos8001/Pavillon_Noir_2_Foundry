@@ -1,0 +1,777 @@
+{
+  "_id": "rxNaxrieEfWWtuuk",
+  "_key": "!actors!rxNaxrieEfWWtuuk",
+  "name": "Pirate illustre",
+  "type": "pnj",
+  "img": "systems/pavillon-noir-2/assets/icons/pnj.svg",
+  "system": {
+    "caracs": {
+      "adr": {
+        "value": 5
+      },
+      "for": {
+        "value": 5
+      },
+      "res": {
+        "value": 7
+      },
+      "ada": {
+        "value": 5
+      },
+      "eru": {
+        "value": 5
+      },
+      "per": {
+        "value": 5
+      },
+      "cha": {
+        "value": 8
+      },
+      "exp": {
+        "value": 5
+      },
+      "pou": {
+        "value": 5
+      }
+    },
+    "infos": {
+      "titre": "",
+      "profession": "",
+      "poste": "",
+      "peuple": "",
+      "origines": "",
+      "jeunesse": "",
+      "religion": "",
+      "age": "",
+      "taille": "",
+      "poids": "",
+      "surnom": "",
+      "description": ""
+    },
+    "metier": {
+      "nom": "",
+      "carac1": "adr",
+      "carac2": "per"
+    },
+    "secondaires": {
+      "actionsBonus": 0,
+      "initiativeBonus": 0,
+      "chanceBonus": 0
+    },
+    "skills": {
+      "balistique": {
+        "value": 3,
+        "xp": false
+      },
+      "cartographie": {
+        "value": 0,
+        "xp": false
+      },
+      "commerce": {
+        "value": 2,
+        "xp": false
+      },
+      "droit": {
+        "value": 0,
+        "xp": false
+      },
+      "geographie": {
+        "value": 3,
+        "xp": false
+      },
+      "histoire": {
+        "value": 2,
+        "xp": false
+      },
+      "herboristerie": {
+        "value": 0,
+        "xp": false
+      },
+      "ingenierieNavale": {
+        "value": 2,
+        "xp": false
+      },
+      "intendance": {
+        "value": 0,
+        "xp": false
+      },
+      "lireEcrire": {
+        "value": 0,
+        "xp": false
+      },
+      "medecine": {
+        "value": 0,
+        "xp": false
+      },
+      "sciences": {
+        "value": 0,
+        "xp": false
+      },
+      "tactique": {
+        "value": 0,
+        "xp": false
+      },
+      "pointage": {
+        "value": 6,
+        "xp": false
+      },
+      "recharge": {
+        "value": 3,
+        "xp": false
+      },
+      "calfatage": {
+        "value": 0,
+        "xp": false
+      },
+      "charpenterie": {
+        "value": 0,
+        "xp": false
+      },
+      "voilerie": {
+        "value": 0,
+        "xp": false
+      },
+      "cuisine": {
+        "value": 0,
+        "xp": false
+      },
+      "chasse": {
+        "value": 0,
+        "xp": false
+      },
+      "chirurgie": {
+        "value": 0,
+        "xp": false
+      },
+      "dressage": {
+        "value": 0,
+        "xp": false
+      },
+      "premiersSoins": {
+        "value": 3,
+        "xp": false
+      },
+      "connNautiques": {
+        "value": 4,
+        "xp": false
+      },
+      "connNavires": {
+        "value": 0,
+        "xp": false
+      },
+      "connSignalisation": {
+        "value": 0,
+        "xp": false
+      },
+      "hydrographie": {
+        "value": 4,
+        "xp": false
+      },
+      "navigation": {
+        "value": 3,
+        "xp": false
+      },
+      "peche": {
+        "value": 2,
+        "xp": false
+      },
+      "pratiqueNautique": {
+        "value": 3,
+        "xp": false
+      },
+      "timonerie": {
+        "value": 0,
+        "xp": false
+      },
+      "acrobatie": {
+        "value": 5,
+        "xp": false
+      },
+      "athletisme": {
+        "value": 0,
+        "xp": false
+      },
+      "discretion": {
+        "value": 3,
+        "xp": false
+      },
+      "equitation": {
+        "value": 0,
+        "xp": false
+      },
+      "larcins": {
+        "value": 0,
+        "xp": false
+      },
+      "natation": {
+        "value": 1,
+        "xp": false
+      },
+      "survie": {
+        "value": 0,
+        "xp": false
+      },
+      "vigilance": {
+        "value": 3,
+        "xp": false
+      },
+      "comedie": {
+        "value": 2,
+        "xp": false
+      },
+      "empathie": {
+        "value": 3,
+        "xp": false
+      },
+      "enseignement": {
+        "value": 4,
+        "xp": false
+      },
+      "etiquette": {
+        "value": 0,
+        "xp": false
+      },
+      "intimidation": {
+        "value": 4,
+        "xp": false
+      },
+      "jeu": {
+        "value": 0,
+        "xp": false
+      },
+      "meneurHommes": {
+        "value": 5,
+        "xp": false
+      },
+      "persuasion": {
+        "value": 3,
+        "xp": false
+      },
+      "politique": {
+        "value": 0,
+        "xp": false
+      },
+      "seduction": {
+        "value": 0,
+        "xp": false
+      },
+      "mousquet": {
+        "value": 3,
+        "xp": false
+      },
+      "pistolet": {
+        "value": 4,
+        "xp": false
+      },
+      "grenade": {
+        "value": 0,
+        "xp": false
+      },
+      "mainsNues": {
+        "value": 0,
+        "xp": false
+      },
+      "escrime": {
+        "value": 4,
+        "xp": false
+      },
+      "esquive": {
+        "value": 2,
+        "xp": false
+      }
+    },
+    "specs": {
+      "q5uyVpdnNqierYjO": {
+        "group": "langues",
+        "name": "Langue étrangère",
+        "value": 3,
+        "xp": false,
+        "metier": false,
+        "carac": ""
+      },
+      "RvfbfOHpsQ0ZCEMm": {
+        "group": "connMarins",
+        "name": "Connaissance des marins",
+        "value": 3,
+        "xp": false,
+        "metier": false,
+        "carac": ""
+      },
+      "0JHgVULuNoM4AQfE": {
+        "group": "connColons",
+        "name": "Connaissance des colons",
+        "value": 2,
+        "xp": false,
+        "metier": false,
+        "carac": ""
+      },
+      "Q6eNOsLuWmZ3Bjcd": {
+        "group": "armesBlanches",
+        "name": "Dague",
+        "value": 4,
+        "xp": false,
+        "metier": false,
+        "carac": ""
+      },
+      "0mK8sZRs8jchWZBo": {
+        "group": "armesBlanches",
+        "name": "Rapière",
+        "value": 4,
+        "xp": false,
+        "metier": false,
+        "carac": ""
+      },
+      "yQYSwJKcvmc0X66A": {
+        "group": "armesBlanches",
+        "name": "Sabre",
+        "value": 0,
+        "xp": false,
+        "metier": false,
+        "carac": ""
+      },
+      "nwoAfK6YBSZWQk9k": {
+        "group": "armesBlanches",
+        "name": "Hache",
+        "value": 6,
+        "xp": false,
+        "metier": false,
+        "carac": ""
+      }
+    },
+    "armesFeuMetier": false,
+    "escrime": {
+      "epee": {
+        "value": 0,
+        "xp": 0,
+        "predilection": false,
+        "pointsBonus": 0
+      },
+      "dague": {
+        "value": 0,
+        "xp": 0,
+        "predilection": false,
+        "pointsBonus": 0
+      },
+      "deuxarmes": {
+        "value": 0,
+        "xp": 0,
+        "predilection": false,
+        "pointsBonus": 0
+      },
+      "sabre": {
+        "value": 0,
+        "xp": 0,
+        "predilection": false,
+        "pointsBonus": 0
+      },
+      "baionnette": {
+        "value": 0,
+        "xp": 0,
+        "predilection": false,
+        "pointsBonus": 0
+      },
+      "hache": {
+        "value": 0,
+        "xp": 0,
+        "predilection": false,
+        "pointsBonus": 0
+      },
+      "pont": {
+        "value": 0,
+        "xp": 0,
+        "predilection": false,
+        "pointsBonus": 0
+      },
+      "destreza": {
+        "value": 0,
+        "xp": 0,
+        "predilection": false,
+        "pointsBonus": 0
+      },
+      "ecole": "",
+      "arme": ""
+    },
+    "sante": {
+      "loc": {
+        "jambeG": {
+          "coches": 0,
+          "protection": 0
+        },
+        "jambeD": {
+          "coches": 0,
+          "protection": 0
+        },
+        "torse": {
+          "coches": 0,
+          "protection": 0
+        },
+        "brasG": {
+          "coches": 0,
+          "protection": 0
+        },
+        "brasD": {
+          "coches": 0,
+          "protection": 0
+        },
+        "tete": {
+          "coches": 0,
+          "protection": 0
+        }
+      }
+    },
+    "reputation": {
+      "gloire": {
+        "score": 0,
+        "depenses": 0
+      },
+      "infamie": {
+        "score": 0,
+        "depenses": 0
+      }
+    },
+    "combat": {
+      "posture": "attentive"
+    },
+    "richesse": {
+      "pieces": 5
+    },
+    "contacts": "",
+    "notes": "",
+    "biographie": "",
+    "facilites": {
+      "connaissances": 7,
+      "techniques": 5,
+      "maritimes": 8,
+      "physiques": 6,
+      "sociales": 8,
+      "combat": 7
+    },
+    "role": "Pirate illustre",
+    "importance": "mineure"
+  },
+  "items": [
+    {
+      "name": "Mousquet",
+      "type": "arme",
+      "img": "systems/pavillon-noir-2/assets/icons/armefeu.svg",
+      "system": {
+        "description": "",
+        "source": "La Révolte",
+        "categorie": "tir",
+        "competence": "mousquet",
+        "specialite": "",
+        "carac": "per",
+        "modEff": 0,
+        "modFac": 0,
+        "md": "adr",
+        "degats": 2,
+        "taille": "longue",
+        "mains": 1,
+        "portee": 40,
+        "recharge": "5 Tours",
+        "cibles": "",
+        "qualite": "normale",
+        "bonusAbordage": false,
+        "escrime": "autre",
+        "longFeuMod": 0,
+        "equipee": true,
+        "mainGauche": false,
+        "prix": "Mauvaise 10 / Bonne 18 / Exceptionnelle 30",
+        "quantite": 1
+      },
+      "_id": "cLkxWLbRmsa1c3mH",
+      "_key": "!actors.items!rxNaxrieEfWWtuuk.cLkxWLbRmsa1c3mH",
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "coreVersion": "13.345",
+        "systemId": "pavillon-noir-2",
+        "systemVersion": "0.1.0",
+        "createdTime": 0,
+        "modifiedTime": 0,
+        "lastModifiedBy": null
+      }
+    },
+    {
+      "name": "Pistolet",
+      "type": "arme",
+      "img": "systems/pavillon-noir-2/assets/icons/armefeu.svg",
+      "system": {
+        "description": "",
+        "source": "La Révolte",
+        "categorie": "tir",
+        "competence": "pistolet",
+        "specialite": "",
+        "carac": "per",
+        "modEff": 0,
+        "modFac": 0,
+        "md": "adr",
+        "degats": 1,
+        "taille": "longue",
+        "mains": 1,
+        "portee": 10,
+        "recharge": "5 Tours",
+        "cibles": "",
+        "qualite": "normale",
+        "bonusAbordage": false,
+        "escrime": "autre",
+        "longFeuMod": 0,
+        "equipee": true,
+        "mainGauche": false,
+        "prix": "Pistolet de ceinture : mauvaise 6 / bonne 12 / exceptionnelle 20",
+        "quantite": 1
+      },
+      "_id": "Zg77gRYlQ3pcuwB8",
+      "_key": "!actors.items!rxNaxrieEfWWtuuk.Zg77gRYlQ3pcuwB8",
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "coreVersion": "13.345",
+        "systemId": "pavillon-noir-2",
+        "systemVersion": "0.1.0",
+        "createdTime": 0,
+        "modifiedTime": 0,
+        "lastModifiedBy": null
+      }
+    },
+    {
+      "name": "Dague / main gauche",
+      "type": "arme",
+      "img": "systems/pavillon-noir-2/assets/icons/arme.svg",
+      "system": {
+        "description": "",
+        "source": "La Révolte",
+        "categorie": "blanche",
+        "competence": "armesBlanches",
+        "specialite": "Dague",
+        "carac": "ada",
+        "modEff": 0,
+        "modFac": 0,
+        "md": "adr",
+        "degats": 1,
+        "taille": "courte",
+        "mains": 1,
+        "portee": 0,
+        "recharge": "",
+        "cibles": "",
+        "qualite": "normale",
+        "bonusAbordage": false,
+        "escrime": "dague",
+        "longFeuMod": 0,
+        "equipee": true,
+        "mainGauche": false,
+        "prix": "Mauvaise 0,2 / Bonne 0,8",
+        "quantite": 1
+      },
+      "_id": "jXzZGX0XiHRuFI0l",
+      "_key": "!actors.items!rxNaxrieEfWWtuuk.jXzZGX0XiHRuFI0l",
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "coreVersion": "13.345",
+        "systemId": "pavillon-noir-2",
+        "systemVersion": "0.1.0",
+        "createdTime": 0,
+        "modifiedTime": 0,
+        "lastModifiedBy": null
+      }
+    },
+    {
+      "name": "Rapière",
+      "type": "arme",
+      "img": "systems/pavillon-noir-2/assets/icons/manoeuvre.svg",
+      "system": {
+        "description": "<p>Arme reine de l'escrime. Porter une rapière sans être noble est hors-la-loi.</p>",
+        "source": "La Révolte",
+        "categorie": "blanche",
+        "competence": "armesBlanches",
+        "specialite": "Rapière",
+        "carac": "ada",
+        "modEff": 0,
+        "modFac": 0,
+        "md": "adr",
+        "degats": 1,
+        "taille": "longue",
+        "mains": 1,
+        "portee": 0,
+        "recharge": "",
+        "cibles": "",
+        "qualite": "normale",
+        "bonusAbordage": false,
+        "escrime": "epee",
+        "longFeuMod": 0,
+        "equipee": true,
+        "mainGauche": false,
+        "prix": "Mauvaise 1 / Bonne 3 / Exceptionnelle 30",
+        "quantite": 1
+      },
+      "_id": "U696hSbZDg61NOmt",
+      "_key": "!actors.items!rxNaxrieEfWWtuuk.U696hSbZDg61NOmt",
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "coreVersion": "13.345",
+        "systemId": "pavillon-noir-2",
+        "systemVersion": "0.1.0",
+        "createdTime": 0,
+        "modifiedTime": 0,
+        "lastModifiedBy": null
+      }
+    },
+    {
+      "name": "Sabre",
+      "type": "arme",
+      "img": "systems/pavillon-noir-2/assets/icons/arme.svg",
+      "system": {
+        "description": "<p>Maître de l'abordage.</p>",
+        "source": "La Révolte",
+        "categorie": "blanche",
+        "competence": "armesBlanches",
+        "specialite": "Sabre",
+        "carac": "adr",
+        "modEff": 0,
+        "modFac": 0,
+        "md": "for",
+        "degats": 1,
+        "taille": "longue",
+        "mains": 1,
+        "portee": 0,
+        "recharge": "",
+        "cibles": "",
+        "qualite": "normale",
+        "bonusAbordage": false,
+        "escrime": "sabre",
+        "longFeuMod": 0,
+        "equipee": true,
+        "mainGauche": false,
+        "prix": "Mauvaise 1 / Bonne 1,8 / Exceptionnelle 15",
+        "quantite": 1
+      },
+      "_id": "Ib11tGc3rEjCLP79",
+      "_key": "!actors.items!rxNaxrieEfWWtuuk.Ib11tGc3rEjCLP79",
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "coreVersion": "13.345",
+        "systemId": "pavillon-noir-2",
+        "systemVersion": "0.1.0",
+        "createdTime": 0,
+        "modifiedTime": 0,
+        "lastModifiedBy": null
+      }
+    },
+    {
+      "name": "Hache d'abordage",
+      "type": "arme",
+      "img": "systems/pavillon-noir-2/assets/icons/arme.svg",
+      "system": {
+        "description": "",
+        "source": "La Révolte",
+        "categorie": "blanche",
+        "competence": "armesBlanches",
+        "specialite": "Hache",
+        "carac": "for",
+        "modEff": 0,
+        "modFac": 0,
+        "md": "for",
+        "degats": 1,
+        "taille": "longue",
+        "mains": 1,
+        "portee": 0,
+        "recharge": "",
+        "cibles": "",
+        "qualite": "normale",
+        "bonusAbordage": false,
+        "escrime": "hache",
+        "longFeuMod": 0,
+        "equipee": true,
+        "mainGauche": false,
+        "prix": "Mauvaise 0,5 / Bonne 2",
+        "quantite": 1
+      },
+      "_id": "QibIVixK126uMLw7",
+      "_key": "!actors.items!rxNaxrieEfWWtuuk.QibIVixK126uMLw7",
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "coreVersion": "13.345",
+        "systemId": "pavillon-noir-2",
+        "systemVersion": "0.1.0",
+        "createdTime": 0,
+        "modifiedTime": 0,
+        "lastModifiedBy": null
+      }
+    }
+  ],
+  "effects": [],
+  "folder": "buUNRR89OTHmp0qO",
+  "sort": 50,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.345",
+    "systemId": "pavillon-noir-2",
+    "systemVersion": "0.1.0",
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": null
+  },
+  "prototypeToken": {
+    "name": "Pirate illustre",
+    "actorLink": false,
+    "disposition": -1,
+    "texture": {
+      "src": "systems/pavillon-noir-2/assets/icons/pnj.svg"
+    },
+    "displayName": 20,
+    "sight": {
+      "enabled": true
+    }
+  }
+}

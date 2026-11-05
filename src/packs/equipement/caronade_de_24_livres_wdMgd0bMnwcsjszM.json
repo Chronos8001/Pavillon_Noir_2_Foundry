@@ -1,0 +1,32 @@
+{
+  "_id": "wdMgd0bMnwcsjszM",
+  "_key": "!items!wdMgd0bMnwcsjszM",
+  "name": "Caronade de 24 livres",
+  "type": "equipement",
+  "img": "systems/pavillon-noir-2/assets/icons/arme.svg",
+  "system": {
+    "description": "<p>Poids 550 kg. 20 charges (boulets & mitraille) : 101 pièces de huit. Uniquement à partir de la fin du XVIIIe siècle.</p>",
+    "source": "La Révolte",
+    "categorie": "Artillerie",
+    "quantite": 1,
+    "prix": "450",
+    "modificateur": ""
+  },
+  "effects": [],
+  "folder": "VdQHY7qXdU7A2Tha",
+  "sort": 720,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.345",
+    "systemId": "pavillon-noir-2",
+    "systemVersion": "0.1.0",
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": null
+  }
+}

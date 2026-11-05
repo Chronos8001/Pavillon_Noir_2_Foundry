@@ -1,0 +1,199 @@
+{
+  "_id": "JEk2qCAixnpT4OBX",
+  "_key": "!actors!JEk2qCAixnpT4OBX",
+  "name": "Petit Prao ou Pirogue (Petit prao)",
+  "type": "navire",
+  "img": "systems/pavillon-noir-2/assets/icons/navire.svg",
+  "system": {
+    "modele": {
+      "type": "Petit Prao ou Pirogue",
+      "configuration": "Petit prao"
+    },
+    "infos": {
+      "capitaine": "",
+      "figureProue": "",
+      "greement": "Assimilé à une voile latine (1 mât), avirons",
+      "taille": "Chaloupe",
+      "mats": 1,
+      "tonnage": 1.0,
+      "tonnageUtile": 1.0,
+      "tirantEau": "0.5m (petits praos) et entre 20cm et 1m ",
+      "fonction": "Pirogue de pêche et de guerre, pirates",
+      "epoque": "Toutes périodes (Mers du Sud) pour les petits praos ; toutes les périodes pour les pirogues",
+      "armement": "Petit prao (1 matelot)",
+      "manoeuvrabilite": 2,
+      "avirons": "",
+      "vitMoyenne": 120.0,
+      "calibreMax": 0,
+      "longueur": "Immergée 10m, hors tout 12m (petits "
+    },
+    "vitesses": {
+      "pres": 10.0,
+      "largue": 18.0,
+      "grandLargue": 15.0,
+      "ventArriere": 8.5
+    },
+    "qualites": {
+      "modVitesse": 0,
+      "modManoeuvre": 0
+    },
+    "navigation": {
+      "voilure": 0,
+      "vent": 0,
+      "allure": "largue"
+    },
+    "equipage": {
+      "max": 4,
+      "actuel": 1,
+      "convalescents": 0,
+      "manoeuvre": 1,
+      "recharge": 1,
+      "gardesMarines": 0,
+      "soldats": 0
+    },
+    "reserves": {
+      "eau": 45,
+      "vivres": 60,
+      "vivresFrais": 3,
+      "bois": 60,
+      "munitions": 20,
+      "trousse": 200
+    },
+    "cargaison": {},
+    "carenage": 0,
+    "structure": {
+      "mature": {
+        "max": 1,
+        "artimon": 1,
+        "grandMat": 1,
+        "misaine": 1
+      },
+      "coque": {
+        "max": 1,
+        "poupe": 1,
+        "babord": 1,
+        "tribord": 1,
+        "proue": 1
+      }
+    },
+    "batteries": {},
+    "commandement": {
+      "capitaine": {
+        "uuid": "",
+        "nom": ""
+      },
+      "second": {
+        "uuid": "",
+        "nom": ""
+      },
+      "canonnier": {
+        "uuid": "",
+        "nom": ""
+      },
+      "quartierMaitre": {
+        "uuid": "",
+        "nom": ""
+      },
+      "maitreEquipage": {
+        "uuid": "",
+        "nom": ""
+      },
+      "maitreCanonnier": {
+        "uuid": "",
+        "nom": ""
+      }
+    },
+    "gestion": {
+      "capitaineG": {
+        "uuid": "",
+        "nom": ""
+      },
+      "pilote": {
+        "uuid": "",
+        "nom": ""
+      },
+      "calfat": {
+        "uuid": "",
+        "nom": ""
+      },
+      "charpentier": {
+        "uuid": "",
+        "nom": ""
+      },
+      "voilier": {
+        "uuid": "",
+        "nom": ""
+      },
+      "chirurgien": {
+        "uuid": "",
+        "nom": ""
+      },
+      "quartierMaitreG": {
+        "uuid": "",
+        "nom": ""
+      },
+      "cambusier": {
+        "uuid": "",
+        "nom": ""
+      },
+      "grenadier": {
+        "uuid": "",
+        "nom": ""
+      },
+      "vigie": {
+        "uuid": "",
+        "nom": ""
+      }
+    },
+    "matelots": {
+      "manoeuvre": 3,
+      "ruse": 3,
+      "canonnade": 3,
+      "recharge": 3,
+      "combat": 3,
+      "tir": 3
+    },
+    "santeEquipage": {
+      "coches": 0
+    },
+    "possessions": {
+      "cartes": "",
+      "journaux": "",
+      "instruments": "",
+      "or": "",
+      "pavillons": "",
+      "otages": ""
+    },
+    "notes": ""
+  },
+  "items": [],
+  "effects": [],
+  "folder": "fHuQiguC3yEd7PjT",
+  "sort": 700,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.345",
+    "systemId": "pavillon-noir-2",
+    "systemVersion": "0.1.0",
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": null
+  },
+  "prototypeToken": {
+    "name": "Petit Prao ou Pirogue (Petit prao)",
+    "actorLink": false,
+    "disposition": 0,
+    "texture": {
+      "src": "systems/pavillon-noir-2/assets/icons/navire.svg"
+    },
+    "displayName": 20,
+    "sight": {
+      "enabled": true
+    }
+  }
+}

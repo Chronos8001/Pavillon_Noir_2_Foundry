@@ -1,0 +1,22 @@
+{
+  "_id": "YpkHxbCJu9g1tpSp",
+  "_key": "!folders!YpkHxbCJu9g1tpSp",
+  "name": "Escrime à l'arme et à la dague",
+  "type": "Item",
+  "folder": null,
+  "sorting": "a",
+  "sort": 100000,
+  "color": null,
+  "description": "",
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.345",
+    "systemId": "pavillon-noir-2",
+    "systemVersion": "0.1.0",
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": null
+  }
+}

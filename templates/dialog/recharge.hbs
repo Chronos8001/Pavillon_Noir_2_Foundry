@@ -1,0 +1,10 @@
+<div class="pn2-dialog">
+  <p class="intro"><strong>{{b.nom}}</strong> — Recharge {{groupe.eff}}F{{groupe.fac}} — {{st.hommes}} artilleurs nécessaires (modif. calibre {{pn2Signed st.modRecharge}})</p>
+  <div class="form-group"><label>Munition</label><select name="munition">{{selectOptions munitions selected=b.munition}}</select></div>
+  <div class="form-group"><label>Artilleurs affectés</label><input type="number" name="hommes" value="{{st.hommes}}" min="0"></div>
+  <div class="form-row">
+    <div class="form-group"><label>Mod. Efficacité</label><input type="number" name="modEff" value="0"></div>
+    <div class="form-group"><label>Mod. Facilité</label><input type="number" name="modFac" value="0"></div>
+  </div>
+  <p class="hint">La durée de recharge (en Tours de combat naval) suit la Table des Actions non numériques (action longue). Utilisez « Tour naval suivant » pour la décompter.</p>
+</div>

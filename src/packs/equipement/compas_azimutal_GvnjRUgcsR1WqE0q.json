@@ -1,0 +1,32 @@
+{
+  "_id": "GvnjRUgcsR1WqE0q",
+  "_key": "!items!GvnjRUgcsR1WqE0q",
+  "name": "Compas azimutal",
+  "type": "equipement",
+  "img": "systems/pavillon-noir-2/assets/icons/equipement.svg",
+  "system": {
+    "description": "<p>N'apparaît qu'à la fin du XVIIIe siècle.</p>",
+    "source": "La Révolte",
+    "categorie": "Navigation",
+    "quantite": 1,
+    "prix": "60",
+    "modificateur": ""
+  },
+  "effects": [],
+  "folder": "FwfcOkR46thkBWVj",
+  "sort": 190,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.345",
+    "systemId": "pavillon-noir-2",
+    "systemVersion": "0.1.0",
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": null
+  }
+}

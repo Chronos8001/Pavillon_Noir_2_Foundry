@@ -1,0 +1,280 @@
+{
+  "_id": "Dg4jyrLIsNLsztHh",
+  "_key": "!actors!Dg4jyrLIsNLsztHh",
+  "name": "Frégate trois-mâts barque (Course)",
+  "type": "navire",
+  "img": "systems/pavillon-noir-2/assets/icons/navire.svg",
+  "system": {
+    "modele": {
+      "type": "Frégate trois-mâts barque",
+      "configuration": "Course"
+    },
+    "infos": {
+      "capitaine": "",
+      "figureProue": "",
+      "greement": "Voiles carrées et brigantine (3 mâts) recharge = 15 hommes), dont 8 peuvent tirer en chasse",
+      "taille": "Frégate",
+      "mats": 3,
+      "tonnage": 420.0,
+      "tonnageUtile": 370.0,
+      "tirantEau": "4,5m chasse (VD = +5, recharge = 12 homm",
+      "fonction": "Flibuste, pirates ou Royale recharge = 12 hommes) et 2×15 pierriers en bordée (V",
+      "epoque": "Piraterie (à partir du milieu de la période) et Royale",
+      "armement": "Course (139 matelots)",
+      "manoeuvrabilite": 0,
+      "avirons": "",
+      "vitMoyenne": 105.0,
+      "calibreMax": 9,
+      "longueur": "Immergée 48m bordée (, hors tout 63m"
+    },
+    "vitesses": {
+      "pres": 3.0,
+      "largue": 9.0,
+      "grandLargue": 10.0,
+      "ventArriere": 6.5
+    },
+    "qualites": {
+      "modVitesse": 0,
+      "modManoeuvre": 0
+    },
+    "navigation": {
+      "voilure": 0,
+      "vent": 0,
+      "allure": "largue"
+    },
+    "equipage": {
+      "max": 250,
+      "actuel": 139,
+      "convalescents": 0,
+      "manoeuvre": 50,
+      "recharge": 139,
+      "gardesMarines": 6,
+      "soldats": 50
+    },
+    "reserves": {
+      "eau": 45,
+      "vivres": 60,
+      "vivresFrais": 3,
+      "bois": 60,
+      "munitions": 20,
+      "trousse": 200
+    },
+    "cargaison": {},
+    "carenage": 0,
+    "structure": {
+      "mature": {
+        "max": 25,
+        "artimon": 25,
+        "grandMat": 25,
+        "misaine": 25
+      },
+      "coque": {
+        "max": 25,
+        "poupe": 25,
+        "babord": 25,
+        "tribord": 25,
+        "proue": 25
+      }
+    },
+    "batteries": {
+      "CgY7wdgfa381zy5W": {
+        "nom": "Bordée — 2×10 pièces de 6 et 2×4 pièces de 4",
+        "position": "bordée",
+        "nombre": 0,
+        "calibre": 6,
+        "vd": 12,
+        "hommes": 52,
+        "modRecharge": 1,
+        "tonnage": 0,
+        "munition": "boulet",
+        "chargee": true,
+        "restant": 0,
+        "cote": "babord",
+        "ordre": 0,
+        "description": "2×10 pièces de 6 et 2×4 pièces de 4"
+      },
+      "8y52vJrYKuoWS1Tp": {
+        "nom": "Chasse — 2 pièces de 9",
+        "position": "chasse",
+        "nombre": 0,
+        "calibre": 9,
+        "vd": 5,
+        "hommes": 12,
+        "modRecharge": 0,
+        "tonnage": 2.4,
+        "munition": "boulet",
+        "chargee": true,
+        "restant": 0,
+        "cote": "babord",
+        "ordre": 1,
+        "description": "2 pièces de 9"
+      },
+      "8t5ff5KQ56xL6NIv": {
+        "nom": "Bordée — 2×15 pierriers",
+        "position": "muraille",
+        "nombre": 0,
+        "calibre": 1,
+        "vd": 4,
+        "hommes": 15,
+        "modRecharge": 2,
+        "tonnage": 0,
+        "munition": "boulet",
+        "chargee": true,
+        "restant": 0,
+        "cote": "babord",
+        "ordre": 2,
+        "description": "2×15 pierriers"
+      },
+      "ogjqHdNv30oOP0gB": {
+        "nom": "Chasse — 8 pierriers (prises sur la bordée)",
+        "position": "muraille",
+        "nombre": 0,
+        "calibre": 1,
+        "vd": 2,
+        "hommes": 8,
+        "modRecharge": 2,
+        "tonnage": 0,
+        "munition": "boulet",
+        "chargee": true,
+        "restant": 0,
+        "cote": "babord",
+        "ordre": 3,
+        "description": "8 pierriers (prises sur la bordée)"
+      },
+      "wCT7Mm8TCDUR1CZT": {
+        "nom": "Fuite — 12 pierriers (prises sur la bordée)",
+        "position": "muraille",
+        "nombre": 0,
+        "calibre": 1,
+        "vd": 3,
+        "hommes": 12,
+        "modRecharge": 2,
+        "tonnage": 0,
+        "munition": "boulet",
+        "chargee": true,
+        "restant": 0,
+        "cote": "babord",
+        "ordre": 4,
+        "description": "12 pierriers (prises sur la bordée)"
+      }
+    },
+    "commandement": {
+      "capitaine": {
+        "uuid": "",
+        "nom": ""
+      },
+      "second": {
+        "uuid": "",
+        "nom": ""
+      },
+      "canonnier": {
+        "uuid": "",
+        "nom": ""
+      },
+      "quartierMaitre": {
+        "uuid": "",
+        "nom": ""
+      },
+      "maitreEquipage": {
+        "uuid": "",
+        "nom": ""
+      },
+      "maitreCanonnier": {
+        "uuid": "",
+        "nom": ""
+      }
+    },
+    "gestion": {
+      "capitaineG": {
+        "uuid": "",
+        "nom": ""
+      },
+      "pilote": {
+        "uuid": "",
+        "nom": ""
+      },
+      "calfat": {
+        "uuid": "",
+        "nom": ""
+      },
+      "charpentier": {
+        "uuid": "",
+        "nom": ""
+      },
+      "voilier": {
+        "uuid": "",
+        "nom": ""
+      },
+      "chirurgien": {
+        "uuid": "",
+        "nom": ""
+      },
+      "quartierMaitreG": {
+        "uuid": "",
+        "nom": ""
+      },
+      "cambusier": {
+        "uuid": "",
+        "nom": ""
+      },
+      "grenadier": {
+        "uuid": "",
+        "nom": ""
+      },
+      "vigie": {
+        "uuid": "",
+        "nom": ""
+      }
+    },
+    "matelots": {
+      "manoeuvre": 3,
+      "ruse": 3,
+      "canonnade": 3,
+      "recharge": 3,
+      "combat": 3,
+      "tir": 3
+    },
+    "santeEquipage": {
+      "coches": 0
+    },
+    "possessions": {
+      "cartes": "",
+      "journaux": "",
+      "instruments": "",
+      "or": "",
+      "pavillons": "",
+      "otages": ""
+    },
+    "notes": ""
+  },
+  "items": [],
+  "effects": [],
+  "folder": "MBo8X7HGE6t9VZmV",
+  "sort": 420,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.345",
+    "systemId": "pavillon-noir-2",
+    "systemVersion": "0.1.0",
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": null
+  },
+  "prototypeToken": {
+    "name": "Frégate trois-mâts barque (Course)",
+    "actorLink": false,
+    "disposition": 0,
+    "texture": {
+      "src": "systems/pavillon-noir-2/assets/icons/navire.svg"
+    },
+    "displayName": 20,
+    "sight": {
+      "enabled": true
+    }
+  }
+}

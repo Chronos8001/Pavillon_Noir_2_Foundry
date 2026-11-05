@@ -1,0 +1,48 @@
+{
+  "_id": "ak1dDp2x9s7K27Io",
+  "_key": "!items!ak1dDp2x9s7K27Io",
+  "name": "Coup de fianconade",
+  "type": "manoeuvre",
+  "img": "systems/pavillon-noir-2/assets/icons/manoeuvre.svg",
+  "system": {
+    "description": "",
+    "source": "L'Art de l'escrime",
+    "escrime": "epee",
+    "niveau": 2,
+    "combinaison": "5 5",
+    "effet": "Seconde main libre ou armée d’une dague. Votre attaque est Facile (+2) et celle de votre adversaire Difficile (-2) (ne pas relancer les dés).",
+    "ecole": false,
+    "secondeMain": true,
+    "deuxMains": false,
+    "inadapte": "",
+    "peuAdapte": "",
+    "auto": {
+      "bonusD": 0,
+      "bonusFac": 2,
+      "malusFacAdv": 2,
+      "bonusS": 0,
+      "bonusDegats": 0,
+      "armure": 0,
+      "invulnerable": false,
+      "annuleAdv": false,
+      "choixLoc": false
+    }
+  },
+  "effects": [],
+  "folder": "IQJA1cBSGWHttpFX",
+  "sort": 190,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.345",
+    "systemId": "pavillon-noir-2",
+    "systemVersion": "0.1.0",
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": null
+  }
+}

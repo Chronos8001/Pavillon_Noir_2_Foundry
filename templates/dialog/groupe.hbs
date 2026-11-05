@@ -1,0 +1,14 @@
+<div class="pn2-dialog">
+  <p class="intro"><strong>{{groupe.label}}</strong> de groupe : {{groupe.eff}}F{{groupe.fac}}
+    {{#if malusEquipage}}<br><span class="hint">Santé de l'équipage : {{malusEquipage}}</span>{{/if}}
+    {{#if manoeuvre}}<br><span class="hint">Manœuvrabilité effective : {{pn2Signed modNav.manoeuvre}}{{#if malusEquipageManoeuvre}}, équipage insuffisant {{malusEquipageManoeuvre}}{{/if}}</span>{{/if}}</p>
+  <div class="form-group"><label>Difficulté</label><select name="difficulte">{{selectOptions difficultes selected="0"}}</select></div>
+  <div class="form-row">
+    <div class="form-group"><label>Mod. Efficacité</label><input type="number" name="modEff" value="0"></div>
+    <div class="form-group"><label>Mod. Facilité</label><input type="number" name="modFac" value="0"></div>
+  </div>
+  <div class="form-group"><label>Modificateur de Réussite (accessibilité, ±S)</label>
+    <select name="modS"><option value="2">Très accessible (+2S)</option><option value="1">Accessible (+1S)</option><option value="0" selected>Normal (+0S)</option><option value="-1">Peu accessible (-1S)</option><option value="-2">Pas accessible (-2S)</option></select></div>
+  <div class="form-group"><label>Action numérique : Mesure de départ (hommes, canons…) facultative</label><input type="number" name="mesure" value="0" min="0"></div>
+  <p class="hint">La durée (Table des Actions non numériques) est indiquée dans le résultat.</p>
+</div>

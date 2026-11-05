@@ -1,0 +1,25 @@
+<div class="pn2-resolution">
+  {{#each r.lignes}}<p class="ligne">{{this}}</p>{{/each}}
+  {{#if r.touche}}
+    <p class="touche"><strong>{{r.attaquantNom}}</strong> touche <strong>{{r.cibleNom}}</strong> (marge {{r.marge}})</p>
+    <div class="degats-box">
+      <div class="degats"><span class="valeur">{{r.degats}}</span> dégâts</div>
+      <div class="loc">Localisation (D6 = {{r.locJet}}) :
+        {{#if r.choixLoc}}
+          <select data-pn2-action="loc">
+            <option value="tete" {{#if (eq r.loc "tete")}}selected{{/if}}>Tête</option>
+            <option value="torse" {{#if (eq r.loc "torse")}}selected{{/if}}>Torse</option>
+            <option value="brasD" {{#if (eq r.loc "brasD")}}selected{{/if}}>Bras droit</option>
+            <option value="brasG" {{#if (eq r.loc "brasG")}}selected{{/if}}>Bras gauche</option>
+            <option value="jambeD" {{#if (eq r.loc "jambeD")}}selected{{/if}}>Jambe droite</option>
+            <option value="jambeG" {{#if (eq r.loc "jambeG")}}selected{{/if}}>Jambe gauche</option>
+          </select>
+        {{else}}<strong>{{r.locLabel}}</strong>{{/if}}
+      </div>
+    </div>
+    <div class="hint">{{r.detailDegats}} — la protection de la localisation est retranchée à l'application.</div>
+    <a class="pn2-btn" data-pn2-action="appliquer"><i class="fa-solid fa-droplet"></i> Appliquer les dégâts</a>
+  {{else}}
+    {{#unless r.lignes.length}}<p class="ligne">L'attaque manque sa cible.</p>{{/unless}}
+  {{/if}}
+</div>

@@ -1,0 +1,17 @@
+<div class="pn2-dialog">
+  {{#if skill}}<p class="intro"><strong>{{skill.label}}</strong> : niveau {{skill.value}}{{#if skill.metier}} <span class="tag">métier •</span>{{/if}}{{#unless skill.value}} <span class="hint">(profane : {{#if skill.metier}}1D20{{else}}1D12{{/if}})</span>{{/unless}}</p>{{/if}}
+  <div class="form-group">
+    <label>Caractéristique</label>
+    <select name="carac">{{#each caracs as |c k|}}<option value="{{k}}" {{#if (eq k ../caracDef)}}selected{{/if}}>{{c.label}} ({{lookup ../sys.c k}})</option>{{/each}}</select>
+  </div>
+  {{#if metierNom}}<div class="form-group"><label>Valeur de métier ({{metierNom}} : {{valeurMetier}})</label><input type="checkbox" name="useMetier"></div>{{/if}}
+  {{#if facPNJ}}<div class="form-group"><label>Facilité de catégorie (PNJ : {{facPNJ}})</label><input type="checkbox" name="usePNJ" checked></div>{{/if}}
+  <div class="form-group"><label>Difficulté</label><select name="difficulte">{{selectOptions difficultes selected="0"}}</select></div>
+  <div class="form-group"><label>Modificateur d'Efficacité (±D)</label><input type="number" name="modEff" value="0"></div>
+  <div class="form-group"><label>Modificateur de Facilité</label><input type="number" name="modFac" value="0"></div>
+  {{#if usePostures}}<div class="form-group"><label>Posture</label><select name="posture">{{selectOptions postures selected="attentive"}}</select></div>{{/if}}
+  <div class="form-group"><label>Points de Gloire (+1D, {{gloireDispo}} dispo.)</label><input type="number" name="gloire" value="0" min="0" max="{{gloireDispo}}"></div>
+  <div class="form-group"><label>Points d'Infamie (+1 Fac., {{infamieDispo}} dispo.)</label><input type="number" name="infamie" value="0" min="0" max="{{infamieDispo}}"></div>
+  {{#if modAuto}}<p class="hint">Avantages/Faiblesses : {{pn2Signed modAuto}} appliqué automatiquement.</p>{{/if}}
+  {{#if malusSante}}<p class="hint">Blessures : {{malusSante}} (hors compétences de connaissances).</p>{{/if}}
+</div>

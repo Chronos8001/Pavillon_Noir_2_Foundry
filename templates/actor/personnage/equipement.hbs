@@ -1,0 +1,22 @@
+<section class="tab {{#if active}}active{{/if}}" data-group="primary" data-tab="equipement">
+  <h2>Équipement
+    <a class="pn2-mini-btn" data-action="itemCreate" data-type="equipement"><i class="fa-solid fa-plus"></i></a>
+    <a class="pn2-mini-btn" data-action="ouvrirCompendium" data-pack="equipement"><i class="fa-solid fa-book"></i></a>
+    <span class="richesse">Pièces de huit : <input type="number" step="any" name="system.richesse.pieces" value="{{system.richesse.pieces}}"></span>
+  </h2>
+  <table class="pn2-table">
+    <thead><tr><th></th><th>Objet</th><th>Catégorie</th><th>Quantité</th><th>Prix</th><th>Effet</th><th></th></tr></thead>
+    <tbody>
+    {{#each equipements}}
+      <tr class="item" data-item-id="{{id}}">
+        <td><img src="{{img}}" width="24" height="24"></td>
+        <td><a class="nom" data-action="itemShow">{{name}}</a></td>
+        <td>{{system.categorie}}</td><td>{{system.quantite}}</td><td>{{system.prix}}</td><td class="hint">{{system.modificateur}}</td>
+        <td><a data-action="itemEdit"><i class="fa-solid fa-pen"></i></a> <a data-action="itemDelete"><i class="fa-solid fa-trash"></i></a></td>
+      </tr>
+    {{else}}
+      <tr><td colspan="7" class="hint">Aucun objet.</td></tr>
+    {{/each}}
+    </tbody>
+  </table>
+</section>

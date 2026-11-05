@@ -1,0 +1,48 @@
+{
+  "_id": "i3ElIi6DYjZXsUhF",
+  "_key": "!items!i3ElIi6DYjZXsUhF",
+  "name": "Croche-pied",
+  "type": "manoeuvre",
+  "img": "systems/pavillon-noir-2/assets/icons/manoeuvre.svg",
+  "system": {
+    "description": "",
+    "source": "L'Art de l'escrime",
+    "escrime": "hache",
+    "niveau": 3,
+    "combinaison": "1 5 5",
+    "effet": "Votre adversaire est au sol devant vous et ne peut qu’Esquiver vos coups dans cette position difficile (les attaques au corps à corps qui vous ciblent sont Faciles (+2)) au Tour suivant. Il ne pourra se relever qu’au Tour d’après.",
+    "ecole": false,
+    "secondeMain": false,
+    "deuxMains": false,
+    "inadapte": "",
+    "peuAdapte": "",
+    "auto": {
+      "bonusD": 0,
+      "bonusFac": 0,
+      "malusFacAdv": 0,
+      "bonusS": 0,
+      "bonusDegats": 0,
+      "armure": 0,
+      "invulnerable": false,
+      "annuleAdv": false,
+      "choixLoc": false
+    }
+  },
+  "effects": [],
+  "folder": "nTJw6ccZ3od8MH71",
+  "sort": 1740,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.345",
+    "systemId": "pavillon-noir-2",
+    "systemVersion": "0.1.0",
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": null
+  }
+}

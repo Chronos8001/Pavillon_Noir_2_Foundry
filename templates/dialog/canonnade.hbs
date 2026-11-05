@@ -1,0 +1,24 @@
+<div class="pn2-dialog">
+  <p class="intro"><strong>{{b.nom}}</strong> — Canonnade {{groupe.eff}}F{{groupe.fac}} — VD {{pn2Signed st.vd}} (mitraille {{pn2Signed st.vdMitraille}})
+    {{#unless b.chargee}}<br><span class="alerte">Batterie non chargée !</span>{{/unless}}
+    {{#if cible}}<br>Cible : <strong>{{cible}}</strong>{{/if}}</p>
+  <div class="form-group"><label>Munition</label><select name="munition">{{selectOptions munitions selected=b.munition}}</select></div>
+  <div class="form-row">
+    <div class="form-group"><label>Distance (m) — portée {{portee}} m</label><input type="number" name="distance" value="0" min="0"></div>
+    <div class="form-group"><label>Taille de la cible</label><select name="taille">{{#each tailles as |t k|}}<option value="{{k}}" {{#if (eq k ../tailleCible)}}selected{{/if}}>{{k}} ({{pn2Signed t.modTir}})</option>{{/each}}</select></div>
+  </div>
+  <div class="form-group"><label>Orientation de la cible</label>
+    <select name="orientation"><option value="0">Flanc (+0S)</option><option value="1">Proue (+1S)</option><option value="2">Poupe (+2S)</option></select></div>
+  <div class="form-row">
+    <div class="form-group"><label>Côté exposé (boulets)</label><select name="cote"><option value="babord">Bâbord</option><option value="tribord">Tribord</option></select></div>
+    <div class="form-group"><label>Mod. au D6 de localisation (-4 poupe … +4 proue)</label><input type="number" name="locMod" value="0" min="-4" max="4"></div>
+  </div>
+  <div class="form-row">
+    <div class="form-group"><label>Fumée rabattue (-2)</label><input type="checkbox" name="fumee"></div>
+    <div class="form-group"><label>Mer agitée (-2)</label><input type="checkbox" name="merAgitee"></div>
+  </div>
+  <div class="form-row">
+    <div class="form-group"><label>Mod. Efficacité</label><input type="number" name="modEff" value="0"></div>
+    <div class="form-group"><label>Mod. Facilité</label><input type="number" name="modFac" value="0"></div>
+  </div>
+</div>

@@ -1,0 +1,21 @@
+<header class="pn2-header navire">
+  <img class="portrait" src="{{actor.img}}" data-edit="img" data-action="editImage" title="{{actor.name}}">
+  <div class="header-main">
+    <input class="nom" type="text" name="name" value="{{actor.name}}" placeholder="Nom du navire">
+    <div class="modele">
+      <label>Type de navire
+        <select name="system.modele.type"><option value="">— choisir —</option>{{#each types}}<option value="{{nom}}" {{#if selected}}selected{{/if}}>{{nom}}</option>{{/each}}</select></label>
+      <label>Armement
+        <select name="system.modele.configuration">{{#each configurations}}<option value="{{nom}}" {{#if selected}}selected{{/if}}>{{label}}</option>{{/each}}</select></label>
+      <a class="pn2-btn" data-action="appliquerModele" title="Remplit automatiquement la fiche"><i class="fa-solid fa-wand-magic-sparkles"></i> Appliquer</a>
+    </div>
+    <div class="badges">
+      <div class="badge"><span>Catégorie</span><strong>{{system.infos.taille}}</strong></div>
+      <div class="badge"><span>Vitesse ({{lookup config.allures system.navigation.allure}})</span><strong>{{system.vitesseActuelle}} nœuds</strong></div>
+      <div class="badge"><span>Manœuvrabilité</span><strong>{{pn2Signed system.modNav.manoeuvre}}</strong></div>
+      <div class="badge"><span>Équipage</span><strong>{{system.equipage.actuel}} / {{system.equipage.max}}</strong></div>
+      <div class="badge etat etat-{{system.etatMature.idx}}"><span>Mâture</span><strong>{{system.etatMature.label}}</strong></div>
+      <div class="badge etat etat-{{system.etatEquipage}}"><span>Santé équipage</span><strong>{{system.etatEquipageLabel}}</strong></div>
+    </div>
+  </div>
+</header>

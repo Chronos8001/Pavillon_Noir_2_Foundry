@@ -1,0 +1,55 @@
+<section class="tab {{#if active}}active{{/if}}" data-group="primary" data-tab="escrime">
+  {{#if (eq escrimeMode "base")}}
+    <div class="encadre">
+      <h2>Escrime (La Révolte)</h2>
+      <p>Compétence Escrime : <strong>{{system.skills.escrime.value}}</strong> (onglet Compétences). Lors d'une attaque à la rapière ou au sabre, les Opportunités
+      « 1 » (+1D), « 5 » (±1 sur un dé) et « 0 » (-1 dégât subi) sont exploitées automatiquement, dans la limite du niveau d'Escrime (-1 au sabre).</p>
+    </div>
+  {{else if (eq escrimeMode "aucune")}}
+    <p class="hint">Les règles d'escrime sont désactivées dans les paramètres du monde.</p>
+  {{/if}}
+  <div class="escrime-entete">
+    <label>École d'escrime <input type="text" name="system.escrime.ecole" value="{{system.escrime.ecole}}" placeholder="française, italienne…"></label>
+    <label>Arme d'escrime <input type="text" name="system.escrime.arme" value="{{system.escrime.arme}}" placeholder="rapière, sabre…"></label>
+    <a class="pn2-btn" data-action="ouvrirCompendium" data-pack="manoeuvres-escrime"><i class="fa-solid fa-book"></i> Compendium des manœuvres</a>
+  </div>
+  <p class="hint">Glissez les manœuvres maîtrisées sur la fiche. Coût en Points d'escrime = Niveau de la manœuvre (les manœuvres d'école sont gratuites). Opportunités : <span class="opp opp-1">1</span> Ouverture, 2 Seconde main, 3 Ennemi, 5 Préparation, 6 Décor, 9 Avantage, <span class="opp opp-0">0</span> Défense.</p>
+  {{#each escrimes as |e|}}
+    <div class="escrime-type {{#if e.value}}actif{{/if}}">
+      <div class="titre">
+        <h3>{{e.label}}</h3>
+        <span class="opps hint">Opportunités : {{e.opps}}</span>
+        <label>Niveau <input type="number" name="system.escrime.{{e.key}}.value" value="{{e.value}}" min="0"></label>
+        {{#unless e.destreza}}
+        <label class="checkbox" title="Arme ou technique de prédilection : N+1 points par niveau"><input type="checkbox" name="system.escrime.{{e.key}}.predilection" {{checked e.predilection}}> Prédilection</label>
+        <label title="Points d'escrime supplémentaires (École de renom, Trempe…)">Bonus <input type="number" name="system.escrime.{{e.key}}.pointsBonus" value="{{e.pointsBonus}}"></label>
+        <span class="points {{#if (lt e.reste 0)}}alerte{{/if}}">Points : {{e.depenses}} / {{e.points}}</span>
+        {{else}}
+        <span class="points">Science : {{e.science}} mouvements — Stratégie : {{e.strategie}}</span>
+        {{/unless}}
+        <label title="Cases d'expérience (manœuvres réalisées)">Exp. <input type="number" name="system.escrime.{{e.key}}.xp" value="{{e.xp}}" min="0"></label>
+        <a class="pn2-mini-btn" data-action="itemCreate" data-type="manoeuvre" data-escrime="{{e.key}}" title="Nouvelle manœuvre"><i class="fa-solid fa-plus"></i></a>
+      </div>
+      {{#if e.manoeuvres.length}}
+      <table class="pn2-table manoeuvres">
+        {{#each e.manoeuvres}}
+        <tr class="item" data-item-id="{{id}}">
+          <td class="niv">N{{niveau}}</td><td class="combo">{{{combo}}}</td>
+          <td><a class="nom" data-action="itemShow">{{name}}</a>{{#if ecole}} <span class="tag">école</span>{{/if}}</td>
+          <td class="hint effet">{{effet}}</td><td class="puissance" title="Puissance">{{puissance}}</td>
+          <td><a data-action="itemEdit"><i class="fa-solid fa-pen"></i></a><a data-action="itemDelete"><i class="fa-solid fa-trash"></i></a></td>
+        </tr>
+        {{/each}}
+      </table>
+      {{/if}}
+    </div>
+  {{/each}}
+  <div class="escrime-type">
+    <div class="titre"><h3>Bottes secrètes</h3><a class="pn2-mini-btn" data-action="itemCreate" data-type="manoeuvre" data-escrime="botte"><i class="fa-solid fa-plus"></i></a></div>
+    <p class="hint">Combinaison de quatre chiffres. Quatre chiffres identiques : foudroie tous les adversaires ; deux différents : foudroie deux adversaires (seule une Parade du cercle la contre) ; trois différents : foudroie ou met à merci l'adversaire ; quatre différents : désarme ou met en position très inconfortable.</p>
+    <table class="pn2-table manoeuvres">
+      {{#each bottes}}<tr class="item" data-item-id="{{id}}"><td class="combo">{{{combo}}}</td><td><a class="nom" data-action="itemShow">{{name}}</a></td><td class="hint">{{effet}}</td>
+        <td><a data-action="itemEdit"><i class="fa-solid fa-pen"></i></a><a data-action="itemDelete"><i class="fa-solid fa-trash"></i></a></td></tr>{{/each}}
+    </table>
+  </div>
+</section>

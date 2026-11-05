@@ -1,0 +1,248 @@
+{
+  "_id": "gUKMa3i33PR2dbpU",
+  "_key": "!actors!gUKMa3i33PR2dbpU",
+  "name": "Galère royale (Guerre)",
+  "type": "navire",
+  "img": "systems/pavillon-noir-2/assets/icons/navire.svg",
+  "system": {
+    "modele": {
+      "type": "Galère royale",
+      "configuration": "Guerre"
+    },
+    "infos": {
+      "capitaine": "",
+      "figureProue": "",
+      "greement": "Voiles au tiers (2 mâts), avirons",
+      "taille": "Frégate",
+      "mats": 2,
+      "tonnage": 125.0,
+      "tonnageUtile": 90.0,
+      "tirantEau": "4m",
+      "fonction": "Royale",
+      "epoque": "Aventuriers, flibuste, piraterie et Royale (rare)",
+      "armement": "Guerre (193 matelots)",
+      "manoeuvrabilite": -2,
+      "avirons": "5 nœuds",
+      "vitMoyenne": 140.0,
+      "calibreMax": 36,
+      "longueur": "Immergée 45m, hors tout 60m"
+    },
+    "vitesses": {
+      "pres": 2.0,
+      "largue": 4.5,
+      "grandLargue": 4.5,
+      "ventArriere": 3.0
+    },
+    "qualites": {
+      "modVitesse": 0,
+      "modManoeuvre": 0
+    },
+    "navigation": {
+      "voilure": 0,
+      "vent": 0,
+      "allure": "largue"
+    },
+    "equipage": {
+      "max": 260,
+      "actuel": 193,
+      "convalescents": 0,
+      "manoeuvre": 150,
+      "recharge": 193,
+      "gardesMarines": 6,
+      "soldats": 50
+    },
+    "reserves": {
+      "eau": 45,
+      "vivres": 60,
+      "vivresFrais": 3,
+      "bois": 60,
+      "munitions": 20,
+      "trousse": 200
+    },
+    "cargaison": {},
+    "carenage": 0,
+    "structure": {
+      "mature": {
+        "max": 15,
+        "artimon": 15,
+        "grandMat": 15,
+        "misaine": 15
+      },
+      "coque": {
+        "max": 15,
+        "poupe": 15,
+        "babord": 15,
+        "tribord": 15,
+        "proue": 15
+      }
+    },
+    "batteries": {
+      "e9uyJJZbgshw6mYQ": {
+        "nom": "Chasse — 3 pièces de 4",
+        "position": "chasse",
+        "nombre": 0,
+        "calibre": 4,
+        "vd": 9,
+        "hommes": 27,
+        "modRecharge": 1,
+        "tonnage": 2.4,
+        "munition": "boulet",
+        "chargee": true,
+        "restant": 0,
+        "cote": "babord",
+        "ordre": 0,
+        "description": "3 pièces de 4"
+      },
+      "3gHYlyZnMy5NAuFm": {
+        "nom": "Bordée — 2×4 canons de muraille",
+        "position": "muraille",
+        "nombre": 0,
+        "calibre": 2,
+        "vd": 2,
+        "hommes": 8,
+        "modRecharge": 2,
+        "tonnage": 0,
+        "munition": "boulet",
+        "chargee": true,
+        "restant": 0,
+        "cote": "babord",
+        "ordre": 1,
+        "description": "2×4 canons de muraille"
+      },
+      "WHbHwkCO1WaFBJDK": {
+        "nom": "Fuite — 8 canons de muraille (prises sur la bordée)",
+        "position": "muraille",
+        "nombre": 0,
+        "calibre": 2,
+        "vd": 5,
+        "hommes": 16,
+        "modRecharge": 2,
+        "tonnage": 0,
+        "munition": "boulet",
+        "chargee": true,
+        "restant": 0,
+        "cote": "babord",
+        "ordre": 2,
+        "description": "8 canons de muraille (prises sur la bordée)"
+      }
+    },
+    "commandement": {
+      "capitaine": {
+        "uuid": "",
+        "nom": ""
+      },
+      "second": {
+        "uuid": "",
+        "nom": ""
+      },
+      "canonnier": {
+        "uuid": "",
+        "nom": ""
+      },
+      "quartierMaitre": {
+        "uuid": "",
+        "nom": ""
+      },
+      "maitreEquipage": {
+        "uuid": "",
+        "nom": ""
+      },
+      "maitreCanonnier": {
+        "uuid": "",
+        "nom": ""
+      }
+    },
+    "gestion": {
+      "capitaineG": {
+        "uuid": "",
+        "nom": ""
+      },
+      "pilote": {
+        "uuid": "",
+        "nom": ""
+      },
+      "calfat": {
+        "uuid": "",
+        "nom": ""
+      },
+      "charpentier": {
+        "uuid": "",
+        "nom": ""
+      },
+      "voilier": {
+        "uuid": "",
+        "nom": ""
+      },
+      "chirurgien": {
+        "uuid": "",
+        "nom": ""
+      },
+      "quartierMaitreG": {
+        "uuid": "",
+        "nom": ""
+      },
+      "cambusier": {
+        "uuid": "",
+        "nom": ""
+      },
+      "grenadier": {
+        "uuid": "",
+        "nom": ""
+      },
+      "vigie": {
+        "uuid": "",
+        "nom": ""
+      }
+    },
+    "matelots": {
+      "manoeuvre": 3,
+      "ruse": 3,
+      "canonnade": 3,
+      "recharge": 3,
+      "combat": 3,
+      "tir": 3
+    },
+    "santeEquipage": {
+      "coches": 0
+    },
+    "possessions": {
+      "cartes": "",
+      "journaux": "",
+      "instruments": "",
+      "or": "",
+      "pavillons": "",
+      "otages": ""
+    },
+    "notes": ""
+  },
+  "items": [],
+  "effects": [],
+  "folder": "MBo8X7HGE6t9VZmV",
+  "sort": 470,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.345",
+    "systemId": "pavillon-noir-2",
+    "systemVersion": "0.1.0",
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": null
+  },
+  "prototypeToken": {
+    "name": "Galère royale (Guerre)",
+    "actorLink": false,
+    "disposition": 0,
+    "texture": {
+      "src": "systems/pavillon-noir-2/assets/icons/navire.svg"
+    },
+    "displayName": 20,
+    "sight": {
+      "enabled": true
+    }
+  }
+}

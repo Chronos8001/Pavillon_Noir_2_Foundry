@@ -1,0 +1,280 @@
+{
+  "_id": "rUB8pX30uCj2DGvL",
+  "_key": "!actors!rUB8pX30uCj2DGvL",
+  "name": "Goélette Franche (Course)",
+  "type": "navire",
+  "img": "systems/pavillon-noir-2/assets/icons/navire.svg",
+  "system": {
+    "modele": {
+      "type": "Goélette Franche",
+      "configuration": "Course"
+    },
+    "infos": {
+      "capitaine": "",
+      "figureProue": "",
+      "greement": "Voiles auriques (2 mâts)",
+      "taille": "Goélette",
+      "mats": 2,
+      "tonnage": 100.0,
+      "tonnageUtile": 80.0,
+      "tirantEau": "3,5m",
+      "fonction": "Transport rapide, pirates et Royale",
+      "epoque": "Flibuste (fin de la période), piraterie et Royale",
+      "armement": "Course (36 matelots)",
+      "manoeuvrabilite": 2,
+      "avirons": "",
+      "vitMoyenne": 120.0,
+      "calibreMax": 6,
+      "longueur": "Immergée 36m, hors tout 57m"
+    },
+    "vitesses": {
+      "pres": 5.5,
+      "largue": 12.0,
+      "grandLargue": 10.0,
+      "ventArriere": 5.5
+    },
+    "qualites": {
+      "modVitesse": 0,
+      "modManoeuvre": 0
+    },
+    "navigation": {
+      "voilure": 0,
+      "vent": 0,
+      "allure": "largue"
+    },
+    "equipage": {
+      "max": 60,
+      "actuel": 36,
+      "convalescents": 0,
+      "manoeuvre": 12,
+      "recharge": 36,
+      "gardesMarines": 0,
+      "soldats": 0
+    },
+    "reserves": {
+      "eau": 45,
+      "vivres": 60,
+      "vivresFrais": 3,
+      "bois": 60,
+      "munitions": 20,
+      "trousse": 200
+    },
+    "cargaison": {},
+    "carenage": 0,
+    "structure": {
+      "mature": {
+        "max": 9,
+        "artimon": 9,
+        "grandMat": 9,
+        "misaine": 9
+      },
+      "coque": {
+        "max": 11,
+        "poupe": 11,
+        "babord": 11,
+        "tribord": 11,
+        "proue": 11
+      }
+    },
+    "batteries": {
+      "QEyMt74ztMgArdmm": {
+        "nom": "Bordée — 2×4 pièces de 4",
+        "position": "bordée",
+        "nombre": 0,
+        "calibre": 4,
+        "vd": 5,
+        "hommes": 12,
+        "modRecharge": 1,
+        "tonnage": 6.4,
+        "munition": "boulet",
+        "chargee": true,
+        "restant": 0,
+        "cote": "babord",
+        "ordre": 0,
+        "description": "2×4 pièces de 4"
+      },
+      "Wd35b7LhcO8Qcm7e": {
+        "nom": "Chasse — une pièce de 6",
+        "position": "chasse",
+        "nombre": 0,
+        "calibre": 6,
+        "vd": 0,
+        "hommes": 4,
+        "modRecharge": 1,
+        "tonnage": 0,
+        "munition": "boulet",
+        "chargee": true,
+        "restant": 0,
+        "cote": "babord",
+        "ordre": 1,
+        "description": "une pièce de 6"
+      },
+      "PPbQLPFJpMXcXbHT": {
+        "nom": "Bordée — 2×6 pierriers",
+        "position": "muraille",
+        "nombre": 0,
+        "calibre": 1,
+        "vd": 0,
+        "hommes": 6,
+        "modRecharge": 2,
+        "tonnage": 0,
+        "munition": "boulet",
+        "chargee": true,
+        "restant": 0,
+        "cote": "babord",
+        "ordre": 2,
+        "description": "2×6 pierriers"
+      },
+      "8pBODTzPLCwTaf9C": {
+        "nom": "Chasse — 4 pierriers (prises sur la bordée)",
+        "position": "muraille",
+        "nombre": 0,
+        "calibre": 1,
+        "vd": -1,
+        "hommes": 4,
+        "modRecharge": 2,
+        "tonnage": 0,
+        "munition": "boulet",
+        "chargee": true,
+        "restant": 0,
+        "cote": "babord",
+        "ordre": 3,
+        "description": "4 pierriers (prises sur la bordée)"
+      },
+      "SUkEw6c7jV2Slr10": {
+        "nom": "Fuite — 8 pierriers (prises sur la bordée)",
+        "position": "muraille",
+        "nombre": 0,
+        "calibre": 1,
+        "vd": 2,
+        "hommes": 8,
+        "modRecharge": 2,
+        "tonnage": 0,
+        "munition": "boulet",
+        "chargee": true,
+        "restant": 0,
+        "cote": "babord",
+        "ordre": 4,
+        "description": "8 pierriers (prises sur la bordée)"
+      }
+    },
+    "commandement": {
+      "capitaine": {
+        "uuid": "",
+        "nom": ""
+      },
+      "second": {
+        "uuid": "",
+        "nom": ""
+      },
+      "canonnier": {
+        "uuid": "",
+        "nom": ""
+      },
+      "quartierMaitre": {
+        "uuid": "",
+        "nom": ""
+      },
+      "maitreEquipage": {
+        "uuid": "",
+        "nom": ""
+      },
+      "maitreCanonnier": {
+        "uuid": "",
+        "nom": ""
+      }
+    },
+    "gestion": {
+      "capitaineG": {
+        "uuid": "",
+        "nom": ""
+      },
+      "pilote": {
+        "uuid": "",
+        "nom": ""
+      },
+      "calfat": {
+        "uuid": "",
+        "nom": ""
+      },
+      "charpentier": {
+        "uuid": "",
+        "nom": ""
+      },
+      "voilier": {
+        "uuid": "",
+        "nom": ""
+      },
+      "chirurgien": {
+        "uuid": "",
+        "nom": ""
+      },
+      "quartierMaitreG": {
+        "uuid": "",
+        "nom": ""
+      },
+      "cambusier": {
+        "uuid": "",
+        "nom": ""
+      },
+      "grenadier": {
+        "uuid": "",
+        "nom": ""
+      },
+      "vigie": {
+        "uuid": "",
+        "nom": ""
+      }
+    },
+    "matelots": {
+      "manoeuvre": 3,
+      "ruse": 3,
+      "canonnade": 3,
+      "recharge": 3,
+      "combat": 3,
+      "tir": 3
+    },
+    "santeEquipage": {
+      "coches": 0
+    },
+    "possessions": {
+      "cartes": "",
+      "journaux": "",
+      "instruments": "",
+      "or": "",
+      "pavillons": "",
+      "otages": ""
+    },
+    "notes": ""
+  },
+  "items": [],
+  "effects": [],
+  "folder": "s2EXefKqZ8Ip9HR2",
+  "sort": 560,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.345",
+    "systemId": "pavillon-noir-2",
+    "systemVersion": "0.1.0",
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": null
+  },
+  "prototypeToken": {
+    "name": "Goélette Franche (Course)",
+    "actorLink": false,
+    "disposition": 0,
+    "texture": {
+      "src": "systems/pavillon-noir-2/assets/icons/navire.svg"
+    },
+    "displayName": 20,
+    "sight": {
+      "enabled": true
+    }
+  }
+}

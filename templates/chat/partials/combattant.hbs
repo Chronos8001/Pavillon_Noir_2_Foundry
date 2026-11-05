@@ -1,0 +1,37 @@
+<div class="pn2-combattant {{cote}}">
+  <div class="ligne-titre"><img src="{{c.img}}" width="28" height="28"><strong>{{c.nom}}</strong>
+    {{#if (eq c.mode "esquive")}} — Esquive{{else if (eq c.mode "aucune")}} — Sans défense{{else}} — {{c.armeNom}}{{/if}}
+  </div>
+  {{#unless (eq c.mode "aucune")}}
+  <div class="formule">{{c.formule}}{{#if c.skillLabel}} <span class="hint">({{c.skillLabel}})</span>{{/if}}{{#if c.posture}}{{#unless (eq c.posture "attentive")}} <span class="tag">Posture {{c.posture}}</span>{{/unless}}{{/if}}</div>
+  {{> "systems/pavillon-noir-2/templates/chat/partials/des.hbs" details=c.details extra=c.extra}}
+  <div class="resultat {{#if c.critique}}critique{{else if c.succes}}reussite{{else}}echec{{/if}}"><span class="succes">{{c.succes}} Succès</span> <span class="marge">{{c.marge}}</span></div>
+  {{#if c.experience}}<div class="xp"><i class="fa-solid fa-star"></i> Expérience par la pratique</div>{{/if}}
+  {{#if c.longFeu}}
+    <div class="longfeu {{#if c.longFeu.longFeu}}alerte{{/if}}">Long feu : D20 = {{c.longFeu.jet}} (risque {{c.longFeu.chance}}/20)
+      {{#if c.longFeu.longFeu}}<br><strong>Long feu !</strong> ({{c.longFeu.de}} = {{c.longFeu.effetJet}}) {{c.longFeu.effet}}{{/if}}</div>
+  {{/if}}
+  {{#if c.escrime.base}}
+    <div class="escrime">Escrime :
+      {{#if c.escrime.base.nb1}}{{c.escrime.base.nb1}}× « 1 » (+{{c.escrime.base.nb1}}D : {{#each c.escrime.base.extraValues}}{{#if (eq this 10)}}0{{else}}{{this}}{{/if}} {{/each}}) {{/if}}
+      {{#if c.escrime.base.nb5}}{{c.escrime.base.nb5}}× « 5 » ({{c.escrime.base.bonus5}} Succès{{#if c.escrime.base.loc5}}, ±{{c.escrime.base.loc5}} localisation{{/if}}) {{/if}}
+      {{#if c.escrime.base.nb0}}{{c.escrime.base.nb0}}× « 0 » (-{{c.escrime.base.nb0}} dégât(s) subis){{/if}}</div>
+  {{/if}}
+  {{#if c.escrime.choisie}}
+    <div class="escrime choisie"><i class="fa-solid fa-khanda"></i> <strong>{{c.escrime.choisie.nom}}</strong> <span class="combo">({{c.escrime.choisie.combo}}, puissance {{c.escrime.choisie.puissance}})</span>
+      {{#if c.escrime.choisie.extraValues}}<br>Dés supplémentaires : {{#each c.escrime.choisie.extraValues}}{{#if (eq this 10)}}0{{else}}{{this}}{{/if}} {{/each}}{{/if}}
+      <div class="effet">{{c.escrime.choisie.effet}}</div>
+      {{#if choix}}<a class="pn2-btn petit" data-pn2-action="manoeuvre" data-cote="{{cote}}" data-index="none">Annuler la manœuvre</a>{{/if}}
+    </div>
+  {{else if c.escrime.matches.length}}
+    {{#if choix}}
+    <div class="escrime choix"><div class="hint">Opportunités : {{#each c.escrime.opps}}<span class="opp">{{this}}</span>{{/each}} — choisissez une manœuvre :</div>
+      {{#each c.escrime.matches}}
+        <a class="pn2-btn manoeuvre" data-pn2-action="manoeuvre" data-cote="{{../cote}}" data-index="{{@index}}" title="{{effet}}">{{nom}} <span class="combo">[{{combo}}]</span>{{#if peuAdapte}} <em>(peu adaptée)</em>{{/if}}</a>
+      {{/each}}
+    </div>
+    {{/if}}
+  {{/if}}
+  {{#if c.notes.length}}<details class="notes"><summary>Détails</summary><ul>{{#each c.notes}}<li>{{this}}</li>{{/each}}</ul></details>{{/if}}
+  {{/unless}}
+</div>

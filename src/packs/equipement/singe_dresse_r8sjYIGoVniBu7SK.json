@@ -1,0 +1,32 @@
+{
+  "_id": "r8sjYIGoVniBu7SK",
+  "_key": "!items!r8sjYIGoVniBu7SK",
+  "name": "Singe dressé",
+  "type": "equipement",
+  "img": "systems/pavillon-noir-2/assets/icons/animal.svg",
+  "system": {
+    "description": "",
+    "source": "La Révolte",
+    "categorie": "Animal",
+    "quantite": 1,
+    "prix": "12",
+    "modificateur": ""
+  },
+  "effects": [],
+  "folder": "CMXzE2TvA9InewGJ",
+  "sort": 510,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.345",
+    "systemId": "pavillon-noir-2",
+    "systemVersion": "0.1.0",
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": null
+  }
+}

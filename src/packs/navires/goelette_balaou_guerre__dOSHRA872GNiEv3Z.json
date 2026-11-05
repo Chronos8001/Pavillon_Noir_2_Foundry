@@ -1,0 +1,232 @@
+{
+  "_id": "dOSHRA872GNiEv3Z",
+  "_key": "!actors!dOSHRA872GNiEv3Z",
+  "name": "Goélette Balaou (Guerre)",
+  "type": "navire",
+  "img": "systems/pavillon-noir-2/assets/icons/navire.svg",
+  "system": {
+    "modele": {
+      "type": "Goélette Balaou",
+      "configuration": "Guerre"
+    },
+    "infos": {
+      "capitaine": "",
+      "figureProue": "",
+      "greement": "Voiles auriques et hunier (2 mâts)",
+      "taille": "Goélette",
+      "mats": 2,
+      "tonnage": 60.0,
+      "tonnageUtile": 50.0,
+      "tirantEau": "2,5m",
+      "fonction": "Transport rapide, pirates",
+      "epoque": "Piraterie (rare et plutôt en fin de période) et Royale",
+      "armement": "Guerre (29 matelots)",
+      "manoeuvrabilite": 1,
+      "avirons": "",
+      "vitMoyenne": 135.0,
+      "calibreMax": 4,
+      "longueur": "Immergée 20m, hors tout 30m"
+    },
+    "vitesses": {
+      "pres": 5.5,
+      "largue": 13.5,
+      "grandLargue": 12.0,
+      "ventArriere": 6.5
+    },
+    "qualites": {
+      "modVitesse": 0,
+      "modManoeuvre": 0
+    },
+    "navigation": {
+      "voilure": 0,
+      "vent": 0,
+      "allure": "largue"
+    },
+    "equipage": {
+      "max": 50,
+      "actuel": 29,
+      "convalescents": 0,
+      "manoeuvre": 14,
+      "recharge": 29,
+      "gardesMarines": 0,
+      "soldats": 0
+    },
+    "reserves": {
+      "eau": 45,
+      "vivres": 60,
+      "vivresFrais": 3,
+      "bois": 60,
+      "munitions": 20,
+      "trousse": 200
+    },
+    "cargaison": {},
+    "carenage": 0,
+    "structure": {
+      "mature": {
+        "max": 9,
+        "artimon": 9,
+        "grandMat": 9,
+        "misaine": 9
+      },
+      "coque": {
+        "max": 11,
+        "poupe": 11,
+        "babord": 11,
+        "tribord": 11,
+        "proue": 11
+      }
+    },
+    "batteries": {
+      "49H2PZADPkYDpfA0": {
+        "nom": "Bordée — 2×4 pièces de 4",
+        "position": "bordée",
+        "nombre": 0,
+        "calibre": 4,
+        "vd": 5,
+        "hommes": 12,
+        "modRecharge": 1,
+        "tonnage": 6.4,
+        "munition": "boulet",
+        "chargee": true,
+        "restant": 0,
+        "cote": "babord",
+        "ordre": 0,
+        "description": "2×4 pièces de 4"
+      },
+      "t0cRMwS6Zihg5w7S": {
+        "nom": "Chasse — une pièce de 4",
+        "position": "chasse",
+        "nombre": 0,
+        "calibre": 4,
+        "vd": -1,
+        "hommes": 3,
+        "modRecharge": 1,
+        "tonnage": 0,
+        "munition": "boulet",
+        "chargee": true,
+        "restant": 0,
+        "cote": "babord",
+        "ordre": 1,
+        "description": "une pièce de 4"
+      }
+    },
+    "commandement": {
+      "capitaine": {
+        "uuid": "",
+        "nom": ""
+      },
+      "second": {
+        "uuid": "",
+        "nom": ""
+      },
+      "canonnier": {
+        "uuid": "",
+        "nom": ""
+      },
+      "quartierMaitre": {
+        "uuid": "",
+        "nom": ""
+      },
+      "maitreEquipage": {
+        "uuid": "",
+        "nom": ""
+      },
+      "maitreCanonnier": {
+        "uuid": "",
+        "nom": ""
+      }
+    },
+    "gestion": {
+      "capitaineG": {
+        "uuid": "",
+        "nom": ""
+      },
+      "pilote": {
+        "uuid": "",
+        "nom": ""
+      },
+      "calfat": {
+        "uuid": "",
+        "nom": ""
+      },
+      "charpentier": {
+        "uuid": "",
+        "nom": ""
+      },
+      "voilier": {
+        "uuid": "",
+        "nom": ""
+      },
+      "chirurgien": {
+        "uuid": "",
+        "nom": ""
+      },
+      "quartierMaitreG": {
+        "uuid": "",
+        "nom": ""
+      },
+      "cambusier": {
+        "uuid": "",
+        "nom": ""
+      },
+      "grenadier": {
+        "uuid": "",
+        "nom": ""
+      },
+      "vigie": {
+        "uuid": "",
+        "nom": ""
+      }
+    },
+    "matelots": {
+      "manoeuvre": 3,
+      "ruse": 3,
+      "canonnade": 3,
+      "recharge": 3,
+      "combat": 3,
+      "tir": 3
+    },
+    "santeEquipage": {
+      "coches": 0
+    },
+    "possessions": {
+      "cartes": "",
+      "journaux": "",
+      "instruments": "",
+      "or": "",
+      "pavillons": "",
+      "otages": ""
+    },
+    "notes": ""
+  },
+  "items": [],
+  "effects": [],
+  "folder": "s2EXefKqZ8Ip9HR2",
+  "sort": 540,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.345",
+    "systemId": "pavillon-noir-2",
+    "systemVersion": "0.1.0",
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": null
+  },
+  "prototypeToken": {
+    "name": "Goélette Balaou (Guerre)",
+    "actorLink": false,
+    "disposition": 0,
+    "texture": {
+      "src": "systems/pavillon-noir-2/assets/icons/navire.svg"
+    },
+    "displayName": 20,
+    "sight": {
+      "enabled": true
+    }
+  }
+}

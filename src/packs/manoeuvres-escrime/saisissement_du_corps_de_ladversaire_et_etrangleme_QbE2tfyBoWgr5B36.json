@@ -1,0 +1,48 @@
+{
+  "_id": "QbE2tfyBoWgr5B36",
+  "_key": "!items!QbE2tfyBoWgr5B36",
+  "name": "Saisissement du corps de l’adversaire et étranglement (2M)",
+  "type": "manoeuvre",
+  "img": "systems/pavillon-noir-2/assets/icons/manoeuvre.svg",
+  "system": {
+    "description": "",
+    "source": "L'Art de l'escrime",
+    "escrime": "hache",
+    "niveau": 3,
+    "combinaison": "1 5 5",
+    "effet": "Vous devez tenir votre hache à deux mains. Vous immobilisez désormais votre adversaire (il ne peut plus agir : ni attaquer, ni esquiver, ni se déplacer). À chaque Tour suivant, effectuez en guise d’attaque un Test de Combat à mains nues (For) en opposition avec votre adversaire, avec un Bonus aux dégâts de MDFor+1. Votre adversaire ne peut ver de dégâts et se dégage s’il obtient Succès de plus que vous.",
+    "ecole": false,
+    "secondeMain": false,
+    "deuxMains": true,
+    "inadapte": "",
+    "peuAdapte": "",
+    "auto": {
+      "bonusD": 0,
+      "bonusFac": 0,
+      "malusFacAdv": 0,
+      "bonusS": 0,
+      "bonusDegats": 0,
+      "armure": 0,
+      "invulnerable": false,
+      "annuleAdv": false,
+      "choixLoc": false
+    }
+  },
+  "effects": [],
+  "folder": "nTJw6ccZ3od8MH71",
+  "sort": 1730,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.345",
+    "systemId": "pavillon-noir-2",
+    "systemVersion": "0.1.0",
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": null
+  }
+}

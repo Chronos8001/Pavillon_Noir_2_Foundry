@@ -1,0 +1,32 @@
+{
+  "_id": "gSv9iG4UciALnC5B",
+  "_key": "!items!gSv9iG4UciALnC5B",
+  "name": "Espingole de bastingage (0,5 livre)",
+  "type": "equipement",
+  "img": "systems/pavillon-noir-2/assets/icons/arme.svg",
+  "system": {
+    "description": "<p>Poids 50 kg. 20 charges (boulets & mitraille) : 2,25 pièces de huit. Canons de chasse : poids et prix × 1,5.</p>",
+    "source": "La Révolte",
+    "categorie": "Artillerie",
+    "quantite": 1,
+    "prix": "30",
+    "modificateur": ""
+  },
+  "effects": [],
+  "folder": "VdQHY7qXdU7A2Tha",
+  "sort": 700,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.345",
+    "systemId": "pavillon-noir-2",
+    "systemVersion": "0.1.0",
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": null
+  }
+}

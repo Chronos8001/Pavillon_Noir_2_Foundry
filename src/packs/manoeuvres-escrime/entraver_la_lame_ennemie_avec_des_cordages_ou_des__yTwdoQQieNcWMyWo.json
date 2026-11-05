@@ -1,0 +1,48 @@
+{
+  "_id": "yTwdoQQieNcWMyWo",
+  "_key": "!items!yTwdoQQieNcWMyWo",
+  "name": "Entraver la lame ennemie (avec des cordages ou des pistolets)",
+  "type": "manoeuvre",
+  "img": "systems/pavillon-noir-2/assets/icons/manoeuvre.svg",
+  "system": {
+    "description": "",
+    "source": "L'Art de l'escrime",
+    "escrime": "pont",
+    "niveau": 2,
+    "combinaison": "3 9",
+    "effet": "Seconde main libre. Pont seulement, ou pistolets et bande de soie. L’attaque de votre adversaire est Difficile (-2). Votre Tête, votre Bras Gauche et votre Bras Droit sont invulnérables à cette attaque (dégâts réduits à 0).",
+    "ecole": false,
+    "secondeMain": true,
+    "deuxMains": false,
+    "inadapte": "",
+    "peuAdapte": "",
+    "auto": {
+      "bonusD": 0,
+      "bonusFac": 0,
+      "malusFacAdv": 2,
+      "bonusS": 0,
+      "bonusDegats": 0,
+      "armure": 0,
+      "invulnerable": false,
+      "annuleAdv": false,
+      "choixLoc": false
+    }
+  },
+  "effects": [],
+  "folder": "AGnf5TH1JGoaCLs6",
+  "sort": 1950,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.345",
+    "systemId": "pavillon-noir-2",
+    "systemVersion": "0.1.0",
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": null
+  }
+}

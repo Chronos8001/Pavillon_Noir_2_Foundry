@@ -1,0 +1,48 @@
+{
+  "_id": "PpkDt3mpUpOSJMl9",
+  "_key": "!items!PpkDt3mpUpOSJMl9",
+  "name": "Botte",
+  "type": "manoeuvre",
+  "img": "systems/pavillon-noir-2/assets/icons/manoeuvre.svg",
+  "system": {
+    "description": "",
+    "source": "L'Art de l'escrime",
+    "escrime": "epee",
+    "niveau": 1,
+    "combinaison": "1",
+    "effet": "Votre attaque est Assez Efficace +1D (pas de nouvelle occasion générée par ce dé). Selon la Localisation visée : • Tête : botte de Quinte. • Bras Droit : botte de Tierce • Bras Gauche : botte de Prime. • Torse : botte de Quarte. • Jambe Gauche : botte de Septime. • Jambe Droite : botte de Seconde.",
+    "ecole": false,
+    "secondeMain": false,
+    "deuxMains": false,
+    "inadapte": "",
+    "peuAdapte": "",
+    "auto": {
+      "bonusD": 1,
+      "bonusFac": 0,
+      "malusFacAdv": 0,
+      "bonusS": 0,
+      "bonusDegats": 0,
+      "armure": 0,
+      "invulnerable": false,
+      "annuleAdv": false,
+      "choixLoc": false
+    }
+  },
+  "effects": [],
+  "folder": "IQJA1cBSGWHttpFX",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.345",
+    "systemId": "pavillon-noir-2",
+    "systemVersion": "0.1.0",
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": null
+  }
+}

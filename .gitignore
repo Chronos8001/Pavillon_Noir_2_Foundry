@@ -1,0 +1,11 @@
+# Livres et documents sources (non distribués)
+Pavillon Noir 2/
+*.pdf
+
+# Dépendances et fichiers temporaires
+node_modules/
+packs/*/LOCK
+packs/*/LOG
+packs/*/LOG.old
+.DS_Store
+Thumbs.db

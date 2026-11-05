@@ -1,0 +1,75 @@
+<section class="tab {{#if active}}active{{/if}}" data-group="primary" data-tab="mature">
+  <div class="pn2-columns">
+    <div class="col">
+      <h2>Mâture <span class="hint">PS max <input type="number" class="court" name="system.structure.mature.max" value="{{system.structure.mature.max}}"></span></h2>
+      <p class="hint">{{seuilsMature}}</p>
+      {{#each mature}}
+      <div class="structure {{#unless actif}}inactif{{/unless}} etat-{{etat.idx}}">
+        <div class="titre"><strong>{{label}}</strong> {{#if mod}}<span class="hint">Modif. de Réussite {{mod}}</span>{{/if}} <span class="avaries hint">avaries {{avaries}}</span></div>
+        <div class="barre"><div class="rempli" style="width:{{pct}}%"></div></div>
+        <div class="ligne">PS <input type="number" name="system.structure.mature.{{key}}" value="{{ps}}"> <span class="etat-label">{{etat.label}}{{#if etat.malus}} ({{etat.malus}}){{/if}}</span>
+          <a class="pn2-mini-btn" data-action="reparer" data-zone="mature" data-loc="{{key}}" title="Réparation : remonter d'un niveau de dommages"><i class="fa-solid fa-hammer"></i></a></div>
+      </div>
+      {{/each}}
+      <p>État général de la mâture : <strong>{{system.etatMature.label}}</strong> (vitesse et manœuvre {{system.etatMature.malus}})</p>
+
+      <h2>Coque <span class="hint">PS max <input type="number" class="court" name="system.structure.coque.max" value="{{system.structure.coque.max}}"></span></h2>
+      <p class="hint">{{seuilsCoque}}</p>
+      {{#each coque}}
+      <div class="structure etat-{{etat.idx}}">
+        <div class="titre"><strong>{{label}}</strong> {{#if mod}}<span class="hint">Modif. de Réussite {{mod}}</span>{{/if}} <span class="avaries hint">avaries {{avaries}}</span></div>
+        <div class="barre"><div class="rempli" style="width:{{pct}}%"></div></div>
+        <div class="ligne">PS <input type="number" name="system.structure.coque.{{key}}" value="{{ps}}"> <span class="etat-label">{{etat.label}}{{#if etat.malus}} (tir {{etat.malus}}){{/if}}</span>
+          <a class="pn2-mini-btn" data-action="reparer" data-zone="coque" data-loc="{{key}}" title="Réparation"><i class="fa-solid fa-hammer"></i></a></div>
+      </div>
+      {{/each}}
+      {{#if system.coule}}<p class="alerte">Une localisation de la coque est sous 0 PS : le navire sombre !</p>{{/if}}
+      <details class="hint"><summary>Avaries critiques (a à f)</summary>
+        <ul>
+          <li>a : un hauban cède (réparation de fortune avant de changer de bord).</li>
+          <li>b : le mât casse (Test de Manœuvre à 3 Succès pour couper les haubans, sinon le mât suivant s'abat).</li>
+          <li>c : boulets dans les œuvres vives (pas de changement de bord avant réparation).</li>
+          <li>d : coque percée sous l'eau (-1 cumulatif vitesse/manœuvre par TCN, sombre après 3 TCN sans réparation).</li>
+          <li>e : gouvernail brisé (Manœuvre à -4).</li>
+          <li>f : soute aux poudres, une chance sur deux d'exploser.</li>
+        </ul>
+      </details>
+    </div>
+    <div class="col">
+      <h2>Artillerie
+        <a class="pn2-mini-btn" data-action="batterieAdd" title="Ajouter une batterie"><i class="fa-solid fa-plus"></i></a>
+        <a class="pn2-btn petit" data-action="tourNaval" title="Décompte les recharges en cours"><i class="fa-solid fa-hourglass-half"></i> Tour naval suivant</a>
+      </h2>
+      <p class="hint">Artilleurs nécessaires (une bordée + autres pièces) : <strong>{{artilleursNecessaires}}</strong> — équipage minimal pour recharger en manœuvrant : <strong>{{equipageMinRecharge}}</strong>. Ciblez le navire adverse avant de tirer.</p>
+      {{#each batteries}}
+      <div class="batterie {{#if chargee}}chargee{{/if}}" data-batterie="{{id}}">
+        <div class="titre">
+          <input type="text" class="nom" name="system.batteries.{{id}}.nom" value="{{nom}}">
+          <a class="pn2-btn feu" data-action="tir" title="Canonnade"><i class="fa-solid fa-bomb"></i> Feu</a>
+          <a class="pn2-btn" data-action="recharge" title="Recharge"><i class="fa-solid fa-rotate"></i></a>
+          <a data-action="batterieDelete" title="Supprimer"><i class="fa-solid fa-trash"></i></a>
+        </div>
+        <div class="grid-4">
+          <label>Position <select name="system.batteries.{{id}}.position">{{selectOptions ../positions selected=position}}</select></label>
+          {{#if (eq position "bordée")}}<label>Bord <select name="system.batteries.{{id}}.cote">{{selectOptions ../cotes selected=cote}}</select></label>{{/if}}
+          <label title="Canons de la batterie (0 = utiliser la VD saisie)">Nombre <input type="number" name="system.batteries.{{id}}.nombre" value="{{nombre}}" min="0"></label>
+          <label>Calibre <input type="number" step="any" name="system.batteries.{{id}}.calibre" value="{{calibre}}"></label>
+          <label title="Valeur de dégâts">VD {{#if st.calcule}}<strong>{{pn2Signed st.vd}}</strong>{{else}}<input type="number" name="system.batteries.{{id}}.vd" value="{{vd}}">{{/if}}</label>
+          <label>Artilleurs {{#if st.calcule}}<strong>{{st.hommes}}</strong>{{else}}<input type="number" name="system.batteries.{{id}}.hommes" value="{{hommes}}">{{/if}}</label>
+          <label>Tonnage <input type="number" step="any" name="system.batteries.{{id}}.tonnage" value="{{tonnage}}"></label>
+          <label>Munition <select name="system.batteries.{{id}}.munition">{{selectOptions ../munitions selected=munition}}</select></label>
+        </div>
+        <div class="etat-recharge">
+          {{#if chargee}}<span class="ok"><i class="fa-solid fa-check"></i> Chargée ({{munitionLabel}}, portée {{portee}} m)</span>
+          {{else if restant}}<span class="encours">Recharge : {{restant}} TCN restant(s)</span>
+          {{else}}<span class="vide">À recharger</span>{{/if}}
+          <label class="checkbox"><input type="checkbox" name="system.batteries.{{id}}.chargee" {{checked chargee}}> chargée</label>
+        </div>
+        {{#if description}}<div class="hint">{{description}}</div>{{/if}}
+      </div>
+      {{else}}
+        <p class="hint">Aucune batterie. Choisissez un type de navire et un armement puis cliquez sur « Appliquer ».</p>
+      {{/each}}
+    </div>
+  </div>
+</section>

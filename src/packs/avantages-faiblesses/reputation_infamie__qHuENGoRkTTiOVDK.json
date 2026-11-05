@@ -1,0 +1,32 @@
+{
+  "_id": "qHuENGoRkTTiOVDK",
+  "_key": "!items!qHuENGoRkTTiOVDK",
+  "name": "Réputation (Infamie)",
+  "type": "avantage",
+  "img": "systems/pavillon-noir-2/assets/icons/avantage.svg",
+  "system": {
+    "description": "<p>20 points d'Infamie par point de compétence dépensé (5 maximum).</p>",
+    "source": "La Révolte",
+    "nature": "avantage",
+    "categorie": "Avantages sociaux",
+    "cout": "variable (max -5)",
+    "modificateurs": ""
+  },
+  "effects": [],
+  "folder": "9bpcSG3sL6AqQhn9",
+  "sort": 430,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.345",
+    "systemId": "pavillon-noir-2",
+    "systemVersion": "0.1.0",
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": null
+  }
+}

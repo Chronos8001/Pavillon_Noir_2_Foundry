@@ -1,0 +1,32 @@
+{
+  "_id": "Kfu3HQjGQ29kuM8N",
+  "_key": "!items!Kfu3HQjGQ29kuM8N",
+  "name": "Escrime à deux armes (roturier)",
+  "type": "avantage",
+  "img": "systems/pavillon-noir-2/assets/icons/manoeuvre.svg",
+  "system": {
+    "description": "<p>Gratuit pour les nobles italiens. Pas de manœuvre d'école.</p>",
+    "source": "L'Art de l'escrime",
+    "nature": "avantage",
+    "categorie": "Escrime : accès",
+    "cout": "-12 PC",
+    "modificateurs": ""
+  },
+  "effects": [],
+  "folder": "aMI4SefMFvSYcL0d",
+  "sort": 510,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.345",
+    "systemId": "pavillon-noir-2",
+    "systemVersion": "0.1.0",
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": null
+  }
+}

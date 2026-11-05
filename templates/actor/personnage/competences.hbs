@@ -1,0 +1,42 @@
+<section class="tab {{#if active}}active{{/if}}" data-group="primary" data-tab="competences">
+  <p class="hint legende">• compétence de métier (profane : 1D20) — <span class="cc">CC</span> compétence de commandement — ☐ expérience par la pratique (cochée automatiquement quand les Succès atteignent le niveau).
+    <a data-action="xpReset" title="Après la phase d'expérience"><i class="fa-solid fa-eraser"></i> Effacer l'expérience</a></p>
+  <div class="pn2-skills">
+    {{#each categories as |cat|}}
+    <div class="categorie cat-{{cat.key}}">
+      <h2>{{cat.label}}
+        {{#if @root.isPNJ}}<span class="fac-pnj" title="Facilité de catégorie du PNJ (0 = caractéristique)">F <input type="number" name="system.facilites.{{cat.key}}" value="{{cat.facilite}}" min="0"></span>{{/if}}
+      </h2>
+      <ul class="skill-list">
+        {{#each cat.skills as |sk|}}
+        <li class="skill" data-skill="{{sk.key}}">
+          <input type="checkbox" class="xp" name="system.skills.{{sk.key}}.xp" {{checked sk.xp}} title="Expérience par la pratique">
+          <a class="nom rollable" data-action="rollSkill">{{#if sk.group}}<span class="groupe">{{sk.group}} :</span> {{/if}}{{sk.label}}{{#if sk.metier}} •{{/if}}{{#if sk.cc}} <span class="cc">CC</span>{{/if}}</a>
+          <span class="carac hint">{{sk.carac}}</span>
+          {{#if sk.mod}}<span class="mod" title="Avantages/Faiblesses">{{pn2Signed sk.mod}}</span>{{/if}}
+          <input type="number" class="niveau" name="system.skills.{{sk.key}}.value" value="{{sk.value}}" min="0">
+        </li>
+        {{/each}}
+        {{#each cat.specs as |g|}}
+        <li class="spec-group"><span class="groupe-titre">{{g.label}}</span>
+          <a class="pn2-mini-btn" data-action="specAdd" data-group="{{g.key}}" title="Ajouter"><i class="fa-solid fa-plus"></i></a></li>
+          {{#each g.entries as |sp|}}
+          <li class="skill spec" data-skill="spec:{{sp.id}}" data-spec="{{sp.id}}">
+            <input type="checkbox" class="xp" name="system.specs.{{sp.id}}.xp" {{checked sp.xp}}>
+            <a class="rollable de" data-action="rollSkill" title="Lancer"><i class="fa-solid fa-dice-d10"></i></a>
+            <input type="text" class="spec-nom" name="system.specs.{{sp.id}}.name" value="{{sp.name}}" placeholder="Spécialité">
+            <label class="metier-toggle" title="Compétence de métier (•)"><input type="checkbox" name="system.specs.{{sp.id}}.metier" {{checked sp.metier}}>•</label>
+            {{#if sp.mod}}<span class="mod">{{pn2Signed sp.mod}}</span>{{/if}}
+            <input type="number" class="niveau" name="system.specs.{{sp.id}}.value" value="{{sp.value}}" min="0">
+            <a data-action="specDelete" title="Supprimer"><i class="fa-solid fa-xmark"></i></a>
+          </li>
+          {{/each}}
+        {{/each}}
+      </ul>
+      {{#if (eq cat.key "combat")}}
+        <label class="checkbox hint"><input type="checkbox" name="system.armesFeuMetier" {{checked @root.system.armesFeuMetier}}> Armes à feu = compétences de métier (Indiens, Africains)</label>
+      {{/if}}
+    </div>
+    {{/each}}
+  </div>
+</section>

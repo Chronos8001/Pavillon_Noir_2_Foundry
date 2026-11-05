@@ -1,0 +1,48 @@
+{
+  "_id": "Cz8ODbnOeUS382y6",
+  "_key": "!items!Cz8ODbnOeUS382y6",
+  "name": "Levée de cabillot",
+  "type": "manoeuvre",
+  "img": "systems/pavillon-noir-2/assets/icons/manoeuvre.svg",
+  "system": {
+    "description": "",
+    "source": "L'Art de l'escrime",
+    "escrime": "pont",
+    "niveau": 2,
+    "combinaison": "6 6",
+    "effet": "Seconde main libre. Pont seulement. Immédiatement après votre attaque, votre adversaire subit 5 points de dégâts dans la Jambe Gauche. 6 6 (Cabillot) dans la main gauche. Le marin se bat désormais avec une arme dans la main droite et une arme d’improvisation (cabillot, barreau de chaise) dans la main gauche pour parer les coups ennemis. Seconde main libre. Pont seulement, ou vous devez être près d’un objet allongé mais court. Vous gagnez une Action supplémentaire contre cet adversaire ou un autre, que vous pouvez utiliser lors d’un tour suivant (si vous avez conservé le cabillot dans votre seconde main) pour réduire de 2 la Réussite de votre adversaire du moment. Jusqu’à cet instant, votre seconde main n’est plus considérée comme libre. 6 9 (Boulets, Cordage, Taquets, Clairevoie) dans les pattes. Le marin envoie des objets gênants, comme des boulets ou des cordages, dans les pattes de son adversaire qui s’y empêtre, à moins qu’il ne l’amène sur des objets encombrants du pont (taquet, clairevoie, charnier). Pont seulement, ou vous êtes près d’un objet sur le sol. Cette attaque de votre adversaire et les suivantes sont Assez Difficiles (-1) jusqu’à ce qu’il se déplace, ce qu’il ne peut pas faire ni ce Tour-ci, ni le suivant.",
+    "ecole": false,
+    "secondeMain": true,
+    "deuxMains": false,
+    "inadapte": "",
+    "peuAdapte": "",
+    "auto": {
+      "bonusD": 0,
+      "bonusFac": 0,
+      "malusFacAdv": 0,
+      "bonusS": 0,
+      "bonusDegats": 0,
+      "armure": 0,
+      "invulnerable": false,
+      "annuleAdv": false,
+      "choixLoc": false
+    }
+  },
+  "effects": [],
+  "folder": "AGnf5TH1JGoaCLs6",
+  "sort": 1960,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.345",
+    "systemId": "pavillon-noir-2",
+    "systemVersion": "0.1.0",
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": null
+  }
+}

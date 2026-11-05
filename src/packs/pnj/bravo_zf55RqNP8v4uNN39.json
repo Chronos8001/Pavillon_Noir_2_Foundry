@@ -1,0 +1,671 @@
+{
+  "_id": "zf55RqNP8v4uNN39",
+  "_key": "!actors!zf55RqNP8v4uNN39",
+  "name": "Bravo",
+  "type": "pnj",
+  "img": "systems/pavillon-noir-2/assets/icons/pnj.svg",
+  "system": {
+    "caracs": {
+      "adr": {
+        "value": 5
+      },
+      "for": {
+        "value": 5
+      },
+      "res": {
+        "value": 7
+      },
+      "ada": {
+        "value": 5
+      },
+      "eru": {
+        "value": 5
+      },
+      "per": {
+        "value": 5
+      },
+      "cha": {
+        "value": 5
+      },
+      "exp": {
+        "value": 5
+      },
+      "pou": {
+        "value": 5
+      }
+    },
+    "infos": {
+      "titre": "",
+      "profession": "",
+      "poste": "",
+      "peuple": "",
+      "origines": "",
+      "jeunesse": "",
+      "religion": "",
+      "age": "",
+      "taille": "",
+      "poids": "",
+      "surnom": "",
+      "description": ""
+    },
+    "metier": {
+      "nom": "",
+      "carac1": "adr",
+      "carac2": "per"
+    },
+    "secondaires": {
+      "actionsBonus": 0,
+      "initiativeBonus": 0,
+      "chanceBonus": 0
+    },
+    "skills": {
+      "balistique": {
+        "value": 0,
+        "xp": false
+      },
+      "cartographie": {
+        "value": 0,
+        "xp": false
+      },
+      "commerce": {
+        "value": 0,
+        "xp": false
+      },
+      "droit": {
+        "value": 0,
+        "xp": false
+      },
+      "geographie": {
+        "value": 2,
+        "xp": false
+      },
+      "histoire": {
+        "value": 0,
+        "xp": false
+      },
+      "herboristerie": {
+        "value": 3,
+        "xp": false
+      },
+      "ingenierieNavale": {
+        "value": 0,
+        "xp": false
+      },
+      "intendance": {
+        "value": 0,
+        "xp": false
+      },
+      "lireEcrire": {
+        "value": 0,
+        "xp": false
+      },
+      "medecine": {
+        "value": 0,
+        "xp": false
+      },
+      "sciences": {
+        "value": 0,
+        "xp": false
+      },
+      "tactique": {
+        "value": 0,
+        "xp": false
+      },
+      "pointage": {
+        "value": 0,
+        "xp": false
+      },
+      "recharge": {
+        "value": 0,
+        "xp": false
+      },
+      "calfatage": {
+        "value": 0,
+        "xp": false
+      },
+      "charpenterie": {
+        "value": 0,
+        "xp": false
+      },
+      "voilerie": {
+        "value": 0,
+        "xp": false
+      },
+      "cuisine": {
+        "value": 0,
+        "xp": false
+      },
+      "chasse": {
+        "value": 0,
+        "xp": false
+      },
+      "chirurgie": {
+        "value": 0,
+        "xp": false
+      },
+      "dressage": {
+        "value": 0,
+        "xp": false
+      },
+      "premiersSoins": {
+        "value": 2,
+        "xp": false
+      },
+      "connNautiques": {
+        "value": 0,
+        "xp": false
+      },
+      "connNavires": {
+        "value": 0,
+        "xp": false
+      },
+      "connSignalisation": {
+        "value": 0,
+        "xp": false
+      },
+      "hydrographie": {
+        "value": 0,
+        "xp": false
+      },
+      "navigation": {
+        "value": 0,
+        "xp": false
+      },
+      "peche": {
+        "value": 0,
+        "xp": false
+      },
+      "pratiqueNautique": {
+        "value": 0,
+        "xp": false
+      },
+      "timonerie": {
+        "value": 0,
+        "xp": false
+      },
+      "acrobatie": {
+        "value": 3,
+        "xp": false
+      },
+      "athletisme": {
+        "value": 0,
+        "xp": false
+      },
+      "discretion": {
+        "value": 4,
+        "xp": false
+      },
+      "equitation": {
+        "value": 0,
+        "xp": false
+      },
+      "larcins": {
+        "value": 0,
+        "xp": false
+      },
+      "natation": {
+        "value": 0,
+        "xp": false
+      },
+      "survie": {
+        "value": 4,
+        "xp": false
+      },
+      "vigilance": {
+        "value": 3,
+        "xp": false
+      },
+      "comedie": {
+        "value": 0,
+        "xp": false
+      },
+      "empathie": {
+        "value": 0,
+        "xp": false
+      },
+      "enseignement": {
+        "value": 0,
+        "xp": false
+      },
+      "etiquette": {
+        "value": 0,
+        "xp": false
+      },
+      "intimidation": {
+        "value": 3,
+        "xp": false
+      },
+      "jeu": {
+        "value": 0,
+        "xp": false
+      },
+      "meneurHommes": {
+        "value": 3,
+        "xp": false
+      },
+      "persuasion": {
+        "value": 0,
+        "xp": false
+      },
+      "politique": {
+        "value": 0,
+        "xp": false
+      },
+      "seduction": {
+        "value": 0,
+        "xp": false
+      },
+      "mousquet": {
+        "value": 0,
+        "xp": false
+      },
+      "pistolet": {
+        "value": 0,
+        "xp": false
+      },
+      "grenade": {
+        "value": 0,
+        "xp": false
+      },
+      "mainsNues": {
+        "value": 0,
+        "xp": false
+      },
+      "escrime": {
+        "value": 0,
+        "xp": false
+      },
+      "esquive": {
+        "value": 3,
+        "xp": false
+      }
+    },
+    "specs": {
+      "uCurcbnIYeezivr3": {
+        "group": "religion",
+        "name": "Religion",
+        "value": 2,
+        "xp": false,
+        "metier": false,
+        "carac": ""
+      },
+      "NJE7uCbH8LCu2LQ9": {
+        "group": "connColons",
+        "name": "Connaissance des Indiens",
+        "value": 2,
+        "xp": false,
+        "metier": false,
+        "carac": ""
+      },
+      "MMG6ec3B771DcIwa": {
+        "group": "armesJet",
+        "name": "Arc",
+        "value": 2,
+        "xp": false,
+        "metier": false,
+        "carac": ""
+      },
+      "JiumKpA0ZxhZfyz5": {
+        "group": "armesJet",
+        "name": "Sarbacane",
+        "value": 5,
+        "xp": false,
+        "metier": false,
+        "carac": ""
+      },
+      "3WVG0jIVXjm4bizW": {
+        "group": "armesBlanches",
+        "name": "Casse-tête",
+        "value": 3,
+        "xp": false,
+        "metier": false,
+        "carac": ""
+      },
+      "soxEQkFx9QtrL6wq": {
+        "group": "armesBlanches",
+        "name": "Lance",
+        "value": 4,
+        "xp": false,
+        "metier": false,
+        "carac": ""
+      }
+    },
+    "armesFeuMetier": false,
+    "escrime": {
+      "epee": {
+        "value": 0,
+        "xp": 0,
+        "predilection": false,
+        "pointsBonus": 0
+      },
+      "dague": {
+        "value": 0,
+        "xp": 0,
+        "predilection": false,
+        "pointsBonus": 0
+      },
+      "deuxarmes": {
+        "value": 0,
+        "xp": 0,
+        "predilection": false,
+        "pointsBonus": 0
+      },
+      "sabre": {
+        "value": 0,
+        "xp": 0,
+        "predilection": false,
+        "pointsBonus": 0
+      },
+      "baionnette": {
+        "value": 0,
+        "xp": 0,
+        "predilection": false,
+        "pointsBonus": 0
+      },
+      "hache": {
+        "value": 0,
+        "xp": 0,
+        "predilection": false,
+        "pointsBonus": 0
+      },
+      "pont": {
+        "value": 0,
+        "xp": 0,
+        "predilection": false,
+        "pointsBonus": 0
+      },
+      "destreza": {
+        "value": 0,
+        "xp": 0,
+        "predilection": false,
+        "pointsBonus": 0
+      },
+      "ecole": "",
+      "arme": ""
+    },
+    "sante": {
+      "loc": {
+        "jambeG": {
+          "coches": 0,
+          "protection": 0
+        },
+        "jambeD": {
+          "coches": 0,
+          "protection": 0
+        },
+        "torse": {
+          "coches": 0,
+          "protection": 0
+        },
+        "brasG": {
+          "coches": 0,
+          "protection": 0
+        },
+        "brasD": {
+          "coches": 0,
+          "protection": 0
+        },
+        "tete": {
+          "coches": 0,
+          "protection": 0
+        }
+      }
+    },
+    "reputation": {
+      "gloire": {
+        "score": 0,
+        "depenses": 0
+      },
+      "infamie": {
+        "score": 0,
+        "depenses": 0
+      }
+    },
+    "combat": {
+      "posture": "attentive"
+    },
+    "richesse": {
+      "pieces": 5
+    },
+    "contacts": "",
+    "notes": "",
+    "biographie": "",
+    "facilites": {
+      "connaissances": 5,
+      "techniques": 5,
+      "maritimes": 0,
+      "physiques": 7,
+      "sociales": 4,
+      "combat": 8
+    },
+    "role": "Bravo",
+    "importance": "mineure"
+  },
+  "items": [
+    {
+      "name": "Arc",
+      "type": "arme",
+      "img": "systems/pavillon-noir-2/assets/icons/armefeu.svg",
+      "system": {
+        "description": "",
+        "source": "La Révolte",
+        "categorie": "jet",
+        "competence": "armesJet",
+        "specialite": "Arc",
+        "carac": "per",
+        "modEff": 0,
+        "modFac": 0,
+        "md": "adr",
+        "degats": 0,
+        "taille": "longue",
+        "mains": 1,
+        "portee": 25,
+        "recharge": "1 Action",
+        "cibles": "",
+        "qualite": "normale",
+        "bonusAbordage": false,
+        "escrime": "autre",
+        "longFeuMod": 0,
+        "equipee": true,
+        "mainGauche": false,
+        "prix": "Mauvaise 3 / Bonne 5 / Exceptionnelle 10",
+        "quantite": 1
+      },
+      "_id": "uYF8onRM4cIesLmD",
+      "_key": "!actors.items!zf55RqNP8v4uNN39.uYF8onRM4cIesLmD",
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "coreVersion": "13.345",
+        "systemId": "pavillon-noir-2",
+        "systemVersion": "0.1.0",
+        "createdTime": 0,
+        "modifiedTime": 0,
+        "lastModifiedBy": null
+      }
+    },
+    {
+      "name": "Sarbacane",
+      "type": "arme",
+      "img": "systems/pavillon-noir-2/assets/icons/armefeu.svg",
+      "system": {
+        "description": "<p>Souvent utilisée avec des fléchettes empoisonnées au curare.</p>",
+        "source": "La Révolte",
+        "categorie": "jet",
+        "competence": "armesJet",
+        "specialite": "Sarbacane",
+        "carac": "per",
+        "modEff": 0,
+        "modFac": 0,
+        "md": "adr",
+        "degats": -1,
+        "taille": "longue",
+        "mains": 1,
+        "portee": 20,
+        "recharge": "1 Action",
+        "cibles": "",
+        "qualite": "normale",
+        "bonusAbordage": false,
+        "escrime": "autre",
+        "longFeuMod": 0,
+        "equipee": true,
+        "mainGauche": false,
+        "prix": "",
+        "quantite": 1
+      },
+      "_id": "EwBwKGUgeLVna9Pz",
+      "_key": "!actors.items!zf55RqNP8v4uNN39.EwBwKGUgeLVna9Pz",
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "coreVersion": "13.345",
+        "systemId": "pavillon-noir-2",
+        "systemVersion": "0.1.0",
+        "createdTime": 0,
+        "modifiedTime": 0,
+        "lastModifiedBy": null
+      }
+    },
+    {
+      "name": "Casse-tête / masse",
+      "type": "arme",
+      "img": "systems/pavillon-noir-2/assets/icons/arme.svg",
+      "system": {
+        "description": "",
+        "source": "La Révolte",
+        "categorie": "blanche",
+        "competence": "armesBlanches",
+        "specialite": "Casse-tête",
+        "carac": "for",
+        "modEff": 0,
+        "modFac": 0,
+        "md": "for",
+        "degats": 0,
+        "taille": "longue",
+        "mains": 1,
+        "portee": 0,
+        "recharge": "",
+        "cibles": "",
+        "qualite": "normale",
+        "bonusAbordage": false,
+        "escrime": "autre",
+        "longFeuMod": 0,
+        "equipee": true,
+        "mainGauche": false,
+        "prix": "",
+        "quantite": 1
+      },
+      "_id": "hy6PPqrTv8HhAYmX",
+      "_key": "!actors.items!zf55RqNP8v4uNN39.hy6PPqrTv8HhAYmX",
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "coreVersion": "13.345",
+        "systemId": "pavillon-noir-2",
+        "systemVersion": "0.1.0",
+        "createdTime": 0,
+        "modifiedTime": 0,
+        "lastModifiedBy": null
+      }
+    },
+    {
+      "name": "Lance / pique",
+      "type": "arme",
+      "img": "systems/pavillon-noir-2/assets/icons/arme.svg",
+      "system": {
+        "description": "",
+        "source": "La Révolte",
+        "categorie": "blanche",
+        "competence": "armesBlanches",
+        "specialite": "Lance",
+        "carac": "adr",
+        "modEff": 0,
+        "modFac": 0,
+        "md": "for",
+        "degats": 1,
+        "taille": "longue",
+        "mains": 1,
+        "portee": 0,
+        "recharge": "",
+        "cibles": "",
+        "qualite": "normale",
+        "bonusAbordage": false,
+        "escrime": "autre",
+        "longFeuMod": 0,
+        "equipee": true,
+        "mainGauche": false,
+        "prix": "Bonne 0,5",
+        "quantite": 1
+      },
+      "_id": "txw1gWdaJQIZWQuj",
+      "_key": "!actors.items!zf55RqNP8v4uNN39.txw1gWdaJQIZWQuj",
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "coreVersion": "13.345",
+        "systemId": "pavillon-noir-2",
+        "systemVersion": "0.1.0",
+        "createdTime": 0,
+        "modifiedTime": 0,
+        "lastModifiedBy": null
+      }
+    }
+  ],
+  "effects": [],
+  "folder": "Xlogck4Tx3J3c022",
+  "sort": 230,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.345",
+    "systemId": "pavillon-noir-2",
+    "systemVersion": "0.1.0",
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": null
+  },
+  "prototypeToken": {
+    "name": "Bravo",
+    "actorLink": false,
+    "disposition": -1,
+    "texture": {
+      "src": "systems/pavillon-noir-2/assets/icons/pnj.svg"
+    },
+    "displayName": 20,
+    "sight": {
+      "enabled": true
+    }
+  }
+}

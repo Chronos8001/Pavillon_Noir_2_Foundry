@@ -1,0 +1,32 @@
+{
+  "_id": "uq6ECccmVjOMh77J",
+  "_key": "!items!uq6ECccmVjOMh77J",
+  "name": "Arme blanche de qualité",
+  "type": "avantage",
+  "img": "systems/pavillon-noir-2/assets/icons/manoeuvre.svg",
+  "system": {
+    "description": "<p>Forge de qualité 1 (-1 PC) : lame d'Apparat. Qualité 2 (-3 PC) : Apparat + une qualité. Qualité 3 (-5 PC) : Apparat + deux qualités (Légèreté, Équilibre, Trempe, Acier, Pointe légère, Prolongement du bras, Brise-lame, Protection de la main).</p>",
+    "source": "L'Art de l'escrime",
+    "nature": "avantage",
+    "categorie": "Escrime : armes",
+    "cout": "-1 / -3 / -5 PC",
+    "modificateurs": ""
+  },
+  "effects": [],
+  "folder": "ImdZb9SLMIEqorIf",
+  "sort": 460,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.345",
+    "systemId": "pavillon-noir-2",
+    "systemVersion": "0.1.0",
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": null
+  }
+}

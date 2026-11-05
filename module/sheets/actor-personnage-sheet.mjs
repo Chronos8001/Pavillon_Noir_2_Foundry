@@ -1,0 +1,287 @@
+import { PN2 } from "../config.mjs";
+import { dialogTest, testChance } from "../rolls/dice.mjs";
+import { attaquer, competenceArme, degatsFixes } from "../rolls/combat.mjs";
+import { comboHTML } from "../documents/item.mjs";
+
+const { HandlebarsApplicationMixin } = foundry.applications.api;
+const TPL = "systems/pavillon-noir-2/templates/actor";
+
+export class PN2PersonnageSheet extends HandlebarsApplicationMixin(foundry.applications.sheets.ActorSheetV2) {
+
+  static DEFAULT_OPTIONS = {
+    classes: ["pn2", "sheet", "actor", "personnage"],
+    position: { width: 940, height: 860 },
+    window: { resizable: true },
+    form: { submitOnChange: true },
+    actions: {
+      rollSkill: PN2PersonnageSheet.#onRollSkill,
+      rollCarac: PN2PersonnageSheet.#onRollCarac,
+      rollChance: PN2PersonnageSheet.#onRollChance,
+      attaque: PN2PersonnageSheet.#onAttaque,
+      itemCreate: PN2PersonnageSheet.#onItemCreate,
+      itemEdit: PN2PersonnageSheet.#onItemEdit,
+      itemDelete: PN2PersonnageSheet.#onItemDelete,
+      itemShow: PN2PersonnageSheet.#onItemShow,
+      itemToggle: PN2PersonnageSheet.#onItemToggle,
+      specAdd: PN2PersonnageSheet.#onSpecAdd,
+      specDelete: PN2PersonnageSheet.#onSpecDelete,
+      blessure: PN2PersonnageSheet.#onBlessure,
+      soinsTotal: PN2PersonnageSheet.#onSoinsTotal,
+      reputation: PN2PersonnageSheet.#onReputation,
+      recupererReputation: PN2PersonnageSheet.#onRecupererReputation,
+      xpReset: PN2PersonnageSheet.#onXpReset,
+      ouvrirCompendium: PN2PersonnageSheet.#onOuvrirCompendium
+    }
+  };
+
+  static PARTS = {
+    header: { template: `${TPL}/personnage/header.hbs` },
+    nav: { template: `${TPL}/personnage/nav.hbs` },
+    principal: { template: `${TPL}/personnage/principal.hbs`, scrollable: [""] },
+    competences: { template: `${TPL}/personnage/competences.hbs`, scrollable: [""] },
+    combat: { template: `${TPL}/personnage/combat.hbs`, scrollable: [""] },
+    escrime: { template: `${TPL}/personnage/escrime.hbs`, scrollable: [""] },
+    equipement: { template: `${TPL}/personnage/equipement.hbs`, scrollable: [""] },
+    notes: { template: `${TPL}/personnage/notes.hbs`, scrollable: [""] }
+  };
+
+  tabGroups = { primary: "principal" };
+
+  /** @override */
+  async _prepareContext(options) {
+    const context = await super._prepareContext(options);
+    const actor = this.document;
+    const sys = actor.system;
+    context.actor = actor;
+    context.system = sys;
+    context.config = PN2;
+    context.editable = this.isEditable;
+    context.isPNJ = actor.type === "pnj";
+    context.tab = this.tabGroups.primary;
+    context.tabs = [
+      { id: "principal", label: "Personnage", icon: "fa-solid fa-user" },
+      { id: "competences", label: "Compétences", icon: "fa-solid fa-list-check" },
+      { id: "combat", label: "Combat & Santé", icon: "fa-solid fa-heart-pulse" },
+      { id: "escrime", label: "Escrime", icon: "fa-solid fa-khanda" },
+      { id: "equipement", label: "Équipement", icon: "fa-solid fa-sack-dollar" },
+      { id: "notes", label: "Notes", icon: "fa-solid fa-feather" }
+    ].map(t => ({ ...t, active: t.id === context.tab }));
+
+    // Caractéristiques (rose des vents)
+    context.caracs = Object.entries(PN2.caracs).map(([k, d]) => ({
+      key: k, label: d.label, abbr: d.abbr, value: sys.caracs[k].value, effective: sys.c[k], modifiee: sys.c[k] !== sys.caracs[k].value
+    }));
+    context.caracMap = Object.fromEntries(context.caracs.map(c => [c.key, c]));
+    context.vc = Object.entries(PN2.commandement).map(([k, d]) => ({
+      key: k, label: d.label, value: sys.vc[k], formule: `(${PN2.caracs[d.caracs[0]].abbr} + ${PN2.caracs[d.caracs[1]].abbr}) / 2`
+    }));
+    context.caracOptions = Object.fromEntries(Object.entries(PN2.caracs).map(([k, d]) => [k, d.label]));
+
+    // Compétences par catégorie
+    const mods = sys.modificateurs?.skill ?? {};
+    const cats = {};
+    for (const [ck, cl] of Object.entries(PN2.skillCategories)) {
+      cats[ck] = { key: ck, label: cl, skills: [], specs: [], facilite: context.isPNJ ? sys.facilites?.[ck] : null };
+    }
+    for (const [k, d] of Object.entries(PN2.skills)) {
+      const v = sys.skills[k];
+      const metier = d.armeFeu ? sys.armesFeuMetier : d.metier;
+      cats[d.cat].skills.push({
+        key: k, label: d.label, group: d.group, metier, cc: d.cc, value: v.value, xp: v.xp,
+        mod: (mods[k] ?? 0) + (d.group === "Armes à feu" ? (mods.armesFeu ?? 0) : 0) + (mods[d.cat] ?? 0),
+        carac: PN2.caracs[d.carac].abbr
+      });
+    }
+    const groups = {};
+    for (const [gk, g] of Object.entries(PN2.specGroups)) {
+      groups[gk] = { key: gk, label: g.label, entries: [] };
+      cats[g.cat].specs.push(groups[gk]);
+    }
+    for (const [id, sp] of Object.entries(sys.specs ?? {})) {
+      const g = groups[sp.group];
+      if (!g) continue;
+      g.entries.push({ id, ...sp, mod: (mods[sp.group] ?? 0) + (mods[PN2.specGroups[sp.group].cat] ?? 0) });
+    }
+    for (const g of Object.values(groups)) g.entries.sort((a, b) => a.name.localeCompare(b.name));
+    context.categories = Object.values(cats);
+
+    // Objets
+    const items = actor.items.contents.sort((a, b) => (a.sort ?? 0) - (b.sort ?? 0));
+    context.armes = items.filter(i => i.type === "arme").map(i => {
+      const sk = competenceArme(actor, i);
+      return {
+        item: i, id: i.id, name: i.name, img: i.img, system: i.system, skill: sk.label, niveau: sk.value,
+        chances: `${sk.value}F${sys.c[i.system.carac] ?? "?"}`, degats: degatsFixes(actor, i),
+        longFeu: i.system.estArmeFeu ? 4 - sk.value + ({ mauvaise: 2, mediocre: 1, normale: 0, exceptionnelle: -1 }[i.system.qualite] ?? 0) + (i.system.longFeuMod ?? 0) : null,
+        deLongFeu: i.system.estArmeFeu ? PN2.deLongFeu[i.system.qualite] : null,
+        taille: PN2.taillesArme[i.system.taille] ?? ""
+      };
+    });
+    context.armures = items.filter(i => i.type === "armure").map(i => ({
+      id: i.id, name: i.name, img: i.img, system: i.system,
+      locs: PN2.locKeys.filter(k => i.system.localisations[k]).map(k => PN2.locLabels[k]).join(", ")
+    }));
+    context.equipements = items.filter(i => i.type === "equipement");
+    context.avantages = items.filter(i => i.type === "avantage" && i.system.nature !== "faiblesse");
+    context.faiblesses = items.filter(i => i.type === "avantage" && i.system.nature === "faiblesse");
+
+    // Escrime
+    const manoeuvres = items.filter(i => i.type === "manoeuvre");
+    context.escrimes = Object.entries(PN2.escrimeTypes).filter(([k]) => k !== "botte").map(([k, d]) => {
+      const e = sys.escrime[k];
+      const list = manoeuvres.filter(m => m.system.escrime === k).sort((a, b) => a.system.niveau - b.system.niveau || a.name.localeCompare(b.name));
+      const depenses = list.filter(m => !m.system.ecole).reduce((a, m) => a + m.system.niveau, 0);
+      return {
+        key: k, label: d.label, opps: d.opportunites.join(" "), value: e.value, xp: e.xp, predilection: e.predilection,
+        pointsBonus: e.pointsBonus, points: e.points, depenses, reste: (e.points ?? 0) - depenses, destreza: k === "destreza",
+        science: e.science, strategie: e.strategie,
+        manoeuvres: list.map(m => ({ id: m.id, name: m.name, niveau: m.system.niveau, combo: comboHTML(m.system.combo), puissance: m.system.puissance, effet: m.system.effet, ecole: m.system.ecole }))
+      };
+    });
+    context.bottes = manoeuvres.filter(m => m.system.escrime === "botte").map(m => ({ id: m.id, name: m.name, combo: comboHTML(m.system.combo), effet: m.system.effet }));
+    context.escrimeMode = game.settings.get(PN2.id, "escrimeMode");
+
+    // Santé : silhouette par localisation
+    const lvlKeys = ["L", "S", "G", "Cr", "Co", "M"];
+    const maxParNiveau = [2, 2, 2, 2, 2, 1];
+    context.locs = ["tete", "brasD", "torse", "brasG", "jambeD", "jambeG"].map(k => {
+      const coches = sys.sante.loc[k].coches;
+      const cases = [];
+      let index = 0;
+      lvlKeys.forEach((lk, li) => {
+        const dispo = sys.casesNiveaux[li];
+        for (let j = 0; j < maxParNiveau[li]; j++) {
+          if (j < dispo) { index++; cases.push({ niveau: lk, index, coche: index <= coches, dispo: true }); }
+          else cases.push({ niveau: lk, dispo: false });
+        }
+      });
+      const num = { tete: 6, brasD: 5, torse: 3, brasG: 4, jambeD: 2, jambeG: 1 }[k];
+      return { key: k, label: PN2.locLabels[k], num, cases, etat: sys.santeLoc[k].label, niveau: sys.santeLoc[k].niveau, protection: sys.santeLoc[k].protection, protManuelle: sys.sante.loc[k].protection };
+    });
+    context.etats = PN2.etatsSante.slice(1).map((l, i) => ({ label: l, actif: sys.etat === i + 1, malus: PN2.malusSante[i + 1] }));
+
+    // Réputation : cases de points dépensés
+    for (const r of ["gloire", "infamie"]) {
+      const rep = sys.reputation[r];
+      context[r] = {
+        ...rep, cases: Array.from({ length: 10 }, (_, i) => ({ i: i + 1, dispo: i < rep.niveau, depense: i < rep.depenses }))
+      };
+    }
+
+    // Textes enrichis
+    const TE = foundry.applications.ux.TextEditor.implementation;
+    context.notesHTML = await TE.enrichHTML(sys.notes ?? "", { async: true, relativeTo: actor });
+    context.bioHTML = await TE.enrichHTML(sys.biographie ?? "", { async: true, relativeTo: actor });
+    return context;
+  }
+
+  /** @override */
+  async _preparePartContext(partId, context) {
+    context = await super._preparePartContext(partId, context);
+    context.partId = partId;
+    context.active = context.tab === partId;
+    return context;
+  }
+
+  /* -------------------------------------------- */
+  /*  Actions                                     */
+  /* -------------------------------------------- */
+
+  static async #onRollSkill(event, target) {
+    const key = target.closest("[data-skill]")?.dataset.skill;
+    if (key) await dialogTest(this.document, { skillKey: key });
+  }
+
+  static async #onRollCarac(event, target) {
+    await dialogTest(this.document, { carac: target.dataset.carac });
+  }
+
+  static async #onRollChance() {
+    await testChance(this.document);
+  }
+
+  static async #onAttaque(event, target) {
+    const item = this.document.items.get(target.closest("[data-item-id]")?.dataset.itemId);
+    if (item) await attaquer(this.document, item);
+  }
+
+  static async #onItemCreate(event, target) {
+    const type = target.dataset.type;
+    const sys = {};
+    if (target.dataset.nature) sys.nature = target.dataset.nature;
+    if (target.dataset.escrime) sys.escrime = target.dataset.escrime;
+    const name = { arme: "Nouvelle arme", armure: "Nouvelle armure", equipement: "Nouvel objet", avantage: target.dataset.nature === "faiblesse" ? "Nouvelle faiblesse" : "Nouvel avantage", manoeuvre: "Nouvelle manœuvre" }[type] ?? "Nouvel objet";
+    const [item] = await this.document.createEmbeddedDocuments("Item", [{ name, type, system: sys }]);
+    item?.sheet.render(true);
+  }
+
+  static #onItemEdit(event, target) {
+    this.document.items.get(target.closest("[data-item-id]")?.dataset.itemId)?.sheet.render(true);
+  }
+
+  static async #onItemDelete(event, target) {
+    const item = this.document.items.get(target.closest("[data-item-id]")?.dataset.itemId);
+    if (!item) return;
+    const ok = await foundry.applications.api.DialogV2.confirm({ window: { title: "Supprimer" }, content: `<p>Supprimer <strong>${item.name}</strong> ?</p>` });
+    if (ok) await item.delete();
+  }
+
+  static async #onItemShow(event, target) {
+    await this.document.items.get(target.closest("[data-item-id]")?.dataset.itemId)?.afficher();
+  }
+
+  static async #onItemToggle(event, target) {
+    const item = this.document.items.get(target.closest("[data-item-id]")?.dataset.itemId);
+    const field = target.dataset.field;
+    if (item && field) await item.update({ [field]: !foundry.utils.getProperty(item, field) });
+  }
+
+  static async #onSpecAdd(event, target) {
+    await this.document.ajouterSpecialite(target.dataset.group, "");
+  }
+
+  static async #onSpecDelete(event, target) {
+    await this.document.supprimerSpecialite(target.closest("[data-spec]")?.dataset.spec);
+  }
+
+  /** Clic sur une case de blessure : coche jusqu'à cette case (ou décoche la dernière). */
+  static async #onBlessure(event, target) {
+    const loc = target.closest("[data-loc]")?.dataset.loc;
+    const idx = Number(target.dataset.index);
+    if (!loc || !idx) return;
+    const cur = this.document.system.sante.loc[loc].coches;
+    const val = cur === idx ? idx - 1 : idx;
+    await this.document.update({ [`system.sante.loc.${loc}.coches`]: val });
+  }
+
+  static async #onSoinsTotal() {
+    const upd = {};
+    for (const k of PN2.locKeys) upd[`system.sante.loc.${k}.coches`] = 0;
+    await this.document.update(upd);
+  }
+
+  /** Clic sur une case de points de Gloire/Infamie dépensés. */
+  static async #onReputation(event, target) {
+    const r = target.dataset.rep;
+    const i = Number(target.dataset.index);
+    const cur = this.document.system.reputation[r].depenses;
+    await this.document.update({ [`system.reputation.${r}.depenses`]: cur === i ? i - 1 : i });
+  }
+
+  static async #onRecupererReputation() {
+    await this.document.update({ "system.reputation.gloire.depenses": 0, "system.reputation.infamie.depenses": 0 });
+  }
+
+  /** Remet à zéro les cases d'expérience par la pratique. */
+  static async #onXpReset() {
+    const upd = {};
+    for (const k of Object.keys(PN2.skills)) upd[`system.skills.${k}.xp`] = false;
+    for (const id of Object.keys(this.document.system.specs ?? {})) upd[`system.specs.${id}.xp`] = false;
+    await this.document.update(upd);
+  }
+
+  static #onOuvrirCompendium(event, target) {
+    const pack = game.packs.get(`${PN2.id}.${target.dataset.pack}`);
+    pack?.render(true);
+  }
+}

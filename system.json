@@ -1,0 +1,52 @@
+{
+  "id": "pavillon-noir-2",
+  "title": "Pavillon Noir 2",
+  "description": "Système non officiel pour jouer à Pavillon Noir (2e édition, Black Book Éditions) : fiches de personnage, de PNJ et de navire avec équipage, escrime automatisée (L'Art de l'escrime), combat naval et compendiums.",
+  "version": "0.1.0",
+  "compatibility": {
+    "minimum": "13",
+    "verified": "14"
+  },
+  "authors": [
+    { "name": "Chronos8001" }
+  ],
+  "esmodules": ["module/pn2.mjs"],
+  "styles": ["styles/pn2.css"],
+  "languages": [
+    { "lang": "fr", "name": "Français", "path": "lang/fr.json" },
+    { "lang": "en", "name": "English", "path": "lang/fr.json" }
+  ],
+  "documentTypes": {
+    "Actor": {
+      "personnage": {},
+      "pnj": {},
+      "navire": { "htmlFields": ["notes"] }
+    },
+    "Item": {
+      "arme": { "htmlFields": ["description"] },
+      "armure": { "htmlFields": ["description"] },
+      "equipement": { "htmlFields": ["description"] },
+      "avantage": { "htmlFields": ["description"] },
+      "manoeuvre": { "htmlFields": ["description"] }
+    }
+  },
+  "packs": [
+    { "name": "avantages-faiblesses", "label": "Avantages et faiblesses", "path": "packs/avantages-faiblesses", "type": "Item", "ownership": { "PLAYER": "OBSERVER", "ASSISTANT": "OWNER" } },
+    { "name": "equipement", "label": "Équipement", "path": "packs/equipement", "type": "Item", "ownership": { "PLAYER": "OBSERVER", "ASSISTANT": "OWNER" } },
+    { "name": "manoeuvres-escrime", "label": "Manœuvres d'escrime", "path": "packs/manoeuvres-escrime", "type": "Item", "ownership": { "PLAYER": "OBSERVER", "ASSISTANT": "OWNER" } },
+    { "name": "pnj", "label": "PNJ (archétypes)", "path": "packs/pnj", "type": "Actor", "ownership": { "PLAYER": "NONE", "ASSISTANT": "OWNER" } },
+    { "name": "navires", "label": "Navires", "path": "packs/navires", "type": "Actor", "ownership": { "PLAYER": "OBSERVER", "ASSISTANT": "OWNER" } }
+  ],
+  "packFolders": [
+    {
+      "name": "Pavillon Noir 2",
+      "sorting": "m",
+      "packs": ["avantages-faiblesses", "equipement", "manoeuvres-escrime", "pnj", "navires"]
+    }
+  ],
+  "grid": { "distance": 1, "units": "m" },
+  "socket": false,
+  "url": "https://github.com/Chronos8001/Pavillon_Noir_2_Foundry",
+  "manifest": "https://raw.githubusercontent.com/Chronos8001/Pavillon_Noir_2_Foundry/main/system.json",
+  "download": "https://github.com/Chronos8001/Pavillon_Noir_2_Foundry/archive/refs/heads/main.zip"
+}

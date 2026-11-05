@@ -1,0 +1,264 @@
+{
+  "_id": "EL4oapggNReA8Foo",
+  "_key": "!actors!EL4oapggNReA8Foo",
+  "name": "Lougre (Commerce & défense)",
+  "type": "navire",
+  "img": "systems/pavillon-noir-2/assets/icons/navire.svg",
+  "system": {
+    "modele": {
+      "type": "Lougre",
+      "configuration": "Commerce & défense"
+    },
+    "infos": {
+      "capitaine": "",
+      "figureProue": "",
+      "greement": "Voiles au tiers (3 mâts), avirons",
+      "taille": "Sloop",
+      "mats": 3,
+      "tonnage": 90.0,
+      "tonnageUtile": 75.0,
+      "tirantEau": "2m",
+      "fonction": "Pirates et Royale homme) dont 2 peuvent tirer en chasse (VD = -4, recharge = 2",
+      "epoque": "Flibuste (Europe seulement), piraterie (rare dans les In- des) et Royale hommes) et 2×2 espingoles en bordée (recharge =",
+      "armement": "Commerce & défense (16 matelots)",
+      "manoeuvrabilite": 1,
+      "avirons": "2 nœuds",
+      "vitMoyenne": 100.0,
+      "calibreMax": 4,
+      "longueur": "Immergée 17m, hors tout 34m"
+    },
+    "vitesses": {
+      "pres": 4.0,
+      "largue": 10.0,
+      "grandLargue": 10.0,
+      "ventArriere": 7.0
+    },
+    "qualites": {
+      "modVitesse": 0,
+      "modManoeuvre": 0
+    },
+    "navigation": {
+      "voilure": 0,
+      "vent": 0,
+      "allure": "largue"
+    },
+    "equipage": {
+      "max": 50,
+      "actuel": 16,
+      "convalescents": 0,
+      "manoeuvre": 10,
+      "recharge": 16,
+      "gardesMarines": 0,
+      "soldats": 0
+    },
+    "reserves": {
+      "eau": 45,
+      "vivres": 60,
+      "vivresFrais": 3,
+      "bois": 60,
+      "munitions": 20,
+      "trousse": 200
+    },
+    "cargaison": {},
+    "carenage": 0,
+    "structure": {
+      "mature": {
+        "max": 8,
+        "artimon": 8,
+        "grandMat": 8,
+        "misaine": 8
+      },
+      "coque": {
+        "max": 8,
+        "poupe": 8,
+        "babord": 8,
+        "tribord": 8,
+        "proue": 8
+      }
+    },
+    "batteries": {
+      "v6hBsQDUrog2X8Op": {
+        "nom": "Bordée — 2×1 pierrier",
+        "position": "muraille",
+        "nombre": 0,
+        "calibre": 1,
+        "vd": -7,
+        "hommes": 1,
+        "modRecharge": 2,
+        "tonnage": 0,
+        "munition": "boulet",
+        "chargee": true,
+        "restant": 0,
+        "cote": "babord",
+        "ordre": 0,
+        "description": "2×1 pierrier"
+      },
+      "ipgnub1aWfWE3Efj": {
+        "nom": "Chasse — 2 pierrier (prises sur la bordée)",
+        "position": "muraille",
+        "nombre": 0,
+        "calibre": 1,
+        "vd": -4,
+        "hommes": 2,
+        "modRecharge": 2,
+        "tonnage": 0,
+        "munition": "boulet",
+        "chargee": true,
+        "restant": 0,
+        "cote": "babord",
+        "ordre": 1,
+        "description": "2 pierrier (prises sur la bordée)"
+      },
+      "T3sSOadYrMoAhL4y": {
+        "nom": "Bordée — 2×2 espingoles",
+        "position": "muraille",
+        "nombre": 0,
+        "calibre": 0.5,
+        "vd": 0,
+        "hommes": 2,
+        "modRecharge": 2,
+        "tonnage": 0,
+        "munition": "boulet",
+        "chargee": true,
+        "restant": 0,
+        "cote": "babord",
+        "ordre": 2,
+        "description": "2×2 espingoles"
+      },
+      "34WemgCJGErPRsQ7": {
+        "nom": "Fuite — 4 espingoles (prises sur la bordée)",
+        "position": "muraille",
+        "nombre": 0,
+        "calibre": 0.5,
+        "vd": 0,
+        "hommes": 4,
+        "modRecharge": 2,
+        "tonnage": 0,
+        "munition": "boulet",
+        "chargee": true,
+        "restant": 0,
+        "cote": "babord",
+        "ordre": 3,
+        "description": "4 espingoles (prises sur la bordée)"
+      }
+    },
+    "commandement": {
+      "capitaine": {
+        "uuid": "",
+        "nom": ""
+      },
+      "second": {
+        "uuid": "",
+        "nom": ""
+      },
+      "canonnier": {
+        "uuid": "",
+        "nom": ""
+      },
+      "quartierMaitre": {
+        "uuid": "",
+        "nom": ""
+      },
+      "maitreEquipage": {
+        "uuid": "",
+        "nom": ""
+      },
+      "maitreCanonnier": {
+        "uuid": "",
+        "nom": ""
+      }
+    },
+    "gestion": {
+      "capitaineG": {
+        "uuid": "",
+        "nom": ""
+      },
+      "pilote": {
+        "uuid": "",
+        "nom": ""
+      },
+      "calfat": {
+        "uuid": "",
+        "nom": ""
+      },
+      "charpentier": {
+        "uuid": "",
+        "nom": ""
+      },
+      "voilier": {
+        "uuid": "",
+        "nom": ""
+      },
+      "chirurgien": {
+        "uuid": "",
+        "nom": ""
+      },
+      "quartierMaitreG": {
+        "uuid": "",
+        "nom": ""
+      },
+      "cambusier": {
+        "uuid": "",
+        "nom": ""
+      },
+      "grenadier": {
+        "uuid": "",
+        "nom": ""
+      },
+      "vigie": {
+        "uuid": "",
+        "nom": ""
+      }
+    },
+    "matelots": {
+      "manoeuvre": 3,
+      "ruse": 3,
+      "canonnade": 3,
+      "recharge": 3,
+      "combat": 3,
+      "tir": 3
+    },
+    "santeEquipage": {
+      "coches": 0
+    },
+    "possessions": {
+      "cartes": "",
+      "journaux": "",
+      "instruments": "",
+      "or": "",
+      "pavillons": "",
+      "otages": ""
+    },
+    "notes": ""
+  },
+  "items": [],
+  "effects": [],
+  "folder": "47PQsdqVNHPJIYei",
+  "sort": 630,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.345",
+    "systemId": "pavillon-noir-2",
+    "systemVersion": "0.1.0",
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": null
+  },
+  "prototypeToken": {
+    "name": "Lougre (Commerce & défense)",
+    "actorLink": false,
+    "disposition": 0,
+    "texture": {
+      "src": "systems/pavillon-noir-2/assets/icons/navire.svg"
+    },
+    "displayName": 20,
+    "sight": {
+      "enabled": true
+    }
+  }
+}

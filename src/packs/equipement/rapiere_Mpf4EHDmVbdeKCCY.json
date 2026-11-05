@@ -1,0 +1,49 @@
+{
+  "_id": "Mpf4EHDmVbdeKCCY",
+  "_key": "!items!Mpf4EHDmVbdeKCCY",
+  "name": "Rapière",
+  "type": "arme",
+  "img": "systems/pavillon-noir-2/assets/icons/manoeuvre.svg",
+  "system": {
+    "description": "<p>Arme reine de l'escrime. Porter une rapière sans être noble est hors-la-loi.</p>",
+    "source": "La Révolte",
+    "categorie": "blanche",
+    "competence": "armesBlanches",
+    "specialite": "Rapière",
+    "carac": "ada",
+    "modEff": 0,
+    "modFac": 0,
+    "md": "adr",
+    "degats": 1,
+    "taille": "longue",
+    "mains": 1,
+    "portee": 0,
+    "recharge": "",
+    "cibles": "",
+    "qualite": "normale",
+    "bonusAbordage": false,
+    "escrime": "epee",
+    "longFeuMod": 0,
+    "equipee": false,
+    "mainGauche": false,
+    "prix": "Mauvaise 1 / Bonne 3 / Exceptionnelle 30",
+    "quantite": 1
+  },
+  "effects": [],
+  "folder": "6miA953KdTSbtfNB",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.345",
+    "systemId": "pavillon-noir-2",
+    "systemVersion": "0.1.0",
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": null
+  }
+}

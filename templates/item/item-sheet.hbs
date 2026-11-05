@@ -1,0 +1,98 @@
+<div class="pn2-item-sheet">
+  <header class="pn2-header item">
+    <img class="portrait" src="{{item.img}}" data-edit="img" data-action="editImage">
+    <div class="header-main">
+      <input class="nom" type="text" name="name" value="{{item.name}}">
+      <div class="type hint">{{localize (concat "TYPES.Item." type)}} <a data-action="afficher" title="Afficher dans le chat"><i class="fa-solid fa-comment"></i></a></div>
+    </div>
+  </header>
+
+  {{#if isType.arme}}
+  <div class="grid-2">
+    <div class="ligne"><label>Catégorie</label><select name="system.categorie">{{selectOptions categoriesArme selected=system.categorie}}</select></div>
+    <div class="ligne"><label>Compétence</label><select name="system.competence">{{selectOptions competences selected=system.competence}}</select></div>
+    <div class="ligne"><label>Spécialité (Armes blanches/jet)</label><input type="text" name="system.specialite" value="{{system.specialite}}" placeholder="ex. Rapière, Sabre, Arc"></div>
+    <div class="ligne"><label>Caractéristique</label><select name="system.carac">{{selectOptions caracOptions selected=system.carac}}</select></div>
+    <div class="ligne"><label>Mod. Efficacité (D)</label><input type="number" name="system.modEff" value="{{system.modEff}}"></div>
+    <div class="ligne"><label>Mod. Facilité</label><input type="number" name="system.modFac" value="{{system.modFac}}"></div>
+    <div class="ligne"><label>Modificateur de dégâts</label><select name="system.md">{{selectOptions mdOptions selected=system.md}}</select></div>
+    <div class="ligne"><label>Bonus de dégâts de l'arme</label><input type="number" name="system.degats" value="{{system.degats}}"></div>
+    <div class="ligne"><label>Taille (allonge)</label><select name="system.taille">{{selectOptions tailles selected=system.taille}}</select></div>
+    <div class="ligne"><label>Mains</label><input type="number" name="system.mains" value="{{system.mains}}" min="1" max="2"></div>
+    <div class="ligne"><label>Portée (m)</label><input type="number" name="system.portee" value="{{system.portee}}"></div>
+    <div class="ligne"><label>Recharge</label><input type="text" name="system.recharge" value="{{system.recharge}}"></div>
+    <div class="ligne"><label>Cibles multiples</label><input type="text" name="system.cibles" value="{{system.cibles}}"></div>
+    <div class="ligne"><label>Qualité</label><select name="system.qualite">{{selectOptions qualites selected=system.qualite}}</select></div>
+    <div class="ligne"><label>Catégorie d'escrime</label><select name="system.escrime">{{selectOptions escrimeArmes selected=system.escrime}}</select></div>
+    <div class="ligne"><label>Mod. de long feu (arme)</label><input type="number" name="system.longFeuMod" value="{{system.longFeuMod}}"></div>
+    <div class="ligne"><label>+1 à l'abordage, -1 sinon</label><input type="checkbox" name="system.bonusAbordage" {{checked system.bonusAbordage}}></div>
+    <div class="ligne"><label>Équipée / main gauche</label><span><input type="checkbox" name="system.equipee" {{checked system.equipee}}> <input type="checkbox" name="system.mainGauche" {{checked system.mainGauche}}></span></div>
+    <div class="ligne"><label>Prix</label><input type="text" name="system.prix" value="{{system.prix}}"></div>
+    <div class="ligne"><label>Quantité</label><input type="number" name="system.quantite" value="{{system.quantite}}"></div>
+  </div>
+  {{/if}}
+
+  {{#if isType.armure}}
+  <div class="grid-2">
+    <div class="ligne"><label>Matière</label><select name="system.matiere"><option value="cuir" {{#if (eq system.matiere "cuir")}}selected{{/if}}>Cuir (+1)</option><option value="metal" {{#if (eq system.matiere "metal")}}selected{{/if}}>Métal (+2)</option></select></div>
+    <div class="ligne"><label>Protection</label><input type="number" name="system.protection" value="{{system.protection}}"></div>
+    <div class="ligne"><label>Malus Adresse (physique)</label><input type="number" name="system.malusAdr" value="{{system.malusAdr}}"></div>
+    <div class="ligne"><label>Malus Adaptabilité (physique)</label><input type="number" name="system.malusAda" value="{{system.malusAda}}"></div>
+    <div class="ligne"><label>Portée</label><input type="checkbox" name="system.equipee" {{checked system.equipee}}></div>
+    <div class="ligne"><label>Prix</label><input type="text" name="system.prix" value="{{system.prix}}"></div>
+  </div>
+  <h3>Localisations protégées</h3>
+  <div class="locs">{{#each locs}}<label class="checkbox"><input type="checkbox" name="system.localisations.{{key}}" {{checked checked}}> {{label}}</label>{{/each}}</div>
+  {{/if}}
+
+  {{#if isType.equipement}}
+  <div class="grid-2">
+    <div class="ligne"><label>Catégorie</label><input type="text" name="system.categorie" value="{{system.categorie}}"></div>
+    <div class="ligne"><label>Quantité</label><input type="number" name="system.quantite" value="{{system.quantite}}"></div>
+    <div class="ligne"><label>Prix</label><input type="text" name="system.prix" value="{{system.prix}}"></div>
+    <div class="ligne"><label>Effet / modificateur</label><input type="text" name="system.modificateur" value="{{system.modificateur}}"></div>
+  </div>
+  {{/if}}
+
+  {{#if isType.avantage}}
+  <div class="grid-2">
+    <div class="ligne"><label>Nature</label><select name="system.nature">{{selectOptions natures selected=system.nature}}</select></div>
+    <div class="ligne"><label>Catégorie</label><input type="text" name="system.categorie" value="{{system.categorie}}"></div>
+    <div class="ligne"><label>Coût (PC)</label><input type="text" name="system.cout" value="{{system.cout}}"></div>
+  </div>
+  <div class="ligne"><label>Modificateurs automatiques</label><input type="text" name="system.modificateurs" value="{{system.modificateurs}}" placeholder="ex. discretion:-2, athletisme:-4, carac.for:-1"></div>
+  <p class="hint">Syntaxe « clé:valeur » séparée par des virgules. Clés : compétences (discretion, natation, pratiqueNautique…), groupes (armesBlanches, armesFeu, artisanat…), catégories (combat, physiques…) → modificateur de Facilité ; « carac.xxx » → modifie la caractéristique.</p>
+  {{/if}}
+
+  {{#if isType.manoeuvre}}
+  <div class="grid-2">
+    <div class="ligne"><label>Type d'escrime</label><select name="system.escrime">{{selectOptions escrimeTypes selected=system.escrime}}</select></div>
+    <div class="ligne"><label>Niveau</label><input type="number" name="system.niveau" value="{{system.niveau}}" min="1" max="4"></div>
+    <div class="ligne"><label>Combinaison</label><input type="text" name="system.combinaison" value="{{system.combinaison}}" placeholder="ex. 1 1 0"></div>
+    <div class="ligne"><label>Aperçu</label><span class="combo">{{{comboHTML}}} (puissance {{puissance}})</span></div>
+    <div class="ligne"><label>Manœuvre d'école</label><input type="checkbox" name="system.ecole" {{checked system.ecole}}></div>
+    <div class="ligne"><label>Seconde main libre / deux mains</label><span><input type="checkbox" name="system.secondeMain" {{checked system.secondeMain}}> <input type="checkbox" name="system.deuxMains" {{checked system.deuxMains}}></span></div>
+    <div class="ligne"><label>Inadaptée contre</label><input type="text" name="system.inadapte" value="{{system.inadapte}}"></div>
+    <div class="ligne"><label>Peu adaptée contre</label><input type="text" name="system.peuAdapte" value="{{system.peuAdapte}}"></div>
+  </div>
+  <div class="ligne"><label>Effet</label><textarea name="system.effet" rows="4">{{system.effet}}</textarea></div>
+  <fieldset><legend>Effets automatisés</legend>
+    <div class="grid-3">
+      <label>+D attaque <input type="number" name="system.auto.bonusD" value="{{system.auto.bonusD}}"></label>
+      <label>+Facilité <input type="number" name="system.auto.bonusFac" value="{{system.auto.bonusFac}}"></label>
+      <label>-Facilité adverse <input type="number" name="system.auto.malusFacAdv" value="{{system.auto.malusFacAdv}}"></label>
+      <label>+Succès <input type="number" name="system.auto.bonusS" value="{{system.auto.bonusS}}"></label>
+      <label>+Dégâts <input type="number" name="system.auto.bonusDegats" value="{{system.auto.bonusDegats}}"></label>
+      <label>Armure <input type="number" name="system.auto.armure" value="{{system.auto.armure}}"></label>
+      <label class="checkbox"><input type="checkbox" name="system.auto.invulnerable" {{checked system.auto.invulnerable}}> Invulnérable</label>
+      <label class="checkbox"><input type="checkbox" name="system.auto.annuleAdv" {{checked system.auto.annuleAdv}}> Annule la Réussite adverse</label>
+      <label class="checkbox"><input type="checkbox" name="system.auto.choixLoc" {{checked system.auto.choixLoc}}> Choix de la localisation</label>
+    </div>
+  </fieldset>
+  {{/if}}
+
+  <h3>Description</h3>
+  <div class="description-apercu">{{{descriptionHTML}}}</div>
+  <textarea name="system.description" rows="6">{{system.description}}</textarea>
+  <div class="ligne"><label>Source</label><input type="text" name="system.source" value="{{system.source}}"></div>
+</div>

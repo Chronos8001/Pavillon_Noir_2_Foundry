@@ -1,0 +1,42 @@
+{
+  "_id": "kLXWSgpltMpojaQg",
+  "_key": "!items!kLXWSgpltMpojaQg",
+  "name": "Plastron de cuir",
+  "type": "armure",
+  "img": "systems/pavillon-noir-2/assets/icons/armure.svg",
+  "system": {
+    "description": "<p>Malus d'Adresse et d'Adaptabilité pour les actions physiques, doublés en Acrobatie et en Natation (à appliquer). Le casque n'impose son malus que s'il est porté avec une autre protection.</p>",
+    "source": "La Révolte",
+    "matiere": "cuir",
+    "protection": 1,
+    "localisations": {
+      "jambeG": false,
+      "jambeD": false,
+      "torse": true,
+      "brasG": false,
+      "brasD": false,
+      "tete": false
+    },
+    "malusAdr": 0,
+    "malusAda": 1,
+    "equipee": false,
+    "prix": "Commun 3 / Princier 40"
+  },
+  "effects": [],
+  "folder": "p6ESghEcBpeSe9Ol",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.345",
+    "systemId": "pavillon-noir-2",
+    "systemVersion": "0.1.0",
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": null
+  }
+}

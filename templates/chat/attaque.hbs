@@ -1,0 +1,15 @@
+<div class="pn2-card pn2-attaque">
+  <header class="card-header"><h3><i class="fa-solid fa-crosshairs"></i> {{#if att.tir}}Tir{{else}}Attaque{{/if}}{{#if att.cible}} sur {{att.cible.nom}}{{/if}}</h3></header>
+  {{> "systems/pavillon-noir-2/templates/chat/partials/combattant.hbs" c=att cote="att" choix=true}}
+  {{#if att.cibles}}<p class="hint">Cibles : {{att.cibles}}</p>{{/if}}
+  {{#if resolution}}
+    {{> "systems/pavillon-noir-2/templates/chat/partials/resolution.hbs" r=resolution}}
+  {{else if peutDefendre}}
+    <div class="defense">
+      <div class="hint">Réaction de {{att.cible.nom}} (choisir la manœuvre d'escrime avant) :</div>
+      <a class="pn2-btn" data-pn2-action="defendre" data-mode="attaque"><i class="fa-solid fa-shield-halved"></i> Parer / contre-attaquer</a>
+      <a class="pn2-btn" data-pn2-action="defendre" data-mode="esquive"><i class="fa-solid fa-person-running"></i> Esquiver</a>
+      <a class="pn2-btn" data-pn2-action="defendre" data-mode="aucune"><i class="fa-solid fa-user-slash"></i> Sans défense</a>
+    </div>
+  {{/if}}
+</div>

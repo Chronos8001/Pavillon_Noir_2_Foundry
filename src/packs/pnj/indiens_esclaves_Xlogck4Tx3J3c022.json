@@ -1,0 +1,22 @@
+{
+  "_id": "Xlogck4Tx3J3c022",
+  "_key": "!folders!Xlogck4Tx3J3c022",
+  "name": "Indiens / Esclaves",
+  "type": "Actor",
+  "folder": null,
+  "sorting": "a",
+  "sort": 200000,
+  "color": null,
+  "description": "",
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.345",
+    "systemId": "pavillon-noir-2",
+    "systemVersion": "0.1.0",
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": null
+  }
+}

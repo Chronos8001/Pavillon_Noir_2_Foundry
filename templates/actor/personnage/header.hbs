@@ -1,0 +1,28 @@
+<header class="pn2-header">
+  <img class="portrait" src="{{actor.img}}" data-edit="img" data-action="editImage" title="{{actor.name}}">
+  <div class="header-main">
+    <input class="nom" type="text" name="name" value="{{actor.name}}" placeholder="Nom">
+    <div class="header-infos">
+      <label>Surnom <input type="text" name="system.infos.surnom" value="{{system.infos.surnom}}"></label>
+      {{#if isPNJ}}
+        <label>Rôle <input type="text" name="system.role" value="{{system.role}}"></label>
+        <label>Importance <select name="system.importance">
+          <option value="mineure" {{#if (eq system.importance "mineure")}}selected{{/if}}>Mineure</option>
+          <option value="moyenne" {{#if (eq system.importance "moyenne")}}selected{{/if}}>Moyenne</option>
+          <option value="majeure" {{#if (eq system.importance "majeure")}}selected{{/if}}>Majeure</option>
+          <option value="capitale" {{#if (eq system.importance "capitale")}}selected{{/if}}>Capitale</option></select></label>
+      {{else}}
+        <label>Poste à bord <input type="text" name="system.infos.poste" value="{{system.infos.poste}}"></label>
+        <label>Profession <input type="text" name="system.infos.profession" value="{{system.infos.profession}}"></label>
+      {{/if}}
+    </div>
+    <div class="badges">
+      <a class="badge rollable" data-action="rollChance" title="Test de Chance (Pouvoir - 5)"><span>Chance</span><strong>{{pn2Signed system.chance}}</strong></a>
+      <div class="badge" title="Adaptabilité"><span>Initiative</span><strong>{{system.initiative}}</strong></div>
+      <div class="badge"><span>Actions / Tour</span><strong>{{system.actions}}</strong></div>
+      <div class="badge"><span>MDFor / MDAdr</span><strong>{{pn2Signed system.md.for}} / {{pn2Signed system.md.adr}}</strong></div>
+      <div class="badge etat etat-{{system.etat}}"><span>État de santé</span><strong>{{system.etatLabel}}{{#if system.malusSante}} ({{system.malusSante}}){{/if}}</strong></div>
+      <div class="badge"><span>Gloire / Infamie</span><strong>{{system.reputation.gloire.niveau}} / {{system.reputation.infamie.niveau}}</strong></div>
+    </div>
+  </div>
+</header>

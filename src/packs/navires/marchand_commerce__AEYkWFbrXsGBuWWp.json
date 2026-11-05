@@ -1,0 +1,216 @@
+{
+  "_id": "AEYkWFbrXsGBuWWp",
+  "_key": "!actors!AEYkWFbrXsGBuWWp",
+  "name": "Marchand (Commerce)",
+  "type": "navire",
+  "img": "systems/pavillon-noir-2/assets/icons/navire.svg",
+  "system": {
+    "modele": {
+      "type": "Marchand",
+      "configuration": "Commerce"
+    },
+    "infos": {
+      "capitaine": "",
+      "figureProue": "",
+      "greement": "Voiles carrées et brigantine (3 mâts)",
+      "taille": "Frégate",
+      "mats": 3,
+      "tonnage": 200.0,
+      "tonnageUtile": 170.0,
+      "tirantEau": "5m",
+      "fonction": "Transport",
+      "epoque": "Flibuste, piraterie et Royale",
+      "armement": "Commerce (37 matelots)",
+      "manoeuvrabilite": -1,
+      "avirons": "",
+      "vitMoyenne": 75.0,
+      "calibreMax": 12,
+      "longueur": "Immergée 43m, hors tout 54m"
+    },
+    "vitesses": {
+      "pres": 1.5,
+      "largue": 6.5,
+      "grandLargue": 7.5,
+      "ventArriere": 5.0
+    },
+    "qualites": {
+      "modVitesse": 0,
+      "modManoeuvre": 0
+    },
+    "navigation": {
+      "voilure": 0,
+      "vent": 0,
+      "allure": "largue"
+    },
+    "equipage": {
+      "max": 170,
+      "actuel": 37,
+      "convalescents": 0,
+      "manoeuvre": 21,
+      "recharge": 37,
+      "gardesMarines": 0,
+      "soldats": 0
+    },
+    "reserves": {
+      "eau": 45,
+      "vivres": 60,
+      "vivresFrais": 3,
+      "bois": 60,
+      "munitions": 20,
+      "trousse": 200
+    },
+    "cargaison": {},
+    "carenage": 0,
+    "structure": {
+      "mature": {
+        "max": 17,
+        "artimon": 17,
+        "grandMat": 17,
+        "misaine": 17
+      },
+      "coque": {
+        "max": 17,
+        "poupe": 17,
+        "babord": 17,
+        "tribord": 17,
+        "proue": 17
+      }
+    },
+    "batteries": {
+      "bv2E2nxvBFeUeWB1": {
+        "nom": "Bordée — 2×4 pièces de 6",
+        "position": "bordée",
+        "nombre": 0,
+        "calibre": 6,
+        "vd": 6,
+        "hommes": 16,
+        "modRecharge": 1,
+        "tonnage": 8,
+        "munition": "boulet",
+        "chargee": true,
+        "restant": 0,
+        "cote": "babord",
+        "ordre": 0,
+        "description": "2×4 pièces de 6"
+      }
+    },
+    "commandement": {
+      "capitaine": {
+        "uuid": "",
+        "nom": ""
+      },
+      "second": {
+        "uuid": "",
+        "nom": ""
+      },
+      "canonnier": {
+        "uuid": "",
+        "nom": ""
+      },
+      "quartierMaitre": {
+        "uuid": "",
+        "nom": ""
+      },
+      "maitreEquipage": {
+        "uuid": "",
+        "nom": ""
+      },
+      "maitreCanonnier": {
+        "uuid": "",
+        "nom": ""
+      }
+    },
+    "gestion": {
+      "capitaineG": {
+        "uuid": "",
+        "nom": ""
+      },
+      "pilote": {
+        "uuid": "",
+        "nom": ""
+      },
+      "calfat": {
+        "uuid": "",
+        "nom": ""
+      },
+      "charpentier": {
+        "uuid": "",
+        "nom": ""
+      },
+      "voilier": {
+        "uuid": "",
+        "nom": ""
+      },
+      "chirurgien": {
+        "uuid": "",
+        "nom": ""
+      },
+      "quartierMaitreG": {
+        "uuid": "",
+        "nom": ""
+      },
+      "cambusier": {
+        "uuid": "",
+        "nom": ""
+      },
+      "grenadier": {
+        "uuid": "",
+        "nom": ""
+      },
+      "vigie": {
+        "uuid": "",
+        "nom": ""
+      }
+    },
+    "matelots": {
+      "manoeuvre": 3,
+      "ruse": 3,
+      "canonnade": 3,
+      "recharge": 3,
+      "combat": 3,
+      "tir": 3
+    },
+    "santeEquipage": {
+      "coches": 0
+    },
+    "possessions": {
+      "cartes": "",
+      "journaux": "",
+      "instruments": "",
+      "or": "",
+      "pavillons": "",
+      "otages": ""
+    },
+    "notes": ""
+  },
+  "items": [],
+  "effects": [],
+  "folder": "MBo8X7HGE6t9VZmV",
+  "sort": 660,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.345",
+    "systemId": "pavillon-noir-2",
+    "systemVersion": "0.1.0",
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": null
+  },
+  "prototypeToken": {
+    "name": "Marchand (Commerce)",
+    "actorLink": false,
+    "disposition": 0,
+    "texture": {
+      "src": "systems/pavillon-noir-2/assets/icons/navire.svg"
+    },
+    "displayName": 20,
+    "sight": {
+      "enabled": true
+    }
+  }
+}

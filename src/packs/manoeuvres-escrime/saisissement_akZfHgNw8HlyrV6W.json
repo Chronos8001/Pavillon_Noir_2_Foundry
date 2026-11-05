@@ -1,0 +1,48 @@
+{
+  "_id": "akZfHgNw8HlyrV6W",
+  "_key": "!items!akZfHgNw8HlyrV6W",
+  "name": "Saisissement",
+  "type": "manoeuvre",
+  "img": "systems/pavillon-noir-2/assets/icons/manoeuvre.svg",
+  "system": {
+    "description": "",
+    "source": "L'Art de l'escrime",
+    "escrime": "epee",
+    "niveau": 3,
+    "combinaison": "1 5 5",
+    "effet": "Votre adversaire est immobilisé. Vous pouvez lui porter des attaques sans opposition jusqu’à ce qu’il se libère. Il peut une fois par Tour consommer toutes ses Actions du Tour pour tenter de se libérer. Pour cela, il doit réussir un Test de Combat à mains nues (For) en opposition. Peu adapté contre : baïonnette, hache.",
+    "ecole": false,
+    "secondeMain": false,
+    "deuxMains": false,
+    "inadapte": "",
+    "peuAdapte": "baïonnette, hache",
+    "auto": {
+      "bonusD": 0,
+      "bonusFac": 0,
+      "malusFacAdv": 0,
+      "bonusS": 0,
+      "bonusDegats": 0,
+      "armure": 0,
+      "invulnerable": false,
+      "annuleAdv": false,
+      "choixLoc": false
+    }
+  },
+  "effects": [],
+  "folder": "IQJA1cBSGWHttpFX",
+  "sort": 280,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.345",
+    "systemId": "pavillon-noir-2",
+    "systemVersion": "0.1.0",
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": null
+  }
+}

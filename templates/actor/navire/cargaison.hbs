@@ -1,0 +1,25 @@
+<section class="tab {{#if active}}active{{/if}}" data-group="primary" data-tab="cargaison">
+  <h2>Cargaison <a class="pn2-mini-btn" data-action="cargaisonAdd"><i class="fa-solid fa-plus"></i></a></h2>
+  <table class="pn2-table">
+    <thead><tr><th>Marchandise</th><th>Tonnage</th><th>Valeur (pièces de huit)</th><th></th></tr></thead>
+    {{#each cargaison}}
+    <tr data-cargo="{{id}}">
+      <td><input type="text" name="system.cargaison.{{id}}.nom" value="{{nom}}"></td>
+      <td><input type="number" step="any" name="system.cargaison.{{id}}.tonnage" value="{{tonnage}}"></td>
+      <td><input type="number" step="any" name="system.cargaison.{{id}}.valeur" value="{{valeur}}"></td>
+      <td><a data-action="cargaisonDelete"><i class="fa-solid fa-trash"></i></a></td>
+    </tr>
+    {{/each}}
+  </table>
+  <h2>Possessions</h2>
+  <div class="grid-3 possessions">
+    <div><h3>Cartes</h3><textarea name="system.possessions.cartes" rows="5">{{system.possessions.cartes}}</textarea></div>
+    <div><h3>Journaux de bord</h3><textarea name="system.possessions.journaux" rows="5">{{system.possessions.journaux}}</textarea></div>
+    <div><h3>Instruments de navigation</h3><textarea name="system.possessions.instruments" rows="5">{{system.possessions.instruments}}</textarea></div>
+    <div><h3>Or</h3><textarea name="system.possessions.or" rows="5">{{system.possessions.or}}</textarea></div>
+    <div><h3>Pavillons</h3><textarea name="system.possessions.pavillons" rows="5">{{system.possessions.pavillons}}</textarea></div>
+    <div><h3>Otages</h3><textarea name="system.possessions.otages" rows="5">{{system.possessions.otages}}</textarea></div>
+  </div>
+  <h2>Notes</h2>
+  <textarea class="grand" name="system.notes" rows="8">{{system.notes}}</textarea>
+</section>
