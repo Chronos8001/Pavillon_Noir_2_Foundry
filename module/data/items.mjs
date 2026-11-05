@@ -106,9 +106,17 @@ export class HistoriqueData extends BaseItemData {
       metier: str(""),                  // compétences de métier accessibles
       exclusions: str(""),
       religionNom: str(""),
+      points: int(12, { min: 0 }),     // professions : points à répartir
       note: str("")
     };
   }
+}
+
+/** Points de compétence d'un avantage (coût) ou d'une faiblesse (gain), en valeur absolue. */
+export function pcAvantage(sys) {
+  if (sys.pc != null) return Math.abs(sys.pc);
+  const m = String(sys.cout ?? "").match(/[+-]?\s*(\d+)/);
+  return m ? Number(m[1]) : 0;
 }
 
 export class AvantageData extends BaseItemData {
@@ -118,7 +126,8 @@ export class AvantageData extends BaseItemData {
       nature: str("avantage"),   // avantage | faiblesse
       categorie: str(""),        // Séquelles de blessures, Possessions, Social, Escrime…
       cout: str(""),             // ex. « -3 PC » ou « +5 PC »
-      modificateurs: str("")     // ex. « discretion:-2, athletisme:-4 »
+      modificateurs: str(""),    // ex. « discretion:-2, athletisme:-4 »
+      pc: new f.NumberField({ required: false, nullable: true, integer: true, initial: null }) // points de compétence retenus
     };
   }
 }

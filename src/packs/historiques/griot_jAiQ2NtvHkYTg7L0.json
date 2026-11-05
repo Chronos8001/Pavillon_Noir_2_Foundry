@@ -1,0 +1,48 @@
+{
+  "_id": "jAiQ2NtvHkYTg7L0",
+  "_key": "!items!jAiQ2NtvHkYTg7L0",
+  "name": "Griot",
+  "type": "historique",
+  "img": "systems/pavillon-noir-2/assets/icons/historique.svg",
+  "system": {
+    "description": "<p>Profession : Tribu.</p>",
+    "source": "La Révolte",
+    "etape": "profession",
+    "pays": "",
+    "culturelles": "",
+    "armesFeuMetier": false,
+    "caracs": "eru, exp",
+    "nbCompetences": 0,
+    "niveau": 0,
+    "categories": {
+      "connaissances": 0,
+      "techniques": 0,
+      "maritimes": 0,
+      "physiques": 0,
+      "sociales": 0,
+      "combat": 0
+    },
+    "metier": "connMarins:; enseignement; langues:; persuasion; politique; religion:Vaudou",
+    "exclusions": "",
+    "religionNom": "",
+    "points": 12,
+    "note": "Africains seulement."
+  },
+  "effects": [],
+  "folder": "IN4XHPYSMNfcXeTX",
+  "sort": 890,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.345",
+    "systemId": "pavillon-noir-2",
+    "systemVersion": "0.3.0",
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": null
+  }
+}

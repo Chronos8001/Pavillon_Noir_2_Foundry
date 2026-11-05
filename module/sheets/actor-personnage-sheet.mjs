@@ -2,6 +2,7 @@ import { PN2 } from "../config.mjs";
 import { dialogTest, testChance } from "../rolls/dice.mjs";
 import { attaquer, competenceArme, degatsFixes } from "../rolls/combat.mjs";
 import { comboHTML } from "../documents/item.mjs";
+import { PN2CreationApp } from "../apps/creation.mjs";
 import { contexteBourse, operationBourse, formatPieces } from "../helpers/monnaie.mjs";
 
 const { HandlebarsApplicationMixin } = foundry.applications.api;
@@ -33,6 +34,7 @@ export class PN2PersonnageSheet extends HandlebarsApplicationMixin(foundry.appli
       xpReset: PN2PersonnageSheet.#onXpReset,
       ouvrirCompendium: PN2PersonnageSheet.#onOuvrirCompendium,
       bourse: PN2PersonnageSheet.#onBourse,
+      creation: PN2PersonnageSheet.#onCreation,
       bourseToutes: PN2PersonnageSheet.#onBourseToutes
     }
   };
@@ -125,8 +127,8 @@ export class PN2PersonnageSheet extends HandlebarsApplicationMixin(foundry.appli
       locs: PN2.locKeys.filter(k => i.system.localisations[k]).map(k => PN2.locLabels[k]).join(", ")
     }));
     context.equipements = items.filter(i => i.type === "equipement");
-    const ordreEtapes = { peuple: 0, origine: 1, jeunesse: 2, religion: 3 };
-    const nomEtapes = { peuple: "Peuple", origine: "Origine sociale", jeunesse: "Jeunesse", religion: "Religion" };
+    const ordreEtapes = { peuple: 0, origine: 1, jeunesse: 2, profession: 3, religion: 4 };
+    const nomEtapes = { peuple: "Peuple", origine: "Origine sociale", jeunesse: "Jeunesse", profession: "Profession", religion: "Religion" };
     context.historiques = items.filter(i => i.type === "historique")
       .sort((a, b) => (ordreEtapes[a.system.etape] ?? 9) - (ordreEtapes[b.system.etape] ?? 9) || ((a.flags[PN2.id]?.moment === "adolescence") - (b.flags[PN2.id]?.moment === "adolescence")))
       .map(i => ({ id: i.id, name: i.name, img: i.img, etape: nomEtapes[i.system.etape], texte: i.flags[PN2.id]?.texte ?? i.name }));
@@ -289,6 +291,10 @@ export class PN2PersonnageSheet extends HandlebarsApplicationMixin(foundry.appli
     for (const k of Object.keys(PN2.skills)) upd[`system.skills.${k}.xp`] = false;
     for (const id of Object.keys(this.document.system.specs ?? {})) upd[`system.specs.${id}.xp`] = false;
     await this.document.update(upd);
+  }
+
+  static #onCreation() {
+    new PN2CreationApp(this.document).render(true);
   }
 
   static async #onBourse(event, target) {

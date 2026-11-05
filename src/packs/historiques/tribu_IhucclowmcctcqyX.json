@@ -25,6 +25,7 @@
     "metier": "art:Instrument de musique; charpenterie; herboristerie; survie",
     "exclusions": "connMarins; mousquet; pistolet; grenade",
     "religionNom": "",
+    "points": 12,
     "note": "Connaissance des colons/indigènes limitée aux peuples indigènes ; pas d'armes européennes."
   },
   "effects": [],

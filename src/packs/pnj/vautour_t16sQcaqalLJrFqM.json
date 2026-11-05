@@ -409,17 +409,5 @@
     "createdTime": 0,
     "modifiedTime": 0,
     "lastModifiedBy": null
-  },
-  "prototypeToken": {
-    "name": "Vautour",
-    "actorLink": false,
-    "disposition": -1,
-    "texture": {
-      "src": "systems/pavillon-noir-2/assets/icons/animal.svg"
-    },
-    "displayName": 20,
-    "sight": {
-      "enabled": true
-    }
   }
 }

@@ -280,17 +280,5 @@
     "createdTime": 0,
     "modifiedTime": 0,
     "lastModifiedBy": null
-  },
-  "prototypeToken": {
-    "name": "Trois-ponts (Guerre léger)",
-    "actorLink": false,
-    "disposition": 0,
-    "texture": {
-      "src": "systems/pavillon-noir-2/assets/icons/navire.svg"
-    },
-    "displayName": 20,
-    "sight": {
-      "enabled": true
-    }
   }
 }

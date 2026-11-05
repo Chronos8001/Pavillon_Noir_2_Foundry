@@ -308,3 +308,18 @@
 .pn2-assistant .choix.acquis { opacity: 0.5; }
 .pn2-assistant .choix .nom-spe { width: 140px; height: 22px; }
 .pn2-assistant .choix-competences { max-height: 420px; overflow-y: auto; }
+
+/* Assistant de création */
+.pn2-creation .window-content { background: var(--pn2-parchemin); color: var(--pn2-encre); }
+.pn2-creation .etape { border: 1px solid var(--pn2-bord); border-left: 5px solid var(--pn2-bord); border-radius: 4px; padding: 4px 8px; margin: 6px 0; background: rgba(255,255,255,0.35); }
+.pn2-creation .etape.faite { border-left-color: var(--pn2-vert); }
+.pn2-creation .etape h2 { margin: 2px 0; }
+.pn2-creation .etape h2 .fa-check { color: var(--pn2-vert); }
+.pn2-creation .num { display: inline-block; min-width: 28px; background: var(--pn2-bleu); color: #fff; border-radius: 3px; text-align: center; font-size: 12px; padding: 0 4px; }
+.pn2-creation .grille-caracs { display: grid; grid-template-columns: repeat(3, 1fr); gap: 4px 12px; }
+.pn2-creation .grille-caracs label { display: flex; justify-content: space-between; align-items: center; }
+.pn2-creation .choix-ligne { display: flex; gap: 6px; align-items: center; }
+.pn2-creation .choix-ligne select { flex: 1; }
+.pn2-creation .choisi { margin: 2px 0; font-weight: bold; }
+.pn2-creation .tag.av { background: var(--pn2-vert); }
+.pn2-creation input[type="number"] { width: 3.5em; }

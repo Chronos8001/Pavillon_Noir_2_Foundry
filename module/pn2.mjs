@@ -50,7 +50,8 @@ Hooks.once("init", () => {
     "systems/pavillon-noir-2/templates/chat/partials/des.hbs",
     "systems/pavillon-noir-2/templates/chat/partials/combattant.hbs",
     "systems/pavillon-noir-2/templates/chat/partials/resolution.hbs",
-    "systems/pavillon-noir-2/templates/actor/partials/bourse.hbs"
+    "systems/pavillon-noir-2/templates/actor/partials/bourse.hbs",
+    "systems/pavillon-noir-2/templates/apps/creation.hbs"
   ]);
 });
 

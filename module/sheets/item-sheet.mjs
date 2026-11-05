@@ -38,7 +38,7 @@ export class PN2ItemSheet extends HandlebarsApplicationMixin(foundry.application
     context.escrimeArmes = PN2.escrimeArmes;
     context.escrimeTypes = Object.fromEntries(Object.entries(PN2.escrimeTypes).map(([k, d]) => [k, d.label]));
     context.cours = PN2.cours;
-    context.etapes = { peuple: "Peuple et pays d'origine", origine: "Origine sociale", jeunesse: "Événement de la jeunesse", religion: "Religion" };
+    context.etapes = { peuple: "Peuple et pays d'origine", origine: "Origine sociale", jeunesse: "Événement de la jeunesse", profession: "Profession", religion: "Religion" };
     context.categoriesList = Object.entries(PN2.skillCategories).map(([k, l]) => ({ key: k, label: l, value: item.system.categories?.[k] ?? 0 }));
     context.valeurMarchandise = item.type === "marchandise" ? Math.round(item.system.valeur * 100) / 100 : 0;
     context.natures = { avantage: "Avantage", faiblesse: "Faiblesse" };

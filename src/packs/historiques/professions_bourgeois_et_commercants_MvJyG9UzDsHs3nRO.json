@@ -1,0 +1,22 @@
+{
+  "_id": "MvJyG9UzDsHs3nRO",
+  "_key": "!folders!MvJyG9UzDsHs3nRO",
+  "name": "Professions : Bourgeois et commerçants",
+  "type": "Item",
+  "folder": null,
+  "sorting": "m",
+  "sort": 250200,
+  "color": null,
+  "description": "",
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.345",
+    "systemId": "pavillon-noir-2",
+    "systemVersion": "0.3.0",
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": null
+  }
+}

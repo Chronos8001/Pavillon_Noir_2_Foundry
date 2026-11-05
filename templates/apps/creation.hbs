@@ -1,0 +1,92 @@
+<div class="pn2-creation-body">
+  <p class="hint">Suivez les étapes dans l'ordre. Chaque choix peut être retiré : ses effets sont alors annulés.</p>
+
+  {{!-- Étape 2 --}}
+  <section class="etape {{#if etapes.caracs}}faite{{/if}}">
+    <h2><span class="num">1-2</span> Idée générale et caractéristiques {{#if etapes.caracs}}<i class="fa-solid fa-check"></i>{{/if}}</h2>
+    <p class="hint">45 points à répartir, chaque caractéristique entre 3 et 7, Résistance au moins 5. Pensez aux postes visés (Valeurs de commandement).</p>
+    <div class="grille-caracs">
+      {{#each caracs}}<label>{{label}} <span><input type="number" name="carac_{{key}}" value="{{value}}" min="{{min}}" max="7">{{#if bonus}} <span class="hint">+{{bonus}} = {{actuel}}</span>{{/if}}</span></label>{{/each}}
+    </div>
+    <p>Total actuel : <strong class="{{#unless caracsOk}}alerte{{/unless}}">{{totalCaracs}} / 45</strong>
+      <a class="pn2-btn" data-action="caracs"><i class="fa-solid fa-check"></i> Valider les caractéristiques</a></p>
+  </section>
+
+  {{!-- Étape 3 --}}
+  <section class="etape {{#if etapes.peuple}}faite{{/if}}">
+    <h2><span class="num">3</span> Peuple et pays d'origine {{#if etapes.peuple}}<i class="fa-solid fa-check"></i>{{/if}}</h2>
+    {{#each choisis.peuple}}<p class="choisi">{{name}} <a data-action="retirer" data-id="{{id}}" title="Retirer"><i class="fa-solid fa-xmark"></i></a></p>{{/each}}
+    <div class="choix-ligne"><select name="sel_peuple">{{#each listes.peuple}}<option value="{{id}}">{{name}}</option>{{/each}}</select>
+      <a class="pn2-btn" data-action="ajouter" data-etape="peuple">Choisir</a></div>
+  </section>
+
+  <section class="etape {{#if etapes.origine}}faite{{/if}}">
+    <h2><span class="num">3</span> Origine sociale {{#if etapes.origine}}<i class="fa-solid fa-check"></i>{{/if}}</h2>
+    <p class="hint">+1 à une caractéristique, 5 compétences au niveau 2.</p>
+    {{#each choisis.origine}}<p class="choisi">{{name}} <a data-action="retirer" data-id="{{id}}"><i class="fa-solid fa-xmark"></i></a></p>{{/each}}
+    <div class="choix-ligne"><select name="sel_origine">{{#each listes.origine}}<option value="{{id}}">{{name}}</option>{{/each}}</select>
+      <a class="pn2-btn" data-action="ajouter" data-etape="origine">Choisir</a></div>
+  </section>
+
+  {{!-- Étape 4 --}}
+  <section class="etape {{#if etapes.jeunesse}}faite{{/if}}">
+    <h2><span class="num">4</span> Événements de la jeunesse (enfance et adolescence) {{#if etapes.jeunesse}}<i class="fa-solid fa-check"></i>{{/if}}</h2>
+    <p class="hint">Deux événements différents, 5 compétences au niveau 1 chacun.</p>
+    {{#each choisis.jeunesse}}<p class="choisi">{{name}} <a data-action="retirer" data-id="{{id}}"><i class="fa-solid fa-xmark"></i></a></p>{{/each}}
+    <div class="choix-ligne"><select name="sel_jeunesse">{{#each listes.jeunesse}}<option value="{{id}}">{{name}}</option>{{/each}}</select>
+      <a class="pn2-btn" data-action="ajouter" data-etape="jeunesse">Choisir</a></div>
+  </section>
+
+  {{!-- Étape 5 --}}
+  <section class="etape {{#if etapes.profession}}faite{{/if}}">
+    <h2><span class="num">5</span> Métier initial {{#if etapes.profession}}<i class="fa-solid fa-check"></i>{{/if}}</h2>
+    <p class="hint">+1 à une des deux caractéristiques, 12 points à répartir (niveau 3 maximum). Règle optionnelle : plusieurs professions (18 points sans bonus) ou aucune.</p>
+    {{#each choisis.profession}}<p class="choisi">{{name}} <a data-action="retirer" data-id="{{id}}"><i class="fa-solid fa-xmark"></i></a></p>{{/each}}
+    {{#if aucune}}<p class="choisi">Aucune profession (+1 en {{aucuneLabel}}, +6 points) <a data-action="aucuneProfession"><i class="fa-solid fa-xmark"></i></a></p>{{/if}}
+    <div class="choix-ligne"><select name="sel_profession">{{#each listes.profession}}<option value="{{id}}">{{name}}</option>{{/each}}</select>
+      <a class="pn2-btn" data-action="ajouter" data-etape="profession">Choisir</a>
+      {{#unless aucune}}<a class="pn2-btn petit" data-action="aucuneProfession">Aucune profession</a>{{/unless}}</div>
+  </section>
+
+  {{!-- Étape 6 --}}
+  <section class="etape {{#if etapes.avantages}}faite{{/if}}">
+    <h2><span class="num">6</span> Avantages et faiblesses (optionnel)</h2>
+    <p class="hint">5 avantages et 5 faiblesses au maximum. Glissez-les depuis le compendium sur la fiche du personnage, puis ajustez les points des coûts variables.
+      <a data-action="compendium" data-pack="avantages-faiblesses"><i class="fa-solid fa-book"></i> Ouvrir le compendium</a></p>
+    <table class="pn2-table">
+      {{#each avantages}}
+      <tr><td>{{#if faiblesse}}<span class="tag">Faiblesse</span>{{else}}<span class="tag av">Avantage</span>{{/if}} {{name}}</td><td class="hint">{{cout}}</td>
+        <td>PC <input type="number" name="pc_{{id}}" value="{{pc}}" min="0"> <a data-action="pc" data-id="{{id}}" title="Enregistrer"><i class="fa-solid fa-floppy-disk"></i></a></td></tr>
+      {{else}}<tr><td class="hint">Aucun avantage ni faiblesse.</td></tr>{{/each}}
+    </table>
+    <p>Avantages : {{nbAvantages}}/5 (−{{pcAvantages}} PC) — Faiblesses : {{nbFaiblesses}}/5 (+{{pcFaiblesses}} PC)</p>
+  </section>
+
+  {{!-- Étape 7 --}}
+  <section class="etape {{#if etapes.perso}}faite{{/if}}">
+    <h2><span class="num">7</span> Personnalisation des compétences {{#if etapes.perso}}<i class="fa-solid fa-check"></i>{{/if}}</h2>
+    <p>Points disponibles : <strong>{{pointsPerso}}</strong> <span class="hint">(10 + faiblesses − avantages + restes de profession{{#if aucune}} + 6{{/if}})</span></p>
+    {{#if perso}}
+      <p class="choisi">{{perso.points}} point(s) : {{persoDetail}} <a data-action="annulerPerso" title="Annuler"><i class="fa-solid fa-xmark"></i></a></p>
+    {{else}}
+      <a class="pn2-btn" data-action="personnaliser"><i class="fa-solid fa-sliders"></i> Répartir les points</a>
+    {{/if}}
+  </section>
+
+  {{!-- Étape 8-9 --}}
+  <section class="etape {{#if etapes.religion}}faite{{/if}}">
+    <h2><span class="num">8</span> Le souffle de vie : religion {{#if etapes.religion}}<i class="fa-solid fa-check"></i>{{/if}}</h2>
+    {{#each choisis.religion}}<p class="choisi">{{name}} <a data-action="retirer" data-id="{{id}}"><i class="fa-solid fa-xmark"></i></a></p>{{/each}}
+    <div class="choix-ligne"><select name="sel_religion">{{#each listes.religion}}<option value="{{id}}">{{name}}</option>{{/each}}</select>
+      <a class="pn2-btn" data-action="ajouter" data-etape="religion">Choisir</a></div>
+    <p class="hint">Surnom, âge, taille, histoire et personnalité se remplissent dans l'onglet Personnage et l'onglet Notes.</p>
+  </section>
+
+  <section class="etape {{#if etapes.equipement}}faite{{/if}}">
+    <h2><span class="num">9</span> La touche finale {{#if etapes.equipement}}<i class="fa-solid fa-check"></i>{{/if}}</h2>
+    <p>Valeurs de commandement, Chance, Initiative, modificateurs de dégâts et cases de blessures sont calculés automatiquement.</p>
+    <p>Armes des compétences de combat de niveau 2 et plus : <strong>{{combatAvec2}}</strong> — qualité {{#if (eq qualite "normale")}}bonne (origine sociale){{else}}mauvaise (-1 à l'attaque){{/if}}. Pécule de départ : 5 pièces de huit (+100 par point d'Argent supplémentaire).</p>
+    <a class="pn2-btn" data-action="equipement"><i class="fa-solid fa-sack-dollar"></i> Ajouter les armes et le pécule</a>
+    <a class="pn2-btn" data-action="terminer"><i class="fa-solid fa-flag-checkered"></i> Terminer</a>
+  </section>
+</div>

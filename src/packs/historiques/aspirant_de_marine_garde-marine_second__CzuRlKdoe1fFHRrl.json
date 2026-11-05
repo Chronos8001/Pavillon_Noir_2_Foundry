@@ -1,0 +1,48 @@
+{
+  "_id": "CzuRlKdoe1fFHRrl",
+  "_key": "!items!CzuRlKdoe1fFHRrl",
+  "name": "Aspirant de marine / Garde-marine (second)",
+  "type": "historique",
+  "img": "systems/pavillon-noir-2/assets/icons/historique.svg",
+  "system": {
+    "description": "<p>Profession : Marins.</p>",
+    "source": "La Révolte",
+    "etape": "profession",
+    "pays": "",
+    "culturelles": "",
+    "armesFeuMetier": false,
+    "caracs": "ada, exp",
+    "nbCompetences": 0,
+    "niveau": 0,
+    "categories": {
+      "connaissances": 0,
+      "techniques": 0,
+      "maritimes": 0,
+      "physiques": 0,
+      "sociales": 0,
+      "combat": 0
+    },
+    "metier": "meneurHommes; connNautiques; connNavires; hydrographie; lireEcrire; pratiqueNautique; navigation; pistolet; armesBlanches:Rapière; armesBlanches:Sabre; connSignalisation; etiquette; tactique",
+    "exclusions": "",
+    "religionNom": "",
+    "points": 12,
+    "note": ""
+  },
+  "effects": [],
+  "folder": "JGBaOeZI1TUZJg8J",
+  "sort": 470,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.345",
+    "systemId": "pavillon-noir-2",
+    "systemVersion": "0.3.0",
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": null
+  }
+}

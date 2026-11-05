@@ -1,0 +1,22 @@
+{
+  "_id": "JGBaOeZI1TUZJg8J",
+  "_key": "!folders!JGBaOeZI1TUZJg8J",
+  "name": "Professions : Marins",
+  "type": "Item",
+  "folder": null,
+  "sorting": "m",
+  "sort": 250600,
+  "color": null,
+  "description": "",
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.345",
+    "systemId": "pavillon-noir-2",
+    "systemVersion": "0.3.0",
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": null
+  }
+}

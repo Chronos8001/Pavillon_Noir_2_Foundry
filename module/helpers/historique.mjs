@@ -15,9 +15,10 @@ export const ETAPES = {
   peuple: "Peuple et pays d'origine",
   origine: "Origine sociale",
   jeunesse: "Événement de la jeunesse",
+  profession: "Profession",
   religion: "Religion"
 };
-const CHAMP_INFO = { peuple: "peuple", origine: "origines", jeunesse: "jeunesse", religion: "religion" };
+const CHAMP_INFO = { peuple: "peuple", origine: "origines", jeunesse: "jeunesse", profession: "profession", religion: "religion" };
 
 /** Décode une référence de compétence. */
 export function parseRef(ref) {
@@ -97,8 +98,16 @@ function preparerCompetence(actor, upd, annul, r, niveau, nom) {
 async function appliquer(actor, item, choix) {
   const s = item.system;
   const upd = {};
-  const annul = { skills: {}, specs: {}, nouvelles: [], caracs: {}, info: {}, armesFeuMetier: null };
+  const annul = { skills: {}, specs: {}, nouvelles: [], caracs: {}, info: {}, armesFeuMetier: null, metier: null };
+  if (s.etape === "profession" && choix.metier) {
+    annul.metier = foundry.utils.deepClone(actor.system.metier);
+    upd["system.metier.nom"] = item.name; upd["system.metier.carac1"] = choix.metier[0]; upd["system.metier.carac2"] = choix.metier[1];
+  }
   // Caractéristique
+  for (const c2 of choix.caracsSup ?? []) {
+    const prev = actor.system.caracs[c2].value;
+    if (prev < 8) { annul.caracs[c2] = prev; upd[`system.caracs.${c2}.value`] = prev + 1; }
+  }
   if (choix.carac) {
     const prev = actor.system.caracs[choix.carac].value;
     const val = Math.min(8, prev + 1);
@@ -120,7 +129,7 @@ async function appliquer(actor, item, choix) {
   upd[`system.infos.${champ}`] = texte;
   delete upd._nouvelles;
   await actor.update(upd);
-  await item.update({ [`flags.${SYS}`]: { applique: annul, texte: texteItem, moment: choix.moment ?? null } });
+  await item.update({ [`flags.${SYS}`]: { applique: annul, texte: texteItem, moment: choix.moment ?? null, mode: choix.mode ?? null, depenses: choix.depenses ?? 0, restants: choix.restants ?? 0 } });
   const lignes = [];
   if (choix.carac) lignes.push(`${PN2.caracs[choix.carac].label} +1`);
   for (const c of choix.competences) lignes.push(`${c.ref.type === "spec" ? `${PN2.specGroups[c.ref.group].label} (${c.nom || c.ref.nom})` : c.ref.label} ${c.niveau}`);
@@ -148,6 +157,7 @@ export async function annulerHistorique(actor, item) {
   for (const [id, v] of Object.entries(a.specs ?? {})) if (actor.system.specs?.[id]) upd[`system.specs.${id}.value`] = v;
   for (const id of a.nouvelles ?? []) if (actor.system.specs?.[id]) upd[`system.specs.-=${id}`] = null;
   if (a.armesFeuMetier === false) upd["system.armesFeuMetier"] = false;
+  if (a.metier) { upd["system.metier.nom"] = a.metier.nom; upd["system.metier.carac1"] = a.metier.carac1; upd["system.metier.carac2"] = a.metier.carac2; }
   for (const [k, v] of Object.entries(a.info ?? {})) upd[`system.infos.${k}`] = v;
   if (item.system.etape === "jeunesse") upd["system.infos.jeunesse"] = texteJeunesse(actor, null, item.id);
   await actor.update(upd);
@@ -172,6 +182,7 @@ function ligneChoix(actor, r, idx, prefix, deja) {
  */
 export async function assistantHistorique(actor, item) {
   const s = item.system;
+  if (s.etape === "profession") return assistantProfession(actor, item);
   const DialogV2 = foundry.applications.api.DialogV2;
   const etape = s.etape;
   const choix = { carac: null, competences: [], pays: null, moment: null };
@@ -275,4 +286,99 @@ export async function assistantHistorique(actor, item) {
   choix.competences = choix.competences.map(c => (c.niveau === 0 ? { ...c, niveau: 0 } : c));
   await appliquer(actor, item, choix);
   return true;
+}
+
+
+/* -------------------------------------------- */
+/*  Profession (étape 5)                        */
+/* -------------------------------------------- */
+
+/** Options de compétences de combat pour « N compétences de combat au choix ». */
+function optionsCombat() {
+  const opts = [];
+  for (const [k, d] of Object.entries(PN2.skills)) if (d.cat === "combat") opts.push({ v: k, l: d.group ? `${d.group} : ${d.label}` : d.label });
+  opts.push({ v: "armesBlanches:", l: "Armes blanches (préciser)" }, { v: "armesJet:", l: "Armes de jet/trait (préciser)" });
+  return opts;
+}
+
+/** Points déjà engagés dans d'autres professions en mode « plusieurs professions ». */
+function pointsMultiples(actor, exclu) {
+  return actor.items.filter(i => i.type === "historique" && i.system.etape === "profession" && i.id !== exclu && i.flags?.[SYS]?.mode === "multiple")
+    .reduce((a, i) => a + (i.flags[SYS].depenses ?? 0), 0);
+}
+
+export async function assistantProfession(actor, item) {
+  const s = item.system;
+  const DialogV2 = foundry.applications.api.DialogV2;
+  const autres = actor.items.filter(i => i.type === "historique" && i.system.etape === "profession" && i.id !== item.id);
+  const caracs = String(s.caracs ?? "").split(/[;,]/).map(x => x.trim()).filter(x => PN2.caracs[x]);
+  const refsTxt = String(s.metier ?? "").split(";").map(x => x.trim()).filter(Boolean);
+  const lignes = [];
+  for (const r of refsTxt) {
+    const m = r.match(/^choixCombat:(\d+)$/);
+    if (m) { for (let i = 0; i < Number(m[1]); i++) lignes.push({ combat: true }); continue; }
+    const ref = parseRef(r);
+    if (ref) lignes.push({ ref });
+  }
+  const multipleImpose = autres.some(i => i.flags?.[SYS]?.mode === "multiple");
+  const uniqueExiste = autres.some(i => i.flags?.[SYS]?.mode !== "multiple");
+  if (uniqueExiste) {
+    const ok = await DialogV2.confirm({ window: { title: "Profession" }, content: `<p>Le personnage a déjà une profession (${autres[0].name}). La remplacer par « ${item.name} » ?</p><p class="hint">Pour cumuler plusieurs professions (règle optionnelle : 18 points, sans bonus de caractéristique), retirez d'abord la profession actuelle.</p>` });
+    if (!ok) return false;
+    for (const a of autres) await a.delete();
+  }
+  const opts = optionsCombat().map(o => `<option value="${o.v}">${esc(o.l)}</option>`).join("");
+  let html = `<div class="pn2-dialog pn2-assistant"><p class="intro"><strong>${esc(item.name)}</strong> — Profession</p>${s.note ? `<p class="hint">${esc(s.note)}</p>` : ""}`;
+  html += `<div class="form-group"><label>Mode</label><select name="mode">
+    <option value="unique" ${multipleImpose ? "disabled" : "selected"}>Une profession : 12 points et +1 en caractéristique</option>
+    <option value="multiple" ${multipleImpose ? "selected" : ""}>Plusieurs professions : 18 points partagés, sans bonus</option></select></div>`;
+  if (caracs.length) html += `<div class="form-group"><label>Caractéristique +1 (max. 8)</label><select name="carac">${caracs.map(c => `<option value="${c}">${PN2.caracs[c].label} (${actor.system.caracs[c].value})</option>`).join("")}</select></div>`;
+  html += `<p>Répartissez les points (niveau maximal 3 par compétence). Les points non dépensés serviront à la personnalisation (étape 7).</p><table class="pn2-table"><tr><th>Compétence</th><th>Actuel</th><th>Points</th></tr>`;
+  lignes.forEach((l, i) => {
+    if (l.combat) {
+      html += `<tr><td><select name="cb_${i}">${opts}</select> <input type="text" name="nom_${i}" placeholder="Spécialité" class="nom-spe"></td><td>—</td><td><input type="number" name="pts_${i}" value="0" min="0" max="3"></td></tr>`;
+    } else {
+      const cur = niveauActuel(actor, l.ref);
+      html += `<tr><td>${esc(l.ref.label)} ${l.ref.type === "spec" && l.ref.auChoix ? `<input type="text" name="nom_${i}" placeholder="Spécialité" class="nom-spe">` : ""}</td><td>${cur}</td><td><input type="number" name="pts_${i}" value="0" min="0" max="${Math.max(0, 3 - cur)}"></td></tr>`;
+    }
+  });
+  html += `</table><p class="hint">Points disponibles : 12 (une profession) ou ${18 - pointsMultiples(actor, item.id)} restants sur 18 (plusieurs professions).</p></div>`;
+
+  for (;;) {
+    const form = await DialogV2.wait({
+      window: { title: `Profession : ${item.name}` }, position: { width: 580 }, content: html,
+      buttons: [
+        { action: "ok", label: "Appliquer", default: true, callback: (e, b) => new foundry.applications.ux.FormDataExtended(b.form).object },
+        { action: "cancel", label: "Annuler" }
+      ],
+      rejectClose: false
+    });
+    if (!form || form === "cancel") return false;
+    const mode = form.mode || "unique";
+    const budget = mode === "multiple" ? 18 - pointsMultiples(actor, item.id) : 12;
+    const erreurs = [];
+    const competences = [];
+    let total = 0;
+    lignes.forEach((l, i) => {
+      const pts = Number(form[`pts_${i}`]) || 0;
+      if (pts <= 0) return;
+      let ref = l.ref;
+      if (l.combat) ref = parseRef(form[`cb_${i}`]);
+      const nom = form[`nom_${i}`];
+      if (ref.type === "spec" && (ref.auChoix || l.combat) && !nom) erreurs.push(`Précisez la spécialité pour ${ref.label}.`);
+      const cur = niveauActuel(actor, ref, nom);
+      if (cur + pts > 3) erreurs.push(`${ref.label} : niveau maximal 3.`);
+      total += pts;
+      competences.push({ ref, niveau: cur + pts, nom });
+    });
+    if (total > budget) erreurs.push(`${total} points dépensés pour ${budget} disponibles.`);
+    if (erreurs.length) { ui.notifications.warn(erreurs.join(" ")); continue; }
+    const choix = {
+      carac: mode === "unique" ? (form.carac || null) : null, competences, mode,
+      depenses: total, restants: mode === "unique" ? budget - total : 0,
+      metier: caracs.length >= 2 ? caracs.slice(0, 2) : null
+    };
+    await appliquer(actor, item, choix);
+    return true;
+  }
 }
