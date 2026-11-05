@@ -1,0 +1,47 @@
+{
+  "_id": "djhKga3UR4GmknRF",
+  "_key": "!items!djhKga3UR4GmknRF",
+  "name": "Malandrins",
+  "type": "historique",
+  "img": "systems/pavillon-noir-2/assets/icons/historique.svg",
+  "system": {
+    "description": "<p>Fils de coupeur de bourse, élevé dans les bas-fonds.</p>",
+    "source": "La Révolte",
+    "etape": "origine",
+    "pays": "",
+    "culturelles": "",
+    "armesFeuMetier": false,
+    "caracs": "adr, ada",
+    "nbCompetences": 5,
+    "niveau": 2,
+    "categories": {
+      "connaissances": 0,
+      "techniques": 0,
+      "maritimes": 0,
+      "physiques": 3,
+      "sociales": 1,
+      "combat": 1
+    },
+    "metier": "larcins",
+    "exclusions": "",
+    "religionNom": "",
+    "note": ""
+  },
+  "effects": [],
+  "folder": "O18bfCAjeOO8dW5d",
+  "sort": 50,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.345",
+    "systemId": "pavillon-noir-2",
+    "systemVersion": "0.3.0",
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": null
+  }
+}

@@ -300,3 +300,11 @@
 .pn2 .pn2-table.cargaison input[type="text"] { width: 100%; }
 .pn2 .pn2-table.cargaison input[type="number"] { width: 5em; }
 .pn2 .pn2-table tr.total td { border-top: 2px solid var(--pn2-bord); }
+
+/* Historiques et assistant */
+.pn2 .historiques .etape { font-size: 10px; text-transform: uppercase; color: var(--pn2-encre-claire); min-width: 90px; }
+.pn2-assistant fieldset { margin: 4px 0; padding: 2px 6px; }
+.pn2-assistant .choix { display: flex; align-items: center; gap: 4px; font-size: 12px; }
+.pn2-assistant .choix.acquis { opacity: 0.5; }
+.pn2-assistant .choix .nom-spe { width: 140px; height: 22px; }
+.pn2-assistant .choix-competences { max-height: 420px; overflow-y: auto; }

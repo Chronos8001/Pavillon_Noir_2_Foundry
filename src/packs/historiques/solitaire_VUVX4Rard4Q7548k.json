@@ -1,0 +1,47 @@
+{
+  "_id": "VUVX4Rard4Q7548k",
+  "_key": "!items!VUVX4Rard4Q7548k",
+  "name": "Solitaire",
+  "type": "historique",
+  "img": "systems/pavillon-noir-2/assets/icons/historique.svg",
+  "system": {
+    "description": "<p>Coupé du monde des hommes, contemplatif et voyageur.</p>",
+    "source": "La Révolte",
+    "etape": "jeunesse",
+    "pays": "",
+    "culturelles": "",
+    "armesFeuMetier": false,
+    "caracs": "",
+    "nbCompetences": 5,
+    "niveau": 1,
+    "categories": {
+      "connaissances": 2,
+      "techniques": 1,
+      "maritimes": 0,
+      "physiques": 1,
+      "sociales": 1,
+      "combat": 1
+    },
+    "metier": "art:; lireEcrire; sciences",
+    "exclusions": "",
+    "religionNom": "",
+    "note": "Choisissez une période différente pour l'enfance et l'adolescence."
+  },
+  "effects": [],
+  "folder": "WHbzypJ3vFjkTXnh",
+  "sort": 70,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.345",
+    "systemId": "pavillon-noir-2",
+    "systemVersion": "0.3.0",
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": null
+  }
+}

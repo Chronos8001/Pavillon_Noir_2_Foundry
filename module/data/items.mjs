@@ -89,6 +89,28 @@ export class MarchandiseData extends BaseItemData {
   get valeur() { return (this.prix?.[this.cours] ?? 0) * (this.quantite ?? 0); }
 }
 
+export class HistoriqueData extends BaseItemData {
+  static defineSchema() {
+    const cats = {};
+    for (const k of Object.keys(PN2.skillCategories)) cats[k] = int(0, { min: 0 });
+    return {
+      ...super.defineSchema(),
+      etape: str("origine"),            // peuple | origine | jeunesse | religion
+      pays: str(""),                    // peuples : pays au choix (séparés par des virgules)
+      culturelles: str(""),             // peuples : compétences culturelles (niveau 2)
+      armesFeuMetier: bool(false),      // peuples : armes à feu = compétences de métier
+      caracs: str(""),                  // origines : caractéristiques au choix (+1)
+      nbCompetences: int(0, { min: 0 }),
+      niveau: int(0, { min: 0 }),
+      categories: new f.SchemaField(cats),
+      metier: str(""),                  // compétences de métier accessibles
+      exclusions: str(""),
+      religionNom: str(""),
+      note: str("")
+    };
+  }
+}
+
 export class AvantageData extends BaseItemData {
   static defineSchema() {
     return {

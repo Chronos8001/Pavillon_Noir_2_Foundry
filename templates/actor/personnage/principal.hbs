@@ -44,6 +44,13 @@
         <div class="ligne"><label>Taille</label><input type="text" name="system.infos.taille" value="{{system.infos.taille}}"></div>
         <div class="ligne"><label>Poids</label><input type="text" name="system.infos.poids" value="{{system.infos.poids}}"></div>
       </div>
+      <h3>Historique <a class="pn2-mini-btn" data-action="ouvrirCompendium" data-pack="historiques" title="Peuples, origines sociales, jeunesse, religions : glissez-les sur la fiche"><i class="fa-solid fa-book"></i></a></h3>
+      <ul class="item-list historiques">
+        {{#each historiques}}
+        <li class="item" data-item-id="{{id}}"><img src="{{img}}" width="20" height="20"><span class="etape">{{etape}}</span><a class="nom" data-action="itemShow">{{texte}}</a>
+          <a data-action="itemDelete" title="Retirer (annule ses effets)"><i class="fa-solid fa-trash"></i></a></li>
+        {{else}}<li class="hint">Glissez un peuple, une origine sociale, deux événements de jeunesse et une religion depuis le compendium « Historiques » : l'assistant applique les bonus.</li>{{/each}}
+      </ul>
       <div class="ligne"><label>Description physique</label><textarea name="system.infos.description" rows="2">{{system.infos.description}}</textarea></div>
 
       <h2>Réputation</h2>

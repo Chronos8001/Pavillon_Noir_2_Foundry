@@ -68,6 +68,27 @@
   <p class="hint">Glissez une marchandise sur la fiche d'un navire pour la charger dans la cale.</p>
   {{/if}}
 
+  {{#if isType.historique}}
+  <div class="grid-2">
+    <div class="ligne"><label>Étape</label><select name="system.etape">{{selectOptions etapes selected=system.etape}}</select></div>
+    <div class="ligne"><label>Niveau des compétences</label><input type="number" name="system.niveau" value="{{system.niveau}}"></div>
+    {{#if (eq system.etape "peuple")}}
+      <div class="ligne"><label>Pays (séparés par des virgules)</label><input type="text" name="system.pays" value="{{system.pays}}"></div>
+      <div class="ligne"><label>Armes à feu = métier</label><input type="checkbox" name="system.armesFeuMetier" {{checked system.armesFeuMetier}}></div>
+    {{/if}}
+    {{#if (eq system.etape "religion")}}<div class="ligne"><label>Compétence Religion (spécialité)</label><input type="text" name="system.religionNom" value="{{system.religionNom}}"></div>{{/if}}
+    <div class="ligne"><label>Caractéristiques au choix (+1)</label><input type="text" name="system.caracs" value="{{system.caracs}}" placeholder="ex. cha, adr"></div>
+    <div class="ligne"><label>Nombre de compétences à choisir</label><input type="number" name="system.nbCompetences" value="{{system.nbCompetences}}"></div>
+  </div>
+  {{#if (eq system.etape "peuple")}}<div class="ligne"><label>Compétences culturelles (niveau 2)</label><input type="text" name="system.culturelles" value="{{system.culturelles}}"></div>{{/if}}
+  <h3>Compétences générales accessibles (maximum par catégorie)</h3>
+  <div class="grid-3">{{#each categoriesList}}<label>{{label}} <input type="number" name="system.categories.{{key}}" value="{{value}}"></label>{{/each}}</div>
+  <div class="ligne"><label>Compétences de métier accessibles</label><input type="text" name="system.metier" value="{{system.metier}}"></div>
+  <div class="ligne"><label>Exclusions</label><input type="text" name="system.exclusions" value="{{system.exclusions}}"></div>
+  <div class="ligne"><label>Remarque</label><input type="text" name="system.note" value="{{system.note}}"></div>
+  <p class="hint">Compétences séparées par « ; » : clé (ex. navigation, escrime) ou groupe:spécialité (ex. art:Instrument de musique, armesJet:Javelot ; « art: » = au choix). Glissez cet objet sur un personnage pour lancer l'assistant ; le supprimer annule ses effets.</p>
+  {{/if}}
+
   {{#if isType.avantage}}
   <div class="grid-2">
     <div class="ligne"><label>Nature</label><select name="system.nature">{{selectOptions natures selected=system.nature}}</select></div>

@@ -25,6 +25,11 @@ Installation manuelle : télécharger `pavillon-noir-2.zip` depuis la dernière 
 - Gloire et Infamie : niveau, qualificatif et points dépensés.
 - PNJ : Facilité par catégorie de compétences, comme les archétypes du livre.
 
+### Historique du personnage (création)
+- Compendium « Historiques » : 10 peuples et pays d'origine, 10 origines sociales, 11 événements de jeunesse et 11 religions.
+- Glissez-les sur la fiche : un assistant applique les règles de création (pays, compétences culturelles au niveau 2, caractéristique +1 au choix, 5 compétences au niveau 2 pour l'origine sociale et au niveau 1 pour l'enfance et l'adolescence, en respectant les maximums par catégorie et les compétences de métier accessibles).
+- Retirer un historique annule ses effets.
+
 ### Combat et escrime automatisés
 - Attaque depuis la fiche (ciblez un jeton) : la cible pare/contre-attaque, esquive ou reste sans défense depuis le chat ; résolution de l'opposition, marge, dégâts, localisation et bouton « Appliquer les dégâts ».
 - Tir : portée, bout portant, visée, main gauche, deux armes, **long feu** (L'Art de l'escrime).
@@ -44,6 +49,7 @@ Installation manuelle : télécharger `pavillon-noir-2.zip` depuis la dernière 
 - Coffre de l'équipage sur le navire ; cargaisons glissées depuis le compendium, tonnage et valeur calculés selon le cours (pénurie, normal, excès), vente versée au coffre.
 
 ### Compendiums
+- Historiques : peuples, origines sociales, événements de jeunesse, religions
 - Avantages et faiblesses (avec malus appliqués automatiquement)
 - Équipement : armes, armures, vêtements, instruments, remèdes, artillerie, services et cargaisons (sucre, rhum, tabac, cacao…)
 - Manœuvres d'escrime (toutes les techniques de *L'Art de l'escrime* + destreza)

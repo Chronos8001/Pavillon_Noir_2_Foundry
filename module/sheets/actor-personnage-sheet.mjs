@@ -125,6 +125,11 @@ export class PN2PersonnageSheet extends HandlebarsApplicationMixin(foundry.appli
       locs: PN2.locKeys.filter(k => i.system.localisations[k]).map(k => PN2.locLabels[k]).join(", ")
     }));
     context.equipements = items.filter(i => i.type === "equipement");
+    const ordreEtapes = { peuple: 0, origine: 1, jeunesse: 2, religion: 3 };
+    const nomEtapes = { peuple: "Peuple", origine: "Origine sociale", jeunesse: "Jeunesse", religion: "Religion" };
+    context.historiques = items.filter(i => i.type === "historique")
+      .sort((a, b) => (ordreEtapes[a.system.etape] ?? 9) - (ordreEtapes[b.system.etape] ?? 9) || ((a.flags[PN2.id]?.moment === "adolescence") - (b.flags[PN2.id]?.moment === "adolescence")))
+      .map(i => ({ id: i.id, name: i.name, img: i.img, etape: nomEtapes[i.system.etape], texte: i.flags[PN2.id]?.texte ?? i.name }));
     context.marchandises = items.filter(i => i.type === "marchandise").map(i => ({ id: i.id, name: i.name, img: i.img, system: i.system, cours: PN2.cours[i.system.cours], valeur: formatPieces(i.system.valeur) }));
     context.bourse = contexteBourse(sys.richesse, this._bourseToutes ?? false);
     context.totalBourse = formatPieces(sys.richesse.total);

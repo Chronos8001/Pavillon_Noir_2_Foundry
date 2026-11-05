@@ -1,4 +1,5 @@
 import { PN2 } from "../config.mjs";
+import { assistantHistorique, annulerHistorique } from "../helpers/historique.mjs";
 
 export class PN2Item extends Item {
 
@@ -12,9 +13,26 @@ export class PN2Item extends Item {
       equipement: "systems/pavillon-noir-2/assets/icons/equipement.svg",
       avantage: "systems/pavillon-noir-2/assets/icons/avantage.svg",
       manoeuvre: "systems/pavillon-noir-2/assets/icons/manoeuvre.svg",
-      marchandise: "systems/pavillon-noir-2/assets/icons/marchandise.svg"
+      marchandise: "systems/pavillon-noir-2/assets/icons/marchandise.svg",
+      historique: "systems/pavillon-noir-2/assets/icons/historique.svg"
     };
     if (icons[this.type]) this.updateSource({ img: icons[this.type] });
+  }
+
+  /** Un historique ajouté à un personnage lance l'assistant de création. */
+  _onCreate(data, options, userId) {
+    super._onCreate(data, options, userId);
+    if (this.type !== "historique" || userId !== game.user.id || !this.actor || this.actor.type === "navire") return;
+    if (this.flags?.[PN2.id]?.applique || options.pn2SansAssistant) return;
+    assistantHistorique(this.actor, this).then(ok => { if (!ok) this.delete({ pn2SansAnnulation: true }); });
+  }
+
+  /** Retirer un historique annule ses effets sur la fiche. */
+  async _preDelete(options, user) {
+    const r = await super._preDelete(options, user);
+    if (r === false) return false;
+    if (this.type === "historique" && this.actor && !options.pn2SansAnnulation && user.id === game.user.id) await annulerHistorique(this.actor, this);
+    return r;
   }
 
   /** Affiche l'objet dans le chat. */
