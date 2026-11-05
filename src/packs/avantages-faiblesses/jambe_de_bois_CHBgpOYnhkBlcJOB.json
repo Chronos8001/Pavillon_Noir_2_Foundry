@@ -10,7 +10,16 @@
     "nature": "faiblesse",
     "categorie": "Séquelles de blessures",
     "cout": "+5 PC",
-    "modificateurs": "discretion:-1, pratiqueNautique:-1, acrobatie:-3, athletisme:-3"
+    "modificateurs": "discretion:-1, pratiqueNautique:-1, acrobatie:-3, athletisme:-3",
+    "pc": null,
+    "options": [],
+    "choix": "",
+    "variable": false,
+    "maxPc": 0,
+    "multiple": false,
+    "effet": "",
+    "escrimeType": "",
+    "prerequis": ""
   },
   "effects": [],
   "folder": "f0ePLuLAsNLqMBbo",

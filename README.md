@@ -29,6 +29,13 @@ Installation manuelle : télécharger `pavillon-noir-2.zip` depuis la dernière 
 - Bouton « Création » sur la fiche : les 9 étapes de *La Révolte* dans une seule fenêtre.
 - Caractéristiques (45 points, 3 à 7, Résistance 5 minimum), peuple, origine sociale, enfance et adolescence, profession (94 professions : +1 en caractéristique, 12 points à répartir, niveau 3 max. ; règles optionnelles plusieurs professions ou aucune), avantages et faiblesses, personnalisation (10 + faiblesses − avantages + points restants), religion, armes de départ et pécule.
 - La Valeur de métier est renseignée automatiquement ; chaque étape peut être annulée.
+- Calcul détaillé des points de personnalisation (10 + faiblesses − avantages + points de profession non dépensés), compteur en direct, alertes sur les prérequis (statut social imposé par l'origine ou la profession, accès à l'Escrime, 5 avantages / 5 faiblesses).
+- **Étape d'escrime (L'Art de l'escrime)** : profil du personnage (noble ou roturier, nation, origine, profession), écoles accessibles, accès gratuits ou payants au bon coût (marin, colon, soldat, maître d'armes…), armes de prédilection calculées, niveau d'Escrime reporté sur l'escrime de l'arme choisie, manœuvres d'école et achat des manœuvres avec les Points d'escrime ; les escrimes accessibles s'augmentent à l'étape 7.
+
+### Avantages et faiblesses
+- Variantes chiffrées (Gentilhomme / Baron / Comte / Duc, main gauche / droite, Chaloupe → Frégate…) choisies en glissant l'avantage ; coûts libres (Argent, Réputation, Ennemi) avec plafond.
+- Effets automatiques, annulés si l'avantage est retiré : Gloire et Infamie, pécule, accès aux escrimes, École de renom (+3 Points d'escrime), qualités d'arme (Arme blanche / à feu de qualité, Lame de Tolède), Fusil de boucanier, arme double.
+- Malus des séquelles appliqués aux tests (y compris par groupe : Artisanat, Artillerie, Armes à feu).
 
 ### Historique du personnage (création)
 - Compendium « Historiques » : 10 peuples et pays d'origine, 10 origines sociales, 11 événements de jeunesse, 94 professions et 11 religions.
@@ -39,7 +46,10 @@ Installation manuelle : télécharger `pavillon-noir-2.zip` depuis la dernière 
 - Attaque depuis la fiche (ciblez un jeton) : la cible pare/contre-attaque, esquive ou reste sans défense depuis le chat ; résolution de l'opposition, marge, dégâts, localisation et bouton « Appliquer les dégâts ».
 - Tir : portée, bout portant, visée, main gauche, deux armes, **long feu** (L'Art de l'escrime).
 - **Escrime avancée (L'Art de l'escrime)** : les Opportunités des dés sont comparées aux manœuvres maîtrisées ; le chat propose les manœuvres réalisables, applique leurs effets (dés, Succès, Facilité, armure, invulnérabilité, annulation, choix de localisation…), compare la puissance des manœuvres adverses (coup fourré), tient compte de l'adéquation à l'arme adverse et des combinaisons de techniques (épée, arme et dague, deux armes, sabre, hache, baïonnette, combat de pont).
-- Points d'escrime selon le niveau et la prédilection. Option : escrime de base de *La Révolte* (Opportunités 1, 5, 0).
+- Points d'escrime selon le niveau et la prédilection (une manœuvre de même combinaison ne coûte qu'un point), achat des manœuvres depuis la fiche. Option : escrime de base de *La Révolte* (Opportunités 1, 5, 0).
+- Expérience d'escrime cochée automatiquement (Niveau de la manœuvre réalisée, et pour l'adversaire qui connaît la même escrime).
+- Traits de réputation « Arme et dague » et « Deux armes » : sans eux, -3 automatique ; la destreza n'est plus combinée au combat de pont.
+- **Qualités d'armes (L'Art de l'escrime)** : Légèreté, Équilibre, Acier, Trempe, Pointe légère, Prolongement du bras, Brise-lame, Protection de la main, Apparat ; Fiabilité, Platine à silex, Maniabilité, Poudre, Étanchéité, Canon, Facilité de recharge, Pistolet de gaucher ; armes doubles. Leurs bonus s'appliquent seuls (attaque, dégâts, portée, long feu, protection, postures, prise d'avantage).
 - Options : postures et prise d'avantage.
 
 ### Fiche de navire et équipage

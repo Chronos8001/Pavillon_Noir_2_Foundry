@@ -10,7 +10,16 @@
     "nature": "avantage",
     "categorie": "Escrime : accès",
     "cout": "-12 PC",
-    "modificateurs": ""
+    "modificateurs": "",
+    "pc": null,
+    "options": [],
+    "choix": "",
+    "variable": false,
+    "maxPc": 0,
+    "multiple": false,
+    "effet": "escrime",
+    "escrimeType": "deuxarmes",
+    "prerequis": "Gratuit pour les nobles italiens."
   },
   "effects": [],
   "folder": "aMI4SefMFvSYcL0d",

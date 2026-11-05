@@ -10,7 +10,16 @@
     "nature": "faiblesse",
     "categorie": "Séquelles de blessures",
     "cout": "+8 PC",
-    "modificateurs": ""
+    "modificateurs": "",
+    "pc": null,
+    "options": [],
+    "choix": "",
+    "variable": false,
+    "maxPc": 0,
+    "multiple": false,
+    "effet": "",
+    "escrimeType": "",
+    "prerequis": "Test de Résistance Difficile au début de chaque partie."
   },
   "effects": [],
   "folder": "f0ePLuLAsNLqMBbo",

@@ -10,7 +10,27 @@
     "nature": "avantage",
     "categorie": "Avantages sociaux",
     "cout": "-1 / -3 PC",
-    "modificateurs": ""
+    "modificateurs": "",
+    "pc": null,
+    "options": [
+      {
+        "label": "Prêtre",
+        "pc": -1,
+        "modificateurs": ""
+      },
+      {
+        "label": "Évêque",
+        "pc": -3,
+        "modificateurs": ""
+      }
+    ],
+    "choix": "",
+    "variable": false,
+    "maxPc": 0,
+    "multiple": false,
+    "effet": "clerge",
+    "escrimeType": "",
+    "prerequis": ""
   },
   "effects": [],
   "folder": "9bpcSG3sL6AqQhn9",

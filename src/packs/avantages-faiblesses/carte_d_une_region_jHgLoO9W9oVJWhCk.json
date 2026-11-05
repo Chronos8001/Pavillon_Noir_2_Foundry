@@ -10,7 +10,32 @@
     "nature": "avantage",
     "categorie": "Possessions",
     "cout": "-4 PC",
-    "modificateurs": ""
+    "modificateurs": "",
+    "pc": null,
+    "options": [
+      {
+        "label": "Correcte (+0) : les Caraïbes",
+        "pc": -4,
+        "modificateurs": ""
+      },
+      {
+        "label": "Bonne (+1) : moitié de la zone",
+        "pc": -4,
+        "modificateurs": ""
+      },
+      {
+        "label": "Excellente (+2) : quart de la zone",
+        "pc": -4,
+        "modificateurs": ""
+      }
+    ],
+    "choix": "",
+    "variable": false,
+    "maxPc": 0,
+    "multiple": true,
+    "effet": "",
+    "escrimeType": "",
+    "prerequis": ""
   },
   "effects": [],
   "folder": "gkEujYDoiQVr92oN",

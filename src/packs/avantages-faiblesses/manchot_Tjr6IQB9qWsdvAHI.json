@@ -10,7 +10,27 @@
     "nature": "faiblesse",
     "categorie": "Séquelles de blessures",
     "cout": "+13 PC (gauche) / +15 PC (droit)",
-    "modificateurs": "carac.for:-1, recharge:-3, pratiqueNautique:-3, natation:-3, artisanat:-3, acrobatie:-3, premiersSoins:-3, chirurgie:-3"
+    "modificateurs": "carac.for:-1, recharge:-3, pratiqueNautique:-3, natation:-3, artisanat:-3, acrobatie:-3, premiersSoins:-3, chirurgie:-3",
+    "pc": null,
+    "options": [
+      {
+        "label": "Bras gauche",
+        "pc": 13,
+        "modificateurs": ""
+      },
+      {
+        "label": "Bras droit",
+        "pc": 15,
+        "modificateurs": ""
+      }
+    ],
+    "choix": "",
+    "variable": false,
+    "maxPc": 0,
+    "multiple": false,
+    "effet": "",
+    "escrimeType": "",
+    "prerequis": "Tir au mousquet impossible."
   },
   "effects": [],
   "folder": "f0ePLuLAsNLqMBbo",

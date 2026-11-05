@@ -10,7 +10,16 @@
     "nature": "avantage",
     "categorie": "Possessions",
     "cout": "variable",
-    "modificateurs": ""
+    "modificateurs": "",
+    "pc": null,
+    "options": [],
+    "choix": "",
+    "variable": true,
+    "maxPc": 0,
+    "multiple": false,
+    "effet": "argent",
+    "escrimeType": "",
+    "prerequis": ""
   },
   "effects": [],
   "folder": "gkEujYDoiQVr92oN",

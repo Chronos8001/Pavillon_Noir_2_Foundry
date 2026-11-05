@@ -10,7 +10,42 @@
     "nature": "avantage",
     "categorie": "Avantages sociaux",
     "cout": "-1 à -3 PC",
-    "modificateurs": ""
+    "modificateurs": "",
+    "pc": null,
+    "options": [
+      {
+        "label": "Gouverneur",
+        "pc": -3,
+        "modificateurs": ""
+      },
+      {
+        "label": "Haut fonctionnaire de l'État",
+        "pc": -2,
+        "modificateurs": ""
+      },
+      {
+        "label": "Autre aventurier",
+        "pc": -3,
+        "modificateurs": ""
+      },
+      {
+        "label": "Receleur",
+        "pc": -2,
+        "modificateurs": ""
+      },
+      {
+        "label": "Marchand ou cabaretier (deux contacts)",
+        "pc": -1,
+        "modificateurs": ""
+      }
+    ],
+    "choix": "",
+    "variable": false,
+    "maxPc": 0,
+    "multiple": true,
+    "effet": "",
+    "escrimeType": "",
+    "prerequis": ""
   },
   "effects": [],
   "folder": "9bpcSG3sL6AqQhn9",

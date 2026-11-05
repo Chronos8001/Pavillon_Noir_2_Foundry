@@ -10,7 +10,27 @@
     "nature": "avantage",
     "categorie": "Escrime : accès",
     "cout": "-5 / -10 PC",
-    "modificateurs": ""
+    "modificateurs": "",
+    "pc": null,
+    "options": [
+      {
+        "label": "Marin",
+        "pc": -5,
+        "modificateurs": ""
+      },
+      {
+        "label": "Autre",
+        "pc": -10,
+        "modificateurs": ""
+      }
+    ],
+    "choix": "",
+    "variable": false,
+    "maxPc": 0,
+    "multiple": false,
+    "effet": "escrime",
+    "escrimeType": "pont",
+    "prerequis": ""
   },
   "effects": [],
   "folder": "aMI4SefMFvSYcL0d",

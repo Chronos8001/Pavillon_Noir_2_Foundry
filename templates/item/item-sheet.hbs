@@ -29,7 +29,20 @@
     <div class="ligne"><label>Équipée / main gauche</label><span><input type="checkbox" name="system.equipee" {{checked system.equipee}}> <input type="checkbox" name="system.mainGauche" {{checked system.mainGauche}}></span></div>
     <div class="ligne"><label>Prix</label><input type="text" name="system.prix" value="{{system.prix}}"></div>
     <div class="ligne"><label>Quantité</label><input type="number" name="system.quantite" value="{{system.quantite}}"></div>
+    <div class="ligne"><label>Arme double</label><select name="system.double">{{selectOptions doubles selected=system.double}}</select></div>
   </div>
+  {{#if listeQualites.length}}
+  <fieldset class="qualites-arme"><legend>Qualités (L'Art de l'escrime)</legend>
+    <div class="grid-2">
+      {{#each listeQualites}}
+      <label class="ligne" title="{{effet}}"><span>{{label}} <span class="hint">{{effet}}</span></span>
+        {{#if (eq max 1)}}<input type="checkbox" name="system.qualites.{{key}}" value="1" {{checked value}} data-dtype="Number">
+        {{else}}<input type="number" name="system.qualites.{{key}}" value="{{value}}" min="0" max="{{max}}">{{/if}}</label>
+      {{/each}}
+    </div>
+    <p class="hint">Appliqué automatiquement : Efficacité {{pn2Signed bonusQualites.eff}}D, Facilité {{pn2Signed bonusQualites.fac}}, dégâts {{pn2Signed bonusQualites.degats}}{{#if bonusQualites.portee}}, portée +{{bonusQualites.portee}} m{{/if}}{{#if bonusQualites.longFeu}}, long feu {{bonusQualites.longFeu}}{{/if}}. La Trempe ajoute des Points d'escrime, la Protection de la main protège le bras, la Pointe légère, le Prolongement du bras et le Brise-lame sont gérés en combat.</p>
+  </fieldset>
+  {{/if}}
   {{/if}}
 
   {{#if isType.armure}}
@@ -96,6 +109,16 @@
     <div class="ligne"><label>Catégorie</label><input type="text" name="system.categorie" value="{{system.categorie}}"></div>
     <div class="ligne"><label>Coût (PC)</label><input type="text" name="system.cout" value="{{system.cout}}"></div>
   </div>
+  <div class="grid-2">
+    <div class="ligne"><label>Variante retenue</label><input type="text" name="system.choix" value="{{system.choix}}"></div>
+    <div class="ligne"><label>PC retenus <span class="hint">(vide = variante)</span></label><input type="number" name="system.pc" value="{{system.pc}}" placeholder="{{pcEffectifs}}"></div>
+    <div class="ligne"><label>Effet automatique</label><select name="system.effet">{{selectOptions effets selected=system.effet}}</select></div>
+    {{#if (eq system.effet "escrime")}}<div class="ligne"><label>Escrime ouverte</label><select name="system.escrimeType">{{selectOptions escrimeAcces selected=system.escrimeType}}</select></div>{{/if}}
+    <div class="ligne"><label>Coût libre / plafond</label><span><input type="checkbox" name="system.variable" {{checked system.variable}}> <input type="number" name="system.maxPc" value="{{system.maxPc}}" min="0"></span></div>
+    <div class="ligne"><label>Peut être pris plusieurs fois</label><input type="checkbox" name="system.multiple" {{checked system.multiple}}></div>
+  </div>
+  <div class="ligne"><label>Variantes (une par ligne : « Libellé : PC | modificateurs »)</label><textarea name="optionsTexte" rows="3">{{optionsTexte}}</textarea></div>
+  <div class="ligne"><label>Prérequis / remarque</label><input type="text" name="system.prerequis" value="{{system.prerequis}}"></div>
   <div class="ligne"><label>Modificateurs automatiques</label><input type="text" name="system.modificateurs" value="{{system.modificateurs}}" placeholder="ex. discretion:-2, athletisme:-4, carac.for:-1"></div>
   <p class="hint">Syntaxe « clé:valeur » séparée par des virgules. Clés : compétences (discretion, natation, pratiqueNautique…), groupes (armesBlanches, armesFeu, artisanat…), catégories (combat, physiques…) → modificateur de Facilité ; « carac.xxx » → modifie la caractéristique.</p>
   {{/if}}

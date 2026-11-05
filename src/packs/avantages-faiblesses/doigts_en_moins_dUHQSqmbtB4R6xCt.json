@@ -10,7 +10,27 @@
     "nature": "faiblesse",
     "categorie": "Séquelles de blessures",
     "cout": "+1 PC (main gauche) / +3 PC (main droite)",
-    "modificateurs": ""
+    "modificateurs": "",
+    "pc": null,
+    "options": [
+      {
+        "label": "Main gauche (droitier)",
+        "pc": 1,
+        "modificateurs": ""
+      },
+      {
+        "label": "Main droite (droitier)",
+        "pc": 3,
+        "modificateurs": ""
+      }
+    ],
+    "choix": "",
+    "variable": false,
+    "maxPc": 0,
+    "multiple": false,
+    "effet": "",
+    "escrimeType": "",
+    "prerequis": ""
   },
   "effects": [],
   "folder": "f0ePLuLAsNLqMBbo",

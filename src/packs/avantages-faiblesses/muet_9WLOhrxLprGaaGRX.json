@@ -10,7 +10,16 @@
     "nature": "faiblesse",
     "categorie": "Séquelles de blessures",
     "cout": "+12 PC",
-    "modificateurs": "comedie:-3, persuasion:-3, meneurHommes:-3, enseignement:-3, seduction:-3"
+    "modificateurs": "comedie:-3, persuasion:-3, meneurHommes:-3, enseignement:-3, seduction:-3",
+    "pc": null,
+    "options": [],
+    "choix": "",
+    "variable": false,
+    "maxPc": 0,
+    "multiple": false,
+    "effet": "",
+    "escrimeType": "",
+    "prerequis": "Déconseillé à la création de personnage."
   },
   "effects": [],
   "folder": "f0ePLuLAsNLqMBbo",

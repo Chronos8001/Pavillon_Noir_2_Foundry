@@ -1,6 +1,7 @@
 import { PN2 } from "../config.mjs";
-import { dialogTest, testChance } from "../rolls/dice.mjs";
-import { attaquer, competenceArme, degatsFixes } from "../rolls/combat.mjs";
+import { dialogTest, testChance, groupeSkill } from "../rolls/dice.mjs";
+import { attaquer, competenceArme, degatsFixes, porteeArme, risqueLongFeu, escrimesArme } from "../rolls/combat.mjs";
+import { coutManoeuvres, acheterManoeuvres } from "../helpers/escrime.mjs";
 import { comboHTML } from "../documents/item.mjs";
 import { PN2CreationApp } from "../apps/creation.mjs";
 import { contexteBourse, operationBourse, formatPieces } from "../helpers/monnaie.mjs";
@@ -35,7 +36,8 @@ export class PN2PersonnageSheet extends HandlebarsApplicationMixin(foundry.appli
       ouvrirCompendium: PN2PersonnageSheet.#onOuvrirCompendium,
       bourse: PN2PersonnageSheet.#onBourse,
       creation: PN2PersonnageSheet.#onCreation,
-      bourseToutes: PN2PersonnageSheet.#onBourseToutes
+      bourseToutes: PN2PersonnageSheet.#onBourseToutes,
+      acheterManoeuvres: PN2PersonnageSheet.#onAcheterManoeuvres
     }
   };
 
@@ -93,7 +95,7 @@ export class PN2PersonnageSheet extends HandlebarsApplicationMixin(foundry.appli
       const metier = d.armeFeu ? sys.armesFeuMetier : d.metier;
       cats[d.cat].skills.push({
         key: k, label: d.label, group: d.group, metier, cc: d.cc, value: v.value, xp: v.xp,
-        mod: (mods[k] ?? 0) + (d.group === "Armes à feu" ? (mods.armesFeu ?? 0) : 0) + (mods[d.cat] ?? 0),
+        mod: (mods[k] ?? 0) + (groupeSkill(d) ? (mods[groupeSkill(d)] ?? 0) : 0) + (mods[d.cat] ?? 0),
         carac: PN2.caracs[d.carac].abbr
       });
     }
@@ -116,10 +118,12 @@ export class PN2PersonnageSheet extends HandlebarsApplicationMixin(foundry.appli
       const sk = competenceArme(actor, i);
       return {
         item: i, id: i.id, name: i.name, img: i.img, system: i.system, skill: sk.label, niveau: sk.value,
-        chances: `${sk.value}F${sys.c[i.system.carac] ?? "?"}`, degats: degatsFixes(actor, i),
-        longFeu: i.system.estArmeFeu ? 4 - sk.value + ({ mauvaise: 2, mediocre: 1, normale: 0, exceptionnelle: -1 }[i.system.qualite] ?? 0) + (i.system.longFeuMod ?? 0) : null,
+        chances: `${sk.value + (i.system.bonusQualites?.eff ?? 0)}F${(sys.c[i.system.carac] ?? 0) + (i.system.bonusQualites?.fac ?? 0)}`, degats: degatsFixes(actor, i),
+        longFeu: i.system.estArmeFeu ? risqueLongFeu(i, sk) : null,
         deLongFeu: i.system.estArmeFeu ? PN2.deLongFeu[i.system.qualite] : null,
-        taille: PN2.taillesArme[i.system.taille] ?? ""
+        taille: PN2.taillesArme[i.system.taille] ?? "", portee: porteeArme(i),
+        qualitesTxt: i.system.resumeQualites,
+        escrimes: i.system.categorie === "blanche" ? escrimesArme(actor, i).map(e => `${e.label.replace(/^Escrime (à l'|à la |au |à )?/, "")} ${e.value}`).join(", ") : ""
       };
     });
     context.armures = items.filter(i => i.type === "armure").map(i => ({
@@ -135,17 +139,20 @@ export class PN2PersonnageSheet extends HandlebarsApplicationMixin(foundry.appli
     context.marchandises = items.filter(i => i.type === "marchandise").map(i => ({ id: i.id, name: i.name, img: i.img, system: i.system, cours: PN2.cours[i.system.cours], valeur: formatPieces(i.system.valeur) }));
     context.bourse = contexteBourse(sys.richesse, this._bourseToutes ?? false);
     context.totalBourse = formatPieces(sys.richesse.total);
-    context.avantages = items.filter(i => i.type === "avantage" && i.system.nature !== "faiblesse");
-    context.faiblesses = items.filter(i => i.type === "avantage" && i.system.nature === "faiblesse");
+    const ligneAv = i => ({ id: i.id, name: i.name, img: i.img, system: i.system, pc: i.system.pcEffectifs, modificateurs: i.system.modificateursEffectifs });
+    context.avantages = items.filter(i => i.type === "avantage" && i.system.nature !== "faiblesse").map(ligneAv);
+    context.faiblesses = items.filter(i => i.type === "avantage" && i.system.nature === "faiblesse").map(ligneAv);
 
     // Escrime
     const manoeuvres = items.filter(i => i.type === "manoeuvre");
     context.escrimes = Object.entries(PN2.escrimeTypes).filter(([k]) => k !== "botte").map(([k, d]) => {
       const e = sys.escrime[k];
       const list = manoeuvres.filter(m => m.system.escrime === k).sort((a, b) => a.system.niveau - b.system.niveau || a.name.localeCompare(b.name));
-      const depenses = list.filter(m => !m.system.ecole).reduce((a, m) => a + m.system.niveau, 0);
+      const depenses = coutManoeuvres(list);
       return {
         key: k, label: d.label, opps: d.opportunites.join(" "), value: e.value, xp: e.xp, predilection: e.predilection,
+        acces: e.acces, pointsTrempe: e.pointsTrempe,
+        xpPratique: e.value > 0 && e.xp > e.value,
         pointsBonus: e.pointsBonus, points: e.points, depenses, reste: (e.points ?? 0) - depenses, destreza: k === "destreza",
         science: e.science, strategie: e.strategie,
         manoeuvres: list.map(m => ({ id: m.id, name: m.name, niveau: m.system.niveau, combo: comboHTML(m.system.combo), puissance: m.system.puissance, effet: m.system.effet, ecole: m.system.ecole }))
@@ -153,6 +160,7 @@ export class PN2PersonnageSheet extends HandlebarsApplicationMixin(foundry.appli
     });
     context.bottes = manoeuvres.filter(m => m.system.escrime === "botte").map(m => ({ id: m.id, name: m.name, combo: comboHTML(m.system.combo), effet: m.system.effet }));
     context.escrimeMode = game.settings.get(PN2.id, "escrimeMode");
+    context.ecolesOptions = Object.fromEntries(Object.entries(PN2.ecoles).map(([k, d]) => [k, d.label]));
 
     // Santé : silhouette par localisation
     const lvlKeys = ["L", "S", "G", "Cr", "Co", "M"];
@@ -304,6 +312,10 @@ export class PN2PersonnageSheet extends HandlebarsApplicationMixin(foundry.appli
   static #onBourseToutes() {
     this._bourseToutes = !this._bourseToutes;
     this.render();
+  }
+
+  static async #onAcheterManoeuvres(event, target) {
+    await acheterManoeuvres(this.document, target.dataset.escrime);
   }
 
   static #onOuvrirCompendium(event, target) {

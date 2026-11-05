@@ -26,7 +26,7 @@ export class PersonnageData extends foundry.abstract.TypeDataModel {
     for (const k of Object.keys(PN2.escrimeTypes)) {
       if (k === "botte") continue;
       escrime[k] = new f.SchemaField({
-        value: int(0, { min: 0 }), xp: int(0, { min: 0 }), predilection: bool(), pointsBonus: int(0)
+        value: int(0, { min: 0 }), xp: int(0, { min: 0 }), predilection: bool(), pointsBonus: int(0), acces: bool()
       });
     }
 
@@ -54,7 +54,11 @@ export class PersonnageData extends foundry.abstract.TypeDataModel {
       skills: new f.SchemaField(skills),
       specs: f.TypedObjectField ? new TypedObject(specSchema) : new f.ObjectField(),
       armesFeuMetier: bool(false),
-      escrime: new f.SchemaField({ ...escrime, ecole: str(""), arme: str("") }),
+      escrime: new f.SchemaField({
+        ...escrime, ecole: str(""), arme: str(""),
+        ecoleCle: str(""),                 // clé de PN2.ecoles
+        traitDague: bool(), traitDeuxArmes: bool() // Traits de réputation (À feu et à sang)
+      }),
       sante: new f.SchemaField({ loc: new f.SchemaField(loc) }),
       reputation: new f.SchemaField({
         gloire: new f.SchemaField({ score: int(0, { min: 0 }), depenses: int(0, { min: 0 }) }),
@@ -126,12 +130,14 @@ export class PersonnageData extends foundry.abstract.TypeDataModel {
     }
 
     // Points d'escrime disponibles
+    const trempe = pointsTrempe(actor);
     for (const k of Object.keys(PN2.escrimeTypes)) {
       if (k === "botte" || k === "destreza") continue;
       const e = s.escrime[k];
       // Prédilection : N+1 points par niveau, sinon N points par niveau.
       const n = e.value;
-      e.points = (e.predilection ? (n * (n + 3)) / 2 : (n * (n + 1)) / 2) + (e.pointsBonus ?? 0);
+      e.pointsTrempe = trempe[k] ?? 0;
+      e.points = (e.predilection ? (n * (n + 3)) / 2 : (n * (n + 1)) / 2) + (e.pointsBonus ?? 0) + e.pointsTrempe;
     }
     if (s.escrime.destreza) {
       s.escrime.destreza.science = s.escrime.destreza.value * 2;
@@ -144,13 +150,30 @@ export class PersonnageData extends foundry.abstract.TypeDataModel {
   facilitePNJ() { return null; }
 }
 
-/** Protection apportée par les armures équipées. */
+/** Protection apportée par les armures équipées (et la qualité « Protection de la main armée »). */
 export function armureProtection(actor) {
   const out = {};
   if (!actor?.items) return out;
   for (const it of actor.items) {
+    if (it.type === "arme" && it.system.equipee && it.system.categorie === "blanche" && it.system.qualites?.protectionMain) {
+      const loc = it.system.mainGauche ? "brasG" : "brasD";
+      out[loc] = (out[loc] ?? 0) + it.system.qualites.protectionMain;
+      continue;
+    }
     if (it.type !== "armure" || !it.system.equipee) continue;
     for (const k of PN2.locKeys) if (it.system.localisations?.[k]) out[k] = (out[k] ?? 0) + (it.system.protection ?? 0);
+  }
+  return out;
+}
+
+/** Points d'escrime apportés par la Trempe des armes (3 par niveau), par type d'escrime. */
+export function pointsTrempe(actor) {
+  const out = {};
+  if (!actor?.items) return out;
+  const TYPES = { epee: ["epee"], sabre: ["sabre"] };
+  for (const it of actor.items) {
+    if (it.type !== "arme" || !it.system.qualites?.trempe) continue;
+    for (const t of TYPES[it.system.escrime] ?? []) out[t] = Math.max(out[t] ?? 0, 3 * it.system.qualites.trempe);
   }
   return out;
 }
@@ -172,7 +195,7 @@ export function collectModificateurs(actor) {
       continue;
     }
     if (it.type !== "avantage") continue;
-    const txt = it.system.modificateurs || "";
+    const txt = it.system.modificateursEffectifs ?? it.system.modificateurs ?? "";
     for (const part of txt.split(/[,;]/)) {
       const m = part.trim().match(/^([\w.]+)\s*:\s*([+-]?\d+)$/);
       if (!m) continue;

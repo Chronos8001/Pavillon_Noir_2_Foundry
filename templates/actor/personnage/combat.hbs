@@ -10,11 +10,13 @@
     {{#each armes}}
       <tr class="item" data-item-id="{{id}}">
         <td><img src="{{img}}" width="24" height="24"></td>
-        <td><a class="rollable nom" data-action="attaque" title="Attaquer"><i class="fa-solid fa-dice-d10"></i> {{name}}</a></td>
+        <td><a class="rollable nom" data-action="attaque" title="Attaquer"><i class="fa-solid fa-dice-d10"></i> {{name}}</a>
+          {{#if qualitesTxt}}<div class="hint qualites" title="Qualités de l'arme">{{qualitesTxt}}</div>{{/if}}
+          {{#if escrimes}}<div class="hint escrimes" title="Escrimes utilisables avec cette arme"><i class="fa-solid fa-khanda"></i> {{escrimes}}</div>{{/if}}</td>
         <td>{{skill}} ({{niveau}})</td>
         <td>{{chances}}{{#if system.modEff}} {{pn2Signed system.modEff}}D{{/if}}{{#if system.modFac}} F{{pn2Signed system.modFac}}{{/if}}</td>
         <td><strong>{{pn2Signed degats}}</strong></td>
-        <td>{{#if system.portee}}{{system.portee}} m{{else}}{{taille}}{{/if}}</td>
+        <td>{{#if portee}}{{portee}} m{{else}}{{taille}}{{/if}}</td>
         <td>{{system.recharge}}</td>
         <td>{{#if longFeu includeZero=true}}{{longFeu}} / {{deLongFeu}}{{/if}}</td>
         <td>

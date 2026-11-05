@@ -10,7 +10,16 @@
     "nature": "faiblesse",
     "categorie": "Séquelles de blessures",
     "cout": "+2 PC",
-    "modificateurs": "meneurHommes:-1"
+    "modificateurs": "meneurHommes:-1",
+    "pc": null,
+    "options": [],
+    "choix": "",
+    "variable": false,
+    "maxPc": 0,
+    "multiple": false,
+    "effet": "",
+    "escrimeType": "",
+    "prerequis": ""
   },
   "effects": [],
   "folder": "f0ePLuLAsNLqMBbo",

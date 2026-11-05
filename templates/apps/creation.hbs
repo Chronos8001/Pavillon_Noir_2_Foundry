@@ -1,5 +1,6 @@
 <div class="pn2-creation-body">
   <p class="hint">Suivez les étapes dans l'ordre. Chaque choix peut être retiré : ses effets sont alors annulés.</p>
+  {{#if prerequis.length}}<div class="encadre alerte-box"><strong><i class="fa-solid fa-triangle-exclamation"></i> À vérifier</strong><ul>{{#each prerequis}}<li>{{this}}</li>{{/each}}</ul></div>{{/if}}
 
   {{!-- Étape 2 --}}
   <section class="etape {{#if etapes.caracs}}faite{{/if}}">
@@ -42,6 +43,7 @@
     <h2><span class="num">5</span> Métier initial {{#if etapes.profession}}<i class="fa-solid fa-check"></i>{{/if}}</h2>
     <p class="hint">+1 à une des deux caractéristiques, 12 points à répartir (niveau 3 maximum). Règle optionnelle : plusieurs professions (18 points sans bonus) ou aucune.</p>
     {{#each choisis.profession}}<p class="choisi">{{name}} <a data-action="retirer" data-id="{{id}}"><i class="fa-solid fa-xmark"></i></a></p>{{/each}}
+    {{#each detailProfessions}}<p class="hint">{{name}} : {{depenses}} point(s) dépensé(s){{#unless multiple}}, <strong>{{restants}} non dépensé(s)</strong> reporté(s) à l'étape 7{{/unless}}.</p>{{/each}}
     {{#if aucune}}<p class="choisi">Aucune profession (+1 en {{aucuneLabel}}, +6 points) <a data-action="aucuneProfession"><i class="fa-solid fa-xmark"></i></a></p>{{/if}}
     <div class="choix-ligne"><select name="sel_profession">{{#each listes.profession}}<option value="{{id}}">{{name}}</option>{{/each}}</select>
       <a class="pn2-btn" data-action="ajouter" data-etape="profession">Choisir</a>
@@ -55,17 +57,48 @@
       <a data-action="compendium" data-pack="avantages-faiblesses"><i class="fa-solid fa-book"></i> Ouvrir le compendium</a></p>
     <table class="pn2-table">
       {{#each avantages}}
-      <tr><td>{{#if faiblesse}}<span class="tag">Faiblesse</span>{{else}}<span class="tag av">Avantage</span>{{/if}} {{name}}</td><td class="hint">{{cout}}</td>
+      <tr><td>{{#if faiblesse}}<span class="tag">Faiblesse</span>{{else}}<span class="tag av">Avantage</span>{{/if}} {{name}}{{#if prerequis}}<br><span class="hint">{{prerequis}}</span>{{/if}}</td><td class="hint">{{cout}}</td>
         <td>PC <input type="number" name="pc_{{id}}" value="{{pc}}" min="0"> <a data-action="pc" data-id="{{id}}" title="Enregistrer"><i class="fa-solid fa-floppy-disk"></i></a></td></tr>
       {{else}}<tr><td class="hint">Aucun avantage ni faiblesse.</td></tr>{{/each}}
     </table>
-    <p>Avantages : {{nbAvantages}}/5 (−{{pcAvantages}} PC) — Faiblesses : {{nbFaiblesses}}/5 (+{{pcFaiblesses}} PC)</p>
+    <p>Avantages : <span class="{{#if (gt nbAvantages 5)}}alerte{{/if}}">{{nbAvantages}}/5</span> (−{{pcAvantages}} PC) — Faiblesses : <span class="{{#if (gt nbFaiblesses 5)}}alerte{{/if}}">{{nbFaiblesses}}/5</span> (+{{pcFaiblesses}} PC)</p>
+    <p class="hint">Une variante (Baron, main droite…) se choisit en glissant l'avantage ; les effets (réputation, accès à l'escrime, qualités d'arme, fusil de boucanier…) s'appliquent automatiquement.</p>
   </section>
+
+  {{#if escrime.actif}}
+  <section class="etape {{#if etapes.escrime}}faite{{/if}}">
+    <h2><span class="num">6+</span> Escrime (L'Art de l'escrime) {{#if etapes.escrime}}<i class="fa-solid fa-check"></i>{{/if}}</h2>
+    <p class="hint">Profil : {{escrime.statut}} — Compétence Escrime acquise : <strong>{{escrime.niveauEscrime}}</strong>. Le niveau d'Escrime s'applique à l'escrime de l'arme choisie ; les autres escrimes accessibles commencent à 0 et peuvent être augmentées à l'étape 7.</p>
+    <table class="pn2-table">
+      <tr><th>Escrime</th><th>Accès</th><th></th></tr>
+      {{#each escrime.acces}}
+      <tr><td>{{label}}</td><td>{{#if acquis}}<i class="fa-solid fa-check"></i> acquis{{else if gratuit}}gratuit{{else}}{{cout}} PC{{/if}}</td>
+        <td>{{#unless acquis}}{{#unless gratuit}}<a class="pn2-btn petit" data-action="prendreAcces" data-type="{{key}}">Prendre (−{{cout}} PC)</a>{{/unless}}{{/unless}}</td></tr>
+      {{/each}}
+    </table>
+    {{#if etapes.escrime}}
+      <p class="choisi">{{#if escrime.ecole}}{{escrime.ecole.label}} — {{/if}}{{escrime.arme}} — prédilection : {{escrime.predilections}} <a data-action="annulerEscrime" title="Annuler"><i class="fa-solid fa-xmark"></i></a></p>
+      <table class="pn2-table">
+        {{#each escrime.types}}<tr><td>{{label}}{{#if predilection}} <span class="tag">prédilection</span>{{/if}}</td><td>Niveau {{value}}</td>
+          <td>{{#unless destreza}}Points {{depenses}} / {{points}}{{/unless}}</td>
+          <td>{{#unless destreza}}<a class="pn2-btn petit" data-action="acheterManoeuvres" data-type="{{key}}"><i class="fa-solid fa-cart-plus"></i> Manœuvres</a>{{/unless}}</td></tr>{{/each}}
+      </table>
+      {{#if escrime.ecole.manoeuvres}}<a class="pn2-btn" data-action="manoeuvresEcole"><i class="fa-solid fa-scroll"></i> Manœuvres d'école ({{escrime.ecole.choisies}}/{{escrime.ecole.manoeuvres}})</a>{{/if}}
+    {{else}}
+      <div class="choix-ligne">
+        <label>École <select name="esc_ecole"><option value="">— aucune (roturier) —</option>{{#each escrime.ecoles}}<option value="{{key}}" {{#if (eq key ../escrime.ecoleCle)}}selected{{/if}}>{{label}}</option>{{/each}}</select></label>
+        <label>Arme d'escrime <select name="esc_arme">{{#each escrime.armes}}<option {{#if (eq this ../escrime.arme)}}selected{{/if}}>{{this}}</option>{{/each}}</select></label>
+        <a class="pn2-btn" data-action="appliquerEscrime"><i class="fa-solid fa-khanda"></i> Appliquer</a>
+      </div>
+      <p class="hint">Prédilections prévues : {{escrime.predilections}}. Les écoles sont réservées aux nobles (selon la nation, ou avec « École d'un autre pays que le sien »).</p>
+    {{/if}}
+  </section>
+  {{/if}}
 
   {{!-- Étape 7 --}}
   <section class="etape {{#if etapes.perso}}faite{{/if}}">
     <h2><span class="num">7</span> Personnalisation des compétences {{#if etapes.perso}}<i class="fa-solid fa-check"></i>{{/if}}</h2>
-    <p>Points disponibles : <strong>{{pointsPerso}}</strong> <span class="hint">(10 + faiblesses − avantages + restes de profession{{#if aucune}} + 6{{/if}})</span></p>
+    <p>Points disponibles : <strong class="{{#if (lt pointsPerso 0)}}alerte{{/if}}">{{pointsPerso}}</strong> <span class="hint">({{calculPoints}})</span></p>
     {{#if perso}}
       <p class="choisi">{{perso.points}} point(s) : {{persoDetail}} <a data-action="annulerPerso" title="Annuler"><i class="fa-solid fa-xmark"></i></a></p>
     {{else}}

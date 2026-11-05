@@ -10,7 +10,27 @@
     "nature": "faiblesse",
     "categorie": "Séquelles de blessures",
     "cout": "+5 PC (gauche) / +7 PC (droit)",
-    "modificateurs": "acrobatie:-1, pratiqueNautique:-1, artisanat:-1, premiersSoins:-1"
+    "modificateurs": "acrobatie:-1, pratiqueNautique:-1, artisanat:-1, premiersSoins:-1",
+    "pc": null,
+    "options": [
+      {
+        "label": "Poignet gauche (droitier)",
+        "pc": 5,
+        "modificateurs": ""
+      },
+      {
+        "label": "Poignet droit (droitier)",
+        "pc": 7,
+        "modificateurs": "acrobatie:-1, pratiqueNautique:-1, artisanat:-1, premiersSoins:-1, larcins:-1, chirurgie:-1"
+      }
+    ],
+    "choix": "",
+    "variable": false,
+    "maxPc": 0,
+    "multiple": false,
+    "effet": "",
+    "escrimeType": "",
+    "prerequis": ""
   },
   "effects": [],
   "folder": "f0ePLuLAsNLqMBbo",

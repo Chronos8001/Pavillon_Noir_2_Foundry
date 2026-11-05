@@ -9,8 +9,10 @@
     <p class="hint">Les règles d'escrime sont désactivées dans les paramètres du monde.</p>
   {{/if}}
   <div class="escrime-entete">
-    <label>École d'escrime <input type="text" name="system.escrime.ecole" value="{{system.escrime.ecole}}" placeholder="française, italienne…"></label>
+    <label>École d'escrime <select name="system.escrime.ecoleCle"><option value="">— aucune —</option>{{selectOptions ecolesOptions selected=system.escrime.ecoleCle}}</select></label>
     <label>Arme d'escrime <input type="text" name="system.escrime.arme" value="{{system.escrime.arme}}" placeholder="rapière, sabre…"></label>
+    <label class="checkbox" title="Trait de réputation (À feu et à sang) : sans lui, toute attaque à l'arme et à la dague est à -3"><input type="checkbox" name="system.escrime.traitDague" {{checked system.escrime.traitDague}}> Trait « Arme et dague »</label>
+    <label class="checkbox" title="Trait de réputation (À feu et à sang) : sans lui, toute attaque à deux armes est à -3"><input type="checkbox" name="system.escrime.traitDeuxArmes" {{checked system.escrime.traitDeuxArmes}}> Trait « Deux armes »</label>
     <a class="pn2-btn" data-action="ouvrirCompendium" data-pack="manoeuvres-escrime"><i class="fa-solid fa-book"></i> Compendium des manœuvres</a>
   </div>
   <p class="hint">Glissez les manœuvres maîtrisées sur la fiche. Coût en Points d'escrime = Niveau de la manœuvre (les manœuvres d'école sont gratuites). Opportunités : <span class="opp opp-1">1</span> Ouverture, 2 Seconde main, 3 Ennemi, 5 Préparation, 6 Décor, 9 Avantage, <span class="opp opp-0">0</span> Défense.</p>
@@ -18,16 +20,18 @@
     <div class="escrime-type {{#if e.value}}actif{{/if}}">
       <div class="titre">
         <h3>{{e.label}}</h3>
+        <label class="checkbox" title="Accès à cette escrime (création, avantage, enseignement)"><input type="checkbox" name="system.escrime.{{e.key}}.acces" {{checked e.acces}}> Accès</label>
         <span class="opps hint">Opportunités : {{e.opps}}</span>
         <label>Niveau <input type="number" name="system.escrime.{{e.key}}.value" value="{{e.value}}" min="0"></label>
         {{#unless e.destreza}}
         <label class="checkbox" title="Arme ou technique de prédilection : N+1 points par niveau"><input type="checkbox" name="system.escrime.{{e.key}}.predilection" {{checked e.predilection}}> Prédilection</label>
         <label title="Points d'escrime supplémentaires (École de renom, Trempe…)">Bonus <input type="number" name="system.escrime.{{e.key}}.pointsBonus" value="{{e.pointsBonus}}"></label>
-        <span class="points {{#if (lt e.reste 0)}}alerte{{/if}}">Points : {{e.depenses}} / {{e.points}}</span>
+        <span class="points {{#if (lt e.reste 0)}}alerte{{/if}}" title="Une manœuvre de même combinaison qu'une manœuvre déjà acquise ne coûte qu'un point{{#if e.pointsTrempe}} — dont {{e.pointsTrempe}} de Trempe, utilisables avec cette arme seulement{{/if}}">Points : {{e.depenses}} / {{e.points}}</span>
         {{else}}
         <span class="points">Science : {{e.science}} mouvements — Stratégie : {{e.strategie}}</span>
         {{/unless}}
-        <label title="Cases d'expérience (manœuvres réalisées)">Exp. <input type="number" name="system.escrime.{{e.key}}.xp" value="{{e.xp}}" min="0"></label>
+        <label title="Cases d'expérience : chaque manœuvre réalisée (ou subie) coche autant de cases que son Niveau" class="{{#if e.xpPratique}}xp-ok{{/if}}">Exp. <input type="number" name="system.escrime.{{e.key}}.xp" value="{{e.xp}}" min="0">{{#if e.xpPratique}} <i class="fa-solid fa-star" title="Expérience pratique acquise"></i>{{/if}}</label>
+        {{#unless e.destreza}}<a class="pn2-mini-btn" data-action="acheterManoeuvres" data-escrime="{{e.key}}" title="Acheter des manœuvres avec les Points d'escrime"><i class="fa-solid fa-cart-plus"></i></a>{{/unless}}
         <a class="pn2-mini-btn" data-action="itemCreate" data-type="manoeuvre" data-escrime="{{e.key}}" title="Nouvelle manœuvre"><i class="fa-solid fa-plus"></i></a>
       </div>
       {{#if e.manoeuvres.length}}

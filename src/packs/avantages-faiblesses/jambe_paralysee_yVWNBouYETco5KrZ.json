@@ -5,12 +5,21 @@
   "type": "avantage",
   "img": "systems/pavillon-noir-2/assets/icons/faiblesse.svg",
   "system": {
-    "description": "<p>Une béquille et une main sont nécessaires pour tenir debout. Acrobatie/Escalade impossible. Pas de malus de douleur pour cette jambe. Malus de -2 également aux compétences de combat au corps à corps (à appliquer).</p>",
+    "description": "<p>Une béquille et une main sont nécessaires pour tenir debout. Acrobatie/Escalade impossible. Pas de malus de douleur pour cette jambe. Malus de -2 aux compétences de combat au corps à corps.</p>",
     "source": "La Révolte",
     "nature": "faiblesse",
     "categorie": "Séquelles de blessures",
     "cout": "+12 PC",
-    "modificateurs": "discretion:-2, athletisme:-4, pratiqueNautique:-4"
+    "modificateurs": "discretion:-2, mainsNues:-2, armesBlanches:-2, athletisme:-4, pratiqueNautique:-4",
+    "pc": null,
+    "options": [],
+    "choix": "",
+    "variable": false,
+    "maxPc": 0,
+    "multiple": false,
+    "effet": "",
+    "escrimeType": "",
+    "prerequis": "Acrobatie/Escalade impossible."
   },
   "effects": [],
   "folder": "f0ePLuLAsNLqMBbo",

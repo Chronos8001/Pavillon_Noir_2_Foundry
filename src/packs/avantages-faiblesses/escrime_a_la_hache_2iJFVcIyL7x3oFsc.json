@@ -10,7 +10,32 @@
     "nature": "avantage",
     "categorie": "Escrime : accès",
     "cout": "-4 / -6 / -12 PC",
-    "modificateurs": ""
+    "modificateurs": "",
+    "pc": null,
+    "options": [
+      {
+        "label": "Maître d'armes",
+        "pc": -4,
+        "modificateurs": ""
+      },
+      {
+        "label": "Marin ou colon",
+        "pc": -6,
+        "modificateurs": ""
+      },
+      {
+        "label": "Autre",
+        "pc": -12,
+        "modificateurs": ""
+      }
+    ],
+    "choix": "",
+    "variable": false,
+    "maxPc": 0,
+    "multiple": false,
+    "effet": "escrime",
+    "escrimeType": "hache",
+    "prerequis": ""
   },
   "effects": [],
   "folder": "aMI4SefMFvSYcL0d",

@@ -154,6 +154,67 @@ PN2.escrimeArmes = {
   autre: "Autre"
 };
 
+/**
+ * Écoles d'escrime (L'Art de l'escrime, p. 137-138).
+ * pays : nationalités qui y ont accès ; etranger : nationalités qui y ont accès avec « École d'un autre pays que le sien ».
+ * manoeuvres : manœuvres d'école gratuites ; arme : arme de prédilection.
+ */
+PN2.ecoles = {
+  francaise: { label: "École française", pays: ["Français"], etranger: ["Espagnol"], manoeuvres: 3, arme: "epee", gratuit: ["epee"] },
+  italienne: { label: "École italienne", pays: ["Italien"], etranger: ["Français", "Anglais"], manoeuvres: 1, arme: "epee", gratuit: ["epee"], niveau1: ["dague", "deuxarmes"] },
+  allemande: { label: "École allemande", pays: ["Allemand"], etranger: ["Français"], manoeuvres: 1, arme: "sabre", gratuit: ["sabre"] },
+  anglaise: { label: "École anglaise", pays: ["Anglais"], etranger: [], manoeuvres: 1, arme: "sabre", gratuit: ["epee"] },
+  espagnole: { label: "École espagnole (destreza)", pays: ["Espagnol", "Portugais"], etranger: ["Français"], manoeuvres: 0, arme: "epee", gratuit: ["destreza"] }
+};
+
+/**
+ * Avantages d'accès à l'escrime (L'Art de l'escrime, p. 136) : coût selon le profil.
+ * Les clés de profil sont calculées par l'assistant de création (noble, nation, marin, colon, soldat, maître d'armes).
+ */
+PN2.accesEscrime = {
+  epee: { nom: "Escrime à l'épée seule (roturier)", cout: p => (p.noble && p.nation !== "Allemand" ? 0 : 6) },
+  dague: { nom: "Escrime à l'arme et à la dague (roturier)", cout: p => (p.noble && p.nation === "Italien" ? 0 : 8) },
+  deuxarmes: { nom: "Escrime à deux armes (roturier)", cout: p => (p.noble && p.nation === "Italien" ? 0 : 12) },
+  sabre: { nom: "Escrime au sabre", cout: p => (p.noble && p.nation === "Allemand" ? 0 : ((p.noble && p.nation === "Anglais") || p.maitreArmes ? 2 : 5)) },
+  hache: { nom: "Escrime à la hache", cout: p => (p.maitreArmes ? 4 : (p.marin || p.colon ? 6 : 12)) },
+  baionnette: { nom: "Escrime à la baïonnette", cout: p => (p.maitreArmes ? 4 : (p.soldat ? 6 : 12)) },
+  pont: { nom: "Combat de pont", cout: p => (p.marin ? 5 : 10) }
+};
+
+/** Qualités des armes blanches (L'Art de l'escrime, p. 130). max : cumul possible. */
+PN2.qualitesBlanches = {
+  apparat: { label: "Apparat", effet: "+2 aux Tests sociaux pour impressionner", max: 1 },
+  prolongement: { label: "Prolongement du bras", effet: "Peut prendre l'avantage quel que soit le dé d'avantage", max: 1 },
+  pointeLegere: { label: "Pointe légère", effet: "Bonus de dégâts et protection des postures doublés", max: 1 },
+  legerete: { label: "Légèreté", effet: "Facilité +1 à l'attaque", max: 1 },
+  trempe: { label: "Trempe", effet: "+3 Points d'escrime avec cette arme (sabre, épée)", max: 3 },
+  acier: { label: "Qualité de l'acier", effet: "Dégâts +1", max: 1 },
+  equilibre: { label: "Équilibre", effet: "Efficacité +1D à l'attaque", max: 1 },
+  briseLame: { label: "Brise-lame", effet: "Après une parade réussie : attaque gratuite de l'autre main (rapière, main gauche, épée courte)", max: 1 },
+  protectionMain: { label: "Protection de la main armée", effet: "Protection +1 au bras droit (rapière, main gauche, épée courte)", max: 3 }
+};
+
+/** Qualités des armes à feu (L'Art de l'escrime, p. 131). */
+PN2.qualitesFeu = {
+  apparat: { label: "Apparat", effet: "+2 aux Tests sociaux pour impressionner", max: 1 },
+  fiabilite: { label: "Fiabilité", effet: "Long feu -3", max: 1 },
+  gaucher: { label: "Pistolet de gaucher", effet: "Tir de la main gauche sans malus (pistolets)", max: 1 },
+  silex: { label: "Platine à silex", effet: "Facilité +1 au tir, long feu -1", max: 1 },
+  maniabilite: { label: "Maniabilité", effet: "Efficacité +1D au tir", max: 1 },
+  poudre: { label: "Qualité de la poudre", effet: "Dégâts +1, long feu -1", max: 1 },
+  etancheite: { label: "Étanchéité de la platine et du canon", effet: "Toujours chargée ; pas de long feu dû aux circonstances", max: 1 },
+  canon: { label: "Qualité du canon", effet: "Portée +5 m par niveau (max. +10 m)", max: 2 },
+  recharge: { label: "Facilité de recharge", effet: "Recharge -1 Tour de combat par niveau", max: 3 }
+};
+
+/** Qualités des armes doubles (L'Art de l'escrime, p. 132) : malus aux deux usages. */
+PN2.qualitesDouble = {
+  "": "Arme simple",
+  normale: "Arme double normale (-1 dans les deux usages)",
+  superieure: "Arme double supérieure (-1 dans un usage)",
+  extraordinaire: "Arme double extraordinaire (sans malus)"
+};
+
 /** Points d'escrime disponibles selon le niveau (prédilection / autre). */
 PN2.pointsEscrime = {
   predilection: [0, 2, 5, 9, 14, 20, 27, 35],

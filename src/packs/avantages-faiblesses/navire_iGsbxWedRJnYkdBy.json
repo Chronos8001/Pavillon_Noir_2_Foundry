@@ -10,7 +10,37 @@
     "nature": "avantage",
     "categorie": "Possessions",
     "cout": "-2 à -20 PC",
-    "modificateurs": ""
+    "modificateurs": "",
+    "pc": null,
+    "options": [
+      {
+        "label": "Chaloupe",
+        "pc": -2,
+        "modificateurs": ""
+      },
+      {
+        "label": "Sloop armé pour la course",
+        "pc": -7,
+        "modificateurs": ""
+      },
+      {
+        "label": "Goélette armée pour la course",
+        "pc": -15,
+        "modificateurs": ""
+      },
+      {
+        "label": "Frégate armée pour la course",
+        "pc": -20,
+        "modificateurs": ""
+      }
+    ],
+    "choix": "",
+    "variable": false,
+    "maxPc": 0,
+    "multiple": true,
+    "effet": "",
+    "escrimeType": "",
+    "prerequis": "Le coût peut être partagé entre plusieurs personnages : ajustez les PC."
   },
   "effects": [],
   "folder": "gkEujYDoiQVr92oN",

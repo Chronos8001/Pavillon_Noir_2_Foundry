@@ -10,7 +10,16 @@
     "nature": "avantage",
     "categorie": "Avantages sociaux",
     "cout": "variable",
-    "modificateurs": ""
+    "modificateurs": "",
+    "pc": null,
+    "options": [],
+    "choix": "",
+    "variable": true,
+    "maxPc": 0,
+    "multiple": false,
+    "effet": "gloire",
+    "escrimeType": "",
+    "prerequis": ""
   },
   "effects": [],
   "folder": "9bpcSG3sL6AqQhn9",

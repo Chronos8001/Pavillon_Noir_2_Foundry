@@ -19,6 +19,7 @@
     </div>
     <div class="hint">{{r.detailDegats}} — la protection de la localisation est retranchée à l'application.</div>
     <a class="pn2-btn" data-pn2-action="appliquer"><i class="fa-solid fa-droplet"></i> Appliquer les dégâts</a>
+    {{#if r.avantagePossible}}<a class="pn2-btn" data-pn2-action="avantage"><i class="fa-solid fa-chess-knight"></i> Prendre l'avantage</a>{{/if}}
   {{else}}
     {{#unless r.lignes.length}}<p class="ligne">L'attaque manque sa cible.</p>{{/unless}}
   {{/if}}

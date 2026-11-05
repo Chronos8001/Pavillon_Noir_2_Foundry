@@ -24,10 +24,33 @@ export function competenceArme(actor, arme) {
   return getSkill(actor, comp) ?? getSkill(actor, "mainsNues");
 }
 
-/** Dégâts fixes d'une arme (MD du personnage + bonus de l'arme). */
+/** Dégâts fixes d'une arme (MD du personnage + bonus de l'arme et de ses qualités). */
 export function degatsFixes(actor, arme) {
   const md = arme.system.md === "for" ? actor.system.md.for : (arme.system.md === "adr" ? actor.system.md.adr : 0);
-  return md + (arme.system.degats ?? 0);
+  return md + (arme.system.degats ?? 0) + (arme.system.bonusQualites?.degats ?? 0);
+}
+
+/** Portée effective (qualité du canon comprise). */
+export function porteeArme(arme) {
+  return (arme.system.portee ?? 0) + (arme.system.bonusQualites?.portee ?? 0);
+}
+
+/** Risque de long feu (sur D20) d'une arme à feu. */
+export function risqueLongFeu(arme, skill, modCirc = 0) {
+  const qmod = { mauvaise: 2, mediocre: 1, normale: 0, exceptionnelle: -1 }[arme.system.qualite] ?? 0;
+  let circ = Number(modCirc) || 0;
+  if (arme.system.qualites?.etancheite && circ > 0) circ = 0;
+  return 4 - (skill?.value ?? 0) + qmod + (arme.system.longFeuMod ?? 0) + (arme.system.bonusQualites?.longFeu ?? 0) + circ;
+}
+
+/** Arme tenue dans l'autre main (équipée, main gauche). */
+export function armeSecondaire(actor, arme) {
+  return actor.items.find(i => i.type === "arme" && i.system.equipee && i.system.mainGauche && i.id !== arme?.id && i.system.categorie === "blanche") ?? null;
+}
+
+/** Types d'escrime connus (niveau > 0) et adaptés à une arme, avec leur niveau. */
+export function escrimesArme(actor, arme) {
+  return escrimesPour(actor, arme).filter(t => t !== "botte").map(t => ({ key: t, label: PN2.escrimeTypes[t].label, value: actor.system.escrime?.[t]?.value ?? 0 }));
 }
 
 /** Types d'escrime utilisables avec une arme. */
@@ -47,7 +70,8 @@ export function escrimesPour(actor, arme) {
     if (gauche.system.escrime === "dague" && has("dague")) types.push("dague");
     if (["epee", "sabre"].includes(gauche.system.escrime) && has("deuxarmes")) types.push("deuxarmes");
   }
-  if (has("pont") && cat !== "baionnette") types.push("pont");
+  // La destreza est incompatible avec toutes les autres formes d'escrime (L'Art de l'escrime, p. 134)
+  if (has("pont") && cat !== "baionnette" && !types.includes("destreza")) types.push("pont");
   if (cat === "epee" && actor.items.some(i => i.type === "manoeuvre" && i.system.escrime === "botte")) types.push("botte");
   return [...new Set(types)];
 }
@@ -130,8 +154,7 @@ function bonusCinq(values, fac, nb5) {
 /* -------------------------------------------- */
 
 async function testLongFeu(actor, arme, skill, modCirc = 0) {
-  const qmod = { mauvaise: 2, mediocre: 1, normale: 0, exceptionnelle: -1 }[arme.system.qualite] ?? 0;
-  const chance = 4 - (skill?.value ?? 0) + qmod + (arme.system.longFeuMod ?? 0) + (Number(modCirc) || 0);
+  const chance = risqueLongFeu(arme, skill, modCirc);
   const r = await new Roll("1d20").evaluate();
   const out = { chance, jet: r.total, rolls: [r], longFeu: r.total <= chance };
   if (out.longFeu) {
@@ -178,6 +201,10 @@ export async function rollAttaque(actor, arme, { defense = false, adverse = null
   const tir = arme.system.categorie !== "blanche";
   const types = escrimesPour(actor, arme);
   const cible = defense ? null : cibleActuelle();
+  const esc = actor.system.escrime ?? {};
+  const secondaire = tir ? null : armeSecondaire(actor, arme);
+  // Sans le Trait de réputation correspondant, se battre avec une arme dans chaque main est Très difficile (-3)
+  const traitOk = secondaire ? !!(secondaire.system.escrime === "dague" ? esc.traitDague : esc.traitDeuxArmes) : false;
   const data = {
     arme, skill, tir, caracs: PN2.caracs, caracDef: arme.system.carac || skill.carac, difficultes: PN2.difficultes,
     postures: PN2.postures, posture: actor.system.combat?.posture ?? "attentive", usePostures: setting("postures"),
@@ -185,7 +212,9 @@ export async function rollAttaque(actor, arme, { defense = false, adverse = null
     escrimeMode: setting("escrimeMode"), escrimeBase: (actor.system.skills?.escrime?.value ?? 0) > 0,
     gloireDispo: actor.system.reputation?.gloire?.disponibles ?? 0, infamieDispo: actor.system.reputation?.infamie?.disponibles ?? 0,
     armeFeu: arme.system.estArmeFeu, longFeu: setting("longFeu"), cible, defense, malusSante: actor.system.malusSante,
-    degats: degatsFixes(actor, arme)
+    degats: degatsFixes(actor, arme), portee: porteeArme(arme), qualitesTxt: arme.system.resumeQualites,
+    secondaire: secondaire?.name ?? null, deuxArmesDefaut: !!secondaire && !traitOk, traitOk,
+    armeDouble: arme.system.double
   };
   const content = await render("dialog/attaque.hbs", data);
   const form = await foundry.applications.api.DialogV2.wait({
@@ -206,6 +235,12 @@ export async function rollAttaque(actor, arme, { defense = false, adverse = null
   if (arme.system.modEff) { eff += arme.system.modEff; notes.push(`Arme : ${arme.system.modEff > 0 ? "+" : ""}${arme.system.modEff}D`); }
   if (arme.system.modFac) { fac += arme.system.modFac; notes.push(`Arme : ${arme.system.modFac > 0 ? "+" : ""}${arme.system.modFac}`); }
   if (arme.system.qualite === "mauvaise") { fac -= 1; notes.push("Arme de mauvaise qualité : -1"); }
+  const bq = arme.system.bonusQualites ?? {};
+  if (bq.eff) { eff += bq.eff; notes.push(`${tir ? "Maniabilité" : "Équilibre"} : +${bq.eff}D`); }
+  if (bq.fac) { fac += bq.fac; notes.push(`${tir ? "Platine à silex" : "Légèreté"} : +${bq.fac}`); }
+  if (arme.system.double === "normale" || (arme.system.double === "superieure" && form.usageSecondaire)) {
+    fac -= 1; notes.push("Arme double : -1");
+  }
   if (arme.system.bonusAbordage) {
     const m = form.abordage ? 1 : -1; fac += m; notes.push(form.abordage ? "À l'abordage : +1" : "Hors abordage : -1");
   }
@@ -213,13 +248,19 @@ export async function rollAttaque(actor, arme, { defense = false, adverse = null
   if (viser) { eff += viser; notes.push(`Viser : +${viser}D`); }
   if (tir && form.boutPortant) { eff += 2; notes.push("Bout portant : +2D"); }
   const distance = Number(form.distance) || 0;
-  if (tir && distance > 0 && arme.system.portee > 0) {
-    const seg = Math.max(0, Math.ceil(distance / arme.system.portee) - 1);
+  const portee = porteeArme(arme);
+  if (tir && distance > 0 && portee > 0) {
+    const seg = Math.max(0, Math.ceil(distance / portee) - 1);
     if (seg) { fac -= seg; notes.push(`Distance (${distance} m) : -${seg}`); }
   }
   if (form.mainGauche && skill.key !== "pistolet") { fac -= 3; notes.push("Main gauche : -3"); }
-  if (form.deuxArmes) { fac -= 3; notes.push("Combat à deux armes : -3"); }
   const typesUtilises = types.filter(t => form[`esc_${t}`]);
+  // Escrime à l'arme et à la dague ou à deux armes sans le Trait de réputation : toutes les attaques à -3
+  const sansTrait = (typesUtilises.includes("dague") && !esc.traitDague) || (typesUtilises.includes("deuxarmes") && !esc.traitDeuxArmes);
+  if (form.deuxArmes || sansTrait) {
+    fac -= 3;
+    notes.push(sansTrait && !form.deuxArmes ? "Escrime à deux mains sans le Trait de réputation : -3" : "Combat à deux armes : -3");
+  }
   if (typesUtilises.includes("pont") && typesUtilises.some(t => ["epee", "sabre", "hache"].includes(t))) {
     fac -= 1; notes.push("Combat de pont combiné : -1");
   }
@@ -275,7 +316,8 @@ export async function rollAttaque(actor, arme, { defense = false, adverse = null
     formule: `${Math.round(eff) >= 1 ? Math.round(eff) : "1D" + faces}F${fac}`,
     marge: libelleMarge(res.succes, { critique: res.critique }), notes, experience,
     posture: form.posture || "attentive", locCible: form.locCible || "", viserLoc: Math.min(3, Number(form.viserLoc) || 0),
-    longFeu, escrime, cible, distance, cibles: arme.system.cibles, defense
+    longFeu, escrime, cible, distance, cibles: arme.system.cibles, defense,
+    qualites: foundry.utils.deepClone(arme.system.qualites ?? {})
   };
   return { att, rolls };
 }
@@ -451,7 +493,14 @@ export async function creerResolution(att, def, { locJet = null } = {}) {
     if (d.total <= seuil) {
       r.avantage = true; r.valeurAvantage = marge;
       r.lignes.push(`${W.nom} prend l'avantage (valeur ${marge}) au lieu d'infliger des dégâts (dé d'avantage : ${d.total}).`);
+    } else if (W.qualites?.prolongement) {
+      // Prolongement du bras : l'avantage peut être pris quel que soit le dé
+      r.avantagePossible = true;
+      r.lignes.push(`Prolongement du bras : ${W.nom} peut prendre l'avantage (valeur ${marge}) plutôt que d'infliger des dégâts.`);
     }
+  }
+  if (mW && /parade/i.test(mW.nom) && W.qualites?.briseLame) {
+    r.lignes.push(`Brise-lame : ${W.nom} dispose d'une Action gratuite pour attaquer de l'autre main.`);
   }
 
   // Dégâts
@@ -459,11 +508,14 @@ export async function creerResolution(att, def, { locJet = null } = {}) {
   const detail = [`Marge ${marge}`, `Arme et MD ${W.degatsFixe >= 0 ? "+" : ""}${W.degatsFixe ?? 0}`];
   if (mW?.auto?.bonusDegats) { deg += mW.auto.bonusDegats; detail.push(`Manœuvre +${mW.auto.bonusDegats}`); }
   if (setting("postures") && opposeCAC) {
+    // Pointe légère : bonus de dégâts et protection des postures doublés pour la lame qui en dispose
     if (att.posture === "offensive" || def?.posture === "offensive") {
-      const n = compte1(W.values ?? []); if (n) { deg += n; detail.push(`Posture offensive +${n}`); }
+      let n = compte1(W.values ?? []); if (W.qualites?.pointeLegere) n *= 2;
+      if (n) { deg += n; detail.push(`Posture offensive +${n}${W.qualites?.pointeLegere ? " (pointe légère)" : ""}`); }
     }
     if (att.posture === "defensive" || def?.posture === "defensive") {
-      const n = compte0(L?.values ?? []); if (n) { deg -= n; detail.push(`Posture défensive -${n}`); }
+      let n = compte0(L?.values ?? []); if (L?.qualites?.pointeLegere) n *= 2;
+      if (n) { deg -= n; detail.push(`Posture défensive -${n}${L?.qualites?.pointeLegere ? " (pointe légère)" : ""}`); }
     }
   }
   if (L?.escrime?.base?.nb0) { deg -= L.escrime.base.nb0; detail.push(`Escrime (0) -${L.escrime.base.nb0}`); }
@@ -492,6 +544,42 @@ export async function creerResolution(att, def, { locJet = null } = {}) {
   return r;
 }
 
+/** Prolongement du bras : le vainqueur choisit de prendre l'avantage. */
+export async function prendreAvantage(message) {
+  const flags = foundry.utils.deepClone(message.flags[SYS]);
+  const r = flags.resolution;
+  if (!r?.avantagePossible) return;
+  r.avantage = true; r.avantagePossible = false; r.valeurAvantage = r.marge; r.degats = 0;
+  r.lignes.push(`${r.attaquantNom} prend l'avantage (valeur ${r.marge}).`);
+  const tpl = flags.type === "resolution" ? "chat/resolution.hbs" : "chat/attaque.hbs";
+  const content = await render(tpl, { att: flags.att, def: flags.def, resolution: r, peutDefendre: !flags.att.tir && !!flags.att.cible });
+  await message.update({ content, [`flags.${SYS}`]: flags });
+}
+
+/**
+ * Expérience d'escrime (L'Art de l'escrime, p. 139) : réaliser une manœuvre coche autant de cases
+ * que son Niveau ; l'adversaire qui connaît la même escrime coche aussi ses cases.
+ * delta : +1 pour ajouter, -1 pour retirer (changement de manœuvre).
+ */
+async function experienceEscrime(actorUuid, man, delta, { adversaireUuid = null } = {}) {
+  if (!man?.escrime || man.escrime === "botte") return;
+  const n = (man.niveau ?? 1) * delta;
+  const maj = async (uuid, propre) => {
+    const a = uuid ? fromUuidSync(uuid) : null;
+    const e = a?.system?.escrime?.[man.escrime];
+    if (!a || !e || !a.isOwner) return;
+    if (!propre && !(e.value > 0)) return;
+    const avant = e.xp ?? 0;
+    const xp = Math.max(0, avant + n);
+    await a.update({ [`system.escrime.${man.escrime}.xp`]: xp });
+    if (delta > 0 && xp > e.value && avant <= e.value) {
+      ui.notifications.info(`${a.name} : expérience pratique en ${PN2.escrimeTypes[man.escrime].label} (${xp} cases pour le niveau ${e.value}).`);
+    }
+  };
+  await maj(actorUuid, true);
+  if (adversaireUuid && adversaireUuid !== actorUuid) await maj(adversaireUuid, false);
+}
+
 /** Choix d'une manœuvre par le propriétaire du message. */
 export async function choisirManoeuvre(message, cote, idx) {
   const flags = foundry.utils.deepClone(message.flags[SYS]);
@@ -500,6 +588,8 @@ export async function choisirManoeuvre(message, cote, idx) {
   const actor = fromUuidSync(c.actorUuid);
   if (!actor?.isOwner && !game.user.isGM) return ui.notifications.warn("Seul le combattant peut choisir sa manœuvre.");
   const rolls = [];
+  const adverse = cote === "def" ? flags.att?.actorUuid : (flags.def?.actorUuid ?? flags.att?.cible?.actorUuid ?? null);
+  if (c.escrime.choisie) await experienceEscrime(c.actorUuid, c.escrime.choisie, -1, { adversaireUuid: adverse });
   if (idx === "none") c.escrime.choisie = null;
   else {
     const m = foundry.utils.deepClone(c.escrime.matches[Number(idx)]);
@@ -509,6 +599,7 @@ export async function choisirManoeuvre(message, cote, idx) {
       m.extraValues = r.dice[0].results.map(x => x.result);
     }
     c.escrime.choisie = m;
+    await experienceEscrime(c.actorUuid, m, 1, { adversaireUuid: adverse });
   }
   const locJet = flags.resolution?.locJet ?? null;
   if (flags.type === "resolution" || flags.resolution) {

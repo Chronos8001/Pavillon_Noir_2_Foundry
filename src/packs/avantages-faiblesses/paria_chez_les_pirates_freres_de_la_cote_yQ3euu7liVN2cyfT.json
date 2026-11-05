@@ -10,7 +10,16 @@
     "nature": "faiblesse",
     "categorie": "Faiblesses sociales",
     "cout": "+5 PC",
-    "modificateurs": ""
+    "modificateurs": "",
+    "pc": null,
+    "options": [],
+    "choix": "",
+    "variable": false,
+    "maxPc": 0,
+    "multiple": false,
+    "effet": "",
+    "escrimeType": "",
+    "prerequis": ""
   },
   "effects": [],
   "folder": "g1HC9ZvGk6e4ow4o",

@@ -10,7 +10,16 @@
     "nature": "avantage",
     "categorie": "Possessions",
     "cout": "-5 PC",
-    "modificateurs": ""
+    "modificateurs": "",
+    "pc": null,
+    "options": [],
+    "choix": "",
+    "variable": false,
+    "maxPc": 0,
+    "multiple": true,
+    "effet": "fusilBoucanier",
+    "escrimeType": "",
+    "prerequis": ""
   },
   "effects": [],
   "folder": "gkEujYDoiQVr92oN",

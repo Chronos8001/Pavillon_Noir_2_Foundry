@@ -10,7 +10,27 @@
     "nature": "avantage",
     "categorie": "Escrime : accès",
     "cout": "-6 PC",
-    "modificateurs": ""
+    "modificateurs": "",
+    "pc": null,
+    "options": [
+      {
+        "label": "Roturier",
+        "pc": -6,
+        "modificateurs": ""
+      },
+      {
+        "label": "Noble allemand",
+        "pc": -6,
+        "modificateurs": ""
+      }
+    ],
+    "choix": "",
+    "variable": false,
+    "maxPc": 0,
+    "multiple": false,
+    "effet": "escrime",
+    "escrimeType": "epee",
+    "prerequis": "Gratuit pour les nobles (sauf allemands)."
   },
   "effects": [],
   "folder": "aMI4SefMFvSYcL0d",

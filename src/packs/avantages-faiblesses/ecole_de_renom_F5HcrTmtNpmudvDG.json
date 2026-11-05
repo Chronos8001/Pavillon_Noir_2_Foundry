@@ -10,7 +10,16 @@
     "nature": "avantage",
     "categorie": "Escrime : école",
     "cout": "-5 PC",
-    "modificateurs": ""
+    "modificateurs": "",
+    "pc": null,
+    "options": [],
+    "choix": "",
+    "variable": false,
+    "maxPc": 0,
+    "multiple": false,
+    "effet": "ecoleRenom",
+    "escrimeType": "",
+    "prerequis": "Escrimeurs nobles, Escrime à l'épée seule uniquement."
   },
   "effects": [],
   "folder": "b1sT2jQTepz8j5JY",

@@ -1,5 +1,6 @@
 <div class="pn2-dialog">
   <p class="intro"><strong>{{arme.name}}</strong> — {{skill.label}} : {{skill.value}}{{#unless skill.value}} <span class="hint">(profane : {{#if skill.metier}}1D20{{else}}1D12{{/if}})</span>{{/unless}} — dégâts fixes {{pn2Signed degats}}
+    {{#if qualitesTxt}}<br><span class="hint">Qualités : {{qualitesTxt}}</span>{{/if}}
     {{#if cible}}<br>Cible : <strong>{{cible.nom}}</strong>{{/if}}</p>
   <div class="form-group">
     <label>Caractéristique</label>
@@ -18,7 +19,7 @@
     <select name="locCible"><option value="">—</option>{{#each locs as |l k|}}<option value="{{k}}">{{l}}</option>{{/each}}</select></div>
   {{#if tir}}
     <div class="form-row">
-      <div class="form-group"><label>Distance (m) — portée {{arme.system.portee}} m</label><input type="number" name="distance" value="0" min="0"></div>
+      <div class="form-group"><label>Distance (m) — portée {{portee}} m</label><input type="number" name="distance" value="0" min="0"></div>
       <div class="form-group"><label>Bout portant (+2D)</label><input type="checkbox" name="boutPortant"></div>
     </div>
     {{#if armeFeu}}{{#if longFeu}}
@@ -30,8 +31,9 @@
   {{/if}}
   <div class="form-row">
     <div class="form-group"><label>Main gauche (-3)</label><input type="checkbox" name="mainGauche" {{#if arme.system.mainGauche}}checked{{/if}}></div>
-    <div class="form-group"><label>Combat à deux armes (-3)</label><input type="checkbox" name="deuxArmes"></div>
+    <div class="form-group"><label>Combat à deux armes (-3){{#if secondaire}} <span class="hint">— {{secondaire}} en main gauche{{#if traitOk}}, Trait de réputation{{/if}}</span>{{/if}}</label><input type="checkbox" name="deuxArmes" {{#if deuxArmesDefaut}}checked{{/if}}></div>
   </div>
+  {{#if (eq armeDouble "superieure")}}<div class="form-group"><label>Usage secondaire de l'arme double (-1)</label><input type="checkbox" name="usageSecondaire"></div>{{/if}}
   {{#if arme.system.bonusAbordage}}<div class="form-group"><label>À l'abordage (+1, sinon -1)</label><input type="checkbox" name="abordage" checked></div>{{/if}}
   {{#if usePostures}}<div class="form-group"><label>Posture</label><select name="posture">{{selectOptions postures selected=posture}}</select></div>{{/if}}
   {{#unless tir}}

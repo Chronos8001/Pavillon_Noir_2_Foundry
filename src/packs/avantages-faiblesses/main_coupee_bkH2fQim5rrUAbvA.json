@@ -10,7 +10,27 @@
     "nature": "faiblesse",
     "categorie": "Séquelles de blessures",
     "cout": "+7 PC (gauche) / +9 PC (droite)",
-    "modificateurs": "acrobatie:-2, pratiqueNautique:-2, artisanat:-2, premiersSoins:-2"
+    "modificateurs": "acrobatie:-2, pratiqueNautique:-2, artisanat:-2, premiersSoins:-2",
+    "pc": null,
+    "options": [
+      {
+        "label": "Main gauche (droitier)",
+        "pc": 7,
+        "modificateurs": ""
+      },
+      {
+        "label": "Main droite (droitier)",
+        "pc": 9,
+        "modificateurs": ""
+      }
+    ],
+    "choix": "",
+    "variable": false,
+    "maxPc": 0,
+    "multiple": false,
+    "effet": "",
+    "escrimeType": "",
+    "prerequis": "Mousquet (ou pistolet de cette main) impossible."
   },
   "effects": [],
   "folder": "f0ePLuLAsNLqMBbo",

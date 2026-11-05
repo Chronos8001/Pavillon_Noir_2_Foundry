@@ -323,3 +323,17 @@
 .pn2-creation .choisi { margin: 2px 0; font-weight: bold; }
 .pn2-creation .tag.av { background: var(--pn2-vert); }
 .pn2-creation input[type="number"] { width: 3.5em; }
+
+/* Création, escrime et qualités d'armes */
+.pn2 .alerte-box { border: 1px solid var(--pn2-rouge); background: rgba(139, 30, 30, 0.08); padding: 4px 8px; margin: 6px 0; border-radius: 3px; }
+.pn2 .alerte-box ul { margin: 2px 0 0 16px; padding: 0; }
+.pn2 .compteur, .pn2-dialog .compteur { font-size: 12px; margin: 2px 0 6px; }
+.pn2 .xp-ok { color: var(--pn2-vert); font-weight: bold; }
+.pn2 .pn2-table.armes .qualites, .pn2 .pn2-table.armes .escrimes { font-size: 10px; line-height: 1.2; }
+.pn2 .qualites-arme .grid-2 label.ligne { display: flex; justify-content: space-between; align-items: center; gap: 6px; }
+.pn2 .qualites-arme .grid-2 label.ligne input[type=number] { width: 44px; flex: none; }
+.pn2-assistant .liste-manoeuvres label.choix { display: block; padding: 3px 0; border-bottom: 1px dotted var(--pn2-bord); }
+.pn2-assistant .liste-manoeuvres .niv { display: inline-block; min-width: 24px; font-weight: bold; color: var(--pn2-bleu); }
+.pn2-creation .etape .choix-ligne label { display: inline-flex; align-items: center; gap: 4px; margin-right: 8px; }
+.pn2-dialog .alerte { color: #8b1e1e; font-weight: bold; }
+.pn2-assistant .liste-manoeuvres label.choix { align-items: flex-start; flex-wrap: wrap; }

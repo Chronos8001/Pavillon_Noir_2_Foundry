@@ -10,7 +10,32 @@
     "nature": "avantage",
     "categorie": "Escrime : armes",
     "cout": "-1 / -3 / -5 PC",
-    "modificateurs": ""
+    "modificateurs": "",
+    "pc": null,
+    "options": [
+      {
+        "label": "Qualité normale",
+        "pc": -1,
+        "modificateurs": ""
+      },
+      {
+        "label": "Qualité supérieure",
+        "pc": -3,
+        "modificateurs": ""
+      },
+      {
+        "label": "Qualité extraordinaire",
+        "pc": -5,
+        "modificateurs": ""
+      }
+    ],
+    "choix": "",
+    "variable": false,
+    "maxPc": 0,
+    "multiple": true,
+    "effet": "armeDouble",
+    "escrimeType": "",
+    "prerequis": ""
   },
   "effects": [],
   "folder": "ImdZb9SLMIEqorIf",

@@ -1,5 +1,6 @@
 import { PN2 } from "../config.mjs";
 import { comboHTML } from "../documents/item.mjs";
+import { EFFETS_AVANTAGE } from "../data/items.mjs";
 
 const { HandlebarsApplicationMixin } = foundry.applications.api;
 
@@ -43,12 +44,39 @@ export class PN2ItemSheet extends HandlebarsApplicationMixin(foundry.application
     context.valeurMarchandise = item.type === "marchandise" ? Math.round(item.system.valeur * 100) / 100 : 0;
     context.natures = { avantage: "Avantage", faiblesse: "Faiblesse" };
     context.locs = PN2.locKeys.map(k => ({ key: k, label: PN2.locLabels[k], checked: item.system.localisations?.[k] }));
+    if (item.type === "arme") {
+      context.listeQualites = Object.entries(item.system.listeQualites).map(([k, d]) => ({ key: k, ...d, value: item.system.qualites?.[k] ?? 0 }));
+      context.doubles = PN2.qualitesDouble;
+      context.bonusQualites = item.system.bonusQualites;
+    }
+    if (item.type === "avantage") {
+      context.effets = EFFETS_AVANTAGE;
+      context.escrimeAcces = { "": "—", ...Object.fromEntries(Object.entries(PN2.escrimeTypes).filter(([k]) => k !== "botte").map(([k, d]) => [k, d.label])) };
+      context.optionsTexte = (item.system.options ?? []).map(o => `${o.label} : ${o.pc}${o.modificateurs ? ` | ${o.modificateurs}` : ""}`).join("\n");
+      context.pcEffectifs = item.system.pcEffectifs;
+    }
     if (item.type === "manoeuvre") {
       context.comboHTML = comboHTML(item.system.combo);
       context.puissance = item.system.puissance;
     }
     context.descriptionHTML = await foundry.applications.ux.TextEditor.implementation.enrichHTML(item.system.description ?? "", { async: true, relativeTo: item });
     return context;
+  }
+
+  /** Les variantes d'un avantage se saisissent en texte : « Libellé : PC | modificateurs », une par ligne. */
+  _prepareSubmitData(event, form, formData, updateData) {
+    const data = super._prepareSubmitData(event, form, formData, updateData);
+    const txt = formData.object?.optionsTexte;
+    if (this.document.type === "avantage" && typeof txt === "string") {
+      data.system ??= {};
+      data.system.options = txt.split(/\r?\n/).map(l => l.trim()).filter(Boolean).map(l => {
+        const [gauche, modificateurs = ""] = l.split("|").map(x => x.trim());
+        const m = gauche.match(/^(.*?)\s*:\s*([+-]?\d+)\s*(?:PC)?$/i);
+        return m ? { label: m[1].trim(), pc: Number(m[2]), modificateurs } : { label: gauche, pc: 0, modificateurs };
+      });
+      delete data.optionsTexte;
+    }
+    return data;
   }
 
   static async #onAfficher() {

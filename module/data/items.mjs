@@ -37,12 +37,47 @@ export class ArmeData extends BaseItemData {
       equipee: bool(false),
       mainGauche: bool(false),
       prix: str(""),
-      quantite: int(1, { min: 0 })
+      quantite: int(1, { min: 0 }),
+      // Qualités d'arme (L'Art de l'escrime) : nombre de fois où chaque qualité est obtenue
+      qualites: new f.SchemaField(Object.fromEntries(
+        [...new Set([...Object.keys(PN2.qualitesBlanches), ...Object.keys(PN2.qualitesFeu)])].map(k => [k, int(0, { min: 0, max: 3 })])
+      )),
+      double: str(""),                    // "" | normale | superieure | extraordinaire
+      doubleUsage: int(1, { min: 1, max: 2 }) // arme double supérieure : usage sans malus (1 ou 2)
     };
   }
 
   get estArmeFeu() {
     return this.categorie === "tir" && ["mousquet", "pistolet", "grenade"].includes(this.competence);
+  }
+
+  /** Liste des qualités applicables à ce type d'arme. */
+  get listeQualites() {
+    return this.categorie === "blanche" ? PN2.qualitesBlanches : (this.estArmeFeu ? PN2.qualitesFeu : {});
+  }
+
+  /** Qualités obtenues, sous forme lisible (ex. « Trempe ×2, Légèreté »). */
+  get resumeQualites() {
+    return Object.entries(this.listeQualites).filter(([k]) => (this.qualites?.[k] ?? 0) > 0)
+      .map(([k, d]) => `${d.label}${this.qualites[k] > 1 ? ` ×${this.qualites[k]}` : ""}`).join(", ");
+  }
+
+  /** Bonus chiffrés des qualités : Efficacité, Facilité, dégâts, portée, long feu. */
+  get bonusQualites() {
+    const q = this.qualites ?? {};
+    const out = { eff: 0, fac: 0, degats: 0, portee: 0, longFeu: 0 };
+    if (this.categorie === "blanche") {
+      out.fac += q.legerete ? 1 : 0;
+      out.eff += q.equilibre ? 1 : 0;
+      out.degats += q.acier ? 1 : 0;
+    } else if (this.estArmeFeu) {
+      out.fac += q.silex ? 1 : 0;
+      out.eff += q.maniabilite ? 1 : 0;
+      out.degats += q.poudre ? 1 : 0;
+      out.portee += 5 * Math.min(2, q.canon ?? 0);
+      out.longFeu -= (q.fiabilite ? 3 : 0) + (q.silex ? 1 : 0) + (q.poudre ? 1 : 0);
+    }
+    return out;
   }
 }
 
@@ -115,9 +150,37 @@ export class HistoriqueData extends BaseItemData {
 /** Points de compétence d'un avantage (coût) ou d'une faiblesse (gain), en valeur absolue. */
 export function pcAvantage(sys) {
   if (sys.pc != null) return Math.abs(sys.pc);
+  const opt = (sys.options ?? []).find(o => o.label === sys.choix);
+  if (opt) return Math.abs(opt.pc);
+  if (sys.options?.length) return Math.abs(sys.options[0].pc);
   const m = String(sys.cout ?? "").match(/[+-]?\s*(\d+)/);
   return m ? Number(m[1]) : 0;
 }
+
+/**
+ * Effets automatisés des avantages :
+ *  argent (100 pièces de huit / PC), gloire (10 / PC), infamie (20 / PC, 5 PC max.),
+ *  escrime (accès au type d'escrime « escrimeType »), ecoleRenom (+3 Points d'escrime à l'épée seule),
+ *  ecoleEtranger (école d'un autre pays), noble, clerge,
+ *  armeBlanche / armeFeu / tolede (qualités d'une arme), fusilBoucanier (fusil de qualité supérieure),
+ *  armeDouble (qualité d'arme double).
+ */
+export const EFFETS_AVANTAGE = {
+  "": "Aucun",
+  argent: "Argent supplémentaire (100 pièces de huit par PC)",
+  gloire: "Réputation : Gloire (10 points par PC)",
+  infamie: "Réputation : Infamie (20 points par PC, 5 PC max.)",
+  escrime: "Accès à un type d'escrime",
+  ecoleRenom: "École de renom (+3 Points d'escrime à l'épée seule)",
+  ecoleEtranger: "École d'un autre pays que le sien",
+  noble: "Statut social : noble",
+  clerge: "Statut social : clergé",
+  armeBlanche: "Arme blanche de qualité",
+  armeFeu: "Arme à feu de qualité",
+  tolede: "Lame de Tolède (deux qualités)",
+  fusilBoucanier: "Fusil et poudre de boucanier",
+  armeDouble: "Arme double"
+};
 
 export class AvantageData extends BaseItemData {
   static defineSchema() {
@@ -127,9 +190,30 @@ export class AvantageData extends BaseItemData {
       categorie: str(""),        // Séquelles de blessures, Possessions, Social, Escrime…
       cout: str(""),             // ex. « -3 PC » ou « +5 PC »
       modificateurs: str(""),    // ex. « discretion:-2, athletisme:-4 »
-      pc: new f.NumberField({ required: false, nullable: true, integer: true, initial: null }) // points de compétence retenus
+      pc: new f.NumberField({ required: false, nullable: true, integer: true, initial: null }), // points de compétence retenus
+      // Variantes chiffrées (ex. Baron -3, Comte -5 ; main gauche +7, main droite +9)
+      options: new f.ArrayField(new f.SchemaField({
+        label: str(""),
+        pc: int(0),
+        modificateurs: str("")   // modificateurs propres à la variante (remplacent ceux de l'avantage)
+      })),
+      choix: str(""),            // variante retenue
+      variable: bool(false),     // coût libre (Argent, Réputation…) : le joueur fixe les PC
+      maxPc: int(0, { min: 0 }), // plafond des PC (0 = aucun)
+      multiple: bool(false),     // peut être pris plusieurs fois (contacts, alliés, possessions…)
+      effet: str(""),            // voir EFFETS_AVANTAGE
+      escrimeType: str(""),      // type d'escrime ouvert (effet « escrime »)
+      prerequis: str("")         // rappel affiché à la création
     };
   }
+
+  /** Modificateurs effectifs (ceux de la variante choisie, sinon ceux de l'avantage). */
+  get modificateursEffectifs() {
+    const opt = (this.options ?? []).find(o => o.label === this.choix);
+    return opt?.modificateurs || this.modificateurs || "";
+  }
+
+  get pcEffectifs() { return pcAvantage(this); }
 }
 
 export class ManoeuvreData extends BaseItemData {

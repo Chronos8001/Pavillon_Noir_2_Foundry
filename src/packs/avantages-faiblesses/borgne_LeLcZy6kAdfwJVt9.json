@@ -10,7 +10,16 @@
     "nature": "faiblesse",
     "categorie": "Séquelles de blessures",
     "cout": "+5 PC",
-    "modificateurs": "vigilance:-1, armesFeu:-1, armesJet:-1, pointage:-1"
+    "modificateurs": "vigilance:-1, armesFeu:-1, armesJet:-1, pointage:-1",
+    "pc": null,
+    "options": [],
+    "choix": "",
+    "variable": false,
+    "maxPc": 0,
+    "multiple": false,
+    "effet": "",
+    "escrimeType": "",
+    "prerequis": ""
   },
   "effects": [],
   "folder": "f0ePLuLAsNLqMBbo",

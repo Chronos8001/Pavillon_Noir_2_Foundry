@@ -73,15 +73,15 @@
         <a class="pn2-mini-btn" data-action="ouvrirCompendium" data-pack="avantages-faiblesses" title="Compendium"><i class="fa-solid fa-book"></i></a></h2>
       <ul class="item-list">
         {{#each avantages}}
-        <li class="item" data-item-id="{{id}}"><img src="{{img}}" width="20" height="20"><a class="nom" data-action="itemShow">{{name}}</a><span class="cout">{{system.cout}}</span>
+        <li class="item" data-item-id="{{id}}"><img src="{{img}}" width="20" height="20"><a class="nom" data-action="itemShow">{{name}}</a><span class="cout">-{{pc}} PC</span>
           <a data-action="itemEdit"><i class="fa-solid fa-pen"></i></a><a data-action="itemDelete"><i class="fa-solid fa-trash"></i></a></li>
         {{/each}}
       </ul>
       <h2>Faiblesses <a class="pn2-mini-btn" data-action="itemCreate" data-type="avantage" data-nature="faiblesse" title="Créer"><i class="fa-solid fa-plus"></i></a></h2>
       <ul class="item-list">
         {{#each faiblesses}}
-        <li class="item" data-item-id="{{id}}"><img src="{{img}}" width="20" height="20"><a class="nom" data-action="itemShow">{{name}}</a><span class="cout">{{system.cout}}</span>
-          {{#if system.modificateurs}}<span class="hint" title="Modificateurs appliqués automatiquement">{{system.modificateurs}}</span>{{/if}}
+        <li class="item" data-item-id="{{id}}"><img src="{{img}}" width="20" height="20"><a class="nom" data-action="itemShow">{{name}}</a><span class="cout">+{{pc}} PC</span>
+          {{#if modificateurs}}<span class="hint" title="Modificateurs appliqués automatiquement">{{modificateurs}}</span>{{/if}}
           <a data-action="itemEdit"><i class="fa-solid fa-pen"></i></a><a data-action="itemDelete"><i class="fa-solid fa-trash"></i></a></li>
         {{/each}}
       </ul>

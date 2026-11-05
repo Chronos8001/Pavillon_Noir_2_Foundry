@@ -82,8 +82,14 @@ export function getSkill(actor, key) {
   const metier = def.armeFeu ? !!sys.armesFeuMetier : !!def.metier;
   return {
     key, label: def.label, value: sys.skills?.[key]?.value ?? 0, metier, cat: def.cat, carac: def.carac,
-    group: def.armeFeu ? "armesFeu" : null, xpPath: `system.skills.${key}.xp`
+    group: groupeSkill(def), xpPath: `system.skills.${key}.xp`
   };
+}
+
+/** Clé de groupe d'une compétence fixe (pour les modificateurs « artisanat:-2 », « armesFeu:-1 »…). */
+export function groupeSkill(def) {
+  if (def.armeFeu) return "armesFeu";
+  return { "Artisanat": "artisanat", "Artillerie": "artillerie", "Connaissance spécialisée": "connSpe" }[def.group] ?? null;
 }
 
 /** Trouve l'entrée de spécialité correspondant à un groupe et un nom. */

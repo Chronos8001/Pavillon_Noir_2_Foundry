@@ -1,5 +1,6 @@
 import { PN2 } from "../config.mjs";
 import { assistantHistorique, annulerHistorique } from "../helpers/historique.mjs";
+import { assistantAvantage, annulerAvantage } from "../helpers/avantages.mjs";
 
 export class PN2Item extends Item {
 
@@ -22,16 +23,20 @@ export class PN2Item extends Item {
   /** Un historique ajouté à un personnage lance l'assistant de création. */
   _onCreate(data, options, userId) {
     super._onCreate(data, options, userId);
-    if (this.type !== "historique" || userId !== game.user.id || !this.actor || this.actor.type === "navire") return;
+    if (!["historique", "avantage"].includes(this.type) || userId !== game.user.id || !this.actor || this.actor.type === "navire") return;
     if (this.flags?.[PN2.id]?.applique || options.pn2SansAssistant) return;
-    assistantHistorique(this.actor, this).then(ok => { if (!ok) this.delete({ pn2SansAnnulation: true }); });
+    const assistant = this.type === "historique" ? assistantHistorique : assistantAvantage;
+    assistant(this.actor, this).then(ok => { if (!ok) this.delete({ pn2SansAnnulation: true }); });
   }
 
   /** Retirer un historique annule ses effets sur la fiche. */
   async _preDelete(options, user) {
     const r = await super._preDelete(options, user);
     if (r === false) return false;
-    if (this.type === "historique" && this.actor && !options.pn2SansAnnulation && user.id === game.user.id) await annulerHistorique(this.actor, this);
+    if (this.actor && !options.pn2SansAnnulation && user.id === game.user.id) {
+      if (this.type === "historique") await annulerHistorique(this.actor, this);
+      if (this.type === "avantage") await annulerAvantage(this.actor, this);
+    }
     return r;
   }
 
@@ -42,9 +47,11 @@ export class PN2Item extends Item {
     if (this.type === "manoeuvre") {
       details = `<p><strong>${PN2.escrimeTypes[s.escrime]?.label ?? s.escrime}</strong> — Niveau ${s.niveau} — Combinaison : <span class="combo">${comboHTML(s.combo)}</span> (puissance ${s.puissance})</p><p>${s.effet}</p>`;
     } else if (this.type === "avantage") {
-      details = `<p><strong>${s.nature === "faiblesse" ? "Faiblesse" : "Avantage"}</strong> ${s.categorie ? `(${s.categorie})` : ""} — ${s.cout}</p>`;
+      details = `<p><strong>${s.nature === "faiblesse" ? "Faiblesse" : "Avantage"}</strong> ${s.categorie ? `(${s.categorie})` : ""} — ${s.choix ? `${s.choix} : ` : ""}${s.options?.length || s.pc != null ? `${s.nature === "faiblesse" ? "+" : "-"}${s.pcEffectifs} PC` : s.cout}</p>${s.modificateursEffectifs ? `<p class="hint">Modificateurs : ${s.modificateursEffectifs}</p>` : ""}`;
     } else if (this.type === "arme") {
-      details = `<p>Dégâts : ${s.md !== "aucun" ? `MD${s.md === "for" ? "For" : "Adr"} ` : ""}${s.degats >= 0 ? "+" : ""}${s.degats}${s.portee ? ` — Portée ${s.portee} m` : ""}${s.recharge ? ` — Recharge ${s.recharge}` : ""}</p>`;
+      const bq = s.bonusQualites;
+      const deg = s.degats + bq.degats;
+      details = `<p>Dégâts : ${s.md !== "aucun" ? `MD${s.md === "for" ? "For" : "Adr"} ` : ""}${deg >= 0 ? "+" : ""}${deg}${s.portee ? ` — Portée ${s.portee + bq.portee} m` : ""}${s.recharge ? ` — Recharge ${s.recharge}` : ""}</p>${s.resumeQualites ? `<p><em>${s.resumeQualites}</em></p>` : ""}`;
     }
     const desc = await foundry.applications.ux.TextEditor.implementation.enrichHTML(s.description ?? "", { async: true });
     await ChatMessage.create({

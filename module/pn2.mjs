@@ -108,6 +108,9 @@ Hooks.on("renderChatMessageHTML", (message, html) => {
             if (!message.isOwner) return;
             return await combat.changerLocalisation(message, el.value);
           case "appliquer": return await combat.appliquerResolution(message);
+          case "avantage":
+            if (!message.isOwner) return;
+            return await combat.prendreAvantage(message);
           case "canonnade": return await naval.appliquerCanonnade(message);
         }
       } catch (err) {

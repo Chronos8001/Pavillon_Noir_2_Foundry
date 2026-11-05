@@ -10,7 +10,32 @@
     "nature": "avantage",
     "categorie": "Escrime : accès",
     "cout": "0 / -2 / -5 PC",
-    "modificateurs": ""
+    "modificateurs": "",
+    "pc": null,
+    "options": [
+      {
+        "label": "Noble allemand",
+        "pc": 0,
+        "modificateurs": ""
+      },
+      {
+        "label": "Noble anglais ou maître d'armes",
+        "pc": -2,
+        "modificateurs": ""
+      },
+      {
+        "label": "Autre",
+        "pc": -5,
+        "modificateurs": ""
+      }
+    ],
+    "choix": "",
+    "variable": false,
+    "maxPc": 0,
+    "multiple": false,
+    "effet": "escrime",
+    "escrimeType": "sabre",
+    "prerequis": ""
   },
   "effects": [],
   "folder": "aMI4SefMFvSYcL0d",

@@ -10,7 +10,42 @@
     "nature": "avantage",
     "categorie": "Possessions",
     "cout": "-1 à -5 PC",
-    "modificateurs": ""
+    "modificateurs": "",
+    "pc": null,
+    "options": [
+      {
+        "label": "Chien de chasse",
+        "pc": -1,
+        "modificateurs": ""
+      },
+      {
+        "label": "Rat",
+        "pc": -1,
+        "modificateurs": ""
+      },
+      {
+        "label": "Perroquet",
+        "pc": -2,
+        "modificateurs": ""
+      },
+      {
+        "label": "Singe sapajou",
+        "pc": -3,
+        "modificateurs": ""
+      },
+      {
+        "label": "Dauphin",
+        "pc": -5,
+        "modificateurs": ""
+      }
+    ],
+    "choix": "",
+    "variable": false,
+    "maxPc": 0,
+    "multiple": true,
+    "effet": "",
+    "escrimeType": "",
+    "prerequis": ""
   },
   "effects": [],
   "folder": "gkEujYDoiQVr92oN",
