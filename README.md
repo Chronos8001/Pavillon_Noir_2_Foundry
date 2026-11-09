@@ -83,6 +83,8 @@ Installation manuelle : télécharger `pavillon-noir-2.zip` depuis la dernière 
 - Compendium « Magie : Pouvoirs des Voies » (réservé au MJ) : 785 Pouvoirs de 20 Voies, rangés par Voie, avec Puissance, nom natif, Portée, Cible, Durée, visions et compulsions. La Voie de la Cartomancie (Lames du tarot) n'est pas incluse.
 - Avantages d'*Entre ciel et terre* (dossier « Magie » du compendium des avantages) : Versé dans les arcanes, Touché par le divin, Objet de pouvoir, Affinité, Initié.
 - PNJ surnaturels (dossier « Surnaturel » du compendium des PNJ) : zombie et loup-garou vaudou (vampire), et 24 fées du folklore européen (dont un loup-garou, distinct du vaudou).
+- Objets de pouvoir (dossier du compendium Équipement) : 8 éphémères (baume, potion, philtre…) et 12 permanents (zémi, wanga, relique, paquet-kongo…), avec les règles d'utilisation et de création adaptées au d10.
+- Suivants (dossier du compendium des PNJ) : disciple, servant et six catégories de familiers de la Kabbale, capacités spéciales et fiabilité comprises.
 - Effets des Pouvoirs (Active Effects) appliqués aux cibles avec la Durée de la table officielle ; historique des actes sacrés et journal des interventions du MJ ; import sans doublon.
 - Événements divins (panneau MJ) : Aléas, révélations (équivalent du Mat), Quêtes mystiques, Rejets, séquelles et pénitences, Cycles échus, perte de concentration ; secrets tirés en d10 par le MJ et chiffrés.
 - Documentation : `docs/magie.md` (technique), `docs/magie-mj.md` (MJ), `docs/magie-joueur.md` (joueurs), `docs/simulation-magie.md` (probabilités).

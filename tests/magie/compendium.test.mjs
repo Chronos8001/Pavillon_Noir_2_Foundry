@@ -122,6 +122,33 @@ test("PNJ surnaturels d'Entre ciel et terre : zombie, loup-garou vaudou et 24 f�
   assert.equal(new Set(ids).size, ids.length, "identifiants uniques");
 });
 
+test("Objets de pouvoir d'Entre ciel et terre : 8 éphémères et 12 permanents, au modèle de l'équipement", () => {
+  const pack = lire("src/packs/equipement");
+  const dossier = pack.find(d => d._key.startsWith("!folders!") && d.name === "Objets de pouvoir (Entre ciel et terre)");
+  const objets = pack.filter(d => d.folder === dossier?._id);
+  const reference = pack.find(d => d.type === "equipement" && d.folder !== dossier?._id);
+  assert.equal(objets.filter(o => o.system.categorie === "Objet de pouvoir éphémère").length, 8);
+  assert.equal(objets.filter(o => o.system.categorie === "Objet de pouvoir permanent").length, 12);
+  for (const o of objets) {
+    assert.equal(o.type, "equipement");
+    assert.deepEqual(Object.keys(o.system).sort(), Object.keys(reference.system).sort(), o.name);
+    // Règle maison : aucune carte
+    assert.doesNotMatch(o.system.description, /Lame|cartes/, o.name);
+  }
+});
+
+test("Suivants d'Entre ciel et terre : disciple, servant et six familiers, sans cartes", () => {
+  const pack = lire("src/packs/pnj");
+  const dossier = pack.find(d => d._key.startsWith("!folders!") && d.name === "Suivants (Entre ciel et terre)");
+  const suivants = pack.filter(d => d.folder === dossier?._id);
+  assert.equal(suivants.length, 8);
+  assert.equal(suivants.filter(s => s.name.startsWith("Familier : ")).length, 6);
+  for (const s of suivants) {
+    assert.equal(s.type, "pnj");
+    assert.doesNotMatch(s.system.notes, /Lame|cartes/, s.name);
+  }
+});
+
 test("religions du compendium de magie : références UUID cohérentes avec les Voies", () => {
   const PREFIXE = "Compendium.pavillon-noir-2.voies.Item.";
   const parId = new Map(voiesPack.map(d => [d._id, d]));

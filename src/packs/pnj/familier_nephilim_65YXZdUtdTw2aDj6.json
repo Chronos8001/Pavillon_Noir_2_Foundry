@@ -1,0 +1,413 @@
+{
+  "_id": "65YXZdUtdTw2aDj6",
+  "_key": "!actors!65YXZdUtdTw2aDj6",
+  "name": "Familier : Nephilim",
+  "type": "pnj",
+  "img": "systems/pavillon-noir-2/assets/icons/pnj.svg",
+  "system": {
+    "caracs": {
+      "adr": {
+        "value": 5
+      },
+      "for": {
+        "value": 5
+      },
+      "res": {
+        "value": 5
+      },
+      "ada": {
+        "value": 5
+      },
+      "eru": {
+        "value": 5
+      },
+      "per": {
+        "value": 5
+      },
+      "cha": {
+        "value": 5
+      },
+      "exp": {
+        "value": 5
+      },
+      "pou": {
+        "value": 5
+      }
+    },
+    "infos": {
+      "titre": "",
+      "profession": "",
+      "poste": "",
+      "peuple": "",
+      "origines": "",
+      "jeunesse": "",
+      "religion": "",
+      "age": "",
+      "taille": "",
+      "poids": "",
+      "surnom": "",
+      "description": ""
+    },
+    "metier": {
+      "nom": "",
+      "carac1": "adr",
+      "carac2": "per"
+    },
+    "secondaires": {
+      "actionsBonus": 0,
+      "initiativeBonus": 0,
+      "chanceBonus": 0
+    },
+    "skills": {
+      "balistique": {
+        "value": 0,
+        "xp": false
+      },
+      "cartographie": {
+        "value": 0,
+        "xp": false
+      },
+      "commerce": {
+        "value": 0,
+        "xp": false
+      },
+      "droit": {
+        "value": 0,
+        "xp": false
+      },
+      "geographie": {
+        "value": 0,
+        "xp": false
+      },
+      "histoire": {
+        "value": 0,
+        "xp": false
+      },
+      "herboristerie": {
+        "value": 0,
+        "xp": false
+      },
+      "ingenierieNavale": {
+        "value": 0,
+        "xp": false
+      },
+      "intendance": {
+        "value": 0,
+        "xp": false
+      },
+      "lireEcrire": {
+        "value": 0,
+        "xp": false
+      },
+      "medecine": {
+        "value": 0,
+        "xp": false
+      },
+      "sciences": {
+        "value": 0,
+        "xp": false
+      },
+      "tactique": {
+        "value": 0,
+        "xp": false
+      },
+      "pointage": {
+        "value": 0,
+        "xp": false
+      },
+      "recharge": {
+        "value": 0,
+        "xp": false
+      },
+      "calfatage": {
+        "value": 0,
+        "xp": false
+      },
+      "charpenterie": {
+        "value": 0,
+        "xp": false
+      },
+      "voilerie": {
+        "value": 0,
+        "xp": false
+      },
+      "cuisine": {
+        "value": 0,
+        "xp": false
+      },
+      "chasse": {
+        "value": 0,
+        "xp": false
+      },
+      "chirurgie": {
+        "value": 0,
+        "xp": false
+      },
+      "dressage": {
+        "value": 0,
+        "xp": false
+      },
+      "premiersSoins": {
+        "value": 0,
+        "xp": false
+      },
+      "connNautiques": {
+        "value": 0,
+        "xp": false
+      },
+      "connNavires": {
+        "value": 0,
+        "xp": false
+      },
+      "connSignalisation": {
+        "value": 0,
+        "xp": false
+      },
+      "hydrographie": {
+        "value": 0,
+        "xp": false
+      },
+      "navigation": {
+        "value": 0,
+        "xp": false
+      },
+      "peche": {
+        "value": 0,
+        "xp": false
+      },
+      "pratiqueNautique": {
+        "value": 0,
+        "xp": false
+      },
+      "timonerie": {
+        "value": 0,
+        "xp": false
+      },
+      "acrobatie": {
+        "value": 0,
+        "xp": false
+      },
+      "athletisme": {
+        "value": 0,
+        "xp": false
+      },
+      "discretion": {
+        "value": 0,
+        "xp": false
+      },
+      "equitation": {
+        "value": 0,
+        "xp": false
+      },
+      "larcins": {
+        "value": 0,
+        "xp": false
+      },
+      "natation": {
+        "value": 0,
+        "xp": false
+      },
+      "survie": {
+        "value": 0,
+        "xp": false
+      },
+      "vigilance": {
+        "value": 0,
+        "xp": false
+      },
+      "comedie": {
+        "value": 0,
+        "xp": false
+      },
+      "empathie": {
+        "value": 0,
+        "xp": false
+      },
+      "enseignement": {
+        "value": 0,
+        "xp": false
+      },
+      "etiquette": {
+        "value": 0,
+        "xp": false
+      },
+      "intimidation": {
+        "value": 0,
+        "xp": false
+      },
+      "jeu": {
+        "value": 0,
+        "xp": false
+      },
+      "meneurHommes": {
+        "value": 0,
+        "xp": false
+      },
+      "persuasion": {
+        "value": 0,
+        "xp": false
+      },
+      "politique": {
+        "value": 0,
+        "xp": false
+      },
+      "seduction": {
+        "value": 0,
+        "xp": false
+      },
+      "mousquet": {
+        "value": 0,
+        "xp": false
+      },
+      "pistolet": {
+        "value": 0,
+        "xp": false
+      },
+      "grenade": {
+        "value": 0,
+        "xp": false
+      },
+      "mainsNues": {
+        "value": 0,
+        "xp": false
+      },
+      "escrime": {
+        "value": 0,
+        "xp": false
+      },
+      "esquive": {
+        "value": 0,
+        "xp": false
+      }
+    },
+    "specs": {},
+    "armesFeuMetier": false,
+    "escrime": {
+      "epee": {
+        "value": 0,
+        "xp": 0,
+        "predilection": false,
+        "pointsBonus": 0
+      },
+      "dague": {
+        "value": 0,
+        "xp": 0,
+        "predilection": false,
+        "pointsBonus": 0
+      },
+      "deuxarmes": {
+        "value": 0,
+        "xp": 0,
+        "predilection": false,
+        "pointsBonus": 0
+      },
+      "sabre": {
+        "value": 0,
+        "xp": 0,
+        "predilection": false,
+        "pointsBonus": 0
+      },
+      "baionnette": {
+        "value": 0,
+        "xp": 0,
+        "predilection": false,
+        "pointsBonus": 0
+      },
+      "hache": {
+        "value": 0,
+        "xp": 0,
+        "predilection": false,
+        "pointsBonus": 0
+      },
+      "pont": {
+        "value": 0,
+        "xp": 0,
+        "predilection": false,
+        "pointsBonus": 0
+      },
+      "destreza": {
+        "value": 0,
+        "xp": 0,
+        "predilection": false,
+        "pointsBonus": 0
+      },
+      "ecole": "",
+      "arme": ""
+    },
+    "sante": {
+      "loc": {
+        "jambeG": {
+          "coches": 0,
+          "protection": 0
+        },
+        "jambeD": {
+          "coches": 0,
+          "protection": 0
+        },
+        "torse": {
+          "coches": 0,
+          "protection": 0
+        },
+        "brasG": {
+          "coches": 0,
+          "protection": 0
+        },
+        "brasD": {
+          "coches": 0,
+          "protection": 0
+        },
+        "tete": {
+          "coches": 0,
+          "protection": 0
+        }
+      }
+    },
+    "reputation": {
+      "gloire": {
+        "score": 0,
+        "depenses": 0
+      },
+      "infamie": {
+        "score": 0,
+        "depenses": 0
+      }
+    },
+    "combat": {
+      "posture": "attentive"
+    },
+    "richesse": {
+      "pieces": 5
+    },
+    "contacts": "",
+    "notes": "<p><strong>Familier Reschaïm : Nephilim</strong> (D20 de 1 à 4 ; les voluptueux, associés aux Ondins (eau)).</p><p><strong>Forme.</strong> Âmes immortelles de géants nés d'anges déchus et de femmes, en quête d'un corps d'emprunt. <strong>Caractère.</strong> Cherche à revivre les sensations de son corps perdu ; aime attirer ses victimes dans l'eau pour les noyer.</p><p><strong>Pouvoir de familier selon la Puissance</strong> (un seul) :</p><ul><li><strong>Esprit (Puissance 1 à 3)</strong> : Grande taille : voit ce que verrait quelqu'un de 3 m.</li><li><strong>Petit démon (4 à 6)</strong> : Attirance contre nature : au toucher, crée une attirance « contre nature ».</li><li><strong>Démon (7 à 9)</strong> : Espion dans un corps : entre dans une personne et entend ce qu'elle dit, voit ce qu'elle fait (pas ses pensées).</li><li><strong>Grand démon (10 à 12)</strong> : Contrôle d'un corps : expulse l'âme d'une personne et prend sa place ; le corps reste en stase ensuite, sans souvenirs.</li><li><strong>Puissant démon (13 et plus)</strong> : Lycanthropie : fusionne avec le Mage Noir en grand loup bipède (For +2, Adr +2, Rés +3, Per +2, Ada +1 ; Esquive, Athlétisme, Discrétion, Vigilance, Combat à mains nues +2D, Intimidation +3D).</li></ul><p><strong>Danger.</strong> Peut refuser d'obéir au moment crucial pour revivre une sensation perdue.</p><p>Âme damnée donnée par une Puissance infernale de l'Arbre inversé (demandée par un Pouvoir des Qlipoth). Invisible sauf pour le Mage Noir, sauf s'il décide de se montrer. Catégorie : D20 + modificateur du démon (−2 à +2 selon sa violence). Puissance : celle du Pouvoir d'invocation + les Succès sacrés réservés à cet effet ; elle fixe le rang et le Pouvoir de familier. Il ne s'éloigne pas au-delà de la Portée de ce Pouvoir, n'affecte que ses Cibles, au toucher, pour une durée quotidienne totale limitée à sa Durée. Nombre maximal : moitié du Niveau en Religion (Kabbale), arrondie au supérieur. Il a aussi une Capacité spéciale (D100, p. 167-169). Deux familiers de même catégorie s'entendent ; de catégories différentes, ils se chamaillent.</p><p>Fiabilité : 1d10 + 1d6 − 3, −5 si le démon n'offre pas habituellement de familier, +2 s'il est réputé en donner de fiables. À chaque appel à son Pouvoir ou à sa Capacité spéciale : Test de Chance sur la Fiabilité (−2 maltraité … +2 choyé). Dé inférieur : il obéit ; égal : il obéit après un tour de tergiversations (toutes les actions du Mage Noir) ; supérieur : pas aujourd'hui ; 10 : nouveau Test de Chance, sinon le danger du familier se réalise.</p><p><strong>Capacités spéciales (D100)</strong> :</p><ul><li>1-3 Animal : forme animale visible et tangible</li><li>4-6 Bon démon : n'utilise pas ses pouvoirs pour faire souffrir</li><li>7-9 Bourse pleine : l'argent dépensé revient le lendemain à 8 h (les vendeurs sont floués)</li><li>10-12 Diablotin : tapote l'oreille droite pour l'Arbre de vie, tire la gauche pour l'Arbre inversé</li><li>13-14 Dobie : spectre d'un ancêtre du Mage Noir</li><li>15-17 Enfermable : dans une boîte ou une lampe</li><li>18-19 Érudit : Religion (Kabbale) et Sciences +1D ; 20-21 : +2D</li><li>22-24 Espiègle : joue des tours (orientables vers d'autres)</li><li>25-27 Extatique : en suçant un peu de sang (1 point de dégâts), fait vivre une extase ; addiction après 3 fois</li><li>28-30 Fantasme : ne communique qu'en rêve</li><li>31-32 Héritage : transmissible au fils aîné</li><li>33-35 Horaire : ne se montre qu'à une heure précise</li><li>36-38 Horloger : avance ou recule l'horloge à son gré</li><li>39-41 Infernal : +1 Faveur aux Rituels de l'Arbre inversé</li><li>42-44 Mandragore : choyé, double la vitesse de guérison</li><li>45-47 Monsieur le Maître : impose son rythme (sinon part un mois) ; connaît les chemins les plus courts</li><li>48-50 Monstre : Intimidation 4 F 8 quand il se montre</li><li>51-53 Opulent : vaisselle et mets somptueux (temporairement)</li><li>54-56 Oracle : une question par semaine, réponse oui ou non</li><li>57-59 Partageur : peut assister un autre personnage consentant (hors maximum)</li><li>60-62 Pied léger : courir six fois plus vite qu'un cheval</li><li>63-65 Sage : Perception +1 ; 66-68 Adaptabilité +1 ; 69-71 Érudition +2</li><li>72-74 Saugrenu : souffle des idées farfelues</li><li>75-89 Savant : compétence de connaissance substituable, Niveau 1 (75-77) à 5 (87-89)</li><li>90-92 Servant : rend les services d'un servant</li><li>93-95 Vampyre : boit chaque soir le sang du Mage Noir (1 point de dégâts)</li><li>96-98 Ventriloque : projette sa voix ou celle du Mage Noir dans la Portée</li><li>99-100 : relancer deux fois</li></ul><p><em>Entre ciel et terre, p. 164 et 163-169.</em></p>",
+    "biographie": "",
+    "facilites": {
+      "connaissances": 6,
+      "techniques": 6,
+      "maritimes": 6,
+      "physiques": 6,
+      "sociales": 6,
+      "combat": 6
+    },
+    "role": "Familier (Arbre inversé)",
+    "importance": "moyenne"
+  },
+  "items": [],
+  "effects": [],
+  "folder": "Vn93PvEmrV9zm7xV",
+  "sort": 300,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.345",
+    "systemId": "pavillon-noir-2",
+    "systemVersion": "0.1.0",
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": null
+  }
+}

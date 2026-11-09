@@ -1,0 +1,32 @@
+{
+  "_id": "BvzHN2snJ8UnHWw4",
+  "_key": "!items!BvzHN2snJ8UnHWw4",
+  "name": "Wanga",
+  "type": "equipement",
+  "img": "systems/pavillon-noir-2/assets/icons/equipement.svg",
+  "system": {
+    "description": "<p><strong>Objet de pouvoir permanent (actif ou passif).</strong> Assemblage de feuilles broyées ou d'organes et d'os animaux, enveloppé de tissu en silhouette humaine : protège son porteur par des pouvoirs défensifs et offensifs.</p><p>Le MJ choisit le Pouvoir contenu, que le possesseur ne connaît en général pas ; la divinité peut lui envoyer des rêves cryptiques.</p><p><em>Utilisation (p. 160) : tenir l'objet, formuler un souhait lié à son Pouvoir et accomplir le rite pendant toute la Durée d'activation, puis réussir un Test d'Objets de pouvoir (Charisme) avec au moins 2 Succès (sinon la divinité reste muette). Le MJ déclenche les effets dans les 24 heures, comme pour un Rituel. Il faut ensuite attendre la Fréquence d'utilisation, que le possesseur ignore souvent, avant de recommencer. Actif : exige l'Avantage Versé dans les arcanes ; passif : utilisable par un profane ; autonome : l'objet décide lui-même d'utiliser ses pouvoirs.</em></p><p><em>Création (p. 160-161) : connaître le Pouvoir qui permet de créer ce type d'objet, façonner l'objet, puis invoquer par un Rituel le Pouvoir à y insuffler et obtenir au moins autant de Succès sacrés que sa Puissance. Les Succès sacrés en plus améliorent, au choix du MJ, la Fréquence d'utilisation (0 : un jour précis de l'année ; 1 : une fois par an ; 2 : un jour précis du mois ; 3 : une fois par mois ; 4 : une fois par semaine ; 5 : à une heure précise ; 6 : une fois par jour ; 7 : trois fois par jour) et la Durée d'activation (0 : 24 h ; 1 : 4 h ; 2 : 1 h ; 3 : 30 min ; 4 : 10 min ; 5 : 1 min ; 6 : 10 s ; 8 : instantanée). Coûts relus sur la table de la p. 161, à vérifier. Le Pouvoir garde les paramètres de la Voie.</em></p>",
+    "source": "Entre ciel et terre, p. 160",
+    "categorie": "Objet de pouvoir permanent",
+    "quantite": 1,
+    "prix": "",
+    "modificateur": ""
+  },
+  "effects": [],
+  "folder": "VoICNwrqgsAouEbn",
+  "sort": 101100,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.345",
+    "systemId": "pavillon-noir-2",
+    "systemVersion": "0.1.0",
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": null
+  }
+}
