@@ -2,7 +2,7 @@
   "id": "pavillon-noir-2",
   "title": "Pavillon Noir 2",
   "description": "Système non officiel pour jouer à Pavillon Noir (2e édition, Black Book Éditions) : fiches de personnage, de PNJ et de navire avec équipage, escrime automatisée (L'Art de l'escrime), combat naval et compendiums.",
-  "version": "0.6.2",
+  "version": "0.6.3",
   "compatibility": {
     "minimum": "13",
     "verified": "14"
@@ -56,5 +56,5 @@
   "socket": false,
   "url": "https://github.com/Chronos8001/Pavillon_Noir_2_Foundry",
   "manifest": "https://github.com/Chronos8001/Pavillon_Noir_2_Foundry/releases/latest/download/system.json",
-  "download": "https://github.com/Chronos8001/Pavillon_Noir_2_Foundry/releases/download/v0.6.2/pavillon-noir-2.zip"
+  "download": "https://github.com/Chronos8001/Pavillon_Noir_2_Foundry/releases/download/v0.6.3/pavillon-noir-2.zip"
 }
