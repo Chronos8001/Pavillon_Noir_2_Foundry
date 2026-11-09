@@ -20,6 +20,7 @@
     "pouvoirConnu": false,
     "frequence": "mois",
     "dureeActivation": "h24",
+    "ameliorations": 0,
     "rites": "",
     "derniereUtilisation": "",
     "doses": 1

@@ -61,7 +61,7 @@ def objets():
                 "source": f"{SOURCE}, p. {page}",
                 "nature": groupe, "forme": nom, "mode": mode.split()[0],
                 "pouvoirUuid": "", "pouvoir": "", "voie": "", "puissance": 1, "portee": "", "cible": "", "duree": "",
-                "pouvoirConnu": False, "frequence": "mois", "dureeActivation": "h24", "rites": "", "derniereUtilisation": "",
+                "pouvoirConnu": False, "frequence": "mois", "dureeActivation": "h24", "ameliorations": 0, "rites": "", "derniereUtilisation": "",
                 "doses": 1,
             }
             ecrire(EQ, d)
@@ -213,6 +213,16 @@ def suivants():
     for i, (nom, de, page, forme, caractere, pouvoirs, danger) in enumerate(FAMILIERS):
         notes = notes_familier(nom, de, page, forme, caractere, pouvoirs, danger) + commun + f"<p><em>{SOURCE}, p. {page} et 163-169.</em></p>"
         docs.append(acteur(base, f"Familier : {nom}", cinq, notes, "Familier (Arbre inversé)", "moyenne", fid, 300 + i * 100, img_pnj))
+    modele_vide = acteur(base, "Familier (modèle à remplir)", cinq,
+        "<p>Modèle de familier : importez ce PNJ, puis ouvrez l'onglet « Familier » de sa fiche (MJ) pour choisir le Mage Noir et le "
+        "Pouvoir d'invocation, tirer la catégorie (D20), la capacité spéciale (D100) et la fiabilité, puis reporter le résultat dans les notes.</p>"
+        f"<p><em>{SOURCE}, p. 163-169.</em></p>",
+        "Familier (Arbre inversé)", "moyenne", fid, 250, img_pnj)
+    modele_vide["flags"] = {"pavillon-noir-2": {"familier": {
+        "mage": "", "demon": "", "pouvoirUuid": "", "puissanceInvocation": 1, "portee": "", "cible": "", "duree": "",
+        "succes": 0, "violence": 0, "reputation": "normal", "d20": None, "choixHaut": "geburim", "d10Damne": None,
+        "capacites": [], "d10": None, "d6": None}}}
+    docs.append(modele_vide)
     damnes = "".join(f"<li>{e(d)}</li>" for d in DAMNES)
     docs.append(acteur(base, "Familier : Être spirituel damné", cinq,
         "<p><strong>Familier : Être spirituel damné</strong> (D20 de 17 à 22 : le livre donne la même plage que les Geburim, le MJ tranche) : un des êtres spirituels "

@@ -414,3 +414,9 @@ button.pn2-bouton-evenements { flex: 1 1 100%; margin-top: 4px; }
 .pn2 .tag.nature-administrative { background: var(--pn2-rouge); }
 .pn2 .pn2-histo .pn2-histo-corps { max-height: calc(100% - 40px); overflow-y: auto; }
 .pn2 .pn2-histo tr.echec td { color: var(--pn2-rouge); }
+
+/* Familier (onglet MJ des PNJ) */
+.pn2 .pn2-familier .pn2-actions { display: flex; flex-wrap: wrap; gap: 6px; margin: 10px 0 4px; }
+.pn2 .pn2-familier .tag.actif { background: var(--pn2-rouge); color: #fff; padding: 0 4px; border-radius: 3px; }
+.pn2 .pn2-familier .pn2-btn.inactive { opacity: .55; }
+.pn2 .pn2-familier .alerte { color: var(--pn2-rouge); }

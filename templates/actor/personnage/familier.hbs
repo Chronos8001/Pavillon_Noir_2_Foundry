@@ -1,0 +1,66 @@
+<section class="tab familier {{#if active}}active{{/if}}" data-group="primary" data-tab="familier">
+{{#with familier}}
+<div class="pn2-familier">
+  {{#with e}}
+  <h2>Origine <span class="hint">(Entre ciel et terre, p. 163)</span></h2>
+  <div class="grid-2">
+    <div class="ligne"><label>Mage Noir</label><select name="flags.pavillon-noir-2.familier.mage">{{#each ../mages}}<option value="{{v}}" {{#if selected}}selected{{/if}}>{{label}}</option>{{/each}}</select></div>
+    <div class="ligne"><label>Démon donateur</label><input type="text" name="flags.pavillon-noir-2.familier.demon" value="{{demon}}"></div>
+    <div class="ligne"><label>Pouvoir d'invocation <span class="hint">(Qlipoth)</span></label><select name="flags.pavillon-noir-2.familier.pouvoirUuid">{{#each ../pouvoirs}}<option value="{{v}}" {{#if selected}}selected{{/if}}>{{label}}</option>{{/each}}</select></div>
+    <div class="ligne"><label>Puissance du Pouvoir</label><input type="number" name="flags.pavillon-noir-2.familier.puissanceInvocation" value="{{puissanceInvocation}}" min="1" max="10"></div>
+    <div class="ligne"><label>Succès sacrés réservés</label><input type="number" name="flags.pavillon-noir-2.familier.succes" value="{{succes}}" min="0"></div>
+    <div class="ligne"><label>Violence du démon <span class="hint">(D20)</span></label><select name="flags.pavillon-noir-2.familier.violence">{{#each ../violences}}<option value="{{v}}" {{#if selected}}selected{{/if}}>{{label}}</option>{{/each}}</select></div>
+    <div class="ligne"><label>Réputation du démon</label><select name="flags.pavillon-noir-2.familier.reputation">{{#each ../reputations}}<option value="{{v}}" {{#if selected}}selected{{/if}}>{{label}}</option>{{/each}}</select></div>
+  </div>
+  <div class="grid-2">
+    <div class="ligne"><label>Portée <span class="hint">(distance max. du Mage)</span></label><input type="text" name="flags.pavillon-noir-2.familier.portee" value="{{portee}}"></div>
+    <div class="ligne"><label>Cible</label><input type="text" name="flags.pavillon-noir-2.familier.cible" value="{{cible}}"></div>
+    <div class="ligne"><label>Durée <span class="hint">(totale par jour)</span></label><input type="text" name="flags.pavillon-noir-2.familier.duree" value="{{duree}}"></div>
+  </div>
+  {{/with}}
+  {{#if kabbale}}<p class="hint {{#if depasse}}alerte{{/if}}">Religion (Kabbale) du Mage : {{kabbale}} — familiers : {{actuels}} / {{max}} au plus{{#if depasse}} (maximum dépassé){{/if}}.</p>{{/if}}
+
+  <h2>Catégorie <a class="pn2-btn petit" data-action="familier" data-op="categorie"><i class="fa-solid fa-dice-d20"></i> Tirer le D20</a></h2>
+  <div class="grid-2">
+    <div class="ligne"><label>D20</label><input type="number" name="flags.pavillon-noir-2.familier.d20" value="{{e.d20}}" min="1" max="20"></div>
+    <div class="ligne"><label>Total <span class="hint">(D20 + violence)</span></label><strong>{{#if calc.categorie}}{{calc.total}} : {{calc.categorie.nom}}{{else}}—{{/if}}</strong></div>
+    {{#if haut}}
+    <div class="ligne"><label>17 et plus <span class="hint">(le livre donne deux catégories)</span></label><select name="flags.pavillon-noir-2.familier.choixHaut">{{#each hauts}}<option value="{{v}}" {{#if selected}}selected{{/if}}>{{label}}</option>{{/each}}</select></div>
+    {{/if}}
+    {{#if damne}}
+    <div class="ligne"><label>D10 de l'être damné <a class="pn2-mini-btn" data-action="familier" data-op="damne"><i class="fa-solid fa-dice"></i></a></label><input type="number" name="flags.pavillon-noir-2.familier.d10Damne" value="{{e.d10Damne}}" min="1" max="10"></div>
+    {{/if}}
+  </div>
+  {{#if calc.categorie}}<p class="hint">{{calc.categorie.element}}. {{calc.categorie.forme}} {{calc.categorie.caractere}}</p>{{/if}}
+
+  <h2>Puissance et pouvoir</h2>
+  <p>Puissance du familier : <strong>{{calc.puissance}}</strong> (Pouvoir d'invocation + Succès réservés) — rang :
+    {{#each rangs}}<span class="tag {{#if actif}}actif{{else}}hint{{/if}}">{{label}} {{plage}}</span> {{/each}}</p>
+  <p><strong>Pouvoir de familier :</strong> {{#if calc.pouvoir}}{{calc.pouvoir}}{{else}}<span class="hint">tirez la catégorie{{#if damne}} et le D10{{/if}}</span>{{/if}}</p>
+
+  <h2>Capacité spéciale <a class="pn2-btn petit" data-action="familier" data-op="capacites"><i class="fa-solid fa-dice"></i> Tirer le D100</a></h2>
+  <ul class="pn2-references">
+    {{#each e.capacites}}<li><span class="tag">{{de}}</span> <strong>{{nom}}</strong> : {{effet}}
+      <a class="pn2-mini-btn" data-action="familier" data-op="retirerCapacite" data-index="{{@index}}"><i class="fa-solid fa-xmark"></i></a></li>
+    {{else}}<li class="hint">Aucune (99-100 : deux tirages de plus).</li>{{/each}}
+  </ul>
+  <div class="ligne"><label>Ajouter un résultat de D100</label><input type="number" class="capacite-manuelle" min="1" max="98">
+    <a class="pn2-mini-btn" data-action="familier" data-op="ajouterCapacite"><i class="fa-solid fa-plus"></i></a></div>
+
+  <h2>Fiabilité <a class="pn2-btn petit" data-action="familier" data-op="fiabilite"><i class="fa-solid fa-dice"></i> Tirer 1d10 + 1d6</a></h2>
+  <div class="grid-2">
+    <div class="ligne"><label>1d10</label><input type="number" name="flags.pavillon-noir-2.familier.d10" value="{{e.d10}}" min="1" max="10"></div>
+    <div class="ligne"><label>1d6</label><input type="number" name="flags.pavillon-noir-2.familier.d6" value="{{e.d6}}" min="1" max="6"></div>
+  </div>
+  <p>Fiabilité : <strong>{{#if (eq calc.fiabilite null)}}—{{else}}{{calc.fiabilite}}{{/if}}</strong> <span class="hint">(1d10 + 1d6 − 3, modificateur du démon {{calc.mod}})</span></p>
+  {{#if calc.categorie}}<p class="hint"><strong>Danger :</strong> {{calc.categorie.danger}}</p>{{/if}}
+
+  <div class="pn2-actions">
+    <a class="pn2-btn {{#unless pret}}inactive{{/unless}}" data-action="familier" data-op="appliquer"><i class="fa-solid fa-feather"></i> Reporter dans les notes du PNJ</a>
+    <a class="pn2-btn" data-action="familier" data-op="obeissance"><i class="fa-solid fa-hand"></i> Test d'obéissance</a>
+    <a class="pn2-btn petit" data-action="familier" data-op="desactiver"><i class="fa-solid fa-trash"></i> Ce PNJ n'est plus un familier</a>
+  </div>
+  <p class="hint">Les jets sont chuchotés au MJ ; chaque valeur reste modifiable à la main. Obéissance : D10 inférieur à la Fiabilité (± traitement), il obéit ; égal, il tergiverse un tour ; supérieur, il refuse ; 10, nouveau Test de Chance ou danger.</p>
+</div>
+{{/with}}
+</section>

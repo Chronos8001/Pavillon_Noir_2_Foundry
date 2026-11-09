@@ -279,16 +279,21 @@
       <div class="ligne"><label>Durée</label><input type="text" name="system.duree" value="{{system.duree}}"></div>
       {{#unless ephemere}}
       <div class="ligne"><label>Fréquence d'utilisation <span class="hint">(coût)</span></label><select name="system.frequence">{{selectOptions frequencesObjet selected=system.frequence}}</select></div>
+      <div class="ligne"><label>Améliorations des paramètres <span class="hint">(Succès)</span></label><input type="number" name="system.ameliorations" value="{{system.ameliorations}}" min="0"></div>
       {{/unless}}
     </div>
     <p class="hint">
       {{#if ephemere}}
-        Création : par un Rituel invoquant le Pouvoir, une dose par Succès sacré ; par une Transe (Pouvoir dans le Chemin), une dose par Succès sacré au-delà de la Puissance ({{cout.puissance}}).
+        Création : préparer les doses, puis un Rituel invoquant le Pouvoir (ou une Transe, Pouvoir dans le Chemin) : chaque Succès sacré
+        au-delà de la Puissance ({{cout.puissance}}) consacre une dose ; une dose demande donc <strong>{{cout.total}} Succès sacrés</strong>.
       {{else}}
-        Création : un Rituel invoquant le Pouvoir avec au moins <strong>{{cout.total}} Succès sacrés</strong>
-        (Puissance {{cout.puissance}} + Fréquence {{cout.frequence}} + Durée d'activation {{cout.duree}}).
+        Création : façonner l'objet, puis un Rituel invoquant le Pouvoir avec au moins <strong>{{cout.total}} Succès sacrés</strong>
+        (Puissance {{cout.puissance}} + Fréquence {{cout.frequence}} + Durée d'activation {{cout.duree}}{{#if cout.ameliorations}} + améliorations {{cout.ameliorations}}{{/if}}).
+        Les Rites et leur durée sont révélés au possesseur par des rêves ; la Fréquence lui reste inconnue.
       {{/if}}
-      Il faut aussi connaître le Pouvoir qui permet de créer ce type d'objet (Entre ciel et terre, p. 160-161).
+      Il faut connaître un Pouvoir de création de cette forme :
+      {{pouvoirsCreation}}.
+      (Entre ciel et terre, p. 160-161.)
     </p>
   </fieldset>
   {{else}}

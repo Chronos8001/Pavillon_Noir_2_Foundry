@@ -25,6 +25,7 @@ import { PN2EvenementsApp } from "./magie/app-evenements.mjs";
 import { migrer } from "./magie/migrations.mjs";
 import { expirerEffets } from "./magie/service-effets.mjs";
 import { PN2HistoriqueApp } from "./magie/app-historique.mjs";
+import * as familier from "./magie/service-familier.mjs";
 
 Hooks.once("init", () => {
   console.log("Pavillon Noir 2 | Initialisation du système");
@@ -49,6 +50,8 @@ Hooks.once("init", () => {
       evenements: { ...evenements, ouvrir: () => PN2EvenementsApp.ouvrir() },
       /** Historique des actes sacrés (selon les permissions). */
       historique: actor => PN2HistoriqueApp.ouvrir(actor),
+      /** Familiers de l'Arbre inversé (MJ) : onglet « Familier » des PNJ, test d'obéissance. */
+      familier,
       migrer
     }
   };

@@ -1,6 +1,6 @@
 import { PN2 } from "../config.mjs";
 import { comboHTML } from "../documents/item.mjs";
-import { EFFETS_AVANTAGE, FREQUENCES_OBJET, DUREES_ACTIVATION_OBJET, NATURES_OBJET, MODES_OBJET, FORMES_OBJET } from "../data/items.mjs";
+import { EFFETS_AVANTAGE, FREQUENCES_OBJET, DUREES_ACTIVATION_OBJET, NATURES_OBJET, MODES_OBJET, FORMES_OBJET, POUVOIRS_CREATION } from "../data/items.mjs";
 import * as Magie from "../magie/service.mjs";
 
 const { HandlebarsApplicationMixin } = foundry.applications.api;
@@ -83,6 +83,9 @@ export class PN2ItemSheet extends HandlebarsApplicationMixin(foundry.application
       context.dureesObjet = Object.fromEntries(Object.entries(DUREES_ACTIVATION_OBJET).map(([k, d]) => [k, `${d.label} (${d.cout})`]));
       context.ephemere = s.nature === "ephemere";
       context.cout = s.coutCreation;
+      const creation = POUVOIRS_CREATION[s.forme];
+      context.pouvoirsCreation = !creation ? "au choix du MJ (forme libre)"
+        : creation.length ? creation.join(" ; ") : "aucun n'est décrit par le supplément (au choix du MJ)";
       context.pouvoirRef = PN2ItemSheet.resoudre(s.pouvoirUuid);
     }
     context.descriptionHTML = await foundry.applications.ux.TextEditor.implementation.enrichHTML(item.system.description ?? "", { async: true, relativeTo: item });

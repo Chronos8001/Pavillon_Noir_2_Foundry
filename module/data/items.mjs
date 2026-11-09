@@ -2,7 +2,7 @@ import { PN2 } from "../config.mjs";
 import { cleVoie } from "../magie/regles.mjs";
 
 export { cleVoie };
-export { FREQUENCES_OBJET, DUREES_ACTIVATION_OBJET, NATURES_OBJET, MODES_OBJET, FORMES_OBJET, coutCreationObjet } from "../magie/objets.mjs";
+export { FREQUENCES_OBJET, DUREES_ACTIVATION_OBJET, NATURES_OBJET, MODES_OBJET, FORMES_OBJET, POUVOIRS_CREATION, coutCreationObjet, dosesConsacrees } from "../magie/objets.mjs";
 import { coutCreationObjet } from "../magie/objets.mjs";
 
 const f = foundry.data.fields;
@@ -269,6 +269,7 @@ export class ObjetPouvoirData extends BaseItemData {
       // Objet permanent
       frequence: str("mois"),
       dureeActivation: str("h24"),
+      ameliorations: int(0, { min: 0 }),       // Succès sacrés pour des paramètres supérieurs au Pouvoir
       rites: str(""),                          // rites d'activation
       derniereUtilisation: str(""),            // repère libre (date du jeu)
       // Objet éphémère

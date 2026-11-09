@@ -5,6 +5,7 @@ import { coutManoeuvres, acheterManoeuvres } from "../helpers/escrime.mjs";
 import { comboHTML } from "../documents/item.mjs";
 import { PN2CreationApp } from "../apps/creation.mjs";
 import { ControleurMagie } from "../magie/controleur.mjs";
+import * as Familier from "../magie/service-familier.mjs";
 import { contexteBourse, operationBourse, formatPieces } from "../helpers/monnaie.mjs";
 
 const { HandlebarsApplicationMixin } = foundry.applications.api;
@@ -39,6 +40,7 @@ export class PN2PersonnageSheet extends HandlebarsApplicationMixin(foundry.appli
       creation: PN2PersonnageSheet.#onCreation,
       magie: PN2PersonnageSheet.#onMagie,
       basculerMagie: PN2PersonnageSheet.#onBasculerMagie,
+      familier: PN2PersonnageSheet.#onFamilier,
       bourseToutes: PN2PersonnageSheet.#onBourseToutes,
       acheterManoeuvres: PN2PersonnageSheet.#onAcheterManoeuvres
     }
@@ -53,6 +55,7 @@ export class PN2PersonnageSheet extends HandlebarsApplicationMixin(foundry.appli
     escrime: { template: `${TPL}/personnage/escrime.hbs`, scrollable: [""] },
     equipement: { template: `${TPL}/personnage/equipement.hbs`, scrollable: [""] },
     magie: { template: `${TPL}/personnage/magie.hbs`, scrollable: [""] },
+    familier: { template: `${TPL}/personnage/familier.hbs`, scrollable: [""] },
     notes: { template: `${TPL}/personnage/notes.hbs`, scrollable: [""] }
   };
 
@@ -70,7 +73,13 @@ export class PN2PersonnageSheet extends HandlebarsApplicationMixin(foundry.appli
   _configureRenderParts(options) {
     const parts = super._configureRenderParts(options);
     if (!this.magieActive) delete parts.magie;
+    if (!this.familierVisible) delete parts.familier;
     return parts;
+  }
+
+  /** Onglet « Familier » : PNJ marqué comme familier, pour le MJ seulement. */
+  get familierVisible() {
+    return game.user.isGM && this.document.type === "pnj" && Familier.estFamilier(this.document);
   }
 
   /** @override */
@@ -86,6 +95,9 @@ export class PN2PersonnageSheet extends HandlebarsApplicationMixin(foundry.appli
     context.isGM = game.user.isGM;
     context.magieActive = this.magieActive;
     if (!context.magieActive && this.tabGroups.primary === "magie") this.tabGroups.primary = "principal";
+    context.familierVisible = this.familierVisible;
+    context.peutFamilier = game.user.isGM && actor.type === "pnj" && !context.familierVisible;
+    if (!context.familierVisible && this.tabGroups.primary === "familier") this.tabGroups.primary = "principal";
     context.tab = this.tabGroups.primary;
     context.tabs = [
       { id: "principal", label: "Personnage", icon: "fa-solid fa-user" },
@@ -94,8 +106,9 @@ export class PN2PersonnageSheet extends HandlebarsApplicationMixin(foundry.appli
       { id: "escrime", label: "Escrime", icon: "fa-solid fa-khanda" },
       { id: "equipement", label: "Équipement", icon: "fa-solid fa-sack-dollar" },
       { id: "magie", label: "Magie", icon: "fa-solid fa-hands-praying" },
-      { id: "notes", label: "Notes", icon: "fa-solid fa-feather" }
-    ].filter(t => t.id !== "magie" || context.magieActive).map(t => ({ ...t, active: t.id === context.tab }));
+      { id: "notes", label: "Notes", icon: "fa-solid fa-feather" },
+      { id: "familier", label: "Familier", icon: "fa-solid fa-ghost" }
+    ].filter(t => (t.id !== "magie" || context.magieActive) && (t.id !== "familier" || context.familierVisible)).map(t => ({ ...t, active: t.id === context.tab }));
 
     // Caractéristiques (rose des vents)
     context.caracs = Object.entries(PN2.caracs).map(([k, d]) => ({
@@ -227,6 +240,7 @@ export class PN2PersonnageSheet extends HandlebarsApplicationMixin(foundry.appli
     context.partId = partId;
     context.active = context.tab === partId;
     if (partId === "magie") context.magie = this.magie.contexte(this.document);
+    if (partId === "familier") context.familier = await Familier.contexteFamilier(this.document);
     return context;
   }
 
@@ -236,6 +250,7 @@ export class PN2PersonnageSheet extends HandlebarsApplicationMixin(foundry.appli
     const onglet = this.element.querySelector('section[data-tab="magie"]');
     // Section désactivée : la partie n'est plus rendue, on retire l'ancienne du DOM
     if (onglet && !this.magieActive) onglet.remove();
+    if (!this.familierVisible) this.element.querySelector('section[data-tab="familier"]')?.remove();
     else if (onglet) this.magie.lier(onglet, () => this.render({ parts: ["magie"] }));
   }
 
@@ -343,6 +358,24 @@ export class PN2PersonnageSheet extends HandlebarsApplicationMixin(foundry.appli
   /** Boutons de l'onglet Magie (data-op = opération). */
   static async #onMagie(event, target) {
     await this.magie.action(this.document, target, () => this.render({ parts: ["magie"] }));
+  }
+
+  /** Onglet « Familier » (MJ) : tirages, application au PNJ, test d'obéissance. */
+  static async #onFamilier(event, target) {
+    const op = target.dataset.op;
+    await Familier.operationFamilier(this.document, op, target);
+    if (op === "activer") { this.tabGroups.primary = "familier"; this.render(); }
+  }
+
+  /** Le choix d'un autre Pouvoir d'invocation reprend sa Puissance et ses paramètres (limites du familier). */
+  async _processSubmitData(event, form, submitData, options) {
+    const f = foundry.utils.getProperty(submitData, `flags.${PN2.id}.familier`);
+    const avant = this.document.getFlag(PN2.id, "familier")?.pouvoirUuid ?? "";
+    if (f?.pouvoirUuid && f.pouvoirUuid !== avant) {
+      const p = (await Familier.pouvoirsQlipoth()).find(x => x.uuid === f.pouvoirUuid);
+      if (p) Object.assign(f, { puissanceInvocation: p.puissance, portee: p.portee, cible: p.cible, duree: p.duree, demon: f.demon || p.nom });
+    }
+    return super._processSubmitData(event, form, submitData, options);
   }
 
   /** Bouton du MJ : active ou désactive la section Magie de ce personnage. */

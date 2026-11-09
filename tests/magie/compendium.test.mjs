@@ -7,7 +7,8 @@ import { readdirSync, readFileSync } from "node:fs";
 import { join } from "node:path";
 import { MAGIE } from "../../module/magie/config-magie.mjs";
 import { cleVoie } from "../../module/magie/regles.mjs";
-import { coutCreationObjet, FREQUENCES_OBJET, DUREES_ACTIVATION_OBJET, MODES_OBJET, FORMES_OBJET } from "../../module/magie/objets.mjs";
+import { familierVierge } from "../../module/magie/service-familier.mjs";
+import { coutCreationObjet, dosesConsacrees, FREQUENCES_OBJET, DUREES_ACTIVATION_OBJET, MODES_OBJET, FORMES_OBJET, POUVOIRS_CREATION } from "../../module/magie/objets.mjs";
 
 const lire = dossier => readdirSync(dossier).filter(f => f.endsWith(".json"))
   .map(f => JSON.parse(readFileSync(join(dossier, f), "utf8")));
@@ -130,7 +131,7 @@ test("Objets de pouvoir d'Entre ciel et terre : 8 éphémères et 12 permanents,
   assert.equal(objets.filter(o => o.system.nature === "ephemere").length, 8);
   assert.equal(objets.filter(o => o.system.nature === "permanent").length, 12);
   const champs = ["description", "source", "nature", "forme", "mode", "pouvoirUuid", "pouvoir", "voie", "puissance", "portee", "cible",
-    "duree", "pouvoirConnu", "frequence", "dureeActivation", "rites", "derniereUtilisation", "doses"];
+    "duree", "pouvoirConnu", "frequence", "dureeActivation", "ameliorations", "rites", "derniereUtilisation", "doses"];
   for (const o of objets) {
     assert.equal(o.type, "objetPouvoir");
     assert.deepEqual(Object.keys(o.system).sort(), [...champs].sort(), o.name);
@@ -141,22 +142,46 @@ test("Objets de pouvoir d'Entre ciel et terre : 8 éphémères et 12 permanents,
   }
 });
 
-test("coût de création d'un Objet de pouvoir (exemple « Brume », ECT p. 161)", () => {
-  // Puissance 4, une fois par mois (3), activation de 4 h (1) : 8 Succès sacrés
+test("création d'un Objet de pouvoir conforme au supplément (ECT p. 160-161)", () => {
+  // Exemple « Brume » : Puissance 4, une fois par mois (3), activation de 4 h (1) : 8 Succès sacrés
   assert.deepEqual(coutCreationObjet({ nature: "permanent", puissance: 4, frequence: "mois", dureeActivation: "h4" }),
-    { total: 8, puissance: 4, frequence: 3, duree: 1, ephemere: false });
-  assert.equal(coutCreationObjet({ nature: "permanent", puissance: 10, frequence: "troisJour", dureeActivation: "instantane" }).total, 25);
-  // Éphémère : une dose par Succès sacré ; la Puissance sert de seuil en Transe
-  assert.equal(coutCreationObjet({ nature: "ephemere", puissance: 4, frequence: "troisJour" }).total, 4);
+    { total: 8, puissance: 4, frequence: 3, duree: 1, ameliorations: 0, ephemere: false });
+  // Table à colonne de coût unique : 0, 1, 2, 3, 4, 5, 6, 8
+  assert.deepEqual(Object.values(FREQUENCES_OBJET).map(f => f.cout), [0, 1, 2, 3, 4, 5, 6, 8]);
+  assert.deepEqual(Object.values(DUREES_ACTIVATION_OBJET).map(d => d.cout), [0, 1, 2, 3, 4, 5, 6, 8]);
+  assert.equal(coutCreationObjet({ nature: "permanent", puissance: 10, frequence: "troisJour", dureeActivation: "instantane" }).total, 26);
+  // Paramètres supérieurs au Pouvoir : 1 Succès par point au-delà de la Puissance
+  assert.equal(coutCreationObjet({ nature: "permanent", puissance: 4, frequence: "mois", dureeActivation: "h4", ameliorations: 2 }).total, 10);
+  // Éphémère, exemple de Mabata : 6 Succès, Puissance 4, deux baumes ; une dose demande Puissance + 1
+  assert.equal(dosesConsacrees(6, 4), 2);
+  assert.equal(dosesConsacrees(3, 4), 0);
+  assert.equal(coutCreationObjet({ nature: "ephemere", puissance: 4 }).total, 5);
   // Valeurs inconnues : coût nul, Puissance au moins 1
   assert.equal(coutCreationObjet({ puissance: 0, frequence: "?", dureeActivation: "?" }).total, 1);
+});
+
+test("Pouvoirs de création des Objets de pouvoir : présents dans le compendium avec la bonne Puissance", () => {
+  const pouvoirs = lire("src/packs/pouvoirs").filter(d => d.type === "pouvoir");
+  const voies = new Map(voiesPack.filter(d => d.type === "voie").map(v => [v._id, v.name]));
+  for (const forme of [...FORMES_OBJET.ephemere, ...FORMES_OBJET.permanent]) {
+    assert.ok(Array.isArray(POUVOIRS_CREATION[forme]), forme);
+    for (const ref of POUVOIRS_CREATION[forme]) {
+      const m = ref.match(/^(.*) \((Voie .*), (\d+)\)/);
+      assert.ok(m, ref);
+      const p = pouvoirs.find(x => x.name === m[1] && voies.get(x.system.voieUuid.split(".").pop()) === m[2]);
+      assert.ok(p, `${forme} : ${ref} introuvable`);
+      assert.equal(p.system.puissance, Number(m[3]), ref);
+    }
+  }
 });
 
 test("Suivants d'Entre ciel et terre : disciple, servant et six familiers, sans cartes", () => {
   const pack = lire("src/packs/pnj");
   const dossier = pack.find(d => d._key.startsWith("!folders!") && d.name === "Suivants (Entre ciel et terre)");
   const suivants = pack.filter(d => d.folder === dossier?._id);
-  assert.equal(suivants.length, 8);
+  assert.equal(suivants.length, 9);
+  const modele = suivants.find(x => x.name === "Familier (modèle à remplir)");
+  assert.deepEqual(Object.keys(modele.flags["pavillon-noir-2"].familier).sort(), Object.keys(familierVierge()).sort());
   assert.equal(suivants.filter(s => s.name.startsWith("Familier : ")).length, 6);
   for (const s of suivants) {
     assert.equal(s.type, "pnj");

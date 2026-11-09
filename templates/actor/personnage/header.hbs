@@ -16,6 +16,9 @@
         <label>Profession <input type="text" name="system.infos.profession" value="{{system.infos.profession}}"></label>
         <a class="pn2-btn petit" data-action="creation" title="Assistant de création de personnage (étapes 1 à 9)"><i class="fa-solid fa-wand-magic-sparkles"></i> Création</a>
       {{/if}}
+      {{#if peutFamilier}}
+        <a class="pn2-btn petit" data-action="familier" data-op="activer" title="MJ : faire de ce PNJ un familier de l'Arbre inversé (Entre ciel et terre, p. 163)"><i class="fa-solid fa-ghost"></i> Familier</a>
+      {{/if}}
       {{#if isGM}}
         <a class="pn2-btn petit magie-bascule {{#unless magieActive}}inactive{{/unless}}" data-action="basculerMagie"
           title="MJ : {{#if magieActive}}désactiver{{else}}activer{{/if}} la section Magie de cette fiche"><i class="fa-solid {{#if magieActive}}fa-hands-praying{{else}}fa-ban{{/if}}"></i> Magie : {{#if magieActive}}activée{{else}}désactivée{{/if}}</a>
