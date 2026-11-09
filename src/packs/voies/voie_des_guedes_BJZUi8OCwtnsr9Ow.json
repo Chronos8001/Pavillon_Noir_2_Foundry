@@ -1,0 +1,36 @@
+{
+  "_id": "BJZUi8OCwtnsr9Ow",
+  "_key": "!items!BJZUi8OCwtnsr9Ow",
+  "name": "Voie des Guédés",
+  "type": "voie",
+  "img": "icons/svg/sun.svg",
+  "system": {
+    "description": "<p>Baron Samedi et les Guédés : la mort, les malédictions et leur levée, les protections (gads) et les poupées vaudoues.</p><p><em>Un houngan ou une mambo n'a accès qu'à trois Voies du vaudou, choisies par le MJ ; sa Connaissance des Mystères est nulle dans les autres.</em></p><p>Réglez sur cette Voie la Foi (communion) ou la Connaissance des Mystères (possession) et l'Affinité du personnage, puis ajoutez ses Pouvoirs connus.</p>",
+    "source": "Entre ciel et terre, p. 290",
+    "cle": "",
+    "religion": "Vaudou",
+    "groupeColere": "",
+    "foi": 0,
+    "mysteres": 0,
+    "affinite": 0,
+    "rites": "",
+    "sansTranse": false
+  },
+  "effects": [],
+  "folder": "srnPzmcDsFVyCJfo",
+  "sort": 400000,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.345",
+    "systemId": "pavillon-noir-2",
+    "systemVersion": "0.7.0",
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": null
+  }
+}

@@ -18,15 +18,22 @@ import * as tables from "./helpers/tables.mjs";
 import * as magie from "./magie/service.mjs";
 import * as magieMoteur from "./magie/moteur.mjs";
 import * as magieRegles from "./magie/regles.mjs";
-import { PN2MagieApp } from "./magie/app-magie.mjs";
 
 Hooks.once("init", () => {
   console.log("Pavillon Noir 2 | Initialisation du système");
   CONFIG.PN2 = PN2;
   game.pn2 = {
     config: PN2, dice, combat, naval, tables,
-    // Magie (Entre ciel et terre) : game.pn2.magie.ouvrir() ouvre la fenêtre de test
-    magie: { ...magie, moteur: magieMoteur, regles: magieRegles, ouvrir: actor => PN2MagieApp.ouvrir(actor) }
+    // Magie (Entre ciel et terre) : game.pn2.magie.ouvrir(actor) affiche l'onglet Magie de la fiche
+    magie: {
+      ...magie, moteur: magieMoteur, regles: magieRegles,
+      ouvrir: actor => {
+        const sheet = actor?.sheet;
+        if (!sheet) return;
+        if (sheet.tabGroups) sheet.tabGroups.primary = "magie";
+        return sheet.render({ force: true });
+      }
+    }
   };
 
   CONFIG.Actor.documentClass = PN2Actor;

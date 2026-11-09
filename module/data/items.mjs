@@ -144,6 +144,7 @@ export class HistoriqueData extends BaseItemData {
       metier: str(""),                  // compétences de métier accessibles
       exclusions: str(""),
       religionNom: str(""),
+      typeReligion: str(""),            // religions : communion | possession (magie, Entre ciel et terre)
       points: int(12, { min: 0 }),     // professions : points à répartir
       note: str("")
     };
@@ -164,7 +165,8 @@ export class VoieData extends BaseItemData {
       foi: int(0, { min: 0 }),    // religions de communion
       mysteres: int(0, { min: 0 }), // religions de possession : Connaissance des Mystères
       affinite: int(0),
-      rites: str("")              // rappel des Rites de la Voie
+      rites: str(""),             // rappel des Rites de la Voie
+      sansTranse: bool(false)     // pas de Transe dans cette Voie (Kabbale, Cartomancie, Calendrier…)
     };
   }
 

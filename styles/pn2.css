@@ -343,19 +343,18 @@
 .pn2 .destreza-options input[type=text] { width: 260px; }
 
 /* ==========================================================
-   Magie (Entre ciel et terre) — fenêtre de test
+   Magie (Entre ciel et terre) — onglet de la fiche
    ========================================================== */
 .pn2 .pn2-btn.disabled { opacity: 0.45; pointer-events: none; }
-.pn2-magie-app .choix-acteur select { min-width: 220px; }
-.pn2-magie-app .boutons { display: flex; flex-wrap: wrap; align-items: center; gap: 4px; margin: 4px 0; }
-.pn2-magie-app .pn2-magie-apercu,
-.pn2-magie-app .pn2-magie-compteurs { display: flex; flex-wrap: wrap; gap: 10px; align-items: center; margin: 6px 0; }
-.pn2-magie-app .pn2-magie-compteurs .badge { display: flex; flex-direction: column; align-items: center; border: 1px solid var(--pn2-bord); border-radius: 4px; padding: 2px 8px; background: rgba(255, 255, 255, 0.4); }
-.pn2-magie-app .pn2-magie-compteurs .badge span { font-size: 10px; color: var(--pn2-encre-claire); }
-.pn2-magie-app table.pn2-mini { width: 100%; border-collapse: collapse; font-size: 12px; }
-.pn2-magie-app table.pn2-mini th, .pn2-magie-app table.pn2-mini td { border-bottom: 1px dotted var(--pn2-bord); padding: 1px 4px; text-align: left; }
-.pn2-magie-app tr.reussite td:nth-child(4) { color: var(--pn2-vert); font-weight: bold; }
-.pn2-magie-app tr.echec td:nth-child(4) { color: var(--pn2-rouge); font-weight: bold; }
-.pn2-magie-app .resultat { display: flex; justify-content: space-between; padding: 2px 6px; border-radius: 3px; margin: 4px 0; }
-.pn2-magie-app .resultat.reussite, .pn2-card.pn2-magie .resultat.reussite { background: rgba(47, 107, 58, 0.15); }
-.pn2-magie-app .resultat.echec, .pn2-card.pn2-magie .resultat.echec { background: rgba(139, 30, 30, 0.15); }
+.pn2 .pn2-magie .boutons { display: flex; flex-wrap: wrap; align-items: center; gap: 4px; margin: 4px 0; }
+.pn2 .pn2-magie .pn2-magie-apercu,
+.pn2 .pn2-magie .pn2-magie-compteurs { display: flex; flex-wrap: wrap; gap: 10px; align-items: center; margin: 6px 0; }
+.pn2 .pn2-magie .pn2-magie-compteurs .badge { display: flex; flex-direction: column; align-items: center; border: 1px solid var(--pn2-bord); border-radius: 4px; padding: 2px 8px; background: rgba(255, 255, 255, 0.4); }
+.pn2 .pn2-magie .pn2-magie-compteurs .badge span { font-size: 10px; color: var(--pn2-encre-claire); }
+.pn2 .pn2-magie table.pn2-mini { width: 100%; border-collapse: collapse; font-size: 12px; }
+.pn2 .pn2-magie table.pn2-mini th, .pn2 .pn2-magie table.pn2-mini td { border-bottom: 1px dotted var(--pn2-bord); padding: 1px 4px; text-align: left; }
+.pn2 .pn2-magie tr.reussite td:nth-child(4) { color: var(--pn2-vert); font-weight: bold; }
+.pn2 .pn2-magie tr.echec td:nth-child(4) { color: var(--pn2-rouge); font-weight: bold; }
+.pn2 .pn2-magie .resultat { display: flex; justify-content: space-between; padding: 2px 6px; border-radius: 3px; margin: 4px 0; }
+.pn2 .pn2-magie .resultat.reussite, .pn2-card.pn2-magie .resultat.reussite { background: rgba(47, 107, 58, 0.15); }
+.pn2 .pn2-magie .resultat.echec, .pn2-card.pn2-magie .resultat.echec { background: rgba(139, 30, 30, 0.15); }

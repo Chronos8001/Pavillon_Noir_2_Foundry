@@ -65,10 +65,11 @@ Installation manuelle : télécharger `pavillon-noir-2.zip` depuis la dernière 
 - Coffre de l'équipage sur le navire ; cargaisons glissées depuis le compendium, tonnage et valeur calculés selon le cours (pénurie, normal, excès), vente versée au coffre.
 
 ### Compendiums
-- Historiques : peuples, origines sociales, événements de jeunesse, religions
+- Historiques : peuples, origines sociales, événements de jeunesse, religions (avec leur type : communion ou possession)
 - Avantages et faiblesses (avec malus appliqués automatiquement)
 - Équipement : armes, armures, vêtements, instruments, remèdes, artillerie, services et cargaisons (sucre, rhum, tabac, cacao…)
 - Manœuvres d'escrime (toutes les techniques de *L'Art de l'escrime* + destreza)
+- Voies d'illumination (*Entre ciel et terre*), classées par religion
 - PNJ : archétypes et animaux
 - Navires : chaque type dans chacune de ses configurations d'armement
 
@@ -77,7 +78,9 @@ Installation manuelle : télécharger `pavillon-noir-2.zip` depuis la dernière 
 - Voies d'illumination (Foi / Connaissance des Mystères et Affinité par Voie) et Pouvoirs ; religions de communion ou de possession.
 - Auspices, Seuil de Rejet, Colère partagée par religion et récupérée d'un point par heure de temps du monde.
 - Rituels (Puissance, Rejet en fin de tirage, Succès supplémentaires) et Transes (entrée, ascension, détachement, activation, Rejet immédiat).
-- Phase 1 : fenêtre de test (bouton « Magie » de la fiche). Documentation technique : `docs/magie.md`.
+- Onglet « Magie » sur la fiche ; le type de religion se déduit de la religion de l'historique.
+- Compendium « Voies d'illumination » : les 21 Voies du supplément, classées par religion.
+- Documentation technique : `docs/magie.md`.
 
 ## Développement
 

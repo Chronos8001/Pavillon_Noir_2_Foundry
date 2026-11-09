@@ -16,6 +16,22 @@ export const MAGIE = {
     possession: { label: "Possession", stat: "mysteres", statLabel: "Connaissance des Mystères" }
   },
 
+  /**
+   * Type des religions de l'historique (clé = nom normalisé de la religion).
+   * Sert quand le type n'est ni saisi sur la fiche ni porté par l'objet de religion.
+   * Entre ciel et terre, p. 89 et 93 : communion pour les religions chrétiennes, juive et solaires
+   * (aztèque, maya, natchez) ; possession pour le vaudou et les religions caraïbe, arawak et yanomami.
+   */
+  religions: {
+    catholique: "communion", protestant: "communion", "protestant-huguenot-reforme": "communion", anglican: "communion",
+    chretienne: "communion", "chretienne-catholique": "communion", "chretienne-protestante": "communion", "chretienne-anglicane": "communion",
+    juif: "communion", judaisme: "communion",
+    "religion-azteque": "communion", azteque: "communion", "religion-maya": "communion", maya: "communion",
+    "culte-du-soleil-natchez": "communion", natchez: "communion",
+    vaudou: "possession", "religion-caraibe": "possession", caraibe: "possession",
+    "religion-arawak": "possession", arawak: "possession", "religion-yanomami": "possession", yanomami: "possession"
+  },
+
   /** Puissance nécessaire d'un Rituel. */
   puissance: { min: 1, max: 10 },
 

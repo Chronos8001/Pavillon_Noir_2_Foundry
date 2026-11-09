@@ -1,0 +1,22 @@
+{
+  "_id": "k5tAQAXWNTYHGStQ",
+  "_key": "!folders!k5tAQAXWNTYHGStQ",
+  "name": "Religion arawak",
+  "type": "Item",
+  "folder": null,
+  "sorting": "a",
+  "sort": 300000,
+  "color": null,
+  "description": "",
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.345",
+    "systemId": "pavillon-noir-2",
+    "systemVersion": "0.7.0",
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": null
+  }
+}

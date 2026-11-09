@@ -4,6 +4,6 @@
   </div>
   <p>Coût total : <strong>{{cout}}</strong> / {{budget}} Succès <span class="hint">(N augmentations d'un même paramètre coûtent N × (N + 1) / 2)</span></p>
   {{#each erreurs}}<p class="alerte">{{this}}</p>{{/each}}
-  <a class="pn2-btn petit {{#unless valide}}disabled{{/unless}}" data-action="repartir" data-activation="{{activation}}" data-requete="{{@root.requete}}" data-seq="{{@root.acte.seq}}">Enregistrer la répartition</a>
+  <a class="pn2-btn petit {{#unless valide}}disabled{{/unless}}" data-action="magie" data-op="repartir" data-activation="{{activation}}" data-requete="{{@root.magie.requete}}" data-seq="{{@root.magie.acte.seq}}">Enregistrer la répartition</a>
   {{#if enregistree}}<p class="hint">Répartition enregistrée : {{enregistree.cout}} Succès dépensé(s), {{enregistree.reste}} restant(s).</p>{{/if}}
 </div>

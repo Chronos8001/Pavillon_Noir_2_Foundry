@@ -89,7 +89,8 @@
       <div class="ligne"><label>Pays (séparés par des virgules)</label><input type="text" name="system.pays" value="{{system.pays}}"></div>
       <div class="ligne"><label>Armes à feu = métier</label><input type="checkbox" name="system.armesFeuMetier" {{checked system.armesFeuMetier}}></div>
     {{/if}}
-    {{#if (eq system.etape "religion")}}<div class="ligne"><label>Compétence Religion (spécialité)</label><input type="text" name="system.religionNom" value="{{system.religionNom}}"></div>{{/if}}
+    {{#if (eq system.etape "religion")}}<div class="ligne"><label>Compétence Religion (spécialité)</label><input type="text" name="system.religionNom" value="{{system.religionNom}}"></div>
+      <div class="ligne"><label>Type de religion (magie)</label><select name="system.typeReligion"><option value="">— Aucun —</option>{{selectOptions typesReligion selected=system.typeReligion}}</select></div>{{/if}}
     <div class="ligne"><label>Caractéristiques au choix (+1)</label><input type="text" name="system.caracs" value="{{system.caracs}}" placeholder="ex. cha, adr"></div>
     {{#if (eq system.etape "profession")}}<div class="ligne"><label>Points à répartir</label><input type="number" name="system.points" value="{{system.points}}"></div>{{/if}}
     <div class="ligne"><label>Nombre de compétences à choisir</label><input type="number" name="system.nbCompetences" value="{{system.nbCompetences}}"></div>
@@ -157,7 +158,8 @@
     <div class="ligne"><label>Foi <span class="hint">(communion)</span></label><input type="number" name="system.foi" value="{{system.foi}}" min="0"></div>
     <div class="ligne"><label>Connaissance des Mystères <span class="hint">(possession)</span></label><input type="number" name="system.mysteres" value="{{system.mysteres}}" min="0"></div>
     <div class="ligne"><label>Affinité</label><input type="number" name="system.affinite" value="{{system.affinite}}"></div>
-    <div class="ligne"><label>Groupe de Colère <span class="hint">(vide : la religion)</span></label><input type="text" name="system.groupeColere" value="{{system.groupeColere}}"></div>
+    <div class="ligne"><label>Groupe de Colère <span class="hint">(vide : religion du personnage)</span></label><input type="text" name="system.groupeColere" value="{{system.groupeColere}}"></div>
+    <div class="ligne"><label>Pas de Transe dans cette Voie</label><input type="checkbox" name="system.sansTranse" {{checked system.sansTranse}}></div>
   </div>
   <div class="ligne"><label>Rites</label><input type="text" name="system.rites" value="{{system.rites}}"></div>
   <p class="hint">La Foi / Connaissance des Mystères est propre à chaque Voie (Entre ciel et terre, p. 90). Toutes les Voies d'une même religion partagent la même Colère divine, sauf groupe de Colère différent.</p>

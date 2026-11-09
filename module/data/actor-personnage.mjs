@@ -4,6 +4,7 @@ import {
 } from "../helpers/tables.mjs";
 import { bourseField, totalBourse } from "../helpers/monnaie.mjs";
 import { deserialiserActe } from "../magie/moteur.mjs";
+import { cleVoie } from "../magie/regles.mjs";
 
 const f = foundry.data.fields;
 
@@ -157,6 +158,11 @@ export class PersonnageData extends foundry.abstract.TypeDataModel {
     const m = s.magie;
     m.faveurs = s.chance + (m.faveursMod ?? 0);
     m.religionNom = m.religion || s.infos.religion || "";
+    // Type de religion : saisi sur la fiche, sinon celui de la religion de l'historique, sinon d'après son nom
+    const relItem = actor?.items?.find(i => i.type === "historique" && i.system.etape === "religion");
+    m.typeDeduit = relItem?.system.typeReligion
+      || PN2.magie.religions[cleVoie(m.religionNom)] || PN2.magie.religions[cleVoie(relItem?.name)] || "";
+    m.typeEffectif = m.type || m.typeDeduit;
     const acte = deserialiserActe(actor?.flags?.[PN2.id]?.acte);
     m.acteEnCours = acte?.statut === "en-cours";
     m.enTranse = !!(m.acteEnCours && acte?.type === "transe" && acte.transe?.actif);

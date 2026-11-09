@@ -4,7 +4,7 @@ import { attaquer, competenceArme, degatsFixes, porteeArme, risqueLongFeu, escri
 import { coutManoeuvres, acheterManoeuvres } from "../helpers/escrime.mjs";
 import { comboHTML } from "../documents/item.mjs";
 import { PN2CreationApp } from "../apps/creation.mjs";
-import { PN2MagieApp } from "../magie/app-magie.mjs";
+import { ControleurMagie } from "../magie/controleur.mjs";
 import { contexteBourse, operationBourse, formatPieces } from "../helpers/monnaie.mjs";
 
 const { HandlebarsApplicationMixin } = foundry.applications.api;
@@ -51,10 +51,14 @@ export class PN2PersonnageSheet extends HandlebarsApplicationMixin(foundry.appli
     combat: { template: `${TPL}/personnage/combat.hbs`, scrollable: [""] },
     escrime: { template: `${TPL}/personnage/escrime.hbs`, scrollable: [""] },
     equipement: { template: `${TPL}/personnage/equipement.hbs`, scrollable: [""] },
+    magie: { template: `${TPL}/personnage/magie.hbs`, scrollable: [""] },
     notes: { template: `${TPL}/personnage/notes.hbs`, scrollable: [""] }
   };
 
   tabGroups = { primary: "principal" };
+
+  /** Onglet Magie : état de préparation des actes sacrés (propre à cette fiche, non enregistré). */
+  magie = new ControleurMagie();
 
   /** @override */
   async _prepareContext(options) {
@@ -73,6 +77,7 @@ export class PN2PersonnageSheet extends HandlebarsApplicationMixin(foundry.appli
       { id: "combat", label: "Combat & Santé", icon: "fa-solid fa-heart-pulse" },
       { id: "escrime", label: "Escrime", icon: "fa-solid fa-khanda" },
       { id: "equipement", label: "Équipement", icon: "fa-solid fa-sack-dollar" },
+      { id: "magie", label: "Magie", icon: "fa-solid fa-hands-praying" },
       { id: "notes", label: "Notes", icon: "fa-solid fa-feather" }
     ].map(t => ({ ...t, active: t.id === context.tab }));
 
@@ -205,7 +210,15 @@ export class PN2PersonnageSheet extends HandlebarsApplicationMixin(foundry.appli
     context = await super._preparePartContext(partId, context);
     context.partId = partId;
     context.active = context.tab === partId;
+    if (partId === "magie") context.magie = this.magie.contexte(this.document);
     return context;
+  }
+
+  /** @override */
+  _onRender(context, options) {
+    super._onRender(context, options);
+    const onglet = this.element.querySelector('section[data-tab="magie"]');
+    if (onglet) this.magie.lier(onglet, () => this.render({ parts: ["magie"] }));
   }
 
   /* -------------------------------------------- */
@@ -309,8 +322,9 @@ export class PN2PersonnageSheet extends HandlebarsApplicationMixin(foundry.appli
     new PN2CreationApp(this.document).render(true);
   }
 
-  static #onMagie() {
-    PN2MagieApp.ouvrir(this.document);
+  /** Boutons de l'onglet Magie (data-op = opération). */
+  static async #onMagie(event, target) {
+    await this.magie.action(this.document, target, () => this.render({ parts: ["magie"] }));
   }
 
   static async #onBourse(event, target) {

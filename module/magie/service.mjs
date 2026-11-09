@@ -34,10 +34,13 @@ export function acteCourant(actor) {
   return M.deserialiserActe(actor?.getFlag?.(SYS, "acte") ?? actor?.flags?.[SYS]?.acte);
 }
 
-/** Groupe de Colère d'une Voie : champ de la Voie, sinon religion de la Voie, sinon religion du personnage. */
+/**
+ * Groupe de Colère d'une Voie : champ de la Voie, sinon religion du personnage, sinon religion de la Voie.
+ * La Colère est commune à toutes les Voies de la religion pratiquée (ECT p. 127).
+ */
 export function groupeColereVoie(actor, voie) {
   const m = actor.system.magie;
-  return R.cleVoie(voie?.system.groupeColere || voie?.system.religion || m.religionNom) || cfg().groupeColereDefaut;
+  return R.cleVoie(voie?.system.groupeColere || m.religionNom || voie?.system.religion) || cfg().groupeColereDefaut;
 }
 
 /** Pouvoirs du personnage rattachés à une Voie. */
@@ -53,7 +56,7 @@ export function profilReligieux(actor) {
   const types = cfg().types;
   const voies = actor.items.filter(i => i.type === "voie").map(v => ({
     id: v.id, nom: v.name, cle: v.system.cleEffective, religion: v.system.religion,
-    foi: v.system.foi, mysteres: v.system.mysteres, affinite: v.system.affinite,
+    foi: v.system.foi, mysteres: v.system.mysteres, affinite: v.system.affinite, sansTranse: v.system.sansTranse,
     groupeColere: groupeColereVoie(actor, v),
     pouvoirs: pouvoirsVoie(actor, v).map(p => ({
       id: p.id, nom: p.name, puissance: p.system.puissance, accessible: p.system.accessible, nomNatif: p.system.nomNatif
@@ -61,7 +64,7 @@ export function profilReligieux(actor) {
   }));
   const colere = Object.entries(m.colere ?? {}).map(([groupe, c]) => ({ groupe, ...c }));
   return {
-    religion: m.religionNom, type: m.type, typeDef: types[m.type] ?? null,
+    religion: m.religionNom, type: m.typeEffectif, typeSaisi: m.type, typeDeduit: m.typeDeduit, typeDef: types[m.typeEffectif] ?? null,
     faveurs: m.faveurs, faveursMod: m.faveursMod, chance: actor.system.chance,
     actesFoi: m.actesFoi, peches: m.peches, colere, voies, acte: acteCourant(actor)
   };
@@ -86,7 +89,7 @@ export function parametresActe(actor, form) {
     acteur: { uuid: actor.uuid, nom: actor.name },
     pilote: game.user.id,
     religion: m.religionNom,
-    typeReligion: m.type,
+    typeReligion: m.typeEffectif,
     types: cfg().types,
     voie: { id: voie.id, nom: voie.name, cle: voie.system.cleEffective },
     valeurs: { foi: voie.system.foi, mysteres: voie.system.mysteres },
@@ -102,6 +105,7 @@ export function parametresActe(actor, form) {
     maintenant: maintenant()
   };
   if (form.mode === "transe") {
+    if (voie.system.sansTranse) throw new R.MagieError("sans-transe", `Il n'y a pas de Transe dans la ${voie.name}.`);
     p.instantanee = !!form.instantanee;
     p.dureeRitesMinutes = num(form.dureeRites, 0);
     p.niveauLimite = num(form.niveauLimite, cfg().transe.niveauMax);

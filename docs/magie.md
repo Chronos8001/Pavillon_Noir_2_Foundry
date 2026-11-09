@@ -1,6 +1,6 @@
 # Magie — *Entre ciel et terre* (adaptation d10) — documentation technique
 
-Phase 1 : modèles de données, moteur de résolution, fenêtre de test.
+Phase 1 : modèles de données, moteur de résolution, onglet « Magie » de la fiche, compendium des Voies.
 Le tirage de cartes du supplément est **remplacé** par des lancers successifs de 1d10 :
 
 | d10 | Effet |
@@ -17,8 +17,8 @@ module/magie/
   moteur.mjs         machine à états des actes sacrés (Rituel, Transe) — pur
   verrou.mjs         verrou asynchrone par acteur — pur
   service.mjs        liaison Foundry : dés (Roll), persistance, permissions, chat, temps du monde
-  app-magie.mjs      fenêtre de test (ApplicationV2)
-templates/apps/magie.hbs, magie-repartition.hbs
+  controleur.mjs     onglet « Magie » de la fiche : état de préparation, contexte, actions
+templates/actor/personnage/magie.hbs, templates/apps/magie-repartition.hbs
 templates/chat/magie-acte.hbs, magie-sollicitation.hbs
 tests/magie/*.test.mjs  (npm test)
 ```
@@ -33,23 +33,34 @@ Le moteur ne lance jamais de dé : il reçoit la valeur du d10. Le service la ti
 | Champ | Rôle |
 |---|---|
 | `religion` | religion pratiquée (vide : `system.infos.religion`) |
-| `type` | `communion` ou `possession` (clé de `CONFIG.PN2.magie.types`) |
+| `type` | `communion` ou `possession` (clé de `CONFIG.PN2.magie.types`) ; vide = type déduit de la religion |
 | `actesFoi`, `peches` | composantes des Auspices |
 | `faveursMod` | modificateur temporaire ; **les Faveurs valent la Chance** (Pouvoir − 5, ECT p. 89), donc pas de champ en double |
 | `colere.<groupe>` | `{ valeur, reference, recuperationBloquee }` : une Colère par religion / ensemble religieux |
 
-Dérivés : `magie.faveurs`, `magie.religionNom`, `magie.acteEnCours`, `magie.enTranse`.
+Dérivés : `magie.faveurs`, `magie.religionNom`, `magie.typeDeduit`, `magie.typeEffectif`, `magie.acteEnCours`, `magie.enTranse`.
+
+Type de religion effectif : `magie.type` s'il est saisi, sinon `typeReligion` de l'historique de religion possédé,
+sinon `CONFIG.PN2.magie.religions[nom normalisé]` (pour les personnages créés avant l'ajout du champ). Les 11 religions
+du compendium « Historiques » portent leur type : communion pour les religions chrétiennes, juive, aztèque, maya et natchez,
+possession pour le vaudou, les religions caraïbe et arawak (ECT p. 89 et 93) ; aucun pour l'athéisme.
 
 Aucune migration n'est nécessaire : les acteurs existants reçoivent les valeurs par défaut au chargement.
 
 ### Objet `voie` (Voie d'illumination)
 
-`cle` (vide : nom normalisé), `religion`, `groupeColere`, `foi`, `mysteres`, `affinite`, `rites`.
+`cle` (vide : nom normalisé), `religion`, `groupeColere`, `foi`, `mysteres`, `affinite`, `rites`, `sansTranse`.
 La Foi / Connaissance des Mystères est **propre à chaque Voie** (ECT p. 90). Le type de religion choisit laquelle sert au Seuil
 (`CONFIG.PN2.magie.types[type].stat`).
 
-Groupe de Colère d'une Voie : `groupeColere`, sinon la religion de la Voie, sinon celle du personnage.
+Groupe de Colère d'une Voie : `groupeColere`, sinon la religion du personnage, sinon celle de la Voie.
 Toutes les Voies d'une même religion partagent donc la même Colère (ECT p. 127).
+
+`sansTranse` : pas de Transe dans la Kabbale, la Cartomancie ni la Voie du Calendrier (ECT p. 120) ; le service refuse alors la Transe.
+
+Compendium « Voies d'illumination » (`packs/voies`, sources `src/packs/voies`) : les 21 Voies du chapitre 5, rangées par religion,
+avec un résumé, la page du livre et les particularités (Voies du vaudou limitées à trois, zémi nécessaire, Cartomancie…).
+Les Pouvoirs ne sont pas inclus.
 
 ### Objet `pouvoir`
 
@@ -112,7 +123,7 @@ réglage « récupération automatique »). Limite : seuls les acteurs du monde 
 ## API (console ou macro)
 
 ```js
-game.pn2.magie.ouvrir(actor)                 // fenêtre de test (aussi : bouton « Magie » de la fiche)
+game.pn2.magie.ouvrir(actor)                 // ouvre la fiche sur l'onglet « Magie »
 game.pn2.magie.profilReligieux(actor)
 game.pn2.magie.ajouterColere(actor, "catholique", 2)
 game.pn2.magie.reduireColere(actor, "catholique", 1)   // MJ

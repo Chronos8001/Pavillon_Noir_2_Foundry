@@ -1,0 +1,36 @@
+{
+  "_id": "wiw3plsp6sATryBq",
+  "_key": "!items!wiw3plsp6sATryBq",
+  "name": "Voie d'Ichéiricou pour le conseil",
+  "type": "voie",
+  "img": "icons/svg/sun.svg",
+  "system": {
+    "description": "<p>Ichéiricou dans la vie sociale : festins, conseils, gestion des conflits, rencontres, départs et quêtes. Il prévient le boyer des dangers et l'aide à les écarter (chasser les nuages, voir les récifs, retrouver un assassin).</p><p><em>C'est par un Pouvoir de cette Voie qu'un boyer transmet un Ichéiricou à celui qui deviendra boyer à son tour.</em></p><p>Réglez sur cette Voie la Foi (communion) ou la Connaissance des Mystères (possession) et l'Affinité du personnage, puis ajoutez ses Pouvoirs connus.</p>",
+    "source": "Entre ciel et terre, p. 176",
+    "cle": "",
+    "religion": "Caraïbe",
+    "groupeColere": "",
+    "foi": 0,
+    "mysteres": 0,
+    "affinite": 0,
+    "rites": "",
+    "sansTranse": false
+  },
+  "effects": [],
+  "folder": "4cUCXjyQbUyxd39S",
+  "sort": 200000,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.345",
+    "systemId": "pavillon-noir-2",
+    "systemVersion": "0.7.0",
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": null
+  }
+}

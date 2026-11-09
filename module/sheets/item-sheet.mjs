@@ -59,6 +59,7 @@ export class PN2ItemSheet extends HandlebarsApplicationMixin(foundry.application
       context.comboHTML = comboHTML(item.system.combo);
       context.puissance = item.system.puissance;
     }
+    context.typesReligion = Object.fromEntries(Object.entries(PN2.magie.types).map(([k, d]) => [k, d.label]));
     if (item.type === "voie") context.cleVoie = item.system.cleEffective;
     if (item.type === "pouvoir") {
       const voies = item.actor ? item.actor.items.filter(i => i.type === "voie") : game.items.filter(i => i.type === "voie");
