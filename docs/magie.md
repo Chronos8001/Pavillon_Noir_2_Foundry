@@ -2,6 +2,7 @@
 
 Phase 1 : modèles de données et moteur de résolution.
 Phase 2 : onglet « Magie », fenêtres de Rituel et de Transe, bibliothèque, religions, références entre documents, validation du MJ.
+Phase 3 : Aléas, révélations, Quêtes mystiques, Rejets, séquelles, pénitences, Cycles, interruptions, panneau MJ, coffre chiffré.
 
 Le tirage de cartes du supplément est **remplacé** par des lancers successifs de 1d10 :
 
@@ -23,6 +24,11 @@ module/magie/
   controleur.mjs       état de saisie et contexte des interfaces (onglet, fenêtres) ; transmet les demandes au service
   apps-actes.mjs       fenêtres de Rituel et de Transe (ApplicationV2, redimensionnables)
   app-bibliotheque.mjs bibliothèque de magie (ApplicationV2)
+  evenements.mjs       Aléas, révélations, Quêtes : tirages internes en d10 — pur
+  consequences.mjs     archive des Rejets, séquelles, pénitences, malus d'Auspices — pur
+  coffre.mjs           chiffrement AES-GCM des secrets du MJ (WebCrypto) — pur
+  service-evenements.mjs examen secret des sollicitations, décisions du MJ, protection des conséquences
+  app-evenements.mjs   panneau « Événements divins » (MJ)
 templates/actor/personnage/magie.hbs, magie-mj.hbs        onglet de la fiche
 templates/apps/magie-rituel.hbs, magie-transe.hbs, magie-bibliotheque.hbs, magie-repartition.hbs
 templates/chat/magie-acte.hbs, magie-sollicitation.hbs, magie-evenement.hbs
@@ -192,3 +198,77 @@ game.pn2.magie.moteur / .regles           // fonctions pures
 `npm test` (Node 20+, sans dépendance) : règles, moteur (Rituel, Transe, Rejet, doublons, requêtes périmées), verrou, statistiques,
 sérialisation, compendiums (religions, Voies, références UUID, concordance des types), Puissance secrète, vue joueur, validation
 narrative, références cassées et import.
+
+## Phase 3 — événements divins
+
+### Confidentialité réelle des secrets
+
+Foundry envoie à tous les clients toutes les données des documents, les messages (chuchotés compris) et les réglages du monde,
+et ne contrôle pas la lecture des compendiums (vérifié dans le code serveur de Foundry 14). Un secret écrit en clair serait donc lisible.
+
+- Les tirages secrets (Aléa, révélation, objectif de Quête) sont faits **sur le client du MJ actif**, avec les dés de Foundry, sans message.
+- Leurs résultats sont **chiffrés (AES-GCM 256 bits)** dans `flags["pavillon-noir-2"].coffre`. La clé reste dans le navigateur du MJ
+  (réglage local) ; seule son empreinte est publiée (`magieEmpreinteCle`) pour vérifier qu'un autre MJ a la bonne clé.
+- Panneau « Événements divins » : afficher, sauvegarder ou importer la clé. **Clé perdue = secrets illisibles** (le jeu continue).
+- Aucune carte de chat ne contient de secret : le MJ reçoit une notification locale. Le joueur n'apprend une révélation
+  qu'à travers la compulsion que le MJ lui communique, et un Aléa que si le MJ le communique.
+- `flags["pavillon-noir-2"].examen` : marqueur public des lancers déjà examinés (tous le sont, il ne révèle rien).
+
+### Examen des sollicitations
+
+Le MJ actif examine chaque acte dès qu'il change (hook `updateActor`) et à sa connexion (reprise après déconnexion) :
+lancers non examinés, Quête commencée ou terminée, acte terminé. L'examen est idempotent et **ne modifie jamais l'acte** ni le d10 sacré.
+
+### Aléas
+
+| | Règle |
+|---|---|
+| Officiel (p. 95, 121) | un Aléa par acte, désigné par la première Lame ; Puissance = 1 + Lames de même sens qui suivent ; Impact selon la table p. 100 |
+| Adaptation | sens = premier d10 (Succès : droit, Colère : renversé) ; Puissance = suite initiale de résultats identiques dans l'historique des d10 |
+| Déclenchement | réglage `magieAleaMode` : « probabilite » (défaut, maison, `magieAleaProbabilite` = 30 % tiré avec deux d10), « officiel » (chaque acte), « désactivé » |
+| Choix de l'Aléa | parmi les objets « Aléa divin » (monde et compendiums) applicables (type d'acte, religion, Voie, sens), au prorata de leur poids, avec deux d10 |
+
+Les 44 Aléas du supplément (Arcanes majeurs droits et renversés) ne sont pas fournis : aucune correspondance officielle d10 → Arcane n'existe.
+Sans Aléa défini, l'Aléa garde son sens et sa Puissance, et le MJ l'interprète. Le MJ peut appliquer, différer, ignorer, réinterpréter.
+
+### Révélations (Le Mat)
+
+- Adaptation maison : deux d10 indépendants par sollicitation, déclenchement si le pourcentage ≤ `magieRevelationSeuil` (2 % par défaut :
+  2 combinaisons sur 100).
+- Puissance (officiel, p. 121) : Rituel = Succès obtenus **avant** la révélation, plafond Foi/Connaissance + 1 ; Transe = Niveau + 1.
+- Décision du MJ : accepter (Pouvoir existant de la bonne Voie et Puissance, ou nouveau Pouvoir), différer, refuser. Un Pouvoir accepté est
+  ajouté **inaccessible**, avec sa compulsion (p. 141) : il devient utilisable quand la compulsion est assouvie.
+
+### Quête mystique (p. 138)
+
+Action de Transe : le prêtre explore sans changer de niveau ; il peut s'arrêter après un Succès. Le MJ tire en secret l'objectif (1D6 du
+supplément, tiré en d10 avec relance de 7 à 10). Réussite si les Succès de la Quête atteignent l'objectif → révélation de Puissance Niveau + 1
+soumise au MJ. Le joueur ne connaît ni l'objectif ni l'issue.
+
+### Rejet, séquelles, pénitences (p. 118, 122, 127-128)
+
+- À la fin d'un acte rejeté, le MJ actif archive le Rejet dans `system.magie.rejets` : religion, Voie, type d'acte, Colère, Seuil,
+  dépassement, Puissance (Pouvoir invoqué en Rituel, le plus puissant obtenu en Transe), niveaux, Pouvoirs activés annulés, dates.
+- Le MJ impose une séquelle (nature, gravité, durée, restrictions, levée, malus d'Auspices) et une pénitence par point de dépassement,
+  communiquées tout de suite ou gardées en brouillon chiffré.
+- Séquelle active : **−5 aux Auspices** des actes dans la même Voie (ou toutes, au choix du MJ), compté avec les Péchés.
+- Pénitences : à accomplir, en cours, accomplie, abandonnée ; prochaine repentance après 3 jours (priorité) ou 7 jours.
+  Une séquelle devient « levable » quand toutes ses pénitences sont accomplies ; le MJ la lève.
+- `system.magie.rejets`, `sequelles`, `penitences` et le coffre ne sont modifiables que par le MJ (`PN2Actor._preUpdate`).
+
+### Cycle, interruptions et cas particuliers
+
+| Cas | Traitement |
+|---|---|
+| Cycle écoulé (p. 135) | signalé une fois par niveau quand le temps du monde avance ; aucune action automatique ; le MJ peut **imposer le détachement** |
+| Transe instantanée | Cycle de 30 min, Beauté nulle (déjà en place) |
+| Perte de concentration pendant une ascension (p. 136) | décision du MJ : l'ascension échoue, 2 d10 de plus dont seules les Colères comptent ; le Rejet reste immédiat |
+| Interruption de Rituel ou de Transe | réservée au MJ ; la Colère déjà tirée est conservée |
+| Fermeture de Foundry, déconnexion | l'acte est enregistré ; le joueur reprend ; les sollicitations non examinées le sont à la reconnexion du MJ |
+| Changement de propriétaire | un nouveau propriétaire peut prendre la main si le pilote n'est plus propriétaire ou est déconnecté |
+
+### Règle officielle non appliquée (à valider)
+
+Après un Rejet, le supplément (p. 127) fait **continuer** le tirage (Rituel : jusqu'à un Succès ; Transe : se détacher jusqu'à sortir)
+et compte les Colères tirées depuis le Rejet pour la durée des séquelles. Le système conserve la règle validée en phase 1 : le Rejet
+arrête l'acte. Le nombre de pénitences est donc le dépassement du Seuil à cet instant.

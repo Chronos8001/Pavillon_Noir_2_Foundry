@@ -13,6 +13,7 @@ import * as R from "./regles.mjs";
 import * as M from "./moteur.mjs";
 import { VerrouCles } from "./verrou.mjs";
 import * as Ref from "./references.mjs";
+import { malusSequelles } from "./consequences.mjs";
 
 const SYS = PN2.id;
 const TPL = "systems/pavillon-noir-2/templates";
@@ -102,7 +103,8 @@ export function profilReligieux(actor) {
     type: m.typeEffectif, typeSaisi: m.type, typeDeduit: m.typeDeduit, typeDef: types[m.typeEffectif] ?? null,
     faveurs: m.faveurs, faveursMod: m.faveursMod, chance: actor.system.chance, groupeColere: m.groupeColere,
     colereActuelle: consulterColere(actor, m.groupeColere),
-    actesFoi: m.actesFoi, peches: m.peches, colere, voies, pouvoirs, acte, demande: demandeCourante(actor)
+    actesFoi: m.actesFoi, peches: m.peches, colere, voies, pouvoirs, acte, demande: demandeCourante(actor),
+    rejets: m.rejets ?? [], sequelles: m.sequelles ?? [], penitences: m.penitences ?? []
   };
 }
 
@@ -136,7 +138,7 @@ export function parametresActe(actor, form, { pilote = null, validation = null }
       actesFoi: num(form.actesFoi, m.actesFoi),
       affinite: num(form.affinite, voie.system.affinite),
       beaute: num(form.beaute, 0),
-      peches: num(form.peches, m.peches)
+      peches: num(form.peches, m.peches) + malusSequelles(m.sequelles, voie.system.cleEffective, cfg().sequelles.malusAuspices)
     },
     maintenant: maintenant()
   };
@@ -517,8 +519,9 @@ export async function repartir(actor, repartition, { activation = null, ...ctx }
     : M.repartirAmeliorations(etat, repartition, ctx)), { pilote: !game.user.isGM });
 }
 
-/** Interruption imposée par une autre règle (MJ ou pilote). */
+/** Interruption imposée par une autre règle : décision du MJ (le joueur ne peut pas fuir une série défavorable). */
 export async function interrompre(actor, { motif = "", terminer = false } = {}, ctx = {}) {
+  if (!game.user.isGM) throw new R.MagieError("permission", "Seul le MJ peut imposer une interruption.");
   const res = await operer(actor, ctx, async etat => M.interrompre(etat, { motif, terminer }, { ...ctx, maintenant: maintenant() }),
     { pilote: !game.user.isGM });
   if (!res.doublon) await messageFinSiBesoin(actor, res);
@@ -534,11 +537,69 @@ export async function annuler(actor, ctx = {}) {
 export async function reprendre(actor, ctx = {}) {
   return operer(actor, ctx, async etat => {
     const pilote = game.users.get(etat.pilote);
-    if (!game.user.isGM && pilote?.active && pilote.id !== game.user.id) {
+    const piloteLegitime = pilote?.active && actor.testUserPermission(pilote, "OWNER");
+    if (!game.user.isGM && piloteLegitime && pilote.id !== game.user.id) {
       throw new R.MagieError("pilote", `${pilote.name} conduit cet acte et est connecté.`);
     }
     return M.changerPilote(etat, game.user.id, ctx);
   }, { pilote: false });
+}
+
+/* -------------------------------------------- */
+/*  Cycle, concentration, détachement imposé    */
+/* -------------------------------------------- */
+
+/** Le Cycle du niveau courant est écoulé : signalement unique (aucune action automatique). */
+export async function signalerCycleEchu(actor) {
+  const res = await operer(actor, {}, async etat => M.signalerCycle(etat, { maintenant: maintenant() }), { pilote: false });
+  if (!res.doublon) {
+    await ChatMessage.create({
+      speaker: ChatMessage.getSpeaker({ actor }),
+      content: await render("chat/magie-evenement.hbs", {
+        titre: `Cycle de transe écoulé : ${res.etat.voie.nom}`, classe: "echec",
+        lignes: [`Niveau de transe ${res.etat.transe.niveau} : le prêtre doit faire ascension ou se détacher.`],
+        note: "S'il ne bouge pas, le MJ peut lui imposer de se détacher (Entre ciel et terre, p. 135)."
+      }),
+      whisper: destinataires(actor)
+    });
+  }
+  return res;
+}
+
+/** Le MJ impose un détachement (Cycle écoulé) : le joueur doit le résoudre par ses sollicitations. */
+export async function imposerDetachement(actor, ctx = {}) {
+  if (!game.user.isGM) throw new R.MagieError("permission", "Seul le MJ peut imposer un détachement.");
+  return operer(actor, ctx, async etat => M.commencerAction(etat, M.ACTION.DETACHEMENT, { impose: game.user.id }, { ...ctx, maintenant: maintenant() }),
+    { pilote: false });
+}
+
+/**
+ * Perte de concentration pendant une ascension (blessure…) : l'ascension échoue et le prêtre lance
+ * 2 d10 supplémentaires dont seules les Colères comptent (Entre ciel et terre, p. 136). Décision du MJ.
+ */
+export async function echecConcentration(actor, { motif = "" } = {}, ctx = {}) {
+  if (!game.user.isGM) throw new R.MagieError("permission", "Seul le MJ constate une perte de concentration.");
+  let roll = null;
+  const res = await operer(actor, ctx, async etat => {
+    M.echecConcentration(etat, Array(cfg().concentration.des).fill(1), { motif });   // validation sans lancer
+    roll = await new Roll(`${cfg().concentration.des}d10`).evaluate();
+    return M.echecConcentration(etat, roll.dice[0].results.map(r => r.result), { motif }, { ...ctx, maintenant: maintenant() });
+  }, { pilote: false });
+  if (!res.doublon) {
+    const data = {
+      speaker: ChatMessage.getSpeaker({ actor }), rolls: [roll],
+      content: await render("chat/magie-evenement.hbs", {
+        titre: "Perte de concentration", classe: "echec",
+        lignes: [`L'ascension échoue${motif ? ` (${motif})` : ""}.`,
+          ...res.lancers.map(l => `d10 : ${l.valeur} — ${l.ignore ? "Succès ignoré" : "Colère divine"}`)],
+        note: res.rejet ? "Rejet !" : "Seules les Colères sont retenues."
+      })
+    };
+    appliquerVisibilite(data);
+    await ChatMessage.create(data);
+    await messageFinSiBesoin(actor, res);
+  }
+  return res;
 }
 
 /* -------------------------------------------- */

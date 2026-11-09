@@ -5,7 +5,7 @@ import { PN2 } from "./config.mjs";
 import { PersonnageData } from "./data/actor-personnage.mjs";
 import { PNJData } from "./data/actor-pnj.mjs";
 import { NavireData } from "./data/actor-navire.mjs";
-import { ArmeData, ArmureData, EquipementData, AvantageData, ManoeuvreData, MarchandiseData, HistoriqueData, ReligionData, VoieData, PouvoirData } from "./data/items.mjs";
+import { ArmeData, ArmureData, EquipementData, AvantageData, ManoeuvreData, MarchandiseData, HistoriqueData, ReligionData, VoieData, PouvoirData, AleaData } from "./data/items.mjs";
 import { PN2Actor } from "./documents/actor.mjs";
 import { PN2Item } from "./documents/item.mjs";
 import { PN2PersonnageSheet } from "./sheets/actor-personnage-sheet.mjs";
@@ -20,6 +20,8 @@ import * as magieMoteur from "./magie/moteur.mjs";
 import * as magieRegles from "./magie/regles.mjs";
 import { ouvrirActe, surMiseAJourActeur, rafraichirTranses } from "./magie/apps-actes.mjs";
 import { PN2BibliothequeApp } from "./magie/app-bibliotheque.mjs";
+import * as evenements from "./magie/service-evenements.mjs";
+import { PN2EvenementsApp } from "./magie/app-evenements.mjs";
 
 Hooks.once("init", () => {
   console.log("Pavillon Noir 2 | Initialisation du système");
@@ -39,7 +41,9 @@ Hooks.once("init", () => {
       /** Ouvre la fenêtre du Rituel ou de la Transe du personnage. */
       ouvrirActe,
       /** Ouvre la bibliothèque de magie (religions, Voies, Pouvoirs). */
-      bibliotheque: actor => PN2BibliothequeApp.ouvrir(actor)
+      bibliotheque: actor => PN2BibliothequeApp.ouvrir(actor),
+      /** Événements divins (MJ) : Aléas, révélations, Quêtes, Rejets, séquelles, pénitences. */
+      evenements: { ...evenements, ouvrir: () => PN2EvenementsApp.ouvrir() }
     }
   };
 
@@ -48,7 +52,7 @@ Hooks.once("init", () => {
   CONFIG.Actor.dataModels = { personnage: PersonnageData, pnj: PNJData, navire: NavireData };
   CONFIG.Item.dataModels = {
     arme: ArmeData, armure: ArmureData, equipement: EquipementData, avantage: AvantageData, manoeuvre: ManoeuvreData, marchandise: MarchandiseData, historique: HistoriqueData,
-    religion: ReligionData, voie: VoieData, pouvoir: PouvoirData
+    religion: ReligionData, voie: VoieData, pouvoir: PouvoirData, alea: AleaData
   };
   CONFIG.Actor.trackableAttributes = {
     personnage: { bar: [], value: ["initiative", "chance"] },
@@ -112,6 +116,25 @@ function registerSettings() {
     hint: "Entre ciel et terre : les paramètres (Portée, Cible, Impact, Durée) sont normalement réservés au MJ.",
     scope: "world", config: true, type: Boolean, default: false
   });
+  game.settings.register(PN2.id, "magieAleaMode", {
+    name: "Magie : Aléas divins",
+    hint: "Officiel : un Aléa par acte sacré (Entre ciel et terre, p. 95). Probabilité : adaptation maison, un Aléa selon la chance réglée ci-dessous. Le MJ peut toujours appliquer, différer ou ignorer un Aléa.",
+    scope: "world", config: true, type: String, default: PN2.magie.evenements.aleaMode,
+    choices: { probabilite: "Selon une probabilité (adaptation maison)", officiel: "Un par acte sacré (officiel)", desactive: "Désactivés" }
+  });
+  game.settings.register(PN2.id, "magieAleaProbabilite", {
+    name: "Magie : chance d'Aléa par acte (%)",
+    hint: "Tirée avec deux d10 au premier lancer de l'acte. Valeur maison à ajuster.",
+    scope: "world", config: true, type: Number, default: PN2.magie.evenements.aleaProbabilite, range: { min: 0, max: 100, step: 1 }
+  });
+  game.settings.register(PN2.id, "magieRevelationSeuil", {
+    name: "Magie : chance de révélation par sollicitation (%)",
+    hint: "Équivalent maison de la carte Le Mat, tiré avec deux d10 indépendants du d10 sacré. 0 désactive les révélations.",
+    scope: "world", config: true, type: Number, default: PN2.magie.evenements.revelationSeuil, range: { min: 0, max: 100, step: 1 }
+  });
+  // Coffre du MJ : la clé reste dans le navigateur du MJ ; seule son empreinte est publiée
+  game.settings.register(PN2.id, "magieCleCoffre", { scope: "client", config: false, type: String, default: "" });
+  game.settings.register(PN2.id, "magieEmpreinteCle", { scope: "world", config: false, type: String, default: "" });
   game.settings.register(PN2.id, "magieRecuperationAuto", {
     name: "Magie : récupération automatique de la Colère",
     hint: "Retire 1 point de Colère divine par heure de temps du monde écoulée après la fin d'un acte sacré (jamais pendant un Rituel ou une Transe).",
@@ -123,10 +146,34 @@ function registerSettings() {
 Hooks.on("updateWorldTime", worldTime => {
   magie.surAvanceeDuTemps(worldTime);
   rafraichirTranses();
+  evenements.verifierCycles().catch(err => console.error(err));
 });
 
-/* Magie : la fenêtre de l'acte s'ouvre pour l'utilisateur qui le conduit, dès son début */
-Hooks.on("updateActor", (actor, changes) => surMiseAJourActeur(actor, changes));
+/* Magie : la fenêtre de l'acte s'ouvre pour l'utilisateur qui le conduit, dès son début ;
+   le MJ actif examine en secret chaque sollicitation (Aléas, révélations, Quêtes, Rejets) */
+Hooks.on("updateActor", (actor, changes, options) => {
+  surMiseAJourActeur(actor, changes);
+  if (!options?.pn2Evenements && foundry.utils.hasProperty(changes, "flags.pavillon-noir-2.acte")) {
+    evenements.examinerActeur(actor).catch(err => console.error("Pavillon Noir 2 | Examen des événements", err));
+  }
+  if (options?.pn2Evenements) evenements.rafraichirPanneau();
+});
+
+/* Magie : reprise après une déconnexion du MJ ; panneau des événements divins dans l'onglet des acteurs */
+Hooks.once("ready", () => {
+  evenements.examinerTout().catch(err => console.error("Pavillon Noir 2 | Examen des événements", err));
+});
+Hooks.on("renderActorDirectory", (app, html) => {
+  if (!game.user.isGM) return;
+  const racine = html instanceof HTMLElement ? html : html?.[0];
+  if (!racine || racine.querySelector(".pn2-bouton-evenements")) return;
+  const bouton = document.createElement("button");
+  bouton.type = "button";
+  bouton.className = "pn2-bouton-evenements";
+  bouton.innerHTML = '<i class="fa-solid fa-cloud-bolt"></i> Événements divins';
+  bouton.addEventListener("click", () => PN2EvenementsApp.ouvrir());
+  (racine.querySelector(".header-actions") ?? racine.querySelector("header") ?? racine).append(bouton);
+});
 
 /* Magie : accès à la bibliothèque depuis l'onglet des compendiums */
 Hooks.on("renderCompendiumDirectory", (app, html) => {

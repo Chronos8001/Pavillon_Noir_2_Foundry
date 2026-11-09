@@ -32,7 +32,7 @@ export class PN2ItemSheet extends HandlebarsApplicationMixin(foundry.application
     context.config = PN2;
     context.editable = this.isEditable;
     context.type = item.type;
-    context.isType = Object.fromEntries(["arme", "armure", "equipement", "avantage", "manoeuvre", "marchandise", "historique", "religion", "voie", "pouvoir"].map(t => [t, item.type === t]));
+    context.isType = Object.fromEntries(["arme", "armure", "equipement", "avantage", "manoeuvre", "marchandise", "historique", "religion", "voie", "pouvoir", "alea"].map(t => [t, item.type === t]));
     context.caracOptions = Object.fromEntries(Object.entries(PN2.caracs).map(([k, d]) => [k, d.label]));
     const comps = { mainsNues: "Combat à mains nues", mousquet: "Mousquet", pistolet: "Pistolet", grenade: "Grenade", armesBlanches: "Armes blanches (spécialité)", armesJet: "Armes de jet/trait (spécialité)" };
     context.competences = comps;
@@ -65,6 +65,11 @@ export class PN2ItemSheet extends HandlebarsApplicationMixin(foundry.application
     }
     context.typesReligion = Object.fromEntries(Object.entries(PN2.magie.types).map(([k, d]) => [k, d.label]));
     if (["religion", "voie", "pouvoir"].includes(item.type)) await this.#contexteMagie(item, context);
+    if (item.type === "alea") {
+      context.categoriesAlea = { "": "—", tirage: "Tirage", activation: "Activation", duree: "Durée des effets", consequences: "Conséquences des effets" };
+      context.sensAlea = { "": "Les deux", droit: "Droit (Succès)", renverse: "Renversé (Colère)" };
+      context.visibilitesAlea = { mj: "MJ seulement", joueur: "Joueur" };
+    }
     context.descriptionHTML = await foundry.applications.ux.TextEditor.implementation.enrichHTML(item.system.description ?? "", { async: true, relativeTo: item });
     return context;
   }

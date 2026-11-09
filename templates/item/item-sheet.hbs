@@ -151,6 +151,21 @@
   </fieldset>
   {{/if}}
 
+  {{#if isType.alea}}
+  <div class="grid-2">
+    <div class="ligne"><label>Religion (clé, vide : toutes)</label><input type="text" name="system.religion" value="{{system.religion}}"></div>
+    <div class="ligne"><label>Voie (clé, vide : toutes)</label><input type="text" name="system.voie" value="{{system.voie}}"></div>
+    <div class="ligne"><label>Catégorie</label><select name="system.categorie">{{selectOptions categoriesAlea selected=system.categorie}}</select></div>
+    <div class="ligne"><label>Sens</label><select name="system.conditions.sens">{{selectOptions sensAlea selected=system.conditions.sens}}</select></div>
+    <div class="ligne"><label>Gravité</label><input type="number" name="system.gravite" value="{{system.gravite}}" min="0"></div>
+    <div class="ligne"><label>Poids dans le tirage</label><input type="number" name="system.poids" value="{{system.poids}}" min="0"></div>
+    <div class="ligne"><label>Visibilité par défaut</label><select name="system.visibilite">{{selectOptions visibilitesAlea selected=system.visibilite}}</select></div>
+  </div>
+  <div class="ligne"><label>Effet narratif</label><input type="text" name="system.effetNarratif" value="{{system.effetNarratif}}"></div>
+  <div class="ligne"><label>Effet mécanique éventuel</label><input type="text" name="system.effetMecanique" value="{{system.effetMecanique}}"></div>
+  <p class="hint">Tiré en secret (d10) pendant les actes sacrés, puis soumis au MJ (Entre ciel et terre, p. 95, 121).</p>
+  {{/if}}
+
   {{#if isType.religion}}
   <div class="grid-2">
     <div class="ligne"><label>Type de religion</label><select name="system.type"><option value="">— À renseigner —</option>{{selectOptions typesReligion selected=system.type}}</select></div>

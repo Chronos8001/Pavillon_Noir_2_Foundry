@@ -1,0 +1,147 @@
+<div class="pn2-magie pn2-ev">
+  <div class="pn2-ev-cle">
+    {{#if cle.presente}}
+      {{#if cle.concordante}}<span><i class="fa-solid fa-lock"></i> Coffre du MJ ouvert (empreinte {{cle.empreinte}}).</span>
+      {{else}}<span class="alerte"><i class="fa-solid fa-triangle-exclamation"></i> Cette clé ne correspond pas à celle du monde.</span>{{/if}}
+      <a class="pn2-btn petit" data-action="op" data-op="afficherCle">Afficher la clé</a>
+      <a class="pn2-btn petit" data-action="op" data-op="importerCle">Importer une clé</a>
+    {{else if cle.attendue}}
+      <span class="alerte"><i class="fa-solid fa-lock"></i> Clé du coffre absente sur ce navigateur : les secrets ne sont pas lisibles.</span>
+      <a class="pn2-btn petit" data-action="op" data-op="importerCle">Importer la clé</a>
+    {{else}}
+      <span>Aucun coffre. </span><a class="pn2-btn petit" data-action="op" data-op="creerCle">Créer la clé du coffre</a>
+    {{/if}}
+  </div>
+
+  <div class="pn2-ev-corps">
+  {{#each acteurs}}
+  <section class="pn2-ev-acteur" data-acteur="{{id}}">
+    <h2><img src="{{img}}" width="24" height="24"> {{nom}}</h2>
+
+    {{#if acte}}
+    <div class="pn2-ev-bloc" data-bloc="acte">
+      <h3>{{acte.type}} en cours — {{acte.voie}}</h3>
+      <p>Pilote : {{acte.pilote}}{{#unless acte.piloteActif}} <span class="alerte">(déconnecté)</span>{{/unless}} · {{acte.lancers}} d10 · {{acte.succes}} Succès · Colère <strong>{{acte.colere}}</strong> / Seuil {{acte.seuil}}
+        {{#if (eq acte.type "Transe")}} · Niveau {{acte.niveau}}{{/if}}</p>
+      {{#if acte.cycle}}<p>Cycle {{acte.cycle.duree}} min — {{#if acte.cycle.depasse}}<span class="alerte">échu : décision nécessaire</span>{{else if acte.cycle.restantMin}}reste {{acte.cycle.restantMin}} min{{else}}—{{/if}}</p>{{/if}}
+      <div class="boutons">
+        <a class="pn2-btn petit" data-action="op" data-op="ouvrirActe">Observer</a>
+        {{#if acte.peutImposer}}<a class="pn2-btn petit" data-action="op" data-op="imposer">Imposer le détachement</a>{{/if}}
+        {{#if acte.peutConcentration}}<input type="text" data-champ="motif" placeholder="Motif (blessure…)"><a class="pn2-btn petit" data-action="op" data-op="concentration">Perte de concentration</a>{{/if}}
+      </div>
+    </div>
+    {{/if}}
+
+    {{#if coffreErreur}}<p class="alerte">{{coffreErreur}}</p>{{/if}}
+
+    {{#each aleas}}
+    <div class="pn2-ev-bloc secret" data-bloc="alea" data-id="{{id}}">
+      <h3><i class="fa-solid fa-bolt"></i> Aléa — {{voie}} ({{typeActe}}) <span class="tag">{{statutLabel}}</span></h3>
+      <p>{{#if aleaNom}}<strong>{{aleaNom}}</strong>{{else}}<em>Aucun Aléa défini ne correspond : à interpréter.</em>{{/if}} · sens {{#if (eq sens "droit")}}droit (Succès){{else}}renversé (Colère){{/if}}
+        · Puissance {{#if puissance}}{{puissance}}{{else}}<em>suite en cours</em>{{/if}}</p>
+      <div class="ligne"><label>Interprétation du MJ</label><input type="text" data-champ="interpretation" value="{{interpretation}}"></div>
+      <div class="boutons">
+        <label><input type="checkbox" data-champ="communiquer"> communiquer au joueur</label>
+        <a class="pn2-btn petit" data-action="op" data-op="alea" data-decision="appliquer">Appliquer</a>
+        <a class="pn2-btn petit" data-action="op" data-op="alea" data-decision="differer">Différer</a>
+        <a class="pn2-btn petit" data-action="op" data-op="alea" data-decision="ignorer">Ignorer</a>
+      </div>
+    </div>
+    {{/each}}
+
+    {{#each revelations}}
+    <div class="pn2-ev-bloc secret" data-bloc="revelation" data-id="{{id}}">
+      <h3><i class="fa-solid fa-eye"></i> Révélation — {{voie}} <span class="tag">{{statutLabel}}</span></h3>
+      <p>{{origineLabel}} · {{#if (eq typeActe "transe")}}Niveau de transe {{niveau}}{{else}}{{succesAvant}} Succès avant la révélation{{/if}} → Pouvoir de Puissance <strong>{{puissance}}</strong></p>
+      {{#if puissance}}
+      <div class="grid-2">
+        <div class="ligne"><label>Pouvoir existant</label><select data-champ="pouvoir"><option value="">—</option>{{#each candidats}}<option value="{{uuid}}">{{nom}}</option>{{/each}}</select></div>
+        <div class="ligne"><label>ou nouveau Pouvoir</label><input type="text" data-champ="nouveau" placeholder="Nom du Pouvoir"></div>
+      </div>
+      <div class="ligne"><label>Compulsion (communiquée au joueur)</label><input type="text" data-champ="compulsion"></div>
+      {{else}}<p class="hint">Puissance 0 : aucun Pouvoir ne peut être découvert.</p>{{/if}}
+      <div class="boutons">
+        {{#if puissance}}<a class="pn2-btn petit" data-action="op" data-op="revelation" data-decision="accepter">Accepter</a>{{/if}}
+        <a class="pn2-btn petit" data-action="op" data-op="revelation" data-decision="differer">Différer</a>
+        <a class="pn2-btn petit" data-action="op" data-op="revelation" data-decision="refuser">Refuser</a>
+      </div>
+    </div>
+    {{/each}}
+
+    {{#if quetes.length}}
+    <div class="pn2-ev-bloc secret">
+      <h3><i class="fa-solid fa-compass"></i> Quêtes mystiques</h3>
+      <ul>{{#each quetes}}<li>Quête {{n}} — {{voie}} : objectif secret <strong>{{objectif}}</strong> Succès
+        {{#if (eq statut "resolue")}} — {{succes}} obtenus : {{#if reussie}}réussie (révélation en attente){{else}}échec (le joueur ne le sait pas){{/if}}{{else}} — en cours{{/if}}</li>{{/each}}</ul>
+    </div>
+    {{/if}}
+
+    {{#each rejets}}
+    <div class="pn2-ev-bloc rejet" data-bloc="rejet" data-id="{{id}}">
+      <h3><i class="fa-solid fa-skull"></i> Rejet à résoudre — {{voie}} ({{typeActe}})</h3>
+      <p>Colère {{colere}} / Seuil {{seuil}} → dépassement <strong>{{depassement}}</strong> · Puissance {{puissance}}{{#if pouvoir}} ({{pouvoir}}){{/if}}
+        {{#if niveauRejet}} · Niveau au Rejet {{niveauRejet}}, maximal {{niveauMax}}{{/if}}{{#if dateReelle}} · {{dateReelle}}{{/if}}</p>
+      {{#if pouvoirsAnnules.length}}<p class="hint">Pouvoirs activés annulés : {{#each pouvoirsAnnules}}{{this}}{{#unless @last}}, {{/unless}}{{/each}}</p>{{/if}}
+      <p class="hint">Nature inspirée du Pouvoir (effet secondaire ou opposé) ; gravité selon sa Puissance ; une pénitence par point de dépassement (Entre ciel et terre, p. 128).</p>
+      <div class="grid-2">
+        <div class="ligne"><label>Séquelle</label><input type="text" data-champ="nature" placeholder="Nature de la séquelle"></div>
+        <div class="ligne"><label>Gravité</label><input type="number" data-champ="gravite" value="{{puissance}}"></div>
+        <div class="ligne"><label>Durée</label><input type="text" data-champ="duree" placeholder="Jusqu'aux pénitences accomplies"></div>
+        <div class="ligne"><label>Restrictions</label><input type="text" data-champ="restrictions"></div>
+        <div class="ligne"><label>Conditions de levée</label><input type="text" data-champ="levee"></div>
+        <div class="ligne"><label>Malus d'Auspices (-5)</label><span><input type="checkbox" data-champ="malus" checked> <label><input type="checkbox" data-champ="toutesVoies"> toutes les Voies</label></span></div>
+      </div>
+      <div class="ligne"><label>Pénitences ({{nbPenitences}}, une par ligne)</label><textarea data-champ="penitences" rows="3">{{lignesPenitences}}</textarea></div>
+      <div class="boutons">
+        <label><input type="checkbox" data-champ="priorite"> repentance prioritaire (tous les 3 jours)</label>
+        <label><input type="checkbox" data-champ="communiquer" checked> communiquer maintenant</label>
+        <a class="pn2-btn petit" data-action="op" data-op="imposerConsequences">Imposer</a>
+        <input type="text" data-champ="conclusion" placeholder="Conclusion">
+        <a class="pn2-btn petit" data-action="op" data-op="cloreRejet">Clore sans conséquence</a>
+      </div>
+    </div>
+    {{/each}}
+
+    {{#each brouillons}}
+    <div class="pn2-ev-bloc secret" data-bloc="brouillon" data-id="{{id}}">
+      <h3>Conséquences en brouillon (non communiquées)</h3>
+      {{#if sequelle}}<p>Séquelle : {{sequelle.nature}}</p>{{/if}}
+      <ul>{{#each penitences}}<li>{{description}}</li>{{/each}}</ul>
+      <a class="pn2-btn petit" data-action="op" data-op="communiquer">Communiquer au joueur</a>
+    </div>
+    {{/each}}
+
+    {{#if sequelles.length}}
+    <h3>Séquelles actives</h3>
+    {{#each sequelles}}
+    <div class="pn2-ev-bloc" data-bloc="sequelle" data-id="{{id}}">
+      <p><strong>{{nature}}</strong> (gravité {{gravite}}{{#if duree}}, {{duree}}{{/if}}) — {{restantes}} pénitence(s) restante(s){{#if abandonnees}}, {{abandonnees}} abandonnée(s){{/if}}
+        {{#if levable}}<span class="tag">levable</span>{{/if}}</p>
+      <a class="pn2-btn petit" data-action="op" data-op="lever">Lever la séquelle</a>
+    </div>
+    {{/each}}
+    {{/if}}
+
+    {{#if penitences.length}}
+    <h3>Pénitences en cours</h3>
+    {{#each penitences}}
+    <div class="pn2-ev-bloc" data-bloc="penitence" data-id="{{id}}">
+      <p>{{description}} <span class="tag">{{etatLabel}}</span>{{#if prochaine}} <span class="hint">prochaine repentance dans {{prochaine}} j</span>{{/if}}</p>
+      <div class="boutons">
+        <select data-champ="etat">{{selectOptions @root.etatsPenitence selected=etat}}</select>
+        <input type="text" data-champ="note" value="{{note}}" placeholder="Note">
+        <a class="pn2-btn petit" data-action="op" data-op="penitence">Valider</a>
+      </div>
+    </div>
+    {{/each}}
+    {{/if}}
+  </section>
+  {{/each}}
+  {{#if vide}}<p class="hint">Aucun événement divin pour le moment.</p>{{/if}}
+
+  {{#if historique.length}}
+  <h2>Historique</h2>
+  <ul class="pn2-journal">{{#each historique}}<li><strong>{{acteur}}</strong> — {{texte}}</li>{{/each}}</ul>
+  {{/if}}
+  </div>
+</div>

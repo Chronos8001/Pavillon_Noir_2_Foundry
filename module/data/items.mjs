@@ -199,6 +199,30 @@ export class VoieData extends BaseItemData {
   get cleEffective() { return cleVoie(this.parent?.name, this.cle); }
 }
 
+/**
+ * Aléa divin (Entre ciel et terre, p. 95, 121) : manifestation imprévisible associée à un acte sacré.
+ * Le contenu officiel n'est pas fourni : le MJ crée ou importe ses Aléas.
+ */
+export class AleaData extends BaseItemData {
+  static defineSchema() {
+    return {
+      ...super.defineSchema(),
+      religion: str(""),            // clé de religion (vide : toutes)
+      voie: str(""),                // clé de Voie (vide : toutes)
+      conditions: new f.SchemaField({
+        typesActe: new f.ArrayField(new f.StringField({ required: true, blank: false })),  // rituel, transe (vide : tous)
+        sens: str("")               // droit | renverse (vide : les deux)
+      }),
+      categorie: str(""),           // tirage | activation | duree | consequences (p. 121)
+      gravite: int(1, { min: 0 }),
+      poids: int(1, { min: 0 }),    // poids relatif dans le tirage (0 : jamais tiré)
+      effetNarratif: str(""),
+      effetMecanique: str(""),
+      visibilite: str("mj")         // mj | joueur : visibilité par défaut quand l'Aléa est appliqué
+    };
+  }
+}
+
 /** Pouvoir d'une Voie d'illumination. */
 export class PouvoirData extends BaseItemData {
   static defineSchema() {

@@ -11,7 +11,7 @@
       <em>{{#if cycle.echeance}}{{#if cycle.depasse}}<span class="alerte">échéance dépassée</span>{{else}}reste {{cycle.restantMin}} min{{/if}}{{else}}—{{/if}}</em></div>
     <div class="badge"><span>Dernier d10</span><strong class="{{#if resume.dernier}}{{resume.dernier.resultat}}{{/if}}">{{#if resume.dernier}}{{resume.dernier.valeur}}{{else}}—{{/if}}</strong></div>
   </div>
-  {{#if cycle.depasse}}{{#if transe.actif}}<p class="alerte">Le Cycle est écoulé : le personnage doit faire ascension ou se détacher.</p>{{/if}}{{/if}}
+  {{#if cycle.depasse}}{{#if transe.actif}}<p class="alerte"><i class="fa-solid fa-hourglass-end"></i> Le Cycle est écoulé : décision nécessaire — faire ascension ou se détacher.</p>{{/if}}{{/if}}
 
   <h3>Chemin d'illumination</h3>
   <ol class="pn2-chemin">
@@ -36,6 +36,7 @@
       <div class="boutons grands">
         <a class="pn2-btn {{#unless peutSolliciter}}disabled{{/unless}}" data-action="magie" data-op="solliciter" data-requete="{{requete}}" data-seq="{{seq}}"><i class="fa-solid fa-dice-d10"></i> Lancer 1d10</a>
         {{#if (eq action.type "renforcement")}}<a class="pn2-btn {{#unless peutSolliciter}}disabled{{/unless}} {{#unless resume.peutArreter}}disabled{{/unless}}" data-action="magie" data-op="arreter" data-requete="{{requete}}" data-seq="{{seq}}">Arrêter le renforcement</a>{{/if}}
+        {{#if (eq action.type "quete")}}<a class="pn2-btn {{#unless peutSolliciter}}disabled{{/unless}} {{#unless resume.peutArreter}}disabled{{/unless}}" data-action="magie" data-op="arreter" data-requete="{{requete}}" data-seq="{{seq}}">Terminer la Quête</a>{{/if}}
       </div>
     {{else}}
       <h3>Actions</h3>
@@ -49,6 +50,8 @@
           {{#if limiteAtteinte}}<p class="hint">Niveau de transe maximal atteint.</p>{{/if}}
           <div class="ligne"><span></span>
             <a class="pn2-btn {{#unless peutDetacher}}disabled{{/unless}}" data-action="magie" data-op="actionTranse" data-type="detachement" data-requete="{{requete}}" data-seq="{{seq}}"><i class="fa-solid fa-arrow-down"></i> {{#if detachementFinal}}Se détacher et sortir de Transe{{else}}Se détacher{{/if}}</a></div>
+          <div class="ligne"><span class="hint">Explorer le paysage mystique sans changer de niveau ; l'objectif est secret.</span>
+            <a class="pn2-btn {{#unless peutQuete}}disabled{{/unless}}" data-action="magie" data-op="actionTranse" data-type="quete" data-requete="{{requete}}" data-seq="{{seq}}"><i class="fa-solid fa-compass"></i> Quête mystique</a></div>
           {{#if peutRenforcer}}
           <div class="ligne"><select data-prep="activation">{{selectOptions activationsOptions selected=prep.activation}}</select>
             <a class="pn2-btn" data-action="magie" data-op="actionTranse" data-type="renforcement" data-requete="{{requete}}" data-seq="{{seq}}"><i class="fa-solid fa-plus"></i> Renforcer</a></div>
@@ -59,9 +62,18 @@
       </div>
     {{/if}}
     {{#if occupe}}<p class="hint"><i class="fa-solid fa-spinner fa-spin"></i> Opération en cours…</p>{{/if}}
-    {{#if peutIntervenir}}
+    {{#if isGM}}
+    <fieldset class="pn2-mj"><legend><i class="fa-solid fa-user-shield"></i> MJ</legend>
+      <div class="ligne"><label>Motif</label><input type="text" data-prep="motif" value="{{prep.motif}}" placeholder="Blessure, perte de concentration…"></div>
+      <div class="boutons">
+        <a class="pn2-btn petit {{#unless peutConcentration}}disabled{{/unless}}" data-action="magie" data-op="concentration" data-requete="{{requete}}" data-seq="{{seq}}" title="L'ascension échoue ; 2 d10 de plus, seules les Colères comptent (p. 136)">Perte de concentration</a>
+        <a class="pn2-btn petit {{#unless peutImposer}}disabled{{/unless}}" data-action="magie" data-op="imposer" data-requete="{{requete}}" data-seq="{{seq}}" title="Le prêtre doit se détacher (Cycle écoulé, p. 135)">Imposer le détachement</a>
+        <a class="pn2-btn petit" data-action="magie" data-op="evenements">Événements divins</a>
+      </div>
+    </fieldset>
+    {{/if}}
+    {{#if isGM}}
     <details class="notes"><summary>Interruption imposée par une autre règle</summary>
-      <div class="ligne"><label>Motif</label><input type="text" data-prep="motif" value="{{prep.motif}}"></div>
       <a class="pn2-btn petit" data-action="magie" data-op="interrompre" data-requete="{{requete}}" data-seq="{{seq}}">Interrompre l'action</a>
       <a class="pn2-btn petit" data-action="magie" data-op="interrompre" data-terminer="true" data-requete="{{requete}}" data-seq="{{seq}}">Mettre fin à la Transe</a>
     </details>

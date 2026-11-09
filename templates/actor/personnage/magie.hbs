@@ -4,7 +4,8 @@
 
   {{!-- ============ Identité religieuse ============ --}}
   <h2><i class="fa-solid fa-place-of-worship"></i> Identité religieuse
-    <a class="pn2-mini-btn" data-action="magie" data-op="bibliotheque" title="Bibliothèque de magie : religions, Voies et Pouvoirs"><i class="fa-solid fa-book-bookmark"></i> Bibliothèque</a></h2>
+    <a class="pn2-mini-btn" data-action="magie" data-op="bibliotheque" title="Bibliothèque de magie : religions, Voies et Pouvoirs"><i class="fa-solid fa-book-bookmark"></i> Bibliothèque</a>
+    {{#if isGM}}<a class="pn2-mini-btn" data-action="magie" data-op="evenements" title="Événements divins (MJ)"><i class="fa-solid fa-cloud-bolt"></i> Événements</a>{{/if}}</h2>
   <div class="grid-2">
     <div class="ligne"><label>Religion pratiquée</label>
       {{#if profil.religionItem}}<span><a data-action="magie" data-op="editerObjet" data-id="{{profil.religionItem.id}}">{{profil.religionItem.nom}}</a>
@@ -40,6 +41,7 @@
     <span>=</span>
     <label>Total <strong>{{#if seuilVisible}}{{#if apercu.auspices}}{{pn2Signed apercu.auspices.total}}{{else}}—{{/if}}{{else}}<span class="hint">MJ</span>{{/if}}</strong></label>
   </div>
+  {{#if consequences.malusVoie}}<p class="alerte">Séquelles de Rejet dans cette Voie : −{{consequences.malusVoie}} aux Auspices (compté avec les Péchés).</p>{{/if}}
   <p class="hint">Actes de foi et Péchés sont enregistrés sur la fiche ; l'Affinité est celle de la Voie choisie ; la Beauté des rites ne vaut que pour l'acte préparé.</p>
 
   {{!-- ============ Voies ============ --}}
@@ -76,6 +78,20 @@
     </tr>
     {{else}}<tr><td colspan="6" class="hint">Aucun Pouvoir connu.</td></tr>{{/each}}
   </table>
+
+  {{!-- ============ Conséquences divines ============ --}}
+  {{#unless consequences.vide}}
+  <h2><i class="fa-solid fa-skull"></i> Conséquences divines</h2>
+  {{#if consequences.sequelles.length}}
+    <h3>Séquelles</h3>
+    <ul class="pn2-journal">{{#each consequences.sequelles}}<li><strong>{{nature}}</strong>{{#if duree}} — {{duree}}{{/if}}{{#if restrictions}} — {{restrictions}}{{/if}}{{#if levee}} <span class="hint">(levée : {{levee}})</span>{{/if}}</li>{{/each}}</ul>
+  {{/if}}
+  {{#if consequences.penitences.length}}
+    <h3>Pénitences</h3>
+    <ul class="pn2-journal">{{#each consequences.penitences}}<li>{{description}} <span class="tag">{{etatLabel}}</span>{{#if note}} <span class="hint">{{note}}</span>{{/if}}</li>{{/each}}</ul>
+  {{/if}}
+  <p class="hint">Les conséquences divines sont attribuées et validées par le MJ.</p>
+  {{/unless}}
 
   {{!-- ============ Acte sacré ============ --}}
   <h2><i class="fa-solid fa-dice-d10"></i> Acte sacré</h2>
@@ -138,12 +154,6 @@
       </div>
     </div>
     {{else}}<p class="hint">Ajoutez d'abord une Voie d'illumination.</p>{{/if}}
-    {{#if acte}}
-      <div class="pn2-acte-resume termine">
-        <span>Dernier acte : <strong>{{#if acte.estRituel}}Rituel{{else}}Transe{{/if}}</strong> — {{acte.etat.voie.nom}} <span class="tag">{{acte.statut}}</span></span>
-        <a class="pn2-btn petit" data-action="magie" data-op="ouvrirActe">Consulter</a>
-      </div>
-    {{/if}}
   {{/if}}
 </div>
 {{/with}}

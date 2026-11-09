@@ -65,6 +65,26 @@ export const MAGIE = {
   /** Groupe de Colère par défaut (une religion = une Colère commune à toutes ses Voies). */
   groupeColereDefaut: "principale",
 
+  /**
+   * Événements divins (phase 3). Valeurs par défaut des réglages du monde :
+   * - aleaMode : « probabilite » (adaptation maison), « officiel » (un Aléa par acte, p. 95) ou « desactive » ;
+   * - aleaProbabilite : chance (%) qu'un acte ait un Aléa en mode « probabilite » — valeur maison à valider ;
+   * - revelationSeuil : chance (%) de révélation (Le Mat) par sollicitation, testée avec deux d10 — approximation maison.
+   */
+  evenements: { aleaMode: "probabilite", aleaProbabilite: 30, revelationSeuil: 2 },
+
+  /** Quête mystique : objectif secret de 1 à `faces` (1D6 du supplément, tiré en d10 avec relance de 7 à 10). */
+  quete: { faces: 6 },
+
+  /** Perte de concentration (p. 136) : actions concernées et nombre de d10 supplémentaires (seules les Colères comptent). */
+  concentration: { actions: ["ascension"], des: 2 },
+
+  /** Séquelles (-5c, p. 118) : malus d'Auspices tant qu'une séquelle de la même Voie est active. */
+  sequelles: { malusAuspices: 5 },
+
+  /** Pénitences (p. 122) : une repentance tous les 3 jours si c'est la priorité du prêtre, une par semaine sinon. */
+  penitence: { delaiPrioriteJours: 3, delaiNormalJours: 7 },
+
   /** Nombre d'identifiants de requêtes conservés pour détecter les doublons. */
   requetesMemorisees: 64
 };

@@ -23,7 +23,9 @@ export const STATUT = Object.freeze({ EN_COURS: "en-cours", TERMINE: "termine", 
 export const FIN = Object.freeze({
   VOLONTAIRE: "volontaire", INTERRUPTION: "interruption", REJET: "rejet", SORTIE: "sortie", ANNULATION: "annulation"
 });
-export const ACTION = Object.freeze({ ENTREE: "entree", ASCENSION: "ascension", DETACHEMENT: "detachement", RENFORCEMENT: "renforcement" });
+export const ACTION = Object.freeze({ ENTREE: "entree", ASCENSION: "ascension", DETACHEMENT: "detachement", RENFORCEMENT: "renforcement", QUETE: "quete" });
+/** Actions que le prêtre peut arrêter volontairement après un Succès (les autres exigent un Succès sacré). */
+export const ACTIONS_LIBRES = Object.freeze([ACTION.RENFORCEMENT, ACTION.QUETE]);
 
 const clone = o => structuredClone(o);
 
@@ -179,6 +181,7 @@ export function creerTranse(p) {
     pouvoirsConnus: (p.pouvoirsConnus ?? []).map(x => ({ id: x.id, nom: x.nom, puissance: Number(x.puissance) })),
     actionEnCours: null,
     activations: [],
+    quetes: [],                                     // Quêtes mystiques menées pendant la Transe
     cycle: {
       dureeRitesMinutes: Number(p.dureeRitesMinutes) || 0,
       dureeMinutes: dureeCycle({ dureeRitesMinutes: p.dureeRitesMinutes, instantanee }),
@@ -195,6 +198,7 @@ export function creerTranse(p) {
 
 function ajouterLancer(e, valeur, action) {
   const r = resoudreD10(valeur);
+  const niveau = e.transe ? e.transe.niveau : null;
   e.succes += r.dSucces;
   e.colereGagnee += r.dColere;
   const lancer = {
@@ -207,7 +211,8 @@ function ajouterLancer(e, valeur, action) {
     colereApres: e.colereGagnee,
     colereTotaleApres: colereTotale(e),
     action,
-    evenements: []        // réservé : révélations, Aléas (phases suivantes)
+    niveau,               // Niveau de transe au moment du jet (null en Rituel)
+    evenements: []        // marqueurs publics d'événements (le contenu secret est dans le coffre du MJ)
   };
   e.lancers.push(lancer);
   return lancer;
@@ -312,7 +317,7 @@ function pouvoirConnu(t, id, puissance) {
  * @param {object} o
  * @param {string} [o.cible]  id du Pouvoir visé (entrée, ascension) ; numéro d'activation (renforcement)
  */
-export function commencerAction(etat, type, { cible = null } = {}, ctx = {}) {
+export function commencerAction(etat, type, { cible = null, impose = null } = {}, ctx = {}) {
   return operation(etat, ctx, e => {
     exigerType(e, "transe");
     exigerEnCours(e);
@@ -337,6 +342,9 @@ export function commencerAction(etat, type, { cible = null } = {}, ctx = {}) {
         if (t.niveau < 1) throw new MagieError("niveau-min", "Le Niveau de transe ne peut pas descendre sous 0.");
         pouvoir = t.chemin[t.chemin.length - 1] ?? null;
         break;
+      case ACTION.QUETE:
+        exigerActif(t);
+        break;
       case ACTION.RENFORCEMENT: {
         exigerActif(t);
         const n = Number(cible);
@@ -351,9 +359,9 @@ export function commencerAction(etat, type, { cible = null } = {}, ctx = {}) {
       default:
         throw new MagieError("action-inconnue", `Action de Transe inconnue : ${type}.`);
     }
-    t.actionEnCours = { type, pouvoir, activation: activation?.n ?? null, succes: 0, colere: 0, lancers: [] };
+    t.actionEnCours = { type, pouvoir, activation: activation?.n ?? null, succes: 0, colere: 0, lancers: [], impose: impose ?? null };
     e.peutArreter = false;
-    journaliser(e, { type: "action", action: type, pouvoir, activation: activation?.n ?? null }, ctx.maintenant);
+    journaliser(e, { type: "action", action: type, pouvoir, activation: activation?.n ?? null, impose: impose ?? null }, ctx.maintenant);
     return { action: t.actionEnCours };
   });
 }
@@ -379,7 +387,7 @@ export function solliciterTranse(etat, valeur, ctx = {}) {
       e.peutArreter = false;
       return { lancer };
     }
-    if (a.type === ACTION.RENFORCEMENT) {
+    if (ACTIONS_LIBRES.includes(a.type)) {
       e.peutArreter = true;
       return { lancer };
     }
@@ -408,6 +416,13 @@ function conclureAction(e, maintenant) {
       t.niveau -= 1;
       t.cycle.debutNiveau = maintenant ?? null;
       effet = { type: a.type, pouvoir: retire, niveau: t.niveau };
+      break;
+    }
+    case ACTION.QUETE: {
+      t.quetes ??= [];
+      const quete = { n: t.quetes.length + 1, niveau: t.niveau, succes: a.succes, colere: a.colere, lancers: [...a.lancers] };
+      t.quetes.push(quete);
+      effet = { type: a.type, quete: quete.n, succes: a.succes, niveau: t.niveau };
       break;
     }
     case ACTION.RENFORCEMENT: {
@@ -464,7 +479,7 @@ export function arreterRenforcement(etat, ctx = {}) {
     exigerEnCours(e);
     const a = e.transe.actionEnCours;
     if (!a) throw new MagieError("aucune-action", "Aucune sollicitation en cours.");
-    if (a.type !== ACTION.RENFORCEMENT) {
+    if (!ACTIONS_LIBRES.includes(a.type)) {
       throw new MagieError("arret-interdit", "Cette action exige un Succès sacré : il faut solliciter la divinité jusqu'à l'obtenir.");
     }
     if (!a.lancers.length || !e.peutArreter) {
@@ -502,6 +517,65 @@ export function repartirRenforcement(etat, n, repartition, ctx = {}) {
     if (!v.valide) throw new MagieError("repartition-invalide", v.erreurs.join(" "));
     act.repartition = { details: v.details, cout: v.cout, reste: v.reste };
     return { repartition: act.repartition };
+  });
+}
+
+/* -------------------------------------------- */
+/*  Concentration et Cycle                      */
+/* -------------------------------------------- */
+
+/**
+ * Perte de concentration (blessure…) pendant une action de Transe (p. 136) : l'action échoue ;
+ * le prêtre lance tout de même des d10 supplémentaires (2 par défaut) dont seules les Colères comptent.
+ * Rien n'est effacé : la Colère déjà tirée reste acquise. Le Rejet reste immédiat.
+ * @param {number[]} valeurs  d10 supplémentaires
+ */
+export function echecConcentration(etat, valeurs, { motif = "" } = {}, ctx = {}) {
+  return operation(etat, ctx, e => {
+    exigerType(e, "transe");
+    exigerEnCours(e);
+    const t = e.transe;
+    const a = t.actionEnCours;
+    const cfg = MAGIE.concentration;
+    if (!a || !cfg.actions.includes(a.type)) {
+      throw new MagieError("concentration", `La perte de concentration ne concerne que ${cfg.actions.join(", ")} en cours.`);
+    }
+    if (!Array.isArray(valeurs) || valeurs.length !== cfg.des) throw new MagieError("valeur-invalide", `${cfg.des} d10 sont nécessaires.`);
+    const lancers = [];
+    for (const v of valeurs) {
+      const r = resoudreD10(v);
+      if (r.resultat === RESULTAT.COLERE) {
+        const l = ajouterLancer(e, v, "concentration");
+        lancers.push(l);
+        if (depasseSeuil(colereTotale(e), e.seuil.seuil)) {
+          rejeterTranse(e, l, ctx.maintenant);
+          return { lancers, rejet: e.transe.rejet };
+        }
+      } else {
+        // Succès ignoré : enregistré pour l'historique, sans effet
+        const l = { n: e.lancers.length + 1, valeur: r.valeur, resultat: r.resultat, dSucces: 0, dColere: 0, ignore: true,
+          succesApres: e.succes, colereApres: e.colereGagnee, colereTotaleApres: colereTotale(e), action: "concentration", niveau: t.niveau, evenements: [] };
+        e.lancers.push(l);
+        lancers.push(l);
+      }
+    }
+    journaliser(e, { type: "action-echouee", action: a.type, motif, pouvoir: a.pouvoir ?? null }, ctx.maintenant);
+    t.actionEnCours = null;
+    e.peutArreter = false;
+    return { lancers };
+  });
+}
+
+/** Note que le Cycle du niveau courant est échu (une décision est nécessaire ; rien n'est automatique). */
+export function signalerCycle(etat, ctx = {}) {
+  return operation(etat, ctx, e => {
+    exigerType(e, "transe");
+    exigerEnCours(e);
+    const c = e.transe.cycle;
+    if (c.debutNiveau == null) throw new MagieError("cycle", "Aucun Cycle en cours.");
+    c.alerte = c.debutNiveau;
+    journaliser(e, { type: "cycle-echu", niveau: e.transe.niveau }, ctx.maintenant);
+    return {};
   });
 }
 

@@ -32,6 +32,7 @@ export class PN2Item extends Item {
       marchandise: "systems/pavillon-noir-2/assets/icons/marchandise.svg",
       historique: "systems/pavillon-noir-2/assets/icons/historique.svg",
       religion: "icons/svg/temple.svg",
+      alea: "icons/svg/lightning.svg",
       voie: "icons/svg/sun.svg",
       pouvoir: "icons/svg/aura.svg"
     };

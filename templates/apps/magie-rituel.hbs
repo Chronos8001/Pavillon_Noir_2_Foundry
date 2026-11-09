@@ -25,8 +25,8 @@
       {{#unless resume.lancers}}<a class="pn2-btn petit {{#unless peutIntervenir}}disabled{{/unless}}" data-action="magie" data-op="annuler" data-requete="{{requete}}" data-seq="{{seq}}">Annuler</a>{{/unless}}
     </div>
     {{#if occupe}}<p class="hint"><i class="fa-solid fa-spinner fa-spin"></i> Sollicitation en cours…</p>{{/if}}
-    {{#if peutIntervenir}}
-    <details class="notes"><summary>Interruption imposée par une autre règle</summary>
+    {{#if isGM}}
+    <details class="notes"><summary>Interruption imposée par une autre règle (MJ)</summary>
       <div class="ligne"><label>Motif</label><input type="text" data-prep="motif" value="{{prep.motif}}"></div>
       <a class="pn2-btn petit" data-action="magie" data-op="interrompre" data-requete="{{requete}}" data-seq="{{seq}}">Interrompre le Rituel</a>
     </details>

@@ -31,6 +31,7 @@
       "marchandise": { "htmlFields": ["description"] },
       "historique": { "htmlFields": ["description"] },
       "religion": { "htmlFields": ["description"] },
+      "alea": { "htmlFields": ["description"] },
       "voie": { "htmlFields": ["description"] },
       "pouvoir": { "htmlFields": ["description"] }
     }

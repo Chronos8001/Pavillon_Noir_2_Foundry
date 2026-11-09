@@ -80,6 +80,7 @@ Installation manuelle : télécharger `pavillon-noir-2.zip` depuis la dernière 
 - Transes : fenêtre dédiée (entrée, ascension, activation, renforcement, détachement, Rejet, Cycle et temps restant).
 - Bibliothèque de magie : religions, Voies et Pouvoirs des compendiums, filtres, ajout et retrait sur le personnage, import de données (MJ).
 - Compendium « Magie : religions et Voies » : 11 religions et les 21 Voies du supplément (les Pouvoirs ne sont pas fournis).
+- Événements divins (panneau MJ) : Aléas, révélations (équivalent du Mat), Quêtes mystiques, Rejets, séquelles et pénitences, Cycles échus, perte de concentration ; secrets tirés en d10 par le MJ et chiffrés.
 - Documentation technique : `docs/magie.md`.
 
 ## Développement

@@ -196,7 +196,30 @@ function magieField(TypedObject) {
     peches: int(0, { min: 0 }),
     faveursMod: int(0),         // modificateur temporaire des Faveurs (les Faveurs valent la Chance)
     // Colère divine par groupe : une religion (ou un ensemble religieux) partage une seule Colère
-    colere: f.TypedObjectField ? new TypedObject(colereSchema) : new f.ObjectField()
+    colere: f.TypedObjectField ? new TypedObject(colereSchema) : new f.ObjectField(),
+    // Conséquences divines communiquées au joueur (modifiables par le MJ seulement)
+    rejets: new f.ArrayField(new f.SchemaField({
+      id: str(""), acteId: str(""), typeActe: str(""), religion: str(""), voie: str(""), voieCle: str(""),
+      colere: int(0), seuil: int(0), depassement: int(0), puissance: int(0), pouvoir: str(""),
+      niveauMax: new f.NumberField({ required: false, nullable: true, integer: true, initial: null }),
+      niveauRejet: new f.NumberField({ required: false, nullable: true, integer: true, initial: null }),
+      pouvoirsAnnules: new f.ArrayField(str("")),
+      date: new f.NumberField({ required: false, nullable: true, initial: null }), dateReelle: str(""),
+      statut: str("a-resoudre"), conclusion: str("")
+    })),
+    sequelles: new f.ArrayField(new f.SchemaField({
+      id: str(""), rejetId: str(""), nature: str(""), gravite: int(0), duree: str(""), restrictions: str(""), levee: str(""),
+      voieCle: str(""), divinite: str(""), malusAuspices: bool(true), active: bool(true),
+      dateDebut: new f.NumberField({ required: false, nullable: true, initial: null }),
+      dateFin: new f.NumberField({ required: false, nullable: true, initial: null })
+    })),
+    penitences: new f.ArrayField(new f.SchemaField({
+      id: str(""), rejetId: str(""), sequelleId: str(""), description: str(""), divinite: str(""), conditions: str(""),
+      etat: str("a-accomplir"), priorite: bool(false), note: str(""),
+      dateAttribution: new f.NumberField({ required: false, nullable: true, initial: null }),
+      derniereTentative: new f.NumberField({ required: false, nullable: true, initial: null }),
+      dateFin: new f.NumberField({ required: false, nullable: true, initial: null })
+    }))
   });
 }
 

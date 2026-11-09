@@ -4,6 +4,7 @@ import { statsBatterie, CANONS } from "../rolls/naval.mjs";
 import { competencesDestreza } from "../rolls/destreza.mjs";
 import { findSpec } from "../rolls/dice.mjs";
 import { controleConcurrence } from "../magie/service.mjs";
+import { protegerConsequences } from "../magie/service-evenements.mjs";
 
 export class PN2Actor extends Actor {
 
@@ -28,6 +29,8 @@ export class PN2Actor extends Actor {
     if (r === false) return false;
     // Magie : refuse l'écriture d'un acte sacré périmé (mise à jour concurrente)
     if (!controleConcurrence(this, changes, options)) return false;
+    // Magie : Rejets, séquelles, pénitences et coffre du MJ ne sont modifiables que par le MJ
+    if (!protegerConsequences(changes, user)) return false;
     const nv = foundry.utils.getProperty(changes, "system.escrime.destreza.value");
     if (this.type !== "navire" && nv != null && nv > (this.system.escrime?.destreza?.value ?? 0)) {
       const upd = competencesDestreza(this, nv, findSpec);

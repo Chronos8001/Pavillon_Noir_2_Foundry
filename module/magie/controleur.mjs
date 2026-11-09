@@ -9,7 +9,8 @@ import { ACTION, estEnCours, resumeActe, vueJoueur } from "./moteur.mjs";
 
 const SYS = "pavillon-noir-2";
 const LIBELLES_STATUT = { "en-cours": "En cours", termine: "Terminé", rejet: "Rejet", annule: "Annulé" };
-const LIBELLES_ACTION = { rituel: "Rituel", entree: "Entrée en Transe", ascension: "Ascension", detachement: "Détachement", renforcement: "Renforcement" };
+const LIBELLES_ACTION = { rituel: "Rituel", entree: "Entrée en Transe", ascension: "Ascension", detachement: "Détachement", renforcement: "Renforcement", quete: "Quête mystique", concentration: "Perte de concentration" };
+const enCoursTranse = e => estEnCours(e) && e.type === "transe";
 const LIBELLES_TRANSE = { chemin: "Dans le Chemin", accessible: "Accessible", compulsion: "Compulsion à assouvir" };
 
 export class ControleurMagie {
@@ -60,6 +61,7 @@ export class ControleurMagie {
       validationRequise: S.validationRequise(),
       demande: demande ? { ...demande, voieNom: actor.items.get(demande.voieId)?.name ?? "Voie retirée", pouvoirNom: actor.items.get(demande.pouvoirId)?.name ?? null } : null,
       demandeEnAttente: demande?.statut === "attente",
+      consequences: this.#contexteConsequences(profil),
       demandeRefusee: demande?.statut === "refusee"
     };
     const etat = profil.acte;
@@ -69,6 +71,20 @@ export class ControleurMagie {
       ctx.acte = { etat: vue, resume: resumeActe(vue), statut: LIBELLES_STATUT[etat.statut] ?? etat.statut, estRituel: etat.type === "rituel" };
     }
     return ctx;
+  }
+
+  /** Séquelles actives et pénitences en cours communiquées (lecture seule pour le joueur). */
+  #contexteConsequences(profil) {
+    const LIB = { "a-accomplir": "À accomplir", "en-cours": "En cours", accomplie: "Accomplie", abandonnee: "Abandonnée" };
+    const actives = profil.sequelles.filter(s => s.active);
+    const voieChoisie = profil.voies.find(v => v.id === this.prep.voieId);
+    const penitences = profil.penitences.filter(p => ["a-accomplir", "en-cours"].includes(p.etat)).map(p => ({ ...p, etatLabel: LIB[p.etat] }));
+    return {
+      sequelles: actives,
+      penitences,
+      malusVoie: voieChoisie && actives.some(s => s.malusAuspices && (!s.voieCle || s.voieCle === voieChoisie.cle)) ? S.cfg().sequelles.malusAuspices : 0,
+      vide: !actives.length && !penitences.length
+    };
   }
 
   /* -------------------------------------------- */
@@ -128,13 +144,22 @@ export class ControleurMagie {
     c.activationsOptions = Object.fromEntries(t.activations.filter(a => t.chemin.some(p => p.id === a.pouvoir.id))
       .map(a => [a.n, `#${a.n} ${a.pouvoir.nom} (${a.succes} Succès)`]));
     c.peutRenforcer = libre && t.actif && Object.keys(c.activationsOptions).length > 0;
+    c.peutQuete = libre && t.actif;
+    c.quetes = t.quetes?.length ?? 0;
+    // Interventions du MJ : détachement imposé (Cycle écoulé), perte de concentration pendant une ascension
+    c.peutImposer = c.isGM && enCoursTranse(brut) && t.actif && !t.actionEnCours && !this.occupe;
+    c.peutConcentration = c.isGM && enCoursTranse(brut) && S.cfg().concentration.actions.includes(t.actionEnCours?.type) && !this.occupe;
+    c.cycleSignale = t.cycle?.alerte != null && t.cycle.alerte === t.cycle.debutNiveau;
     if (!(this.prep.cible in c.candidats)) this.prep.cible = Object.keys(c.candidats)[0] ?? "";
     if (!(String(this.prep.activation) in c.activationsOptions)) this.prep.activation = Object.keys(c.activationsOptions).at(-1) ?? "";
     const cyc = etatCycle(t.cycle, game.time.worldTime);
     c.cycle = { ...cyc, restantMin: cyc.restant != null ? Math.ceil(cyc.restant / 60) : null };
     // Historique des actions de Transe (ascensions, détachements, activations, interruptions)
-    c.historique = brut.journal.filter(j => ["action-reussie", "activation", "action-interrompue", "fin"].includes(j.type)).map(j => ({
+    c.historique = brut.journal.filter(j => ["action-reussie", "activation", "action-interrompue", "action-echouee", "cycle-echu", "fin"].includes(j.type)).map(j => ({
       libelle: j.type === "activation" ? `Activation : ${j.pouvoir?.nom}`
+        : j.type === "action-echouee" ? `${LIBELLES_ACTION[j.action] ?? j.action} échouée (perte de concentration${j.motif ? ` : ${j.motif}` : ""})`
+        : j.type === "cycle-echu" ? `Cycle écoulé au niveau ${j.niveau}`
+        : j.type === "action-reussie" && j.action === "quete" ? `Quête mystique menée (${j.succes} Succès)`
         : j.type === "action-interrompue" ? `${LIBELLES_ACTION[j.action] ?? j.action} interrompue${j.motif ? ` (${j.motif})` : ""}`
           : j.type === "fin" ? `Fin de la Transe (${j.mode})`
             : `${LIBELLES_ACTION[j.action] ?? j.action}${j.pouvoir ? ` : ${j.pouvoir.nom}` : ""}${j.niveau != null ? ` — niveau ${j.niveau}` : ""}${j.succes != null && j.action === "renforcement" ? ` — ${j.succes} Succès` : ""}`
@@ -213,6 +238,10 @@ export class ControleurMagie {
         return S.commencerAction(actor, type, cible, ctx);
       }
       case "activer": return S.activerPouvoir(actor, target.dataset.pouvoir, ctx);
+      case "quete": return S.commencerAction(actor, ACTION.QUETE, null, ctx);
+      case "imposer": return S.imposerDetachement(actor, ctx);
+      case "concentration": return S.echecConcentration(actor, { motif: this.prep.motif }, ctx);
+      case "evenements": return game.pn2.magie.evenements.ouvrir();
       case "repartir": {
         const activation = target.dataset.activation ? Number(target.dataset.activation) : null;
         return S.repartir(actor, this.repartition, { activation, ...ctx });

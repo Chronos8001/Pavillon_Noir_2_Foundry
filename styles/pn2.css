@@ -368,7 +368,6 @@
 .pn2 .pn2-magie fieldset.pn2-mj legend { color: var(--pn2-rouge); font-size: 11px; }
 .pn2 .pn2-magie .pn2-demande, .pn2 .pn2-magie .pn2-preparation { border: 1px solid var(--pn2-bord); border-radius: 4px; padding: 6px; background: rgba(255, 255, 255, 0.35); }
 .pn2 .pn2-magie .pn2-acte-resume { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 6px; padding: 4px 6px; border-left: 4px solid var(--pn2-or); background: rgba(184, 137, 43, 0.12); margin: 4px 0; }
-.pn2 .pn2-magie .pn2-acte-resume.termine { border-left-color: var(--pn2-bord); background: transparent; }
 .pn2 .pn2-magie tr.choisie td:first-child { font-weight: bold; }
 .pn2 .pn2-magie td.actions { white-space: nowrap; text-align: right; }
 .pn2 .pn2-magie table.pouvoirs details { font-size: 11px; }
@@ -395,3 +394,14 @@
 .pn2 .pn2-magie .tag.etat-rejet { background: var(--pn2-rouge); }
 .pn2 .pn2-magie .tag.etat-en-cours { background: var(--pn2-vert); }
 button.pn2-bouton-bibliotheque { flex: 1 1 100%; margin-top: 4px; }
+
+/* Magie — phase 3 : événements divins */
+.pn2 .pn2-ev-cle { display: flex; flex-wrap: wrap; gap: 6px; align-items: center; padding: 4px 6px; border: 1px solid var(--pn2-bord); border-radius: 4px; margin-bottom: 6px; }
+.pn2 .pn2-ev-corps { max-height: calc(100% - 50px); overflow-y: auto; }
+.pn2 .pn2-ev-acteur { border-top: 2px solid var(--pn2-bord); margin-top: 8px; }
+.pn2 .pn2-ev-acteur h2 img { border: none; vertical-align: middle; }
+.pn2 .pn2-ev-bloc { border: 1px solid var(--pn2-bord); border-radius: 4px; padding: 4px 8px; margin: 4px 0; background: rgba(255, 255, 255, 0.35); }
+.pn2 .pn2-ev-bloc.secret { border-left: 4px solid var(--pn2-bleu); }
+.pn2 .pn2-ev-bloc.rejet { border-left: 4px solid var(--pn2-rouge); }
+.pn2 .pn2-ev-bloc .boutons input[type="text"] { width: 12em; }
+button.pn2-bouton-evenements { flex: 1 1 100%; margin-top: 4px; }
