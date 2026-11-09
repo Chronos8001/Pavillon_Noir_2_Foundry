@@ -16,7 +16,7 @@
   <div class="pn2-ev-corps">
   {{#each acteurs}}
   <section class="pn2-ev-acteur" data-acteur="{{id}}">
-    <h2><img src="{{img}}" width="24" height="24"> {{nom}}</h2>
+    <h2><img src="{{img}}" width="24" height="24"> {{nom}} <a class="pn2-mini-btn" data-action="op" data-op="historique" title="Historique et interventions"><i class="fa-solid fa-scroll"></i></a></h2>
 
     {{#if acte}}
     <div class="pn2-ev-bloc" data-bloc="acte">
@@ -33,6 +33,19 @@
     {{/if}}
 
     {{#if coffreErreur}}<p class="alerte">{{coffreErreur}}</p>{{/if}}
+
+    {{#if coleres.length}}
+    <details class="notes"><summary>Correction administrative de la Colère</summary>
+      {{#each coleres}}
+      <div class="boutons" data-bloc="colere" data-id="{{groupe}}">
+        <span>{{groupe}} : <strong>{{valeur}}</strong> →</span>
+        <input type="number" min="0" data-champ="valeur" value="{{valeur}}">
+        <input type="text" data-champ="motif" placeholder="Motif (obligatoire)">
+        <a class="pn2-btn petit" data-action="op" data-op="corrigerColere">Corriger</a>
+      </div>
+      {{/each}}
+    </details>
+    {{/if}}
 
     {{#each aleas}}
     <div class="pn2-ev-bloc secret" data-bloc="alea" data-id="{{id}}">
@@ -89,6 +102,7 @@
         <div class="ligne"><label>Durée</label><input type="text" data-champ="duree" placeholder="Jusqu'aux pénitences accomplies"></div>
         <div class="ligne"><label>Restrictions</label><input type="text" data-champ="restrictions"></div>
         <div class="ligne"><label>Conditions de levée</label><input type="text" data-champ="levee"></div>
+        <div class="ligne"><label>Échéance (jours, facultatif)</label><input type="number" min="0" data-champ="echeanceJours" title="Signalée au MJ à échéance ; la séquelle n'est jamais levée automatiquement"></div>
         <div class="ligne"><label>Malus d'Auspices (-5)</label><span><input type="checkbox" data-champ="malus" checked> <label><input type="checkbox" data-champ="toutesVoies"> toutes les Voies</label></span></div>
       </div>
       <div class="ligne"><label>Pénitences ({{nbPenitences}}, une par ligne)</label><textarea data-champ="penitences" rows="3">{{lignesPenitences}}</textarea></div>
@@ -116,7 +130,7 @@
     {{#each sequelles}}
     <div class="pn2-ev-bloc" data-bloc="sequelle" data-id="{{id}}">
       <p><strong>{{nature}}</strong> (gravité {{gravite}}{{#if duree}}, {{duree}}{{/if}}) — {{restantes}} pénitence(s) restante(s){{#if abandonnees}}, {{abandonnees}} abandonnée(s){{/if}}
-        {{#if levable}}<span class="tag">levable</span>{{/if}}</p>
+        {{#if levable}}<span class="tag">levable</span>{{/if}}{{#if echue}} <span class="tag">échéance atteinte : à valider</span>{{/if}}</p>
       <a class="pn2-btn petit" data-action="op" data-op="lever">Lever la séquelle</a>
     </div>
     {{/each}}

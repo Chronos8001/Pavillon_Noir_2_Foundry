@@ -12,9 +12,9 @@ export class PN2Item extends Item {
     // Magie : une seule religion pratiquée, pas de Voie en double sur un personnage
     if (this.actor && ["religion", "voie"].includes(this.type)) {
       const source = data._stats?.compendiumSource ?? data.flags?.core?.sourceId ?? null;
+      // Doublon : même source (compendium ou monde) ; une Voie créée à la main n'est jamais bloquée
       const doublon = this.actor.items.find(i => i.type === this.type && (this.type === "religion"
-        || (source && (i._stats?.compendiumSource ?? i.flags?.core?.sourceId) === source)
-        || (!source && i.name === this.name)));
+        || (source && (i._stats?.compendiumSource ?? i.flags?.core?.sourceId) === source)));
       if (doublon) {
         ui.notifications?.warn(this.type === "religion"
           ? `${this.actor.name} pratique déjà « ${doublon.name} » : retirez-la d'abord.`

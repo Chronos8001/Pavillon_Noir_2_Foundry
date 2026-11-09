@@ -48,15 +48,50 @@ export const MAGIE = {
   actesRequis: { rituel: 1, transe: 3, transeInstantanee: 6 },
 
   /**
-   * Paramètres des Pouvoirs améliorables avec les Succès supplémentaires.
-   * `categories` : tables de valeurs à renseigner (vides tant que les tables officielles
-   * ne sont pas intégrées au projet).
+   * Paramètres des Pouvoirs (Entre ciel et terre, p. 100). Une augmentation = une catégorie de plus.
+   * `mj` : catégorie accessible seulement si le MJ le permet (astérisque du supplément).
+   * `secondes` : durée utilisée pour les effets Foundry (null : permanente ou non chiffrée).
+   * `alias` : écritures rencontrées dans les descriptions des Pouvoirs.
    */
   parametres: {
-    portee: { label: "Portée", categories: [] },
-    cible: { label: "Cible", categories: [] },
-    impact: { label: "Impact", categories: [] },
-    duree: { label: "Durée", categories: [] }
+    portee: { label: "Portée", categories: [
+      { cle: "personnelle", label: "Personnelle" },
+      { cle: "toucher", label: "Toucher" },
+      { cle: "ici", label: "Ici (10 m)", alias: ["Ici"] },
+      { cle: "la", label: "Là (100 m)", alias: ["Là"] },
+      { cle: "vue", label: "Vue/Voix/Ouïe", alias: ["Vue", "Voix", "Ouïe", "Vue/Voix", "Voix/Ouïe"] },
+      { cle: "labas", label: "Là-bas (2 milles)", alias: ["Là-bas"] },
+      { cle: "continent", label: "Continent/Océan", alias: ["Continent", "Océan"] },
+      { cle: "terre", label: "Terre", mj: true }
+    ] },
+    cible: { label: "Cible", categories: [
+      { cle: "moi", label: "Moi" },
+      { cle: "toi", label: "Toi" },
+      { cle: "lui", label: "Lui" },
+      { cle: "nous", label: "Nous" },
+      { cle: "vous", label: "Vous" },
+      { cle: "eux", label: "Eux" },
+      { cle: "peuple", label: "Peuple", mj: true }
+    ] },
+    impact: { label: "Impact", categories: [
+      { cle: "1", label: "1", min: 1, max: 1 },
+      { cle: "2", label: "2", min: 2, max: 2 },
+      { cle: "3-4", label: "3-4", min: 3, max: 4 },
+      { cle: "5", label: "5", min: 5, max: 5 },
+      { cle: "6-7", label: "6-7", min: 6, max: 7 },
+      { cle: "8-9", label: "8-9", min: 8, max: 9 },
+      { cle: "10+", label: "10+", min: 10, max: null }
+    ] },
+    duree: { label: "Durée", categories: [
+      { cle: "10s", label: "10 secondes", alias: ["10 s"], secondes: 10 },
+      { cle: "2min", label: "2 minutes", alias: ["2 min"], secondes: 120 },
+      { cle: "30min", label: "30 minutes", alias: ["30 min"], secondes: 1800 },
+      { cle: "4h", label: "4 heures", alias: ["4 h"], secondes: 14400 },
+      { cle: "24h", label: "24 heures", alias: ["24 h", "24h"], secondes: 86400 },
+      { cle: "semaine", label: "1 semaine", alias: ["Semaine"], secondes: 604800 },
+      { cle: "mois", label: "1 mois", alias: ["Mois"], secondes: 2592000 },
+      { cle: "permanent", label: "Permanent", mj: true, secondes: null }
+    ] }
   },
 
   /** Récupération ordinaire : 1 point de Colère par heure de temps du monde. */

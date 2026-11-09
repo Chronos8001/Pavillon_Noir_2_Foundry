@@ -3,6 +3,12 @@
   <div class="grid-2">
     {{#each parametres}}<div class="ligne"><label>{{label}} <span class="hint">(coût {{cout}})</span></label><input type="number" min="0" data-repartition="{{key}}" value="{{n}}"></div>{{/each}}
   </div>
+  {{#if apercu}}
+  <table class="pn2-mini apercu-parametres">
+    <tr><th>Paramètre</th><th>Base</th><th>Après amélioration</th></tr>
+    {{#each apercu}}<tr class="{{#if change}}change{{/if}}"><td>{{label}}</td><td>{{base}}</td><td>{{resultat}}{{#if accordMJ}} <span class="hint">(accord du MJ)</span>{{/if}}{{#if horsTable}} <span class="hint">(hors table)</span>{{/if}}</td></tr>{{/each}}
+  </table>
+  {{/if}}
   <p>Coût total : <strong>{{cout}}</strong> / {{budget}} Succès <span class="hint">(N augmentations d'un même paramètre coûtent N × (N + 1) / 2)</span></p>
   {{#each erreurs}}<p class="alerte">{{this}}</p>{{/each}}
   <a class="pn2-btn petit {{#unless valide}}disabled{{/unless}}" data-action="magie" data-op="repartir" data-activation="{{activation}}" data-requete="{{requete}}" data-seq="{{seq}}">Enregistrer la répartition</a>

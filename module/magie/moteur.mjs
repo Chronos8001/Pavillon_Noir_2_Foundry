@@ -21,7 +21,7 @@ export const SCHEMA_ACTE = 1;
 
 export const STATUT = Object.freeze({ EN_COURS: "en-cours", TERMINE: "termine", REJET: "rejet", ANNULE: "annule" });
 export const FIN = Object.freeze({
-  VOLONTAIRE: "volontaire", INTERRUPTION: "interruption", REJET: "rejet", SORTIE: "sortie", ANNULATION: "annulation"
+  VOLONTAIRE: "volontaire", INTERRUPTION: "interruption", REJET: "rejet", SORTIE: "sortie", ANNULATION: "annulation", ADMINISTRATIF: "administratif"
 });
 export const ACTION = Object.freeze({ ENTREE: "entree", ASCENSION: "ascension", DETACHEMENT: "detachement", RENFORCEMENT: "renforcement", QUETE: "quete" });
 /** Actions que le prêtre peut arrêter volontairement après un Succès (les autres exigent un Succès sacré). */
@@ -116,6 +116,7 @@ function acteDeBase(p, type) {
     typeReligion: p.typeReligion,
     voie: p.voie ?? null,              // { id, nom, cle }
     groupeColere: p.groupeColere || MAGIE.groupeColereDefaut,
+    cibles: p.cibles ?? [],            // cibles désignées au début de l'acte [{ uuid, nom }]
     auspices,
     seuil,
     colereInitiale,
@@ -288,6 +289,7 @@ export function repartirAmeliorations(etat, repartition, ctx = {}) {
     const v = validerRepartition(repartition, res.succesSupplementaires);
     if (!v.valide) throw new MagieError("repartition-invalide", v.erreurs.join(" "));
     e.rituel.repartition = { details: v.details, cout: v.cout, reste: v.reste };
+    journaliser(e, { type: "repartition", cout: v.cout, details: v.details }, ctx.maintenant);
     return { repartition: e.rituel.repartition };
   });
 }
@@ -516,6 +518,7 @@ export function repartirRenforcement(etat, n, repartition, ctx = {}) {
     const v = validerRepartition(repartition, act.succes);
     if (!v.valide) throw new MagieError("repartition-invalide", v.erreurs.join(" "));
     act.repartition = { details: v.details, cout: v.cout, reste: v.reste };
+    journaliser(e, { type: "repartition", activation: act.n, cout: v.cout, details: v.details }, ctx.maintenant);
     return { repartition: act.repartition };
   });
 }
@@ -607,6 +610,26 @@ export function interrompre(etat, { motif = "", terminer = false } = {}, ctx = {
   });
 }
 
+/**
+ * Correction administrative (MJ) : clôt un acte dans un état exceptionnel (bloqué, erroné…).
+ * Aucune résolution n'est calculée, aucun Rejet n'est déclaré ; la Colère déjà tirée reste acquise.
+ */
+export function clotureAdministrative(etat, { motif = "", par = null } = {}, ctx = {}) {
+  return operation(etat, ctx, e => {
+    exigerEnCours(e);
+    if (!String(motif).trim()) throw new MagieError("motif", "Une correction administrative exige un motif.");
+    e.statut = STATUT.ANNULE;
+    e.peutArreter = false;
+    if (e.transe) {
+      e.transe.actif = false;
+      e.transe.actionEnCours = null;
+    }
+    e.fin = { mode: FIN.ADMINISTRATIF, motif, maintenant: ctx.maintenant ?? null };
+    journaliser(e, { type: "administratif", motif, par }, ctx.maintenant);
+    return {};
+  });
+}
+
 /** Annule un acte qui n'a encore donné lieu à aucune sollicitation (aucune conséquence). */
 export function annulerActe(etat, ctx = {}) {
   return operation(etat, ctx, e => {
@@ -653,13 +676,41 @@ export function serialiserActe(etat) {
 
 export function deserialiserActe(valeur) {
   if (!valeur) return null;
-  if (typeof valeur !== "string") return valeur;
-  try {
-    const e = JSON.parse(valeur);
-    return e?.schema === SCHEMA_ACTE ? e : null;
-  } catch {
-    return null;
+  let e = valeur;
+  if (typeof valeur === "string") {
+    try { e = JSON.parse(valeur); } catch { return null; }
   }
+  return e?.schema === SCHEMA_ACTE ? normaliserActe(e) : null;
+}
+
+/**
+ * Complète un acte enregistré par une version antérieure avec les champs ajoutés depuis
+ * (phase 2 : rites, Puissance secrète, validation, narration ; phase 3 : niveau des lancers, Quêtes).
+ * N'efface jamais de donnée inconnue. Idempotent.
+ */
+export function normaliserActe(e) {
+  e.cibles ??= [];
+  e.lancers ??= [];
+  e.journal ??= [];
+  e.requetes ??= [];
+  for (const l of e.lancers) {
+    l.evenements ??= [];
+    if (!("niveau" in l)) l.niveau = null;
+  }
+  if (e.rituel) {
+    e.rituel.rites ??= "";
+    e.rituel.puissanceSecrete ??= false;
+    e.rituel.validation ??= null;
+    e.rituel.narration ??= null;
+    e.rituel.repartition ??= null;
+  }
+  if (e.transe) {
+    e.transe.quetes ??= [];
+    e.transe.activations ??= [];
+    e.transe.cycle ??= { dureeRitesMinutes: 0, dureeMinutes: 1, debutNiveau: null };
+    if (!("alerte" in e.transe.cycle)) e.transe.cycle.alerte = null;
+  }
+  return e;
 }
 
 /**
@@ -688,7 +739,10 @@ export function vueJoueur(etat, { seuilVisible = false } = {}) {
   if (!seuilVisible) {
     e.seuil = { masque: true };
     e.auspices = { masque: true, beaute: e.auspices?.beaute ?? 0 };
-    if (e.rituel?.resolution) e.rituel.resolution.depassement = null;
+    if (e.rituel?.resolution) {
+      e.rituel.resolution.depassement = null;
+      e.rituel.resolution.seuil = null;
+    }
     if (e.transe?.rejet) {
       e.transe.rejet.seuil = null;
       e.transe.rejet.depassement = null;

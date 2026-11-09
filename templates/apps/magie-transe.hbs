@@ -70,12 +70,19 @@
         <a class="pn2-btn petit {{#unless peutImposer}}disabled{{/unless}}" data-action="magie" data-op="imposer" data-requete="{{requete}}" data-seq="{{seq}}" title="Le prêtre doit se détacher (Cycle écoulé, p. 135)">Imposer le détachement</a>
         <a class="pn2-btn petit" data-action="magie" data-op="evenements">Événements divins</a>
       </div>
+      {{#if effetsActivation.length}}
+      <div class="boutons">
+        {{#each effetsActivation}}<a class="pn2-btn petit" data-action="magie" data-op="appliquerEffets" data-activation="{{n}}"><i class="fa-solid fa-wand-sparkles"></i> Effets de « {{nom}} » (#{{n}})</a>{{/each}}
+        {{#if nbEffets}}<a class="pn2-btn petit" data-action="magie" data-op="revoquerEffets">Révoquer les effets ({{nbEffets}})</a>{{/if}}
+      </div>
+      {{/if}}
     </fieldset>
     {{/if}}
     {{#if isGM}}
     <details class="notes"><summary>Interruption imposée par une autre règle</summary>
       <a class="pn2-btn petit" data-action="magie" data-op="interrompre" data-requete="{{requete}}" data-seq="{{seq}}">Interrompre l'action</a>
       <a class="pn2-btn petit" data-action="magie" data-op="interrompre" data-terminer="true" data-requete="{{requete}}" data-seq="{{seq}}">Mettre fin à la Transe</a>
+      <a class="pn2-btn petit {{#unless peutCloturer}}disabled{{/unless}}" data-action="magie" data-op="cloture" data-requete="{{requete}}" data-seq="{{seq}}" title="Correction administrative d'un état bloqué : aucune résolution, la Colère reste acquise">Clôture administrative</a>
     </details>
     {{/if}}
   {{/if}}

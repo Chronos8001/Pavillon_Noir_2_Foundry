@@ -6,6 +6,8 @@
 import * as S from "./service.mjs";
 import { MagieError, etatCycle, validerRepartition, coutAugmentations } from "./regles.mjs";
 import { ACTION, estEnCours, resumeActe, vueJoueur } from "./moteur.mjs";
+import { parametresEffectifs } from "./parametres.mjs";
+import { effetsActe } from "./service-effets.mjs";
 
 const SYS = "pavillon-noir-2";
 const LIBELLES_STATUT = { "en-cours": "En cours", termine: "Terminé", rejet: "Rejet", annule: "Annulé" };
@@ -114,16 +116,23 @@ export class ControleurMagie {
       const res = r.resolution;
       // Les Succès supplémentaires se répartissent quand le budget est connu de l'utilisateur
       const budgetConnu = isGM || !r.puissanceSecrete || !!r.narration;
-      if (res?.suffisant && budgetConnu) c.repartition = this.#contexteRepartition(res.succesSupplementaires, r.repartition, null, c);
+      const pouvoir = r.pouvoir ? actor.items.get(r.pouvoir.id) : null;
+      if (res?.suffisant && budgetConnu) c.repartition = this.#contexteRepartition(res.succesSupplementaires, r.repartition, null, c, pouvoir);
       c.peutNarrer = isGM && !!res;
       c.narration = r.narration;
+      // Effets mécaniques (MJ) : après l'accord, pour un Pouvoir qui en possède
+      c.effetsPossibles = isGM && !!r.narration?.accordee && !!pouvoir?.effects?.size;
+      c.applicationLabel = { manuel: "manuel", assiste: "assisté", automatique: "automatique" }[pouvoir?.system.application ?? "manuel"];
     } else {
-      this.#contexteTranse(brut, c);
+      this.#contexteTranse(brut, c, actor);
     }
+    c.nbEffets = isGM ? effetsActe(brut.id) : 0;
+    c.cibles = brut.cibles ?? [];
+    c.peutCloturer = isGM && enCours && !this.occupe;
     return c;
   }
 
-  #contexteTranse(brut, c) {
+  #contexteTranse(brut, c, actor) {
     const t = brut.transe;
     c.transe = c.etat.transe;
     c.action = t.actionEnCours ? { ...t.actionEnCours, libelle: LIBELLES_ACTION[t.actionEnCours.type] } : null;
@@ -165,14 +174,21 @@ export class ControleurMagie {
             : `${LIBELLES_ACTION[j.action] ?? j.action}${j.pouvoir ? ` : ${j.pouvoir.nom}` : ""}${j.niveau != null ? ` — niveau ${j.niveau}` : ""}${j.succes != null && j.action === "renforcement" ? ` — ${j.succes} Succès` : ""}`
     })).reverse();
     const derniere = t.activations.filter(a => a.succes > 0).at(-1);
-    if (derniere) c.repartitionActivation = { n: derniere.n, nom: derniere.pouvoir.nom, ...this.#contexteRepartition(derniere.succes, derniere.repartition, derniere.n, c) };
+    if (derniere) c.repartitionActivation = { n: derniere.n, nom: derniere.pouvoir.nom, ...this.#contexteRepartition(derniere.succes, derniere.repartition, derniere.n, c, actor.items.get(derniere.pouvoir.id)) };
+    c.effetsActivation = c.isGM ? t.activations.filter(a => actor.items.get(a.pouvoir.id)?.effects?.size).map(a => ({ n: a.n, nom: a.pouvoir.nom })) : [];
     c.rejet = c.etat.transe.rejet;
   }
 
-  #contexteRepartition(budget, existante, activation, c) {
+  #contexteRepartition(budget, existante, activation, c, pouvoir = null) {
     const v = validerRepartition(this.repartition, budget);
+    // Prévisualisation des paramètres améliorés (tables p. 100), si l'utilisateur peut les voir
+    const apercu = pouvoir && S.parametresVisibles()
+      ? Object.values(parametresEffectifs({ ...pouvoir.system }, this.repartition)).map(p => ({
+        label: p.label, base: p.base || "—", resultat: p.resultat || "—", change: p.base !== p.resultat, accordMJ: p.accordMJ, horsTable: p.horsTable
+      }))
+      : null;
     return {
-      budget, cout: v.cout, valide: v.valide && !this.occupe, erreurs: v.erreurs, enregistree: existante,
+      budget, cout: v.cout, valide: v.valide && !this.occupe, erreurs: v.erreurs, enregistree: existante, apercu,
       activation: activation ?? "", requete: c.requete, seq: c.seq,
       parametres: Object.entries(S.cfg().parametres).map(([k, d]) => ({
         key: k, label: d.label, n: this.repartition[k] ?? 0, cout: coutAugmentations(Number(this.repartition[k]) || 0)
@@ -242,6 +258,16 @@ export class ControleurMagie {
       case "imposer": return S.imposerDetachement(actor, ctx);
       case "concentration": return S.echecConcentration(actor, { motif: this.prep.motif }, ctx);
       case "evenements": return game.pn2.magie.evenements.ouvrir();
+      case "historique": return game.pn2.magie.historique(actor);
+      case "appliquerEffets": {
+        const r = await S.appliquerEffetsActe(actor, { activation: target.dataset.activation ? Number(target.dataset.activation) : null });
+        return ui.notifications.info(`Effets appliqués à ${r.cibles.join(", ")}${r.duree?.secondes ? ` pour ${r.duree.resultat}` : ""}.`);
+      }
+      case "revoquerEffets": {
+        const n = await S.revoquerEffetsActe(actor);
+        return ui.notifications.info(`${n} effet(s) révoqué(s).`);
+      }
+      case "cloture": return S.clotureAdministrative(actor, this.prep.motif, ctx);
       case "repartir": {
         const activation = target.dataset.activation ? Number(target.dataset.activation) : null;
         return S.repartir(actor, this.repartition, { activation, ...ctx });

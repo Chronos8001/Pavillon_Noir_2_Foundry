@@ -272,3 +272,67 @@ soumise au MJ. Le joueur ne connaît ni l'objectif ni l'issue.
 Après un Rejet, le supplément (p. 127) fait **continuer** le tirage (Rituel : jusqu'à un Succès ; Transe : se détacher jusqu'à sortir)
 et compte les Colères tirées depuis le Rejet pour la durée des séquelles. Le système conserve la règle validée en phase 1 : le Rejet
 arrête l'acte. Le nombre de pénitences est donc le dépassement du Seuil à cet instant.
+
+## Phase 4 — intégration et stabilisation
+
+Guides : [joueur](magie-joueur.md), [MJ](magie-mj.md). Probabilités : [simulation](simulation-magie.md) (`npm run simulation`).
+
+### Nouveaux modules
+
+```
+module/magie/parametres.mjs     tables Portée / Cible / Impact / Durée (p. 100), améliorations, durées en secondes — pur
+module/magie/journal.mjs        historique des actes, journal des interventions du MJ — pur
+module/magie/service-effets.mjs effets des Pouvoirs (Active Effects natifs) : application, révocation, expiration
+module/magie/migrations.mjs     migrations versionnées (réglage magieMigration)
+module/magie/app-historique.mjs fenêtre d'historique
+tools/simulation-magie.mjs      simulation des probabilités
+tests/aides/foundry-simule.mjs  Foundry simulé pour les tests d'intégration
+```
+
+### Paramètres
+
+`CONFIG.PN2.magie.parametres` contient les tables officielles. `parametresEffectifs(pouvoir, repartition)` donne la valeur améliorée
+(une catégorie par augmentation), signale les catégories soumises à l'accord du MJ et conserve les valeurs hors table (« 1 cycle »).
+L'Impact de base vaut la Puissance. La répartition est prévisualisée, validée par le moteur et inscrite au journal de l'acte.
+
+### Effets des Pouvoirs
+
+`pouvoir.system.application` : `manuel` | `assiste` | `automatique`. Les effets sont des Active Effects de l'objet Pouvoir, copiés sur
+les cibles (enregistrées au début de l'acte) avec `duration.seconds` = Durée effective et `flags["pavillon-noir-2"].magie`
+(`acteId`, `lanceur`, `expire`). Révocation par acte ; expiration au fil du temps du monde (MJ actif) ; un Rejet révoque les effets de l'acte.
+
+### Historique et interventions
+
+- `system.magie.historique` : une entrée par acte terminé (date, religion, Voie, type, souhait, Pouvoir, Succès, Colère, résultat,
+  améliorations, Rejet, validation du MJ). Mise à jour idempotente (la validation et la répartition, faites après la fin, y sont reportées).
+  Aucune Puissance secrète tant que le MJ ne l'a pas révélée. 200 entrées au plus.
+- `system.magie.interventions` : décisions narratives et corrections administratives du MJ (motif obligatoire pour ces dernières).
+- Ces champs, comme les conséquences et le coffre, ne sont modifiables que par le MJ.
+
+### Corrections administratives
+
+`clotureAdministrative(actor, motif)` (moteur : `clotureAdministrative`) et `corrigerColere(actor, groupe, valeur, motif)`.
+
+### Import
+
+Le lot accepte `aleas` en plus de `religions`, `voies`, `pouvoirs`. Chaque document reçoit `flags["pavillon-noir-2"].cleImport`
+(`type:cle`) : un second import **met à jour** les documents existants au lieu de les dupliquer. Les paramètres hors table produisent des
+avertissements (non bloquants). `creerCompendiumsMonde()` crée *Magie : Pouvoirs* et *Magie : Aléas divins*.
+
+### Compatibilité et migrations
+
+- `moteur.normaliserActe` complète à la lecture les actes des phases 1 à 3 (champs manquants), sans rien effacer.
+- `migrations.mjs` : exécutées une fois par le MJ actif, dans l'ordre des versions. 0.7.0 : les Pouvoirs possédés sans `voieUuid`
+  sont reliés à leur Voie d'après leur clé.
+- Les champs de schéma ajoutés reçoivent leur valeur par défaut ; aucune donnée inconnue n'est supprimée.
+
+### Temps du monde
+
+Hook `updateWorldTime` (MJ actif seulement, une fois par changement) : récupération de la Colère, Cycles écoulés, expiration des effets.
+Les traitements sont idempotents (référence temporelle avancée, alerte mémorisée par niveau, effets supprimés une fois).
+Séquelles : `echeance` facultative, signalée au MJ, jamais levée automatiquement.
+
+### Tests
+
+`npm test` : 162 tests, dont les scénarios d'intégration A à J (`tests/magie/integration.test.mjs`) sur un Foundry simulé.
+Ils couvrent le service, le moteur, l'examen secret, les effets et les garde-fous réels ; ils ne remplacent pas une validation dans Foundry.

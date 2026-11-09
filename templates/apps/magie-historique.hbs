@@ -1,0 +1,31 @@
+<div class="pn2-magie pn2-histo">
+  {{#if acteurs.length}}
+  <div class="ligne"><label>Personnage</label>
+    <select data-choix-acteur>{{#each acteurs}}<option value="{{id}}" {{#if choisi}}selected{{/if}}>{{nom}}</option>{{/each}}</select></div>
+  {{/if}}
+  <div class="pn2-histo-corps">
+  {{#if actor}}
+    <h2><i class="fa-solid fa-scroll"></i> Actes sacrés</h2>
+    <table class="pn2-mini">
+      <tr><th>Date</th><th>Acte</th><th>Voie</th><th>Souhait / Pouvoir</th><th>Succès</th><th>Colère</th><th>Résultat</th><th>Améliorations</th><th>MJ</th></tr>
+      {{#each entrees}}
+      <tr class="{{#if rejet}}echec{{/if}}">
+        <td class="hint">{{quand}}</td><td>{{typeLabel}}{{#if niveauMax}} (niv. {{niveauMax}}){{/if}}</td><td>{{voie}}</td>
+        <td>{{#if souhait}}« {{souhait}} »{{/if}}{{#if pouvoir}} <span class="hint">{{pouvoir}}</span>{{/if}}{{#if puissance}} <span class="hint">P{{puissance}}</span>{{/if}}</td>
+        <td>{{succes}}</td><td>{{colere}}</td><td>{{resultatLabel}}</td><td>{{#if ameliorations}}{{ameliorations}} Succès{{/if}}</td>
+        <td>{{validationLabel}}{{#if noteMJ}} <span class="hint">{{noteMJ}}</span>{{/if}}</td>
+      </tr>
+      {{else}}<tr><td colspan="9" class="hint">Aucun acte terminé.</td></tr>{{/each}}
+    </table>
+    {{#if isGM}}
+    <h2><i class="fa-solid fa-user-shield"></i> Interventions du MJ</h2>
+    <table class="pn2-mini">
+      <tr><th>Date</th><th>Nature</th><th>Intervention</th><th>Détail</th><th>Par</th></tr>
+      {{#each interventions}}
+      <tr><td class="hint">{{quand}}</td><td><span class="tag nature-{{nature}}">{{natureLabel}}</span></td><td>{{action}}</td><td class="hint">{{detail}}</td><td>{{par}}</td></tr>
+      {{else}}<tr><td colspan="5" class="hint">Aucune intervention.</td></tr>{{/each}}
+    </table>
+    {{/if}}
+  {{else}}<p class="hint">Aucun historique consultable.</p>{{/if}}
+  </div>
+</div>

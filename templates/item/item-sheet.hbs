@@ -221,6 +221,19 @@
   <div class="ligne"><label>Compulsion</label><input type="text" name="system.compulsion" value="{{system.compulsion}}"></div>
   <div class="ligne"><label>Visions</label><input type="text" name="system.visions" value="{{system.visions}}"></div>
   <div class="ligne"><label>Conditions et particularités</label><input type="text" name="system.conditions" value="{{system.conditions}}"></div>
+  {{#if @root.isGM}}
+  <fieldset><legend>Effets mécaniques (MJ)</legend>
+    <div class="ligne"><label>Application</label><select name="system.application">{{selectOptions applications selected=system.application}}</select></div>
+    <ul class="pn2-references">
+      {{#each effetsPouvoir}}<li><img src="{{img}}" width="16" height="16"> {{name}}
+        <a class="pn2-mini-btn" data-action="effetEditer" data-id="{{id}}"><i class="fa-solid fa-pen"></i></a>
+        {{#if @root.editable}}<a class="pn2-mini-btn" data-action="effetSupprimer" data-id="{{id}}"><i class="fa-solid fa-trash"></i></a>{{/if}}</li>
+      {{else}}<li class="hint">Aucun effet : l'intervention reste narrative.</li>{{/each}}
+    </ul>
+    {{#if editable}}<a class="pn2-btn petit" data-action="effetCreer"><i class="fa-solid fa-plus"></i> Effet (Active Effect)</a>{{/if}}
+    <p class="hint">Les effets sont copiés sur les cibles quand le MJ les applique, avec la Durée effective du Pouvoir (table p. 100).</p>
+  </fieldset>
+  {{/if}}
   {{#if parametresVisibles}}
   <fieldset><legend>Paramètres de base <span class="hint">(réservés au MJ selon le supplément)</span></legend>
     <div class="grid-2">

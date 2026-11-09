@@ -31,7 +31,8 @@ export class PN2BibliothequeApp extends HandlebarsApplicationMixin(ApplicationV2
       ajouter: PN2BibliothequeApp.#onAjouter,
       retirer: PN2BibliothequeApp.#onRetirer,
       recharger: PN2BibliothequeApp.#onRecharger,
-      importer: PN2BibliothequeApp.#onImporter
+      importer: PN2BibliothequeApp.#onImporter,
+      compendiums: PN2BibliothequeApp.#onCompendiums
     }
   };
 
@@ -184,6 +185,15 @@ export class PN2BibliothequeApp extends HandlebarsApplicationMixin(ApplicationV2
     this.render();
   }
 
+  static async #onCompendiums() {
+    try {
+      const crees = await S.creerCompendiumsMonde();
+      ui.notifications.info(crees.length ? `Compendiums créés : ${crees.join(", ")}.` : "Les compendiums du monde existent déjà.");
+    } catch (err) { ui.notifications.error(err.message); }
+    this.entrees = null;
+    this.render();
+  }
+
   static async #onRecharger() {
     this.entrees = null;
     this.render();
@@ -206,7 +216,11 @@ export class PN2BibliothequeApp extends HandlebarsApplicationMixin(ApplicationV2
     if (!form?.json) return;
     try {
       const bilan = await S.importerMagie(JSON.parse(form.json), { packId: form.pack || null });
-      ui.notifications.info(`Import : ${bilan.religions} religion(s), ${bilan.voies} Voie(s), ${bilan.pouvoirs} Pouvoir(s).`);
+      ui.notifications.info(`Import : ${bilan.religions} religion(s), ${bilan.voies} Voie(s), ${bilan.pouvoirs} Pouvoir(s), ${bilan.aleas} Aléa(s) — dont ${bilan.misAJour} mis à jour.`);
+      if (bilan.avertissements?.length) {
+        console.warn("Pavillon Noir 2 | Avertissements d'import", bilan.avertissements);
+        ui.notifications.warn(`${bilan.avertissements.length} avertissement(s) (paramètres hors table) : voir la console.`);
+      }
     } catch (err) {
       ui.notifications.error(err instanceof SyntaxError ? "JSON invalide." : err.message);
       console.error(err);

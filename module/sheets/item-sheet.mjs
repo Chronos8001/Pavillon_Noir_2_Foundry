@@ -16,7 +16,10 @@ export class PN2ItemSheet extends HandlebarsApplicationMixin(foundry.application
       afficher: PN2ItemSheet.#onAfficher,
       ouvrirReference: PN2ItemSheet.#onOuvrirReference,
       retirerReference: PN2ItemSheet.#onRetirerReference,
-      effacerReference: PN2ItemSheet.#onEffacerReference
+      effacerReference: PN2ItemSheet.#onEffacerReference,
+      effetCreer: PN2ItemSheet.#onEffetCreer,
+      effetEditer: PN2ItemSheet.#onEffetEditer,
+      effetSupprimer: PN2ItemSheet.#onEffetSupprimer
     }
   };
 
@@ -110,6 +113,9 @@ export class PN2ItemSheet extends HandlebarsApplicationMixin(foundry.application
       return;
     }
     // Pouvoir
+    context.isGM = game.user.isGM;
+    context.applications = { manuel: "Manuel (narratif, MJ)", assiste: "Assisté (bouton du MJ)", automatique: "Automatique (dès l'accord ou l'activation)" };
+    context.effetsPouvoir = item.effects.contents.map(e => ({ id: e.id, name: e.name, img: e.img }));
     context.voieRef = PN2ItemSheet.resoudre(s.voieUuid);
     if (item.actor) {
       const r = Magie.voiePossedee(item.actor, item);
@@ -144,6 +150,20 @@ export class PN2ItemSheet extends HandlebarsApplicationMixin(foundry.application
       return item.update({ "system.voieUuid": doc.uuid, "system.voie": doc.system.cleEffective });
     }
     ui.notifications.warn(`Déposez ${item.type === "religion" ? "une Voie" : item.type === "voie" ? "une Religion" : "une Voie"} sur cette fiche.`);
+  }
+
+  static async #onEffetCreer() {
+    const item = this.document;
+    const [ef] = await item.createEmbeddedDocuments("ActiveEffect", [{ name: item.name, img: item.img, transfer: false, origin: item.uuid }]);
+    ef?.sheet.render(true);
+  }
+
+  static #onEffetEditer(event, target) {
+    this.document.effects.get(target.dataset.id)?.sheet.render(true);
+  }
+
+  static async #onEffetSupprimer(event, target) {
+    await this.document.effects.get(target.dataset.id)?.delete();
   }
 
   static async #onOuvrirReference(event, target) {

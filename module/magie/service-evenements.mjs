@@ -16,11 +16,12 @@ import * as Q from "./consequences.mjs";
 import * as Coffre from "./coffre.mjs";
 import * as S from "./service.mjs";
 import { VerrouCles } from "./verrou.mjs";
+import * as J from "./journal.mjs";
+import { revoquerEffets } from "./service-effets.mjs";
 
 const SYS = PN2.id;
 const verrou = new VerrouCles();
-const TPL = "systems/pavillon-noir-2/templates";
-const render = (path, data) => foundry.applications.handlebars.renderTemplate(`${TPL}/${path}`, data);
+const render = S.render;
 const maintenant = () => game.time.worldTime;
 const randomID = () => foundry.utils.randomID();
 const estMJActif = () => game.user === game.users.activeGM;
@@ -144,9 +145,12 @@ async function objectifQuete() {
  * Idempotent : chaque lancer, Quête et Rejet n'est traité qu'une fois, même après une reconnexion.
  */
 export async function examinerActeur(actor) {
-  if (!estMJActif() || !S.estPersonnage(actor) || !cleCoffre()) return null;
+  if (!estMJActif() || !S.estPersonnage(actor)) return null;
   const etat = S.acteCourant(actor);
   if (!etat) return null;
+  await archiverActe(actor);
+  await effetsAutomatiques(actor);
+  if (!cleCoffre()) return null;
   return verrou.executer(actor.uuid, async () => {
     const e = S.acteCourant(actor);
     let ex = lireExamen(actor);
@@ -155,7 +159,7 @@ export async function examinerActeur(actor) {
     const t = e.transe;
     const queteEnCours = t?.actionEnCours?.type === M.ACTION.QUETE ? (t.quetes?.length ?? 0) + 1 : null;
     const quetesFinies = (t?.quetes ?? []).map(q => q.n).filter(n => !ex.resolues.includes(n));
-    const aArchiver = !M.estEnCours(e) && !ex.archive;
+    const aArchiver = !M.estEnCours(e) && !ex.archive;   // Puissance de l'Aléa (secret) à figer en fin d'acte
     const nouvelleQuete = queteEnCours && !ex.quetes.includes(queteEnCours);
     if (!aExaminer.length && !nouvelleQuete && !quetesFinies.length && !aArchiver) return null;
 
@@ -202,22 +206,15 @@ export async function examinerActeur(actor) {
       }
       ex.resolues.push(n);
     }
-    // Fin de l'acte : Puissance des Aléas (suite initiale complète) et archivage du Rejet
-    const extra = {};
+    // Fin de l'acte : Puissance des Aléas (suite initiale complète)
     if (aArchiver) {
       const pa = E.puissanceAlea(e.lancers, { termine: true });
       for (const a of coffre.aleas.filter(x => x.acteId === e.id)) a.puissance = pa.puissance;
-      const archive = Q.archiveRejet(e, { maintenant: maintenant(), dateReelle: new Date().toISOString() });
-      if (archive && !actor.system.magie.rejets.some(r => r.id === archive.id)) {
-        extra["system.magie.rejets"] = [...actor.system.magie.rejets.map(r => ({ ...r })), archive];
-        nouveautes.push("un Rejet à résoudre");
-      }
       ex.archive = true;
     }
     await actor.update({
       [`flags.${SYS}.coffre`]: await chiffrerCoffre(coffre),
-      [`flags.${SYS}.examen`]: JSON.stringify(ex),
-      ...extra
+      [`flags.${SYS}.examen`]: JSON.stringify(ex)
     }, { pn2Evenements: true });
     if (nouveautes.length) {
       ui.notifications.info(`${actor.name} : ${nouveautes.join(", ")} — voir le panneau des événements divins.`);
@@ -225,6 +222,53 @@ export async function examinerActeur(actor) {
     }
     return { nouveautes };
   });
+}
+
+/**
+ * Partie publique de l'examen (aucune clé nécessaire) : historique de l'acte terminé, archive du Rejet,
+ * révocation des effets d'un acte rejeté (« tous les Pouvoirs activés pendant cet acte sacré sont annulés », p. 127).
+ * Idempotent : n'écrit que si quelque chose change.
+ */
+async function archiverActe(actor) {
+  return verrou.executer(`${actor.uuid}:public`, async () => {
+    const e = S.acteCourant(actor);
+    if (!e || M.estEnCours(e)) return;
+    const m = actor.system.magie;
+    const upd = {};
+    const archive = Q.archiveRejet(e, { maintenant: maintenant(), dateReelle: new Date().toISOString() });
+    const dejaArchive = archive && m.rejets.some(r => r.id === archive.id);
+    if (archive && !dejaArchive) {
+      upd["system.magie.rejets"] = [...m.rejets.map(r => ({ ...r })), archive];
+      ui.notifications.info(`${actor.name} : un Rejet à résoudre — voir le panneau des événements divins.`);
+      const n = await revoquerEffets(e.id);
+      if (n) await S.tracer(actor, J.NATURE.NARRATIVE, "Effets annulés par le Rejet", `${n} effet(s)`);
+    }
+    const existant = (m.historique ?? []).find(h => h.id === e.id);
+    const entree = J.entreeHistorique(e, { dateReelle: existant?.dateReelle ?? new Date().toISOString(), consequences: existant?.consequences ?? [] });
+    const historique = J.majHistorique(m.historique, entree);
+    if (historique) upd["system.magie.historique"] = historique;
+    if (Object.keys(upd).length) {
+      await actor.update(upd, { pn2Evenements: true });
+      rafraichirPanneau();
+    }
+  });
+}
+
+/** Activations en Transe de Pouvoirs « automatiques » : effets appliqués aux cibles de l'acte (une seule fois). */
+async function effetsAutomatiques(actor) {
+  const e = S.acteCourant(actor);
+  if (!e?.transe?.activations.length) return;
+  const faits = new Set(JSON.parse(actor.getFlag(SYS, "effetsAuto") ?? "[]").filter(k => k.startsWith(`${e.id}:`)));
+  const avant = faits.size;
+  for (const a of e.transe.activations) {
+    const cle = `${e.id}:${a.n}`;
+    if (faits.has(cle)) continue;
+    faits.add(cle);
+    const pv = actor.items.get(a.pouvoir.id);
+    if (pv?.system.application !== "automatique" || !pv.effects?.size) continue;
+    try { await S.appliquerEffetsActe(actor, { activation: a.n }); } catch (err) { ui.notifications.warn(`${actor.name} : ${err.message}`); }
+  }
+  if (faits.size !== avant) await actor.update({ [`flags.${SYS}.effetsAuto`]: JSON.stringify([...faits]) }, { pn2Evenements: true });
 }
 
 /** Examine tous les actes (connexion du MJ, reprise de session). */
@@ -269,6 +313,7 @@ export async function resoudreAlea(actor, id, { decision, interpretation = null,
     if (interpretation != null) alea.interpretation = interpretation;
     if (decision) alea.statut = { appliquer: "applique", differer: "differe", ignorer: "ignore" }[decision] ?? alea.statut;
   });
+  await S.tracer(actor, J.NATURE.NARRATIVE, `Aléa ${ { appliquer: "appliqué", differer: "différé", ignorer: "ignoré" }[decision] ?? "réinterprété" }`, alea.interpretation);
   if (decision === "appliquer" && communiquer) {
     await carte(actor, `Aléa divin : ${alea.voie}`, [alea.interpretation || alea.aleaNom || "La divinité se manifeste."], "");
   }
@@ -276,7 +321,7 @@ export async function resoudreAlea(actor, id, { decision, interpretation = null,
 }
 
 /** Pouvoirs proposables pour une révélation : même Voie, Puissance attendue, pas encore connus. */
-export async function candidatsRevelation(actor, revelation) {
+export async function candidatsRevelation(actor, revelation, cache = new Map()) {
   const connus = new Set(actor.items.filter(i => i.type === "pouvoir").map(i => S.uuidSource(i)).filter(Boolean));
   const voie = actor.items.get(revelation.voieId);
   const uuidsVoie = new Set([voie?.uuid, S.uuidSource(voie)].filter(Boolean));
@@ -285,8 +330,8 @@ export async function candidatsRevelation(actor, revelation) {
     && !connus.has(e.uuid);
   const liste = game.items.filter(i => i.type === "pouvoir").map(i => ({ uuid: i.uuid, nom: i.name, system: i.system }));
   for (const pack of game.packs.filter(p => p.documentName === "Item")) {
-    const index = await pack.getIndex({ fields: ["type", "system.puissance", "system.voieUuid", "system.voie"] });
-    for (const e of index) if (e.type === "pouvoir") liste.push({ uuid: e.uuid, nom: e.name, system: e.system ?? {} });
+    if (!cache.has(pack.collection)) cache.set(pack.collection, await pack.getIndex({ fields: ["type", "system.puissance", "system.voieUuid", "system.voie"] }));
+    for (const e of cache.get(pack.collection)) if (e.type === "pouvoir") liste.push({ uuid: e.uuid, nom: e.name, system: e.system ?? {} });
   }
   return liste.filter(ok).map(e => ({ uuid: e.uuid, nom: e.nom }));
 }
@@ -327,6 +372,7 @@ export async function resoudreRevelation(actor, id, { decision, pouvoirUuid = nu
   }
   rev.statut = { accepter: "acceptee", differer: "differee", refuser: "refusee" }[decision] ?? rev.statut;
   await modifierCoffre(actor, c => { Object.assign(trouver(c.revelations, id), rev); });
+  await S.tracer(actor, J.NATURE.NARRATIVE, `Révélation ${ { accepter: "acceptée", differer: "différée", refuser: "refusée" }[decision] ?? "" }`, cree ? cree.name : "");
   if (cree) {
     await carte(actor, "Compulsion divine", [compulsion || "Le personnage ressent une compulsion irrépressible."],
       "Assouvir la compulsion rendra le Pouvoir accessible.");
@@ -346,6 +392,7 @@ export async function imposerConsequences(actor, rejetId, { sequelle = null, pen
   const seq = sequelle ? {
     id: randomID(), rejetId, nature: sequelle.nature ?? "", gravite: Number(sequelle.gravite ?? rejet.puissance) || 0,
     duree: sequelle.duree ?? "", restrictions: sequelle.restrictions ?? "", levee: sequelle.levee ?? "",
+    echeance: Number(sequelle.echeanceJours) > 0 ? date + Number(sequelle.echeanceJours) * 86400 : null,
     voieCle: sequelle.toutesVoies ? "" : rejet.voieCle, divinite: sequelle.divinite ?? rejet.voie, malusAuspices: sequelle.malusAuspices !== false,
     active: true, dateDebut: date, dateFin: null
   } : null;
@@ -359,6 +406,7 @@ export async function imposerConsequences(actor, rejetId, { sequelle = null, pen
     return { brouillon: true };
   }
   await appliquerConsequences(actor, rejetId, seq, pens);
+  await S.tracer(actor, J.NATURE.NARRATIVE, "Conséquences d'un Rejet imposées", [seq?.nature, ...pens.map(p => p.description)].filter(Boolean).join(" ; "));
   return { brouillon: false };
 }
 
@@ -383,6 +431,7 @@ export async function communiquerBrouillon(actor, brouillonId) {
     c.brouillons = c.brouillons.filter(x => x.id !== brouillonId);
   });
   await appliquerConsequences(actor, b.rejetId, b.sequelle, b.penitences);
+  await S.tracer(actor, J.NATURE.NARRATIVE, "Conséquences communiquées");
 }
 
 /** Le MJ fait évoluer une pénitence (à accomplir, en cours, accomplie, abandonnée). */
@@ -401,6 +450,8 @@ export async function majPenitence(actor, id, { etat, note } = {}) {
     return q;
   });
   await actor.update({ "system.magie.penitences": penitences }, { pn2Evenements: true });
+  const p = penitences.find(x => x.id === id);
+  await S.tracer(actor, J.NATURE.NARRATIVE, `Pénitence : ${p?.etat ?? ""}`, p?.description ?? "");
 }
 
 /** Le MJ lève une séquelle (normalement quand toutes ses pénitences sont accomplies). */
@@ -408,6 +459,7 @@ export async function leverSequelle(actor, id) {
   exigerMJ();
   const sequelles = actor.system.magie.sequelles.map(s => (s.id === id ? { ...s, active: false, dateFin: maintenant() } : { ...s }));
   await actor.update({ "system.magie.sequelles": sequelles }, { pn2Evenements: true });
+  await S.tracer(actor, J.NATURE.NARRATIVE, "Séquelle levée", sequelles.find(x => x.id === id)?.nature ?? "");
 }
 
 /** Le MJ clôt un Rejet sans conséquence supplémentaire (conclusion libre). */
@@ -415,13 +467,15 @@ export async function cloreRejet(actor, id, conclusion = "") {
   exigerMJ();
   const rejets = actor.system.magie.rejets.map(r => (r.id === id ? { ...r, statut: "resolu", conclusion } : { ...r }));
   await actor.update({ "system.magie.rejets": rejets }, { pn2Evenements: true });
+  await S.tracer(actor, J.NATURE.NARRATIVE, "Rejet clos sans conséquence", conclusion);
 }
 
 /* -------------------------------------------- */
 /*  Protection et affichage                     */
 /* -------------------------------------------- */
 
-const CHEMINS_PROTEGES = ["system.magie.rejets", "system.magie.sequelles", "system.magie.penitences", `flags.${SYS}.coffre`, `flags.${SYS}.examen`];
+const CHEMINS_PROTEGES = ["system.magie.rejets", "system.magie.sequelles", "system.magie.penitences", "system.magie.historique",
+  "system.magie.interventions", `flags.${SYS}.coffre`, `flags.${SYS}.examen`, `flags.${SYS}.effetsAuto`];
 
 /**
  * Appelé par PN2Actor._preUpdate : un joueur ne peut ni modifier ni supprimer les Rejets, séquelles,
@@ -441,7 +495,7 @@ export function protegerConsequences(changes, user) {
 
 /** Carte publique (propriétaires et MJ) sans aucune donnée secrète. */
 async function carte(actor, titre, lignes, note) {
-  const ids = game.users.filter(u => u.isGM || actor.testUserPermission(u, "OWNER")).map(u => u.id);
+  const ids = S.destinataires(actor);
   await ChatMessage.create({
     speaker: ChatMessage.getSpeaker({ actor }),
     content: await render("chat/magie-evenement.hbs", { titre, lignes, note }),

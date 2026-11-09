@@ -33,6 +33,7 @@ export class PN2EvenementsApp extends HandlebarsApplicationMixin(ApplicationV2) 
   async _prepareContext() {
     const cle = await V.etatCle();
     const ctx = { cle, acteurs: [], historique: [] };
+    const cache = new Map();   // index des compendiums lus une seule fois par rendu
     const now = game.time.worldTime;
     for (const actor of game.actors.filter(a => S.estPersonnage(a))) {
       const m = actor.system.magie;
@@ -61,7 +62,7 @@ export class PN2EvenementsApp extends HandlebarsApplicationMixin(ApplicationV2) 
           a.aleas = c.aleas.filter(x => ["en-attente", "differe"].includes(x.statut)).map(x => ({ ...x, statutLabel: LIB_STATUT[x.statut] }));
           a.revelations = [];
           for (const r of c.revelations.filter(x => ["en-attente", "differee"].includes(x.statut))) {
-            const candidats = r.puissance > 0 ? await V.candidatsRevelation(actor, r) : [];
+            const candidats = r.puissance > 0 ? await V.candidatsRevelation(actor, r, cache) : [];
             a.revelations.push({ ...r, statutLabel: LIB_STATUT[r.statut], candidats, origineLabel: r.origine === "quete" ? "Quête mystique réussie" : "Le Mat" });
           }
           a.quetes = c.quetes.slice(-5).reverse();
@@ -75,7 +76,8 @@ export class PN2EvenementsApp extends HandlebarsApplicationMixin(ApplicationV2) 
       // Rejets, séquelles, pénitences
       a.rejets = m.rejets.filter(r => r.statut !== "resolu").map(r => ({ ...r, nbPenitences: nombrePenitences(r),
         lignesPenitences: Array.from({ length: nombrePenitences(r) }, (_, i) => `Pénitence ${i + 1} : `).join("\n") }));
-      a.sequelles = m.sequelles.filter(s => s.active).map(s => ({ ...s, ...etatSequelle(s, m.penitences) }));
+      a.sequelles = m.sequelles.filter(s => s.active).map(s => ({ ...s, ...etatSequelle(s, m.penitences), echue: s.echeance != null && s.echeance <= now }));
+      a.coleres = Object.entries(m.colere ?? {}).map(([groupe, c]) => ({ groupe, valeur: c.valeur }));
       a.penitences = m.penitences.filter(p => ["a-accomplir", "en-cours"].includes(p.etat)).map(p => {
         const proch = prochaineRepentance(p.derniereTentative, p.priorite);
         return { ...p, etatLabel: LIB_PENITENCE[p.etat], prochaine: proch != null && proch > now ? Math.ceil((proch - now) / 86400) : null };
@@ -119,7 +121,7 @@ export class PN2EvenementsApp extends HandlebarsApplicationMixin(ApplicationV2) 
         }); break;
         case "imposerConsequences": await V.imposerConsequences(actor, id, {
           sequelle: f.nature ? { nature: f.nature, gravite: f.gravite, duree: f.duree, restrictions: f.restrictions, levee: f.levee,
-            malusAuspices: f.malus, toutesVoies: f.toutesVoies } : null,
+            malusAuspices: f.malus, toutesVoies: f.toutesVoies, echeanceJours: f.echeanceJours } : null,
           penitences: String(f.penitences ?? "").split(/\r?\n/).map(l => l.replace(/^Pénitence \d+ :\s*/, "").trim()).filter(Boolean)
             .map(description => ({ description, priorite: !!f.priorite })),
           communiquer: !!f.communiquer
@@ -128,6 +130,8 @@ export class PN2EvenementsApp extends HandlebarsApplicationMixin(ApplicationV2) 
         case "communiquer": await V.communiquerBrouillon(actor, id); break;
         case "penitence": await V.majPenitence(actor, id, { etat: f.etat, note: f.note }); break;
         case "lever": await V.leverSequelle(actor, id); break;
+        case "corrigerColere": await S.corrigerColere(actor, id, f.valeur, f.motif); break;
+        case "historique": game.pn2.magie.historique(actor); break;
       }
     } catch (err) {
       if (err instanceof MagieError) ui.notifications.warn(err.message);

@@ -181,3 +181,9 @@ test("journal de Transe : chaque action réussie garde son type d'événement (c
   assert.deepEqual(reussites.map(j => j.niveau), [1, 2, 1]);
   assert.equal(reussites[2].pouvoir.id, "p2");
 });
+
+test("vue joueur : le Seuil est aussi retiré de la résolution d'un Rituel (correctif)", () => {
+  const fin = arreter(tirer(rituel(), [S, S])).etat;
+  assert.equal(vueJoueur(fin, { seuilVisible: false }).rituel.resolution.seuil, null);
+  assert.equal(vueJoueur(fin, { seuilVisible: true }).rituel.resolution.seuil, fin.seuil.seuil);
+});

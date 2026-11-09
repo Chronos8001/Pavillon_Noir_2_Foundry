@@ -3,7 +3,8 @@
     <label>Personnage
       <select data-choix-acteur><option value="">— Aucun —</option>{{#each acteurs}}<option value="{{id}}" {{#if (eq id ../actor.id)}}selected{{/if}}>{{nom}}</option>{{/each}}</select></label>
     <a class="pn2-mini-btn" data-action="recharger" title="Relire les compendiums"><i class="fa-solid fa-rotate"></i></a>
-    {{#if isGM}}<a class="pn2-btn petit" data-action="importer" title="Importer un lot de données (JSON)"><i class="fa-solid fa-file-import"></i> Importer</a>{{/if}}
+    {{#if isGM}}<a class="pn2-btn petit" data-action="importer" title="Importer un lot de données (JSON) ; un nouvel import met à jour sans doublon"><i class="fa-solid fa-file-import"></i> Importer</a>
+    <a class="pn2-btn petit" data-action="compendiums" title="Créer les compendiums du monde « Magie : Pouvoirs » et « Magie : Aléas divins »"><i class="fa-solid fa-box-archive"></i> Compendiums du monde</a>{{/if}}
   </div>
 
   <nav class="pn2-tabs tabs">

@@ -6,7 +6,8 @@
   "type": "module",
   "scripts": {
     "build:packs": "node tools/build-packs.mjs",
-    "test": "node --test \"tests/**/*.test.mjs\""
+    "test": "node --test \"tests/**/*.test.mjs\"",
+    "simulation": "node tools/simulation-magie.mjs"
   },
   "devDependencies": {
     "@foundryvtt/foundryvtt-cli": "^1.0.0"

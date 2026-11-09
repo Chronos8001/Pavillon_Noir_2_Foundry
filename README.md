@@ -80,8 +80,9 @@ Installation manuelle : télécharger `pavillon-noir-2.zip` depuis la dernière 
 - Transes : fenêtre dédiée (entrée, ascension, activation, renforcement, détachement, Rejet, Cycle et temps restant).
 - Bibliothèque de magie : religions, Voies et Pouvoirs des compendiums, filtres, ajout et retrait sur le personnage, import de données (MJ).
 - Compendium « Magie : religions et Voies » : 11 religions et les 21 Voies du supplément (les Pouvoirs ne sont pas fournis).
+- Effets des Pouvoirs (Active Effects) appliqués aux cibles avec la Durée de la table officielle ; historique des actes sacrés et journal des interventions du MJ ; import sans doublon.
 - Événements divins (panneau MJ) : Aléas, révélations (équivalent du Mat), Quêtes mystiques, Rejets, séquelles et pénitences, Cycles échus, perte de concentration ; secrets tirés en d10 par le MJ et chiffrés.
-- Documentation technique : `docs/magie.md`.
+- Documentation : `docs/magie.md` (technique), `docs/magie-mj.md` (MJ), `docs/magie-joueur.md` (joueurs), `docs/simulation-magie.md` (probabilités).
 
 ## Développement
 
@@ -91,6 +92,7 @@ Les compendiums sont générés à partir des sources JSON de `src/packs` :
 npm install
 npm run build:packs
 npm test        # tests automatisés de la magie (Node 20+)
+npm run simulation  # rapport des probabilités (docs/simulation-magie.md)
 ```
 
 ## Mentions

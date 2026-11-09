@@ -241,7 +241,9 @@ export class PouvoirData extends BaseItemData {
       impact: str(""),
       duree: str(""),
       conditions: str(""),                             // conditions et particularités
-      references: str("")                             // références de règles
+      references: str(""),                             // références de règles
+      // Application des effets : manuel (MJ seul), assisté (bouton du MJ), automatique (dès la validation ou l'activation)
+      application: str("manuel")
     };
   }
 }

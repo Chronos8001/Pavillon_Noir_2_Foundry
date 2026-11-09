@@ -405,3 +405,11 @@ button.pn2-bouton-bibliotheque { flex: 1 1 100%; margin-top: 4px; }
 .pn2 .pn2-ev-bloc.rejet { border-left: 4px solid var(--pn2-rouge); }
 .pn2 .pn2-ev-bloc .boutons input[type="text"] { width: 12em; }
 button.pn2-bouton-evenements { flex: 1 1 100%; margin-top: 4px; }
+
+/* Magie — phase 4 : paramètres, effets, historique */
+.pn2 .apercu-parametres tr.change td:last-child { font-weight: bold; color: var(--pn2-vert); }
+.pn2 .pn2-effets { border-top: 1px dotted var(--pn2-bord); padding-top: 4px; }
+.pn2 .tag.nature-narrative { background: var(--pn2-bleu); }
+.pn2 .tag.nature-administrative { background: var(--pn2-rouge); }
+.pn2 .pn2-histo .pn2-histo-corps { max-height: calc(100% - 40px); overflow-y: auto; }
+.pn2 .pn2-histo tr.echec td { color: var(--pn2-rouge); }

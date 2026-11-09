@@ -26,9 +26,10 @@
     </div>
     {{#if occupe}}<p class="hint"><i class="fa-solid fa-spinner fa-spin"></i> Sollicitation en cours…</p>{{/if}}
     {{#if isGM}}
-    <details class="notes"><summary>Interruption imposée par une autre règle (MJ)</summary>
+    <details class="notes"><summary>Interruption ou correction (MJ)</summary>
       <div class="ligne"><label>Motif</label><input type="text" data-prep="motif" value="{{prep.motif}}"></div>
-      <a class="pn2-btn petit" data-action="magie" data-op="interrompre" data-requete="{{requete}}" data-seq="{{seq}}">Interrompre le Rituel</a>
+      <a class="pn2-btn petit" data-action="magie" data-op="interrompre" data-requete="{{requete}}" data-seq="{{seq}}" title="Décision narrative : le Rituel est résolu">Interrompre le Rituel</a>
+      <a class="pn2-btn petit {{#unless peutCloturer}}disabled{{/unless}}" data-action="magie" data-op="cloture" data-requete="{{requete}}" data-seq="{{seq}}" title="Correction administrative d'un état bloqué : aucune résolution, la Colère reste acquise">Clôture administrative</a>
     </details>
     {{/if}}
   {{else}}
@@ -49,6 +50,13 @@
     {{#if narration}}
       <p class="{{#if narration.accordee}}reussite{{else}}alerte{{/if}}">{{#if narration.accordee}}Intervention accordée{{else}}Intervention refusée{{/if}}{{#if narration.note}} : {{narration.note}}{{/if}}</p>
     {{else}}<p class="hint">La réussite mécanique ne déclenche aucun effet : le MJ décide de la manifestation de l'intervention.</p>{{/if}}
+    {{#if effetsPossibles}}
+      <div class="pn2-effets boutons">
+        <span class="hint">Effets mécaniques (application {{applicationLabel}}) — cibles : {{#each cibles}}{{nom}}{{#unless @last}}, {{/unless}}{{else}}cibles actuelles du MJ{{/each}}</span>
+        <a class="pn2-btn petit" data-action="magie" data-op="appliquerEffets"><i class="fa-solid fa-wand-sparkles"></i> Appliquer les effets</a>
+        {{#if nbEffets}}<a class="pn2-btn petit" data-action="magie" data-op="revoquerEffets">Révoquer ({{nbEffets}})</a>{{/if}}
+      </div>
+    {{/if}}
     {{#if peutNarrer}}
       <div class="ligne"><label>Note (manifestation)</label><input type="text" data-prep="note" value="{{prep.note}}"></div>
       <div class="boutons">

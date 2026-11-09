@@ -22,6 +22,9 @@ import { ouvrirActe, surMiseAJourActeur, rafraichirTranses } from "./magie/apps-
 import { PN2BibliothequeApp } from "./magie/app-bibliotheque.mjs";
 import * as evenements from "./magie/service-evenements.mjs";
 import { PN2EvenementsApp } from "./magie/app-evenements.mjs";
+import { migrer } from "./magie/migrations.mjs";
+import { expirerEffets } from "./magie/service-effets.mjs";
+import { PN2HistoriqueApp } from "./magie/app-historique.mjs";
 
 Hooks.once("init", () => {
   console.log("Pavillon Noir 2 | Initialisation du système");
@@ -43,7 +46,10 @@ Hooks.once("init", () => {
       /** Ouvre la bibliothèque de magie (religions, Voies, Pouvoirs). */
       bibliotheque: actor => PN2BibliothequeApp.ouvrir(actor),
       /** Événements divins (MJ) : Aléas, révélations, Quêtes, Rejets, séquelles, pénitences. */
-      evenements: { ...evenements, ouvrir: () => PN2EvenementsApp.ouvrir() }
+      evenements: { ...evenements, ouvrir: () => PN2EvenementsApp.ouvrir() },
+      /** Historique des actes sacrés (selon les permissions). */
+      historique: actor => PN2HistoriqueApp.ouvrir(actor),
+      migrer
     }
   };
 
@@ -135,6 +141,7 @@ function registerSettings() {
   // Coffre du MJ : la clé reste dans le navigateur du MJ ; seule son empreinte est publiée
   game.settings.register(PN2.id, "magieCleCoffre", { scope: "client", config: false, type: String, default: "" });
   game.settings.register(PN2.id, "magieEmpreinteCle", { scope: "world", config: false, type: String, default: "" });
+  game.settings.register(PN2.id, "magieMigration", { scope: "world", config: false, type: String, default: "0.0.0" });
   game.settings.register(PN2.id, "magieRecuperationAuto", {
     name: "Magie : récupération automatique de la Colère",
     hint: "Retire 1 point de Colère divine par heure de temps du monde écoulée après la fin d'un acte sacré (jamais pendant un Rituel ou une Transe).",
@@ -147,6 +154,7 @@ Hooks.on("updateWorldTime", worldTime => {
   magie.surAvanceeDuTemps(worldTime);
   rafraichirTranses();
   evenements.verifierCycles().catch(err => console.error(err));
+  expirerEffets(worldTime).catch(err => console.error(err));
 });
 
 /* Magie : la fenêtre de l'acte s'ouvre pour l'utilisateur qui le conduit, dès son début ;
@@ -160,7 +168,8 @@ Hooks.on("updateActor", (actor, changes, options) => {
 });
 
 /* Magie : reprise après une déconnexion du MJ ; panneau des événements divins dans l'onglet des acteurs */
-Hooks.once("ready", () => {
+Hooks.once("ready", async () => {
+  try { await migrer(); } catch (err) { console.error("Pavillon Noir 2 | Migrations", err); }
   evenements.examinerTout().catch(err => console.error("Pavillon Noir 2 | Examen des événements", err));
 });
 Hooks.on("renderActorDirectory", (app, html) => {

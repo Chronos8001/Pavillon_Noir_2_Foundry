@@ -211,6 +211,7 @@ function magieField(TypedObject) {
       id: str(""), rejetId: str(""), nature: str(""), gravite: int(0), duree: str(""), restrictions: str(""), levee: str(""),
       voieCle: str(""), divinite: str(""), malusAuspices: bool(true), active: bool(true),
       dateDebut: new f.NumberField({ required: false, nullable: true, initial: null }),
+      echeance: new f.NumberField({ required: false, nullable: true, initial: null }),   // séquelle temporaire : signalée au MJ, jamais levée seule
       dateFin: new f.NumberField({ required: false, nullable: true, initial: null })
     })),
     penitences: new f.ArrayField(new f.SchemaField({
@@ -219,7 +220,10 @@ function magieField(TypedObject) {
       dateAttribution: new f.NumberField({ required: false, nullable: true, initial: null }),
       derniereTentative: new f.NumberField({ required: false, nullable: true, initial: null }),
       dateFin: new f.NumberField({ required: false, nullable: true, initial: null })
-    }))
+    })),
+    // Historique des actes sacrés terminés et journal des interventions du MJ (écrits par le MJ)
+    historique: new f.ArrayField(new f.ObjectField()),
+    interventions: new f.ArrayField(new f.ObjectField())
   });
 }
 

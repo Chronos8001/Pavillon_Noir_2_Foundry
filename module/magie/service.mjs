@@ -14,10 +14,12 @@ import * as M from "./moteur.mjs";
 import { VerrouCles } from "./verrou.mjs";
 import * as Ref from "./references.mjs";
 import { malusSequelles } from "./consequences.mjs";
+import * as J from "./journal.mjs";
+import { ciblesUtilisateur, appliquerEffets, revoquerEffets } from "./service-effets.mjs";
 
 const SYS = PN2.id;
 const TPL = "systems/pavillon-noir-2/templates";
-const render = (path, data) => foundry.applications.handlebars.renderTemplate(`${TPL}/${path}`, data);
+export const render = (path, data) => foundry.applications.handlebars.renderTemplate(`${TPL}/${path}`, data);
 
 export const verrou = new VerrouCles();
 export const cfg = () => CONFIG.PN2?.magie ?? MAGIE;
@@ -126,6 +128,7 @@ export function parametresActe(actor, form, { pilote = null, validation = null }
     id: foundry.utils.randomID(),
     acteur: { uuid: actor.uuid, nom: actor.name },
     pilote: pilote ?? game.user.id,
+    cibles: Array.isArray(form.cibles) ? form.cibles : ciblesUtilisateur(),
     religion: m.religionNom,
     typeReligion: m.typeEffectif,
     types: cfg().types,
@@ -292,7 +295,7 @@ export function demandeCourante(actor) {
   try { return typeof brut === "string" ? JSON.parse(brut) : brut; } catch { return null; }
 }
 
-const CHAMPS_JOUEUR = ["mode", "voieId", "pouvoirId", "souhait", "rites", "dureeRites", "instantanee", "beaute"];
+const CHAMPS_JOUEUR = ["mode", "voieId", "pouvoirId", "souhait", "rites", "dureeRites", "instantanee", "beaute", "cibles"];
 
 /**
  * Le joueur soumet son acte au MJ (voie, pouvoir, souhait, rites, durée des Rites).
@@ -307,7 +310,8 @@ export async function demanderActe(actor, form) {
     if (form.mode === "transe" && voie.system.sansTranse) throw new R.MagieError("sans-transe", `Il n'y a pas de Transe dans la ${voie.name}.`);
     const demande = {
       id: foundry.utils.randomID(), statut: "attente", auteur: game.user.id, maintenant: maintenant(),
-      ...Object.fromEntries(CHAMPS_JOUEUR.map(k => [k, form[k] ?? null]))
+      ...Object.fromEntries(CHAMPS_JOUEUR.map(k => [k, form[k] ?? null])),
+      cibles: ciblesUtilisateur()
     };
     await actor.update({ [`flags.${SYS}.demande`]: JSON.stringify(demande) });
     const pv = demande.pouvoirId ? actor.items.get(demande.pouvoirId) : null;
@@ -337,6 +341,7 @@ export async function refuserDemande(actor, motif = "") {
   const d = demandeCourante(actor);
   if (!d) throw new R.MagieError("aucune-demande", "Aucune demande en attente.");
   await actor.update({ [`flags.${SYS}.demande`]: JSON.stringify({ ...d, statut: "refusee", motifRefus: motif }) });
+  await tracer(actor, J.NATURE.NARRATIVE, "Acte refusé", motif);
   await ChatMessage.create({
     speaker: ChatMessage.getSpeaker({ actor }),
     content: await render("chat/magie-evenement.hbs", {
@@ -383,6 +388,12 @@ export async function validerNarration(actor, { accordee = true, note = "" } = {
   const res = await operer(actor, ctx, async etat => M.validerNarration(etat, { accordee, note, par: game.user.id }, { ...ctx, maintenant: maintenant() }),
     { pilote: false });
   if (!res.doublon) {
+    await tracer(actor, J.NATURE.NARRATIVE, accordee ? "Intervention accordée" : "Intervention refusée", note);
+    // Pouvoir à application automatique : ses effets sont appliqués dès l'accord du MJ
+    const pv = accordee && res.etat.rituel.pouvoir ? actor.items.get(res.etat.rituel.pouvoir.id) : null;
+    if (pv?.system.application === "automatique" && pv.effects?.size) {
+      try { await appliquerEffetsActe(actor); } catch (err) { ui.notifications.warn(err.message); }
+    }
     const e = res.etat;
     const vue = M.vueJoueur(e, { seuilVisible: game.settings.get(SYS, "magieSeuilVisible") });
     const r = vue.rituel.resolution;
@@ -524,7 +535,10 @@ export async function interrompre(actor, { motif = "", terminer = false } = {}, 
   if (!game.user.isGM) throw new R.MagieError("permission", "Seul le MJ peut imposer une interruption.");
   const res = await operer(actor, ctx, async etat => M.interrompre(etat, { motif, terminer }, { ...ctx, maintenant: maintenant() }),
     { pilote: !game.user.isGM });
-  if (!res.doublon) await messageFinSiBesoin(actor, res);
+  if (!res.doublon) {
+    await tracer(actor, J.NATURE.NARRATIVE, terminer ? "Fin de Transe imposée" : "Interruption imposée", motif);
+    await messageFinSiBesoin(actor, res);
+  }
   return res;
 }
 
@@ -542,7 +556,22 @@ export async function reprendre(actor, ctx = {}) {
       throw new R.MagieError("pilote", `${pilote.name} conduit cet acte et est connecté.`);
     }
     return M.changerPilote(etat, game.user.id, ctx);
-  }, { pilote: false });
+  }, { pilote: false }).then(async res => {
+    if (!res.doublon && game.user.isGM) await tracer(actor, J.NATURE.ADMINISTRATIVE, "Conduite de l'acte reprise par le MJ");
+    return res;
+  });
+}
+
+/**
+ * Correction administrative : clôt un acte dans un état exceptionnel (motif obligatoire, tracé).
+ * Aucune résolution ni Rejet ; la Colère déjà tirée reste acquise.
+ */
+export async function clotureAdministrative(actor, motif, ctx = {}) {
+  if (!game.user.isGM) throw new R.MagieError("permission", "Correction réservée au MJ.");
+  const res = await operer(actor, ctx, async etat => M.clotureAdministrative(etat, { motif, par: game.user.id }, { ...ctx, maintenant: maintenant() }),
+    { pilote: false });
+  if (!res.doublon) await tracer(actor, J.NATURE.ADMINISTRATIVE, "Clôture administrative d'un acte", motif);
+  return res;
 }
 
 /* -------------------------------------------- */
@@ -569,8 +598,10 @@ export async function signalerCycleEchu(actor) {
 /** Le MJ impose un détachement (Cycle écoulé) : le joueur doit le résoudre par ses sollicitations. */
 export async function imposerDetachement(actor, ctx = {}) {
   if (!game.user.isGM) throw new R.MagieError("permission", "Seul le MJ peut imposer un détachement.");
-  return operer(actor, ctx, async etat => M.commencerAction(etat, M.ACTION.DETACHEMENT, { impose: game.user.id }, { ...ctx, maintenant: maintenant() }),
+  const res = await operer(actor, ctx, async etat => M.commencerAction(etat, M.ACTION.DETACHEMENT, { impose: game.user.id }, { ...ctx, maintenant: maintenant() }),
     { pilote: false });
+  if (!res.doublon) await tracer(actor, J.NATURE.NARRATIVE, "Détachement imposé");
+  return res;
 }
 
 /**
@@ -586,6 +617,7 @@ export async function echecConcentration(actor, { motif = "" } = {}, ctx = {}) {
     return M.echecConcentration(etat, roll.dice[0].results.map(r => r.result), { motif }, { ...ctx, maintenant: maintenant() });
   }, { pilote: false });
   if (!res.doublon) {
+    await tracer(actor, J.NATURE.NARRATIVE, "Perte de concentration", motif);
     const data = {
       speaker: ChatMessage.getSpeaker({ actor }), rolls: [roll],
       content: await render("chat/magie-evenement.hbs", {
@@ -623,37 +655,71 @@ export async function importerMagie(donnees, { packId = null } = {}) {
   const opts = pack ? { pack: pack.collection } : {};
   const DocItem = getDocumentClass("Item");
 
-  const religions = await DocItem.createDocuments(plan.religions.map(r => ({
+  // Documents déjà importés : clé d'import → document (mise à jour sans doublon)
+  const existants = new Map();
+  const docs = pack ? await pack.getDocuments() : game.items.contents;
+  for (const d of docs) {
+    const c = d.getFlag?.(SYS, "cleImport");
+    if (c) existants.set(c, d);
+  }
+  const ids = new Map([...existants].map(([k, d]) => [k, d.id]));
+  const bilan = { religions: 0, voies: 0, pouvoirs: 0, aleas: 0, misAJour: 0, avertissements: plan.avertissements };
+
+  /** Crée ou met à jour un lot ; renvoie clé → document. */
+  const enregistrer = async (type, elements, versDonnees) => {
+    const { creer, maj } = Ref.planImport(type, elements, ids);
+    const out = new Map();
+    const crees = await DocItem.createDocuments(creer.map(el => foundry.utils.mergeObject(versDonnees(el), { flags: { [SYS]: { cleImport: Ref.cleImport(type, el.cle) } } })), opts);
+    crees.forEach((d, k) => out.set(creer[k].cle, d));
+    if (maj.length) {
+      const majs = await DocItem.updateDocuments(maj.map(({ id, el }) => ({ _id: id, ...versDonnees(el) })), opts);
+      majs.forEach((d, k) => out.set(maj[k].el.cle, d));
+      bilan.misAJour += maj.length;
+    }
+    return out;
+  };
+
+  const religions = await enregistrer("religion", plan.religions, r => ({
     name: r.nom, type: "religion",
     system: { cle: r.cle, type: r.type, groupeColere: r.groupeColere, description: r.description, correspondances: r.correspondances.join(" ; "), source: r.source }
-  })), opts);
-  const uuidReligion = new Map(religions.map((d, i) => [plan.religions[i].cle, d]));
-
-  const voies = await DocItem.createDocuments(plan.voies.map(v => ({
+  }));
+  const voies = await enregistrer("voie", plan.voies, v => ({
     name: v.nom, type: "voie",
-    system: {
-      cle: v.cle, religion: uuidReligion.get(v.religion)?.name ?? "", religionUuid: uuidReligion.get(v.religion)?.uuid ?? "",
-      domaine: v.domaine, description: v.description, sansTranse: v.sansTranse, source: v.source
-    }
-  })), opts);
-  const uuidVoie = new Map(voies.map((d, i) => [plan.voies[i].cle, d.uuid]));
-
-  // Chaque religion référence ses Voies
-  const majReligions = plan.religions.map(r => ({
-    _id: uuidReligion.get(r.cle).id,
-    "system.voies": plan.voies.filter(v => v.religion === r.cle).map(v => uuidVoie.get(v.cle))
-  })).filter(u => u["system.voies"].length);
+    system: { cle: v.cle, religion: religions.get(v.religion)?.name ?? "", religionUuid: religions.get(v.religion)?.uuid ?? "",
+      domaine: v.domaine, description: v.description, sansTranse: v.sansTranse, source: v.source }
+  }));
+  const majReligions = plan.religions.map(r => ({ _id: religions.get(r.cle).id, "system.voies": plan.voies.filter(v => v.religion === r.cle).map(v => voies.get(v.cle).uuid) }))
+    .filter(u => u["system.voies"].length);
   if (majReligions.length) await DocItem.updateDocuments(majReligions, opts);
-
-  const pouvoirs = await DocItem.createDocuments(plan.pouvoirs.map(p => ({
+  const pouvoirs = await enregistrer("pouvoir", plan.pouvoirs, p => ({
     name: p.nom, type: "pouvoir",
-    system: {
-      voie: p.voie, voieUuid: uuidVoie.get(p.voie) ?? "", puissance: p.puissance, nomNatif: p.nomNatif,
+    system: { voie: p.voie, voieUuid: voies.get(p.voie)?.uuid ?? "", puissance: p.puissance, nomNatif: p.nomNatif, application: p.application,
       portee: p.portee, cible: p.cible, impact: p.impact, duree: p.duree, conditions: p.conditions,
-      compulsion: p.compulsion, visions: p.visions, description: p.description, references: p.references, source: p.source
-    }
-  })), opts);
-  return { religions: religions.length, voies: voies.length, pouvoirs: pouvoirs.length };
+      compulsion: p.compulsion, visions: p.visions, description: p.description, references: p.references, source: p.source }
+  }));
+  const aleas = await enregistrer("alea", plan.aleas, a => ({
+    name: a.nom, type: "alea",
+    system: { religion: a.religion, voie: a.voie, conditions: { typesActe: a.typesActe, sens: a.sens }, categorie: a.categorie, gravite: a.gravite,
+      poids: a.poids, effetNarratif: a.effetNarratif, effetMecanique: a.effetMecanique, visibilite: a.visibilite, description: a.description, source: a.source }
+  }));
+  Object.assign(bilan, { religions: religions.size, voies: voies.size, pouvoirs: pouvoirs.size, aleas: aleas.size });
+  return bilan;
+}
+
+/**
+ * Crée (si absents) les compendiums du monde destinés aux données importées : Pouvoirs, Aléas.
+ * Les religions et Voies du supplément sont fournies par le compendium du système.
+ */
+export async function creerCompendiumsMonde() {
+  if (!game.user.isGM) throw new R.MagieError("permission", "Réservé au MJ.");
+  const Compendium = foundry.documents.collections.CompendiumCollection;
+  const crees = [];
+  for (const [name, label] of [["magie-pouvoirs", "Magie : Pouvoirs"], ["magie-aleas", "Magie : Aléas divins"]]) {
+    if (game.packs.get(`world.${name}`)) continue;
+    await Compendium.createCompendium({ name, label, type: "Item" });
+    crees.push(label);
+  }
+  return crees;
 }
 
 /* -------------------------------------------- */
@@ -675,9 +741,78 @@ export async function modifierColere(actor, groupe, delta, { motif = "" } = {}) 
     const valeur = Math.max(0, (c.valeur ?? 0) + d);
     const reference = valeur > 0 && c.reference == null ? maintenant() : (c.reference ?? null);
     await actor.update({ [`system.magie.colere.${g}`]: { valeur, reference, recuperationBloquee: c.recuperationBloquee ?? false } });
-    if (motif) console.log(`Pavillon Noir 2 | Colère (${actor.name}, ${g}) ${d > 0 ? "+" : ""}${d} : ${motif}`);
+    return valeur;
+  }).then(async valeur => {
+    if (game.user.isGM) await tracer(actor, J.NATURE.ADMINISTRATIVE, `Colère ${d > 0 ? "+" : ""}${d} (${g})`, motif);
     return valeur;
   });
+}
+
+/** Correction administrative de la Colère : nouvelle valeur absolue, motif obligatoire, tracée. */
+export async function corrigerColere(actor, groupe, valeur, motif) {
+  if (!game.user.isGM) throw new R.MagieError("permission", "Correction réservée au MJ.");
+  if (!String(motif ?? "").trim()) throw new R.MagieError("motif", "Une correction administrative exige un motif.");
+  const v = Number(valeur);
+  if (!Number.isInteger(v) || v < 0) throw new R.MagieError("valeur-invalide", "Valeur de Colère invalide.");
+  const g = R.cleVoie(groupe) || cfg().groupeColereDefaut;
+  const c = actor.system.magie.colere?.[g] ?? {};
+  await verrou.executer(actor.uuid, () => actor.update({
+    [`system.magie.colere.${g}`]: { valeur: v, reference: v > 0 ? (c.reference ?? maintenant()) : null, recuperationBloquee: c.recuperationBloquee ?? false }
+  }));
+  await tracer(actor, J.NATURE.ADMINISTRATIVE, `Colère corrigée : ${c.valeur ?? 0} → ${v} (${g})`, motif);
+}
+
+/* -------------------------------------------- */
+/*  Effets des Pouvoirs                         */
+/* -------------------------------------------- */
+
+/** Augmentations par paramètre d'une répartition enregistrée. */
+const augmentations = rep => Object.fromEntries(Object.entries(rep?.details ?? {}).map(([k, d]) => [k, d.augmentations]));
+
+/**
+ * Applique les effets du Pouvoir d'un acte (Rituel accordé, ou activation n en Transe) à ses cibles,
+ * avec les paramètres améliorés. Décision du MJ, tracée.
+ */
+export async function appliquerEffetsActe(actor, { activation = null, cibles = null } = {}) {
+  const e = acteCourant(actor);
+  if (!e) throw new R.MagieError("aucun-acte", "Aucun acte sacré.");
+  let pouvoirId;
+  let repartition;
+  if (activation != null) {
+    const a = e.transe?.activations.find(x => x.n === Number(activation));
+    if (!a) throw new R.MagieError("activation-inconnue", "Activation inconnue.");
+    pouvoirId = a.pouvoir.id;
+    repartition = augmentations(a.repartition);
+  } else {
+    if (e.type !== "rituel" || !e.rituel.narration?.accordee) throw new R.MagieError("narration", "L'intervention doit d'abord être accordée par le MJ.");
+    pouvoirId = e.rituel.pouvoir?.id;
+    repartition = augmentations(e.rituel.repartition);
+  }
+  const pouvoir = pouvoirId ? actor.items.get(pouvoirId) : null;
+  if (!pouvoir) throw new R.MagieError("reference", "Le Pouvoir de cet acte n'est plus sur la fiche.");
+  const res = await appliquerEffets(actor, pouvoir, { acteId: e.id, cibles: cibles ?? (e.cibles?.length ? e.cibles : ciblesUtilisateur()), repartition });
+  await tracer(actor, J.NATURE.NARRATIVE, `Effets de « ${pouvoir.name} » appliqués`, `${res.cibles.join(", ")} — Durée : ${res.duree.resultat || "sans limite"}`);
+  return res;
+}
+
+/** Révoque les effets de l'acte courant (décision du MJ, tracée). */
+export async function revoquerEffetsActe(actor) {
+  const e = acteCourant(actor);
+  if (!e) return 0;
+  const n = await revoquerEffets(e.id);
+  if (n) await tracer(actor, J.NATURE.NARRATIVE, "Effets révoqués", `${n} effet(s)`);
+  return n;
+}
+
+/* -------------------------------------------- */
+/*  Journal des interventions du MJ             */
+/* -------------------------------------------- */
+
+/** Inscrit une intervention du MJ (narrative ou administrative) dans le journal du personnage. */
+export async function tracer(actor, nature, action, detail = "") {
+  if (!game.user.isGM) return;
+  const entree = J.intervention({ nature, action, detail, par: game.user.name, maintenant: maintenant(), dateReelle: new Date().toISOString() });
+  await actor.update({ "system.magie.interventions": J.ajouterIntervention(actor.system.magie.interventions, entree) }, { pn2Evenements: true });
 }
 
 export const ajouterColere = (actor, groupe, n = 1, o) => modifierColere(actor, groupe, Math.abs(n), o);
@@ -729,7 +864,7 @@ export async function surAvanceeDuTemps(worldTime) {
 export const seuilVisible = () => game.user.isGM || game.settings.get(SYS, "magieSeuilVisible");
 
 /** MJ et propriétaires du personnage. */
-function destinataires(actor) {
+export function destinataires(actor) {
   return game.users.filter(u => u.isGM || actor.testUserPermission(u, "OWNER")).map(u => u.id);
 }
 
@@ -774,7 +909,7 @@ async function messageSollicitation(actor, res, roll) {
   const e = res.etat;
   const content = await render("chat/magie-sollicitation.hbs", {
     lancer: l, action: LIBELLES_ACTION[l.action] ?? l.action, voie: e.voie.nom,
-    succes: e.succes, colereGagnee: e.colereGagnee, effet: res.effet, rejet: res.rejet,
+    succes: e.succes, colereGagnee: e.colereGagnee, effet: res.effet, rejet: !!res.rejet,   // indicateur seul : aucun détail du Rejet
     sortie: res.effet?.type === "detachement" && res.effet.niveau === 0
   });
   const data = { speaker: ChatMessage.getSpeaker({ actor }), content, rolls: [roll] };
