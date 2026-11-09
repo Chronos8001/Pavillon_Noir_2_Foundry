@@ -1,0 +1,35 @@
+{
+  "_id": "Awo0JexxovQ1Ybqj",
+  "_key": "!items!Awo0JexxovQ1Ybqj",
+  "name": "Religion arawak",
+  "type": "religion",
+  "img": "icons/svg/temple.svg",
+  "system": {
+    "description": "<p>Religion de possession : le béhique s'appuie sur les zémis, esprits envoyés par Yocahú contre Juracan.</p>",
+    "source": "Entre ciel et terre, p. 89, 191",
+    "cle": "",
+    "type": "possession",
+    "groupeColere": "",
+    "voies": [
+      "Compendium.pavillon-noir-2.voies.Item.adV2aUWhmHXDCarX"
+    ],
+    "correspondances": "Religion arawak"
+  },
+  "effects": [],
+  "folder": "k5tAQAXWNTYHGStQ",
+  "sort": 7,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.345",
+    "systemId": "pavillon-noir-2",
+    "systemVersion": "0.7.0",
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": null
+  }
+}

@@ -1,9 +1,10 @@
+{{!-- Répartition des Succès supplémentaires. Contexte : budget, cout, valide, erreurs, enregistree, parametres, activation, requete, seq. --}}
 <div class="pn2-magie-repartition">
   <div class="grid-2">
     {{#each parametres}}<div class="ligne"><label>{{label}} <span class="hint">(coût {{cout}})</span></label><input type="number" min="0" data-repartition="{{key}}" value="{{n}}"></div>{{/each}}
   </div>
   <p>Coût total : <strong>{{cout}}</strong> / {{budget}} Succès <span class="hint">(N augmentations d'un même paramètre coûtent N × (N + 1) / 2)</span></p>
   {{#each erreurs}}<p class="alerte">{{this}}</p>{{/each}}
-  <a class="pn2-btn petit {{#unless valide}}disabled{{/unless}}" data-action="magie" data-op="repartir" data-activation="{{activation}}" data-requete="{{@root.magie.requete}}" data-seq="{{@root.magie.acte.seq}}">Enregistrer la répartition</a>
+  <a class="pn2-btn petit {{#unless valide}}disabled{{/unless}}" data-action="magie" data-op="repartir" data-activation="{{activation}}" data-requete="{{requete}}" data-seq="{{seq}}">Enregistrer la répartition</a>
   {{#if enregistree}}<p class="hint">Répartition enregistrée : {{enregistree.cout}} Succès dépensé(s), {{enregistree.reste}} restant(s).</p>{{/if}}
 </div>

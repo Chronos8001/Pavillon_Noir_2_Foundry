@@ -1,178 +1,149 @@
 <section class="tab magie {{#if active}}active{{/if}}" data-group="primary" data-tab="magie">
 {{#with magie}}
-<div class="pn2-magie">
-  {{!-- ============ Caractéristiques religieuses ============ --}}
-  <h2><i class="fa-solid fa-place-of-worship"></i> Caractéristiques religieuses</h2>
+<div class="pn2-magie {{#if occupe}}occupe{{/if}}">
+
+  {{!-- ============ Identité religieuse ============ --}}
+  <h2><i class="fa-solid fa-place-of-worship"></i> Identité religieuse
+    <a class="pn2-mini-btn" data-action="magie" data-op="bibliotheque" title="Bibliothèque de magie : religions, Voies et Pouvoirs"><i class="fa-solid fa-book-bookmark"></i> Bibliothèque</a></h2>
   <div class="grid-2">
-    <div class="ligne"><label>Religion</label><input type="text" name="system.magie.religion" value="{{@root.system.magie.religion}}" placeholder="{{@root.system.infos.religion}}"></div>
-    <div class="ligne"><label>Type de religion</label>
+    <div class="ligne"><label>Religion pratiquée</label>
+      {{#if profil.religionItem}}<span><a data-action="magie" data-op="editerObjet" data-id="{{profil.religionItem.id}}">{{profil.religionItem.nom}}</a>
+        <a class="pn2-mini-btn" data-action="magie" data-op="retirer" data-id="{{profil.religionItem.id}}" title="Retirer la religion (le document d'origine est conservé)"><i class="fa-solid fa-xmark"></i></a></span>
+      {{else}}<input type="text" name="system.magie.religion" value="{{@root.system.magie.religion}}" placeholder="{{@root.system.infos.religion}}" title="Glissez une Religion depuis la bibliothèque pour la lier">{{/if}}</div>
+    <div class="ligne"><label>Type</label>
       <select name="system.magie.type"><option value="">{{#if profil.typeDeduit}}D'après la religion : {{lookup types profil.typeDeduit}}{{else}}— À renseigner —{{/if}}</option>{{selectOptions types selected=profil.typeSaisi}}</select></div>
-    <div class="ligne"><label>Actes de foi</label><input type="number" min="0" name="system.magie.actesFoi" value="{{profil.actesFoi}}"></div>
-    <div class="ligne"><label>Péchés</label><input type="number" min="0" name="system.magie.peches" value="{{profil.peches}}"></div>
-    <div class="ligne"><label>Faveurs <span class="hint">(Chance {{pn2Signed profil.chance}} + mod.)</span></label>
-      <span><strong>{{pn2Signed profil.faveurs}}</strong> {{#if isGM}}<input type="number" name="system.magie.faveursMod" value="{{profil.faveursMod}}" title="Modificateur temporaire (MJ)">{{/if}}</span></div>
-    <div class="ligne"><label>État</label><span>{{#if @root.system.magie.enTranse}}<span class="tag">En Transe</span>{{else if @root.system.magie.acteEnCours}}<span class="tag">Acte en cours</span>{{else}}Hors acte sacré{{/if}}</span></div>
+    <div class="ligne"><label>{{statLabel}}{{#if voie}} <span class="hint">({{voie.nom}})</span>{{/if}}</label><strong>{{#if voie}}{{valeurVoie}}{{else}}—{{/if}}</strong></div>
+    <div class="ligne"><label>Faveurs <span class="hint">(Chance {{pn2Signed profil.chance}}{{#if profil.faveursMod}} {{pn2Signed profil.faveursMod}}{{/if}})</span></label>
+      <span><strong>{{pn2Signed profil.faveurs}}</strong> {{#if isGM}}<input type="number" name="system.magie.faveursMod" value="{{profil.faveursMod}}" title="Modificateur temporaire des Faveurs (MJ)">{{/if}}</span></div>
+    <div class="ligne"><label>Colère divine <span class="hint">({{profil.groupeColere}})</span></label>
+      <span><strong>{{profil.colereActuelle}}</strong>
+        <a class="pn2-btn petit" data-action="magie" data-op="colere" data-groupe="{{profil.groupeColere}}" data-delta="1" title="Ajouter 1 point">+1</a>
+        {{#if isGM}}<a class="pn2-btn petit" data-action="magie" data-op="colere" data-groupe="{{profil.groupeColere}}" data-delta="-1" title="Retirer 1 point (MJ)">−1</a>{{/if}}</span></div>
+    <div class="ligne"><label>Seuil de Rejet <span class="hint">({{#if (eq prep.mode "transe")}}Transe{{else}}Rituel{{/if}} préparé)</span></label>
+      <strong>{{#if apercu.erreur}}<span class="alerte" title="{{apercu.erreur}}">?</span>{{else if seuilVisible}}{{apercu.seuil.seuil}}{{else}}<span class="hint">connu du MJ</span>{{/if}}</strong></div>
   </div>
+  {{#each profil.colere}}{{#unless principal}}
+    <div class="ligne"><label class="hint">Colère ({{groupe}})</label><span>{{valeur}}{{#if ../isGM}} <a class="pn2-btn petit" data-action="magie" data-op="colere" data-groupe="{{groupe}}" data-delta="-1">−1</a>{{/if}}</span></div>
+  {{/unless}}{{/each}}
+  {{#if isGM}}<a class="pn2-btn petit" data-action="magie" data-op="recuperer" title="Applique maintenant la récupération horaire selon le temps du monde"><i class="fa-solid fa-hourglass-half"></i> Récupération de la Colère</a>{{/if}}
 
-  <h3>Colère divine</h3>
-  {{#each profil.colere}}
-    <div class="ligne"><label>{{groupe}}</label>
-      <span><strong>{{valeur}}</strong>
-        <a class="pn2-btn petit" data-action="magie" data-op="colere" data-groupe="{{groupe}}" data-delta="1" title="Ajouter 1 point">+1</a>
-        {{#if ../isGM}}<a class="pn2-btn petit" data-action="magie" data-op="colere" data-groupe="{{groupe}}" data-delta="-1" title="Retirer 1 point (MJ)">−1</a>{{/if}}
-        {{#if recuperationBloquee}}<span class="hint">récupération bloquée</span>{{/if}}
-      </span></div>
-  {{else}}<p class="hint">Aucune Colère enregistrée.</p>{{/each}}
-  {{#if isGM}}<a class="pn2-btn petit" data-action="magie" data-op="recuperer" title="Applique maintenant la récupération horaire selon le temps du monde"><i class="fa-solid fa-hourglass-half"></i> Récupération (temps du monde)</a>{{/if}}
+  {{!-- ============ Auspices ============ --}}
+  <h2><i class="fa-solid fa-star-and-crescent"></i> Auspices</h2>
+  <div class="pn2-auspices">
+    <label>Actes de foi <input type="number" min="0" name="system.magie.actesFoi" value="{{profil.actesFoi}}"></label>
+    <span>−</span>
+    <label>Péchés <input type="number" min="0" name="system.magie.peches" value="{{profil.peches}}"></label>
+    <span>+</span>
+    <label>Affinité <strong>{{#if voie}}{{pn2Signed voie.affinite}}{{else}}—{{/if}}</strong></label>
+    <span>+</span>
+    <label>Beauté des rites {{#if isGM}}<input type="number" data-prep="beaute" value="{{prep.beaute}}" {{#if prep.instantanee}}disabled{{/if}}>{{else}}<em class="hint">fixée par le MJ</em>{{/if}}</label>
+    <span>=</span>
+    <label>Total <strong>{{#if seuilVisible}}{{#if apercu.auspices}}{{pn2Signed apercu.auspices.total}}{{else}}—{{/if}}{{else}}<span class="hint">MJ</span>{{/if}}</strong></label>
+  </div>
+  <p class="hint">Actes de foi et Péchés sont enregistrés sur la fiche ; l'Affinité est celle de la Voie choisie ; la Beauté des rites ne vaut que pour l'acte préparé.</p>
 
-  <h3>Voies d'illumination <a class="pn2-mini-btn" data-action="magie" data-op="compendium" title="Compendium des Voies : glissez une Voie sur la fiche"><i class="fa-solid fa-book"></i></a> <a class="pn2-mini-btn" data-action="magie" data-op="creerObjet" data-type="voie" title="Nouvelle Voie"><i class="fa-solid fa-plus"></i></a></h3>
+  {{!-- ============ Voies ============ --}}
+  <h2><i class="fa-solid fa-route"></i> Voies d'illumination
+    <a class="pn2-mini-btn" data-action="magie" data-op="creerObjet" data-type="voie" title="Nouvelle Voie (sans compendium)"><i class="fa-solid fa-plus"></i></a></h2>
   <table class="pn2-mini">
-    <tr><th>Voie</th><th>Foi</th><th>Mystères</th><th>Affinité</th><th>Colère</th><th>Pouvoirs</th><th></th></tr>
+    <tr><th>Voie</th><th>Religion</th><th title="Foi">Foi</th><th title="Connaissance des Mystères">Myst.</th><th>Affinité</th><th>Pouvoirs</th><th></th></tr>
     {{#each profil.voies}}
-    <tr>
-      <td>{{nom}}{{#if sansTranse}} <span class="hint" title="Pas de Transe dans cette Voie">(sans Transe)</span>{{/if}}</td><td>{{foi}}</td><td>{{mysteres}}</td><td>{{pn2Signed affinite}}</td><td>{{groupeColere}}</td>
-      <td>{{#each pouvoirs}}<a data-action="magie" data-op="editerObjet" data-id="{{id}}" class="{{#unless accessible}}hint{{/unless}}">P{{puissance}} {{nom}}</a>{{#unless @last}}, {{/unless}}{{/each}}</td>
-      <td><a data-action="magie" data-op="editerObjet" data-id="{{id}}"><i class="fa-solid fa-pen"></i></a> <a data-action="magie" data-op="supprimerObjet" data-id="{{id}}"><i class="fa-solid fa-trash"></i></a></td>
+    <tr class="{{#if (eq id ../prep.voieId)}}choisie{{/if}}">
+      <td><a data-action="magie" data-op="editerObjet" data-id="{{id}}">{{nom}}</a>{{#if domaine}}<div class="hint">{{domaine}}</div>{{/if}}{{#if sansTranse}}<div class="hint">sans Transe</div>{{/if}}</td>
+      <td>{{religion}}</td><td>{{foi}}</td><td>{{mysteres}}</td><td>{{pn2Signed affinite}}</td><td>{{pouvoirs.length}}</td>
+      <td class="actions"><a data-action="magie" data-op="editerObjet" data-id="{{id}}" title="Fiche"><i class="fa-solid fa-pen"></i></a>
+        <a data-action="magie" data-op="retirer" data-id="{{id}}" title="Retirer du personnage"><i class="fa-solid fa-xmark"></i></a></td>
     </tr>
-    {{else}}<tr><td colspan="7" class="hint">Aucune Voie : glissez-en une depuis le compendium « Voies d'illumination » ou créez-la (Foi / Connaissance des Mystères et Affinité se règlent sur la Voie).</td></tr>{{/each}}
+    {{else}}<tr><td colspan="7" class="hint">Aucune Voie : ouvrez la bibliothèque et ajoutez-en une.</td></tr>{{/each}}
   </table>
-  {{#if voie}}<a class="pn2-btn petit" data-action="magie" data-op="creerObjet" data-type="pouvoir"><i class="fa-solid fa-plus"></i> Pouvoir dans « {{voie.nom}} »</a>{{/if}}
 
-  {{!-- ============ Préparation ============ --}}
-  {{#unless enCours}}
-  <h2><i class="fa-solid fa-scroll"></i> Préparer un acte sacré</h2>
-  {{#if profil.voies.length}}
-  <div class="grid-2">
-    <div class="ligne"><label>Acte</label>
-      <select data-prep="mode"><option value="rituel" {{#if (eq prep.mode "rituel")}}selected{{/if}}>Rituel</option>{{#if transePossible}}<option value="transe" {{#if (eq prep.mode "transe")}}selected{{/if}}>Transe</option>{{/if}}</select></div>
-    <div class="ligne"><label>Voie</label><select data-prep="voieId">{{selectOptions voiesOptions selected=prep.voieId}}</select></div>
-  </div>
-  <h3>Auspices {{#unless isGM}}<span class="hint">(composantes réglées par le MJ)</span>{{/unless}}</h3>
-  <div class="grid-2">
-    <div class="ligne"><label>Actes de foi</label><input type="number" data-prep="actesFoi" value="{{prep.actesFoi}}" placeholder="{{defauts.actesFoi}}" {{#unless isGM}}disabled{{/unless}}></div>
-    <div class="ligne"><label>Affinité</label><input type="number" data-prep="affinite" value="{{prep.affinite}}" placeholder="{{defauts.affinite}}" {{#unless isGM}}disabled{{/unless}}></div>
-    <div class="ligne"><label>Beauté des rites</label><input type="number" data-prep="beaute" value="{{prep.beaute}}" {{#if prep.instantanee}}disabled{{/if}}></div>
-    <div class="ligne"><label>Péchés</label><input type="number" data-prep="peches" value="{{prep.peches}}" placeholder="{{defauts.peches}}" {{#unless isGM}}disabled{{/unless}}></div>
-  </div>
+  {{!-- ============ Pouvoirs ============ --}}
+  <h2><i class="fa-solid fa-hand-sparkles"></i> Pouvoirs connus
+    {{#if voie}}<a class="pn2-mini-btn" data-action="magie" data-op="creerObjet" data-type="pouvoir" title="Nouveau Pouvoir dans « {{voie.nom}} »"><i class="fa-solid fa-plus"></i></a>{{/if}}</h2>
+  <table class="pn2-mini pouvoirs">
+    <tr><th>Pouvoir</th><th>Voie</th><th>P</th>{{#if parametresVisibles}}<th>Paramètres de base</th>{{/if}}<th>Transe</th><th></th></tr>
+    {{#each pouvoirs}}
+    <tr>
+      <td><a data-action="magie" data-op="editerObjet" data-id="{{id}}">{{nom}}</a>{{#if nomNatif}} <span class="hint">({{nomNatif}})</span>{{/if}}
+        {{#if description}}<details><summary class="hint">Description</summary>{{{description}}}</details>{{/if}}
+        {{#if conditions}}<div class="hint">Conditions : {{conditions}}</div>{{/if}}</td>
+      <td>{{#if referenceCassee}}<span class="alerte" title="La Voie de ce Pouvoir est introuvable sur le personnage">Voie introuvable</span>{{else}}{{voieNom}}{{/if}}</td>
+      <td>{{puissance}}</td>
+      {{#if ../parametresVisibles}}<td class="hint">{{#if parametres.portee}}Portée {{parametres.portee}} · {{/if}}{{#if parametres.cible}}Cible {{parametres.cible}} · {{/if}}{{#if parametres.impact}}Impact {{parametres.impact}} · {{/if}}{{#if parametres.duree}}Durée {{parametres.duree}}{{/if}}</td>{{/if}}
+      <td><span class="etat-transe {{etatTranse}}">{{etatTranseLabel}}</span></td>
+      <td class="actions">{{#if voieId}}{{#unless ../enCours}}<a data-action="magie" data-op="invoquer" data-id="{{id}}" data-voie="{{voieId}}" title="Préparer un Rituel invoquant ce Pouvoir"><i class="fa-solid fa-hands-praying"></i></a>{{/unless}}{{/if}}
+        <a data-action="magie" data-op="retirer" data-id="{{id}}" title="Retirer du personnage"><i class="fa-solid fa-xmark"></i></a></td>
+    </tr>
+    {{else}}<tr><td colspan="6" class="hint">Aucun Pouvoir connu.</td></tr>{{/each}}
+  </table>
 
-  {{#if (eq prep.mode "rituel")}}
-  <div class="grid-2">
-    <div class="ligne"><label>Puissance nécessaire (1-10)</label><input type="number" min="1" max="10" data-prep="puissance" value="{{prep.puissance}}"></div>
-    <div class="ligne"><label>Pouvoir désigné</label><select data-prep="pouvoirId">{{selectOptions pouvoirsOptions selected=prep.pouvoirId}}</select></div>
-  </div>
-  <div class="ligne"><label>Souhait formulé</label><input type="text" data-prep="souhait" value="{{prep.souhait}}"></div>
-  {{else}}
-  <div class="grid-2">
-    <div class="ligne"><label>Durée des Rites (minutes)</label><input type="number" min="0" data-prep="dureeRites" value="{{prep.dureeRites}}" {{#if prep.instantanee}}disabled{{/if}}></div>
-    <div class="ligne"><label>Transe instantanée</label><input type="checkbox" data-prep="instantanee" {{checked prep.instantanee}}></div>
-    {{#if isGM}}<div class="ligne"><label>Niveau de transe maximal</label><input type="number" min="1" max="10" data-prep="niveauLimite" value="{{prep.niveauLimite}}" placeholder="10"></div>{{/if}}
-  </div>
-  {{/if}}
-
-  {{#if apercu.erreur}}<p class="alerte">{{apercu.erreur}}</p>
-  {{else if apercu}}
-  <div class="pn2-magie-apercu">
-    <span>Auspices : <strong>{{pn2Signed apercu.auspices.total}}</strong></span>
-    {{#if seuilVisible}}
-      <span>Seuil de Rejet : <strong>{{apercu.seuil.seuil}}</strong> <span class="hint">({{apercu.seuil.statLabel}} {{apercu.seuil.valeurStat}} + Faveurs {{apercu.seuil.faveurs}} + Auspices {{apercu.seuil.auspices}})</span></span>
-    {{/if}}
-    <span>Colère actuelle ({{apercu.groupe}}) : <strong>{{apercu.colere}}</strong></span>
-  </div>
-  {{#if seuilVisible}}{{#if apercu.seuil.negatif}}<p class="alerte">Seuil de Rejet négatif : la première sollicitation provoquera un Rejet en Transe, et tout Rituel finira en Rejet.</p>{{else if apercu.risque}}<p class="alerte">La Colère actuelle dépasse déjà le Seuil.</p>{{/if}}{{/if}}
-  {{#if apercu.avertissement}}<p class="hint">⚠ {{apercu.avertissement}}</p>{{/if}}
-  <a class="pn2-btn" data-action="magie" data-op="commencer"><i class="fa-solid fa-play"></i> Commencer {{#if (eq prep.mode "rituel")}}le Rituel{{else}}la Transe{{/if}}</a>
-  {{/if}}
-  {{else}}<p class="hint">Créez d'abord une Voie d'illumination.</p>{{/if}}
-  {{/unless}}
-
-  {{!-- ============ Acte en cours / dernier acte ============ --}}
-  {{#if acte}}
-  <h2><i class="fa-solid fa-dice-d10"></i> {{#if enCours}}Acte en cours{{else}}Dernier acte{{/if}} : {{#if acte.estRituel}}Rituel{{else}}Transe{{/if}} — {{acte.etat.voie.nom}} <span class="tag">{{acte.statut}}</span></h2>
-  {{#unless acte.estPilote}}<p class="hint">Conduit par {{acte.piloteNom}}. <a class="pn2-btn petit" data-action="magie" data-op="reprendre" data-requete="{{requete}}" data-seq="{{acte.seq}}">Prendre la main</a></p>{{/unless}}
-
-  <div class="pn2-magie-compteurs">
-    <div class="badge"><span>Succès sacrés</span><strong>{{acte.resume.succes}}</strong></div>
-    <div class="badge"><span>Colère gagnée</span><strong>{{acte.resume.colereGagnee}}</strong></div>
-    <div class="badge"><span>Colère totale</span><strong>{{acte.resume.colereTotale}}</strong></div>
-    {{#if seuilVisible}}<div class="badge"><span>Seuil de Rejet</span><strong>{{acte.resume.seuil}}</strong></div>{{/if}}
-    <div class="badge"><span>Lancers</span><strong>{{acte.resume.lancers}}</strong></div>
-    <div class="badge"><span>Dernier d10</span><strong>{{#if acte.resume.dernier}}{{acte.resume.dernier.valeur}}{{else}}—{{/if}}</strong></div>
-  </div>
-  {{#if acte.resume.doitPoursuivre}}<p class="alerte">Résultat de Colère : il faut solliciter la divinité jusqu'à obtenir un Succès sacré.</p>{{/if}}
-
-  {{#if acte.estRituel}}
-    <p>Puissance nécessaire : <strong>{{acte.etat.rituel.puissance}}</strong>{{#if acte.etat.rituel.pouvoir}} — {{acte.etat.rituel.pouvoir.nom}}{{/if}}{{#if acte.etat.rituel.souhait}} — « {{acte.etat.rituel.souhait}} »{{/if}}</p>
-    {{#if enCours}}
-      {{#if acte.estPilote}}
-      <div class="boutons">
-        <a class="pn2-btn" data-action="magie" data-op="solliciter" data-requete="{{requete}}" data-seq="{{acte.seq}}"><i class="fa-solid fa-dice-d10"></i> Solliciter (1d10)</a>
-        <a class="pn2-btn {{#unless acte.resume.peutArreter}}disabled{{/unless}}" data-action="magie" data-op="arreter" data-requete="{{requete}}" data-seq="{{acte.seq}}" title="Possible seulement après un Succès sacré"><i class="fa-solid fa-stop"></i> Terminer le Rituel</a>
-        {{#unless acte.resume.lancers}}<a class="pn2-btn petit" data-action="magie" data-op="annuler" data-requete="{{requete}}" data-seq="{{acte.seq}}">Annuler</a>{{/unless}}
-      </div>
-      {{/if}}
-    {{else}}{{#with acte.etat.rituel.resolution}}
-      <div class="resultat {{#if suffisant}}reussite{{else}}echec{{/if}}"><span>{{succes}} / {{puissance}} Succès</span><span>{{#if suffisant}}Puissance atteinte{{else}}Rituel insuffisant{{/if}}</span></div>
-      {{#if rejet}}<p class="alerte">Rejet{{#if ../seuilVisible}} (dépassement {{depassement}}){{/if}}.</p>{{/if}}
-    {{/with}}{{/if}}
-  {{else}}
-    <div class="grid-2">
-      <div class="ligne"><label>Niveau de transe</label><strong>{{acte.transe.niveau}} <span class="hint">(max. atteint {{acte.transe.niveauMax}}, limite {{acte.transe.niveauLimite}})</span></strong></div>
-      <div class="ligne"><label>Cycle</label><span>{{acte.transe.cycle.dureeMinutes}} min{{#if acte.cycle.echeance}} — {{#if acte.cycle.depasse}}<span class="alerte">échéance dépassée</span>{{else}}reste {{acte.cycle.restantMin}} min{{/if}}{{/if}}</span></div>
+  {{!-- ============ Acte sacré ============ --}}
+  <h2><i class="fa-solid fa-dice-d10"></i> Acte sacré</h2>
+  {{#if enCours}}
+    <div class="pn2-acte-resume">
+      <span><strong>{{#if acte.estRituel}}Rituel{{else}}Transe{{/if}}</strong> — {{acte.etat.voie.nom}} <span class="tag">{{acte.statut}}</span></span>
+      <span>{{acte.resume.succes}} Succès · Colère {{acte.resume.colereTotale}}{{#unless acte.estRituel}} · Niveau {{acte.etat.transe.niveau}}{{/unless}}</span>
+      <a class="pn2-btn" data-action="magie" data-op="ouvrirActe"><i class="fa-solid fa-up-right-from-square"></i> Ouvrir {{#if acte.estRituel}}le Rituel{{else}}la Transe{{/if}}</a>
     </div>
-    <div class="ligne"><label>Chemin d'illumination</label>
-      <span>{{#each acte.chemin}}<span class="tag">P{{puissance}} {{nom}}</span> {{#if ../enCours}}{{#unless ../acte.action}}<a class="pn2-mini-btn" data-action="magie" data-op="activer" data-pouvoir="{{id}}" data-requete="{{../requete}}" data-seq="{{../acte.seq}}" title="Activer (sans sollicitation)"><i class="fa-solid fa-bolt"></i></a>{{/unless}}{{/if}} {{else}}<span class="hint">vide</span>{{/each}}</span></div>
-    {{#if acte.transe.rejet}}<p class="alerte">Rejet au Niveau de transe {{acte.transe.rejet.niveau}} (niveau maximal atteint : {{acte.transe.rejet.niveauMax}}).</p>{{/if}}
-
-    {{#if enCours}}{{#if acte.estPilote}}
-      {{#if acte.action}}
-        <p>Action en cours : <strong>{{acte.action.libelle}}</strong>{{#if acte.action.pouvoir}} — {{acte.action.pouvoir.nom}}{{/if}} ({{acte.action.succes}} Succès, {{acte.action.colere}} Colère)</p>
+  {{else if demandeEnAttente}}
+    <div class="pn2-demande">
+      <p><strong>Demande de {{#if (eq demande.mode "transe")}}Transe{{else}}Rituel{{/if}}</strong> — {{demande.voieNom}}{{#if demande.pouvoirNom}}, Pouvoir « {{demande.pouvoirNom}} »{{/if}}</p>
+      {{#if demande.souhait}}<p><em>Souhait :</em> {{demande.souhait}}</p>{{/if}}
+      {{#if demande.rites}}<p><em>Rites accomplis :</em> {{demande.rites}}</p>{{/if}}
+      {{#if isGM}}
+        {{> "systems/pavillon-noir-2/templates/actor/personnage/magie-mj.hbs"}}
+        <div class="ligne"><label>Motif d'un refus</label><input type="text" data-prep="motif" value="{{prep.motif}}"></div>
         <div class="boutons">
-          <a class="pn2-btn" data-action="magie" data-op="solliciter" data-requete="{{requete}}" data-seq="{{acte.seq}}"><i class="fa-solid fa-dice-d10"></i> Solliciter (1d10)</a>
-          {{#if (eq acte.action.type "renforcement")}}<a class="pn2-btn {{#unless acte.resume.peutArreter}}disabled{{/unless}}" data-action="magie" data-op="arreter" data-requete="{{requete}}" data-seq="{{acte.seq}}">Arrêter le renforcement</a>{{/if}}
+          <a class="pn2-btn {{#if apercu.erreur}}disabled{{/if}}" data-action="magie" data-op="autoriser"><i class="fa-solid fa-check"></i> Autoriser et commencer</a>
+          <a class="pn2-btn" data-action="magie" data-op="refuser"><i class="fa-solid fa-xmark"></i> Refuser</a>
         </div>
       {{else}}
-        <div class="boutons">
-          {{#if acte.peutMonter}}
-            <select data-prep="cible">{{selectOptions acte.candidats selected=prep.cible}}</select>
-            <a class="pn2-btn" data-action="magie" data-op="actionTranse" data-type="{{#if acte.transe.actif}}ascension{{else}}entree{{/if}}" data-requete="{{requete}}" data-seq="{{acte.seq}}"><i class="fa-solid fa-arrow-up"></i> {{#if acte.transe.actif}}Faire ascension{{else}}Entrer en Transe{{/if}}</a>
-          {{else}}{{#unless acte.transe.actif}}<span class="hint">Aucun Pouvoir accessible de Puissance 1 dans cette Voie.</span>{{/unless}}{{/if}}
-          {{#if acte.transe.actif}}
-            <a class="pn2-btn" data-action="magie" data-op="actionTranse" data-type="detachement" data-requete="{{requete}}" data-seq="{{acte.seq}}"><i class="fa-solid fa-arrow-down"></i> Se détacher</a>
-            {{#if acte.activations.length}}
-              <select data-prep="activation">{{selectOptions acte.activationsOptions selected=prep.activation}}</select>
-              <a class="pn2-btn petit" data-action="magie" data-op="actionTranse" data-type="renforcement" data-requete="{{requete}}" data-seq="{{acte.seq}}">Renforcer</a>
-            {{/if}}
-          {{/if}}
-          {{#unless acte.resume.lancers}}<a class="pn2-btn petit" data-action="magie" data-op="annuler" data-requete="{{requete}}" data-seq="{{acte.seq}}">Annuler</a>{{/unless}}
-        </div>
+        <p class="hint"><i class="fa-solid fa-hourglass-half"></i> En attente du MJ, qui fixe la Puissance et les Auspices.</p>
+        <a class="pn2-btn petit" data-action="magie" data-op="annulerDemande">Retirer la demande</a>
       {{/if}}
-    {{/if}}{{/if}}
-  {{/if}}
-
-  {{#if enCours}}
-  <details class="notes"><summary>Interruption imposée par une autre règle</summary>
-    <div class="ligne"><label>Motif</label><input type="text" data-prep="motif" value="{{prep.motif}}"></div>
-    <a class="pn2-btn petit" data-action="magie" data-op="interrompre" data-requete="{{requete}}" data-seq="{{acte.seq}}">{{#if acte.estRituel}}Interrompre le Rituel{{else}}Interrompre l'action{{/if}}</a>
-    {{#unless acte.estRituel}}<a class="pn2-btn petit" data-action="magie" data-op="interrompre" data-terminer="true" data-requete="{{requete}}" data-seq="{{acte.seq}}">Mettre fin à la Transe</a>{{/unless}}
-  </details>
-  {{/if}}
-
-  {{#with acte.repartition}}
-    <h3>Succès supplémentaires : {{budget}}</h3>
-    {{> "systems/pavillon-noir-2/templates/apps/magie-repartition.hbs" activation=""}}
-  {{/with}}
-  {{#with acte.repartitionActivation}}
-    <h3>Renforcement de « {{nom}} » : {{budget}} Succès</h3>
-    {{> "systems/pavillon-noir-2/templates/apps/magie-repartition.hbs" activation=n}}
-  {{/with}}
-
-  <h3>Historique des sollicitations</h3>
-  <table class="pn2-mini">
-    <tr><th>#</th><th>Action</th><th>d10</th><th>Résultat</th><th>Succès</th><th>Colère gagnée</th><th>Colère totale</th></tr>
-    {{#each acte.lancers}}
-    <tr class="{{#if succes}}reussite{{else}}echec{{/if}}"><td>{{n}}</td><td>{{action}}</td><td>{{valeur}}</td><td>{{#if succes}}Succès sacré{{else}}Colère{{/if}}</td><td>{{succesApres}}</td><td>{{colereApres}}</td><td>{{colereTotaleApres}}</td></tr>
-    {{else}}<tr><td colspan="7" class="hint">Aucune sollicitation.</td></tr>{{/each}}
-  </table>
+    </div>
+  {{else}}
+    {{#if demandeRefusee}}<p class="alerte">Le MJ a refusé la demande précédente{{#if demande.motifRefus}} : {{demande.motifRefus}}{{/if}}. <a class="pn2-btn petit" data-action="magie" data-op="annulerDemande">Effacer</a></p>{{/if}}
+    {{#if profil.voies.length}}
+    <div class="pn2-preparation">
+      <div class="grid-2">
+        <div class="ligne"><label>Acte</label>
+          <select data-prep="mode"><option value="rituel" {{#if (eq prep.mode "rituel")}}selected{{/if}}>Rituel</option>{{#if transePossible}}<option value="transe" {{#if (eq prep.mode "transe")}}selected{{/if}}>Transe</option>{{/if}}</select></div>
+        <div class="ligne"><label>Voie</label><select data-prep="voieId">{{selectOptions voiesOptions selected=prep.voieId}}</select></div>
+        {{#if (eq prep.mode "rituel")}}
+          <div class="ligne"><label>Pouvoir invoqué</label><select data-prep="pouvoirId">{{selectOptions pouvoirsOptions selected=prep.pouvoirId}}</select></div>
+        {{else}}
+          <div class="ligne"><label>Durée des Rites (min)</label><input type="number" min="0" data-prep="dureeRites" value="{{prep.dureeRites}}" {{#if prep.instantanee}}disabled{{/if}}></div>
+          <div class="ligne"><label>Transe instantanée</label><input type="checkbox" data-prep="instantanee" {{checked prep.instantanee}}></div>
+        {{/if}}
+      </div>
+      {{#if (eq prep.mode "rituel")}}<div class="ligne"><label>Souhait</label><input type="text" data-prep="souhait" value="{{prep.souhait}}"></div>{{/if}}
+      <div class="ligne"><label>Rites accomplis</label><input type="text" data-prep="rites" value="{{prep.rites}}" placeholder="Chants, prière, offrandes…"></div>
+      {{#if isGM}}{{> "systems/pavillon-noir-2/templates/actor/personnage/magie-mj.hbs"}}
+      {{else}}{{#unless validationRequise}}
+        <div class="grid-2">
+          {{#if (eq prep.mode "rituel")}}<div class="ligne"><label>Puissance nécessaire</label><input type="number" min="1" max="10" data-prep="puissance" value="{{prep.puissance}}"></div>{{/if}}
+          <div class="ligne"><label>Beauté des rites</label><input type="number" data-prep="beaute" value="{{prep.beaute}}" {{#if prep.instantanee}}disabled{{/if}}></div>
+        </div>
+      {{/unless}}{{/if}}
+      {{#if apercu.erreur}}<p class="alerte">{{apercu.erreur}}</p>{{/if}}
+      {{#if apercu.avertissement}}<p class="hint">⚠ {{apercu.avertissement}}</p>{{/if}}
+      {{#if seuilVisible}}{{#if apercu.seuil.negatif}}<p class="alerte">Seuil de Rejet négatif : le Rejet est certain.</p>{{else if apercu.risque}}<p class="alerte">La Colère actuelle dépasse déjà le Seuil.</p>{{/if}}{{/if}}
+      <div class="boutons">
+        {{#if validationRequise}}
+          <a class="pn2-btn {{#if apercu.erreur}}disabled{{/if}}" data-action="magie" data-op="demander"><i class="fa-solid fa-paper-plane"></i> Demander au MJ</a>
+        {{else}}
+          <a class="pn2-btn {{#if apercu.erreur}}disabled{{/if}}" data-action="magie" data-op="commencer"><i class="fa-solid fa-play"></i> Commencer {{#if (eq prep.mode "rituel")}}le Rituel{{else}}la Transe{{/if}}</a>
+        {{/if}}
+      </div>
+    </div>
+    {{else}}<p class="hint">Ajoutez d'abord une Voie d'illumination.</p>{{/if}}
+    {{#if acte}}
+      <div class="pn2-acte-resume termine">
+        <span>Dernier acte : <strong>{{#if acte.estRituel}}Rituel{{else}}Transe{{/if}}</strong> — {{acte.etat.voie.nom}} <span class="tag">{{acte.statut}}</span></span>
+        <a class="pn2-btn petit" data-action="magie" data-op="ouvrirActe">Consulter</a>
+      </div>
+    {{/if}}
   {{/if}}
 </div>
 {{/with}}

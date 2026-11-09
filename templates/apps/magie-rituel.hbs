@@ -1,0 +1,69 @@
+<div class="pn2-magie pn2-fenetre-acte">
+{{#if aucunActe}}<p class="hint">Aucun acte sacré.</p>{{else}}
+  <h2><i class="fa-solid fa-hands-praying"></i> {{etat.voie.nom}} <span class="tag etat-{{etat.statut}}">{{statut}}</span></h2>
+  {{#unless estPilote}}<p class="hint">Conduit par {{piloteNom}}.{{#if enCours}} <a class="pn2-btn petit {{#if occupe}}disabled{{/if}}" data-action="magie" data-op="reprendre" data-requete="{{requete}}" data-seq="{{seq}}">Prendre la main</a>{{/if}}</p>{{/unless}}
+
+  <div class="pn2-magie-recap">
+    {{#if etat.rituel.pouvoir}}<div><span>Pouvoir invoqué</span> {{etat.rituel.pouvoir.nom}}</div>{{/if}}
+    {{#if etat.rituel.souhait}}<div><span>Souhait</span> {{etat.rituel.souhait}}</div>{{/if}}
+    {{#if etat.rituel.rites}}<div><span>Rites</span> {{etat.rituel.rites}}</div>{{/if}}
+    <div><span>Puissance nécessaire</span> {{#if (eq etat.rituel.puissance null)}}<em>connue du MJ</em>{{else}}<strong>{{etat.rituel.puissance}}</strong>{{#if etat.rituel.puissanceSecrete}} <span class="hint">(secrète pour le joueur)</span>{{/if}}{{/if}}</div>
+  </div>
+
+  <div class="pn2-magie-compteurs">
+    <div class="badge succes"><span>Succès sacrés</span><strong>{{resume.succes}}</strong></div>
+    <div class="badge colere"><span>Colère actuelle</span><strong>{{resume.colereTotale}}</strong><em>dont {{resume.colereGagnee}} gagnée</em></div>
+    {{#if seuilVisible}}<div class="badge"><span>Seuil de Rejet</span><strong>{{etat.seuil.seuil}}</strong></div>{{/if}}
+    <div class="badge"><span>Dernier d10</span><strong class="{{#if resume.dernier}}{{resume.dernier.resultat}}{{/if}}">{{#if resume.dernier}}{{resume.dernier.valeur}}{{else}}—{{/if}}</strong></div>
+  </div>
+
+  {{#if enCours}}
+    {{#if resume.doitPoursuivre}}<p class="alerte">Résultat de Colère : il faut solliciter la divinité jusqu'à obtenir un Succès sacré.</p>{{/if}}
+    <div class="boutons grands">
+      <a class="pn2-btn {{#unless peutAgir}}disabled{{/unless}}" data-action="magie" data-op="solliciter" data-requete="{{requete}}" data-seq="{{seq}}"><i class="fa-solid fa-dice-d10"></i> Lancer 1d10</a>
+      <a class="pn2-btn {{#unless peutAgir}}disabled{{/unless}} {{#unless resume.peutArreter}}disabled{{/unless}}" data-action="magie" data-op="arreter" data-requete="{{requete}}" data-seq="{{seq}}" title="Possible seulement après un Succès sacré"><i class="fa-solid fa-flag-checkered"></i> Terminer</a>
+      {{#unless resume.lancers}}<a class="pn2-btn petit {{#unless peutIntervenir}}disabled{{/unless}}" data-action="magie" data-op="annuler" data-requete="{{requete}}" data-seq="{{seq}}">Annuler</a>{{/unless}}
+    </div>
+    {{#if occupe}}<p class="hint"><i class="fa-solid fa-spinner fa-spin"></i> Sollicitation en cours…</p>{{/if}}
+    {{#if peutIntervenir}}
+    <details class="notes"><summary>Interruption imposée par une autre règle</summary>
+      <div class="ligne"><label>Motif</label><input type="text" data-prep="motif" value="{{prep.motif}}"></div>
+      <a class="pn2-btn petit" data-action="magie" data-op="interrompre" data-requete="{{requete}}" data-seq="{{seq}}">Interrompre le Rituel</a>
+    </details>
+    {{/if}}
+  {{else}}
+    {{#with etat.rituel.resolution}}
+      <h3>Résolution</h3>
+      <div class="resultat {{#if (eq suffisant true)}}reussite{{else if (eq suffisant false)}}echec{{/if}}">
+        <span>{{succes}} Succès sacré(s){{#unless (eq puissance null)}} / {{puissance}}{{/unless}}</span>
+        <span>{{#if (eq suffisant true)}}Puissance atteinte{{else if (eq suffisant false)}}Rituel insuffisant{{else}}Résultat soumis au MJ{{/if}}</span>
+      </div>
+      {{#if rejet}}<p class="alerte">Rejet : la Colère de la divinité dépasse ses limites{{#if depassement}} (dépassement de {{depassement}}){{/if}}.</p>{{/if}}
+      {{#if succesSupplementaires}}<p>Succès supplémentaires : <strong>{{succesSupplementaires}}</strong></p>{{/if}}
+    {{/with}}
+    {{#with repartition}}
+      <h3>Améliorations ({{budget}} Succès supplémentaires)</h3>
+      {{> "systems/pavillon-noir-2/templates/apps/magie-repartition.hbs"}}
+    {{/with}}
+    <h3>Validation du MJ</h3>
+    {{#if narration}}
+      <p class="{{#if narration.accordee}}reussite{{else}}alerte{{/if}}">{{#if narration.accordee}}Intervention accordée{{else}}Intervention refusée{{/if}}{{#if narration.note}} : {{narration.note}}{{/if}}</p>
+    {{else}}<p class="hint">La réussite mécanique ne déclenche aucun effet : le MJ décide de la manifestation de l'intervention.</p>{{/if}}
+    {{#if peutNarrer}}
+      <div class="ligne"><label>Note (manifestation)</label><input type="text" data-prep="note" value="{{prep.note}}"></div>
+      <div class="boutons">
+        <a class="pn2-btn {{#if occupe}}disabled{{/if}}" data-action="magie" data-op="narration" data-accordee="true" data-requete="{{requete}}" data-seq="{{seq}}"><i class="fa-solid fa-check"></i> Accorder</a>
+        <a class="pn2-btn {{#if occupe}}disabled{{/if}}" data-action="magie" data-op="narration" data-accordee="false" data-requete="{{requete}}" data-seq="{{seq}}"><i class="fa-solid fa-xmark"></i> Refuser</a>
+      </div>
+    {{/if}}
+  {{/if}}
+
+  <h3>Historique des d10</h3>
+  <table class="pn2-mini historique">
+    <tr><th>#</th><th>d10</th><th>Résultat</th><th>Succès</th><th>Colère gagnée</th><th>Colère totale</th></tr>
+    {{#each lancers}}
+    <tr class="{{#if succes}}reussite{{else}}echec{{/if}}"><td>{{n}}</td><td>{{valeur}}</td><td>{{#if succes}}Succès sacré{{else}}Colère divine{{/if}}</td><td>{{succesApres}}</td><td>{{colereApres}}</td><td>{{colereTotaleApres}}</td></tr>
+    {{else}}<tr><td colspan="6" class="hint">Aucune sollicitation.</td></tr>{{/each}}
+  </table>
+{{/if}}
+</div>

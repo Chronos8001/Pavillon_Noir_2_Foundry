@@ -5,7 +5,7 @@ import { PN2 } from "./config.mjs";
 import { PersonnageData } from "./data/actor-personnage.mjs";
 import { PNJData } from "./data/actor-pnj.mjs";
 import { NavireData } from "./data/actor-navire.mjs";
-import { ArmeData, ArmureData, EquipementData, AvantageData, ManoeuvreData, MarchandiseData, HistoriqueData, VoieData, PouvoirData } from "./data/items.mjs";
+import { ArmeData, ArmureData, EquipementData, AvantageData, ManoeuvreData, MarchandiseData, HistoriqueData, ReligionData, VoieData, PouvoirData } from "./data/items.mjs";
 import { PN2Actor } from "./documents/actor.mjs";
 import { PN2Item } from "./documents/item.mjs";
 import { PN2PersonnageSheet } from "./sheets/actor-personnage-sheet.mjs";
@@ -18,21 +18,28 @@ import * as tables from "./helpers/tables.mjs";
 import * as magie from "./magie/service.mjs";
 import * as magieMoteur from "./magie/moteur.mjs";
 import * as magieRegles from "./magie/regles.mjs";
+import { ouvrirActe, surMiseAJourActeur, rafraichirTranses } from "./magie/apps-actes.mjs";
+import { PN2BibliothequeApp } from "./magie/app-bibliotheque.mjs";
 
 Hooks.once("init", () => {
   console.log("Pavillon Noir 2 | Initialisation du système");
   CONFIG.PN2 = PN2;
   game.pn2 = {
     config: PN2, dice, combat, naval, tables,
-    // Magie (Entre ciel et terre) : game.pn2.magie.ouvrir(actor) affiche l'onglet Magie de la fiche
+    // Magie (Entre ciel et terre)
     magie: {
       ...magie, moteur: magieMoteur, regles: magieRegles,
+      /** Ouvre la fiche sur l'onglet « Magie ». */
       ouvrir: actor => {
         const sheet = actor?.sheet;
         if (!sheet) return;
         if (sheet.tabGroups) sheet.tabGroups.primary = "magie";
         return sheet.render({ force: true });
-      }
+      },
+      /** Ouvre la fenêtre du Rituel ou de la Transe du personnage. */
+      ouvrirActe,
+      /** Ouvre la bibliothèque de magie (religions, Voies, Pouvoirs). */
+      bibliotheque: actor => PN2BibliothequeApp.ouvrir(actor)
     }
   };
 
@@ -41,7 +48,7 @@ Hooks.once("init", () => {
   CONFIG.Actor.dataModels = { personnage: PersonnageData, pnj: PNJData, navire: NavireData };
   CONFIG.Item.dataModels = {
     arme: ArmeData, armure: ArmureData, equipement: EquipementData, avantage: AvantageData, manoeuvre: ManoeuvreData, marchandise: MarchandiseData, historique: HistoriqueData,
-    voie: VoieData, pouvoir: PouvoirData
+    religion: ReligionData, voie: VoieData, pouvoir: PouvoirData
   };
   CONFIG.Actor.trackableAttributes = {
     personnage: { bar: [], value: ["initiative", "chance"] },
@@ -68,7 +75,8 @@ Hooks.once("init", () => {
     "systems/pavillon-noir-2/templates/chat/partials/resolution.hbs",
     "systems/pavillon-noir-2/templates/actor/partials/bourse.hbs",
     "systems/pavillon-noir-2/templates/apps/creation.hbs",
-    "systems/pavillon-noir-2/templates/apps/magie-repartition.hbs"
+    "systems/pavillon-noir-2/templates/apps/magie-repartition.hbs",
+    "systems/pavillon-noir-2/templates/actor/personnage/magie-mj.hbs"
   ]);
 });
 
@@ -94,6 +102,16 @@ function registerSettings() {
     hint: "Entre ciel et terre : si décoché, le Seuil de Rejet, les Auspices et le dépassement ne sont montrés qu'au MJ (le prêtre ressent la Colère sans la mesurer).",
     scope: "world", config: true, type: Boolean, default: false
   });
+  game.settings.register(PN2.id, "magieValidationMJ", {
+    name: "Magie : validation du MJ",
+    hint: "Les joueurs soumettent leurs Rituels et Transes au MJ, qui fixe la Puissance et les Auspices puis autorise ou refuse l'acte.",
+    scope: "world", config: true, type: Boolean, default: true
+  });
+  game.settings.register(PN2.id, "magieParametresVisibles", {
+    name: "Magie : paramètres des Pouvoirs visibles des joueurs",
+    hint: "Entre ciel et terre : les paramètres (Portée, Cible, Impact, Durée) sont normalement réservés au MJ.",
+    scope: "world", config: true, type: Boolean, default: false
+  });
   game.settings.register(PN2.id, "magieRecuperationAuto", {
     name: "Magie : récupération automatique de la Colère",
     hint: "Retire 1 point de Colère divine par heure de temps du monde écoulée après la fin d'un acte sacré (jamais pendant un Rituel ou une Transe).",
@@ -104,6 +122,22 @@ function registerSettings() {
 /* Magie : récupération horaire de la Colère quand le temps du monde avance (MJ actif uniquement) */
 Hooks.on("updateWorldTime", worldTime => {
   magie.surAvanceeDuTemps(worldTime);
+  rafraichirTranses();
+});
+
+/* Magie : la fenêtre de l'acte s'ouvre pour l'utilisateur qui le conduit, dès son début */
+Hooks.on("updateActor", (actor, changes) => surMiseAJourActeur(actor, changes));
+
+/* Magie : accès à la bibliothèque depuis l'onglet des compendiums */
+Hooks.on("renderCompendiumDirectory", (app, html) => {
+  const racine = html instanceof HTMLElement ? html : html?.[0];
+  if (!racine || racine.querySelector(".pn2-bouton-bibliotheque")) return;
+  const bouton = document.createElement("button");
+  bouton.type = "button";
+  bouton.className = "pn2-bouton-bibliotheque";
+  bouton.innerHTML = '<i class="fa-solid fa-book-bookmark"></i> Bibliothèque de magie';
+  bouton.addEventListener("click", () => PN2BibliothequeApp.ouvrir(game.user.character ?? null));
+  (racine.querySelector(".header-actions") ?? racine.querySelector("header") ?? racine).append(bouton);
 });
 
 function registerHelpers() {

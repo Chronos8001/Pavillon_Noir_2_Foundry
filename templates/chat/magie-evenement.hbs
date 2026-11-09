@@ -1,0 +1,6 @@
+<div class="pn2-card pn2-magie">
+  <header class="card-header"><h3>{{titre}}</h3></header>
+  {{#if classe}}<div class="resultat {{classe}}"><span>{{titre}}</span></div>{{/if}}
+  {{#each lignes}}<p>{{this}}</p>{{/each}}
+  {{#if note}}<p class="hint">{{note}}</p>{{/if}}
+</div>

@@ -1,0 +1,50 @@
+<div class="pn2-magie pn2-biblio">
+  <div class="pn2-biblio-entete">
+    <label>Personnage
+      <select data-choix-acteur><option value="">— Aucun —</option>{{#each acteurs}}<option value="{{id}}" {{#if (eq id ../actor.id)}}selected{{/if}}>{{nom}}</option>{{/each}}</select></label>
+    <a class="pn2-mini-btn" data-action="recharger" title="Relire les compendiums"><i class="fa-solid fa-rotate"></i></a>
+    {{#if isGM}}<a class="pn2-btn petit" data-action="importer" title="Importer un lot de données (JSON)"><i class="fa-solid fa-file-import"></i> Importer</a>{{/if}}
+  </div>
+
+  <nav class="pn2-tabs tabs">
+    <a class="item {{#if (eq vue "religions")}}active{{/if}}" data-action="vue" data-vue="religions"><i class="fa-solid fa-place-of-worship"></i> Religions ({{compteurs.religions}})</a>
+    <a class="item {{#if (eq vue "voies")}}active{{/if}}" data-action="vue" data-vue="voies"><i class="fa-solid fa-route"></i> Voies ({{compteurs.voies}})</a>
+    <a class="item {{#if (eq vue "pouvoirs")}}active{{/if}}" data-action="vue" data-vue="pouvoirs"><i class="fa-solid fa-hand-sparkles"></i> Pouvoirs ({{compteurs.pouvoirs}})</a>
+  </nav>
+
+  <div class="pn2-biblio-filtres">
+    <input type="search" data-filtre="texte" value="{{filtres.texte}}" placeholder="Rechercher…">
+    {{#if (eq vue "voies")}}<select data-filtre="religion">{{selectOptions religionsOptions selected=filtres.religion}}</select>{{/if}}
+    {{#if (eq vue "pouvoirs")}}
+      <select data-filtre="voie">{{selectOptions voiesOptions selected=filtres.voie}}</select>
+      <select data-filtre="puissance">{{selectOptions puissancesOptions selected=filtres.puissance}}</select>
+    {{/if}}
+  </div>
+
+  <div class="resultats">
+  <table class="pn2-mini">
+    <tr>
+      <th>Nom</th>
+      {{#if (eq vue "religions")}}<th>Type</th><th>Voies</th>{{/if}}
+      {{#if (eq vue "voies")}}<th>Religion</th><th>Domaine</th><th>Pouvoirs</th>{{/if}}
+      {{#if (eq vue "pouvoirs")}}<th>Voie</th><th>P</th>{{/if}}
+      <th>Source</th><th></th>
+    </tr>
+    {{#each lignes}}
+    <tr data-uuid="{{uuid}}" draggable="true" title="Glissez vers une fiche pour l'ajouter">
+      <td><img src="{{img}}" width="18" height="18"> <a data-action="consulter">{{nom}}</a></td>
+      {{#if (eq ../vue "religions")}}<td>{{typeLabel}}</td><td>{{nbVoies}}{{#if cassees}} <span class="alerte" title="Références introuvables">({{cassees}} introuvable(s))</span>{{/if}}</td>{{/if}}
+      {{#if (eq ../vue "voies")}}<td>{{religionNom}}{{#if referenceCassee}} <span class="alerte" title="Religion introuvable">⚠</span>{{/if}}</td><td class="hint">{{system.domaine}}{{#if system.sansTranse}} — sans Transe{{/if}}</td><td>{{nbPouvoirs}}</td>{{/if}}
+      {{#if (eq ../vue "pouvoirs")}}<td>{{voieNom}}{{#if referenceCassee}} <span class="alerte" title="Voie introuvable">⚠</span>{{/if}}</td><td>{{system.puissance}}</td>{{/if}}
+      <td class="hint">{{source}}</td>
+      <td class="actions">
+        <a data-action="consulter" title="Consulter"><i class="fa-solid fa-eye"></i></a>
+        {{#if peutModifier}}{{#if possedeId}}<a data-action="retirer" data-id="{{possedeId}}" title="Retirer du personnage (le document d'origine est conservé)"><i class="fa-solid fa-user-minus"></i></a>
+        {{else}}<a data-action="ajouter" title="Ajouter au personnage"><i class="fa-solid fa-user-plus"></i></a>{{/if}}{{/if}}
+      </td>
+    </tr>
+    {{/each}}
+  </table>
+  {{#if vide}}<p class="hint">Aucun document. {{#if (eq vue "pouvoirs")}}Les Pouvoirs officiels ne sont pas fournis : créez-les ou importez-les (MJ).{{/if}}</p>{{/if}}
+  </div>
+</div>

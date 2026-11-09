@@ -1,20 +1,26 @@
+{{!-- Carte de début ou de fin d'acte. `etat` est la vue joueur (sans secrets) sauf pour la version MJ (mj = true). --}}
 <div class="pn2-card pn2-magie">
   <header class="card-header">
     <h3>{{titre}}</h3>
-    <div class="sous-titre">{{etat.acteur.nom}}{{#if etat.religion}} — {{etat.religion}}{{/if}}</div>
+    <div class="sous-titre">{{etat.acteur.nom}}{{#if etat.religion}} — {{etat.religion}}{{/if}}{{#if mj}} — détails MJ{{/if}}</div>
   </header>
 
   {{#if (eq etat.type "rituel")}}
+    {{#if etat.rituel.pouvoir}}<p>Pouvoir invoqué : {{etat.rituel.pouvoir.nom}}</p>{{/if}}
     {{#if etat.rituel.souhait}}<p><em>Souhait :</em> {{etat.rituel.souhait}}</p>{{/if}}
-    <p>Puissance nécessaire : <strong>{{etat.rituel.puissance}}</strong>{{#if etat.rituel.pouvoir}} — Pouvoir désigné : {{etat.rituel.pouvoir.nom}}{{/if}}</p>
+    {{#if etat.rituel.rites}}<p><em>Rites :</em> {{etat.rituel.rites}}</p>{{/if}}
+    {{#if (eq etat.rituel.puissance null)}}<p>Puissance nécessaire : <em>connue du MJ</em></p>
+    {{else}}<p>Puissance nécessaire : <strong>{{etat.rituel.puissance}}</strong>{{#if etat.rituel.puissanceSecrete}} <span class="hint">(secrète)</span>{{/if}}</p>{{/if}}
     {{#if fin}}{{#with etat.rituel.resolution}}
-      <div class="resultat {{#if suffisant}}reussite{{else}}echec{{/if}}">
-        <span>{{succes}} Succès sacré(s) / {{puissance}}</span>
-        <span>{{#if suffisant}}Puissance atteinte{{else}}Rituel insuffisant{{/if}}</span>
+      <div class="resultat {{#if (eq suffisant true)}}reussite{{else if (eq suffisant false)}}echec{{/if}}">
+        <span>{{succes}} Succès sacré(s){{#unless (eq puissance null)}} / {{puissance}}{{/unless}}</span>
+        <span>{{#if (eq suffisant true)}}Puissance atteinte{{else if (eq suffisant false)}}Rituel insuffisant{{else}}Résultat soumis au MJ{{/if}}</span>
       </div>
-      {{#if suffisant}}<p>Succès supplémentaires : {{succesSupplementaires}}. La manifestation de l'intervention reste décidée par le MJ.</p>{{/if}}
+      {{#if succesSupplementaires}}<p>Succès supplémentaires : {{succesSupplementaires}}.</p>{{/if}}
       {{#if rejet}}<p class="alerte">Rejet : la Colère de la divinité dépasse ses limites.</p>{{/if}}
-    {{/with}}{{/if}}
+    {{/with}}
+    <p class="hint">La manifestation de l'intervention attend la validation du MJ.</p>
+    {{/if}}
   {{else}}
     {{#if etat.transe.instantanee}}<p>Transe instantanée.</p>{{/if}}
     <p>Cycle de transe : {{etat.transe.cycle.dureeMinutes}} minute(s).</p>
@@ -29,12 +35,12 @@
   {{/if}}
 
   {{#if details}}
-    <details class="notes" {{#if debut}}open{{/if}}><summary>Détails (MJ)</summary><ul>
+    <details class="notes" {{#if debut}}open{{/if}}><summary>Détails{{#if mj}} (MJ){{/if}}</summary><ul>
       <li>Auspices : {{etat.auspices.actesFoi}} (Actes de foi) + {{etat.auspices.affinite}} (Affinité) + {{etat.auspices.beaute}} (Beauté des rites) − {{etat.auspices.peches}} (Péchés) = <strong>{{etat.auspices.total}}</strong></li>
       <li>Seuil de Rejet : {{etat.seuil.valeurStat}} ({{etat.seuil.statLabel}}) + {{etat.seuil.faveurs}} (Faveurs) + {{etat.seuil.auspices}} (Auspices) = <strong>{{etat.seuil.seuil}}</strong>{{#if etat.seuil.negatif}} — Seuil négatif : le Rejet est certain{{/if}}</li>
       <li>Colère : {{etat.colereInitiale}} au début + {{etat.colereGagnee}} gagnée ({{etat.groupeColere}})</li>
-      {{#if etat.rituel.resolution.rejet}}<li>Dépassement du Seuil : {{etat.rituel.resolution.depassement}}</li>{{/if}}
-      {{#if etat.transe.rejet}}<li>Dépassement du Seuil : {{etat.transe.rejet.depassement}} — Puissance maximale possédée : {{etat.transe.rejet.sequelles.puissanceMax}}</li>{{/if}}
+      {{#if etat.rituel.resolution.depassement}}<li>Dépassement du Seuil : {{etat.rituel.resolution.depassement}}</li>{{/if}}
+      {{#if etat.transe.rejet.depassement}}<li>Dépassement du Seuil : {{etat.transe.rejet.depassement}} — Puissance maximale possédée : {{etat.transe.rejet.sequelles.puissanceMax}}</li>{{/if}}
     </ul></details>
   {{/if}}
 </div>

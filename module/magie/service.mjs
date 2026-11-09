@@ -12,6 +12,7 @@ import { MAGIE } from "./config-magie.mjs";
 import * as R from "./regles.mjs";
 import * as M from "./moteur.mjs";
 import { VerrouCles } from "./verrou.mjs";
+import * as Ref from "./references.mjs";
 
 const SYS = PN2.id;
 const TPL = "systems/pavillon-noir-2/templates";
@@ -40,33 +41,68 @@ export function acteCourant(actor) {
  */
 export function groupeColereVoie(actor, voie) {
   const m = actor.system.magie;
-  return R.cleVoie(voie?.system.groupeColere || m.religionNom || voie?.system.religion) || cfg().groupeColereDefaut;
+  return R.cleVoie(voie?.system.groupeColere || "") || m.groupeColere || R.cleVoie(voie?.system.religion || "") || cfg().groupeColereDefaut;
+}
+
+/** UUID de la source d'un objet possédé (compendium ou monde), si Foundry l'a mémorisé. */
+export const uuidSource = item => item?._stats?.compendiumSource ?? item?.flags?.core?.sourceId ?? null;
+
+/** Voies du personnage sous forme de candidats pour la résolution des références. */
+function candidatsVoies(actor) {
+  return actor.items.filter(i => i.type === "voie")
+    .map(v => ({ id: v.id, uuid: v.uuid, sourceUuid: uuidSource(v), cle: v.system.cleEffective, item: v }));
+}
+
+/** Voie possédée d'un Pouvoir possédé (par UUID, sinon par clé), et état de la référence. */
+export function voiePossedee(actor, pouvoir, candidats = candidatsVoies(actor)) {
+  const r = Ref.voieDuPouvoir(pouvoir.system, candidats);
+  return { voie: r.voie?.item ?? null, mode: r.mode, referenceCassee: r.referenceCassee };
 }
 
 /** Pouvoirs du personnage rattachés à une Voie. */
 export function pouvoirsVoie(actor, voie) {
-  const cle = voie.system.cleEffective;
-  return actor.items.filter(i => i.type === "pouvoir" && R.cleVoie(i.system.voie) === cle)
+  const candidats = candidatsVoies(actor);
+  return actor.items.filter(i => i.type === "pouvoir" && voiePossedee(actor, i, candidats).voie?.id === voie.id)
     .sort((a, b) => a.system.puissance - b.system.puissance || a.name.localeCompare(b.name));
 }
+
+/** Les paramètres des Pouvoirs sont réservés au MJ (Entre ciel et terre, p. 90), sauf réglage contraire. */
+export const parametresVisibles = () => game.user.isGM || game.settings.get(SYS, "magieParametresVisibles");
 
 /** Synthèse des données religieuses du personnage. */
 export function profilReligieux(actor) {
   const m = actor.system.magie;
   const types = cfg().types;
-  const voies = actor.items.filter(i => i.type === "voie").map(v => ({
-    id: v.id, nom: v.name, cle: v.system.cleEffective, religion: v.system.religion,
+  const acte = acteCourant(actor);
+  const chemin = M.estEnCours(acte) && acte.type === "transe" ? acte.transe.chemin.map(c => c.id) : [];
+  const candidats = candidatsVoies(actor);
+  const voirParams = parametresVisibles();
+  const pouvoirs = actor.items.filter(i => i.type === "pouvoir").map(p => {
+    const r = voiePossedee(actor, p, candidats);
+    const s = p.system;
+    return {
+      id: p.id, nom: p.name, puissance: s.puissance, nomNatif: s.nomNatif, accessible: s.accessible,
+      voieId: r.voie?.id ?? null, voieNom: r.voie?.name ?? null, referenceCassee: r.referenceCassee || !r.voie,
+      description: s.description, conditions: s.conditions,
+      parametres: voirParams ? { portee: s.portee, cible: s.cible, impact: s.impact, duree: s.duree } : null,
+      dansChemin: chemin.includes(p.id),
+      etatTranse: chemin.includes(p.id) ? "chemin" : (s.accessible ? "accessible" : "compulsion")
+    };
+  }).sort((a, b) => (a.voieNom ?? "~").localeCompare(b.voieNom ?? "~") || a.puissance - b.puissance || a.nom.localeCompare(b.nom));
+  const voies = candidats.map(({ item: v }) => ({
+    id: v.id, nom: v.name, cle: v.system.cleEffective, religion: v.system.religion, domaine: v.system.domaine,
     foi: v.system.foi, mysteres: v.system.mysteres, affinite: v.system.affinite, sansTranse: v.system.sansTranse,
     groupeColere: groupeColereVoie(actor, v),
-    pouvoirs: pouvoirsVoie(actor, v).map(p => ({
-      id: p.id, nom: p.name, puissance: p.system.puissance, accessible: p.system.accessible, nomNatif: p.system.nomNatif
-    }))
+    pouvoirs: pouvoirs.filter(p => p.voieId === v.id)
   }));
-  const colere = Object.entries(m.colere ?? {}).map(([groupe, c]) => ({ groupe, ...c }));
+  const religionItem = m.religionItemId ? actor.items.get(m.religionItemId) : null;
+  const colere = Object.entries(m.colere ?? {}).map(([groupe, c]) => ({ groupe, ...c, principal: groupe === m.groupeColere }));
   return {
-    religion: m.religionNom, type: m.typeEffectif, typeSaisi: m.type, typeDeduit: m.typeDeduit, typeDef: types[m.typeEffectif] ?? null,
-    faveurs: m.faveurs, faveursMod: m.faveursMod, chance: actor.system.chance,
-    actesFoi: m.actesFoi, peches: m.peches, colere, voies, acte: acteCourant(actor)
+    religion: m.religionNom, religionItem: religionItem ? { id: religionItem.id, nom: religionItem.name, img: religionItem.img } : null,
+    type: m.typeEffectif, typeSaisi: m.type, typeDeduit: m.typeDeduit, typeDef: types[m.typeEffectif] ?? null,
+    faveurs: m.faveurs, faveursMod: m.faveursMod, chance: actor.system.chance, groupeColere: m.groupeColere,
+    colereActuelle: consulterColere(actor, m.groupeColere),
+    actesFoi: m.actesFoi, peches: m.peches, colere, voies, pouvoirs, acte, demande: demandeCourante(actor)
   };
 }
 
@@ -78,7 +114,7 @@ export function consulterColere(actor, groupe) {
  * Paramètres d'un acte à partir du formulaire de préparation.
  * Les composantes des Auspices sont pré-remplies depuis la fiche et la Voie, et ajustables.
  */
-export function parametresActe(actor, form) {
+export function parametresActe(actor, form, { pilote = null, validation = null } = {}) {
   const m = actor.system.magie;
   const voie = actor.items.get(form.voieId);
   if (!voie || voie.type !== "voie") throw new R.MagieError("voie-inconnue", "Choisissez une Voie d'illumination du personnage.");
@@ -87,7 +123,7 @@ export function parametresActe(actor, form) {
   const p = {
     id: foundry.utils.randomID(),
     acteur: { uuid: actor.uuid, nom: actor.name },
-    pilote: game.user.id,
+    pilote: pilote ?? game.user.id,
     religion: m.religionNom,
     typeReligion: m.typeEffectif,
     types: cfg().types,
@@ -114,8 +150,11 @@ export function parametresActe(actor, form) {
   } else {
     p.puissance = num(form.puissance, NaN);
     p.souhait = form.souhait ?? "";
+    p.rites = form.rites ?? "";
+    p.puissanceSecrete = !!form.puissanceSecrete;
+    p.validation = validation;
     const pv = form.pouvoirId ? actor.items.get(form.pouvoirId) : null;
-    p.pouvoir = pv ? { id: pv.id, nom: pv.name, puissance: pv.system.puissance } : null;
+    p.pouvoir = pv ? { id: pv.id, uuid: pv.uuid, nom: pv.name, puissance: pv.system.puissance } : null;
   }
   return p;
 }
@@ -237,18 +276,192 @@ export async function simulerDistribution(n = 1000) {
 /*  Actes sacrés                                */
 /* -------------------------------------------- */
 
-/** Commence un Rituel ou une Transe (form.mode = "rituel" | "transe"). */
-export async function demarrerActe(actor, form) {
+/* -------------------------------------------- */
+/*  Préparation : demande du joueur, validation du MJ */
+/* -------------------------------------------- */
+
+/** Le lancement d'un acte exige-t-il l'accord du MJ ? */
+export const validationRequise = () => !game.user.isGM && game.settings.get(SYS, "magieValidationMJ");
+
+/** Demande d'acte en attente (ou refusée) stockée sur l'acteur. */
+export function demandeCourante(actor) {
+  const brut = actor?.getFlag?.(SYS, "demande") ?? actor?.flags?.[SYS]?.demande;
+  if (!brut) return null;
+  try { return typeof brut === "string" ? JSON.parse(brut) : brut; } catch { return null; }
+}
+
+const CHAMPS_JOUEUR = ["mode", "voieId", "pouvoirId", "souhait", "rites", "dureeRites", "instantanee", "beaute"];
+
+/**
+ * Le joueur soumet son acte au MJ (voie, pouvoir, souhait, rites, durée des Rites).
+ * Les champs réservés au MJ (Puissance, Auspices) ne sont pas transmis.
+ */
+export async function demanderActe(actor, form) {
   exigerProprietaire(actor);
+  return verrou.executer(actor.uuid, async () => {
+    if (M.estEnCours(acteCourant(actor))) throw new R.MagieError("acte-en-cours", "Un acte sacré est déjà en cours pour ce personnage.");
+    const voie = actor.items.get(form.voieId);
+    if (!voie) throw new R.MagieError("voie-inconnue", "Choisissez une Voie d'illumination du personnage.");
+    if (form.mode === "transe" && voie.system.sansTranse) throw new R.MagieError("sans-transe", `Il n'y a pas de Transe dans la ${voie.name}.`);
+    const demande = {
+      id: foundry.utils.randomID(), statut: "attente", auteur: game.user.id, maintenant: maintenant(),
+      ...Object.fromEntries(CHAMPS_JOUEUR.map(k => [k, form[k] ?? null]))
+    };
+    await actor.update({ [`flags.${SYS}.demande`]: JSON.stringify(demande) });
+    const pv = demande.pouvoirId ? actor.items.get(demande.pouvoirId) : null;
+    await ChatMessage.create({
+      speaker: ChatMessage.getSpeaker({ actor }),
+      content: await render("chat/magie-evenement.hbs", {
+        titre: `${demande.mode === "transe" ? "Demande de Transe" : "Demande de Rituel"} : ${voie.name}`,
+        lignes: [pv ? `Pouvoir invoqué : ${pv.name}` : null, demande.souhait ? `Souhait : ${demande.souhait}` : null,
+          demande.rites ? `Rites : ${demande.rites}` : null].filter(Boolean),
+        note: "Le MJ fixe la Puissance et les Auspices, puis autorise ou refuse l'acte depuis l'onglet Magie."
+      }),
+      whisper: destinataires(actor)
+    });
+    return demande;
+  });
+}
+
+/** Le joueur retire sa demande. */
+export async function annulerDemande(actor) {
+  exigerProprietaire(actor);
+  await actor.update({ [`flags.${SYS}.-=demande`]: null });
+}
+
+/** Le MJ refuse la demande (motif transmis au joueur). */
+export async function refuserDemande(actor, motif = "") {
+  if (!game.user.isGM) throw new R.MagieError("permission", "Seul le MJ peut refuser une demande.");
+  const d = demandeCourante(actor);
+  if (!d) throw new R.MagieError("aucune-demande", "Aucune demande en attente.");
+  await actor.update({ [`flags.${SYS}.demande`]: JSON.stringify({ ...d, statut: "refusee", motifRefus: motif }) });
+  await ChatMessage.create({
+    speaker: ChatMessage.getSpeaker({ actor }),
+    content: await render("chat/magie-evenement.hbs", {
+      titre: `${d.mode === "transe" ? "Transe" : "Rituel"} refusé par le MJ`, lignes: motif ? [motif] : [], classe: "echec"
+    }),
+    whisper: destinataires(actor)
+  });
+}
+
+/**
+ * Commence un acte : directement (MJ, ou validation désactivée), ou en validant la demande du joueur.
+ * @param {object} form       préparation (voie, pouvoir, souhait, rites, Puissance, Auspices…)
+ * @param {object} [o]
+ * @param {boolean} [o.depuisDemande]  le MJ valide la demande en attente : le joueur qui l'a faite conduira l'acte
+ */
+export async function demarrerActe(actor, form, { depuisDemande = false } = {}) {
+  exigerProprietaire(actor);
+  if (validationRequise()) return demanderActe(actor, form);
   return verrou.executer(actor.uuid, async () => {
     const actuel = acteCourant(actor);
     if (M.estEnCours(actuel)) throw new R.MagieError("acte-en-cours", "Un acte sacré est déjà en cours pour ce personnage.");
-    const p = parametresActe(actor, form);
-    const etat = form.mode === "transe" ? M.creerTranse(p) : M.creerRituel(p);
-    await actor.update({ [`flags.${SYS}.acte`]: M.serialiserActe(etat) }, { pn2Magie: true });
+    let options = {};
+    let donnees = form;
+    if (depuisDemande) {
+      const d = demandeCourante(actor);
+      if (!d) throw new R.MagieError("aucune-demande", "Aucune demande en attente.");
+      // Les choix du joueur priment pour ce qui lui revient ; le MJ fixe le reste (dont la Beauté des rites).
+      donnees = { ...form, ...Object.fromEntries(CHAMPS_JOUEUR.filter(k => k !== "beaute").map(k => [k, d[k]])) };
+      options = { pilote: game.users.get(d.auteur) ? d.auteur : game.user.id, validation: { par: game.user.id, maintenant: maintenant() } };
+    } else if (game.user.isGM) {
+      options = { validation: { par: game.user.id, maintenant: maintenant() } };
+    }
+    const p = parametresActe(actor, donnees, options);
+    const etat = donnees.mode === "transe" ? M.creerTranse(p) : M.creerRituel(p);
+    await actor.update({ [`flags.${SYS}.acte`]: M.serialiserActe(etat), [`flags.${SYS}.-=demande`]: null }, { pn2Magie: true });
     await messageDebut(actor, etat);
     return etat;
   });
+}
+
+/** Le MJ accorde (ou non) l'intervention après la résolution d'un Rituel. */
+export async function validerNarration(actor, { accordee = true, note = "" } = {}, ctx = {}) {
+  if (!game.user.isGM) throw new R.MagieError("permission", "Seul le MJ valide la manifestation d'une intervention divine.");
+  const res = await operer(actor, ctx, async etat => M.validerNarration(etat, { accordee, note, par: game.user.id }, { ...ctx, maintenant: maintenant() }),
+    { pilote: false });
+  if (!res.doublon) {
+    const e = res.etat;
+    const vue = M.vueJoueur(e, { seuilVisible: game.settings.get(SYS, "magieSeuilVisible") });
+    const r = vue.rituel.resolution;
+    await ChatMessage.create({
+      speaker: ChatMessage.getSpeaker({ actor }),
+      content: await render("chat/magie-evenement.hbs", {
+        titre: accordee ? `Intervention accordée : ${e.voie.nom}` : `Intervention refusée : ${e.voie.nom}`,
+        classe: accordee ? "reussite" : "echec",
+        lignes: [e.rituel.souhait ? `Souhait : ${e.rituel.souhait}` : null,
+          r ? `${r.succes} Succès sacré(s)${vue.rituel.puissance != null ? ` pour une Puissance de ${vue.rituel.puissance}` : ""}` : null,
+          note || null].filter(Boolean)
+      }),
+      whisper: destinataires(actor)
+    });
+  }
+  return res;
+}
+
+/* -------------------------------------------- */
+/*  Religion, Voies et Pouvoirs du personnage   */
+/* -------------------------------------------- */
+
+/**
+ * Ajoute une religion, une Voie ou un Pouvoir (monde ou compendium) au personnage.
+ * La copie garde la référence de sa source ; un Pouvoir entraîne sa Voie si elle manque.
+ * @returns {Promise<Item[]>} objets créés
+ */
+export async function ajouterAuPersonnage(actor, uuid) {
+  exigerProprietaire(actor);
+  const doc = await fromUuid(uuid);
+  if (!doc || !["religion", "voie", "pouvoir"].includes(doc.type)) throw new R.MagieError("reference", "Document introuvable ou d'un type inattendu.");
+  const deja = actor.items.find(i => i.type === doc.type && (uuidSource(i) === doc.uuid || i.uuid === doc.uuid));
+  if (deja) throw new R.MagieError("doublon", `${actor.name} possède déjà « ${doc.name} ».`);
+  if (doc.type === "religion") {
+    const ancienne = actor.items.find(i => i.type === "religion");
+    if (ancienne) throw new R.MagieError("religion", `${actor.name} pratique déjà « ${ancienne.name} » : retirez-la d'abord.`);
+  }
+  const aCreer = [];
+  if (doc.type === "pouvoir" && doc.system.voieUuid) {
+    const r = Ref.voieDuPouvoir(doc.system, candidatsVoies(actor));
+    if (!r.voie) {
+      const voie = await fromUuid(doc.system.voieUuid);
+      if (voie?.type === "voie") aCreer.push(copieSource(voie));
+    }
+  }
+  aCreer.push(copieSource(doc));
+  return actor.createEmbeddedDocuments("Item", aCreer);
+}
+
+/** Données d'une copie possédée qui garde l'UUID de sa source. */
+function copieSource(doc) {
+  const data = doc.toObject();
+  delete data._id;
+  foundry.utils.setProperty(data, "_stats.compendiumSource", doc.uuid);
+  return data;
+}
+
+/**
+ * Après l'ajout d'une religion, la Colère déjà notée sous l'ancien nom de religion passe
+ * dans le groupe de la religion (sans écraser une Colère existante).
+ */
+export async function reporterColere(actor) {
+  const m = actor.system.magie;
+  const ancien = R.cleVoie(m.religion || actor.system.infos.religion || "");
+  const nouveau = m.groupeColere;
+  const c = m.colere ?? {};
+  if (!ancien || !nouveau || ancien === nouveau || !c[ancien] || c[nouveau]) return;
+  await actor.update({ [`system.magie.colere.${nouveau}`]: { ...c[ancien] }, [`system.magie.colere.-=${ancien}`]: null });
+}
+
+/** Retire une religion, une Voie ou un Pouvoir du personnage (le document source n'est pas touché). */
+export async function retirerDuPersonnage(actor, itemId) {
+  exigerProprietaire(actor);
+  const item = actor.items.get(itemId);
+  if (!item || !["religion", "voie", "pouvoir"].includes(item.type)) return null;
+  const acte = acteCourant(actor);
+  if (M.estEnCours(acte)) {
+    const utilise = acte.voie?.id === item.id || acte.transe?.chemin.some(c => c.id === item.id) || acte.rituel?.pouvoir?.id === item.id;
+    if (utilise) throw new R.MagieError("acte-en-cours", `« ${item.name} » sert à l'acte sacré en cours.`);
+  }
+  return item.delete();
 }
 
 /** Sollicitation : lance 1d10 et l'applique à l'acte (Rituel ou action de Transe en cours). */
@@ -283,10 +496,14 @@ export async function commencerAction(actor, type, cible, ctx = {}) {
 export async function activerPouvoir(actor, pouvoirId, ctx = {}) {
   const res = await operer(actor, ctx, async etat => M.activerPouvoir(etat, pouvoirId, { ...ctx, maintenant: maintenant() }));
   if (!res.doublon) {
+    const p = res.activation.pouvoir;
     await ChatMessage.create({
       speaker: ChatMessage.getSpeaker({ actor }),
-      content: `<div class="pn2-card pn2-magie"><h3>Activation : ${foundry.utils.escapeHTML(res.activation.pouvoir.nom)}</h3>
-        <p class="hint">Pouvoir de Puissance ${res.activation.pouvoir.puissance} activé depuis le Chemin d'illumination. Sa manifestation est décrite par le MJ.</p></div>`,
+      content: await render("chat/magie-evenement.hbs", {
+        titre: `Activation : ${p.nom}`, classe: "reussite",
+        lignes: [`Pouvoir de Puissance ${p.puissance} activé depuis le Chemin d'illumination, avec ses paramètres de base.`],
+        note: "La manifestation est décrite par le MJ. Un renforcement reste possible."
+      }),
       whisper: destinataires(actor)
     });
   }
@@ -297,7 +514,7 @@ export async function activerPouvoir(actor, pouvoirId, ctx = {}) {
 export async function repartir(actor, repartition, { activation = null, ...ctx } = {}) {
   return operer(actor, ctx, async etat => (etat.type === "transe"
     ? M.repartirRenforcement(etat, activation, repartition, ctx)
-    : M.repartirAmeliorations(etat, repartition, ctx)));
+    : M.repartirAmeliorations(etat, repartition, ctx)), { pilote: !game.user.isGM });
 }
 
 /** Interruption imposée par une autre règle (MJ ou pilote). */
@@ -322,6 +539,60 @@ export async function reprendre(actor, ctx = {}) {
     }
     return M.changerPilote(etat, game.user.id, ctx);
   }, { pilote: false });
+}
+
+/* -------------------------------------------- */
+/*  Import des données officielles              */
+/* -------------------------------------------- */
+
+/**
+ * Importe un lot de religions, Voies et Pouvoirs (format : voir references.preparerImport).
+ * Les liens par clé deviennent des références UUID. Réservé au MJ.
+ * @param {object} donnees
+ * @param {object} [o]
+ * @param {string|null} [o.packId]  compendium du monde déverrouillé (sinon : objets du monde)
+ * @returns {Promise<{religions:number, voies:number, pouvoirs:number}>}
+ */
+export async function importerMagie(donnees, { packId = null } = {}) {
+  if (!game.user.isGM) throw new R.MagieError("permission", "Seul le MJ peut importer des données.");
+  const plan = Ref.preparerImport(donnees, cfg().types);
+  if (!plan.valide) throw new R.MagieError("import", `Import refusé :\n${plan.erreurs.join("\n")}`);
+  const pack = packId ? game.packs.get(packId) : null;
+  if (packId && (!pack || pack.locked)) throw new R.MagieError("import", "Compendium introuvable ou verrouillé.");
+  const opts = pack ? { pack: pack.collection } : {};
+  const DocItem = getDocumentClass("Item");
+
+  const religions = await DocItem.createDocuments(plan.religions.map(r => ({
+    name: r.nom, type: "religion",
+    system: { cle: r.cle, type: r.type, groupeColere: r.groupeColere, description: r.description, correspondances: r.correspondances.join(" ; "), source: r.source }
+  })), opts);
+  const uuidReligion = new Map(religions.map((d, i) => [plan.religions[i].cle, d]));
+
+  const voies = await DocItem.createDocuments(plan.voies.map(v => ({
+    name: v.nom, type: "voie",
+    system: {
+      cle: v.cle, religion: uuidReligion.get(v.religion)?.name ?? "", religionUuid: uuidReligion.get(v.religion)?.uuid ?? "",
+      domaine: v.domaine, description: v.description, sansTranse: v.sansTranse, source: v.source
+    }
+  })), opts);
+  const uuidVoie = new Map(voies.map((d, i) => [plan.voies[i].cle, d.uuid]));
+
+  // Chaque religion référence ses Voies
+  const majReligions = plan.religions.map(r => ({
+    _id: uuidReligion.get(r.cle).id,
+    "system.voies": plan.voies.filter(v => v.religion === r.cle).map(v => uuidVoie.get(v.cle))
+  })).filter(u => u["system.voies"].length);
+  if (majReligions.length) await DocItem.updateDocuments(majReligions, opts);
+
+  const pouvoirs = await DocItem.createDocuments(plan.pouvoirs.map(p => ({
+    name: p.nom, type: "pouvoir",
+    system: {
+      voie: p.voie, voieUuid: uuidVoie.get(p.voie) ?? "", puissance: p.puissance, nomNatif: p.nomNatif,
+      portee: p.portee, cible: p.cible, impact: p.impact, duree: p.duree, conditions: p.conditions,
+      compulsion: p.compulsion, visions: p.visions, description: p.description, references: p.references, source: p.source
+    }
+  })), opts);
+  return { religions: religions.length, voies: voies.length, pouvoirs: pouvoirs.length };
 }
 
 /* -------------------------------------------- */
@@ -411,11 +682,30 @@ const LIBELLES_ACTION = {
   rituel: "Rituel", entree: "Entrée en Transe", ascension: "Ascension", detachement: "Détachement", renforcement: "Renforcement"
 };
 
+const idsMJ = () => game.users.filter(u => u.isGM).map(u => u.id);
+
+/**
+ * Publie une carte en deux versions si nécessaire : la version joueur (vue sans secrets)
+ * aux propriétaires et au MJ, et la version complète au MJ seul quand elle diffère.
+ * Le HTML envoyé aux joueurs ne contient jamais la Puissance secrète ni, sauf réglage, le Seuil.
+ */
+async function publierCarte(actor, template, donnees, etat) {
+  const visible = game.settings.get(SYS, "magieSeuilVisible");
+  const vue = M.vueJoueur(etat, { seuilVisible: visible });
+  const secret = !visible || !!etat.rituel?.puissanceSecrete;
+  const speaker = ChatMessage.getSpeaker({ actor });
+  const joueurs = destinataires(actor).filter(id => !game.users.get(id)?.isGM);
+  // Version joueur : aux propriétaires (et au MJ si rien n'est secret)
+  const contenuJoueur = await render(template, { ...donnees, etat: vue, details: visible, mj: false });
+  if (!secret) return ChatMessage.create({ speaker, content: contenuJoueur, whisper: destinataires(actor) });
+  if (joueurs.length) await ChatMessage.create({ speaker, content: contenuJoueur, whisper: joueurs });
+  const contenuMJ = await render(template, { ...donnees, etat, details: true, mj: true });
+  return ChatMessage.create({ speaker, content: contenuMJ, whisper: idsMJ() });
+}
+
 async function messageDebut(actor, etat) {
-  const gm = game.users.filter(u => u.isGM).map(u => u.id);
-  const titre = etat.type === "transe" ? `Transe${etat.transe.instantanee ? " instantanée" : ""}` : "Rituel";
-  const content = await render("chat/magie-acte.hbs", { titre: `${titre} : ${etat.voie.nom}`, etat, debut: true, details: true });
-  await ChatMessage.create({ speaker: ChatMessage.getSpeaker({ actor }), content, whisper: gm });
+  const titre = etat.type === "transe" ? `Début de Transe${etat.transe.instantanee ? " instantanée" : ""}` : "Début du Rituel";
+  await publierCarte(actor, "chat/magie-acte.hbs", { titre: `${titre} : ${etat.voie.nom}`, debut: true }, etat);
 }
 
 async function messageSollicitation(actor, res, roll) {
@@ -423,23 +713,21 @@ async function messageSollicitation(actor, res, roll) {
   const e = res.etat;
   const content = await render("chat/magie-sollicitation.hbs", {
     lancer: l, action: LIBELLES_ACTION[l.action] ?? l.action, voie: e.voie.nom,
-    succes: e.succes, colereGagnee: e.colereGagnee, effet: res.effet, rejet: res.rejet
+    succes: e.succes, colereGagnee: e.colereGagnee, effet: res.effet, rejet: res.rejet,
+    sortie: res.effet?.type === "detachement" && res.effet.niveau === 0
   });
   const data = { speaker: ChatMessage.getSpeaker({ actor }), content, rolls: [roll] };
   appliquerVisibilite(data);
   await ChatMessage.create(data);
 }
 
-/** Bilan à la fin de l'acte : version joueur (MJ + propriétaires) et détails chiffrés pour le MJ. */
+/** Bilan à la fin de l'acte (fin de Rituel, sortie de Transe, Rejet, interruption). */
 async function messageFinSiBesoin(actor, res) {
   if (!res.avant || !M.estEnCours(res.avant) || M.estEnCours(res.etat)) return;
   const etat = res.etat;
-  const titre = `${etat.type === "transe" ? "Fin de la Transe" : "Fin du Rituel"} : ${etat.voie.nom}`;
-  const visible = game.settings.get(SYS, "magieSeuilVisible");
-  const joueur = await render("chat/magie-acte.hbs", { titre, etat, fin: true, details: visible });
-  await ChatMessage.create({ speaker: ChatMessage.getSpeaker({ actor }), content: joueur, whisper: destinataires(actor) });
-  if (!visible) {
-    const mj = await render("chat/magie-acte.hbs", { titre: `${titre} (MJ)`, etat, fin: true, details: true });
-    await ChatMessage.create({ speaker: ChatMessage.getSpeaker({ actor }), content: mj, whisper: game.users.filter(u => u.isGM).map(u => u.id) });
-  }
+  let titre;
+  if (etat.statut === "rejet") titre = `Rejet : ${etat.voie.nom}`;
+  else if (etat.type === "transe") titre = `${etat.fin?.mode === "sortie" ? "Sortie de Transe" : "Fin de la Transe"} : ${etat.voie.nom}`;
+  else titre = `Fin du Rituel : ${etat.voie.nom}`;
+  await publierCarte(actor, "chat/magie-acte.hbs", { titre, fin: true }, etat);
 }

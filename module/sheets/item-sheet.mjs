@@ -1,6 +1,7 @@
 import { PN2 } from "../config.mjs";
 import { comboHTML } from "../documents/item.mjs";
 import { EFFETS_AVANTAGE } from "../data/items.mjs";
+import * as Magie from "../magie/service.mjs";
 
 const { HandlebarsApplicationMixin } = foundry.applications.api;
 
@@ -12,7 +13,10 @@ export class PN2ItemSheet extends HandlebarsApplicationMixin(foundry.application
     window: { resizable: true },
     form: { submitOnChange: true },
     actions: {
-      afficher: PN2ItemSheet.#onAfficher
+      afficher: PN2ItemSheet.#onAfficher,
+      ouvrirReference: PN2ItemSheet.#onOuvrirReference,
+      retirerReference: PN2ItemSheet.#onRetirerReference,
+      effacerReference: PN2ItemSheet.#onEffacerReference
     }
   };
 
@@ -28,7 +32,7 @@ export class PN2ItemSheet extends HandlebarsApplicationMixin(foundry.application
     context.config = PN2;
     context.editable = this.isEditable;
     context.type = item.type;
-    context.isType = Object.fromEntries(["arme", "armure", "equipement", "avantage", "manoeuvre", "marchandise", "historique", "voie", "pouvoir"].map(t => [t, item.type === t]));
+    context.isType = Object.fromEntries(["arme", "armure", "equipement", "avantage", "manoeuvre", "marchandise", "historique", "religion", "voie", "pouvoir"].map(t => [t, item.type === t]));
     context.caracOptions = Object.fromEntries(Object.entries(PN2.caracs).map(([k, d]) => [k, d.label]));
     const comps = { mainsNues: "Combat à mains nues", mousquet: "Mousquet", pistolet: "Pistolet", grenade: "Grenade", armesBlanches: "Armes blanches (spécialité)", armesJet: "Armes de jet/trait (spécialité)" };
     context.competences = comps;
@@ -60,13 +64,96 @@ export class PN2ItemSheet extends HandlebarsApplicationMixin(foundry.application
       context.puissance = item.system.puissance;
     }
     context.typesReligion = Object.fromEntries(Object.entries(PN2.magie.types).map(([k, d]) => [k, d.label]));
-    if (item.type === "voie") context.cleVoie = item.system.cleEffective;
-    if (item.type === "pouvoir") {
-      const voies = item.actor ? item.actor.items.filter(i => i.type === "voie") : game.items.filter(i => i.type === "voie");
-      context.voiesConnues = voies.map(v => ({ cle: v.system.cleEffective, nom: v.name }));
-    }
+    if (["religion", "voie", "pouvoir"].includes(item.type)) await this.#contexteMagie(item, context);
     context.descriptionHTML = await foundry.applications.ux.TextEditor.implementation.enrichHTML(item.system.description ?? "", { async: true, relativeTo: item });
     return context;
+  }
+
+  /* -------------------------------------------- */
+  /*  Magie : références entre documents          */
+  /* -------------------------------------------- */
+
+  /** Résout une référence UUID sans la charger (index de compendium, monde, objet possédé). */
+  static resoudre(uuid) {
+    if (!uuid) return null;
+    const doc = fromUuidSync(uuid, { strict: false });
+    return doc ? { uuid, nom: doc.name ?? "?", cassee: false } : { uuid, nom: "Référence introuvable", cassee: true };
+  }
+
+  async #contexteMagie(item, context) {
+    const s = item.system;
+    context.parametresVisibles = Magie.parametresVisibles();
+    if (item.type === "religion") {
+      context.voiesReferencees = (s.voies ?? []).map(u => PN2ItemSheet.resoudre(u));
+      return;
+    }
+    if (item.type === "voie") {
+      context.cleVoie = s.cleEffective;
+      context.religionRef = PN2ItemSheet.resoudre(s.religionUuid);
+      // Pouvoirs rattachés : sur le personnage, dans le même compendium, ou dans le monde
+      if (item.actor) {
+        context.pouvoirsVoie = Magie.pouvoirsVoie(item.actor, item).map(p => ({ uuid: p.uuid, nom: p.name, puissance: p.system.puissance }));
+      } else if (item.pack) {
+        const index = await game.packs.get(item.pack).getIndex({ fields: ["system.voieUuid", "system.puissance"] });
+        context.pouvoirsVoie = index.filter(e => e.type === "pouvoir" && e.system?.voieUuid === item.uuid)
+          .map(e => ({ uuid: e.uuid, nom: e.name, puissance: e.system.puissance }));
+      } else {
+        context.pouvoirsVoie = game.items.filter(i => i.type === "pouvoir" && i.system.voieUuid === item.uuid)
+          .map(p => ({ uuid: p.uuid, nom: p.name, puissance: p.system.puissance }));
+      }
+      context.pouvoirsVoie.sort((a, b) => a.puissance - b.puissance || a.nom.localeCompare(b.nom));
+      return;
+    }
+    // Pouvoir
+    context.voieRef = PN2ItemSheet.resoudre(s.voieUuid);
+    if (item.actor) {
+      const r = Magie.voiePossedee(item.actor, item);
+      context.voiePossedee = r.voie ? { nom: r.voie.name, mode: r.mode } : null;
+    }
+  }
+
+  _onRender(context, options) {
+    super._onRender(context, options);
+    if (!this.isEditable || !["religion", "voie", "pouvoir"].includes(this.document.type)) return;
+    new foundry.applications.ux.DragDrop.implementation({
+      dropSelector: ".pn2-drop",
+      callbacks: { drop: this.#onDropReference.bind(this) }
+    }).bind(this.element);
+  }
+
+  /** Dépôt d'une Voie (sur une Religion ou un Pouvoir) ou d'une Religion (sur une Voie). */
+  async #onDropReference(event) {
+    const data = foundry.applications.ux.TextEditor.implementation.getDragEventData(event);
+    if (data?.type !== "Item" || !data.uuid) return;
+    const doc = await fromUuid(data.uuid);
+    const item = this.document;
+    if (!doc) return;
+    if (item.type === "religion" && doc.type === "voie") {
+      if (item.system.voies.includes(doc.uuid)) return;
+      return item.update({ "system.voies": [...item.system.voies, doc.uuid] });
+    }
+    if (item.type === "voie" && doc.type === "religion") {
+      return item.update({ "system.religionUuid": doc.uuid, "system.religion": doc.name });
+    }
+    if (item.type === "pouvoir" && doc.type === "voie") {
+      return item.update({ "system.voieUuid": doc.uuid, "system.voie": doc.system.cleEffective });
+    }
+    ui.notifications.warn(`Déposez ${item.type === "religion" ? "une Voie" : item.type === "voie" ? "une Religion" : "une Voie"} sur cette fiche.`);
+  }
+
+  static async #onOuvrirReference(event, target) {
+    const doc = await fromUuid(target.dataset.uuid);
+    if (doc) doc.sheet.render(true);
+    else ui.notifications.warn("Ce document est introuvable : il a peut-être été supprimé.");
+  }
+
+  static async #onRetirerReference(event, target) {
+    const voies = this.document.system.voies.filter(u => u !== target.dataset.uuid);
+    await this.document.update({ "system.voies": voies });
+  }
+
+  static async #onEffacerReference(event, target) {
+    await this.document.update({ [`system.${target.dataset.champ}`]: "" });
   }
 
   /** Les variantes d'un avantage se saisissent en texte : « Libellé : PC | modificateurs », une par ligne. */

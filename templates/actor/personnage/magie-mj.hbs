@@ -1,0 +1,19 @@
+{{!-- Champs réservés au MJ pour préparer ou autoriser un acte (contexte : magie). --}}
+<fieldset class="pn2-mj"><legend><i class="fa-solid fa-user-shield"></i> MJ</legend>
+  <div class="grid-2">
+    {{#if (eq prep.mode "rituel")}}
+      <div class="ligne"><label>Puissance nécessaire (1-10)</label><input type="number" min="1" max="10" data-prep="puissance" value="{{prep.puissance}}"></div>
+      <div class="ligne"><label>Puissance secrète</label><input type="checkbox" data-prep="puissanceSecrete" {{checked prep.puissanceSecrete}}></div>
+    {{else}}
+      <div class="ligne"><label>Niveau de transe maximal</label><input type="number" min="1" max="10" data-prep="niveauLimite" value="{{prep.niveauLimite}}" placeholder="10"></div>
+    {{/if}}
+    <div class="ligne"><label>Beauté des rites</label><input type="number" data-prep="beaute" value="{{prep.beaute}}" {{#if prep.instantanee}}disabled{{/if}}></div>
+    <div class="ligne"><label>Actes de foi</label><input type="number" data-prep="actesFoi" value="{{prep.actesFoi}}" placeholder="{{defauts.actesFoi}}"></div>
+    <div class="ligne"><label>Affinité</label><input type="number" data-prep="affinite" value="{{prep.affinite}}" placeholder="{{defauts.affinite}}"></div>
+    <div class="ligne"><label>Péchés</label><input type="number" data-prep="peches" value="{{prep.peches}}" placeholder="{{defauts.peches}}"></div>
+  </div>
+  {{#if apercu.seuil}}
+  <p class="pn2-magie-apercu">Auspices <strong>{{pn2Signed apercu.auspices.total}}</strong> · Seuil <strong>{{apercu.seuil.seuil}}</strong>
+    <span class="hint">({{apercu.seuil.statLabel}} {{apercu.seuil.valeurStat}} + Faveurs {{apercu.seuil.faveurs}} + Auspices {{apercu.seuil.auspices}})</span> · Colère {{apercu.colere}}</p>
+  {{/if}}
+</fieldset>

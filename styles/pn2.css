@@ -358,3 +358,40 @@
 .pn2 .pn2-magie .resultat { display: flex; justify-content: space-between; padding: 2px 6px; border-radius: 3px; margin: 4px 0; }
 .pn2 .pn2-magie .resultat.reussite, .pn2-card.pn2-magie .resultat.reussite { background: rgba(47, 107, 58, 0.15); }
 .pn2 .pn2-magie .resultat.echec, .pn2-card.pn2-magie .resultat.echec { background: rgba(139, 30, 30, 0.15); }
+
+/* Magie — phase 2 : onglet, fenêtres de Rituel et de Transe, bibliothèque */
+.pn2 .pn2-magie.occupe .pn2-btn, .pn2 .pn2-fenetre-acte .pn2-btn.disabled { opacity: 0.45; pointer-events: none; }
+.pn2 .pn2-magie .pn2-auspices { display: flex; flex-wrap: wrap; align-items: center; gap: 6px; }
+.pn2 .pn2-magie .pn2-auspices label { display: flex; flex-direction: column; align-items: center; font-size: 11px; color: var(--pn2-encre-claire); }
+.pn2 .pn2-magie .pn2-auspices strong { font-size: 14px; color: var(--pn2-encre); }
+.pn2 .pn2-magie fieldset.pn2-mj { border: 1px dashed var(--pn2-rouge); border-radius: 4px; margin: 6px 0; padding: 4px 8px; }
+.pn2 .pn2-magie fieldset.pn2-mj legend { color: var(--pn2-rouge); font-size: 11px; }
+.pn2 .pn2-magie .pn2-demande, .pn2 .pn2-magie .pn2-preparation { border: 1px solid var(--pn2-bord); border-radius: 4px; padding: 6px; background: rgba(255, 255, 255, 0.35); }
+.pn2 .pn2-magie .pn2-acte-resume { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 6px; padding: 4px 6px; border-left: 4px solid var(--pn2-or); background: rgba(184, 137, 43, 0.12); margin: 4px 0; }
+.pn2 .pn2-magie .pn2-acte-resume.termine { border-left-color: var(--pn2-bord); background: transparent; }
+.pn2 .pn2-magie tr.choisie td:first-child { font-weight: bold; }
+.pn2 .pn2-magie td.actions { white-space: nowrap; text-align: right; }
+.pn2 .pn2-magie table.pouvoirs details { font-size: 11px; }
+.pn2 .pn2-magie .etat-transe { font-size: 10px; padding: 0 4px; border-radius: 3px; border: 1px solid var(--pn2-bord); }
+.pn2 .pn2-magie .etat-transe.chemin { background: var(--pn2-or); color: #fff; border-color: var(--pn2-or); }
+.pn2 .pn2-magie .etat-transe.compulsion { color: var(--pn2-rouge); }
+.pn2 .pn2-magie-recap { display: grid; gap: 2px; margin: 4px 0; }
+.pn2 .pn2-magie-recap span { display: inline-block; min-width: 150px; color: var(--pn2-encre-claire); font-size: 11px; }
+.pn2 .pn2-magie-compteurs .badge strong.succes { color: var(--pn2-vert); }
+.pn2 .pn2-magie-compteurs .badge strong.colere { color: var(--pn2-rouge); }
+.pn2 .pn2-magie-compteurs .badge em { font-size: 10px; color: var(--pn2-encre-claire); font-style: normal; }
+.pn2 .pn2-magie .boutons.grands .pn2-btn { font-size: 14px; padding: 4px 12px; }
+.pn2 .pn2-chemin { margin: 2px 0 6px; padding-left: 20px; }
+.pn2 .pn2-chemin li { margin: 2px 0; }
+.pn2 .pn2-journal { margin: 0; padding-left: 16px; font-size: 12px; }
+.pn2 .pn2-rejet { border: 2px solid var(--pn2-rouge); border-radius: 4px; padding: 4px 8px; background: rgba(139, 30, 30, 0.08); }
+.pn2 .pn2-actions-transe .ligne { display: flex; gap: 6px; align-items: center; margin: 3px 0; }
+.pn2 .pn2-actions-transe select { min-width: 220px; }
+.pn2 .pn2-references { list-style: none; margin: 2px 0; padding: 4px; border: 1px dashed var(--pn2-bord); border-radius: 4px; min-height: 2em; }
+.pn2 .pn2-biblio-entete, .pn2 .pn2-biblio-filtres { display: flex; flex-wrap: wrap; gap: 6px; align-items: center; margin: 4px 0; }
+.pn2 .pn2-biblio-filtres input[type="search"] { flex: 1; min-width: 160px; }
+.pn2 .pn2-biblio tr[draggable] { cursor: grab; }
+.pn2 .pn2-biblio .resultats { max-height: calc(100% - 110px); overflow-y: auto; }
+.pn2 .pn2-magie .tag.etat-rejet { background: var(--pn2-rouge); }
+.pn2 .pn2-magie .tag.etat-en-cours { background: var(--pn2-vert); }
+button.pn2-bouton-bibliotheque { flex: 1 1 100%; margin-top: 4px; }

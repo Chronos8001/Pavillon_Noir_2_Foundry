@@ -151,30 +151,72 @@
   </fieldset>
   {{/if}}
 
+  {{#if isType.religion}}
+  <div class="grid-2">
+    <div class="ligne"><label>Type de religion</label><select name="system.type"><option value="">— À renseigner —</option>{{selectOptions typesReligion selected=system.type}}</select></div>
+    <div class="ligne"><label>Groupe de Colère <span class="hint">(vide : la religion)</span></label><input type="text" name="system.groupeColere" value="{{system.groupeColere}}"></div>
+  </div>
+  <div class="ligne"><label>Religions de l'historique couvertes</label><input type="text" name="system.correspondances" value="{{system.correspondances}}" placeholder="ex. Catholique ; Protestant (huguenot, réformé)"></div>
+  <h3>Voies d'illumination</h3>
+  <ul class="pn2-references pn2-drop">
+    {{#each voiesReferencees}}
+      <li class="{{#if cassee}}alerte{{/if}}"><a data-action="ouvrirReference" data-uuid="{{uuid}}">{{nom}}</a>
+        {{#if @root.editable}}<a class="pn2-mini-btn" data-action="retirerReference" data-uuid="{{uuid}}" title="Retirer la référence"><i class="fa-solid fa-xmark"></i></a>{{/if}}</li>
+    {{else}}<li class="hint">Aucune Voie.</li>{{/each}}
+    {{#if editable}}<li class="hint"><i class="fa-solid fa-hand-pointer"></i> Glissez une Voie ici pour la rattacher.</li>{{/if}}
+  </ul>
+  {{/if}}
+
   {{#if isType.voie}}
   <div class="grid-2">
-    <div class="ligne"><label>Religion</label><input type="text" name="system.religion" value="{{system.religion}}"></div>
+    <div class="ligne pn2-drop"><label>Religion</label>
+      {{#if religionRef}}<span class="{{#if religionRef.cassee}}alerte{{/if}}"><a data-action="ouvrirReference" data-uuid="{{religionRef.uuid}}">{{religionRef.nom}}</a>
+        {{#if editable}}<a class="pn2-mini-btn" data-action="effacerReference" data-champ="religionUuid" title="Effacer la référence"><i class="fa-solid fa-xmark"></i></a>{{/if}}</span>
+      {{else}}<input type="text" name="system.religion" value="{{system.religion}}" placeholder="Glissez une Religion ici">{{/if}}</div>
+    <div class="ligne"><label>Domaine spirituel</label><input type="text" name="system.domaine" value="{{system.domaine}}"></div>
     <div class="ligne"><label>Clé de la Voie <span class="hint">(vide : {{cleVoie}})</span></label><input type="text" name="system.cle" value="{{system.cle}}" placeholder="{{cleVoie}}"></div>
+    <div class="ligne"><label>Pas de Transe dans cette Voie</label><input type="checkbox" name="system.sansTranse" {{checked system.sansTranse}}></div>
+    {{#if item.actor}}
     <div class="ligne"><label>Foi <span class="hint">(communion)</span></label><input type="number" name="system.foi" value="{{system.foi}}" min="0"></div>
     <div class="ligne"><label>Connaissance des Mystères <span class="hint">(possession)</span></label><input type="number" name="system.mysteres" value="{{system.mysteres}}" min="0"></div>
-    <div class="ligne"><label>Affinité</label><input type="number" name="system.affinite" value="{{system.affinite}}"></div>
+    <div class="ligne"><label>Affinité du personnage</label><input type="number" name="system.affinite" value="{{system.affinite}}"></div>
+    {{/if}}
     <div class="ligne"><label>Groupe de Colère <span class="hint">(vide : religion du personnage)</span></label><input type="text" name="system.groupeColere" value="{{system.groupeColere}}"></div>
-    <div class="ligne"><label>Pas de Transe dans cette Voie</label><input type="checkbox" name="system.sansTranse" {{checked system.sansTranse}}></div>
   </div>
   <div class="ligne"><label>Rites</label><input type="text" name="system.rites" value="{{system.rites}}"></div>
-  <p class="hint">La Foi / Connaissance des Mystères est propre à chaque Voie (Entre ciel et terre, p. 90). Toutes les Voies d'une même religion partagent la même Colère divine, sauf groupe de Colère différent.</p>
+  {{#if item.actor}}<p class="hint">Foi / Connaissance des Mystères et Affinité sont propres au personnage (Entre ciel et terre, p. 90).</p>{{/if}}
+  <h3>Pouvoirs de la Voie</h3>
+  <ul class="pn2-references">
+    {{#each pouvoirsVoie}}<li><span class="tag">P{{puissance}}</span> <a data-action="ouvrirReference" data-uuid="{{uuid}}">{{nom}}</a></li>
+    {{else}}<li class="hint">Aucun Pouvoir rattaché.</li>{{/each}}
+  </ul>
   {{/if}}
 
   {{#if isType.pouvoir}}
   <div class="grid-2">
-    <div class="ligne"><label>Voie (clé ou nom)</label><input type="text" name="system.voie" value="{{system.voie}}" list="pn2-voies-{{item.id}}">
-      <datalist id="pn2-voies-{{item.id}}">{{#each voiesConnues}}<option value="{{this.cle}}">{{this.nom}}</option>{{/each}}</datalist></div>
+    <div class="ligne pn2-drop"><label>Voie</label>
+      {{#if voieRef}}<span class="{{#if voieRef.cassee}}alerte{{/if}}"><a data-action="ouvrirReference" data-uuid="{{voieRef.uuid}}">{{voieRef.nom}}</a>
+        {{#if editable}}<a class="pn2-mini-btn" data-action="effacerReference" data-champ="voieUuid" title="Effacer la référence"><i class="fa-solid fa-xmark"></i></a>{{/if}}</span>
+      {{else}}<input type="text" name="system.voie" value="{{system.voie}}" placeholder="Glissez une Voie ici (ou sa clé)">{{/if}}</div>
     <div class="ligne"><label>Puissance</label><input type="number" name="system.puissance" value="{{system.puissance}}" min="1" max="10"></div>
     <div class="ligne"><label>Nom en langue native</label><input type="text" name="system.nomNatif" value="{{system.nomNatif}}"></div>
     <div class="ligne"><label>Accessible <span class="hint">(compulsion assouvie)</span></label><input type="checkbox" name="system.accessible" {{checked system.accessible}}></div>
   </div>
+  {{#if item.actor}}<p class="hint">Voie sur le personnage : {{#if voiePossedee}}{{voiePossedee.nom}}{{#if (eq voiePossedee.mode "cle")}} (par sa clé){{/if}}{{else}}<span class="alerte">introuvable — ajoutez la Voie au personnage</span>{{/if}}</p>{{/if}}
   <div class="ligne"><label>Compulsion</label><input type="text" name="system.compulsion" value="{{system.compulsion}}"></div>
   <div class="ligne"><label>Visions</label><input type="text" name="system.visions" value="{{system.visions}}"></div>
+  <div class="ligne"><label>Conditions et particularités</label><input type="text" name="system.conditions" value="{{system.conditions}}"></div>
+  {{#if parametresVisibles}}
+  <fieldset><legend>Paramètres de base <span class="hint">(réservés au MJ selon le supplément)</span></legend>
+    <div class="grid-2">
+      <div class="ligne"><label>Portée</label><input type="text" name="system.portee" value="{{system.portee}}"></div>
+      <div class="ligne"><label>Cible</label><input type="text" name="system.cible" value="{{system.cible}}"></div>
+      <div class="ligne"><label>Impact</label><input type="text" name="system.impact" value="{{system.impact}}"></div>
+      <div class="ligne"><label>Durée</label><input type="text" name="system.duree" value="{{system.duree}}"></div>
+    </div>
+  </fieldset>
+  <div class="ligne"><label>Références de règles</label><input type="text" name="system.references" value="{{system.references}}"></div>
+  {{/if}}
   {{/if}}
 
   <h3>Description</h3>

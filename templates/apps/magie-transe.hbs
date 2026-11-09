@@ -1,0 +1,91 @@
+<div class="pn2-magie pn2-fenetre-acte">
+{{#if aucunActe}}<p class="hint">Aucun acte sacré.</p>{{else}}
+  <h2><i class="fa-solid fa-eye"></i> {{etat.voie.nom}}{{#if transe.instantanee}} — Transe instantanée{{/if}} <span class="tag etat-{{etat.statut}}">{{statut}}</span></h2>
+  {{#unless estPilote}}<p class="hint">Conduite par {{piloteNom}}.{{#if enCours}} <a class="pn2-btn petit {{#if occupe}}disabled{{/if}}" data-action="magie" data-op="reprendre" data-requete="{{requete}}" data-seq="{{seq}}">Prendre la main</a>{{/if}}</p>{{/unless}}
+
+  <div class="pn2-magie-compteurs">
+    <div class="badge"><span>Niveau de transe</span><strong>{{transe.niveau}}</strong><em>max. atteint {{transe.niveauMax}} / limite {{transe.niveauLimite}}</em></div>
+    <div class="badge colere"><span>Colère actuelle</span><strong>{{resume.colereTotale}}</strong><em>dont {{resume.colereGagnee}} gagnée</em></div>
+    {{#if seuilVisible}}<div class="badge"><span>Seuil de Rejet</span><strong>{{etat.seuil.seuil}}</strong></div>{{/if}}
+    <div class="badge"><span>Cycle</span><strong>{{transe.cycle.dureeMinutes}} min</strong>
+      <em>{{#if cycle.echeance}}{{#if cycle.depasse}}<span class="alerte">échéance dépassée</span>{{else}}reste {{cycle.restantMin}} min{{/if}}{{else}}—{{/if}}</em></div>
+    <div class="badge"><span>Dernier d10</span><strong class="{{#if resume.dernier}}{{resume.dernier.resultat}}{{/if}}">{{#if resume.dernier}}{{resume.dernier.valeur}}{{else}}—{{/if}}</strong></div>
+  </div>
+  {{#if cycle.depasse}}{{#if transe.actif}}<p class="alerte">Le Cycle est écoulé : le personnage doit faire ascension ou se détacher.</p>{{/if}}{{/if}}
+
+  <h3>Chemin d'illumination</h3>
+  <ol class="pn2-chemin">
+    {{#each chemin}}
+      <li><span class="tag">P{{puissance}}</span> {{nom}}
+        <a class="pn2-btn petit {{#unless ../peutActiver}}disabled{{/unless}}" data-action="magie" data-op="activer" data-pouvoir="{{id}}" data-requete="{{../requete}}" data-seq="{{../seq}}" title="Paramètres de base, sans sollicitation"><i class="fa-solid fa-bolt"></i> Activer</a></li>
+    {{else}}<li class="hint">{{#if transe.actif}}Vide{{else}}Hors Transe{{/if}}</li>{{/each}}
+  </ol>
+
+  {{#if rejet}}
+    <div class="pn2-rejet">
+      <p class="alerte">Rejet au Niveau de transe {{rejet.niveau}} (niveau maximal atteint : {{rejet.niveauMax}}). Toutes les actions sont désactivées.</p>
+      {{#if isGM}}<p class="hint">Pour les séquelles : Puissance maximale possédée {{rejet.sequelles.puissanceMax}}, dépassement du Seuil {{rejet.depassement}}.</p>{{/if}}
+    </div>
+  {{/if}}
+
+  {{#if enCours}}
+    {{#if action}}
+      <h3>Action en cours : {{action.libelle}}{{#if action.pouvoir}} — {{action.pouvoir.nom}}{{/if}}</h3>
+      <p class="hint">{{action.succes}} Succès, {{action.colere}} Colère pendant cette action.{{#unless (eq action.type "renforcement")}} Un Succès sacré suffit.{{/unless}}</p>
+      {{#if resume.doitPoursuivre}}<p class="alerte">Résultat de Colère : il faut solliciter la divinité jusqu'à obtenir un Succès sacré.</p>{{/if}}
+      <div class="boutons grands">
+        <a class="pn2-btn {{#unless peutSolliciter}}disabled{{/unless}}" data-action="magie" data-op="solliciter" data-requete="{{requete}}" data-seq="{{seq}}"><i class="fa-solid fa-dice-d10"></i> Lancer 1d10</a>
+        {{#if (eq action.type "renforcement")}}<a class="pn2-btn {{#unless peutSolliciter}}disabled{{/unless}} {{#unless resume.peutArreter}}disabled{{/unless}}" data-action="magie" data-op="arreter" data-requete="{{requete}}" data-seq="{{seq}}">Arrêter le renforcement</a>{{/if}}
+      </div>
+    {{else}}
+      <h3>Actions</h3>
+      <div class="pn2-actions-transe">
+        {{#unless transe.actif}}
+          <div class="ligne"><select data-prep="cible" {{#unless peutEntrer}}disabled{{/unless}}>{{selectOptions candidats selected=prep.cible}}</select>
+            <a class="pn2-btn {{#unless peutEntrer}}disabled{{/unless}}" data-action="magie" data-op="actionTranse" data-type="entree" data-requete="{{requete}}" data-seq="{{seq}}"><i class="fa-solid fa-door-open"></i> Entrer en Transe</a></div>
+        {{else}}
+          <div class="ligne"><select data-prep="cible" {{#unless peutMonter}}disabled{{/unless}}>{{selectOptions candidats selected=prep.cible}}</select>
+            <a class="pn2-btn {{#unless peutMonter}}disabled{{/unless}}" data-action="magie" data-op="actionTranse" data-type="ascension" data-requete="{{requete}}" data-seq="{{seq}}"><i class="fa-solid fa-arrow-up"></i> Faire ascension</a></div>
+          {{#if limiteAtteinte}}<p class="hint">Niveau de transe maximal atteint.</p>{{/if}}
+          <div class="ligne"><span></span>
+            <a class="pn2-btn {{#unless peutDetacher}}disabled{{/unless}}" data-action="magie" data-op="actionTranse" data-type="detachement" data-requete="{{requete}}" data-seq="{{seq}}"><i class="fa-solid fa-arrow-down"></i> {{#if detachementFinal}}Se détacher et sortir de Transe{{else}}Se détacher{{/if}}</a></div>
+          {{#if peutRenforcer}}
+          <div class="ligne"><select data-prep="activation">{{selectOptions activationsOptions selected=prep.activation}}</select>
+            <a class="pn2-btn" data-action="magie" data-op="actionTranse" data-type="renforcement" data-requete="{{requete}}" data-seq="{{seq}}"><i class="fa-solid fa-plus"></i> Renforcer</a></div>
+          {{/if}}
+        {{/unless}}
+        {{#if aucunCandidat}}<p class="hint">Aucun Pouvoir accessible de la Puissance suivante dans cette Voie.</p>{{/if}}
+        {{#unless resume.lancers}}<a class="pn2-btn petit {{#unless peutIntervenir}}disabled{{/unless}}" data-action="magie" data-op="annuler" data-requete="{{requete}}" data-seq="{{seq}}">Annuler la Transe</a>{{/unless}}
+      </div>
+    {{/if}}
+    {{#if occupe}}<p class="hint"><i class="fa-solid fa-spinner fa-spin"></i> Opération en cours…</p>{{/if}}
+    {{#if peutIntervenir}}
+    <details class="notes"><summary>Interruption imposée par une autre règle</summary>
+      <div class="ligne"><label>Motif</label><input type="text" data-prep="motif" value="{{prep.motif}}"></div>
+      <a class="pn2-btn petit" data-action="magie" data-op="interrompre" data-requete="{{requete}}" data-seq="{{seq}}">Interrompre l'action</a>
+      <a class="pn2-btn petit" data-action="magie" data-op="interrompre" data-terminer="true" data-requete="{{requete}}" data-seq="{{seq}}">Mettre fin à la Transe</a>
+    </details>
+    {{/if}}
+  {{/if}}
+
+  {{#with repartitionActivation}}
+    <h3>Renforcement de « {{nom}} » : {{budget}} Succès</h3>
+    {{> "systems/pavillon-noir-2/templates/apps/magie-repartition.hbs"}}
+  {{/with}}
+
+  <div class="grid-2 historiques">
+    <div>
+      <h3>Ascensions et détachements</h3>
+      <ul class="pn2-journal">{{#each historique}}<li>{{libelle}}</li>{{else}}<li class="hint">Rien pour l'instant.</li>{{/each}}</ul>
+    </div>
+    <div>
+      <h3>Historique des d10</h3>
+      <table class="pn2-mini historique">
+        <tr><th>#</th><th>Action</th><th>d10</th><th>Colère</th></tr>
+        {{#each lancers}}<tr class="{{#if succes}}reussite{{else}}echec{{/if}}"><td>{{n}}</td><td>{{action}}</td><td>{{valeur}}</td><td>{{colereTotaleApres}}</td></tr>
+        {{else}}<tr><td colspan="4" class="hint">Aucune sollicitation.</td></tr>{{/each}}
+      </table>
+    </div>
+  </div>
+{{/if}}
+</div>

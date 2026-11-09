@@ -1,0 +1,38 @@
+{
+  "_id": "l2EUggHEDxHuH5Y9",
+  "_key": "!items!l2EUggHEDxHuH5Y9",
+  "name": "Paganisme européen (sorcellerie)",
+  "type": "religion",
+  "img": "icons/svg/temple.svg",
+  "system": {
+    "description": "<p>Sorcières et sorciers. Le supplément ne les classe ni en communion ni en possession, mais parle de Connaissance des Mystères (Cartomancie, Folklore) : le type possession est retenu pour le Seuil de Rejet, à confirmer par le MJ. Une sorcière blanche a accès aux Sephiroth, une sorcière noire aux Qlipoth, jamais aux deux.</p>",
+    "source": "Entre ciel et terre, p. 89, 152, 256",
+    "cle": "",
+    "type": "possession",
+    "groupeColere": "",
+    "voies": [
+      "Compendium.pavillon-noir-2.voies.Item.Iy4OYyIN7hI6KjNY",
+      "Compendium.pavillon-noir-2.voies.Item.tcWf99vdFQE8ZecE",
+      "Compendium.pavillon-noir-2.voies.Item.5soP14P6cbQPMX5I",
+      "Compendium.pavillon-noir-2.voies.Item.28cj5d17pp6tLLr8"
+    ],
+    "correspondances": ""
+  },
+  "effects": [],
+  "folder": "PABq4ru9ftZo7mj8",
+  "sort": 9,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.345",
+    "systemId": "pavillon-noir-2",
+    "systemVersion": "0.7.0",
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": null
+  }
+}

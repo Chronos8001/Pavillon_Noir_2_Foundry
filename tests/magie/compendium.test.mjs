@@ -33,7 +33,7 @@ test("compendium des Voies : 21 Voies valides, rangées dans des dossiers exista
   const dossiers = new Set(voiesPack.filter(d => d._key.startsWith("!folders!")).map(d => d._id));
   const voies = voiesPack.filter(d => d.type === "voie");
   assert.equal(voies.length, 21);
-  const champs = ["description", "source", "cle", "religion", "groupeColere", "foi", "mysteres", "affinite", "rites", "sansTranse"];
+  const champs = ["description", "source", "cle", "religion", "religionUuid", "domaine", "groupeColere", "foi", "mysteres", "affinite", "rites", "sansTranse"];
   for (const v of voies) {
     assert.ok(dossiers.has(v.folder), `${v.name} : dossier`);
     assert.deepEqual(Object.keys(v.system).sort(), [...champs].sort(), v.name);
@@ -49,4 +49,33 @@ test("compendium des Voies : 21 Voies valides, rangées dans des dossiers exista
 test("pas de Transe dans la Kabbale, la Cartomancie ni la Voie du Calendrier (ECT p. 120)", () => {
   const sans = voiesPack.filter(d => d.type === "voie" && d.system.sansTranse).map(v => v.name).sort();
   assert.deepEqual(sans, ["Voie de la Cartomancie", "Voie des Qlipoth", "Voie des Sephiroth", "Voie du Calendrier"]);
+});
+
+test("religions du compendium de magie : références UUID cohérentes avec les Voies", () => {
+  const PREFIXE = "Compendium.pavillon-noir-2.voies.Item.";
+  const parId = new Map(voiesPack.map(d => [d._id, d]));
+  const resoudre = uuid => (uuid?.startsWith(PREFIXE) ? parId.get(uuid.slice(PREFIXE.length)) : null);
+  const rels = voiesPack.filter(d => d.type === "religion");
+  assert.equal(rels.length, 11);
+  for (const r of rels) {
+    assert.ok(r.system.type === "" || r.system.type in MAGIE.types, `${r.name} : type`);
+    for (const u of r.system.voies) assert.equal(resoudre(u)?.type, "voie", `${r.name} : ${u}`);
+  }
+  for (const v of voiesPack.filter(d => d.type === "voie")) {
+    const rel = resoudre(v.system.religionUuid);
+    assert.equal(rel?.type, "religion", `${v.name} : religion`);
+    assert.equal(rel.name, v.system.religion);
+    assert.ok(rel.system.voies.includes(PREFIXE + v._id), `${rel.name} ne liste pas ${v.name}`);
+    assert.ok(v.system.domaine, `${v.name} : domaine`);
+    // Chaque Voie appartient au moins à une religion
+    assert.ok(rels.some(r => r.system.voies.includes(PREFIXE + v._id)));
+  }
+  // Les types des religions de magie concordent avec ceux des historiques correspondants
+  for (const r of rels.filter(x => x.system.correspondances)) {
+    for (const nom of r.system.correspondances.split(";").map(x => x.trim())) {
+      const h = religions.find(x => x.name === nom);
+      assert.ok(h, `${r.name} : historique « ${nom} » introuvable`);
+      assert.equal(h.system.typeReligion, r.system.type, `${r.name} / ${nom}`);
+    }
+  }
 });

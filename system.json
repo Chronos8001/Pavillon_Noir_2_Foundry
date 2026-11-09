@@ -30,6 +30,7 @@
       "manoeuvre": { "htmlFields": ["description"] },
       "marchandise": { "htmlFields": ["description"] },
       "historique": { "htmlFields": ["description"] },
+      "religion": { "htmlFields": ["description"] },
       "voie": { "htmlFields": ["description"] },
       "pouvoir": { "htmlFields": ["description"] }
     }
@@ -41,7 +42,7 @@
     { "name": "manoeuvres-escrime", "label": "Manœuvres d'escrime", "path": "packs/manoeuvres-escrime", "type": "Item", "ownership": { "PLAYER": "OBSERVER", "ASSISTANT": "OWNER" } },
     { "name": "pnj", "label": "PNJ (archétypes)", "path": "packs/pnj", "type": "Actor", "ownership": { "PLAYER": "NONE", "ASSISTANT": "OWNER" } },
     { "name": "navires", "label": "Navires", "path": "packs/navires", "type": "Actor", "ownership": { "PLAYER": "OBSERVER", "ASSISTANT": "OWNER" } },
-    { "name": "voies", "label": "Voies d'illumination (Entre ciel et terre)", "path": "packs/voies", "type": "Item", "ownership": { "PLAYER": "OBSERVER", "ASSISTANT": "OWNER" } }
+    { "name": "voies", "label": "Magie : religions et Voies (Entre ciel et terre)", "path": "packs/voies", "type": "Item", "ownership": { "PLAYER": "OBSERVER", "ASSISTANT": "OWNER" } }
   ],
   "packFolders": [
     {

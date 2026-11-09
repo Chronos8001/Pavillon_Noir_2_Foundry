@@ -69,17 +69,17 @@ Installation manuelle : télécharger `pavillon-noir-2.zip` depuis la dernière 
 - Avantages et faiblesses (avec malus appliqués automatiquement)
 - Équipement : armes, armures, vêtements, instruments, remèdes, artillerie, services et cargaisons (sucre, rhum, tabac, cacao…)
 - Manœuvres d'escrime (toutes les techniques de *L'Art de l'escrime* + destreza)
-- Voies d'illumination (*Entre ciel et terre*), classées par religion
+- Magie : religions et Voies d'illumination (*Entre ciel et terre*), classées par religion
 - PNJ : archétypes et animaux
 - Navires : chaque type dans chacune de ses configurations d'armement
 
-### Magie (*Entre ciel et terre*, adaptation aux d10) — en cours
+### Magie (*Entre ciel et terre*, adaptation aux d10)
 - Le tirage de cartes est remplacé par des d10 : 1 à 5 = Succès sacré, 6 à 10 = Colère divine.
-- Voies d'illumination (Foi / Connaissance des Mystères et Affinité par Voie) et Pouvoirs ; religions de communion ou de possession.
-- Auspices, Seuil de Rejet, Colère partagée par religion et récupérée d'un point par heure de temps du monde.
-- Rituels (Puissance, Rejet en fin de tirage, Succès supplémentaires) et Transes (entrée, ascension, détachement, activation, Rejet immédiat).
-- Onglet « Magie » sur la fiche ; le type de religion se déduit de la religion de l'historique.
-- Compendium « Voies d'illumination » : les 21 Voies du supplément, classées par religion.
+- Onglet « Magie » sur la fiche : religion pratiquée, type, Foi / Connaissance des Mystères, Faveurs, Colère, Seuil de Rejet, Auspices, Voies et Pouvoirs connus.
+- Rituels : le joueur prépare (Voie, Pouvoir, souhait, rites), le MJ fixe la Puissance (éventuellement secrète) et les Auspices puis autorise ; fenêtre de Rituel avec lancers d'1d10, résolution, améliorations et validation de l'intervention par le MJ.
+- Transes : fenêtre dédiée (entrée, ascension, activation, renforcement, détachement, Rejet, Cycle et temps restant).
+- Bibliothèque de magie : religions, Voies et Pouvoirs des compendiums, filtres, ajout et retrait sur le personnage, import de données (MJ).
+- Compendium « Magie : religions et Voies » : 11 religions et les 21 Voies du supplément (les Pouvoirs ne sont pas fournis).
 - Documentation technique : `docs/magie.md`.
 
 ## Développement

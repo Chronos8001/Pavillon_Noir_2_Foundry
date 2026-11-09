@@ -142,7 +142,17 @@ export function creerRituel(p) {
     throw new MagieError("puissance-invalide", `La Puissance nécessaire doit être un entier de ${min} à ${max}.`);
   }
   const e = acteDeBase(p, "rituel");
-  e.rituel = { souhait: p.souhait ?? "", pouvoir: p.pouvoir ?? null, puissance, resolution: null, repartition: null };
+  e.rituel = {
+    souhait: p.souhait ?? "",
+    rites: p.rites ?? "",                       // rites accomplis, décrits par le joueur
+    pouvoir: p.pouvoir ?? null,                 // { id, uuid, nom, puissance } ou null
+    puissance,
+    puissanceSecrete: !!p.puissanceSecrete,     // Puissance connue du seul MJ
+    validation: p.validation ?? null,           // { par, maintenant } : lancement autorisé par le MJ
+    resolution: null,
+    repartition: null,
+    narration: null                             // validation narrative du MJ après la résolution
+  };
   return e;
 }
 
@@ -407,7 +417,7 @@ function conclureAction(e, maintenant) {
       break;
     }
   }
-  journaliser(e, { type: "action-reussie", action: a.type, ...effet }, maintenant);
+  journaliser(e, { ...effet, type: "action-reussie", action: a.type }, maintenant);
   t.actionEnCours = null;
   e.peutArreter = false;
   if (a.type === ACTION.DETACHEMENT && t.niveau === 0) finTranse(e, STATUT.TERMINE, FIN.SORTIE, null, maintenant);
@@ -576,6 +586,54 @@ export function deserialiserActe(valeur) {
   } catch {
     return null;
   }
+}
+
+/**
+ * Validation narrative du MJ après la résolution d'un Rituel : la réussite mécanique
+ * n'applique aucun effet ; le MJ décide si et comment l'intervention se manifeste.
+ */
+export function validerNarration(etat, { accordee = true, note = "", par = null } = {}, ctx = {}) {
+  return operation(etat, ctx, e => {
+    exigerType(e, "rituel");
+    if (!e.rituel.resolution) throw new MagieError("acte-en-cours", "Le Rituel n'est pas terminé.");
+    e.rituel.narration = { accordee: !!accordee, note: String(note ?? ""), par, maintenant: ctx.maintenant ?? null };
+    journaliser(e, { type: "narration", accordee: !!accordee }, ctx.maintenant);
+    return { narration: e.rituel.narration };
+  });
+}
+
+/**
+ * Vue d'un acte réservée aux joueurs : retire les informations du MJ.
+ * - Puissance secrète : Puissance, réussite et Succès supplémentaires masqués jusqu'à la validation narrative.
+ * - Seuil non visible : Seuil, Auspices et dépassement masqués (le Rejet lui-même reste connu, il est ressenti).
+ * La vue ne sert qu'à l'affichage ; elle n'est jamais enregistrée.
+ */
+export function vueJoueur(etat, { seuilVisible = false } = {}) {
+  if (!etat) return null;
+  const e = clone(etat);
+  if (!seuilVisible) {
+    e.seuil = { masque: true };
+    e.auspices = { masque: true, beaute: e.auspices?.beaute ?? 0 };
+    if (e.rituel?.resolution) e.rituel.resolution.depassement = null;
+    if (e.transe?.rejet) {
+      e.transe.rejet.seuil = null;
+      e.transe.rejet.depassement = null;
+      e.transe.rejet.sequelles = null;
+    }
+    e.lancers = e.lancers.map(l => ({ ...l }));
+  }
+  if (e.rituel?.puissanceSecrete) {
+    e.rituel.puissance = null;
+    const r = e.rituel.resolution;
+    if (r) {
+      r.puissance = null;
+      if (!e.rituel.narration) {
+        r.suffisant = null;
+        r.succesSupplementaires = null;
+      }
+    }
+  }
+  return e;
 }
 
 /** Résumé lisible de l'état d'un acte (interface, chat). */

@@ -152,6 +152,30 @@ export class HistoriqueData extends BaseItemData {
 }
 
 /**
+ * Religion (Entre ciel et terre) : type, Colère partagée et références aux Voies.
+ * Un personnage pratique une religion en possédant cet objet (un seul).
+ */
+export class ReligionData extends BaseItemData {
+  static defineSchema() {
+    return {
+      ...super.defineSchema(),
+      cle: str(""),                // identifiant (vide : déduit du nom)
+      type: str(""),               // communion | possession (clé de CONFIG.PN2.magie.types)
+      groupeColere: str(""),       // divinités partageant leur Colère (vide : la religion elle-même)
+      voies: new f.ArrayField(new f.StringField({ required: true, blank: false })),   // UUID des Voies
+      correspondances: str("")     // religions de l'historique couvertes (noms séparés par « ; »)
+    };
+  }
+
+  get cleEffective() { return cleVoie(this.parent?.name, this.cle); }
+
+  /** Noms d'historique couverts, normalisés. */
+  get clesCorrespondances() {
+    return String(this.correspondances || "").split(";").map(x => cleVoie(x)).filter(Boolean);
+  }
+}
+
+/**
  * Voie d'illumination (Entre ciel et terre). Possédée par un personnage, elle porte ses valeurs
  * propres : il existe une Foi / Connaissance des Mystères par Voie (p. 90), et une Affinité.
  */
@@ -160,7 +184,9 @@ export class VoieData extends BaseItemData {
     return {
       ...super.defineSchema(),
       cle: str(""),               // identifiant de la Voie (vide : déduit du nom), repris par les Pouvoirs
-      religion: str(""),          // religion de rattachement
+      religion: str(""),          // religion de rattachement (libellé)
+      religionUuid: str(""),      // référence à l'objet Religion
+      domaine: str(""),           // domaine spirituel
       groupeColere: str(""),      // Colère partagée (vide : groupe par défaut de la religion)
       foi: int(0, { min: 0 }),    // religions de communion
       mysteres: int(0, { min: 0 }), // religions de possession : Connaissance des Mystères
@@ -178,12 +204,20 @@ export class PouvoirData extends BaseItemData {
   static defineSchema() {
     return {
       ...super.defineSchema(),
-      voie: str(""),                                   // clé de la Voie
+      voie: str(""),                                   // clé de la Voie (repli si la référence est perdue)
+      voieUuid: str(""),                               // référence à la Voie (monde ou compendium)
       puissance: int(1, { min: 1, max: 10 }),
       nomNatif: str(""),                               // nom en langue native
       compulsion: str(""),
       accessible: bool(true),                          // compulsion assouvie : le Pouvoir est utilisable
-      visions: str("")
+      visions: str(""),
+      // Paramètres de base (connus du seul MJ selon le supplément)
+      portee: str(""),
+      cible: str(""),
+      impact: str(""),
+      duree: str(""),
+      conditions: str(""),                             // conditions et particularités
+      references: str("")                             // références de règles
     };
   }
 }

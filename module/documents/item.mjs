@@ -1,12 +1,27 @@
 import { PN2 } from "../config.mjs";
 import { assistantHistorique, annulerHistorique } from "../helpers/historique.mjs";
 import { assistantAvantage, annulerAvantage } from "../helpers/avantages.mjs";
+import { reporterColere } from "../magie/service.mjs";
 
 export class PN2Item extends Item {
 
   /** Icônes par défaut selon le type. */
   async _preCreate(data, options, user) {
-    await super._preCreate(data, options, user);
+    const r = await super._preCreate(data, options, user);
+    if (r === false) return false;
+    // Magie : une seule religion pratiquée, pas de Voie en double sur un personnage
+    if (this.actor && ["religion", "voie"].includes(this.type)) {
+      const source = data._stats?.compendiumSource ?? data.flags?.core?.sourceId ?? null;
+      const doublon = this.actor.items.find(i => i.type === this.type && (this.type === "religion"
+        || (source && (i._stats?.compendiumSource ?? i.flags?.core?.sourceId) === source)
+        || (!source && i.name === this.name)));
+      if (doublon) {
+        ui.notifications?.warn(this.type === "religion"
+          ? `${this.actor.name} pratique déjà « ${doublon.name} » : retirez-la d'abord.`
+          : `${this.actor.name} possède déjà « ${doublon.name} ».`);
+        return false;
+      }
+    }
     if (data.img) return;
     const icons = {
       arme: "systems/pavillon-noir-2/assets/icons/arme.svg",
@@ -16,6 +31,7 @@ export class PN2Item extends Item {
       manoeuvre: "systems/pavillon-noir-2/assets/icons/manoeuvre.svg",
       marchandise: "systems/pavillon-noir-2/assets/icons/marchandise.svg",
       historique: "systems/pavillon-noir-2/assets/icons/historique.svg",
+      religion: "icons/svg/temple.svg",
       voie: "icons/svg/sun.svg",
       pouvoir: "icons/svg/aura.svg"
     };
@@ -25,6 +41,8 @@ export class PN2Item extends Item {
   /** Un historique ajouté à un personnage lance l'assistant de création. */
   _onCreate(data, options, userId) {
     super._onCreate(data, options, userId);
+    // Magie : la Colère notée sous l'ancien nom de religion rejoint le groupe de la religion ajoutée
+    if (this.type === "religion" && this.actor && userId === game.user.id) reporterColere(this.actor);
     if (!["historique", "avantage"].includes(this.type) || userId !== game.user.id || !this.actor || this.actor.type === "navire") return;
     if (this.flags?.[PN2.id]?.applique || options.pn2SansAssistant) return;
     const assistant = this.type === "historique" ? assistantHistorique : assistantAvantage;

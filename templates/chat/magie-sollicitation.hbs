@@ -11,6 +11,7 @@
   {{#if effet}}
     {{#if (eq effet.type "detachement")}}
       <p>Détachement réussi : « {{effet.pouvoir.nom}} » quitte le Chemin d'illumination. Niveau de transe {{effet.niveau}}.</p>
+      {{#if sortie}}<p><strong>Sortie de Transe</strong> : le personnage rejoint le monde profane.</p>{{/if}}
     {{else}}
       <p>{{#if (eq effet.type "entree")}}Entrée en Transe{{else}}Ascension{{/if}} réussie : « {{effet.pouvoir.nom}} » (Puissance {{effet.pouvoir.puissance}}) rejoint le Chemin d'illumination. Niveau de transe {{effet.niveau}}.</p>
     {{/if}}

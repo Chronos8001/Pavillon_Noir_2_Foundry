@@ -157,12 +157,17 @@ export class PersonnageData extends foundry.abstract.TypeDataModel {
     // Magie (Entre ciel et terre) : Faveurs = Chance (Pouvoir - 5), plus un modificateur temporaire.
     const m = s.magie;
     m.faveurs = s.chance + (m.faveursMod ?? 0);
-    m.religionNom = m.religion || s.infos.religion || "";
-    // Type de religion : saisi sur la fiche, sinon celui de la religion de l'historique, sinon d'après son nom
+    // Religion pratiquée : objet Religion possédé, sinon champ libre, sinon religion de l'historique
+    const relMagie = actor?.items?.find(i => i.type === "religion") ?? null;
+    m.religionItemId = relMagie?.id ?? null;
+    m.religionNom = relMagie?.name || m.religion || s.infos.religion || "";
+    // Type : saisi sur la fiche, sinon celui de l'objet Religion, de la religion de l'historique, ou d'après son nom
     const relItem = actor?.items?.find(i => i.type === "historique" && i.system.etape === "religion");
-    m.typeDeduit = relItem?.system.typeReligion
+    m.typeDeduit = relMagie?.system.type || relItem?.system.typeReligion
       || PN2.magie.religions[cleVoie(m.religionNom)] || PN2.magie.religions[cleVoie(relItem?.name)] || "";
     m.typeEffectif = m.type || m.typeDeduit;
+    // Groupe de Colère de la religion pratiquée (les Voies peuvent le surcharger)
+    m.groupeColere = cleVoie(relMagie?.system.groupeColere || "") || cleVoie(relMagie?.name, relMagie?.system.cle) || cleVoie(m.religionNom);
     const acte = deserialiserActe(actor?.flags?.[PN2.id]?.acte);
     m.acteEnCours = acte?.statut === "en-cours";
     m.enTranse = !!(m.acteEnCours && acte?.type === "transe" && acte.transe?.actif);
