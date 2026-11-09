@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Dessécher le corps des êtres vivants.</li><li>Rendre quelqu&#x27;un bouffi d&#x27;eau et malade.</li><li>Assécher un cours d&#x27;eau ou une étendue d&#x27;eau.</li><li>Créer une crue.</li><li>Croissance irrépressible.</li></ul><p><strong>Compulsions.</strong> Faire sécher des légumes ou de la viande. Ouvrir une brèche dans un barrage naturel.</p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Dessécher le corps des êtres vivants.</li><li>Rendre quelqu'un bouffi d'eau et malade.</li><li>Assécher un cours d'eau ou une étendue d'eau.</li><li>Créer une crue.</li><li>Croissance irrépressible.</li></ul><p><strong>Compulsions.</strong> Faire sécher des légumes ou de la viande. Ouvrir une brèche dans un barrage naturel.</p>",
     "source": "Entre ciel et terre, p. 279",
     "voie": "voie-d-agwe",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.6bwsVNHhFxnjtf9Q",

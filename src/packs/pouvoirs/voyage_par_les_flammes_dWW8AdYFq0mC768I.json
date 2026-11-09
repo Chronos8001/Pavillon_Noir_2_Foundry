@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Entre dans un feu et ressort par un autre.</li><li>Regarde dans un feu et voit ce qui se passe autour de tous Po les feux de la région.</li><li>Enflamme un projectile ou le fait chauffer au rouge.</li><li>Crée une attirance pour le feu.</li><li>Pousse à s&#x27;immoler par le feu.</li></ul><p><strong>Compulsions.</strong> Toucher quelqu&#x27;un d&#x27;un projectile enflammé. Jeter dans un feu un document permettant de prédire un événement, avant que ce document ne soit lu par un autre que soi.</p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Entre dans un feu et ressort par un autre.</li><li>Regarde dans un feu et voit ce qui se passe autour de tous Po les feux de la région.</li><li>Enflamme un projectile ou le fait chauffer au rouge.</li><li>Crée une attirance pour le feu.</li><li>Pousse à s'immoler par le feu.</li></ul><p><strong>Compulsions.</strong> Toucher quelqu'un d'un projectile enflammé. Jeter dans un feu un document permettant de prédire un événement, avant que ce document ne soit lu par un autre que soi.</p>",
     "source": "Entre ciel et terre, p. 207",
     "voie": "voie-des-cinq-soleils",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.LIzof8tOOXvNP2kT",

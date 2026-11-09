@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Demande d&#x27;assistance à un allié éloigné.</li><li>Force l&#x27;ennemi à stopper le combat pour prêter une courte assistance.</li><li>Assure l&#x27;efficacité d&#x27;une collaboration.</li></ul><p><strong>Compulsions.</strong> Ne pas assister quelqu&#x27;un dans le besoin. Assister une personne au mépris du danger.</p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Demande d'assistance à un allié éloigné.</li><li>Force l'ennemi à stopper le combat pour prêter une courte assistance.</li><li>Assure l'efficacité d'une collaboration.</li></ul><p><strong>Compulsions.</strong> Ne pas assister quelqu'un dans le besoin. Assister une personne au mépris du danger.</p>",
     "source": "Entre ciel et terre, p. 192",
     "voie": "voie-des-zemis",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.adV2aUWhmHXDCarX",

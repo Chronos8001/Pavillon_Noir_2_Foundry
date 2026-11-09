@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Sent et analyse les odeurs portées par le vent.</li><li>Entend les sons produits et les mots prononcés dans la direction d&#x27;où vient le vent, même à très longue distance, mais avec un délai correspondant au trajet de l&#x27;air.</li><li>Crée des illusions sonores.</li><li>Sent ou envoie des vibrations dans le sol.</li></ul><p><strong>Compulsions.</strong> Apprendre à imiter les cris des oiseaux. Regarder un chien chasser à l&#x27;odorat.</p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Sent et analyse les odeurs portées par le vent.</li><li>Entend les sons produits et les mots prononcés dans la direction d'où vient le vent, même à très longue distance, mais avec un délai correspondant au trajet de l'air.</li><li>Crée des illusions sonores.</li><li>Sent ou envoie des vibrations dans le sol.</li></ul><p><strong>Compulsions.</strong> Apprendre à imiter les cris des oiseaux. Regarder un chien chasser à l'odorat.</p>",
     "source": "Entre ciel et terre, p. 203",
     "voie": "voie-des-cinq-soleils",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.LIzof8tOOXvNP2kT",

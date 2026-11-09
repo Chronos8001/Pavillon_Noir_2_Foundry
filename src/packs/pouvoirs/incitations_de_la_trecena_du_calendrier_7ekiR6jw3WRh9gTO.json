@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Pousser quelqu&#x27;un à accomplir une action incitée par le calendrier pour cette trecena.</li><li>Réussir une action incitée par le calendrier pour cette trecena.</li></ul><p><strong>Compulsions.</strong> Suivre l&#x27;indication du calendrier pour tonalamapan) la trecena actuelle.</p><p><em>Règles particulières : voir Entre ciel et terre, p. 199.</em></p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Pousser quelqu'un à accomplir une action incitée par le calendrier pour cette trecena.</li><li>Réussir une action incitée par le calendrier pour cette trecena.</li></ul><p><strong>Compulsions.</strong> Suivre l'indication du calendrier pour tonalamapan) la trecena actuelle.</p><p><em>Règles particulières : voir Entre ciel et terre, p. 199.</em></p>",
     "source": "Entre ciel et terre, p. 199",
     "voie": "voie-du-calendrier",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.AFWMXMJdfCNP7hit",

@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Les fléaux s&#x27;abattent sur les ennemis.</li><li>Découvre de quel fléau souffre une population.</li><li>Fait disparaître un fléau.</li></ul><p><strong>Compulsions.</strong> Assister à une catastrophe naturelle. Empoisonner l&#x27;eau ou la nourriture d&#x27;une ville ou d&#x27;un village impie.</p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Les fléaux s'abattent sur les ennemis.</li><li>Découvre de quel fléau souffre une population.</li><li>Fait disparaître un fléau.</li></ul><p><strong>Compulsions.</strong> Assister à une catastrophe naturelle. Empoisonner l'eau ou la nourriture d'une ville ou d'un village impie.</p>",
     "source": "Entre ciel et terre, p. 212",
     "voie": "voie-de-dieu",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.SPlB5GslKnZdeWKG",

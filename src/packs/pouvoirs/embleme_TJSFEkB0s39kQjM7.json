@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Connaît l&#x27;emblème d&#x27;un groupe.</li><li>Crée un emblème fédérateur et donnant du courage.</li><li>Désintéresse d&#x27;un emblème ou d&#x27;un objet considéré comme de valeur.</li><li>Rend un talisman sans effet.</li></ul><p><strong>Compulsions.</strong> Brûler un drapeau devant les hommes qui s&#x27;y rallient. Dénigrer l&#x27;effet d&#x27;un talisman. Faire croire un vulgaire objet possède un pouvoir surnaturel.</p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Connaît l'emblème d'un groupe.</li><li>Crée un emblème fédérateur et donnant du courage.</li><li>Désintéresse d'un emblème ou d'un objet considéré comme de valeur.</li><li>Rend un talisman sans effet.</li></ul><p><strong>Compulsions.</strong> Brûler un drapeau devant les hommes qui s'y rallient. Dénigrer l'effet d'un talisman. Faire croire un vulgaire objet possède un pouvoir surnaturel.</p>",
     "source": "Entre ciel et terre, p. 305",
     "voie": "voie-d-ogou",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.nT1z9NA3nij69fC3",

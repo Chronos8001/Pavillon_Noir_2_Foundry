@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Venue de l&#x27;orage.</li><li>Dissipation de l&#x27;orage.</li><li>Foudroie d&#x27;un éclair au sein de l&#x27;orage.</li><li>Bruits de l&#x27;orage.</li><li>Violence de l&#x27;orage.</li><li>Dispute violente.</li></ul><p><strong>Compulsions.</strong> Traverser un orage effroyable. Fait croire à la venue d&#x27;un orage.</p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Venue de l'orage.</li><li>Dissipation de l'orage.</li><li>Foudroie d'un éclair au sein de l'orage.</li><li>Bruits de l'orage.</li><li>Violence de l'orage.</li><li>Dispute violente.</li></ul><p><strong>Compulsions.</strong> Traverser un orage effroyable. Fait croire à la venue d'un orage.</p>",
     "source": "Entre ciel et terre, p. 308",
     "voie": "voie-d-ogou",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.nT1z9NA3nij69fC3",

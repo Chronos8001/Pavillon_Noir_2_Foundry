@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Métamorphose en son double animal (type d&#x27;animal choisi par le maître une fois pour toutes).</li><li>Retrouver le double animal de quelqu&#x27;un.</li><li>Blesser le double animal (la blessure mystique de l&#x27;animal rendra l&#x27;humain malade).</li><li>Guérir mystiquement le double animal (guérir lorsque cette blessure était la cause de la maladie).</li></ul><p><strong>Compulsions.</strong> Capturer des animaux de la même portée. Soigner et relâcher un animal blessé, mais pas par soi.</p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Métamorphose en son double animal (type d'animal choisi par le maître une fois pour toutes).</li><li>Retrouver le double animal de quelqu'un.</li><li>Blesser le double animal (la blessure mystique de l'animal rendra l'humain malade).</li><li>Guérir mystiquement le double animal (guérir lorsque cette blessure était la cause de la maladie).</li></ul><p><strong>Compulsions.</strong> Capturer des animaux de la même portée. Soigner et relâcher un animal blessé, mais pas par soi.</p>",
     "source": "Entre ciel et terre, p. 187",
     "voie": "voie-des-xapiripe",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.uLmNntdGMAtLAIsE",

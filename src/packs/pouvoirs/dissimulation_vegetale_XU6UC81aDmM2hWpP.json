@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Cacher un végétal aux yeux des hommes.</li><li>Invisibilité dans la nature.</li><li>Cacher des armes en bois.</li><li>Les végétaux se retirent sous la terre.</li></ul><p><strong>Compulsions.</strong> S&#x27;embusquer dans les bois. Trouver une plante carnivore.</p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Cacher un végétal aux yeux des hommes.</li><li>Invisibilité dans la nature.</li><li>Cacher des armes en bois.</li><li>Les végétaux se retirent sous la terre.</li></ul><p><strong>Compulsions.</strong> S'embusquer dans les bois. Trouver une plante carnivore.</p>",
     "source": "Entre ciel et terre, p. 308",
     "voie": "voie-de-cousin-zaka",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.lP05NKFNMs90d9GB",

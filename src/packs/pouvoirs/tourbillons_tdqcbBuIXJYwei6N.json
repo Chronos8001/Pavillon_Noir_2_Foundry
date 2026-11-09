@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Crée un climat social chaotique.</li><li>Tourbillons de vent.</li><li>Contrôle de la direction prise par une tornade : elle se renforce sur mer et s&#x27;affaiblit sur terre.</li><li>Tourbillons d&#x27;eau.</li></ul><p><strong>Compulsions.</strong> Plonger dans un tourbillon. Traverser de fortes instabilités du vent.</p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Crée un climat social chaotique.</li><li>Tourbillons de vent.</li><li>Contrôle de la direction prise par une tornade : elle se renforce sur mer et s'affaiblit sur terre.</li><li>Tourbillons d'eau.</li></ul><p><strong>Compulsions.</strong> Plonger dans un tourbillon. Traverser de fortes instabilités du vent.</p>",
     "source": "Entre ciel et terre, p. 194",
     "voie": "voie-des-zemis",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.adV2aUWhmHXDCarX",

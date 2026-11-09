@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Métamorphose physique.</li><li>Jaillissement de l&#x27;eau ou du sang.</li><li>Changement de personnalité.</li><li>Abandon au mal.</li></ul><p><strong>Compulsions.</strong> Faire jaillir le sang. Se faire scarifier.</p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Métamorphose physique.</li><li>Jaillissement de l'eau ou du sang.</li><li>Changement de personnalité.</li><li>Abandon au mal.</li></ul><p><strong>Compulsions.</strong> Faire jaillir le sang. Se faire scarifier.</p>",
     "source": "Entre ciel et terre, p. 189",
     "voie": "voie-des-xapiripe",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.uLmNntdGMAtLAIsE",

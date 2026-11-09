@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Embellit une fée et la nimbe de lumière.</li><li>Soigne une fée de ses blessures réelles.</li><li>Soigne une fée de la flétrissure qu&#x27;elle a subie du fait de l &#x27;incrédulité.</li></ul><p><strong>Compulsions.</strong> Se maquiller outrageusement. Se confectionner de fausses ailes.</p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Embellit une fée et la nimbe de lumière.</li><li>Soigne une fée de ses blessures réelles.</li><li>Soigne une fée de la flétrissure qu'elle a subie du fait de l 'incrédulité.</li></ul><p><strong>Compulsions.</strong> Se maquiller outrageusement. Se confectionner de fausses ailes.</p>",
     "source": "Entre ciel et terre, p. 262",
     "voie": "voie-du-folklore",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.Iy4OYyIN7hI6KjNY",

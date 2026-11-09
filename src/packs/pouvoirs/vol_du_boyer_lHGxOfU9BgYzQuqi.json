@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Capacité de s&#x27;élever et de se déplacer dans les airs aussi 1 haut que les étoiles.</li><li>Don de dérober les objets.</li><li>Vol de l&#x27;Ichéiricou d&#x27;un autre boyer.</li><li>Capture d&#x27;un autre boyer.</li></ul><p><strong>Compulsions.</strong> Sauter du haut d&#x27;une petite falaise. Kidnapper un prêtre.</p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Capacité de s'élever et de se déplacer dans les airs aussi 1 haut que les étoiles.</li><li>Don de dérober les objets.</li><li>Vol de l'Ichéiricou d'un autre boyer.</li><li>Capture d'un autre boyer.</li></ul><p><strong>Compulsions.</strong> Sauter du haut d'une petite falaise. Kidnapper un prêtre.</p>",
     "source": "Entre ciel et terre, p. 180",
     "voie": "voie-d-icheiricou-pour-le-conseil",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.wiw3plsp6sATryBq",

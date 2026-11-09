@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Prévoit le vent du lendemain en fonction de la présence de l&#x27;étoile venteuse.</li><li>Trompe quelqu&#x27;un sur ses prédictions du temps.</li><li>Un souffle semble sortir de l&#x27;étoile et pousser le navire et seulement lui.</li></ul><p><strong>Compulsions.</strong> Avoir prévu la veille le temps qu&#x27;il fait. Attendre patiemment lors d&#x27;un calme plat le moment où la brise va revenir.</p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Prévoit le vent du lendemain en fonction de la présence de l'étoile venteuse.</li><li>Trompe quelqu'un sur ses prédictions du temps.</li><li>Un souffle semble sortir de l'étoile et pousser le navire et seulement lui.</li></ul><p><strong>Compulsions.</strong> Avoir prévu la veille le temps qu'il fait. Attendre patiemment lors d'un calme plat le moment où la brise va revenir.</p>",
     "source": "Entre ciel et terre, p. 176",
     "voie": "voie-d-icheiricou-pour-le-conseil",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.wiw3plsp6sATryBq",

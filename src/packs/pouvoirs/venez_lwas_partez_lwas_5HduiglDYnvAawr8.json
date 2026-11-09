@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Accélération de la venue des lwas (ne pas faire les rites pénalise deux fois moins).</li><li>Bénit une personne du don d&#x27;être possédée.</li><li>Stoppe une possession vaudoue.</li><li>Invite les lwas à venir et à réagir à une situation.</li><li>Commet un léger sacrilège sans être puni par les lwas.</li></ul><p><strong>Compulsions.</strong> Initier quelqu&#x27;un au rite vaudou de possession. Bâcler un rituel pour aller vite sans raison.</p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Accélération de la venue des lwas (ne pas faire les rites pénalise deux fois moins).</li><li>Bénit une personne du don d'être possédée.</li><li>Stoppe une possession vaudoue.</li><li>Invite les lwas à venir et à réagir à une situation.</li><li>Commet un léger sacrilège sans être puni par les lwas.</li></ul><p><strong>Compulsions.</strong> Initier quelqu'un au rite vaudou de possession. Bâcler un rituel pour aller vite sans raison.</p>",
     "source": "Entre ciel et terre, p. 295",
     "voie": "voie-de-papa-legba",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.cLAnYvfRTW6M1YmZ",

@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Les mains obéissent, mais accomplissent leur tâche sans l&#x27;attention du prêtre.</li><li>Mouvement et contrôle des mains coupées.</li><li>Contrôle des mains de la victime.</li><li>Les mains de la victime lui jouent des tours pendables.</li></ul><p><strong>Compulsions.</strong> Apprendre à exécuter une tâche différente avec chaque main. Pousser insidieusement à la maladresse.</p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Les mains obéissent, mais accomplissent leur tâche sans l'attention du prêtre.</li><li>Mouvement et contrôle des mains coupées.</li><li>Contrôle des mains de la victime.</li><li>Les mains de la victime lui jouent des tours pendables.</li></ul><p><strong>Compulsions.</strong> Apprendre à exécuter une tâche différente avec chaque main. Pousser insidieusement à la maladresse.</p>",
     "source": "Entre ciel et terre, p. 297",
     "voie": "voie-de-papa-legba",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.cLAnYvfRTW6M1YmZ",

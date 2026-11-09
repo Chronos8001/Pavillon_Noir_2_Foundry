@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Les hommes ne meurent plus, ils se rassemblent pour servir le chaman.</li><li>Les morts à qui l&#x27;on n&#x27;a pas donné l&#x27;oubli reviennent pour dévorer les vivants.</li><li>Les yeux des hommes meurent, et ils peuvent progressivement voir les xapiripë.</li><li>Épidémie de masse.</li></ul><p><strong>Compulsions.</strong> Disposer des cadavres comme s&#x27;il s&#x27;agissait d&#x27;une armée. Survivre à une épidémie.</p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Les hommes ne meurent plus, ils se rassemblent pour servir le chaman.</li><li>Les morts à qui l'on n'a pas donné l'oubli reviennent pour dévorer les vivants.</li><li>Les yeux des hommes meurent, et ils peuvent progressivement voir les xapiripë.</li><li>Épidémie de masse.</li></ul><p><strong>Compulsions.</strong> Disposer des cadavres comme s'il s'agissait d'une armée. Survivre à une épidémie.</p>",
     "source": "Entre ciel et terre, p. 190",
     "voie": "voie-des-xapiripe",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.uLmNntdGMAtLAIsE",

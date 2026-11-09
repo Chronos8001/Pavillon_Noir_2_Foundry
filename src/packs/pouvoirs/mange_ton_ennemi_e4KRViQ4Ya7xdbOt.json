@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Pousse au cannibalisme.</li><li>Se protège des congénères (chiques, poux, puces, requins) de ce ou celui qu&#x27;on a mangé.</li><li>Suscite la terreur pour celui qui mange ses ennemis.</li><li>Absorbe de la force vitale de l&#x27;adversaire dont on consomme la chair (donne un bonus dans la Caractéristique maîtresse de l&#x27;adversaire).</li></ul><p><strong>Compulsions.</strong> Lacérer à mort, boucaner et manger un ennemi (arawak de préférence).</p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Pousse au cannibalisme.</li><li>Se protège des congénères (chiques, poux, puces, requins) de ce ou celui qu'on a mangé.</li><li>Suscite la terreur pour celui qui mange ses ennemis.</li><li>Absorbe de la force vitale de l'adversaire dont on consomme la chair (donne un bonus dans la Caractéristique maîtresse de l'adversaire).</li></ul><p><strong>Compulsions.</strong> Lacérer à mort, boucaner et manger un ennemi (arawak de préférence).</p>",
     "source": "Entre ciel et terre, p. 173",
     "voie": "voie-d-icheiricou-pour-la-guerre",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.ua948TzRBv4MWuy4",

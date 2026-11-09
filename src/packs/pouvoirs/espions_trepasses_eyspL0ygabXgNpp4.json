@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Identifie les espions parmi les morts.</li><li>Renseigne sur une personne.</li><li>Fait suivre une personne par un trépassé.</li><li>Enquête menée par les trépassés.</li></ul><p><strong>Compulsions.</strong> Aller de l&#x27;autre côté de l&#x27;île. Trouver une personne sans nombril.</p><p><em>Règles particulières : voir Entre ciel et terre, p. 195.</em></p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Identifie les espions parmi les morts.</li><li>Renseigne sur une personne.</li><li>Fait suivre une personne par un trépassé.</li><li>Enquête menée par les trépassés.</li></ul><p><strong>Compulsions.</strong> Aller de l'autre côté de l'île. Trouver une personne sans nombril.</p><p><em>Règles particulières : voir Entre ciel et terre, p. 195.</em></p>",
     "source": "Entre ciel et terre, p. 195",
     "voie": "voie-des-zemis",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.adV2aUWhmHXDCarX",

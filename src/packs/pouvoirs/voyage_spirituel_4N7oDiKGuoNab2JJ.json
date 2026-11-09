@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Envoie accomplir une quête mystique.</li><li>Déplacement hors du corps en tant qu&#x27;esprit invisible.</li><li>Fait croire qu&#x27;il a voyagé.</li><li>Agrémenter un voyage de traits d&#x27;esprit.</li></ul><p><strong>Compulsions.</strong> Pendant une journée, ne rien faire mais u&#x27;on ferait. Se fixer une petite quête mys- &#x27;accomplir.</p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Envoie accomplir une quête mystique.</li><li>Déplacement hors du corps en tant qu'esprit invisible.</li><li>Fait croire qu'il a voyagé.</li><li>Agrémenter un voyage de traits d'esprit.</li></ul><p><strong>Compulsions.</strong> Pendant une journée, ne rien faire mais u'on ferait. Se fixer une petite quête mys- 'accomplir.</p>",
     "source": "Entre ciel et terre, p. 298",
     "voie": "voie-de-papa-legba",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.cLAnYvfRTW6M1YmZ",

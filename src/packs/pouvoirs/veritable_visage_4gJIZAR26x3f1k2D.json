@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Émotions visibles sur le visage.</li><li>Émotions feintes convaincantes.</li><li>Le rôle de chaque personne apparaît clairement.</li><li>Les visages cachés deviennent visibles.</li><li>Rend incapable de jouer la comédie.</li><li>Reconnaître une forme ténue ou floue.</li></ul><p><strong>Compulsions.</strong> Révéler sa présence lors d&#x27;une mission secrète. Sur-jouer une émotion ressentie.</p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Émotions visibles sur le visage.</li><li>Émotions feintes convaincantes.</li><li>Le rôle de chaque personne apparaît clairement.</li><li>Les visages cachés deviennent visibles.</li><li>Rend incapable de jouer la comédie.</li><li>Reconnaître une forme ténue ou floue.</li></ul><p><strong>Compulsions.</strong> Révéler sa présence lors d'une mission secrète. Sur-jouer une émotion ressentie.</p>",
     "source": "Entre ciel et terre, p. 282",
     "voie": "voie-de-dambala",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.fVIeiRnBn8ADVFE2",

@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Connaissance des rites sacrés (quelle que soit la religion). Autres religions et traditions européennes</li><li>Puits de science.</li><li>Contrats scellés.</li><li>Inviolables serments.</li></ul><p><strong>Compulsions.</strong> Ne pas tenir compte d&#x27;un contrat. Punir qui a violé un serment (peut être un serment de mariage, par exemple).</p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Connaissance des rites sacrés (quelle que soit la religion). Autres religions et traditions européennes</li><li>Puits de science.</li><li>Contrats scellés.</li><li>Inviolables serments.</li></ul><p><strong>Compulsions.</strong> Ne pas tenir compte d'un contrat. Punir qui a violé un serment (peut être un serment de mariage, par exemple).</p>",
     "source": "Entre ciel et terre, p. 252",
     "voie": "voie-du-druidisme",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.444Fft7a0LtvOMIS",

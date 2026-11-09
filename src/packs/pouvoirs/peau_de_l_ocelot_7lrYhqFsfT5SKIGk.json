@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Posséder la peau de l&#x27;ocelot permet d&#x27;en acquérir les traits (rapidité, discrétion, agilité, flair, férocité).</li><li>Inflige des maux à la peau d&#x27;un ocelot.</li><li>Donne une quête guerrière à celui qui veut prouver sa valeur.</li></ul><p><strong>Compulsions.</strong> Porter la peau d&#x27;un ocelot que l&#x27;on a tué. Récompenser quelqu&#x27;un pour un haut fait guerrier.</p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Posséder la peau de l'ocelot permet d'en acquérir les traits (rapidité, discrétion, agilité, flair, férocité).</li><li>Inflige des maux à la peau d'un ocelot.</li><li>Donne une quête guerrière à celui qui veut prouver sa valeur.</li></ul><p><strong>Compulsions.</strong> Porter la peau d'un ocelot que l'on a tué. Récompenser quelqu'un pour un haut fait guerrier.</p>",
     "source": "Entre ciel et terre, p. 174",
     "voie": "voie-d-icheiricou-pour-la-guerre",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.ua948TzRBv4MWuy4",

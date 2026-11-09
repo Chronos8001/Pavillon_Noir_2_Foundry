@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Compréhension des besoins et pensées des animaux.</li><li>Amitié avec un animal.</li><li>Provoque des réactions simples et primales (domination, soumission, fuite, agression, tendresse, sexe).</li><li>Suscite une aversion pour la ville.</li></ul><p><strong>Compulsions.</strong> Bien s&#x27;entendre avec un animal. Pendant une journée, avoir les réactions primales les plus basiques.</p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Compréhension des besoins et pensées des animaux.</li><li>Amitié avec un animal.</li><li>Provoque des réactions simples et primales (domination, soumission, fuite, agression, tendresse, sexe).</li><li>Suscite une aversion pour la ville.</li></ul><p><strong>Compulsions.</strong> Bien s'entendre avec un animal. Pendant une journée, avoir les réactions primales les plus basiques.</p>",
     "source": "Entre ciel et terre, p. 311",
     "voie": "voie-de-cousin-zaka",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.lP05NKFNMs90d9GB",

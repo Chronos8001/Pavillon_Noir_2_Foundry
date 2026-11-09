@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Permet de s&#x27;incarner dans le corps de son compagnon animal.</li><li>Se cache à l&#x27;intérieur du cadavre d&#x27;un compagnon.</li><li>Sait où son compagnon animal se trouve.</li><li>Retrouve le corps d&#x27;un compagnon mort.</li></ul><p><strong>Compulsions.</strong> Enterrer le corps d&#x27;un compagnon. Tuer son compagnon animal et étudier ses entrailles.</p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Permet de s'incarner dans le corps de son compagnon animal.</li><li>Se cache à l'intérieur du cadavre d'un compagnon.</li><li>Sait où son compagnon animal se trouve.</li><li>Retrouve le corps d'un compagnon mort.</li></ul><p><strong>Compulsions.</strong> Enterrer le corps d'un compagnon. Tuer son compagnon animal et étudier ses entrailles.</p>",
     "source": "Entre ciel et terre, p. 267",
     "voie": "voie-du-folklore",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.Iy4OYyIN7hI6KjNY",

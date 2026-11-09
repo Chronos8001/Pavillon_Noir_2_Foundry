@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Crée un clone parfait, docile, conciliant ou destructeur.</li><li>Donne une apparence parfaitement identique.</li><li>Donne la localisation du jumeau.</li><li>Conscience intuitive des événements affectant une personne.</li><li>Création d&#x27;un lien affectif indéfectible.</li></ul><p><strong>Compulsions.</strong> Trouver deux vrais jumeaux alors inconnus. Effectuer une copie conforme.</p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Crée un clone parfait, docile, conciliant ou destructeur.</li><li>Donne une apparence parfaitement identique.</li><li>Donne la localisation du jumeau.</li><li>Conscience intuitive des événements affectant une personne.</li><li>Création d'un lien affectif indéfectible.</li></ul><p><strong>Compulsions.</strong> Trouver deux vrais jumeaux alors inconnus. Effectuer une copie conforme.</p>",
     "source": "Entre ciel et terre, p. 304",
     "voie": "voie-des-freres-marassa",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.g0bMhkfFArVT77cy",

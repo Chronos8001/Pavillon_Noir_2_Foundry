@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Demande un conseil à Ichéiricou.</li><li>Pousse des personnes – typiquement les caciques des autres îles caraïbes – à se réunir pour discuter.</li><li>Peut écouter ce qui se dit au cours d&#x27;un conseil lointain.</li><li>Tient un conseil à distance entre plusieurs personnes choisies.</li></ul><p><strong>Compulsions.</strong> Décision importante prise lors d&#x27;un conseil. Foncer tête baissée sans prendre en compte aucun conseil.</p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Demande un conseil à Ichéiricou.</li><li>Pousse des personnes – typiquement les caciques des autres îles caraïbes – à se réunir pour discuter.</li><li>Peut écouter ce qui se dit au cours d'un conseil lointain.</li><li>Tient un conseil à distance entre plusieurs personnes choisies.</li></ul><p><strong>Compulsions.</strong> Décision importante prise lors d'un conseil. Foncer tête baissée sans prendre en compte aucun conseil.</p>",
     "source": "Entre ciel et terre, p. 179",
     "voie": "voie-d-icheiricou-pour-le-conseil",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.wiw3plsp6sATryBq",

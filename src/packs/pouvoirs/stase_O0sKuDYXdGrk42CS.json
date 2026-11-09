@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Faire geler l&#x27;eau, faire fondre un solide.</li><li>Liquide visqueux.</li><li>Ébullition.</li><li>Laisser une chose ou une situation identique à ce qu&#x27;elle est actuellement.</li></ul><p><strong>Compulsions.</strong> Rester dans de l&#x27;eau glacée. Plonger son bras dans de l&#x27;eau bouillante.</p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Faire geler l'eau, faire fondre un solide.</li><li>Liquide visqueux.</li><li>Ébullition.</li><li>Laisser une chose ou une situation identique à ce qu'elle est actuellement.</li></ul><p><strong>Compulsions.</strong> Rester dans de l'eau glacée. Plonger son bras dans de l'eau bouillante.</p>",
     "source": "Entre ciel et terre, p. 277",
     "voie": "voie-d-agwe",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.6bwsVNHhFxnjtf9Q",

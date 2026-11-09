@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Réduit la douleur.</li><li>Soulage de la fièvre.</li><li>Soigne une blessure.</li><li>Soigne une maladie.</li><li>Guérit de la haine et de la rancoeur.</li><li>Supprime les mauvaises intentions.</li></ul><p><strong>Compulsions.</strong> Regarder dans le ventre de quelqu&#x27;un victime de douleurs viscérales. Récupérer les glaires ou les rejets d&#x27;une personne malade.</p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Réduit la douleur.</li><li>Soulage de la fièvre.</li><li>Soigne une blessure.</li><li>Soigne une maladie.</li><li>Guérit de la haine et de la rancoeur.</li><li>Supprime les mauvaises intentions.</li></ul><p><strong>Compulsions.</strong> Regarder dans le ventre de quelqu'un victime de douleurs viscérales. Récupérer les glaires ou les rejets d'une personne malade.</p>",
     "source": "Entre ciel et terre, p. 186",
     "voie": "voie-des-xapiripe",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.uLmNntdGMAtLAIsE",

@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Partage apaisant de sentiment.</li><li>Vit ce qu&#x27;a vécu une personne.</li><li>Partage de l&#x27;expérience.</li><li>Sentiment de cohésion et de compréhension mutuelle.</li></ul><p><strong>Compulsions.</strong> Obtenir des confidences importantes. Partager réellement une expérience avec un ennemi.</p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Partage apaisant de sentiment.</li><li>Vit ce qu'a vécu une personne.</li><li>Partage de l'expérience.</li><li>Sentiment de cohésion et de compréhension mutuelle.</li></ul><p><strong>Compulsions.</strong> Obtenir des confidences importantes. Partager réellement une expérience avec un ennemi.</p>",
     "source": "Entre ciel et terre, p. 303",
     "voie": "voie-des-freres-marassa",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.g0bMhkfFArVT77cy",

@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Sommeil non réparateur, inquiet et entrecoupé de périodes d&#x27;éveil.</li><li>Réveille lorsque point le danger.</li><li>Réveille le blessé comateux.</li></ul><p><strong>Compulsions.</strong> Se réveiller la nuit par soi-même. Rester éveillé pendant une semaine sans interruption.</p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Sommeil non réparateur, inquiet et entrecoupé de périodes d'éveil.</li><li>Réveille lorsque point le danger.</li><li>Réveille le blessé comateux.</li></ul><p><strong>Compulsions.</strong> Se réveiller la nuit par soi-même. Rester éveillé pendant une semaine sans interruption.</p>",
     "source": "Entre ciel et terre, p. 171",
     "voie": "voie-d-icheiricou-pour-la-guerre",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.ua948TzRBv4MWuy4",

@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Suppression de l&#x27;usage des bras.</li><li>Reptation rapide.</li><li>Réflexe du serpent.</li><li>Transformation en reptile avec une perte partielle d &#x27;identité.</li><li>Échange de corps avec un reptile.</li></ul><p><strong>Compulsions.</strong> Se mouvoir comme un serpent pendant une heure par jour, à heure fixe, quoi qu&#x27;il arrive. Observation d&#x27;un serpent pendant une demi-journée sans interruption.</p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Suppression de l'usage des bras.</li><li>Reptation rapide.</li><li>Réflexe du serpent.</li><li>Transformation en reptile avec une perte partielle d 'identité.</li><li>Échange de corps avec un reptile.</li></ul><p><strong>Compulsions.</strong> Se mouvoir comme un serpent pendant une heure par jour, à heure fixe, quoi qu'il arrive. Observation d'un serpent pendant une demi-journée sans interruption.</p>",
     "source": "Entre ciel et terre, p. 282",
     "voie": "voie-de-dambala",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.fVIeiRnBn8ADVFE2",

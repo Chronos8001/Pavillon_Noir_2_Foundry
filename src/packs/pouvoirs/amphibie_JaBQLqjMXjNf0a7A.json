@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Respiration sous l&#x27;eau.</li><li>Objet hydrofuge.</li><li>Nage comme une anguille.</li></ul><p><strong>Compulsions.</strong> Boire la tasse. Tenir la tête sous l&#x27;eau à une personne jusqu&#x27;à ce qu&#x27;elle commence à se noyer, sans la tuer.</p><p><em>Règles particulières : voir Entre ciel et terre, p. 281.</em></p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Respiration sous l'eau.</li><li>Objet hydrofuge.</li><li>Nage comme une anguille.</li></ul><p><strong>Compulsions.</strong> Boire la tasse. Tenir la tête sous l'eau à une personne jusqu'à ce qu'elle commence à se noyer, sans la tuer.</p><p><em>Règles particulières : voir Entre ciel et terre, p. 281.</em></p>",
     "source": "Entre ciel et terre, p. 281",
     "voie": "voie-de-dambala",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.fVIeiRnBn8ADVFE2",

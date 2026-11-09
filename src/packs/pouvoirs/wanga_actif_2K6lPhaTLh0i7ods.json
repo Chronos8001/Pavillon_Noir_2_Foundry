@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Comment créer un wanga.</li><li>Comment utiliser un wanga.</li></ul><p><strong>Compulsions.</strong> Sculpter l&#x27;image d&#x27;un lwa. Ne pas utiliser un outil dont on dispose alors qu&#x27;on en a cruellement besoin.</p><p><em>Règles particulières : voir Entre ciel et terre, p. 298.</em></p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Comment créer un wanga.</li><li>Comment utiliser un wanga.</li></ul><p><strong>Compulsions.</strong> Sculpter l'image d'un lwa. Ne pas utiliser un outil dont on dispose alors qu'on en a cruellement besoin.</p><p><em>Règles particulières : voir Entre ciel et terre, p. 298.</em></p>",
     "source": "Entre ciel et terre, p. 298",
     "voie": "voie-de-papa-legba",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.cLAnYvfRTW6M1YmZ",

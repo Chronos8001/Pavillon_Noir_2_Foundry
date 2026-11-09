@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Retourne un pouvoir contre son auteur.</li><li>Fait échouer le plan d&#x27;un ennemi de la Foi.</li><li>Élimine les tentations.</li></ul><p><strong>Compulsions.</strong> Faire disparaître une vendeuse de vice. Contrer les plans d&#x27;un ennemi de la Foi.</p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Retourne un pouvoir contre son auteur.</li><li>Fait échouer le plan d'un ennemi de la Foi.</li><li>Élimine les tentations.</li></ul><p><strong>Compulsions.</strong> Faire disparaître une vendeuse de vice. Contrer les plans d'un ennemi de la Foi.</p>",
     "source": "Entre ciel et terre, p. 211",
     "voie": "voie-de-dieu",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.SPlB5GslKnZdeWKG",

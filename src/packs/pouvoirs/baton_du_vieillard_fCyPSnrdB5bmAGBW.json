@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Bâton permettant de marcher vite et loin.</li><li>Victime obligée d&#x27;utiliser un bâton pour se déplacer.</li><li>Bâton multi-usage.</li><li>Sait de qui a besoin une personne.</li></ul><p><strong>Compulsions.</strong> Prendre son bâton à un vieillard. Se casser la jambe.</p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Bâton permettant de marcher vite et loin.</li><li>Victime obligée d'utiliser un bâton pour se déplacer.</li><li>Bâton multi-usage.</li><li>Sait de qui a besoin une personne.</li></ul><p><strong>Compulsions.</strong> Prendre son bâton à un vieillard. Se casser la jambe.</p>",
     "source": "Entre ciel et terre, p. 297",
     "voie": "voie-de-papa-legba",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.cLAnYvfRTW6M1YmZ",

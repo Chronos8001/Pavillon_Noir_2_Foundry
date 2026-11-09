@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Prend une des formes du dieu porteur de la trecena du calendrier.</li><li>Montre en tout lieu et tout moment la présence du dieu porteur de la trecena du calendrier.</li><li>Choisit une manifestation spécifique du dieu porteur de la trecena du calendrier.</li></ul><p><strong>Compulsions.</strong> Agit comme s&#x27;il était l&#x27;animal ou l&#x27;être de même apparence que le dieu.</p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Prend une des formes du dieu porteur de la trecena du calendrier.</li><li>Montre en tout lieu et tout moment la présence du dieu porteur de la trecena du calendrier.</li><li>Choisit une manifestation spécifique du dieu porteur de la trecena du calendrier.</li></ul><p><strong>Compulsions.</strong> Agit comme s'il était l'animal ou l'être de même apparence que le dieu.</p>",
     "source": "Entre ciel et terre, p. 201",
     "voie": "voie-du-calendrier",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.AFWMXMJdfCNP7hit",

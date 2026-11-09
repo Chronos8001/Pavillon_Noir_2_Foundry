@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Tonnerre.</li><li>Éclair.</li><li>Incarnation de l&#x27;orage (devient le vent, le tonnerre, les éclairs et la pluie).</li><li>Relève le souffle vital des mourants (empêche de mourir, la blessure guérira lentement).</li></ul><p><strong>Compulsions.</strong> Danser sous la pluie en plein orage. Sauver un mourant.</p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Tonnerre.</li><li>Éclair.</li><li>Incarnation de l'orage (devient le vent, le tonnerre, les éclairs et la pluie).</li><li>Relève le souffle vital des mourants (empêche de mourir, la blessure guérira lentement).</li></ul><p><strong>Compulsions.</strong> Danser sous la pluie en plein orage. Sauver un mourant.</p>",
     "source": "Entre ciel et terre, p. 190",
     "voie": "voie-des-xapiripe",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.uLmNntdGMAtLAIsE",

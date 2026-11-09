@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Brise une chaîne.</li><li>Brise les chaînes psychologiques et morales qui entravent la pensée.</li><li>Empêtre le jugement dans les préjugés et les tabous.</li><li>Entrave aux mouvements.</li><li>Sait qui est lié à qui.</li></ul><p><strong>Compulsions.</strong> Briser les chaînes d&#x27;un esclave. Forcer quelqu&#x27;un à accomplir quelque chose contre son gré.</p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Brise une chaîne.</li><li>Brise les chaînes psychologiques et morales qui entravent la pensée.</li><li>Empêtre le jugement dans les préjugés et les tabous.</li><li>Entrave aux mouvements.</li><li>Sait qui est lié à qui.</li></ul><p><strong>Compulsions.</strong> Briser les chaînes d'un esclave. Forcer quelqu'un à accomplir quelque chose contre son gré.</p>",
     "source": "Entre ciel et terre, p. 307",
     "voie": "voie-d-ogou",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.nT1z9NA3nij69fC3",

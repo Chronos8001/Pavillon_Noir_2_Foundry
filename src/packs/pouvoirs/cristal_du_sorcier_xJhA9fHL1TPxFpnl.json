@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Crée un cristal de sorcier à partir d&#x27;un cristal pur : vecteur de pouvoir (Affinité pour les Voies aztèques) ou réceptacle de Pouvoirs des Voies aztèques (trois au plus).</li></ul><p><strong>Compulsions.</strong> Trouver un cristal de roche parfait et le tailler.</p><p><em>Règles particulières : voir Entre ciel et terre, p. 201.</em></p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Crée un cristal de sorcier à partir d'un cristal pur : vecteur de pouvoir (Affinité pour les Voies aztèques) ou réceptacle de Pouvoirs des Voies aztèques (trois au plus).</li></ul><p><strong>Compulsions.</strong> Trouver un cristal de roche parfait et le tailler.</p><p><em>Règles particulières : voir Entre ciel et terre, p. 201.</em></p>",
     "source": "Entre ciel et terre, p. 201",
     "voie": "voie-du-calendrier",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.AFWMXMJdfCNP7hit",

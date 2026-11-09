@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Des serpents semblent tomber avec la pluie et grouillent sur le sol.</li><li>Toutes les branches des arbres d&#x27;une forêt semblent se changer en serpents. Ils sont attachés à l&#x27;arbre et ne peuvent se déplacer.</li><li>Transforme une ambiance dans une communauté en un nid de complots.</li></ul><p><strong>Compulsions.</strong> Participer à une hallucination collective.</p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Des serpents semblent tomber avec la pluie et grouillent sur le sol.</li><li>Toutes les branches des arbres d'une forêt semblent se changer en serpents. Ils sont attachés à l'arbre et ne peuvent se déplacer.</li><li>Transforme une ambiance dans une communauté en un nid de complots.</li></ul><p><strong>Compulsions.</strong> Participer à une hallucination collective.</p>",
     "source": "Entre ciel et terre, p. 285",
     "voie": "voie-de-dambala",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.fVIeiRnBn8ADVFE2",

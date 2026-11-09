@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Un serpent suit des personnes et essaie de les mordre, son venin étant mortel. Si le serpent meurt, un autre le rem- quelq place.</li><li>Ultimatum pour négocier, l&#x27;adversaire est conscient de la mort sûre qui l&#x27;attend en cas de refus.</li><li>Avertit d&#x27;un danger pour soi.</li><li>Avertit du danger lointain menaçant un ami.</li></ul><p><strong>Compulsions.</strong> Entrer nu dans un nid de serpents venimeux. Lancer un ultimatum à un adversaire supérieur, et combattre jusqu&#x27;à la mort en cas de refus.</p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Un serpent suit des personnes et essaie de les mordre, son venin étant mortel. Si le serpent meurt, un autre le rem- quelq place.</li><li>Ultimatum pour négocier, l'adversaire est conscient de la mort sûre qui l'attend en cas de refus.</li><li>Avertit d'un danger pour soi.</li><li>Avertit du danger lointain menaçant un ami.</li></ul><p><strong>Compulsions.</strong> Entrer nu dans un nid de serpents venimeux. Lancer un ultimatum à un adversaire supérieur, et combattre jusqu'à la mort en cas de refus.</p>",
     "source": "Entre ciel et terre, p. 285",
     "voie": "voie-de-dambala",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.fVIeiRnBn8ADVFE2",

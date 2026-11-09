@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Peut faire passer quelqu&#x27;un pour quelqu&#x27;un d&#x27;autre en le maquillant.</li><li>Dessins sur la peau horribles, attirants, hypnotiques, ou créant un désintérêt pour la personne peinte.</li><li>Description parfaite par des mouvements des doigts dans l &#x27;air.</li><li>Défigure quelqu&#x27;un par quelques traits tracés sur la peau.</li></ul><p><strong>Compulsions.</strong> Maquiller quelqu&#x27;un pour l&#x27;embellir (selon la mode caraïbe). Maquiller quelqu&#x27;un pour masquer son identité.</p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Peut faire passer quelqu'un pour quelqu'un d'autre en le maquillant.</li><li>Dessins sur la peau horribles, attirants, hypnotiques, ou créant un désintérêt pour la personne peinte.</li><li>Description parfaite par des mouvements des doigts dans l 'air.</li><li>Défigure quelqu'un par quelques traits tracés sur la peau.</li></ul><p><strong>Compulsions.</strong> Maquiller quelqu'un pour l'embellir (selon la mode caraïbe). Maquiller quelqu'un pour masquer son identité.</p>",
     "source": "Entre ciel et terre, p. 177",
     "voie": "voie-d-icheiricou-pour-le-conseil",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.wiw3plsp6sATryBq",

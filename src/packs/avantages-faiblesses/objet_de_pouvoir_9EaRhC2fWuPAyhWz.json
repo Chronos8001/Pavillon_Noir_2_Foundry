@@ -1,0 +1,41 @@
+{
+  "_id": "9EaRhC2fWuPAyhWz",
+  "_key": "!items!9EaRhC2fWuPAyhWz",
+  "name": "Objet de pouvoir",
+  "type": "avantage",
+  "img": "systems/pavillon-noir-2/assets/icons/avantage.svg",
+  "system": {
+    "description": "<p>Le joueur choisit le nombre de PC investis et la forme de l'objet (pipe, récipient, paquet-kongo, chapelet, eau bénite, ossements d'un ancêtre…).</p><p>Le MJ choisit en secret le Pouvoir contenu (Voie de la religion du prêtre ; n'importe quelle Voie pour les zémis et les objets enchantés) et répartit les PC entre la Puissance du Pouvoir, la Fréquence d'utilisation et la Durée d'activation (table p. 88). Le joueur ne connaît que la Durée d'activation et les Rites.</p><p>Si le personnage doit trouver lui-même les Rites, le coût de l'objet diminue de 3 PC. Les paramètres du Pouvoir sont ceux du Pouvoir divin.</p><p>Exemple du livre (6 PC) : « bon juju, mauvais juju » (Puissance 2 : 1 PC), une fois par semaine (3 PC), activation de trente minutes (2 PC).</p>",
+    "source": "Entre ciel et terre, p. 87",
+    "nature": "avantage",
+    "categorie": "Magie",
+    "cout": "Variable",
+    "modificateurs": "",
+    "pc": null,
+    "options": [],
+    "choix": "",
+    "variable": true,
+    "maxPc": 0,
+    "multiple": false,
+    "effet": "",
+    "escrimeType": "",
+    "prerequis": ""
+  },
+  "effects": [],
+  "folder": "ucAuz96kWj7MT0oH",
+  "sort": 300,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.345",
+    "systemId": "pavillon-noir-2",
+    "systemVersion": "0.1.0",
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": null
+  }
+}

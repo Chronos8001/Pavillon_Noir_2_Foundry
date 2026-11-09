@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Le temps semble s&#x27;arrêter : le prêtre peut réfléchir, mais pas agir.</li><li>Force la proie à revivre éternellement un événement éprouvant.</li><li>Donne l&#x27;impression d&#x27;être mort ou immortel.</li><li>La proie pense avoir tout son temps.</li><li>Ralentit les mouvements et la pensée de la cible.</li></ul><p><strong>Compulsions.</strong> Rester une journée et une nuit debout sans bouger un cil. Apprendre le nom des étoiles.</p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Le temps semble s'arrêter : le prêtre peut réfléchir, mais pas agir.</li><li>Force la proie à revivre éternellement un événement éprouvant.</li><li>Donne l'impression d'être mort ou immortel.</li><li>La proie pense avoir tout son temps.</li><li>Ralentit les mouvements et la pensée de la cible.</li></ul><p><strong>Compulsions.</strong> Rester une journée et une nuit debout sans bouger un cil. Apprendre le nom des étoiles.</p>",
     "source": "Entre ciel et terre, p. 294",
     "voie": "voie-des-guedes",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.BJZUi8OCwtnsr9Ow",

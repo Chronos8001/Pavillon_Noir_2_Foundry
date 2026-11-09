@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Défaite personnelle ou militaire.</li><li>Traumatisme psychologique suite à une défaite minime.</li><li>Sensation irraisonnée de défaite ou de victoire proche ou passée.</li><li>Déstructuration d&#x27;un objet composé.</li></ul><p><strong>Compulsions.</strong> Démonter un objet complexe et énorme, comme un petit navire, pièce par pièce. OEuvrer pour la défaite militaire de son groupe.</p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Défaite personnelle ou militaire.</li><li>Traumatisme psychologique suite à une défaite minime.</li><li>Sensation irraisonnée de défaite ou de victoire proche ou passée.</li><li>Déstructuration d'un objet composé.</li></ul><p><strong>Compulsions.</strong> Démonter un objet complexe et énorme, comme un petit navire, pièce par pièce. OEuvrer pour la défaite militaire de son groupe.</p>",
     "source": "Entre ciel et terre, p. 294",
     "voie": "voie-des-guedes",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.BJZUi8OCwtnsr9Ow",

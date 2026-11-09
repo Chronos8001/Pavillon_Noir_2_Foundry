@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Peau de fer (protection 3).</li><li>Caractère d&#x27;acier.</li><li>Crée des failles dans un caractère d&#x27;acier ou dans une armure.</li></ul><p><strong>Compulsions.</strong> Être violemment battu. Trouver une faille dans une protection.</p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Peau de fer (protection 3).</li><li>Caractère d'acier.</li><li>Crée des failles dans un caractère d'acier ou dans une armure.</li></ul><p><strong>Compulsions.</strong> Être violemment battu. Trouver une faille dans une protection.</p>",
     "source": "Entre ciel et terre, p. 308",
     "voie": "voie-d-ogou",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.nT1z9NA3nij69fC3",

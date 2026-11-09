@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Attache à un lieu ou un objet une aura négative, qui inspire la peur.</li><li>Rend un lieu vivant et lui conf ère des intentions hostiles.</li><li>Donne des obsessions et hallucinations morbides.</li><li>Inspire le doute.</li><li>Donne à un objet, voire à un navire, une volonté propre.</li></ul><p><strong>Compulsions.</strong> Faire croire à quelqu&#x27;un qu&#x27;un lieu ou un objet est hanté.</p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Attache à un lieu ou un objet une aura négative, qui inspire la peur.</li><li>Rend un lieu vivant et lui conf ère des intentions hostiles.</li><li>Donne des obsessions et hallucinations morbides.</li><li>Inspire le doute.</li><li>Donne à un objet, voire à un navire, une volonté propre.</li></ul><p><strong>Compulsions.</strong> Faire croire à quelqu'un qu'un lieu ou un objet est hanté.</p>",
     "source": "Entre ciel et terre, p. 294",
     "voie": "voie-des-guedes",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.BJZUi8OCwtnsr9Ow",

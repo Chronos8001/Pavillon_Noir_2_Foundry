@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Fait surgir un monstre des eaux pour engloutir un navire.</li><li>Contrôle des éléments marins et des poissons.</li><li>Croissance ou dépérissement des terres cultivées.</li></ul><p><strong>Compulsions.</strong> Inonder des récoltes. Tout faire pour qu&#x27;un navire coule lors d&#x27;une tempête.</p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Fait surgir un monstre des eaux pour engloutir un navire.</li><li>Contrôle des éléments marins et des poissons.</li><li>Croissance ou dépérissement des terres cultivées.</li></ul><p><strong>Compulsions.</strong> Inonder des récoltes. Tout faire pour qu'un navire coule lors d'une tempête.</p>",
     "source": "Entre ciel et terre, p. 190",
     "voie": "voie-des-xapiripe",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.uLmNntdGMAtLAIsE",

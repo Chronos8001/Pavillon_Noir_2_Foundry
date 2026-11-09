@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Coup étourdissant.</li><li>Vague tournis éphémère.</li><li>Manque d&#x27;assurance du chef devant les hommes.</li></ul><p><strong>Compulsions.</strong> Assommer quelqu&#x27;un. Être pris de vertiges.</p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Coup étourdissant.</li><li>Vague tournis éphémère.</li><li>Manque d'assurance du chef devant les hommes.</li></ul><p><strong>Compulsions.</strong> Assommer quelqu'un. Être pris de vertiges.</p>",
     "source": "Entre ciel et terre, p. 171",
     "voie": "voie-d-icheiricou-pour-la-guerre",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.ua948TzRBv4MWuy4",

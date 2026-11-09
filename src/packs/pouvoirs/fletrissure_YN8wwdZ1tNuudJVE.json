@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Donne un aspect vieux et flétri.</li><li>Racornit un membre, un tronc ou des feuilles.</li><li>Diminue les capacités mentales ou sentimentales.</li><li>Fait ressortir tous les éléments négatifs du passé.</li><li>Transformation par intermittence en un double mauvais.</li><li>Réalisation d&#x27;une poupée vaudou (Toucher/Permanent).</li><li>Localisation d&#x27;une de ses propres poupées vaudoues.</li></ul><p><strong>Compulsions.</strong> Créer une poupée de chiffon à l&#x27;image de quelqu&#x27;un en assemblant des parties du corps faites de morceaux de chiffon, d&#x27;herbes séchées, d&#x27;ongles, quelques cheveux et de l&#x27;urine. Envoyer un maléfice à quelqu&#x27;un de façon répétitive.</p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Donne un aspect vieux et flétri.</li><li>Racornit un membre, un tronc ou des feuilles.</li><li>Diminue les capacités mentales ou sentimentales.</li><li>Fait ressortir tous les éléments négatifs du passé.</li><li>Transformation par intermittence en un double mauvais.</li><li>Réalisation d'une poupée vaudou (Toucher/Permanent).</li><li>Localisation d'une de ses propres poupées vaudoues.</li></ul><p><strong>Compulsions.</strong> Créer une poupée de chiffon à l'image de quelqu'un en assemblant des parties du corps faites de morceaux de chiffon, d'herbes séchées, d'ongles, quelques cheveux et de l'urine. Envoyer un maléfice à quelqu'un de façon répétitive.</p>",
     "source": "Entre ciel et terre, p. 293",
     "voie": "voie-des-guedes",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.BJZUi8OCwtnsr9Ow",

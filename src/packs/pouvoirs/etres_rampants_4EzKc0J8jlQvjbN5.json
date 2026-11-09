@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Force des personnes à se contorsionner au sol comme des serpents.</li><li>Invasion d&#x27;insectes rampants et de serpents.</li><li>Contrôle des êtres rampants.</li><li>Voir qui rampe devant ses supérieurs.</li><li>Découvrir un chantage.</li></ul><p><strong>Compulsions.</strong> Faire un élevage de blattes, d&#x27;araignées ou de serpents.</p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Force des personnes à se contorsionner au sol comme des serpents.</li><li>Invasion d'insectes rampants et de serpents.</li><li>Contrôle des êtres rampants.</li><li>Voir qui rampe devant ses supérieurs.</li><li>Découvrir un chantage.</li></ul><p><strong>Compulsions.</strong> Faire un élevage de blattes, d'araignées ou de serpents.</p>",
     "source": "Entre ciel et terre, p. 284",
     "voie": "voie-de-dambala",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.fVIeiRnBn8ADVFE2",

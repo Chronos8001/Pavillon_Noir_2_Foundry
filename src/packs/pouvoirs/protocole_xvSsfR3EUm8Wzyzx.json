@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Comportement conforme au protocole fixé par le druide.</li><li>Modification de protocole.</li><li>Détermination du protocole à suivre lors d&#x27;une rencontre.</li></ul><p><strong>Compulsions.</strong> Apprendre le protocole d&#x27;une autre culture. Traquer toutes les erreurs de protocole commises lors d&#x27;une rencontre et les litiges résultants.</p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Comportement conforme au protocole fixé par le druide.</li><li>Modification de protocole.</li><li>Détermination du protocole à suivre lors d'une rencontre.</li></ul><p><strong>Compulsions.</strong> Apprendre le protocole d'une autre culture. Traquer toutes les erreurs de protocole commises lors d'une rencontre et les litiges résultants.</p>",
     "source": "Entre ciel et terre, p. 248",
     "voie": "voie-du-druidisme",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.444Fft7a0LtvOMIS",

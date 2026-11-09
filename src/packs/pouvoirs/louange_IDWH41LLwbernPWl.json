@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Asseoir la réputation d&#x27;une personne en faisant son éloge public après qu&#x27;elle se soit bien comportée selon les canons de son groupe.</li></ul><p><strong>Compulsions.</strong> Pousser une personne à faire l&#x27;éloge d&#x27;une autre.</p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Asseoir la réputation d'une personne en faisant son éloge public après qu'elle se soit bien comportée selon les canons de son groupe.</li></ul><p><strong>Compulsions.</strong> Pousser une personne à faire l'éloge d'une autre.</p>",
     "source": "Entre ciel et terre, p. 249",
     "voie": "voie-du-druidisme",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.444Fft7a0LtvOMIS",

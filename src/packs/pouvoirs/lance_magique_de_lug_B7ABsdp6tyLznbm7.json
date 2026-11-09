@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Coup au but.</li><li>Vise la faille de l&#x27;armure ou de la tactique ennemie.</li><li>Ouvrir de part en part.</li><li>Brèche.</li><li>Assure la victoire à qui la manie.</li><li>Inutilité des armes à feu.</li></ul><p><strong>Compulsions.</strong> Combattre à la lance et ne viser que les mains et le visage. Laisser sciemment une brèche critique dans son fort/son navire/son armée.</p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Coup au but.</li><li>Vise la faille de l'armure ou de la tactique ennemie.</li><li>Ouvrir de part en part.</li><li>Brèche.</li><li>Assure la victoire à qui la manie.</li><li>Inutilité des armes à feu.</li></ul><p><strong>Compulsions.</strong> Combattre à la lance et ne viser que les mains et le visage. Laisser sciemment une brèche critique dans son fort/son navire/son armée.</p>",
     "source": "Entre ciel et terre, p. 253",
     "voie": "voie-du-druidisme",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.444Fft7a0LtvOMIS",

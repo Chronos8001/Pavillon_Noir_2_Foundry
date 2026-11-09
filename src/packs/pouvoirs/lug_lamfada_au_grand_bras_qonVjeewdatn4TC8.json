@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Être pris pour un artisan particulier.</li><li>Trouver un maître artisan.</li><li>Capacité à pratiquer une profession comme un professionnel.</li><li>Connaissances du métier.</li><li>Relations d&#x27;affaires.</li><li>Trouver un receleur.</li></ul><p><strong>Compulsions.</strong> S&#x27;essayer au métier de cinq artisans dans la même journée. Remplacer un artisan dans un moment essentiel.</p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Être pris pour un artisan particulier.</li><li>Trouver un maître artisan.</li><li>Capacité à pratiquer une profession comme un professionnel.</li><li>Connaissances du métier.</li><li>Relations d'affaires.</li><li>Trouver un receleur.</li></ul><p><strong>Compulsions.</strong> S'essayer au métier de cinq artisans dans la même journée. Remplacer un artisan dans un moment essentiel.</p>",
     "source": "Entre ciel et terre, p. 252",
     "voie": "voie-du-druidisme",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.444Fft7a0LtvOMIS",

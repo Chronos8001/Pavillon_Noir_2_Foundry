@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Soleil radieux.</li><li>La mer transporte délicatement les hommes qui y tombent sur le rivage.</li><li>Caresse des flammes.</li><li>Fissure de l&#x27;écorce terrestre.</li><li>Luxuriance de la végétation.</li></ul><p><strong>Compulsions.</strong> Sauter dans l&#x27;eau du haut d&#x27;une falaise. Se réchauffer à la douce chaleur d&#x27;un feu.</p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Soleil radieux.</li><li>La mer transporte délicatement les hommes qui y tombent sur le rivage.</li><li>Caresse des flammes.</li><li>Fissure de l'écorce terrestre.</li><li>Luxuriance de la végétation.</li></ul><p><strong>Compulsions.</strong> Sauter dans l'eau du haut d'une falaise. Se réchauffer à la douce chaleur d'un feu.</p>",
     "source": "Entre ciel et terre, p. 208",
     "voie": "voie-des-cinq-soleils",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.LIzof8tOOXvNP2kT",

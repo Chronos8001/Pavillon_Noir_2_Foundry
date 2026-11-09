@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Génère un refus catégorique de se salir.</li><li>Le sol se met à luire pour indiquer le chemin.</li><li>Fait flotter au-dessus du sol et nimbe de lumière.</li><li>Donne l&#x27;impression de marcher sur quelque chose de fragile au-dessus du vide.</li><li>Empêche de tomber dans des fosses.</li><li>Empêche de s&#x27;écarter des chemins reliant directement les clairières.</li></ul><p><strong>Compulsions.</strong> Repérer un piège physique.Aller d&#x27;un point à un autre dans la forêt sans quitter les chemins connus.</p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Génère un refus catégorique de se salir.</li><li>Le sol se met à luire pour indiquer le chemin.</li><li>Fait flotter au-dessus du sol et nimbe de lumière.</li><li>Donne l'impression de marcher sur quelque chose de fragile au-dessus du vide.</li><li>Empêche de tomber dans des fosses.</li><li>Empêche de s'écarter des chemins reliant directement les clairières.</li></ul><p><strong>Compulsions.</strong> Repérer un piège physique.Aller d'un point à un autre dans la forêt sans quitter les chemins connus.</p>",
     "source": "Entre ciel et terre, p. 188",
     "voie": "voie-des-xapiripe",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.uLmNntdGMAtLAIsE",

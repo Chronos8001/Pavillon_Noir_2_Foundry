@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Empêche une catégorie de choses ou de personnes d&#x27;entrer dans le lieu consacré.</li><li>Bannit la proie d&#x27;un territoire.</li><li>Période d&#x27;épreuve parmi les morts.</li><li>Destruction de zombie et répulsion de loup-garou.</li></ul><p><strong>Compulsions.</strong> Chasser définitivement un proche. Détruire un zombie.</p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Empêche une catégorie de choses ou de personnes d'entrer dans le lieu consacré.</li><li>Bannit la proie d'un territoire.</li><li>Période d'épreuve parmi les morts.</li><li>Destruction de zombie et répulsion de loup-garou.</li></ul><p><strong>Compulsions.</strong> Chasser définitivement un proche. Détruire un zombie.</p>",
     "source": "Entre ciel et terre, p. 294",
     "voie": "voie-des-guedes",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.BJZUi8OCwtnsr9Ow",

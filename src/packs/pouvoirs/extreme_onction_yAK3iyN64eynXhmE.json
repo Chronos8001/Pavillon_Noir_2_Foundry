@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Un mourant s&#x27;en va en paix au royaume de Dieu.</li><li>Accélère la mort d&#x27;un blessé ou malade.</li><li>Abrège des souffrances.</li></ul><p><strong>Compulsions.</strong> Transpercer le coeur d&#x27;un mort d&#x27;un pieu de bois. Mettre en terre quelqu&#x27;un qui n&#x27;est pas encore mort, et le déterrer avant qu&#x27;il meure.</p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Un mourant s'en va en paix au royaume de Dieu.</li><li>Accélère la mort d'un blessé ou malade.</li><li>Abrège des souffrances.</li></ul><p><strong>Compulsions.</strong> Transpercer le coeur d'un mort d'un pieu de bois. Mettre en terre quelqu'un qui n'est pas encore mort, et le déterrer avant qu'il meure.</p>",
     "source": "Entre ciel et terre, p. 209",
     "voie": "voie-de-dieu",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.SPlB5GslKnZdeWKG",

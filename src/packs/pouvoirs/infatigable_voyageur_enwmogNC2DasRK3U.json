@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Endurance du voyageur.</li><li>Redonner courage.</li><li>Moyen de transport adéquat.</li><li>Moyen de transport résistant.</li></ul><p><strong>Compulsions.</strong> Saboter un moyen de transport. Fournir un effort jusqu&#x27;à tomber d&#x27;épuisement.</p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Endurance du voyageur.</li><li>Redonner courage.</li><li>Moyen de transport adéquat.</li><li>Moyen de transport résistant.</li></ul><p><strong>Compulsions.</strong> Saboter un moyen de transport. Fournir un effort jusqu'à tomber d'épuisement.</p>",
     "source": "Entre ciel et terre, p. 277",
     "voie": "voie-d-agwe",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.6bwsVNHhFxnjtf9Q",

@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Soin d&#x27;une blessure.</li><li>Récupération des fonctions d&#x27;un organe.</li><li>Remodèle la silhouette et l&#x27;ossature.</li></ul><p><strong>Compulsions.</strong> Réduction d&#x27;une fracture.</p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Soin d'une blessure.</li><li>Récupération des fonctions d'un organe.</li><li>Remodèle la silhouette et l'ossature.</li></ul><p><strong>Compulsions.</strong> Réduction d'une fracture.</p>",
     "source": "Entre ciel et terre, p. 193",
     "voie": "voie-des-zemis",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.adV2aUWhmHXDCarX",

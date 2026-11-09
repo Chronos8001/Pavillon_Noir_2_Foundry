@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Force à accomplir une pénitence pour n&#x27;importe quel péché.</li><li>Pousse à la mortification.</li><li>Permet de se soustraire à un pouvoir ou à des séquelles par une pénitence.</li></ul><p><strong>Compulsions.</strong> S&#x27;enfoncer régulièrement des objets pointus dans la chair. Se flageller pour chaque mal produit par une personne proche.</p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Force à accomplir une pénitence pour n'importe quel péché.</li><li>Pousse à la mortification.</li><li>Permet de se soustraire à un pouvoir ou à des séquelles par une pénitence.</li></ul><p><strong>Compulsions.</strong> S'enfoncer régulièrement des objets pointus dans la chair. Se flageller pour chaque mal produit par une personne proche.</p>",
     "source": "Entre ciel et terre, p. 211",
     "voie": "voie-de-dieu",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.SPlB5GslKnZdeWKG",

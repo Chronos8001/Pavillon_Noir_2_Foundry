@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Affecte de traits inesthétiques d&#x27;animaux ou de végétaux (poils, plumes, feuilles).</li><li>Bourgeonnement de la peau.</li><li>Fait pousser des griffes, des lianes, des oreilles de lynx, des crocs, de l&#x27;écorce sur la peau.</li></ul><p><strong>Compulsions.</strong> Se camoufler avec de la boue et des branches. Se fixer des griffes au bout des doigts. Se fabriquer une peau d&#x27;écorce.</p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Affecte de traits inesthétiques d'animaux ou de végétaux (poils, plumes, feuilles).</li><li>Bourgeonnement de la peau.</li><li>Fait pousser des griffes, des lianes, des oreilles de lynx, des crocs, de l'écorce sur la peau.</li></ul><p><strong>Compulsions.</strong> Se camoufler avec de la boue et des branches. Se fixer des griffes au bout des doigts. Se fabriquer une peau d'écorce.</p>",
     "source": "Entre ciel et terre, p. 310",
     "voie": "voie-de-cousin-zaka",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.lP05NKFNMs90d9GB",

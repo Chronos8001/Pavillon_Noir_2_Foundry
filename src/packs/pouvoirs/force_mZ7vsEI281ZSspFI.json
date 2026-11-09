@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Donne une force surhumaine.</li><li>Donne (ou donne l&#x27;illusion d&#x27;) une force de caractère hors du commun.</li><li>Retire ses forces ou son caractère à l&#x27;adversaire.</li></ul><p><strong>Compulsions.</strong> Sauver quelqu&#x27;un par un tour de force. Briser l&#x27;esprit d&#x27;un adversaire.</p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Donne une force surhumaine.</li><li>Donne (ou donne l'illusion d') une force de caractère hors du commun.</li><li>Retire ses forces ou son caractère à l'adversaire.</li></ul><p><strong>Compulsions.</strong> Sauver quelqu'un par un tour de force. Briser l'esprit d'un adversaire.</p>",
     "source": "Entre ciel et terre, p. 173",
     "voie": "voie-d-icheiricou-pour-la-guerre",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.ua948TzRBv4MWuy4",

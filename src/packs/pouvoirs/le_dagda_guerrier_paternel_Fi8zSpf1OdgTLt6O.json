@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Effets de l&#x27;âge sur un combattant d&#x27;âge mur.</li><li>Expérience au combat.</li><li>Tactique et défense contre les tactiques.</li><li>Protection par un allié.</li><li>Parrainage d&#x27;un allié plus jeune ou de la part d&#x27;un allié plus âgé.</li><li>L&#x27;ennemi trouve chez vous des traits de son père.</li></ul><p><strong>Compulsions.</strong> Protéger un plus jeune que soi durant un combat. Mimer les mouvements de la personne qu&#x27;on affronte.</p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Effets de l'âge sur un combattant d'âge mur.</li><li>Expérience au combat.</li><li>Tactique et défense contre les tactiques.</li><li>Protection par un allié.</li><li>Parrainage d'un allié plus jeune ou de la part d'un allié plus âgé.</li><li>L'ennemi trouve chez vous des traits de son père.</li></ul><p><strong>Compulsions.</strong> Protéger un plus jeune que soi durant un combat. Mimer les mouvements de la personne qu'on affronte.</p>",
     "source": "Entre ciel et terre, p. 249",
     "voie": "voie-du-druidisme",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.444Fft7a0LtvOMIS",

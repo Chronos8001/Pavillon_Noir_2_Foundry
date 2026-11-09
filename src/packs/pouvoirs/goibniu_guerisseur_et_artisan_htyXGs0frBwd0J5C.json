@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Soin des maladies.</li><li>Extraction des poisons.</li><li>Habileté à fabriquer n&#x27;importe quel objet.</li><li>Capacité à refaire deux objets à l&#x27;identique.</li></ul><p><strong>Compulsions.</strong> Cautériser une de ses plaies. Fabriquer deux objets élaborés et identiques à un détail près.</p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Soin des maladies.</li><li>Extraction des poisons.</li><li>Habileté à fabriquer n'importe quel objet.</li><li>Capacité à refaire deux objets à l'identique.</li></ul><p><strong>Compulsions.</strong> Cautériser une de ses plaies. Fabriquer deux objets élaborés et identiques à un détail près.</p>",
     "source": "Entre ciel et terre, p. 251",
     "voie": "voie-du-druidisme",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.444Fft7a0LtvOMIS",

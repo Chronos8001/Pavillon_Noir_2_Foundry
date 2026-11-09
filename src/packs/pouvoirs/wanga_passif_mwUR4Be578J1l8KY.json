@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Comment créer un wanga.</li><li>Comment utiliser un wanga.</li></ul><p><strong>Compulsions.</strong> Donner un wanga à un non-prêtre. Utiliser une arme dangereuse que l&#x27;on n&#x27;a jamais maniée, sans requérir l&#x27;aide de personne.</p><p><em>Règles particulières : voir Entre ciel et terre, p. 299.</em></p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Comment créer un wanga.</li><li>Comment utiliser un wanga.</li></ul><p><strong>Compulsions.</strong> Donner un wanga à un non-prêtre. Utiliser une arme dangereuse que l'on n'a jamais maniée, sans requérir l'aide de personne.</p><p><em>Règles particulières : voir Entre ciel et terre, p. 299.</em></p>",
     "source": "Entre ciel et terre, p. 299",
     "voie": "voie-de-papa-legba",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.cLAnYvfRTW6M1YmZ",

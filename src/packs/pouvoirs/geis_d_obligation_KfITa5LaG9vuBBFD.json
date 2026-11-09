@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Cette incantation magique permet de donner une obligation à une personne. Cette obligation ne doit pas être profondément immorale et ne doit pas être un suicide ou un meurtre.</li><li>Obligation de réaliser une tâche précise.</li><li>Obligation de se comporter d&#x27;une certaine manière.</li><li>Obligation de dire quelque chose de précis.</li><li>Obligation de se rendre en un endroit donné.</li><li>Obligation de protéger quelqu&#x27;un.</li></ul><p><strong>Compulsions.</strong> Demander à quelqu&#x27;un que l&#x27;on ne connaît pas de vous donner n&#x27;importe quel ordre et s&#x27;y conformer.</p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Cette incantation magique permet de donner une obligation à une personne. Cette obligation ne doit pas être profondément immorale et ne doit pas être un suicide ou un meurtre.</li><li>Obligation de réaliser une tâche précise.</li><li>Obligation de se comporter d'une certaine manière.</li><li>Obligation de dire quelque chose de précis.</li><li>Obligation de se rendre en un endroit donné.</li><li>Obligation de protéger quelqu'un.</li></ul><p><strong>Compulsions.</strong> Demander à quelqu'un que l'on ne connaît pas de vous donner n'importe quel ordre et s'y conformer.</p>",
     "source": "Entre ciel et terre, p. 250",
     "voie": "voie-du-druidisme",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.444Fft7a0LtvOMIS",

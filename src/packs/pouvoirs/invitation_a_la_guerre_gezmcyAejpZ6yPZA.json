@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Donne envie d&#x27;en découdre.</li><li>Rassemble les guerriers.</li><li>Préparatifs guerriers.</li><li>Pousse à déclencher des hostilités.</li><li>Fait passer un propos emporté pour une déclaration de guerre.</li></ul><p><strong>Compulsions.</strong> Déclaration de guerre ou de bataille. Préparatifs d&#x27;expédition.</p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Donne envie d'en découdre.</li><li>Rassemble les guerriers.</li><li>Préparatifs guerriers.</li><li>Pousse à déclencher des hostilités.</li><li>Fait passer un propos emporté pour une déclaration de guerre.</li></ul><p><strong>Compulsions.</strong> Déclaration de guerre ou de bataille. Préparatifs d'expédition.</p>",
     "source": "Entre ciel et terre, p. 171",
     "voie": "voie-d-icheiricou-pour-la-guerre",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.ua948TzRBv4MWuy4",

@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Crée des tensions, des crises, au sein d&#x27;une famille.</li><li>Sépare les membres d&#x27;une famille.</li><li>Pousse des membres d&#x27;une même famille à s&#x27;entredéchirer, voire à s&#x27;entretuer.</li></ul><p><strong>Compulsions.</strong> Séparer une mère de ses petits.</p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Crée des tensions, des crises, au sein d'une famille.</li><li>Sépare les membres d'une famille.</li><li>Pousse des membres d'une même famille à s'entredéchirer, voire à s'entretuer.</li></ul><p><strong>Compulsions.</strong> Séparer une mère de ses petits.</p>",
     "source": "Entre ciel et terre, p. 205",
     "voie": "voie-des-cinq-soleils",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.LIzof8tOOXvNP2kT",

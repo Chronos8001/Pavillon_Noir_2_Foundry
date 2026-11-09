@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Donne des hallucinations.</li><li>Se fait passer pour une hallucination.</li><li>Crée des êtres semblables à soi, mais immatériels.</li><li>Fait perdre le goût à la vie.</li><li>Impose la sensation que la vie de la cible est sans intérêt, sans valeur.</li></ul><p><strong>Compulsions.</strong> Donner l&#x27;illusion d&#x27;être plusieurs. Pousser un groupe à se débarrasser d&#x27;un de ses membres.</p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Donne des hallucinations.</li><li>Se fait passer pour une hallucination.</li><li>Crée des êtres semblables à soi, mais immatériels.</li><li>Fait perdre le goût à la vie.</li><li>Impose la sensation que la vie de la cible est sans intérêt, sans valeur.</li></ul><p><strong>Compulsions.</strong> Donner l'illusion d'être plusieurs. Pousser un groupe à se débarrasser d'un de ses membres.</p>",
     "source": "Entre ciel et terre, p. 206",
     "voie": "voie-des-cinq-soleils",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.LIzof8tOOXvNP2kT",

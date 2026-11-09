@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Chasse les nuages plus loin en criant « Va-t&#x27;en ! ».</li><li>Retour du beau temps.</li><li>Déplacement d&#x27;une nappe de brouillard.</li><li>Dissolution du brouillard.</li><li>Chasse une nuée de moustiques ou d&#x27;oiseaux.</li></ul><p><strong>Compulsions.</strong> Enfumer un terrier pour en faire sortir l&#x27;animal qui l&#x27;habite. Sortir du brouillard. Chasser des nuées d&#x27;insectes avec une torche.</p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Chasse les nuages plus loin en criant « Va-t'en ! ».</li><li>Retour du beau temps.</li><li>Déplacement d'une nappe de brouillard.</li><li>Dissolution du brouillard.</li><li>Chasse une nuée de moustiques ou d'oiseaux.</li></ul><p><strong>Compulsions.</strong> Enfumer un terrier pour en faire sortir l'animal qui l'habite. Sortir du brouillard. Chasser des nuées d'insectes avec une torche.</p>",
     "source": "Entre ciel et terre, p. 177",
     "voie": "voie-d-icheiricou-pour-le-conseil",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.wiw3plsp6sATryBq",

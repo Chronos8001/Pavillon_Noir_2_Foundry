@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Imitation de cris d&#x27;animaux.</li><li>Incite les animaux à pousser des cris.</li><li>Reconnaître des animaux à leurs cris.</li><li>Suivre quelqu&#x27;un dans la nature en écoutant les cris des animaux.</li></ul><p><strong>Compulsions.</strong> Étudier les différents cris d&#x27;un animal (nourriture, agressivité, danger). Rester à l&#x27;affût des cris d&#x27;animaux.</p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Imitation de cris d'animaux.</li><li>Incite les animaux à pousser des cris.</li><li>Reconnaître des animaux à leurs cris.</li><li>Suivre quelqu'un dans la nature en écoutant les cris des animaux.</li></ul><p><strong>Compulsions.</strong> Étudier les différents cris d'un animal (nourriture, agressivité, danger). Rester à l'affût des cris d'animaux.</p>",
     "source": "Entre ciel et terre, p. 309",
     "voie": "voie-de-cousin-zaka",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.lP05NKFNMs90d9GB",

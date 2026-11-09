@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Trouver la parole la plus sage concernant une situation.</li><li>Apporter à quelqu&#x27;un le conseil qu&#x27;il lui faut pour résoudre ses problèmes.</li><li>Affuble une parole de l&#x27;apparence de la sagesse.</li><li>Rend sage.</li></ul><p><strong>Compulsions.</strong> Demander conseil à plus expérimenté que soi. Entendre des paroles sages de la bouche d&#x27;un sot.</p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Trouver la parole la plus sage concernant une situation.</li><li>Apporter à quelqu'un le conseil qu'il lui faut pour résoudre ses problèmes.</li><li>Affuble une parole de l'apparence de la sagesse.</li><li>Rend sage.</li></ul><p><strong>Compulsions.</strong> Demander conseil à plus expérimenté que soi. Entendre des paroles sages de la bouche d'un sot.</p>",
     "source": "Entre ciel et terre, p. 262",
     "voie": "voie-du-folklore",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.Iy4OYyIN7hI6KjNY",

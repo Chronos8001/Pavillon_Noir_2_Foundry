@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Bon juju ou mauvais juju ?</li><li>Mauvais juju !</li></ul><p><strong>Compulsions.</strong> Empêcher un homme de contribuer à une aventure alors qu&#x27;il pourrait aider. Accepter quelqu&#x27;un alors que tout indique qu&#x27;il s&#x27;agit d&#x27;un traître.</p><p><em>Règles particulières : voir Entre ciel et terre, p. 281.</em></p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Bon juju ou mauvais juju ?</li><li>Mauvais juju !</li></ul><p><strong>Compulsions.</strong> Empêcher un homme de contribuer à une aventure alors qu'il pourrait aider. Accepter quelqu'un alors que tout indique qu'il s'agit d'un traître.</p><p><em>Règles particulières : voir Entre ciel et terre, p. 281.</em></p>",
     "source": "Entre ciel et terre, p. 281",
     "voie": "voie-de-dambala",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.fVIeiRnBn8ADVFE2",

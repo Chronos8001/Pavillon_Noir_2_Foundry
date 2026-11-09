@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Sait comment se comporter au sein d&#x27;une culture inconnue.</li><li>Sait rattraper un viol des coutumes d&#x27;autrui.</li><li>Modifier les us et coutumes d&#x27;une personne.</li><li>Interprète des actions au travers des coutumes des acteurs.</li></ul><p><strong>Compulsions.</strong> S&#x27;imprégner d&#x27;une culture et d&#x27;un mode de vie alors inconnus. Assister à une anicroche due à un choc de cultures.</p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Sait comment se comporter au sein d'une culture inconnue.</li><li>Sait rattraper un viol des coutumes d'autrui.</li><li>Modifier les us et coutumes d'une personne.</li><li>Interprète des actions au travers des coutumes des acteurs.</li></ul><p><strong>Compulsions.</strong> S'imprégner d'une culture et d'un mode de vie alors inconnus. Assister à une anicroche due à un choc de cultures.</p>",
     "source": "Entre ciel et terre, p. 295",
     "voie": "voie-de-papa-legba",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.cLAnYvfRTW6M1YmZ",

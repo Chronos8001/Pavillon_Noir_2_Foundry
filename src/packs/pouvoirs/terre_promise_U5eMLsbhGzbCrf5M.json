@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Choisit et indique la terre que Dieu a réservée pour un groupe (en justifiant tout acte destiné à se l&#x27;approprier).</li><li>Assigne une longue quête en échange d&#x27;un territoire.</li><li>Donne la sensation d&#x27;arriver au bout de sa quête.</li><li>Rend un territoire paradisiaque.</li></ul><p><strong>Compulsions.</strong> Créer un petit coin de paradis. Donner à un groupe de personnes une terre déjà occupée.</p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Choisit et indique la terre que Dieu a réservée pour un groupe (en justifiant tout acte destiné à se l'approprier).</li><li>Assigne une longue quête en échange d'un territoire.</li><li>Donne la sensation d'arriver au bout de sa quête.</li><li>Rend un territoire paradisiaque.</li></ul><p><strong>Compulsions.</strong> Créer un petit coin de paradis. Donner à un groupe de personnes une terre déjà occupée.</p>",
     "source": "Entre ciel et terre, p. 213",
     "voie": "voie-de-dieu",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.SPlB5GslKnZdeWKG",

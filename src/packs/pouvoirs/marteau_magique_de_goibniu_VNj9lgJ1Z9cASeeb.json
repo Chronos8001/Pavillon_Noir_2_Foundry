@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Fabrication d&#x27;armes magiques. Le druide doit consacrer auparavant un marteau à Goibniu. Il lui faut alors une semaine à terre pour fabriquer une arme blanche magique. Il doit réussir un Test d&#x27;Artisanat (armurerie) (Adr). Chaque Succès donne définitivement une qualité d&#x27;armes exceptionnelles à l&#x27;arme.</li></ul><p><strong>Compulsions.</strong> Trouver une arme blanche parfaite (4 qualités d&#x27;arme exceptionnelle ou plus).</p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Fabrication d'armes magiques. Le druide doit consacrer auparavant un marteau à Goibniu. Il lui faut alors une semaine à terre pour fabriquer une arme blanche magique. Il doit réussir un Test d'Artisanat (armurerie) (Adr). Chaque Succès donne définitivement une qualité d'armes exceptionnelles à l'arme.</li></ul><p><strong>Compulsions.</strong> Trouver une arme blanche parfaite (4 qualités d'arme exceptionnelle ou plus).</p>",
     "source": "Entre ciel et terre, p. 254",
     "voie": "voie-du-druidisme",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.444Fft7a0LtvOMIS",

@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Devient un être indestructible fait d&#x27;eau, d&#x27;air, de pierre, de boue, de feu ou de lumière.</li><li>Contrôle le mouvement d&#x27;un autre être.</li></ul><p><strong>Compulsions.</strong> Faire tomber quelqu&#x27;un en utilisant son propre mouvement contre lui. Embraser tous ses vêtements sur soi.</p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Devient un être indestructible fait d'eau, d'air, de pierre, de boue, de feu ou de lumière.</li><li>Contrôle le mouvement d'un autre être.</li></ul><p><strong>Compulsions.</strong> Faire tomber quelqu'un en utilisant son propre mouvement contre lui. Embraser tous ses vêtements sur soi.</p>",
     "source": "Entre ciel et terre, p. 207",
     "voie": "voie-des-cinq-soleils",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.LIzof8tOOXvNP2kT",

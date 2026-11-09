@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Lumière solaire.</li><li>Aura aveuglante.</li><li>Intuition et invention.</li><li>Beauté, charme et grâce.</li><li>Don inné des relations humaines.</li></ul><p><strong>Compulsions.</strong> Faire l&#x27;inventaire de tous les secrets de son entourage. Faire face avec la lumière du soleil dans son dos à un ennemi ou à une bête sauvage.</p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Lumière solaire.</li><li>Aura aveuglante.</li><li>Intuition et invention.</li><li>Beauté, charme et grâce.</li><li>Don inné des relations humaines.</li></ul><p><strong>Compulsions.</strong> Faire l'inventaire de tous les secrets de son entourage. Faire face avec la lumière du soleil dans son dos à un ennemi ou à une bête sauvage.</p>",
     "source": "Entre ciel et terre, p. 249",
     "voie": "voie-du-druidisme",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.444Fft7a0LtvOMIS",

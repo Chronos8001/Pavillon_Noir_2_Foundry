@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Le mensonge devient visible.</li><li>Déclenche une réaction violente à l&#x27;égard du mensonge.</li><li>Peut voir par les yeux d&#x27;un menteur alors qu&#x27;il est en train de mentir.</li><li>Déforme la vision d&#x27;une personne.</li></ul><p><strong>Compulsions.</strong> Mettre le menteur face à son mensonge. Ingérer une substance hallucinogène.</p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Le mensonge devient visible.</li><li>Déclenche une réaction violente à l'égard du mensonge.</li><li>Peut voir par les yeux d'un menteur alors qu'il est en train de mentir.</li><li>Déforme la vision d'une personne.</li></ul><p><strong>Compulsions.</strong> Mettre le menteur face à son mensonge. Ingérer une substance hallucinogène.</p>",
     "source": "Entre ciel et terre, p. 191",
     "voie": "voie-des-zemis",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.adV2aUWhmHXDCarX",

@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Repère les traces de la magie.</li><li>Trouve ceux qui ont vu de la magie.</li><li>Voit les actes magiques d&#x27;une autre religion en un endroit donné dans un passé proche.</li><li>Repère les rites religieux d&#x27;une autre religion.</li></ul><p><strong>Compulsions.</strong> Persuader quelqu&#x27;un qu&#x27;il a été témoin des agissements de Satan. Faire stopper les rites d&#x27;une autre religion.</p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Repère les traces de la magie.</li><li>Trouve ceux qui ont vu de la magie.</li><li>Voit les actes magiques d'une autre religion en un endroit donné dans un passé proche.</li><li>Repère les rites religieux d'une autre religion.</li></ul><p><strong>Compulsions.</strong> Persuader quelqu'un qu'il a été témoin des agissements de Satan. Faire stopper les rites d'une autre religion.</p>",
     "source": "Entre ciel et terre, p. 209",
     "voie": "voie-de-dieu",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.SPlB5GslKnZdeWKG",

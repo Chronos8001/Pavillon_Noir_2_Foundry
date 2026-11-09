@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Donne des cauchemars atroces et récurrents, dont le sujet peut être choisi.</li><li>Guérir une personne de ses cauchemars.</li><li>Impose à sa victime la vision de la créature de ses pires cauchemars.</li></ul><p><strong>Compulsions.</strong> Dessiner l&#x27;objet d&#x27;un de ses cauchemars.</p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Donne des cauchemars atroces et récurrents, dont le sujet peut être choisi.</li><li>Guérir une personne de ses cauchemars.</li><li>Impose à sa victime la vision de la créature de ses pires cauchemars.</li></ul><p><strong>Compulsions.</strong> Dessiner l'objet d'un de ses cauchemars.</p>",
     "source": "Entre ciel et terre, p. 290",
     "voie": "voie-des-guedes",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.BJZUi8OCwtnsr9Ow",

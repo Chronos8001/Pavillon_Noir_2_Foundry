@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Accélération ou ralentissement d&#x27;un mouvement (cours d&#x27;eau, projectile, personne, etc.).</li><li>Arrêt progressif d&#x27;un mouvement, jusqu&#x27;à l&#x27;immobilité.</li><li>Empêche ou génère des comportements immobilistes.</li><li>Crée un mouvement de masse.</li><li>Déviation d&#x27;un mouvement.</li></ul><p><strong>Compulsions.</strong> Stopper un mouvement continu et fait pour durer. Créer une avalanche de cailloux.</p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Accélération ou ralentissement d'un mouvement (cours d'eau, projectile, personne, etc.).</li><li>Arrêt progressif d'un mouvement, jusqu'à l'immobilité.</li><li>Empêche ou génère des comportements immobilistes.</li><li>Crée un mouvement de masse.</li><li>Déviation d'un mouvement.</li></ul><p><strong>Compulsions.</strong> Stopper un mouvement continu et fait pour durer. Créer une avalanche de cailloux.</p>",
     "source": "Entre ciel et terre, p. 205",
     "voie": "voie-des-cinq-soleils",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.LIzof8tOOXvNP2kT",

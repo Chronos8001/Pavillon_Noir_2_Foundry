@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Repère les hauts-fonds.</li><li>Prévoit l&#x27;apparition de voiles ennemies.</li><li>Heurt avec une baleine ou un cachalot.</li><li>Donne l&#x27;apparence d&#x27;un pavillon noir à un pavillon.</li></ul><p><strong>Compulsions.</strong> Repérer des hauts-fonds. Échapper à un ennemi sur mer.</p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Repère les hauts-fonds.</li><li>Prévoit l'apparition de voiles ennemies.</li><li>Heurt avec une baleine ou un cachalot.</li><li>Donne l'apparence d'un pavillon noir à un pavillon.</li></ul><p><strong>Compulsions.</strong> Repérer des hauts-fonds. Échapper à un ennemi sur mer.</p>",
     "source": "Entre ciel et terre, p. 176",
     "voie": "voie-d-icheiricou-pour-le-conseil",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.wiw3plsp6sATryBq",

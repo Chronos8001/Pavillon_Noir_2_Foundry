@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Ne rien oublier de ce qu&#x27;on emporte habituellement.</li><li>Prédiction d&#x27;importance d&#x27;un objet inhabituel.</li><li>Faire oublier à un ennemi un élément de préparatif.</li></ul><p><strong>Compulsions.</strong> Négliger délibérément d&#x27;emporter un objet d&#x27;importance.</p><p><em>Règles particulières : voir Entre ciel et terre, p. 276.</em></p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Ne rien oublier de ce qu'on emporte habituellement.</li><li>Prédiction d'importance d'un objet inhabituel.</li><li>Faire oublier à un ennemi un élément de préparatif.</li></ul><p><strong>Compulsions.</strong> Négliger délibérément d'emporter un objet d'importance.</p><p><em>Règles particulières : voir Entre ciel et terre, p. 276.</em></p>",
     "source": "Entre ciel et terre, p. 276",
     "voie": "voie-d-agwe",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.6bwsVNHhFxnjtf9Q",

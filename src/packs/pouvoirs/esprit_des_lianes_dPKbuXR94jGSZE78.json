@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Sait si une liane est robuste.</li><li>Demande à une liane de bloquer quelqu&#x27;un ou de lui attraper un membre.</li><li>Reptation d&#x27;une liane faisant penser à un serpent.</li><li>Déplacement de liane en liane.</li></ul><p><strong>Compulsions.</strong> Place un piège réalisé avec des lianes pour un homme. Saboter une corde.</p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Sait si une liane est robuste.</li><li>Demande à une liane de bloquer quelqu'un ou de lui attraper un membre.</li><li>Reptation d'une liane faisant penser à un serpent.</li><li>Déplacement de liane en liane.</li></ul><p><strong>Compulsions.</strong> Place un piège réalisé avec des lianes pour un homme. Saboter une corde.</p>",
     "source": "Entre ciel et terre, p. 186",
     "voie": "voie-des-xapiripe",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.uLmNntdGMAtLAIsE",

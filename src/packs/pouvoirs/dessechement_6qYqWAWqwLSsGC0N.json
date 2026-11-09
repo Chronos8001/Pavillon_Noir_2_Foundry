@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Fait sécher les vêtements.</li><li>Sèche de la nourriture pour la conserver.</li><li>Absorbe l&#x27;eau des êtres vivants et les fait mourir, à moins qu&#x27;ils soient plongés dans l&#x27;eau ou boivent au moins 2 litres d&#x27;eau par heure.</li><li>Destruction de toute émotion.</li><li>Transforme une région en désert.</li></ul><p><strong>Compulsions.</strong> Faire sécher des poissons. Faire sécher les cadavres de plusieurs personnes et les placer dans les postures d&#x27;une scène macabre de la vie quotidienne.</p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Fait sécher les vêtements.</li><li>Sèche de la nourriture pour la conserver.</li><li>Absorbe l'eau des êtres vivants et les fait mourir, à moins qu'ils soient plongés dans l'eau ou boivent au moins 2 litres d'eau par heure.</li><li>Destruction de toute émotion.</li><li>Transforme une région en désert.</li></ul><p><strong>Compulsions.</strong> Faire sécher des poissons. Faire sécher les cadavres de plusieurs personnes et les placer dans les postures d'une scène macabre de la vie quotidienne.</p>",
     "source": "Entre ciel et terre, p. 208",
     "voie": "voie-des-cinq-soleils",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.LIzof8tOOXvNP2kT",

@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Réconcilie des alliés naturels face à l&#x27;ennemi.</li><li>Crée des dissensions au sein d&#x27;un groupe soudé.</li><li>Jalousie, violence et trahison entre proches.</li><li>Force deux frères à se battre l&#x27;un contre l&#x27;autre.</li></ul><p><strong>Compulsions.</strong> Assassiner un compagnon. Pousser deux amis à s&#x27;entretuer.</p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Réconcilie des alliés naturels face à l'ennemi.</li><li>Crée des dissensions au sein d'un groupe soudé.</li><li>Jalousie, violence et trahison entre proches.</li><li>Force deux frères à se battre l'un contre l'autre.</li></ul><p><strong>Compulsions.</strong> Assassiner un compagnon. Pousser deux amis à s'entretuer.</p>",
     "source": "Entre ciel et terre, p. 174",
     "voie": "voie-d-icheiricou-pour-la-guerre",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.ua948TzRBv4MWuy4",

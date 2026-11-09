@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Prévisions météo.</li><li>Mise en garde sur les conditions climatiques.</li></ul><p><strong>Compulsions.</strong> Se promener sous la pluie. Attendre, patient et immobile, que le temps passe du beau temps à l&#x27;orage, ou inversement.</p><p><em>Règles particulières : voir Entre ciel et terre, p. 276.</em></p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Prévisions météo.</li><li>Mise en garde sur les conditions climatiques.</li></ul><p><strong>Compulsions.</strong> Se promener sous la pluie. Attendre, patient et immobile, que le temps passe du beau temps à l'orage, ou inversement.</p><p><em>Règles particulières : voir Entre ciel et terre, p. 276.</em></p>",
     "source": "Entre ciel et terre, p. 276",
     "voie": "voie-d-agwe",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.6bwsVNHhFxnjtf9Q",

@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Enflure, fièvre, puis peste s&#x27;emparent du fautif, jusqu&#x27;à ce V : Voies et pouvoirs que mort s&#x27;ensuive ou que la victime se repente.</li></ul><p><strong>Compulsions.</strong> Déroger à six commandements de Dieu sans rien en retirer.</p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Enflure, fièvre, puis peste s'emparent du fautif, jusqu'à ce V : Voies et pouvoirs que mort s'ensuive ou que la victime se repente.</li></ul><p><strong>Compulsions.</strong> Déroger à six commandements de Dieu sans rien en retirer.</p>",
     "source": "Entre ciel et terre, p. 213",
     "voie": "voie-de-dieu",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.SPlB5GslKnZdeWKG",

@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Empoisonne une arme ou une personne.</li><li>Neutralise un poison.</li><li>Crée un poison.</li><li>Révèle comment réaliser un poison.</li><li>Reconnaît la malveillance dans les propos.</li><li>Sait qui créera des dissensions au sein du groupe.</li></ul><p><strong>Compulsions.</strong> Tuer un ennemi avec du poison de combat (latex de mancenillier). Extraire du poison avec de l&#x27;herbe à flèche.</p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Empoisonne une arme ou une personne.</li><li>Neutralise un poison.</li><li>Crée un poison.</li><li>Révèle comment réaliser un poison.</li><li>Reconnaît la malveillance dans les propos.</li><li>Sait qui créera des dissensions au sein du groupe.</li></ul><p><strong>Compulsions.</strong> Tuer un ennemi avec du poison de combat (latex de mancenillier). Extraire du poison avec de l'herbe à flèche.</p>",
     "source": "Entre ciel et terre, p. 173",
     "voie": "voie-d-icheiricou-pour-la-guerre",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.ua948TzRBv4MWuy4",

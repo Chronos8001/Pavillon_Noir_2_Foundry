@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Chevelure de serpents.</li><li>Transformer un membre en queue ou en corps et tête de serpent.</li><li>Coller un serpent sur son corps et le contrôler comme un membre.</li><li>Transformer des objets allongés en serpents.</li><li>Transformer un serpent en bâton. Il reprendra sa forme en étant frappé sur le sol.</li></ul><p><strong>Compulsions.</strong> Danser avec un serpent venimeux sans lui tenir la tête. Mordre un homme avec un serpent sculpté dans un bâton de façon à ce qu&#x27;il se croit infecté.</p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Chevelure de serpents.</li><li>Transformer un membre en queue ou en corps et tête de serpent.</li><li>Coller un serpent sur son corps et le contrôler comme un membre.</li><li>Transformer des objets allongés en serpents.</li><li>Transformer un serpent en bâton. Il reprendra sa forme en étant frappé sur le sol.</li></ul><p><strong>Compulsions.</strong> Danser avec un serpent venimeux sans lui tenir la tête. Mordre un homme avec un serpent sculpté dans un bâton de façon à ce qu'il se croit infecté.</p>",
     "source": "Entre ciel et terre, p. 284",
     "voie": "voie-de-dambala",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.fVIeiRnBn8ADVFE2",

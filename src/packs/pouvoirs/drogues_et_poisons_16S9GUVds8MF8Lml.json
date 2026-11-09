@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Sait concocter une drogue ou un poison ayant un effet particulier.</li><li>Inocule une drogue ou un poison dans de la nourriture.</li><li>Détecte un poison ou une drogue.</li><li>Trouve l&#x27;antidote à un poison ou une drogue.</li><li>Aggrave ou altère les effets d&#x27;un poison ou d&#x27;une drogue.</li><li>Donne toutes les apparences de l&#x27;empoisonnement.</li></ul><p><strong>Compulsions.</strong> Ingérer une drogue non létale. Empoiner quelqu&#x27;un sans le tuer.</p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Sait concocter une drogue ou un poison ayant un effet particulier.</li><li>Inocule une drogue ou un poison dans de la nourriture.</li><li>Détecte un poison ou une drogue.</li><li>Trouve l'antidote à un poison ou une drogue.</li><li>Aggrave ou altère les effets d'un poison ou d'une drogue.</li><li>Donne toutes les apparences de l'empoisonnement.</li></ul><p><strong>Compulsions.</strong> Ingérer une drogue non létale. Empoiner quelqu'un sans le tuer.</p>",
     "source": "Entre ciel et terre, p. 263",
     "voie": "voie-du-folklore",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.Iy4OYyIN7hI6KjNY",

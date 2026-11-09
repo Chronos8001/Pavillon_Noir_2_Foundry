@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Séduit.</li><li>Initie au chamanisme.</li><li>Respire sous l&#x27;eau.</li><li>Crée un attrait irrépressible pour les étendues d&#x27;eau et les rivières.</li><li>Génère du respect pour le beau-père (le père des sirènes est le monstre Tëpërësiki).</li></ul><p><strong>Compulsions.</strong> Profiter d&#x27;un coucher de soleil près d&#x27;un lac. Montrer des marques de respect à son beau-père ou à son gendre (si on en a, sinon, choisir l&#x27;autre compulsion).</p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Séduit.</li><li>Initie au chamanisme.</li><li>Respire sous l'eau.</li><li>Crée un attrait irrépressible pour les étendues d'eau et les rivières.</li><li>Génère du respect pour le beau-père (le père des sirènes est le monstre Tëpërësiki).</li></ul><p><strong>Compulsions.</strong> Profiter d'un coucher de soleil près d'un lac. Montrer des marques de respect à son beau-père ou à son gendre (si on en a, sinon, choisir l'autre compulsion).</p>",
     "source": "Entre ciel et terre, p. 187",
     "voie": "voie-des-xapiripe",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.uLmNntdGMAtLAIsE",

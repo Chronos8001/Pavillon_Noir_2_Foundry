@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Fait croire à tout le monde qu&#x27;un objet est mythique.</li><li>Conf ère à un objet tous les pouvoirs d&#x27;un objet mythique disparu (la chimère souffre de l&#x27;incrédulité comme une fée).</li><li>Donne une hallucination visuelle.</li><li>Manipule les rêves d&#x27;autrui.</li></ul><p><strong>Compulsions.</strong> Faire croire qu&#x27;un objet a appartenu à un de célèbre. Trouver un objet célèbre.</p><p><em>Règles particulières : voir Entre ciel et terre, p. 264.</em></p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Fait croire à tout le monde qu'un objet est mythique.</li><li>Conf ère à un objet tous les pouvoirs d'un objet mythique disparu (la chimère souffre de l'incrédulité comme une fée).</li><li>Donne une hallucination visuelle.</li><li>Manipule les rêves d'autrui.</li></ul><p><strong>Compulsions.</strong> Faire croire qu'un objet a appartenu à un de célèbre. Trouver un objet célèbre.</p><p><em>Règles particulières : voir Entre ciel et terre, p. 264.</em></p>",
     "source": "Entre ciel et terre, p. 264",
     "voie": "voie-du-folklore",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.Iy4OYyIN7hI6KjNY",

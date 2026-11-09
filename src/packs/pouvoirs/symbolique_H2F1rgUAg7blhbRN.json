@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Capte toute la symbolique d&#x27;un acte.</li><li>Fait passer un acte profane pour symbolique.</li><li>Explique une symbolique inexistante.</li><li>Compréhension de symboles inconnus.</li><li>Charge un acte d&#x27;une symbolique forte, visible et compréhensible par tous, ou seulement par des amis ou des initiés.</li></ul><p><strong>Compulsions.</strong> Laisser un message cryptique à des amis. Tromper sur la symbolique d&#x27;un fait ou objet.</p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Capte toute la symbolique d'un acte.</li><li>Fait passer un acte profane pour symbolique.</li><li>Explique une symbolique inexistante.</li><li>Compréhension de symboles inconnus.</li><li>Charge un acte d'une symbolique forte, visible et compréhensible par tous, ou seulement par des amis ou des initiés.</li></ul><p><strong>Compulsions.</strong> Laisser un message cryptique à des amis. Tromper sur la symbolique d'un fait ou objet.</p>",
     "source": "Entre ciel et terre, p. 302",
     "voie": "voie-des-freres-marassa",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.g0bMhkfFArVT77cy",

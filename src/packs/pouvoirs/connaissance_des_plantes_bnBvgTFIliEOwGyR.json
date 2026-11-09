@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Reconnaît les vertus d&#x27;une plante.</li><li>Trouve une plante particulière.</li><li>Connaissance des vertus d&#x27;une plante.</li><li>Connaissance de la faune à partir de la flore.</li></ul><p><strong>Compulsions.</strong> Utilisation d&#x27;une plante inconnue. Étudier le comportement de nutrition d&#x27;un herbivore.</p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Reconnaît les vertus d'une plante.</li><li>Trouve une plante particulière.</li><li>Connaissance des vertus d'une plante.</li><li>Connaissance de la faune à partir de la flore.</li></ul><p><strong>Compulsions.</strong> Utilisation d'une plante inconnue. Étudier le comportement de nutrition d'un herbivore.</p>",
     "source": "Entre ciel et terre, p. 300",
     "voie": "voie-des-freres-marassa",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.g0bMhkfFArVT77cy",

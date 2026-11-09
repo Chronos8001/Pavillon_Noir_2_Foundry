@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Prédiction d&#x27;événements néfastes.</li><li>Démoralise un groupe quant à l&#x27;issue d&#x27;une action.</li><li>Donne des cauchemars à une personne tout en lui faisant croire qu&#x27;ils sont prophétiques.</li><li>Fait passer un événement sans importance pour un sombre présage.</li></ul><p><strong>Compulsions.</strong> Faire une prédiction funeste en un moment inadéquat. Faire une prédiction funeste et s&#x27;assurer qu&#x27;elle se réalise.</p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Prédiction d'événements néfastes.</li><li>Démoralise un groupe quant à l'issue d'une action.</li><li>Donne des cauchemars à une personne tout en lui faisant croire qu'ils sont prophétiques.</li><li>Fait passer un événement sans importance pour un sombre présage.</li></ul><p><strong>Compulsions.</strong> Faire une prédiction funeste en un moment inadéquat. Faire une prédiction funeste et s'assurer qu'elle se réalise.</p>",
     "source": "Entre ciel et terre, p. 178",
     "voie": "voie-d-icheiricou-pour-le-conseil",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.wiw3plsp6sATryBq",

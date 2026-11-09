@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Apparition du soleil de derrière les nuages pour aveugler l &#x27;ennemi.</li><li>Le soleil semble frapper plus fort.</li><li>Venue précoce de l&#x27;aube.</li><li>Aube ou crépuscule tardif.</li><li>Crépuscule lumineux.</li></ul><p><strong>Compulsions.</strong> Sacrifier un mouton en plein midi. Se baigner sans bouger toute une journée dans la lumière du soleil.</p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Apparition du soleil de derrière les nuages pour aveugler l 'ennemi.</li><li>Le soleil semble frapper plus fort.</li><li>Venue précoce de l'aube.</li><li>Aube ou crépuscule tardif.</li><li>Crépuscule lumineux.</li></ul><p><strong>Compulsions.</strong> Sacrifier un mouton en plein midi. Se baigner sans bouger toute une journée dans la lumière du soleil.</p>",
     "source": "Entre ciel et terre, p. 248",
     "voie": "voie-du-druidisme",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.444Fft7a0LtvOMIS",

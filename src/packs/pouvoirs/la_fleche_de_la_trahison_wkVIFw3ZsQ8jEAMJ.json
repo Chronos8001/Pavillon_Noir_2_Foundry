@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Une flèche touchera le traître visé à coup sûr.</li><li>Une flèche indique la position d&#x27;un traître.</li><li>Une arme crée une dissension dans un groupe.</li><li>Prophétise qu&#x27;une personne mourra d&#x27;une flèche ou qu&#x27;une flèche permettra d&#x27;accomplir un acte de trahison.</li><li>Permet de retrouver le traître à partir d&#x27;une de ses armes.</li></ul><p><strong>Compulsions.</strong> Tirer une flèche dans le dos d&#x27;un ami. Empoisonner une flèche.</p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Une flèche touchera le traître visé à coup sûr.</li><li>Une flèche indique la position d'un traître.</li><li>Une arme crée une dissension dans un groupe.</li><li>Prophétise qu'une personne mourra d'une flèche ou qu'une flèche permettra d'accomplir un acte de trahison.</li><li>Permet de retrouver le traître à partir d'une de ses armes.</li></ul><p><strong>Compulsions.</strong> Tirer une flèche dans le dos d'un ami. Empoisonner une flèche.</p>",
     "source": "Entre ciel et terre, p. 177",
     "voie": "voie-d-icheiricou-pour-le-conseil",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.wiw3plsp6sATryBq",

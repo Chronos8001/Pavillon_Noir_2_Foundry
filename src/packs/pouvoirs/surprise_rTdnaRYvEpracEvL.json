@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Ne peut être pris par surprise.</li><li>Prend un adversaire par surprise.</li><li>Crée un court moment de doute et de désarroi.</li></ul><p><strong>Compulsions.</strong> Créer une surprise complète. S&#x27;avancer en terrain inconnu sans se renseigner.</p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Ne peut être pris par surprise.</li><li>Prend un adversaire par surprise.</li><li>Crée un court moment de doute et de désarroi.</li></ul><p><strong>Compulsions.</strong> Créer une surprise complète. S'avancer en terrain inconnu sans se renseigner.</p>",
     "source": "Entre ciel et terre, p. 172",
     "voie": "voie-d-icheiricou-pour-la-guerre",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.ua948TzRBv4MWuy4",

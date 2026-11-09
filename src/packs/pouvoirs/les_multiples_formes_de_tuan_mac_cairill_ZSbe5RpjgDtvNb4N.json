@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Transformation en n&#x27;importe quel animal.</li></ul><p><strong>Compulsions.</strong> Se faire passer pour un animal pour survivre à une situation dangereuse.</p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Transformation en n'importe quel animal.</li></ul><p><strong>Compulsions.</strong> Se faire passer pour un animal pour survivre à une situation dangereuse.</p>",
     "source": "Entre ciel et terre, p. 253",
     "voie": "voie-du-druidisme",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.444Fft7a0LtvOMIS",

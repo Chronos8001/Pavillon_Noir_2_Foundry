@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Entrer dans la pierre.</li><li>Entrer dans un arbre.</li><li>Incorporer de la pierre dans du bois.</li><li>Incorporer du bois dans de la pierre (mouiller le bois fait éclater la pierre).</li><li>Rend une plante capable de pousser à partir de la pierre.</li></ul><p><strong>Compulsions.</strong> Trouver un arbre qu&#x27;on ne pourrait séparer d&#x27;une roche sans en casser des branches. Faire er un arbuste tout autour d&#x27;un rocher.</p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Entrer dans la pierre.</li><li>Entrer dans un arbre.</li><li>Incorporer de la pierre dans du bois.</li><li>Incorporer du bois dans de la pierre (mouiller le bois fait éclater la pierre).</li><li>Rend une plante capable de pousser à partir de la pierre.</li></ul><p><strong>Compulsions.</strong> Trouver un arbre qu'on ne pourrait séparer d'une roche sans en casser des branches. Faire er un arbuste tout autour d'un rocher.</p>",
     "source": "Entre ciel et terre, p. 310",
     "voie": "voie-de-cousin-zaka",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.lP05NKFNMs90d9GB",

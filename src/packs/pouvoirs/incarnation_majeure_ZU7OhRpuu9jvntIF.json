@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Métamorphose en une Fée Majeure. Autres religions et traditions européennes on est métamorphosé (paramètres identiques à ceux du pouvoir de la fée).</li></ul><p><strong>Compulsions.</strong> Se comporter comme une fée devant un prêtre d&#x27;une autre religion.</p><p><em>Règles particulières : voir Entre ciel et terre, p. 268.</em></p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Métamorphose en une Fée Majeure. Autres religions et traditions européennes on est métamorphosé (paramètres identiques à ceux du pouvoir de la fée).</li></ul><p><strong>Compulsions.</strong> Se comporter comme une fée devant un prêtre d'une autre religion.</p><p><em>Règles particulières : voir Entre ciel et terre, p. 268.</em></p>",
     "source": "Entre ciel et terre, p. 268",
     "voie": "voie-du-folklore",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.Iy4OYyIN7hI6KjNY",

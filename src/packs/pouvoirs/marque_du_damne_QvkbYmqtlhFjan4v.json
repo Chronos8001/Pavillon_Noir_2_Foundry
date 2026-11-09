@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Voit une marque indiquant celui qui a tué ou va tuer.</li><li>Marque un assassin ou quelqu&#x27;un qui a commis des horreurs de façon à ce que chacun sache ce qu&#x27;il est.</li><li>En touchant un mort, marque celui qui l&#x27;a tué pour ensuite le retrouver.</li><li>Attire la colère des lwas sur une personne disposant d&#x27;une marque de naissance.</li></ul><p><strong>Compulsions.</strong> Retrouver un meurtrier. Se marquer la peau au fer rouge.</p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Voit une marque indiquant celui qui a tué ou va tuer.</li><li>Marque un assassin ou quelqu'un qui a commis des horreurs de façon à ce que chacun sache ce qu'il est.</li><li>En touchant un mort, marque celui qui l'a tué pour ensuite le retrouver.</li><li>Attire la colère des lwas sur une personne disposant d'une marque de naissance.</li></ul><p><strong>Compulsions.</strong> Retrouver un meurtrier. Se marquer la peau au fer rouge.</p>",
     "source": "Entre ciel et terre, p. 292",
     "voie": "voie-des-guedes",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.BJZUi8OCwtnsr9Ow",

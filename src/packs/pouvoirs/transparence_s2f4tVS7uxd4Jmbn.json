@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Rend une surface transparente.</li><li>Rend une personne quasi invisible à d&#x27;autres yeux que les siens propres (on la remarque si elle se fait remarquer).</li><li>Rend une personne insignifiante.</li><li>Force à jouer cartes sur table.</li><li>Donne une apparence de transparence de fonctionnement à un gouvernement, à des comptes, etc.</li></ul><p><strong>Compulsions.</strong> Imprégner un tissu fin d&#x27;huile. Créer un tissu comprenant des trous (dentelle, etc.).</p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Rend une surface transparente.</li><li>Rend une personne quasi invisible à d'autres yeux que les siens propres (on la remarque si elle se fait remarquer).</li><li>Rend une personne insignifiante.</li><li>Force à jouer cartes sur table.</li><li>Donne une apparence de transparence de fonctionnement à un gouvernement, à des comptes, etc.</li></ul><p><strong>Compulsions.</strong> Imprégner un tissu fin d'huile. Créer un tissu comprenant des trous (dentelle, etc.).</p>",
     "source": "Entre ciel et terre, p. 205",
     "voie": "voie-des-cinq-soleils",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.LIzof8tOOXvNP2kT",

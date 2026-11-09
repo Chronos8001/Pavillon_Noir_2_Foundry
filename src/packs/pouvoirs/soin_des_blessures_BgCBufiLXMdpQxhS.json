@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Soin d&#x27;une blessure Légère à Grave.</li><li>Réduction d&#x27;une blessure Critique, Coma ou Mortelle d&#x27;un niveau (une seule fois par blessure).</li><li>Donne l&#x27;illusion qu&#x27;une blessure est soignée.</li></ul><p><strong>Compulsions.</strong> Soigner un blessé pendant sa période d&#x27;inconscience sans se faire voir.</p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Soin d'une blessure Légère à Grave.</li><li>Réduction d'une blessure Critique, Coma ou Mortelle d'un niveau (une seule fois par blessure).</li><li>Donne l'illusion qu'une blessure est soignée.</li></ul><p><strong>Compulsions.</strong> Soigner un blessé pendant sa période d'inconscience sans se faire voir.</p>",
     "source": "Entre ciel et terre, p. 263",
     "voie": "voie-du-folklore",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.Iy4OYyIN7hI6KjNY",

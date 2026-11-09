@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Voit tout ce qui se passe dans une forêt.</li><li>Fait pousser ou dépérir une forêt.</li><li>Fait sortir certains animaux de la forêt.</li><li>Donne à tous les habitants de la forêt l&#x27;impression qu&#x27;il s&#x27;agit du territoire légitime du prêtre.</li><li>Donne un léger contrôle de tous les habitants et constituants d&#x27;une forêt.</li></ul><p><strong>Compulsions.</strong> Se perdre dans la forêt, seul ou en petit groupe. Repérer des groupes d&#x27;oiseaux dans la forêt ainsi que leurs cris.</p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Voit tout ce qui se passe dans une forêt.</li><li>Fait pousser ou dépérir une forêt.</li><li>Fait sortir certains animaux de la forêt.</li><li>Donne à tous les habitants de la forêt l'impression qu'il s'agit du territoire légitime du prêtre.</li><li>Donne un léger contrôle de tous les habitants et constituants d'une forêt.</li></ul><p><strong>Compulsions.</strong> Se perdre dans la forêt, seul ou en petit groupe. Repérer des groupes d'oiseaux dans la forêt ainsi que leurs cris.</p>",
     "source": "Entre ciel et terre, p. 206",
     "voie": "voie-des-cinq-soleils",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.LIzof8tOOXvNP2kT",

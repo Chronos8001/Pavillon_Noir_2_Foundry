@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Force à suivre un commandement.</li><li>Pousse celui qui a transgressé un commandement à se racheter.</li></ul><p><strong>Compulsions.</strong> Punir sévèrement celui qui outrepasse l&#x27;un des commandements. S&#x27;assurer qu&#x27;un pécheur oeuvre pour se racheter.</p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Force à suivre un commandement.</li><li>Pousse celui qui a transgressé un commandement à se racheter.</li></ul><p><strong>Compulsions.</strong> Punir sévèrement celui qui outrepasse l'un des commandements. S'assurer qu'un pécheur oeuvre pour se racheter.</p>",
     "source": "Entre ciel et terre, p. 210",
     "voie": "voie-de-dieu",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.SPlB5GslKnZdeWKG",

@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Venue de la pluie.</li><li>Arrêt de la pluie.</li><li>Pluie torrentielle.</li><li>Coulées de boue.</li></ul><p><strong>Compulsions.</strong> Ne boire que de l&#x27;eau de pluie. Patauger dans la boue.</p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Venue de la pluie.</li><li>Arrêt de la pluie.</li><li>Pluie torrentielle.</li><li>Coulées de boue.</li></ul><p><strong>Compulsions.</strong> Ne boire que de l'eau de pluie. Patauger dans la boue.</p>",
     "source": "Entre ciel et terre, p. 309",
     "voie": "voie-de-cousin-zaka",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.lP05NKFNMs90d9GB",

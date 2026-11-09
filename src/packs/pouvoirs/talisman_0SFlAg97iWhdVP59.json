@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Talisman de chance.</li><li>Talisman de succès.</li><li>Talisman de protection contre le mauvais oeil.</li><li>Talisman de force virile.</li><li>Talisman de courage.</li><li>Talisman de santé.</li></ul><p><strong>Compulsions.</strong> Dessiner un vévé avant qu&#x27;un événement en rapport avec le lwa se manifeste. S&#x27;attacher à un objet sans valeur.</p><p><em>Règles particulières : voir Entre ciel et terre, p. 291.</em></p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Talisman de chance.</li><li>Talisman de succès.</li><li>Talisman de protection contre le mauvais oeil.</li><li>Talisman de force virile.</li><li>Talisman de courage.</li><li>Talisman de santé.</li></ul><p><strong>Compulsions.</strong> Dessiner un vévé avant qu'un événement en rapport avec le lwa se manifeste. S'attacher à un objet sans valeur.</p><p><em>Règles particulières : voir Entre ciel et terre, p. 291.</em></p>",
     "source": "Entre ciel et terre, p. 291",
     "voie": "voie-des-guedes",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.BJZUi8OCwtnsr9Ow",

@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Prédit de souffrir par son instrument de souffrance.</li><li>Calme les ardeurs guerrières.</li><li>Mort rapide par les armes pour un combattant.</li></ul><p><strong>Compulsions.</strong> Tuer quelqu&#x27;un. Brandir une épée en étant entouré d&#x27;ennemis.</p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Prédit de souffrir par son instrument de souffrance.</li><li>Calme les ardeurs guerrières.</li><li>Mort rapide par les armes pour un combattant.</li></ul><p><strong>Compulsions.</strong> Tuer quelqu'un. Brandir une épée en étant entouré d'ennemis.</p>",
     "source": "Entre ciel et terre, p. 211",
     "voie": "voie-de-dieu",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.SPlB5GslKnZdeWKG",

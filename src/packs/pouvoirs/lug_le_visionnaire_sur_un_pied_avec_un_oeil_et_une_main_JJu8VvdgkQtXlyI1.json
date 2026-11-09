@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Prononçant une phrase de poésie, le druide lui confère un caractère à la fois prophétique et cryptique.</li><li>Prophétie sur le futur d&#x27;une personne.</li><li>Prophétie sur l&#x27;arrivée d&#x27;un événement.</li><li>Prophétie sur la conduite d&#x27;une rencontre.</li></ul><p><strong>Compulsions.</strong> Combattre avec un oeil fermé, à cloche-pied et une main dans le dos. Amputer alors que ce n&#x27;était pas nécessaire.</p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Prononçant une phrase de poésie, le druide lui confère un caractère à la fois prophétique et cryptique.</li><li>Prophétie sur le futur d'une personne.</li><li>Prophétie sur l'arrivée d'un événement.</li><li>Prophétie sur la conduite d'une rencontre.</li></ul><p><strong>Compulsions.</strong> Combattre avec un oeil fermé, à cloche-pied et une main dans le dos. Amputer alors que ce n'était pas nécessaire.</p>",
     "source": "Entre ciel et terre, p. 251",
     "voie": "voie-du-druidisme",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.444Fft7a0LtvOMIS",

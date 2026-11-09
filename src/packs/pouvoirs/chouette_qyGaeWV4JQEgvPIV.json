@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Porte une terrible malédiction sur qui tuera une chouette, l&#x27;animal d&#x27;Ichéiricou.</li><li>Métamorphose en chouette.</li><li>Ouïe extrêmement fine, perception des vibrations.</li><li>Vue nocturne.</li><li>Chouette de compagnie.</li><li>Communiquer avec une chouette ou la faire parler d&#x27;une voix rauque.</li></ul><p><strong>Compulsions.</strong> Prendre soin d&#x27;une chouette ou la sauver d&#x27;un danger. Apprivoiser un rapace.</p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Porte une terrible malédiction sur qui tuera une chouette, l'animal d'Ichéiricou.</li><li>Métamorphose en chouette.</li><li>Ouïe extrêmement fine, perception des vibrations.</li><li>Vue nocturne.</li><li>Chouette de compagnie.</li><li>Communiquer avec une chouette ou la faire parler d'une voix rauque.</li></ul><p><strong>Compulsions.</strong> Prendre soin d'une chouette ou la sauver d'un danger. Apprivoiser un rapace.</p>",
     "source": "Entre ciel et terre, p. 174",
     "voie": "voie-d-icheiricou-pour-la-guerre",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.ua948TzRBv4MWuy4",

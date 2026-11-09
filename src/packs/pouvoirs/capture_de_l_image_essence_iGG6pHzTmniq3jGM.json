@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Vol mystique de l&#x27;image-essence d&#x27;un ennemi.</li><li>Torture l&#x27;image-essence (rend malade et faible, ce qui affaiblit le village).</li><li>Envoie l&#x27;image-essence en pâture aux esprits cannibales (l&#x27;ennemi mourra à petit feu).</li></ul><p><strong>Compulsions.</strong> Faire semblant de kidnapper un enfant juste pour voir l&#x27;effet obtenu sur la mère.</p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Vol mystique de l'image-essence d'un ennemi.</li><li>Torture l'image-essence (rend malade et faible, ce qui affaiblit le village).</li><li>Envoie l'image-essence en pâture aux esprits cannibales (l'ennemi mourra à petit feu).</li></ul><p><strong>Compulsions.</strong> Faire semblant de kidnapper un enfant juste pour voir l'effet obtenu sur la mère.</p>",
     "source": "Entre ciel et terre, p. 188",
     "voie": "voie-des-xapiripe",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.uLmNntdGMAtLAIsE",

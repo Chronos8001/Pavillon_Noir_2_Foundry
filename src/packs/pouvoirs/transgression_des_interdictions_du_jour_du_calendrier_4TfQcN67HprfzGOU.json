@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Fait éprouver de violents remords pour une transgression des interdictions du jour du calendrier.</li><li>Fait transgresser une interdiction du jour du calendrier.</li><li>Fait ressentir une action comme une transgression d&#x27;une loi cosmique.</li><li>Peut transgresser sans ennui les interdictions du jour du calendrier.</li></ul><p><strong>Compulsions.</strong> Pousser quelqu&#x27;un à transgresser la loi. Obliger quelqu&#x27;un à réparer ses fautes.</p><p><em>Règles particulières : voir Entre ciel et terre, p. 200.</em></p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Fait éprouver de violents remords pour une transgression des interdictions du jour du calendrier.</li><li>Fait transgresser une interdiction du jour du calendrier.</li><li>Fait ressentir une action comme une transgression d'une loi cosmique.</li><li>Peut transgresser sans ennui les interdictions du jour du calendrier.</li></ul><p><strong>Compulsions.</strong> Pousser quelqu'un à transgresser la loi. Obliger quelqu'un à réparer ses fautes.</p><p><em>Règles particulières : voir Entre ciel et terre, p. 200.</em></p>",
     "source": "Entre ciel et terre, p. 200",
     "voie": "voie-du-calendrier",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.AFWMXMJdfCNP7hit",

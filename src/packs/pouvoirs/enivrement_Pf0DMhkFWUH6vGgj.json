@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Rend ivre avec peu d&#x27;alcool.</li><li>Tient particulièrement bien l&#x27;alcool.</li><li>Fait remonter les poissons à la surface d&#x27;une rivière.</li><li>Décuple les effets d&#x27;un parfum.</li></ul><p><strong>Compulsions.</strong> Prendre une bonne cuite. S&#x27;asperger de parfum.</p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Rend ivre avec peu d'alcool.</li><li>Tient particulièrement bien l'alcool.</li><li>Fait remonter les poissons à la surface d'une rivière.</li><li>Décuple les effets d'un parfum.</li></ul><p><strong>Compulsions.</strong> Prendre une bonne cuite. S'asperger de parfum.</p>",
     "source": "Entre ciel et terre, p. 309",
     "voie": "voie-de-cousin-zaka",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.lP05NKFNMs90d9GB",

@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Fait pourrir lentement un être vivant, ou bien rapidement de la nourriture ou de l&#x27;eau.</li><li>Donne la sensation irraisonnée de pourrir.</li><li>Arrête le pourrissement, notamment la gangrène.</li><li>Mesure un état de décomposition.</li></ul><p><strong>Compulsions.</strong> Garder sur soi de la viande jusqu&#x27;à ce qu&#x27;elle soit au dernier stade de la pourriture. Disséquer un membre gangrené.</p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Fait pourrir lentement un être vivant, ou bien rapidement de la nourriture ou de l'eau.</li><li>Donne la sensation irraisonnée de pourrir.</li><li>Arrête le pourrissement, notamment la gangrène.</li><li>Mesure un état de décomposition.</li></ul><p><strong>Compulsions.</strong> Garder sur soi de la viande jusqu'à ce qu'elle soit au dernier stade de la pourriture. Disséquer un membre gangrené.</p>",
     "source": "Entre ciel et terre, p. 293",
     "voie": "voie-des-guedes",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.BJZUi8OCwtnsr9Ow",

@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Rend conciliant.</li><li>Rend un matériau (ou une personne) plus mou.</li><li>Rend moins cassant.</li><li>Évide un matériau.</li></ul><p><strong>Compulsions.</strong> Faire cuire du caoutchouc. Obtenir la conciliation d&#x27;un homme particulièrement obtus.</p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Rend conciliant.</li><li>Rend un matériau (ou une personne) plus mou.</li><li>Rend moins cassant.</li><li>Évide un matériau.</li></ul><p><strong>Compulsions.</strong> Faire cuire du caoutchouc. Obtenir la conciliation d'un homme particulièrement obtus.</p>",
     "source": "Entre ciel et terre, p. 310",
     "voie": "voie-de-cousin-zaka",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.lP05NKFNMs90d9GB",

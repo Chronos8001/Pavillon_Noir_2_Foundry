@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Assure la survie et le retour d&#x27;une personne qui quitte le groupe.</li><li>Grave la venue d&#x27;une personne dans les mémoires.</li><li>Assure de retrouver un ennemi.</li></ul><p><strong>Compulsions.</strong> Suivre une personne qui part. Défier un ennemi qui fuit.</p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Assure la survie et le retour d'une personne qui quitte le groupe.</li><li>Grave la venue d'une personne dans les mémoires.</li><li>Assure de retrouver un ennemi.</li></ul><p><strong>Compulsions.</strong> Suivre une personne qui part. Défier un ennemi qui fuit.</p>",
     "source": "Entre ciel et terre, p. 179",
     "voie": "voie-d-icheiricou-pour-le-conseil",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.wiw3plsp6sATryBq",

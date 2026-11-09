@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Sait où se trouve un ami très proche et s&#x27;il est en danger.</li><li>Sacre une amitié pour qu&#x27;elle devienne éternelle.</li><li>Donne une sensation d&#x27;amitié forte et durable.</li></ul><p><strong>Compulsions.</strong> Trouver un compagnon digne de confiance. Faire croire à une personne en l&#x27;amitié d&#x27;une autre.</p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Sait où se trouve un ami très proche et s'il est en danger.</li><li>Sacre une amitié pour qu'elle devienne éternelle.</li><li>Donne une sensation d'amitié forte et durable.</li></ul><p><strong>Compulsions.</strong> Trouver un compagnon digne de confiance. Faire croire à une personne en l'amitié d'une autre.</p>",
     "source": "Entre ciel et terre, p. 176",
     "voie": "voie-d-icheiricou-pour-le-conseil",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.wiw3plsp6sATryBq",

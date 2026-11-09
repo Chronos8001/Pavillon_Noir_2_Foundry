@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Pousse un cri de guerre terrifiant.</li><li>Pousse un cri de ralliement.</li><li>Redonne du courage.</li><li>Fait passer un cri pour une manifestation agressive.</li><li>Rend un cri de guerre ridicule aux yeux de celui qui le pousse.</li></ul><p><strong>Compulsions.</strong> Terrifier un adulte par son cri. Blesser quelqu&#x27;un par surprise.</p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Pousse un cri de guerre terrifiant.</li><li>Pousse un cri de ralliement.</li><li>Redonne du courage.</li><li>Fait passer un cri pour une manifestation agressive.</li><li>Rend un cri de guerre ridicule aux yeux de celui qui le pousse.</li></ul><p><strong>Compulsions.</strong> Terrifier un adulte par son cri. Blesser quelqu'un par surprise.</p>",
     "source": "Entre ciel et terre, p. 305",
     "voie": "voie-d-ogou",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.nT1z9NA3nij69fC3",

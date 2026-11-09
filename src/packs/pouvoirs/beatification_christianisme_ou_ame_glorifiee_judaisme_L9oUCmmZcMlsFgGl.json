@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Transforme une personne pieuse en saint(e). Sa Foi passe à 3 et elle découvre les pouvoirs correspondants.</li><li>Rend totalement stupide (christianisme).</li><li>Fait éprouver un bonheur intense (christianisme).</li><li>Justifie tout acte au nom du Seigneur.</li><li>Pousse les fidèles aux plus grands sacrifices et aux plus grandes actions.</li><li>Maudit qui utilise le Seigneur à ses fins personnelles.</li></ul><p><strong>Compulsions.</strong> Punir quelqu&#x27;un qui affirme avoir commis des péchés au nom du Seigneur. Effectuer des sacrifices pour être digne du Seigneur.</p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Transforme une personne pieuse en saint(e). Sa Foi passe à 3 et elle découvre les pouvoirs correspondants.</li><li>Rend totalement stupide (christianisme).</li><li>Fait éprouver un bonheur intense (christianisme).</li><li>Justifie tout acte au nom du Seigneur.</li><li>Pousse les fidèles aux plus grands sacrifices et aux plus grandes actions.</li><li>Maudit qui utilise le Seigneur à ses fins personnelles.</li></ul><p><strong>Compulsions.</strong> Punir quelqu'un qui affirme avoir commis des péchés au nom du Seigneur. Effectuer des sacrifices pour être digne du Seigneur.</p>",
     "source": "Entre ciel et terre, p. 213",
     "voie": "voie-de-dieu",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.SPlB5GslKnZdeWKG",

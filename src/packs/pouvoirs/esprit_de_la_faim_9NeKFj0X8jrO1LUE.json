@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Fait pourrir la nourriture.</li><li>Assèche les cours d&#x27;eau ou les fait croupir.</li><li>Double la ration nécessaire pour se nourrir.</li><li>Affame une population.</li></ul><p><strong>Compulsions.</strong> Jeûner pendant deux semaines. Détourne un cours d&#x27;eau pour l&#x27;assécher.</p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Fait pourrir la nourriture.</li><li>Assèche les cours d'eau ou les fait croupir.</li><li>Double la ration nécessaire pour se nourrir.</li><li>Affame une population.</li></ul><p><strong>Compulsions.</strong> Jeûner pendant deux semaines. Détourne un cours d'eau pour l'assécher.</p>",
     "source": "Entre ciel et terre, p. 189",
     "voie": "voie-des-xapiripe",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.uLmNntdGMAtLAIsE",

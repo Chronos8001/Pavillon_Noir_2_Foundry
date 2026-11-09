@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Guérison d&#x27;une maladie vénérienne.</li><li>Transmission d&#x27;une maladie vénérienne.</li><li>Lance une rumeur sur une personne, supposée être affectée par une maladie vénérienne.</li></ul><p><strong>Compulsions.</strong> Copuler avec un malade contagieux. Boire le sang d&#x27;un malade contagieux. Ruiner la réputation d&#x27;une femme du monde.</p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Guérison d'une maladie vénérienne.</li><li>Transmission d'une maladie vénérienne.</li><li>Lance une rumeur sur une personne, supposée être affectée par une maladie vénérienne.</li></ul><p><strong>Compulsions.</strong> Copuler avec un malade contagieux. Boire le sang d'un malade contagieux. Ruiner la réputation d'une femme du monde.</p>",
     "source": "Entre ciel et terre, p. 286",
     "voie": "voie-d-erzulie",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.0cPd7IIiO1TgbK81",

@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Vole les pouvoirs d&#x27;autres religions autour de lui.</li><li>Justifie l&#x27;usage du mal.</li><li>Soigne la maladie par l&#x27;exposition à la maladie.</li></ul><p><strong>Compulsions.</strong> Reproduire contre quelqu&#x27;un le mal qu&#x27;il a fait subir à d&#x27;autres. OEil pour oeil, dent pour dent.</p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Vole les pouvoirs d'autres religions autour de lui.</li><li>Justifie l'usage du mal.</li><li>Soigne la maladie par l'exposition à la maladie.</li></ul><p><strong>Compulsions.</strong> Reproduire contre quelqu'un le mal qu'il a fait subir à d'autres. OEil pour oeil, dent pour dent.</p>",
     "source": "Entre ciel et terre, p. 213",
     "voie": "voie-de-dieu",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.SPlB5GslKnZdeWKG",

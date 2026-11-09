@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Offre un présent pour apaiser un mort et le protéger de l&#x27;état de zombie.</li><li>Consomme la chair des morts pour acquérir leurs qualités.</li><li>Manger de la viande avariée sans risques.</li><li>Pousse la proie à devenir nécrophage, à ses risques et périls.</li></ul><p><strong>Compulsions.</strong> Manger de la viande humaine crue. Manger de la viande avariée.</p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Offre un présent pour apaiser un mort et le protéger de l'état de zombie.</li><li>Consomme la chair des morts pour acquérir leurs qualités.</li><li>Manger de la viande avariée sans risques.</li><li>Pousse la proie à devenir nécrophage, à ses risques et périls.</li></ul><p><strong>Compulsions.</strong> Manger de la viande humaine crue. Manger de la viande avariée.</p>",
     "source": "Entre ciel et terre, p. 292",
     "voie": "voie-des-guedes",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.BJZUi8OCwtnsr9Ow",

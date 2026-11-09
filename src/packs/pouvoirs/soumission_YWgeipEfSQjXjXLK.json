@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Suscite un comportement de soumission.</li><li>Rend la soumission acceptable ou insupportable.</li><li>Demande l&#x27;avis des lwas quant à la qualité d&#x27;une décision.</li><li>Mise en danger de l&#x27;homme de tête.</li><li>Protection de l&#x27;homme de tête.</li><li>Reconnaissance de celui qui prend des initiatives comme leader.</li><li>Les difficultés ou les broussailles s&#x27;ouvrent devant le prêtre.</li></ul><p><strong>Compulsions.</strong> Ouvrir le chemin dans la jungle. Se perdre dans un milieu hostile.</p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Suscite un comportement de soumission.</li><li>Rend la soumission acceptable ou insupportable.</li><li>Demande l'avis des lwas quant à la qualité d'une décision.</li><li>Mise en danger de l'homme de tête.</li><li>Protection de l'homme de tête.</li><li>Reconnaissance de celui qui prend des initiatives comme leader.</li><li>Les difficultés ou les broussailles s'ouvrent devant le prêtre.</li></ul><p><strong>Compulsions.</strong> Ouvrir le chemin dans la jungle. Se perdre dans un milieu hostile.</p>",
     "source": "Entre ciel et terre, p. 306",
     "voie": "voie-d-ogou",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.nT1z9NA3nij69fC3",

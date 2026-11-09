@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Révèle les compétences de combattant.</li><li>Donne des capacités de combattant insoupçonnées.</li><li>Transmission de ses capacités de combattant.</li><li>Vol des capacités de combattant de l&#x27;ennemi.</li></ul><p><strong>Compulsions.</strong> Apprendre les bases de l&#x27;escrime d&#x27;une nation étrangère. Enseigner l&#x27;escrime au bottou.</p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Révèle les compétences de combattant.</li><li>Donne des capacités de combattant insoupçonnées.</li><li>Transmission de ses capacités de combattant.</li><li>Vol des capacités de combattant de l'ennemi.</li></ul><p><strong>Compulsions.</strong> Apprendre les bases de l'escrime d'une nation étrangère. Enseigner l'escrime au bottou.</p>",
     "source": "Entre ciel et terre, p. 173",
     "voie": "voie-d-icheiricou-pour-la-guerre",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.ua948TzRBv4MWuy4",

@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Accélère les actions (prenant approximativement une heure).</li><li>Ralentit les actions (prenant approximativement une heure).</li><li>Donne la sensation de ne pas avancer.</li><li>Rend totalement épuisé suite à ce qu&#x27;on vient d&#x27;accomplir (besoin de repos immédiat).</li><li>Contrôle des souvenirs immédiats (de l&#x27;ordre de l&#x27;heure).</li><li>Voir quand la mort d&#x27;une personne est imminente.</li><li>Modifie le porteur du jour actuel.</li><li>Indique ce qui peut se passer dans l&#x27;heure qui vient.</li></ul><p><strong>Compulsions.</strong> Prévoir exactement tout ce qui va se La Voie des passer pendant une heure complète.</p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Accélère les actions (prenant approximativement une heure).</li><li>Ralentit les actions (prenant approximativement une heure).</li><li>Donne la sensation de ne pas avancer.</li><li>Rend totalement épuisé suite à ce qu'on vient d'accomplir (besoin de repos immédiat).</li><li>Contrôle des souvenirs immédiats (de l'ordre de l'heure).</li><li>Voir quand la mort d'une personne est imminente.</li><li>Modifie le porteur du jour actuel.</li><li>Indique ce qui peut se passer dans l'heure qui vient.</li></ul><p><strong>Compulsions.</strong> Prévoir exactement tout ce qui va se La Voie des passer pendant une heure complète.</p>",
     "source": "Entre ciel et terre, p. 201",
     "voie": "voie-du-calendrier",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.AFWMXMJdfCNP7hit",

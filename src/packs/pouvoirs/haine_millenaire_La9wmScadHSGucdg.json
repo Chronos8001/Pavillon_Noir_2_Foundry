@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Change un simple ressentiment en une haine inextinguible qui se transmettra aux enfants.</li><li>Fait cesser une haine.</li><li>Change l&#x27;objet de la haine.</li></ul><p><strong>Compulsions.</strong> Attiser une vieille haine. Faire partager sa haine à ses amis.</p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Change un simple ressentiment en une haine inextinguible qui se transmettra aux enfants.</li><li>Fait cesser une haine.</li><li>Change l'objet de la haine.</li></ul><p><strong>Compulsions.</strong> Attiser une vieille haine. Faire partager sa haine à ses amis.</p>",
     "source": "Entre ciel et terre, p. 178",
     "voie": "voie-d-icheiricou-pour-le-conseil",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.wiw3plsp6sATryBq",

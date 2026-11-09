@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Force quelqu&#x27;un à confier ses petits secrets.</li><li>Confidences de secrets d&#x27;État sur l&#x27;oreiller.</li><li>Savoir qui est le confident de qui et ce que l&#x27;autre fait des confidences.</li></ul><p><strong>Compulsions.</strong> Pousser quelqu&#x27;un à avouer ses crimes sans le forcer. Divulguer des secrets essentiels à l&#x27;ennemi.</p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Force quelqu'un à confier ses petits secrets.</li><li>Confidences de secrets d'État sur l'oreiller.</li><li>Savoir qui est le confident de qui et ce que l'autre fait des confidences.</li></ul><p><strong>Compulsions.</strong> Pousser quelqu'un à avouer ses crimes sans le forcer. Divulguer des secrets essentiels à l'ennemi.</p>",
     "source": "Entre ciel et terre, p. 288",
     "voie": "voie-d-erzulie",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.0cPd7IIiO1TgbK81",

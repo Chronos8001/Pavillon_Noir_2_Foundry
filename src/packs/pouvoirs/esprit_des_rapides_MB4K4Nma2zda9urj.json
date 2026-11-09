@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Agitation de l&#x27;eau.</li><li>Création de rapides en aval d&#x27;une rivière.</li><li>Sensation de danger imminent.</li><li>Accélération progressive des mouvements d&#x27;une personne.</li><li>Dégénérescence progressive d&#x27;une situation en un chaos incontrôlable.</li></ul><p><strong>Compulsions.</strong> Traverser des rapides avec une pirogue. Réagir promptement dans une situation déstabilisante.</p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Agitation de l'eau.</li><li>Création de rapides en aval d'une rivière.</li><li>Sensation de danger imminent.</li><li>Accélération progressive des mouvements d'une personne.</li><li>Dégénérescence progressive d'une situation en un chaos incontrôlable.</li></ul><p><strong>Compulsions.</strong> Traverser des rapides avec une pirogue. Réagir promptement dans une situation déstabilisante.</p>",
     "source": "Entre ciel et terre, p. 187",
     "voie": "voie-des-xapiripe",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.uLmNntdGMAtLAIsE",

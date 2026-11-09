@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Donne la majesté, la force ou la grâce du tigre.</li><li>Métamorphose en tigre.</li><li>Traits animaux du tigre.</li><li>Appel du tigre.</li><li>Tigre de compagnie.</li><li>Communiquer avec un tigre.</li></ul><p><strong>Compulsions.</strong> Vaincre un tigre à mains nues. Faire reculer un tigre en l&#x27;intimidant.</p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Donne la majesté, la force ou la grâce du tigre.</li><li>Métamorphose en tigre.</li><li>Traits animaux du tigre.</li><li>Appel du tigre.</li><li>Tigre de compagnie.</li><li>Communiquer avec un tigre.</li></ul><p><strong>Compulsions.</strong> Vaincre un tigre à mains nues. Faire reculer un tigre en l'intimidant.</p>",
     "source": "Entre ciel et terre, p. 176",
     "voie": "voie-d-icheiricou-pour-la-guerre",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.ua948TzRBv4MWuy4",

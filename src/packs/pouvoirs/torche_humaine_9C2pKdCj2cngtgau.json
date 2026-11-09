@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Brûle sans être brûlé.</li><li>Enflamme quelqu&#x27;un entièrement.</li><li>Éclaire dans la nuit.</li><li>Un homme montre le chemin.</li></ul><p><strong>Compulsions.</strong> Faire brûler ses cheveux entièrement. Allumer une lumière attendue avec anxiété.</p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Brûle sans être brûlé.</li><li>Enflamme quelqu'un entièrement.</li><li>Éclaire dans la nuit.</li><li>Un homme montre le chemin.</li></ul><p><strong>Compulsions.</strong> Faire brûler ses cheveux entièrement. Allumer une lumière attendue avec anxiété.</p>",
     "source": "Entre ciel et terre, p. 308",
     "voie": "voie-d-ogou",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.nT1z9NA3nij69fC3",

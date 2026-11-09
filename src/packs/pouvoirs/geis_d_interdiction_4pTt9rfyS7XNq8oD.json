@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Cette incantation magique permet de donner une interdiction à une personne. La personne ne cherchera pas à contourner l&#x27;interdiction, qui est juste, car divine.</li><li>Interdiction de réaliser un acte précis.</li><li>Interdiction de se comporter d&#x27;une certaine manière.</li><li>Interdiction de dire quelque chose de précis.</li><li>Interdiction de se rendre en un endroit donné.</li><li>Interdiction de se battre.</li></ul><p><strong>Compulsions.</strong> Durant toute une journée, chercher la compagnie et s&#x27;interdire de dire et de faire tout ce dont parlent les autres autour de soi.</p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Cette incantation magique permet de donner une interdiction à une personne. La personne ne cherchera pas à contourner l'interdiction, qui est juste, car divine.</li><li>Interdiction de réaliser un acte précis.</li><li>Interdiction de se comporter d'une certaine manière.</li><li>Interdiction de dire quelque chose de précis.</li><li>Interdiction de se rendre en un endroit donné.</li><li>Interdiction de se battre.</li></ul><p><strong>Compulsions.</strong> Durant toute une journée, chercher la compagnie et s'interdire de dire et de faire tout ce dont parlent les autres autour de soi.</p>",
     "source": "Entre ciel et terre, p. 250",
     "voie": "voie-du-druidisme",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.444Fft7a0LtvOMIS",

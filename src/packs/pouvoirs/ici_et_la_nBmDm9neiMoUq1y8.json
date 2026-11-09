@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Être à deux endroits à la fois.</li><li>Faire deux choses en même temps.</li><li>Effacer du souvenir de tous sa présence en un lieu.</li><li>Surveiller un lieu tout en étant dans un autre.</li></ul><p><strong>Compulsions.</strong> Laisser croire que l&#x27;on a été à deux endroits en même temps. Faire surveiller un lieu distant.</p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Être à deux endroits à la fois.</li><li>Faire deux choses en même temps.</li><li>Effacer du souvenir de tous sa présence en un lieu.</li><li>Surveiller un lieu tout en étant dans un autre.</li></ul><p><strong>Compulsions.</strong> Laisser croire que l'on a été à deux endroits en même temps. Faire surveiller un lieu distant.</p>",
     "source": "Entre ciel et terre, p. 278",
     "voie": "voie-d-agwe",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.6bwsVNHhFxnjtf9Q",

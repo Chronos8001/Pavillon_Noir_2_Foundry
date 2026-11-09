@@ -86,6 +86,42 @@ test("compendium des Pouvoirs : 785 Pouvoirs complets, rattachés à leur Voie",
   assert.ok(pouvoirs.filter(p => /sephiroth|qlipoth/.test(p.system.voie)).every(p => !p.system.compulsion));
 });
 
+test("avantages d'Entre ciel et terre : même modèle que les autres avantages du compendium", () => {
+  const pack = lire("src/packs/avantages-faiblesses");
+  const dossier = pack.find(d => d._key.startsWith("!folders!") && d.name === "Magie (Entre ciel et terre)");
+  assert.ok(dossier);
+  const ect = pack.filter(d => d.folder === dossier._id);
+  assert.deepEqual(ect.map(d => d.name).sort(), ["Affinité", "Initié", "Objet de pouvoir", "Touché par le divin", "Versé dans les arcanes"]);
+  const reference = pack.find(d => d.type === "avantage" && d.folder !== dossier._id);
+  for (const a of ect) {
+    assert.equal(a.type, "avantage");
+    assert.deepEqual(Object.keys(a.system).sort(), Object.keys(reference.system).sort(), a.name);
+    assert.deepEqual(Object.keys(a).sort(), Object.keys(reference).sort(), a.name);
+    assert.ok(a.system.cout && a.system.description, a.name);
+  }
+  assert.deepEqual(ect.find(a => a.name === "Versé dans les arcanes").system.options.map(o => o.pc), [-4, -6, -7]);
+});
+
+test("PNJ surnaturels d'Entre ciel et terre : zombie, loup-garou vaudou et 24 fées", () => {
+  const pack = lire("src/packs/pnj");
+  const dossier = pack.find(d => d._key.startsWith("!folders!") && d.name === "Surnaturel (Entre ciel et terre)");
+  const ect = pack.filter(d => d.folder === dossier?._id);
+  assert.equal(ect.length, 26);
+  const reference = pack.find(d => d.name === "Crocodile");
+  for (const p of ect) {
+    assert.equal(p.type, "pnj");
+    assert.equal(p._key, `!actors!${p._id}`);
+    assert.deepEqual(Object.keys(p.system).sort(), Object.keys(reference.system).sort(), p.name);
+    assert.ok(Object.values(p.system.caracs).every(c => Number.isInteger(c.value) && c.value >= 0), p.name);
+    assert.ok(p.system.notes.includes("Entre ciel et terre"), p.name);
+  }
+  // Les deux loups-garous ne doivent pas être confondus
+  assert.ok(ect.some(p => p.name === "Loup-garou vaudou (vampire)"));
+  assert.ok(ect.some(p => p.name === "Loup-garou (fée du folklore européen)"));
+  const ids = pack.map(d => d._id);
+  assert.equal(new Set(ids).size, ids.length, "identifiants uniques");
+});
+
 test("religions du compendium de magie : références UUID cohérentes avec les Voies", () => {
   const PREFIXE = "Compendium.pavillon-noir-2.voies.Item.";
   const parId = new Map(voiesPack.map(d => [d._id, d]));

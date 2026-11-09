@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Fait abandonner sa religion.</li><li>Donne la foi en Dieu.</li><li>Rassemble les personnes sans but autour d&#x27;une cause commune.</li></ul><p><strong>Compulsions.</strong> Convertir une personne. Raviver la Foi d&#x27;un être envahi par le doute.</p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Fait abandonner sa religion.</li><li>Donne la foi en Dieu.</li><li>Rassemble les personnes sans but autour d'une cause commune.</li></ul><p><strong>Compulsions.</strong> Convertir une personne. Raviver la Foi d'un être envahi par le doute.</p>",
     "source": "Entre ciel et terre, p. 213",
     "voie": "voie-de-dieu",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.SPlB5GslKnZdeWKG",

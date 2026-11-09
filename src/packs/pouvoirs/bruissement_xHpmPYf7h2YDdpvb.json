@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Crée un bruit de masse (arbres, combat, armes à feu).</li><li>Crée un bruit naturel (cascade, ressac de la mer, avalanche lointaine de cailloux).</li><li>Couvre un bruit par un bruit naturel.</li></ul><p><strong>Compulsions.</strong> Faire passer un bruit humain pour un bruissement d&#x27;arme. Créer une avalanche de cailloux.</p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Crée un bruit de masse (arbres, combat, armes à feu).</li><li>Crée un bruit naturel (cascade, ressac de la mer, avalanche lointaine de cailloux).</li><li>Couvre un bruit par un bruit naturel.</li></ul><p><strong>Compulsions.</strong> Faire passer un bruit humain pour un bruissement d'arme. Créer une avalanche de cailloux.</p>",
     "source": "Entre ciel et terre, p. 304",
     "voie": "voie-d-ogou",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.nT1z9NA3nij69fC3",

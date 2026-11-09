@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Pousse à se comporter comme sous l&#x27;effet de la poudre hallucinogène.</li><li>Réconciliation avec un esprit.</li><li>Aide à incorporer un esprit faisant sa danse de présentation.</li><li>Incite à se parer de ses plus beaux atours.</li><li>Les femmes vont danser, les hommes doivent être entraînés pour agir.</li></ul><p><strong>Compulsions.</strong> Imiter les esprits lors d&#x27;une transe magique. Regarder attentivement les gestes et les mots d&#x27;un chaman en transe.</p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Pousse à se comporter comme sous l'effet de la poudre hallucinogène.</li><li>Réconciliation avec un esprit.</li><li>Aide à incorporer un esprit faisant sa danse de présentation.</li><li>Incite à se parer de ses plus beaux atours.</li><li>Les femmes vont danser, les hommes doivent être entraînés pour agir.</li></ul><p><strong>Compulsions.</strong> Imiter les esprits lors d'une transe magique. Regarder attentivement les gestes et les mots d'un chaman en transe.</p>",
     "source": "Entre ciel et terre, p. 185",
     "voie": "voie-des-xapiripe",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.uLmNntdGMAtLAIsE",

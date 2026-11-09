@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Nouvelle apparence.</li><li>Modification de la voix.</li><li>Fait sortir un insecte ou un crustacé de sa carapace.</li><li>Création d&#x27;une seconde peau lisse, glissante et résistante, mais visible.</li></ul><p><strong>Compulsions.</strong> S&#x27;écorcher l&#x27;avant-bras. Écorcher un mort. Trouver la peau laissée par un insecte ou crustacé.</p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Nouvelle apparence.</li><li>Modification de la voix.</li><li>Fait sortir un insecte ou un crustacé de sa carapace.</li><li>Création d'une seconde peau lisse, glissante et résistante, mais visible.</li></ul><p><strong>Compulsions.</strong> S'écorcher l'avant-bras. Écorcher un mort. Trouver la peau laissée par un insecte ou crustacé.</p>",
     "source": "Entre ciel et terre, p. 284",
     "voie": "voie-de-dambala",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.fVIeiRnBn8ADVFE2",

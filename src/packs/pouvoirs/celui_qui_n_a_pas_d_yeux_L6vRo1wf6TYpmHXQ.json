@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Donne des visions, voire la vision, à un aveugle.</li><li>Greffe des yeux à un aveugle ou un borgne.</li><li>Cécité sélective ou complète.</li><li>Arrache les yeux de sa victime.</li></ul><p><strong>Compulsions.</strong> Arracher les yeux d&#x27;une victime. Affecter de ne pas voir un type de chose spécifique (indiqué par la divinité).</p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Donne des visions, voire la vision, à un aveugle.</li><li>Greffe des yeux à un aveugle ou un borgne.</li><li>Cécité sélective ou complète.</li><li>Arrache les yeux de sa victime.</li></ul><p><strong>Compulsions.</strong> Arracher les yeux d'une victime. Affecter de ne pas voir un type de chose spécifique (indiqué par la divinité).</p>",
     "source": "Entre ciel et terre, p. 182",
     "voie": "voie-d-icheiricou-pour-la-protection-et-la-punition",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.yH60f20rPKBEP9j4",

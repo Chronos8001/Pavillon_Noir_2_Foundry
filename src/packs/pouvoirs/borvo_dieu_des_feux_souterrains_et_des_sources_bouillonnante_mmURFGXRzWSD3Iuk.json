@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Élévation de la température du sol.</li><li>Contrôle du feu sous la terre.</li><li>Éruption d&#x27;un volcan en éveil.</li><li>Fait jaillir de l&#x27;eau.</li><li>Fait bouillir l&#x27;eau d&#x27;une source.</li></ul><p><strong>Compulsions.</strong> Se baigner dans une source chaude. Allumer une bougie, la mettre dans un petit endroit clos et revenir constater qu&#x27;elle s&#x27;est éteinte toute seule.</p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Élévation de la température du sol.</li><li>Contrôle du feu sous la terre.</li><li>Éruption d'un volcan en éveil.</li><li>Fait jaillir de l'eau.</li><li>Fait bouillir l'eau d'une source.</li></ul><p><strong>Compulsions.</strong> Se baigner dans une source chaude. Allumer une bougie, la mettre dans un petit endroit clos et revenir constater qu'elle s'est éteinte toute seule.</p>",
     "source": "Entre ciel et terre, p. 251",
     "voie": "voie-du-druidisme",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.444Fft7a0LtvOMIS",

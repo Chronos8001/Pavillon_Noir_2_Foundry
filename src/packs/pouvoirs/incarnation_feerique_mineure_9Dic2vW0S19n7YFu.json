@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Métamorphose en une Fée Mineure.</li><li>Utilise le pouvoir de la Fée Mineure dans laquelle on est métamorphosé (paramètres identiques à ceux du pouvoir de la fée).</li><li>Immunise toute fée, y compris soi, contre l&#x27;incrédulité des hommes.</li><li>Fait croire aux fées à tous ceux qui les voient, y compris aux prêtres des autres religions.</li></ul><p><strong>Compulsions.</strong> Faire croire à quelqu&#x27;un aux fées.</p><p><em>Règles particulières : voir Entre ciel et terre, p. 266.</em></p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Métamorphose en une Fée Mineure.</li><li>Utilise le pouvoir de la Fée Mineure dans laquelle on est métamorphosé (paramètres identiques à ceux du pouvoir de la fée).</li><li>Immunise toute fée, y compris soi, contre l'incrédulité des hommes.</li><li>Fait croire aux fées à tous ceux qui les voient, y compris aux prêtres des autres religions.</li></ul><p><strong>Compulsions.</strong> Faire croire à quelqu'un aux fées.</p><p><em>Règles particulières : voir Entre ciel et terre, p. 266.</em></p>",
     "source": "Entre ciel et terre, p. 266",
     "voie": "voie-du-folklore",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.Iy4OYyIN7hI6KjNY",

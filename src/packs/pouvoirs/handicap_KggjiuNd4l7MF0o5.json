@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Crée un handicap physique (pied bot, bec de lièvre, boitement, haleine pestilentielle, paralysie, etc.).</li><li>Lève un handicap physique ou fait disparaître des séquelles de blessure.</li><li>Crée un handicap mental (stupidité, obsessions, dépression, cyclothymie, etc.).</li><li>Fait disparaître un handicap mental.</li></ul><p><strong>Compulsions.</strong> Handicaper quelqu&#x27;un physiquement. Démontrer à quelqu&#x27;un qu&#x27;il handicape son groupe.</p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Crée un handicap physique (pied bot, bec de lièvre, boitement, haleine pestilentielle, paralysie, etc.).</li><li>Lève un handicap physique ou fait disparaître des séquelles de blessure.</li><li>Crée un handicap mental (stupidité, obsessions, dépression, cyclothymie, etc.).</li><li>Fait disparaître un handicap mental.</li></ul><p><strong>Compulsions.</strong> Handicaper quelqu'un physiquement. Démontrer à quelqu'un qu'il handicape son groupe.</p>",
     "source": "Entre ciel et terre, p. 266",
     "voie": "voie-du-folklore",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.Iy4OYyIN7hI6KjNY",

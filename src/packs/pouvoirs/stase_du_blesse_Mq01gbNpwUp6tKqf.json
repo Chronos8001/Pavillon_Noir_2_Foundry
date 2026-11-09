@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Arrêt de l&#x27;évolution de l&#x27;état du blessé.</li><li>Stoppe une hémorragie.</li><li>Infliger une incapacité à récupérer de ses blessures.</li><li>La moindre blessure fait tomber dans le coma.</li><li>Seule la première blessure sur une Localisation inflige des dégâts.</li></ul><p><strong>Compulsions.</strong> Stopper l&#x27;hémorragie d&#x27;un blessé. Conserver un corps mort le plus longtemps possible.</p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Arrêt de l'évolution de l'état du blessé.</li><li>Stoppe une hémorragie.</li><li>Infliger une incapacité à récupérer de ses blessures.</li><li>La moindre blessure fait tomber dans le coma.</li><li>Seule la première blessure sur une Localisation inflige des dégâts.</li></ul><p><strong>Compulsions.</strong> Stopper l'hémorragie d'un blessé. Conserver un corps mort le plus longtemps possible.</p>",
     "source": "Entre ciel et terre, p. 301",
     "voie": "voie-des-freres-marassa",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.g0bMhkfFArVT77cy",

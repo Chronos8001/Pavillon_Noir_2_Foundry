@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Empoisonne du vin.</li><li>Un vin donne de fortes pulsions meurtrières.</li><li>Le meurtre (sa préparation ou l&#x27;avoir commis) donne une envie de boire du vin.</li></ul><p><strong>Compulsions.</strong> Empoisonner du vin. Pousser un homme aviné au meurtre.</p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Empoisonne du vin.</li><li>Un vin donne de fortes pulsions meurtrières.</li><li>Le meurtre (sa préparation ou l'avoir commis) donne une envie de boire du vin.</li></ul><p><strong>Compulsions.</strong> Empoisonner du vin. Pousser un homme aviné au meurtre.</p>",
     "source": "Entre ciel et terre, p. 179",
     "voie": "voie-d-icheiricou-pour-le-conseil",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.wiw3plsp6sATryBq",

@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Imite les cris d&#x27;animaux.</li><li>Cri terrifiant.</li><li>Cri simulant la mort ou une blessure.</li><li>Cri de l&#x27;adversaire qui le trahit.</li></ul><p><strong>Compulsions.</strong> Imiter le cri d&#x27;un oiseau. Faire reculer un ennemi en le terrifiant.</p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Imite les cris d'animaux.</li><li>Cri terrifiant.</li><li>Cri simulant la mort ou une blessure.</li><li>Cri de l'adversaire qui le trahit.</li></ul><p><strong>Compulsions.</strong> Imiter le cri d'un oiseau. Faire reculer un ennemi en le terrifiant.</p>",
     "source": "Entre ciel et terre, p. 171",
     "voie": "voie-d-icheiricou-pour-la-guerre",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.ua948TzRBv4MWuy4",

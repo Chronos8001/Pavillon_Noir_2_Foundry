@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Donne un regard neuf sur un sujet.</li><li>Donne un comportement infantile ou adulte.</li><li>Donne plus de crédit aux paroles de l&#x27;enfant qu&#x27;à celles de l&#x27;adulte.</li><li>La vérité sort de la bouche des enfants.</li></ul><p><strong>Compulsions.</strong> Agir comme un enfant. Donner raison à un enfant contre un adulte.</p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Donne un regard neuf sur un sujet.</li><li>Donne un comportement infantile ou adulte.</li><li>Donne plus de crédit aux paroles de l'enfant qu'à celles de l'adulte.</li><li>La vérité sort de la bouche des enfants.</li></ul><p><strong>Compulsions.</strong> Agir comme un enfant. Donner raison à un enfant contre un adulte.</p>",
     "source": "Entre ciel et terre, p. 301",
     "voie": "voie-des-freres-marassa",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.g0bMhkfFArVT77cy",

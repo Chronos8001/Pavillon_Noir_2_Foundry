@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Sait ce que ressent son compagnon animal, s&#x27;il est blessé ou en danger.</li><li>Se lie d&#x27;amitié avec un animal.</li><li>Réconcilie avec les animaux.</li><li>Fait se comporter un compagnon humain comme un animal.</li><li>Conf ère à son compagnon animal une intelligence et un savoir identiques à ceux du prêtre, ainsi qu&#x27;une loyauté sans bornes (limité à un seul animal en tout et pour tout).</li></ul><p><strong>Compulsions.</strong> Adopter un chat. Nourrir un corbeau.</p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Sait ce que ressent son compagnon animal, s'il est blessé ou en danger.</li><li>Se lie d'amitié avec un animal.</li><li>Réconcilie avec les animaux.</li><li>Fait se comporter un compagnon humain comme un animal.</li><li>Conf ère à son compagnon animal une intelligence et un savoir identiques à ceux du prêtre, ainsi qu'une loyauté sans bornes (limité à un seul animal en tout et pour tout).</li></ul><p><strong>Compulsions.</strong> Adopter un chat. Nourrir un corbeau.</p>",
     "source": "Entre ciel et terre, p. 263",
     "voie": "voie-du-folklore",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.Iy4OYyIN7hI6KjNY",

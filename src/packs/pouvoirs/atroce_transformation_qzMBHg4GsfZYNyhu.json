@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Un membre, le visage ou le dos de la proie se transforment en quelque chose d&#x27;horrible et d&#x27;incapacitant.</li><li>Fait pousser des tentacules préhensibles ou une carapace horrible.</li><li>La cible se prend pour une créature qu&#x27;elle juge répugnante.</li><li>Réversion d&#x27;une atroce déformation, même congénitale.</li></ul><p><strong>Compulsions.</strong> Défigurer une personne ou le portrait de quelqu&#x27;un. Faire croire à une personne qu&#x27;elle est difforme.</p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Un membre, le visage ou le dos de la proie se transforment en quelque chose d'horrible et d'incapacitant.</li><li>Fait pousser des tentacules préhensibles ou une carapace horrible.</li><li>La cible se prend pour une créature qu'elle juge répugnante.</li><li>Réversion d'une atroce déformation, même congénitale.</li></ul><p><strong>Compulsions.</strong> Défigurer une personne ou le portrait de quelqu'un. Faire croire à une personne qu'elle est difforme.</p>",
     "source": "Entre ciel et terre, p. 292",
     "voie": "voie-des-guedes",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.BJZUi8OCwtnsr9Ow",

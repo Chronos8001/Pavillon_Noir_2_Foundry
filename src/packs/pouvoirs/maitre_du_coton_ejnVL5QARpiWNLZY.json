@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Écorche un ennemi.</li><li>Met le principe vital à vif.</li><li>Contrôle complet du principe vital de quelqu&#x27;un (peut servir de chantage pour lui demander tout et n&#x27;importe quoi).</li><li>Effraie et fait fuir de la région une divinité quelconque, de n&#x27;importe quelle religion.</li></ul><p><strong>Compulsions.</strong> Écorcher un ennemi vivant. Tuer un prêtre d&#x27;une autre religion.</p><p><em>Règles particulières : voir Entre ciel et terre, p. 190.</em></p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Écorche un ennemi.</li><li>Met le principe vital à vif.</li><li>Contrôle complet du principe vital de quelqu'un (peut servir de chantage pour lui demander tout et n'importe quoi).</li><li>Effraie et fait fuir de la région une divinité quelconque, de n'importe quelle religion.</li></ul><p><strong>Compulsions.</strong> Écorcher un ennemi vivant. Tuer un prêtre d'une autre religion.</p><p><em>Règles particulières : voir Entre ciel et terre, p. 190.</em></p>",
     "source": "Entre ciel et terre, p. 190",
     "voie": "voie-des-xapiripe",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.uLmNntdGMAtLAIsE",

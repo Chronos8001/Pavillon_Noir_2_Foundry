@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Un mort ou un objet tombe en poussière.</li><li>Fait prendre conscience du caractère éphémère de toute chose terrestre.</li><li>Empêche toute magie de ramener un mort à la vie.</li></ul><p><strong>Compulsions.</strong> Installer un cadavre dans le lit de quelqu&#x27;un. S&#x27;assurer qu&#x27;un mort est trois fois mort.</p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Un mort ou un objet tombe en poussière.</li><li>Fait prendre conscience du caractère éphémère de toute chose terrestre.</li><li>Empêche toute magie de ramener un mort à la vie.</li></ul><p><strong>Compulsions.</strong> Installer un cadavre dans le lit de quelqu'un. S'assurer qu'un mort est trois fois mort.</p>",
     "source": "Entre ciel et terre, p. 211",
     "voie": "voie-de-dieu",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.SPlB5GslKnZdeWKG",

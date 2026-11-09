@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Rend affectueux.</li><li>Protection contre ce dont on peut pendre une représentation ou une partie autour de son cou (une statuette de mabouya par exemple).</li><li>Besoin irrésistible de montrer un objet de valeur.</li></ul><p><strong>Compulsions.</strong> Sculpter une représentation de son cauchemar et le pendre à son cou. Montrer l&#x27;objet qu&#x27;il aurait fallu garder caché.</p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Rend affectueux.</li><li>Protection contre ce dont on peut pendre une représentation ou une partie autour de son cou (une statuette de mabouya par exemple).</li><li>Besoin irrésistible de montrer un objet de valeur.</li></ul><p><strong>Compulsions.</strong> Sculpter une représentation de son cauchemar et le pendre à son cou. Montrer l'objet qu'il aurait fallu garder caché.</p>",
     "source": "Entre ciel et terre, p. 180",
     "voie": "voie-d-icheiricou-pour-le-conseil",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.wiw3plsp6sATryBq",

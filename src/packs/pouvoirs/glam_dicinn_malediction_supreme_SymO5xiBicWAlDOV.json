@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Fait apparaître trois furoncles sur le visage de la cible, puis la tue.</li></ul><p><strong>Compulsions.</strong> Prédire avec succès la mort de quelqu&#x27;un ainsi que ses circonstances tout en se refusant à intervenir ni directement, ni indirectement.</p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Fait apparaître trois furoncles sur le visage de la cible, puis la tue.</li></ul><p><strong>Compulsions.</strong> Prédire avec succès la mort de quelqu'un ainsi que ses circonstances tout en se refusant à intervenir ni directement, ni indirectement.</p>",
     "source": "Entre ciel et terre, p. 254",
     "voie": "voie-du-druidisme",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.444Fft7a0LtvOMIS",

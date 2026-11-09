@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Sait ce qui est à la source d&#x27;une chose.</li><li>Peut faire jaillir de soi toute chose.</li><li>Trouve ce qui est à la source d&#x27;une chose, d&#x27;un concept, d&#x27;une émotion.</li><li>Corne d&#x27;abondance.</li><li>Peut bénéficier en permanence des conseils d&#x27;Ichéiricou.</li><li>Lapsus révélateur.</li><li>Mot de travers.</li><li>Repère le menteur.</li><li>Donne une langue de serpent.</li></ul><p><strong>Compulsions.</strong> Dire ce qu&#x27;il ne fallait pas dire. Dire un mensonge éhonté.</p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Sait ce qui est à la source d'une chose.</li><li>Peut faire jaillir de soi toute chose.</li><li>Trouve ce qui est à la source d'une chose, d'un concept, d'une émotion.</li><li>Corne d'abondance.</li><li>Peut bénéficier en permanence des conseils d'Ichéiricou.</li><li>Lapsus révélateur.</li><li>Mot de travers.</li><li>Repère le menteur.</li><li>Donne une langue de serpent.</li></ul><p><strong>Compulsions.</strong> Dire ce qu'il ne fallait pas dire. Dire un mensonge éhonté.</p>",
     "source": "Entre ciel et terre, p. 180",
     "voie": "voie-d-icheiricou-pour-le-conseil",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.wiw3plsp6sATryBq",

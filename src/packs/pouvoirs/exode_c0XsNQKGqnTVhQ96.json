@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Force un peuple à s&#x27;exiler.</li><li>Protège un peuple en exil de ses ennemis.</li><li>Libération de l&#x27;esclavage d&#x27;un peuple, et exode pour trouver une terre où vivre libre.</li><li>Offre une terre à un peuple en exil.</li></ul><p><strong>Compulsions.</strong> Déroger à neuf commandements de Dieu sans rien en retirer.</p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Force un peuple à s'exiler.</li><li>Protège un peuple en exil de ses ennemis.</li><li>Libération de l'esclavage d'un peuple, et exode pour trouver une terre où vivre libre.</li><li>Offre une terre à un peuple en exil.</li></ul><p><strong>Compulsions.</strong> Déroger à neuf commandements de Dieu sans rien en retirer.</p>",
     "source": "Entre ciel et terre, p. 214",
     "voie": "voie-de-dieu",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.SPlB5GslKnZdeWKG",

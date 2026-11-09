@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Légère modification de l&#x27;apparence (personne, animal, plante, objet).</li><li>Découvrir quand et dans quel but un objet a été modifié.</li><li>Voir ce qui se cache derrière une fausse apparence (déguisement, comédie, maquillage).</li></ul><p><strong>Compulsions.</strong> S&#x27;embellir en se maquillant. Enlaidir quelqu&#x27;un en le maquillant.</p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Légère modification de l'apparence (personne, animal, plante, objet).</li><li>Découvrir quand et dans quel but un objet a été modifié.</li><li>Voir ce qui se cache derrière une fausse apparence (déguisement, comédie, maquillage).</li></ul><p><strong>Compulsions.</strong> S'embellir en se maquillant. Enlaidir quelqu'un en le maquillant.</p>",
     "source": "Entre ciel et terre, p. 285",
     "voie": "voie-d-erzulie",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.0cPd7IIiO1TgbK81",

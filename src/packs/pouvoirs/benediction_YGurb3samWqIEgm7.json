@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Apporte un soutien moral.</li><li>Apporte une petite aide.</li><li>Bénit de l&#x27;eau pour lutter contre les forces démoniaques.</li><li>Bénit un lieu pour que les forces du mal y soient mal à l &#x27;aise.</li></ul><p><strong>Compulsions.</strong> Faire construire une chapelle. S&#x27;assurer qu&#x27;une personne bénie ne craint rien.</p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Apporte un soutien moral.</li><li>Apporte une petite aide.</li><li>Bénit de l'eau pour lutter contre les forces démoniaques.</li><li>Bénit un lieu pour que les forces du mal y soient mal à l 'aise.</li></ul><p><strong>Compulsions.</strong> Faire construire une chapelle. S'assurer qu'une personne bénie ne craint rien.</p>",
     "source": "Entre ciel et terre, p. 209",
     "voie": "voie-de-dieu",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.SPlB5GslKnZdeWKG",

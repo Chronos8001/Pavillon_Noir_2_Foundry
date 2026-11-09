@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Vision d&#x27;une corruption, ou incitation à la corruption, aux moeurs dissolues.</li><li>Vision ou création de tensions au sein d&#x27;un groupe ou de causes de désorganisation.</li><li>Dissolution d&#x27;une matière minérale dans un liquide.</li><li>Fin d&#x27;une alliance.</li><li>Se dissoudre dans l&#x27;eau pour voyager avec le courant et ressortir plus loin.</li></ul><p><strong>Compulsions.</strong> Mettre un terme à une alliance. Désorganiser sa communauté à un moment critique.</p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Vision d'une corruption, ou incitation à la corruption, aux moeurs dissolues.</li><li>Vision ou création de tensions au sein d'un groupe ou de causes de désorganisation.</li><li>Dissolution d'une matière minérale dans un liquide.</li><li>Fin d'une alliance.</li><li>Se dissoudre dans l'eau pour voyager avec le courant et ressortir plus loin.</li></ul><p><strong>Compulsions.</strong> Mettre un terme à une alliance. Désorganiser sa communauté à un moment critique.</p>",
     "source": "Entre ciel et terre, p. 288",
     "voie": "voie-d-erzulie",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.0cPd7IIiO1TgbK81",

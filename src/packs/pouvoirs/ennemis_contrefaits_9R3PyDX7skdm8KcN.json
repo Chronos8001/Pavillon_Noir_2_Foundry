@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Fait passer des personnes pour des sournois.</li><li>Révèle la nature des traîtres.</li><li>Dissimulation parmi l&#x27;ennemi.</li><li>Sentir la présence de chrétiens.</li><li>Délivre les chrétiens de la pudeur.</li></ul><p><strong>Compulsions.</strong> Ne pas révéler l&#x27;identité d&#x27;ennemis contrefaits. Révéler « par mégarde » son identité en mission d&#x27;espionnage.</p><p><em>Règles particulières : voir Entre ciel et terre, p. 172.</em></p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Fait passer des personnes pour des sournois.</li><li>Révèle la nature des traîtres.</li><li>Dissimulation parmi l'ennemi.</li><li>Sentir la présence de chrétiens.</li><li>Délivre les chrétiens de la pudeur.</li></ul><p><strong>Compulsions.</strong> Ne pas révéler l'identité d'ennemis contrefaits. Révéler « par mégarde » son identité en mission d'espionnage.</p><p><em>Règles particulières : voir Entre ciel et terre, p. 172.</em></p>",
     "source": "Entre ciel et terre, p. 172",
     "voie": "voie-d-icheiricou-pour-la-guerre",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.ua948TzRBv4MWuy4",

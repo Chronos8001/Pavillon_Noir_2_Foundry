@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Donne l&#x27;illusion qu&#x27;une personne a des intentions meurtrières.</li><li>Dévoile les intentions meurtrières.</li><li>Camoufle les intentions meurtrières.</li><li>Donne des intentions meurtrières.</li></ul><p><strong>Compulsions.</strong> Regarder un étranger avec un regard de fou sanguinaire. Retrouver un meurtrier.</p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Donne l'illusion qu'une personne a des intentions meurtrières.</li><li>Dévoile les intentions meurtrières.</li><li>Camoufle les intentions meurtrières.</li><li>Donne des intentions meurtrières.</li></ul><p><strong>Compulsions.</strong> Regarder un étranger avec un regard de fou sanguinaire. Retrouver un meurtrier.</p>",
     "source": "Entre ciel et terre, p. 307",
     "voie": "voie-d-ogou",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.nT1z9NA3nij69fC3",

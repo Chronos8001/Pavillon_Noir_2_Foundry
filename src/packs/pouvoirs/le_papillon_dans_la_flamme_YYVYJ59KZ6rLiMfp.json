@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Qui s&#x27;y frotte s&#x27;y pique !</li><li>Attirance irrépressible pour le danger.</li><li>Embrasement immédiat.</li><li>Connaître des sujets d&#x27;attirance irrépressible pour une personne donnée.</li></ul><p><strong>Compulsions.</strong> Brûler les ailes d&#x27;un oiseau. Voir un insecte venir se brûler sur une torche.</p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Qui s'y frotte s'y pique !</li><li>Attirance irrépressible pour le danger.</li><li>Embrasement immédiat.</li><li>Connaître des sujets d'attirance irrépressible pour une personne donnée.</li></ul><p><strong>Compulsions.</strong> Brûler les ailes d'un oiseau. Voir un insecte venir se brûler sur une torche.</p>",
     "source": "Entre ciel et terre, p. 305",
     "voie": "voie-d-ogou",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.nT1z9NA3nij69fC3",

@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Trouve du curare.</li><li>Met du curare dans un aliment ou sur une arme.</li><li>Fait tomber les cheveux et rend le visage squelettique.</li><li>Devient intangible.</li><li>Hante un vivant pendant son sommeil.</li></ul><p><strong>Compulsions.</strong> S&#x27;inoculer du curare. Foncer contre un arbre en espérant passer au travers.</p><p><em>Règles particulières : voir Entre ciel et terre, p. 189.</em></p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Trouve du curare.</li><li>Met du curare dans un aliment ou sur une arme.</li><li>Fait tomber les cheveux et rend le visage squelettique.</li><li>Devient intangible.</li><li>Hante un vivant pendant son sommeil.</li></ul><p><strong>Compulsions.</strong> S'inoculer du curare. Foncer contre un arbre en espérant passer au travers.</p><p><em>Règles particulières : voir Entre ciel et terre, p. 189.</em></p>",
     "source": "Entre ciel et terre, p. 189",
     "voie": "voie-des-xapiripe",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.uLmNntdGMAtLAIsE",

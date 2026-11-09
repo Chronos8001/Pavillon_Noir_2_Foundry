@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Fait casser une arme au moindre choc.</li><li>Rend une arme incassable.</li><li>Confère la qualité « Trempe » à une arme qui ne l&#x27;avait pas encore.</li><li>Fait rouer de coups une personne.</li><li>Donne l&#x27;illusion du courage.</li><li>Inspire du courage.</li></ul><p><strong>Compulsions.</strong> Forger une arme. Battre une personne jusqu&#x27;à ce qu&#x27;elle ne bouge plus.</p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Fait casser une arme au moindre choc.</li><li>Rend une arme incassable.</li><li>Confère la qualité « Trempe » à une arme qui ne l'avait pas encore.</li><li>Fait rouer de coups une personne.</li><li>Donne l'illusion du courage.</li><li>Inspire du courage.</li></ul><p><strong>Compulsions.</strong> Forger une arme. Battre une personne jusqu'à ce qu'elle ne bouge plus.</p>",
     "source": "Entre ciel et terre, p. 305",
     "voie": "voie-d-ogou",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.nT1z9NA3nij69fC3",

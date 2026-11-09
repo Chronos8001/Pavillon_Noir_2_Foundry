@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Donne un aperçu (effrayant ou apaisant) de sa prochaine vie.</li><li>Permet de voir les lwas à l&#x27;oeuvre dans le monde lors d&#x27;une hallucination (conversion possible de la cible au vaudou).</li><li>Fait voir des morts et des esprits partout.</li><li>Permet de voir ce que voit un mort particulier.</li></ul><p><strong>Compulsions.</strong> Disséquer un corps. Arracher les yeux d&#x27;un mort et fabriquer un masque avec.</p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Donne un aperçu (effrayant ou apaisant) de sa prochaine vie.</li><li>Permet de voir les lwas à l'oeuvre dans le monde lors d'une hallucination (conversion possible de la cible au vaudou).</li><li>Fait voir des morts et des esprits partout.</li><li>Permet de voir ce que voit un mort particulier.</li></ul><p><strong>Compulsions.</strong> Disséquer un corps. Arracher les yeux d'un mort et fabriquer un masque avec.</p>",
     "source": "Entre ciel et terre, p. 292",
     "voie": "voie-des-guedes",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.BJZUi8OCwtnsr9Ow",

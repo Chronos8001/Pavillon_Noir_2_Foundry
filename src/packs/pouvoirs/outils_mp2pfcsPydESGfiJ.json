@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Confection rapide d&#x27;outils.</li><li>Comprend des mécanismes complexes.</li><li>Connaît les outils dont il a besoin.</li><li>Trouve les outils dont il a besoin.</li><li>Savoir qui utilise qui.</li></ul><p><strong>Compulsions.</strong> Réaliser sans outil une opération qui en nécessite un. Observer une personne privée de ses outils de travail.</p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Confection rapide d'outils.</li><li>Comprend des mécanismes complexes.</li><li>Connaît les outils dont il a besoin.</li><li>Trouve les outils dont il a besoin.</li><li>Savoir qui utilise qui.</li></ul><p><strong>Compulsions.</strong> Réaliser sans outil une opération qui en nécessite un. Observer une personne privée de ses outils de travail.</p>",
     "source": "Entre ciel et terre, p. 297",
     "voie": "voie-de-papa-legba",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.cLAnYvfRTW6M1YmZ",

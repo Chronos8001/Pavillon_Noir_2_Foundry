@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Accélère les actions du jour.</li><li>Ralentit les actions du jour.</li><li>Donne la sensation de n&#x27;avoir rien fait de la journée.</li><li>Rend épuisé pour tout ce qu&#x27;on a accompli pendant la journée (besoin d&#x27;une bonne nuit de repos).</li><li>Contrôle des souvenirs proches (datant de moins d&#x27;un jour).</li><li>Faire se lever le jour plus tôt ou plus tard.</li><li>Augmenter ou baisser la luminosité du jour ou de la nuit.</li><li>Modifie le porteur du jour à venir.</li><li>Indique ce qui peut se passer dans le jour qui vient.</li></ul><p><strong>Compulsions.</strong> Se rappeler sans le noter tout ce qui s&#x27;est passé dans une journée bien remplie (le raconter en détail au MJ).</p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Accélère les actions du jour.</li><li>Ralentit les actions du jour.</li><li>Donne la sensation de n'avoir rien fait de la journée.</li><li>Rend épuisé pour tout ce qu'on a accompli pendant la journée (besoin d'une bonne nuit de repos).</li><li>Contrôle des souvenirs proches (datant de moins d'un jour).</li><li>Faire se lever le jour plus tôt ou plus tard.</li><li>Augmenter ou baisser la luminosité du jour ou de la nuit.</li><li>Modifie le porteur du jour à venir.</li><li>Indique ce qui peut se passer dans le jour qui vient.</li></ul><p><strong>Compulsions.</strong> Se rappeler sans le noter tout ce qui s'est passé dans une journée bien remplie (le raconter en détail au MJ).</p>",
     "source": "Entre ciel et terre, p. 201",
     "voie": "voie-du-calendrier",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.AFWMXMJdfCNP7hit",

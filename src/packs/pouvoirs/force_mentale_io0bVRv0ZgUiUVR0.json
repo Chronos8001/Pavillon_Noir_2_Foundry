@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Conf ère une résistance mentale surnaturelle (douleur, magie, conviction).</li><li>Télékinésie.</li><li>Attaque l&#x27;esprit d&#x27;une maladie, d&#x27;un concept ou d&#x27;une personne.</li><li>Impose sa volonté sans même parler.</li><li>Inspire respect et obéissance.</li></ul><p><strong>Compulsions.</strong> Marcher sur des charbons ardents. Trouver une personne au charisme naturel inusité et pourtant hors norme.</p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Conf ère une résistance mentale surnaturelle (douleur, magie, conviction).</li><li>Télékinésie.</li><li>Attaque l'esprit d'une maladie, d'un concept ou d'une personne.</li><li>Impose sa volonté sans même parler.</li><li>Inspire respect et obéissance.</li></ul><p><strong>Compulsions.</strong> Marcher sur des charbons ardents. Trouver une personne au charisme naturel inusité et pourtant hors norme.</p>",
     "source": "Entre ciel et terre, p. 298",
     "voie": "voie-de-papa-legba",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.cLAnYvfRTW6M1YmZ",

@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Trouve les paroles les plus adaptées.</li><li>Rend effroyablement volubile.</li><li>Fait chanter les branches d&#x27;un arbre dans le vent.</li><li>Chante des mélodies et des paroles belles et originales.</li></ul><p><strong>Compulsions.</strong> Trouver un arbre bruissant dans le vent. Inventer une chanson.</p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Trouve les paroles les plus adaptées.</li><li>Rend effroyablement volubile.</li><li>Fait chanter les branches d'un arbre dans le vent.</li><li>Chante des mélodies et des paroles belles et originales.</li></ul><p><strong>Compulsions.</strong> Trouver un arbre bruissant dans le vent. Inventer une chanson.</p>",
     "source": "Entre ciel et terre, p. 185",
     "voie": "voie-des-xapiripe",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.uLmNntdGMAtLAIsE",

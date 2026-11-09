@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Voir les signes d&#x27;un fa funeste.</li><li>Donne une peau cadavérique.</li><li>Donne une mauvaise haleine ou odeur de pourriture.</li><li>Donne les yeux vitreux.</li></ul><p><strong>Compulsions.</strong> Trouver un être particulièrement chanceux ou portant la guigne.</p><p><em>Règles particulières : voir Entre ciel et terre, p. 290.</em></p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Voir les signes d'un fa funeste.</li><li>Donne une peau cadavérique.</li><li>Donne une mauvaise haleine ou odeur de pourriture.</li><li>Donne les yeux vitreux.</li></ul><p><strong>Compulsions.</strong> Trouver un être particulièrement chanceux ou portant la guigne.</p><p><em>Règles particulières : voir Entre ciel et terre, p. 290.</em></p>",
     "source": "Entre ciel et terre, p. 290",
     "voie": "voie-des-guedes",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.BJZUi8OCwtnsr9Ow",

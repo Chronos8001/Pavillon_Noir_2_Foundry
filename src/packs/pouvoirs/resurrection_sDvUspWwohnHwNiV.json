@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Retour à la vie.</li><li>Assure le caractère définitif d&#x27;une mort.</li></ul><p><strong>Compulsions.</strong> Retrouver le sosie d&#x27;un ami mort.</p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Retour à la vie.</li><li>Assure le caractère définitif d'une mort.</li></ul><p><strong>Compulsions.</strong> Retrouver le sosie d'un ami mort.</p>",
     "source": "Entre ciel et terre, p. 304",
     "voie": "voie-des-freres-marassa",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.g0bMhkfFArVT77cy",

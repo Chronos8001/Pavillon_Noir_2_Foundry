@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Désorganisation d&#x27;un groupe.</li><li>Rend incapable de réfléchir efficacement.</li><li>Fait passer une personne, un objet ou un événement pour un autre.</li><li>Incite une personne à s&#x27;excuser.</li></ul><p><strong>Compulsions.</strong> Créer une confusion au sein d&#x27;un groupe à un moment inadéquat. Faire passer une personne pour une autre.</p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Désorganisation d'un groupe.</li><li>Rend incapable de réfléchir efficacement.</li><li>Fait passer une personne, un objet ou un événement pour un autre.</li><li>Incite une personne à s'excuser.</li></ul><p><strong>Compulsions.</strong> Créer une confusion au sein d'un groupe à un moment inadéquat. Faire passer une personne pour une autre.</p>",
     "source": "Entre ciel et terre, p. 306",
     "voie": "voie-d-ogou",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.nT1z9NA3nij69fC3",

@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Étend les ramifications d&#x27;un arbre.</li><li>Découvre les ramifications d&#x27;une organisation ou d&#x27;un problème.</li><li>Fait pousser des bois de cerf.</li><li>Accroissement de la taille de la forêt.</li><li>Croissance de nouveaux membres.</li></ul><p><strong>Compulsions.</strong> Trouver un arbre aux racines aériennes. Rendre un problème impossible à aborder du fait de ses ramifications.</p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Étend les ramifications d'un arbre.</li><li>Découvre les ramifications d'une organisation ou d'un problème.</li><li>Fait pousser des bois de cerf.</li><li>Accroissement de la taille de la forêt.</li><li>Croissance de nouveaux membres.</li></ul><p><strong>Compulsions.</strong> Trouver un arbre aux racines aériennes. Rendre un problème impossible à aborder du fait de ses ramifications.</p>",
     "source": "Entre ciel et terre, p. 311",
     "voie": "voie-de-cousin-zaka",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.lP05NKFNMs90d9GB",

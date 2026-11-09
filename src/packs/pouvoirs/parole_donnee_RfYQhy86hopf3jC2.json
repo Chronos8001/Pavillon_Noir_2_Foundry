@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Peut reproduire la voix d&#x27;une personne qui a parlé au boyer.</li><li>Pervertit le sens des paroles de quelqu&#x27;un.</li><li>Rend muet.</li><li>Maudit celui qui reprend sa parole.</li></ul><p><strong>Compulsions.</strong> Faire une promesse difficile à tenir et la tenir néanmoins. Déformer les paroles d&#x27;autrui.</p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Peut reproduire la voix d'une personne qui a parlé au boyer.</li><li>Pervertit le sens des paroles de quelqu'un.</li><li>Rend muet.</li><li>Maudit celui qui reprend sa parole.</li></ul><p><strong>Compulsions.</strong> Faire une promesse difficile à tenir et la tenir néanmoins. Déformer les paroles d'autrui.</p>",
     "source": "Entre ciel et terre, p. 178",
     "voie": "voie-d-icheiricou-pour-le-conseil",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.wiw3plsp6sATryBq",

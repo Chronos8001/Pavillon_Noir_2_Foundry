@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Reconnaissance des alliés.</li><li>Appel à ceux de sa nation.</li><li>Loyauté indéfectible entre gens de même nation.</li><li>Donne l&#x27;illusion qu&#x27;on est issu de la même nation que sa victime.</li><li>Fait brûler les miroirs.</li><li>Utilise les surfaces réfléchissantes pour concentrer les rayons du soleil.</li><li>Contrôle de la détonation ou de la visée des fusils.</li><li>Vision dans les flammes des abords d&#x27;autres lieux enflammés.</li></ul><p><strong>Compulsions.</strong> Utiliser un fusil. Projeter des flammes ou une torche sur quelqu&#x27;un.</p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Reconnaissance des alliés.</li><li>Appel à ceux de sa nation.</li><li>Loyauté indéfectible entre gens de même nation.</li><li>Donne l'illusion qu'on est issu de la même nation que sa victime.</li><li>Fait brûler les miroirs.</li><li>Utilise les surfaces réfléchissantes pour concentrer les rayons du soleil.</li><li>Contrôle de la détonation ou de la visée des fusils.</li><li>Vision dans les flammes des abords d'autres lieux enflammés.</li></ul><p><strong>Compulsions.</strong> Utiliser un fusil. Projeter des flammes ou une torche sur quelqu'un.</p>",
     "source": "Entre ciel et terre, p. 194",
     "voie": "voie-des-zemis",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.adV2aUWhmHXDCarX",

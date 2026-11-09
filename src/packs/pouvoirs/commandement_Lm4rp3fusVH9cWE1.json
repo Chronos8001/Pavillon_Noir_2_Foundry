@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Prend le commandement d&#x27;un groupe.</li><li>Donne un ordre sans réplique.</li><li>Dénature ou change un ordre.</li><li>Fait passer une parole pour un commandement déplacé.</li></ul><p><strong>Compulsions.</strong> Prendre le commandement d&#x27;une troupe. N&#x27;abattre que les commandants adverses, sans toucher aux simples guerriers.</p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Prend le commandement d'un groupe.</li><li>Donne un ordre sans réplique.</li><li>Dénature ou change un ordre.</li><li>Fait passer une parole pour un commandement déplacé.</li></ul><p><strong>Compulsions.</strong> Prendre le commandement d'une troupe. N'abattre que les commandants adverses, sans toucher aux simples guerriers.</p>",
     "source": "Entre ciel et terre, p. 179",
     "voie": "voie-d-icheiricou-pour-le-conseil",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.wiw3plsp6sATryBq",

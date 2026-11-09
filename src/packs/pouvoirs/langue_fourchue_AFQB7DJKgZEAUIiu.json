@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>La langue semble s&#x27;allonger et devenir préhensible.</li><li>Un menteur se trahit.</li><li>Mensonge efficace.</li><li>Donne l&#x27;impression que quelqu&#x27;un ment.</li></ul><p><strong>Compulsions.</strong> Manipuler un objet complexe avec la langue. Tenir un mensonge grave à un ami ou peu grave à un groupe d&#x27;amis. Révéler le mensonge de quelqu&#x27;un. Faire passer quelqu&#x27;un pour un menteur.</p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>La langue semble s'allonger et devenir préhensible.</li><li>Un menteur se trahit.</li><li>Mensonge efficace.</li><li>Donne l'impression que quelqu'un ment.</li></ul><p><strong>Compulsions.</strong> Manipuler un objet complexe avec la langue. Tenir un mensonge grave à un ami ou peu grave à un groupe d'amis. Révéler le mensonge de quelqu'un. Faire passer quelqu'un pour un menteur.</p>",
     "source": "Entre ciel et terre, p. 282",
     "voie": "voie-de-dambala",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.fVIeiRnBn8ADVFE2",

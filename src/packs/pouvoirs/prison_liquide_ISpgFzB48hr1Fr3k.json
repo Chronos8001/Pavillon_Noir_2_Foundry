@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Empêche de bouger ce qui est entouré par de l&#x27;eau.</li><li>Fait fondre des fers ou les barreaux d&#x27;une prison.</li><li>Donne l&#x27;impression que l&#x27;on se noie alors qu&#x27;on est à l&#x27;air libre.</li><li>Force une personne n&#x27;ayant pas pied à se noyer.</li><li>Crée une phobie de l&#x27;eau.</li></ul><p><strong>Compulsions.</strong> Entrer en nageant dans une grotte sous-marine. Apprendre à nager à quelqu&#x27;un, ou apprendre à nager soi-même.</p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Empêche de bouger ce qui est entouré par de l'eau.</li><li>Fait fondre des fers ou les barreaux d'une prison.</li><li>Donne l'impression que l'on se noie alors qu'on est à l'air libre.</li><li>Force une personne n'ayant pas pied à se noyer.</li><li>Crée une phobie de l'eau.</li></ul><p><strong>Compulsions.</strong> Entrer en nageant dans une grotte sous-marine. Apprendre à nager à quelqu'un, ou apprendre à nager soi-même.</p>",
     "source": "Entre ciel et terre, p. 207",
     "voie": "voie-des-cinq-soleils",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.LIzof8tOOXvNP2kT",

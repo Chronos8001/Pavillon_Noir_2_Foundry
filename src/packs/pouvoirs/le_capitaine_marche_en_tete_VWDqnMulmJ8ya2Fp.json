@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Pousse le chef adverse à s&#x27;exposer.</li><li>Celui qui marche en tête est considéré comme le leader, soit par ses hommes, soit par l&#x27;ennemi.</li><li>Le fait que le chef marche en tête donne courage à ses hommes.</li></ul><p><strong>Compulsions.</strong> Mener des hommes à la victoire. Abattre le chef ennemi.</p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Pousse le chef adverse à s'exposer.</li><li>Celui qui marche en tête est considéré comme le leader, soit par ses hommes, soit par l'ennemi.</li><li>Le fait que le chef marche en tête donne courage à ses hommes.</li></ul><p><strong>Compulsions.</strong> Mener des hommes à la victoire. Abattre le chef ennemi.</p>",
     "source": "Entre ciel et terre, p. 173",
     "voie": "voie-d-icheiricou-pour-la-guerre",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.ua948TzRBv4MWuy4",

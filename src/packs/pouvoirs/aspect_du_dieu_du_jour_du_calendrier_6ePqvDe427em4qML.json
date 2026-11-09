@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Prend une des formes du dieu porteur du jour du calendrier.</li><li>Montre en tout lieu et tout moment la présence du dieu porteur du jour du calendrier.</li><li>Choisit une manifestation spécifique du dieu porteur du jour du calendrier. (Le monde va perdre la coloration due aux autres aspects de ce dieu. Ainsi, ne choisir chez Huizilopochtlui que son aspect de « dieu de la guerre » fera baisser la luminosité du soleil.)</li></ul><p><strong>Compulsions.</strong> Construire un déguisement correspondant à l&#x27;aspect du dieu.</p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Prend une des formes du dieu porteur du jour du calendrier.</li><li>Montre en tout lieu et tout moment la présence du dieu porteur du jour du calendrier.</li><li>Choisit une manifestation spécifique du dieu porteur du jour du calendrier. (Le monde va perdre la coloration due aux autres aspects de ce dieu. Ainsi, ne choisir chez Huizilopochtlui que son aspect de « dieu de la guerre » fera baisser la luminosité du soleil.)</li></ul><p><strong>Compulsions.</strong> Construire un déguisement correspondant à l'aspect du dieu.</p>",
     "source": "Entre ciel et terre, p. 201",
     "voie": "voie-du-calendrier",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.AFWMXMJdfCNP7hit",

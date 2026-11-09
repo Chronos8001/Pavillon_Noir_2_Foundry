@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Contrôle des mouvements du soleil et de la force de ses rayons.</li><li>Roue cosmique (changement de destin).</li><li>Venue ou dispersion des nuages.</li><li>Appel de la tempête et foudre.</li><li>Contrôle des feux.</li></ul><p><strong>Compulsions.</strong> Se faire foudroyer, soi ou le lieu où l&#x27;on vit.</p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Contrôle des mouvements du soleil et de la force de ses rayons.</li><li>Roue cosmique (changement de destin).</li><li>Venue ou dispersion des nuages.</li><li>Appel de la tempête et foudre.</li><li>Contrôle des feux.</li></ul><p><strong>Compulsions.</strong> Se faire foudroyer, soi ou le lieu où l'on vit.</p>",
     "source": "Entre ciel et terre, p. 254",
     "voie": "voie-du-druidisme",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.444Fft7a0LtvOMIS",

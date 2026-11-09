@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Peut faire apparaître ce qui ne devrait pas être ou faire disparaître ce qui devrait être.</li><li>Modification d&#x27;événements alors qu&#x27;ils se réalisent.</li><li>Adhésion de tous aux actes du prêtre, quels qu&#x27;ils soient.</li><li>Choix du destin d&#x27;un groupe de personnes.</li></ul><p><strong>Compulsions.</strong> Remettre sa vie entre les mains de l&#x27;improbable. Prendre la place de quelqu&#x27;un au destin différent.</p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Peut faire apparaître ce qui ne devrait pas être ou faire disparaître ce qui devrait être.</li><li>Modification d'événements alors qu'ils se réalisent.</li><li>Adhésion de tous aux actes du prêtre, quels qu'ils soient.</li><li>Choix du destin d'un groupe de personnes.</li></ul><p><strong>Compulsions.</strong> Remettre sa vie entre les mains de l'improbable. Prendre la place de quelqu'un au destin différent.</p>",
     "source": "Entre ciel et terre, p. 299",
     "voie": "voie-de-papa-legba",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.cLAnYvfRTW6M1YmZ",

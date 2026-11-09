@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Protection d&#x27;un convoi.</li><li>Avertissement lorsqu&#x27;un concurrent se manifeste.</li><li>Attraction des clients.</li><li>Obligation pour un artisan de faire du bon travail.</li><li>Sensation aux marchands d&#x27;être protégés.</li></ul><p><strong>Compulsions.</strong> Acheter et vendre de menus objets. Fabriquer un objet d&#x27;artisanat.</p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Protection d'un convoi.</li><li>Avertissement lorsqu'un concurrent se manifeste.</li><li>Attraction des clients.</li><li>Obligation pour un artisan de faire du bon travail.</li><li>Sensation aux marchands d'être protégés.</li></ul><p><strong>Compulsions.</strong> Acheter et vendre de menus objets. Fabriquer un objet d'artisanat.</p>",
     "source": "Entre ciel et terre, p. 248",
     "voie": "voie-du-druidisme",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.444Fft7a0LtvOMIS",

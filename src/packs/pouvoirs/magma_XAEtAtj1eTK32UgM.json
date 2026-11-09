@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Détruit l&#x27;ordre.</li><li>Réduit une situation, une personne ou un objet en quelque chose d&#x27;informe.</li><li>Fait surgir du magma en fusion des fissures de la terre.</li><li>Explosion ou éruption des volcans.</li></ul><p><strong>Compulsions.</strong> Détruire toute cohésion dans un groupe. Voir de la lave couler.</p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Détruit l'ordre.</li><li>Réduit une situation, une personne ou un objet en quelque chose d'informe.</li><li>Fait surgir du magma en fusion des fissures de la terre.</li><li>Explosion ou éruption des volcans.</li></ul><p><strong>Compulsions.</strong> Détruire toute cohésion dans un groupe. Voir de la lave couler.</p>",
     "source": "Entre ciel et terre, p. 207",
     "voie": "voie-des-cinq-soleils",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.LIzof8tOOXvNP2kT",

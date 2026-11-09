@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Pousse à se tuer à la tâche.</li><li>Donne la sensation qu&#x27;un travail est épuisant.</li><li>Épuisement rapide au travail.</li><li>Donne de l&#x27;endurance à l&#x27;effort.</li></ul><p><strong>Compulsions.</strong> Pousser à outrance au travail. Travailler jusqu&#x27;à avoir les muscles qui brûlent.</p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Pousse à se tuer à la tâche.</li><li>Donne la sensation qu'un travail est épuisant.</li><li>Épuisement rapide au travail.</li><li>Donne de l'endurance à l'effort.</li></ul><p><strong>Compulsions.</strong> Pousser à outrance au travail. Travailler jusqu'à avoir les muscles qui brûlent.</p>",
     "source": "Entre ciel et terre, p. 310",
     "voie": "voie-de-cousin-zaka",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.lP05NKFNMs90d9GB",

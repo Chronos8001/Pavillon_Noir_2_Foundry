@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Fait parler un oiseau.</li><li>Demande de l&#x27;aide aux oiseaux.</li><li>Fait passer des personnes pour des envoyés du divin.</li><li>Donne à quelqu&#x27;un le statut d&#x27;envoyé d&#x27;Ichéiricou, si bien qu&#x27;il ne pourra ni mentir ni trahir.</li></ul><p><strong>Compulsions.</strong> Arriver à comprendre les besoins ou désirs d&#x27;un oiseau. Donner comme mission à un oiseau de transmettre un message important.</p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Fait parler un oiseau.</li><li>Demande de l'aide aux oiseaux.</li><li>Fait passer des personnes pour des envoyés du divin.</li><li>Donne à quelqu'un le statut d'envoyé d'Ichéiricou, si bien qu'il ne pourra ni mentir ni trahir.</li></ul><p><strong>Compulsions.</strong> Arriver à comprendre les besoins ou désirs d'un oiseau. Donner comme mission à un oiseau de transmettre un message important.</p>",
     "source": "Entre ciel et terre, p. 182",
     "voie": "voie-d-icheiricou-pour-la-protection-et-la-punition",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.yH60f20rPKBEP9j4",

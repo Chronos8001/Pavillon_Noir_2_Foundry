@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Fait apparaître les conspirations.</li><li>Trouve les alliés idéaux pour accomplir sa conspiration.</li><li>Fait croire à sa proie qu&#x27;elle est la cible d&#x27;une conspiration.</li><li>Pousse à la conspiration.</li></ul><p><strong>Compulsions.</strong> Conspirer au sein de sa communauté. Accuser un conspirateur.</p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Fait apparaître les conspirations.</li><li>Trouve les alliés idéaux pour accomplir sa conspiration.</li><li>Fait croire à sa proie qu'elle est la cible d'une conspiration.</li><li>Pousse à la conspiration.</li></ul><p><strong>Compulsions.</strong> Conspirer au sein de sa communauté. Accuser un conspirateur.</p>",
     "source": "Entre ciel et terre, p. 293",
     "voie": "voie-des-guedes",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.BJZUi8OCwtnsr9Ow",

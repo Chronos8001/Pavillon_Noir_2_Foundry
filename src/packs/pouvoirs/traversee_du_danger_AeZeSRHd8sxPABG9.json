@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Volonté de traverser délibérément un danger.</li><li>Donner une incapacité à se mettre en danger.</li><li>Sauvegarde lors de la traversée d&#x27;un danger.</li></ul><p><strong>Compulsions.</strong> Traverser une zone de danger en se fiant uniquement à sa chance. Montrer un danger comme infranchissable.</p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Volonté de traverser délibérément un danger.</li><li>Donner une incapacité à se mettre en danger.</li><li>Sauvegarde lors de la traversée d'un danger.</li></ul><p><strong>Compulsions.</strong> Traverser une zone de danger en se fiant uniquement à sa chance. Montrer un danger comme infranchissable.</p>",
     "source": "Entre ciel et terre, p. 278",
     "voie": "voie-d-agwe",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.6bwsVNHhFxnjtf9Q",

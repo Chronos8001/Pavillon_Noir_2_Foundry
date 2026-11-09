@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Permet de s&#x27;envoler et d&#x27;être porté par le vent lorsqu&#x27;on accomplit des gestes gracieux.</li><li>Donne l&#x27;impression de flotter au-dessus du sol.</li><li>Gestes gracieux attirant le sexe opposé.</li><li>Grande rapidité et précision des gestes.</li><li>Contournement d&#x27;obstacles avec une trajectoire harmonieuse.</li></ul><p><strong>Compulsions.</strong> Rattraper quelqu&#x27;un à la course. Gagner au jeu de balle (hommes seulement). Séduire un homme par des gestes gracieux (femmes seulement).</p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Permet de s'envoler et d'être porté par le vent lorsqu'on accomplit des gestes gracieux.</li><li>Donne l'impression de flotter au-dessus du sol.</li><li>Gestes gracieux attirant le sexe opposé.</li><li>Grande rapidité et précision des gestes.</li><li>Contournement d'obstacles avec une trajectoire harmonieuse.</li></ul><p><strong>Compulsions.</strong> Rattraper quelqu'un à la course. Gagner au jeu de balle (hommes seulement). Séduire un homme par des gestes gracieux (femmes seulement).</p>",
     "source": "Entre ciel et terre, p. 206",
     "voie": "voie-des-cinq-soleils",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.LIzof8tOOXvNP2kT",

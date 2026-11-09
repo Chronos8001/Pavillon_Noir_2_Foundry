@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Neutraliser les épidémies déclenchées par la fumée des feux ennemis.</li><li>Génère une terreur de tout objet technologique.</li><li>Rend la fumée d&#x27;un feu porteuse d&#x27;une maladie épidémique.</li></ul><p><strong>Compulsions.</strong> Débusquer un animal en l&#x27;enfumant. Détruire un objet technologique des Blancs.</p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Neutraliser les épidémies déclenchées par la fumée des feux ennemis.</li><li>Génère une terreur de tout objet technologique.</li><li>Rend la fumée d'un feu porteuse d'une maladie épidémique.</li></ul><p><strong>Compulsions.</strong> Débusquer un animal en l'enfumant. Détruire un objet technologique des Blancs.</p>",
     "source": "Entre ciel et terre, p. 188",
     "voie": "voie-des-xapiripe",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.uLmNntdGMAtLAIsE",

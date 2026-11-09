@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Devient invisible tant qu&#x27;il garde un lieu, une personne ou un objet.</li><li>Assigne à un être intangible la tâche de garder un lieu, une personne ou un objet.</li><li>Rend visible toute protection cachée d&#x27;un lieu, d&#x27;une personne ou d&#x27;un objet.</li></ul><p><strong>Compulsions.</strong> S&#x27;endormir près d&#x27;un grand nombre d&#x27;oiseaux. Déjouer une embuscade.</p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Devient invisible tant qu'il garde un lieu, une personne ou un objet.</li><li>Assigne à un être intangible la tâche de garder un lieu, une personne ou un objet.</li><li>Rend visible toute protection cachée d'un lieu, d'une personne ou d'un objet.</li></ul><p><strong>Compulsions.</strong> S'endormir près d'un grand nombre d'oiseaux. Déjouer une embuscade.</p>",
     "source": "Entre ciel et terre, p. 193",
     "voie": "voie-des-zemis",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.adV2aUWhmHXDCarX",

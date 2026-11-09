@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Les contractants déterminent avec les conseils du druide les termes du contrat, et le druide détermine la punition divine infligée à celui qui le violerait. Le contrat doit avoir un terme ou un but, qui, une fois atteint, met fin au pouvoir. Le type de punition doit correspondre au type de contrat (exemple : punition financière pour un contrat commercial). En cas de violation du contrat, le violeur est puni comme il lui a été prédit par le druide.</li></ul><p><strong>Compulsions.</strong> Violer ouvertement les termes d&#x27;un contrat. Chaperonner quelqu&#x27;un qui tient peu ses engagements et faire en sorte qu&#x27;il honore un de ses contrats coûte que coûte.</p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Les contractants déterminent avec les conseils du druide les termes du contrat, et le druide détermine la punition divine infligée à celui qui le violerait. Le contrat doit avoir un terme ou un but, qui, une fois atteint, met fin au pouvoir. Le type de punition doit correspondre au type de contrat (exemple : punition financière pour un contrat commercial). En cas de violation du contrat, le violeur est puni comme il lui a été prédit par le druide.</li></ul><p><strong>Compulsions.</strong> Violer ouvertement les termes d'un contrat. Chaperonner quelqu'un qui tient peu ses engagements et faire en sorte qu'il honore un de ses contrats coûte que coûte.</p>",
     "source": "Entre ciel et terre, p. 250",
     "voie": "voie-du-druidisme",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.444Fft7a0LtvOMIS",

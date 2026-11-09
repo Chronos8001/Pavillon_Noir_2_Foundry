@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Assure la santé à qui se tient propre.</li><li>Non-infection d&#x27;une plaie nettoyée.</li><li>Assainit ou nettoie.</li></ul><p><strong>Compulsions.</strong> Arriver à convaincre un être sale de rester propre. Nettoyer une plaie.</p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Assure la santé à qui se tient propre.</li><li>Non-infection d'une plaie nettoyée.</li><li>Assainit ou nettoie.</li></ul><p><strong>Compulsions.</strong> Arriver à convaincre un être sale de rester propre. Nettoyer une plaie.</p>",
     "source": "Entre ciel et terre, p. 180",
     "voie": "voie-d-icheiricou-pour-le-conseil",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.wiw3plsp6sATryBq",

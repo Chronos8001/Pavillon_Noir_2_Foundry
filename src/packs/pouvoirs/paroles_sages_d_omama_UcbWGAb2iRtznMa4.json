@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Trouver les paroles les plus sages.</li><li>Faire entendre une parole comme si elle venait du sage Omama lui-même.</li><li>Voit si les idées d&#x27;une personne viennent d&#x27;elle.</li></ul><p><strong>Compulsions.</strong> Contredire systématiquement une personne connue pour sa sagesse. Convaincre quelqu&#x27;un d&#x27;une parfaite ineptie.</p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Trouver les paroles les plus sages.</li><li>Faire entendre une parole comme si elle venait du sage Omama lui-même.</li><li>Voit si les idées d'une personne viennent d'elle.</li></ul><p><strong>Compulsions.</strong> Contredire systématiquement une personne connue pour sa sagesse. Convaincre quelqu'un d'une parfaite ineptie.</p>",
     "source": "Entre ciel et terre, p. 185",
     "voie": "voie-des-xapiripe",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.uLmNntdGMAtLAIsE",

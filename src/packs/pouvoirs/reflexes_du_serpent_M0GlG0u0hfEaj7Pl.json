@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Acte/mouvement immédiat (bonus d&#x27;Actions).</li><li>Petit geste invisible à l&#x27;oeil nu.</li><li>Aide aux actions rapides.</li><li>Initiative sur les adversaires.</li><li>Prescience de quelques secondes.</li></ul><p><strong>Compulsions.</strong> Faire les poches à quelqu&#x27;un sans se ndre. Arrêter un projectile (flèche, aiguille de sarbacane) de la main. Esquiver une balle alors que l&#x27;on est visé.</p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Acte/mouvement immédiat (bonus d'Actions).</li><li>Petit geste invisible à l'oeil nu.</li><li>Aide aux actions rapides.</li><li>Initiative sur les adversaires.</li><li>Prescience de quelques secondes.</li></ul><p><strong>Compulsions.</strong> Faire les poches à quelqu'un sans se ndre. Arrêter un projectile (flèche, aiguille de sarbacane) de la main. Esquiver une balle alors que l'on est visé.</p>",
     "source": "Entre ciel et terre, p. 283",
     "voie": "voie-de-dambala",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.fVIeiRnBn8ADVFE2",

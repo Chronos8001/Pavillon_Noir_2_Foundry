@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Consacrer des herbes.</li></ul><p><strong>Compulsions.</strong> Inhaler toutes sortes de fumées d&#x27;herbes jusqu&#x27;à en trouver une qui ait un effet intéressant.</p><p><em>Règles particulières : voir Entre ciel et terre, p. 177.</em></p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Consacrer des herbes.</li></ul><p><strong>Compulsions.</strong> Inhaler toutes sortes de fumées d'herbes jusqu'à en trouver une qui ait un effet intéressant.</p><p><em>Règles particulières : voir Entre ciel et terre, p. 177.</em></p>",
     "source": "Entre ciel et terre, p. 177",
     "voie": "voie-d-icheiricou-pour-le-conseil",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.wiw3plsp6sATryBq",

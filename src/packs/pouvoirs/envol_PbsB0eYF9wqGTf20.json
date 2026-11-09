@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Donne une irrépressible envie de voler.</li><li>Propulse un objet ou une personne dans les airs.</li><li>Vol plané ou saut gigantesque.</li><li>Sensation de lévitation.</li><li>Réussite insoupçonnée et durable.</li></ul><p><strong>Compulsions.</strong> Plonger d&#x27;une dizaine de mètres. Pousser quelqu&#x27;un dans le vide. Étudier l&#x27;envol d&#x27;un gros oiseau, comme l&#x27;albatros.</p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Donne une irrépressible envie de voler.</li><li>Propulse un objet ou une personne dans les airs.</li><li>Vol plané ou saut gigantesque.</li><li>Sensation de lévitation.</li><li>Réussite insoupçonnée et durable.</li></ul><p><strong>Compulsions.</strong> Plonger d'une dizaine de mètres. Pousser quelqu'un dans le vide. Étudier l'envol d'un gros oiseau, comme l'albatros.</p>",
     "source": "Entre ciel et terre, p. 298",
     "voie": "voie-de-papa-legba",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.cLAnYvfRTW6M1YmZ",

@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Union indestructible.</li><li>Coexistence sans nuage.</li><li>Parfaite complémentarité.</li><li>Incorporation du zémi dans le corps du béhique et création d&#x27;un être symbiote.</li></ul><p><strong>Compulsions.</strong> Construction d&#x27;une statuette zémi qu&#x27;on ne pourra pas séparer de son corps.</p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Union indestructible.</li><li>Coexistence sans nuage.</li><li>Parfaite complémentarité.</li><li>Incorporation du zémi dans le corps du béhique et création d'un être symbiote.</li></ul><p><strong>Compulsions.</strong> Construction d'une statuette zémi qu'on ne pourra pas séparer de son corps.</p>",
     "source": "Entre ciel et terre, p. 195",
     "voie": "voie-des-zemis",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.adV2aUWhmHXDCarX",

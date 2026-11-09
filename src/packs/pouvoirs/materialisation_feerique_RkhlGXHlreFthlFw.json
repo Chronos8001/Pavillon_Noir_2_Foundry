@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Matérialise une fée (la rend visible par tous) : elle subira la flétrissure due à l&#x27;incrédulité.</li><li>Donne corps aux rêves les plus fous d&#x27;une personne.</li><li>Crée une fée qui aidera une personne à résoudre un problème donné.</li><li>Matérialise le pire cauchemar d&#x27;une personne.</li></ul><p><strong>Compulsions.</strong> Peindre, dessiner ou sculpter une fée. Aider quelqu&#x27;un à réaliser un rêve.</p><p><em>Règles particulières : voir Entre ciel et terre, p. 265.</em></p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Matérialise une fée (la rend visible par tous) : elle subira la flétrissure due à l'incrédulité.</li><li>Donne corps aux rêves les plus fous d'une personne.</li><li>Crée une fée qui aidera une personne à résoudre un problème donné.</li><li>Matérialise le pire cauchemar d'une personne.</li></ul><p><strong>Compulsions.</strong> Peindre, dessiner ou sculpter une fée. Aider quelqu'un à réaliser un rêve.</p><p><em>Règles particulières : voir Entre ciel et terre, p. 265.</em></p>",
     "source": "Entre ciel et terre, p. 265",
     "voie": "voie-du-folklore",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.Iy4OYyIN7hI6KjNY",

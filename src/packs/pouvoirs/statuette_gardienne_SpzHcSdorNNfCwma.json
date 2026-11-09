@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Protection du possesseur du gad.</li><li>Fait se retourner un gad contre son possesseur.</li></ul><p><strong>Compulsions.</strong> Sculpter une statuette décrivant la créature d&#x27;un de ses cauchemars.</p><p><em>Règles particulières : voir Entre ciel et terre, p. 292.</em></p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Protection du possesseur du gad.</li><li>Fait se retourner un gad contre son possesseur.</li></ul><p><strong>Compulsions.</strong> Sculpter une statuette décrivant la créature d'un de ses cauchemars.</p><p><em>Règles particulières : voir Entre ciel et terre, p. 292.</em></p>",
     "source": "Entre ciel et terre, p. 292",
     "voie": "voie-des-guedes",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.BJZUi8OCwtnsr9Ow",

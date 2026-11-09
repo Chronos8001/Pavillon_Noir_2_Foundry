@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Consécration d&#x27;une poudre.</li><li>Incite une fée à se montrer amicale.</li><li>Sait si une action est le fait d&#x27;une fée aux bonnes intentions ou non.</li><li>Demande à une fée d&#x27;accompagner une personne pour l&#x27;aider à résoudre ses problèmes. L&#x27;être aidé peut voir et communiquer lorsqu&#x27;il est seul avec sa bonne fée.</li></ul><p><strong>Compulsions.</strong> Demander un service à une fée pour quelqu&#x27;un d&#x27;autre.</p><p><em>Règles particulières : voir Entre ciel et terre, p. 266.</em></p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Consécration d'une poudre.</li><li>Incite une fée à se montrer amicale.</li><li>Sait si une action est le fait d'une fée aux bonnes intentions ou non.</li><li>Demande à une fée d'accompagner une personne pour l'aider à résoudre ses problèmes. L'être aidé peut voir et communiquer lorsqu'il est seul avec sa bonne fée.</li></ul><p><strong>Compulsions.</strong> Demander un service à une fée pour quelqu'un d'autre.</p><p><em>Règles particulières : voir Entre ciel et terre, p. 266.</em></p>",
     "source": "Entre ciel et terre, p. 266",
     "voie": "voie-du-folklore",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.Iy4OYyIN7hI6KjNY",

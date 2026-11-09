@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Rappelle que la trecena est néfaste pour une action en cours, et la fait échouer.</li><li>Empêche quelqu&#x27;un d&#x27;entreprendre ce pour quoi le calendrier indique que la trecena est néfaste.</li></ul><p><strong>Compulsions.</strong> Se tenir à tout prix, ainsi que ses proches, à une interdiction du calendrier.</p><p><em>Règles particulières : voir Entre ciel et terre, p. 199.</em></p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Rappelle que la trecena est néfaste pour une action en cours, et la fait échouer.</li><li>Empêche quelqu'un d'entreprendre ce pour quoi le calendrier indique que la trecena est néfaste.</li></ul><p><strong>Compulsions.</strong> Se tenir à tout prix, ainsi que ses proches, à une interdiction du calendrier.</p><p><em>Règles particulières : voir Entre ciel et terre, p. 199.</em></p>",
     "source": "Entre ciel et terre, p. 199",
     "voie": "voie-du-calendrier",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.AFWMXMJdfCNP7hit",

@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Contrôle une masse importante d&#x27;individus plus ou moins d&#x27;accord.</li><li>Comportement parfaitement organisé d&#x27;un groupe.</li><li>Donne la sensation d&#x27;être submergé.</li><li>Appel d&#x27;une pluie de sauterelles ou de fourmis rouges.</li><li>Localisation des groupes importants d&#x27;individus.</li></ul><p><strong>Compulsions.</strong> Vivre à côté d&#x27;une fourmilière de fourmis rouges ou suivre un essaim de sauterelles.</p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Contrôle une masse importante d'individus plus ou moins d'accord.</li><li>Comportement parfaitement organisé d'un groupe.</li><li>Donne la sensation d'être submergé.</li><li>Appel d'une pluie de sauterelles ou de fourmis rouges.</li><li>Localisation des groupes importants d'individus.</li></ul><p><strong>Compulsions.</strong> Vivre à côté d'une fourmilière de fourmis rouges ou suivre un essaim de sauterelles.</p>",
     "source": "Entre ciel et terre, p. 308",
     "voie": "voie-d-ogou",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.nT1z9NA3nij69fC3",

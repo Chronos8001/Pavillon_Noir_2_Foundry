@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Permet de s&#x27;envoler.</li><li>Donne ou retire la faculté de voler.</li><li>Vol d&#x27;objet.</li></ul><p><strong>Compulsions.</strong> Sauter du haut d&#x27;une falaise dans l&#x27;eau. Voler un objet cher à un ami.</p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Permet de s'envoler.</li><li>Donne ou retire la faculté de voler.</li><li>Vol d'objet.</li></ul><p><strong>Compulsions.</strong> Sauter du haut d'une falaise dans l'eau. Voler un objet cher à un ami.</p>",
     "source": "Entre ciel et terre, p. 194",
     "voie": "voie-des-zemis",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.adV2aUWhmHXDCarX",

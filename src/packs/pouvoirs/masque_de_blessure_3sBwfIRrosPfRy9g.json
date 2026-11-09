@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Trace de fausses blessures sur la peau.</li><li>Convainc une personne qu&#x27;elle est plus gravement blessée qu&#x27;elle n&#x27;est.</li><li>Fausses blessures intimidantes ou effrayantes.</li></ul><p><strong>Compulsions.</strong> Simuler une blessure. Aggraver la blessure d&#x27;un blessé.</p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Trace de fausses blessures sur la peau.</li><li>Convainc une personne qu'elle est plus gravement blessée qu'elle n'est.</li><li>Fausses blessures intimidantes ou effrayantes.</li></ul><p><strong>Compulsions.</strong> Simuler une blessure. Aggraver la blessure d'un blessé.</p>",
     "source": "Entre ciel et terre, p. 300",
     "voie": "voie-des-freres-marassa",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.g0bMhkfFArVT77cy",

@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Trouver les mots qui blessent.</li><li>Introduire dans les propos d&#x27;autrui de la méchanceté involontaire.</li><li>Percevoir les intentions mauvaises dans des propos.</li><li>Empoisonner l&#x27;esprit de quelqu&#x27;un par ses paroles.</li><li>Morsure empoisonnée.</li></ul><p><strong>Compulsions.</strong> Blesser ou humilier profondément quelqu&#x27;un par ses paroles. Empoisonner quelqu&#x27;un. Créer une obsession chez quelqu&#x27;un.</p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Trouver les mots qui blessent.</li><li>Introduire dans les propos d'autrui de la méchanceté involontaire.</li><li>Percevoir les intentions mauvaises dans des propos.</li><li>Empoisonner l'esprit de quelqu'un par ses paroles.</li><li>Morsure empoisonnée.</li></ul><p><strong>Compulsions.</strong> Blesser ou humilier profondément quelqu'un par ses paroles. Empoisonner quelqu'un. Créer une obsession chez quelqu'un.</p>",
     "source": "Entre ciel et terre, p. 283",
     "voie": "voie-de-dambala",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.fVIeiRnBn8ADVFE2",

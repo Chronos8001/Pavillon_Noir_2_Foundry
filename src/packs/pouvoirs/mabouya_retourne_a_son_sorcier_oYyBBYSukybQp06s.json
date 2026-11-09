@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Retour des maléfices à leur envoyeur.</li><li>Un mabouya comme animal de compagnie.</li><li>Le mabouya montre le chemin jusqu&#x27;au sorcier qui l&#x27;a envoyé.</li></ul><p><strong>Compulsions.</strong> Punir un sorcier (comprendre « un prêtre ») pour les sortilèges qu&#x27;il a lancés (pour les maux qu&#x27;on lui attribue).</p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Retour des maléfices à leur envoyeur.</li><li>Un mabouya comme animal de compagnie.</li><li>Le mabouya montre le chemin jusqu'au sorcier qui l'a envoyé.</li></ul><p><strong>Compulsions.</strong> Punir un sorcier (comprendre « un prêtre ») pour les sortilèges qu'il a lancés (pour les maux qu'on lui attribue).</p>",
     "source": "Entre ciel et terre, p. 184",
     "voie": "voie-d-icheiricou-pour-la-protection-et-la-punition",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.yH60f20rPKBEP9j4",

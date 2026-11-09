@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Inspire une colère vengeresse.</li><li>Colère chargée d&#x27;une rancune indélébile.</li><li>Fait passer une colère pour un comportement infantile.</li><li>Décharge la colère des Frères Marassa sur qui manque de respect aux rites ou s&#x27;en moque.</li><li>Crise d&#x27;identité des disciples.</li><li>Divergence de points de vue entre deux êtres fusionnels.</li><li>Sépare deux êtres chers.</li><li>Rend impossible l&#x27;association entre deux faits.</li><li>Destruction de mécanisme par modification d&#x27;un élément.</li></ul><p><strong>Compulsions.</strong> Séparer un enfant de ses parents. Nier violente catégoriquement la relation entre deux faits que l&#x27;on pense liés.</p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Inspire une colère vengeresse.</li><li>Colère chargée d'une rancune indélébile.</li><li>Fait passer une colère pour un comportement infantile.</li><li>Décharge la colère des Frères Marassa sur qui manque de respect aux rites ou s'en moque.</li><li>Crise d'identité des disciples.</li><li>Divergence de points de vue entre deux êtres fusionnels.</li><li>Sépare deux êtres chers.</li><li>Rend impossible l'association entre deux faits.</li><li>Destruction de mécanisme par modification d'un élément.</li></ul><p><strong>Compulsions.</strong> Séparer un enfant de ses parents. Nier violente catégoriquement la relation entre deux faits que l'on pense liés.</p>",
     "source": "Entre ciel et terre, p. 302",
     "voie": "voie-des-freres-marassa",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.g0bMhkfFArVT77cy",

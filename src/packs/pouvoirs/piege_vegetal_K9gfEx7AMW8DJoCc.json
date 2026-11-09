@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Cache une fosse sous les végétaux.</li><li>Buissons inextricables.</li><li>Amène une proie à soi.</li><li>Collets.</li><li>Enchevêtrement dans les végétaux.</li><li>Donne la sensation d&#x27;être perdu ou piégé dans les bois.</li></ul><p><strong>Compulsions.</strong> Tomber dans la fosse qu&#x27;on a creusée. S&#x27;enfoncer dans un taillis inextricable.</p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Cache une fosse sous les végétaux.</li><li>Buissons inextricables.</li><li>Amène une proie à soi.</li><li>Collets.</li><li>Enchevêtrement dans les végétaux.</li><li>Donne la sensation d'être perdu ou piégé dans les bois.</li></ul><p><strong>Compulsions.</strong> Tomber dans la fosse qu'on a creusée. S'enfoncer dans un taillis inextricable.</p>",
     "source": "Entre ciel et terre, p. 309",
     "voie": "voie-de-cousin-zaka",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.lP05NKFNMs90d9GB",

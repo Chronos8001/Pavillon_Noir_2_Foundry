@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Invisibilité par l&#x27;immobilité.</li><li>Raidissement des articulations.</li><li>Tendance à lézarder au soleil.</li><li>Lézarder au soleil rend plus rapide.</li></ul><p><strong>Compulsions.</strong> Rester immobile sous le soleil pendant des heures. Ne bouger que lorsque c&#x27;est strictement nécessaire et approprié.</p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Invisibilité par l'immobilité.</li><li>Raidissement des articulations.</li><li>Tendance à lézarder au soleil.</li><li>Lézarder au soleil rend plus rapide.</li></ul><p><strong>Compulsions.</strong> Rester immobile sous le soleil pendant des heures. Ne bouger que lorsque c'est strictement nécessaire et approprié.</p>",
     "source": "Entre ciel et terre, p. 283",
     "voie": "voie-de-dambala",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.fVIeiRnBn8ADVFE2",

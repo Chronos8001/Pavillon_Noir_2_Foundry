@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Annule les effets d&#x27;un pouvoir sur une personne.</li><li>Arrache quelqu&#x27;un à sa religion.</li><li>Met fin violemment à une possession.</li><li>Extirpe une pensée subversive.</li></ul><p><strong>Compulsions.</strong> Convaincre une personne de ne pas réitérer un blasphème. Persuader quelqu&#x27;un qu&#x27;il est possédé.</p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Annule les effets d'un pouvoir sur une personne.</li><li>Arrache quelqu'un à sa religion.</li><li>Met fin violemment à une possession.</li><li>Extirpe une pensée subversive.</li></ul><p><strong>Compulsions.</strong> Convaincre une personne de ne pas réitérer un blasphème. Persuader quelqu'un qu'il est possédé.</p>",
     "source": "Entre ciel et terre, p. 210",
     "voie": "voie-de-dieu",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.SPlB5GslKnZdeWKG",

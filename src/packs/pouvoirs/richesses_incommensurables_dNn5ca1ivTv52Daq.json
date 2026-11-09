@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Accroît la chance de trouver des richesses ou la quantité des richesses.</li><li>Donne l&#x27;illusion d&#x27;une grande richesse.</li><li>Donne l&#x27;aspect de l&#x27;or.</li><li>Attise l&#x27;appât du gain.</li></ul><p><strong>Compulsions.</strong> Fabriquer de la fausse monnaie. Trouver un grand trésor.</p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Accroît la chance de trouver des richesses ou la quantité des richesses.</li><li>Donne l'illusion d'une grande richesse.</li><li>Donne l'aspect de l'or.</li><li>Attise l'appât du gain.</li></ul><p><strong>Compulsions.</strong> Fabriquer de la fausse monnaie. Trouver un grand trésor.</p>",
     "source": "Entre ciel et terre, p. 284",
     "voie": "voie-de-dambala",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.fVIeiRnBn8ADVFE2",

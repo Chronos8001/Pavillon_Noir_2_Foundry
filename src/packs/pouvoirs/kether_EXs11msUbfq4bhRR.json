@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Accès gratuit et illimité aux pouvoirs connus de la Voie (jusqu&#x27;à la Puissance 9) aux heures ou aux jours d&#x27;activité, avec les paramètres de base de ces pouvoirs. Ces paramètres ne peuvent pas être augmentés.</li><li>Contrer le pouvoir Vallée de la mort.</li></ul><ul><li><strong>Attribut.</strong> Seuil d&#x27;éternité.</li><li><strong>Heure.</strong> Toute.</li><li><strong>Jours.</strong> Tous.</li></ul>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Accès gratuit et illimité aux pouvoirs connus de la Voie (jusqu'à la Puissance 9) aux heures ou aux jours d'activité, avec les paramètres de base de ces pouvoirs. Ces paramètres ne peuvent pas être augmentés.</li><li>Contrer le pouvoir Vallée de la mort.</li></ul><ul><li><strong>Attribut.</strong> Seuil d'éternité.</li><li><strong>Heure.</strong> Toute.</li><li><strong>Jours.</strong> Tous.</li></ul>",
     "source": "Entre ciel et terre, p. 229",
     "voie": "voie-des-sephiroth",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.5soP14P6cbQPMX5I",

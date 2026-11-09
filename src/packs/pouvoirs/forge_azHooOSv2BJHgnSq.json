@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Forge une arme.</li><li>Forge le caractère.</li><li>Chaleur étouffante dans un lieu fermé.</li><li>Modification à main nue de la forme d&#x27;un objet métallique.</li><li>Donne la sensation d&#x27;être entre le marteau et l&#x27;enclume.</li></ul><p><strong>Compulsions.</strong> Subir des affronts sans broncher. Se frapper la main avec un marteau contre une enclume.</p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Forge une arme.</li><li>Forge le caractère.</li><li>Chaleur étouffante dans un lieu fermé.</li><li>Modification à main nue de la forme d'un objet métallique.</li><li>Donne la sensation d'être entre le marteau et l'enclume.</li></ul><p><strong>Compulsions.</strong> Subir des affronts sans broncher. Se frapper la main avec un marteau contre une enclume.</p>",
     "source": "Entre ciel et terre, p. 305",
     "voie": "voie-d-ogou",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.nT1z9NA3nij69fC3",

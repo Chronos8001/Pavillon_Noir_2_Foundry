@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Signification divinatoire du cri d&#x27;un oiseau.</li></ul><p><strong>Compulsions.</strong> Faire le lien entre un cri d&#x27;oiseau et un guille événement donné.</p><p><em>Règles particulières : voir Entre ciel et terre, p. 187.</em></p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Signification divinatoire du cri d'un oiseau.</li></ul><p><strong>Compulsions.</strong> Faire le lien entre un cri d'oiseau et un guille événement donné.</p><p><em>Règles particulières : voir Entre ciel et terre, p. 187.</em></p>",
     "source": "Entre ciel et terre, p. 187",
     "voie": "voie-des-xapiripe",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.uLmNntdGMAtLAIsE",

@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Flottera, flottera pas...</li><li>Un morceau d&#x27;épave remonte à la surface.</li><li>Donner des ressources à un être en train de se noyer ou débordé par les événements.</li><li>Faire réapparaître les secrets enfouis.</li></ul><p><strong>Compulsions.</strong> Cacher volontairement un indice utile connu de soi seul. Pousser quelqu&#x27;un au mensonge.</p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Flottera, flottera pas...</li><li>Un morceau d'épave remonte à la surface.</li><li>Donner des ressources à un être en train de se noyer ou débordé par les événements.</li><li>Faire réapparaître les secrets enfouis.</li></ul><p><strong>Compulsions.</strong> Cacher volontairement un indice utile connu de soi seul. Pousser quelqu'un au mensonge.</p>",
     "source": "Entre ciel et terre, p. 277",
     "voie": "voie-d-agwe",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.6bwsVNHhFxnjtf9Q",

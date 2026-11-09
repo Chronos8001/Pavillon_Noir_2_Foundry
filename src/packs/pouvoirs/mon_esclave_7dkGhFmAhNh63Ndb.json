@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Parfait contrôle du coeur, du corps et de l&#x27;esprit de la victime.</li><li>Assigne une personne à son service.</li><li>Libération d&#x27;un esclave.</li></ul><p><strong>Compulsions.</strong> Manifester envers son égal des relations de maître à esclave. Libérer un esclave.</p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Parfait contrôle du coeur, du corps et de l'esprit de la victime.</li><li>Assigne une personne à son service.</li><li>Libération d'un esclave.</li></ul><p><strong>Compulsions.</strong> Manifester envers son égal des relations de maître à esclave. Libérer un esclave.</p>",
     "source": "Entre ciel et terre, p. 184",
     "voie": "voie-d-icheiricou-pour-la-protection-et-la-punition",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.yH60f20rPKBEP9j4",

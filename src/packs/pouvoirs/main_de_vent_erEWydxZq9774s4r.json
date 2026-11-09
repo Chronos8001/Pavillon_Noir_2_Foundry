@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Déplace les objets à distance (les fait tomber, rouler sur le sol), mais ne peut pas les manipuler.</li><li>Crée des tourbillons aériens.</li><li>Contrôle de la direction du vent.</li><li>Fait perdre le contrôle d&#x27;une situation.</li><li>Empêche de saisir correctement les objets ou les personnes.</li></ul><p><strong>Compulsions.</strong> Manquer d&#x27;attraper un objet fragile et précieux. Ne pas chercher à contrôler une situation.</p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Déplace les objets à distance (les fait tomber, rouler sur le sol), mais ne peut pas les manipuler.</li><li>Crée des tourbillons aériens.</li><li>Contrôle de la direction du vent.</li><li>Fait perdre le contrôle d'une situation.</li><li>Empêche de saisir correctement les objets ou les personnes.</li></ul><p><strong>Compulsions.</strong> Manquer d'attraper un objet fragile et précieux. Ne pas chercher à contrôler une situation.</p>",
     "source": "Entre ciel et terre, p. 206",
     "voie": "voie-des-cinq-soleils",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.LIzof8tOOXvNP2kT",

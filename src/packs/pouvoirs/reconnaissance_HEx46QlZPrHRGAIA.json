@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Sait qui est la cible.</li><li>Connaît ce qui est connu de la victime.</li><li>Reconnaissance d&#x27;une plante, de la fonction d&#x27;un objet, etc.</li><li>Gratitude pour ses actes.</li><li>Est écouté et respecté.</li></ul><p><strong>Compulsions.</strong> Enquêter sur l&#x27;identité d&#x27;une personne quelconque et inconnue. Gagner de la reconnaissance pour ses actes. Apprendre les vertus des plantes.</p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Sait qui est la cible.</li><li>Connaît ce qui est connu de la victime.</li><li>Reconnaissance d'une plante, de la fonction d'un objet, etc.</li><li>Gratitude pour ses actes.</li><li>Est écouté et respecté.</li></ul><p><strong>Compulsions.</strong> Enquêter sur l'identité d'une personne quelconque et inconnue. Gagner de la reconnaissance pour ses actes. Apprendre les vertus des plantes.</p>",
     "source": "Entre ciel et terre, p. 297",
     "voie": "voie-de-papa-legba",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.cLAnYvfRTW6M1YmZ",

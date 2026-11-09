@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Recherche et don de l&#x27;Ichéiricou.</li></ul><p><strong>Compulsions.</strong> Aucune.</p><p><em>Règles particulières : voir Entre ciel et terre, p. 179.</em></p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Recherche et don de l'Ichéiricou.</li></ul><p><strong>Compulsions.</strong> Aucune.</p><p><em>Règles particulières : voir Entre ciel et terre, p. 179.</em></p>",
     "source": "Entre ciel et terre, p. 179",
     "voie": "voie-d-icheiricou-pour-le-conseil",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.wiw3plsp6sATryBq",

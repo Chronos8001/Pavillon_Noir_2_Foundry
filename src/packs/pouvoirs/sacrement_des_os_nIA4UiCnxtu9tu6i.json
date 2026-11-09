@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Sacre des os pour que leur usage donne une affinité au boyer pour les Voies caraïbes (le boyer ne peut bénéficier de l&#x27;affinité que d&#x27;un seul os et pour un seul acte sacré donné).</li><li>Donne une aura magique à des ossements.</li><li>Fait passer des ossements pour ceux d&#x27;un ami.</li></ul><p><strong>Compulsions.</strong> Déterrer les os d&#x27;un compagnon et les envelopper dans un chiffon.</p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Sacre des os pour que leur usage donne une affinité au boyer pour les Voies caraïbes (le boyer ne peut bénéficier de l'affinité que d'un seul os et pour un seul acte sacré donné).</li><li>Donne une aura magique à des ossements.</li><li>Fait passer des ossements pour ceux d'un ami.</li></ul><p><strong>Compulsions.</strong> Déterrer les os d'un compagnon et les envelopper dans un chiffon.</p>",
     "source": "Entre ciel et terre, p. 176",
     "voie": "voie-d-icheiricou-pour-le-conseil",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.wiw3plsp6sATryBq",

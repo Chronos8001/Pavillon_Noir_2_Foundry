@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Aller d&#x27;un endroit à un autre sans attirer l&#x27;attention.</li><li>Faire rêver à quelqu&#x27;un qu&#x27;il part.</li><li>Inventer pour quelqu&#x27;un les souvenirs d&#x27;un voyage ou de nouveaux souvenirs pour un voyage actuel.</li></ul><p><strong>Compulsions.</strong> Passer inaperçu dans un lieu où l&#x27;on n&#x27;est pas du tout à sa place. Décrire un voyage que l&#x27;on n&#x27;a pas fait, mais imaginé.</p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Aller d'un endroit à un autre sans attirer l'attention.</li><li>Faire rêver à quelqu'un qu'il part.</li><li>Inventer pour quelqu'un les souvenirs d'un voyage ou de nouveaux souvenirs pour un voyage actuel.</li></ul><p><strong>Compulsions.</strong> Passer inaperçu dans un lieu où l'on n'est pas du tout à sa place. Décrire un voyage que l'on n'a pas fait, mais imaginé.</p>",
     "source": "Entre ciel et terre, p. 278",
     "voie": "voie-d-agwe",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.6bwsVNHhFxnjtf9Q",

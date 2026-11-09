@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Symbole du roseau, du silex, de la maison et du lapin.</li><li>Accélère les quêtes personnelles (prenant approximativement un an).</li><li>Ralentit les quêtes personnelles (prenant approximativement un an).</li><li>Donne la sensation de n&#x27;avoir rien fait durant l&#x27;année écoulée.</li><li>Rend las de tout ce qu&#x27;on a accompli pendant l&#x27;année écoulée (besoin de passer à autre chose).</li><li>Contrôle des souvenirs lointains (de l&#x27;ordre de l&#x27;année).</li><li>Donne des rêves cryptiques sur ce qui risque de se passer dans l&#x27;année qui vient.</li></ul><p><strong>Compulsions.</strong> Entamer une quête personnelle longue d&#x27;un an.</p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Symbole du roseau, du silex, de la maison et du lapin.</li><li>Accélère les quêtes personnelles (prenant approximativement un an).</li><li>Ralentit les quêtes personnelles (prenant approximativement un an).</li><li>Donne la sensation de n'avoir rien fait durant l'année écoulée.</li><li>Rend las de tout ce qu'on a accompli pendant l'année écoulée (besoin de passer à autre chose).</li><li>Contrôle des souvenirs lointains (de l'ordre de l'année).</li><li>Donne des rêves cryptiques sur ce qui risque de se passer dans l'année qui vient.</li></ul><p><strong>Compulsions.</strong> Entamer une quête personnelle longue d'un an.</p>",
     "source": "Entre ciel et terre, p. 200",
     "voie": "voie-du-calendrier",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.AFWMXMJdfCNP7hit",

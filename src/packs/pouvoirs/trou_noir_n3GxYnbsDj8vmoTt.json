@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Absorption de la lumière.</li><li>Éclipse (pas plus d&#x27;une fois par an).</li><li>Nuit sans étoiles.</li><li>Création d&#x27;ombres.</li></ul><p><strong>Compulsions.</strong> S&#x27;enfermer dans un lieu sombre. S&#x27;habiller tout de noir.</p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Absorption de la lumière.</li><li>Éclipse (pas plus d'une fois par an).</li><li>Nuit sans étoiles.</li><li>Création d'ombres.</li></ul><p><strong>Compulsions.</strong> S'enfermer dans un lieu sombre. S'habiller tout de noir.</p>",
     "source": "Entre ciel et terre, p. 203",
     "voie": "voie-des-cinq-soleils",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.LIzof8tOOXvNP2kT",

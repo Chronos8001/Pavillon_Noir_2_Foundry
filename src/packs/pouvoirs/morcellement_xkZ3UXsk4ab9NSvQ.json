@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Séparation du corps en parties autonomes.</li><li>Fusion d&#x27;un organe ou membre dans le corps.</li><li>Dissensions au sein d&#x27;un groupe.</li><li>Tension entre ethnies ou nationalités voisines.</li><li>Crée une cohésion indestructible d&#x27;un tout.</li></ul><p><strong>Compulsions.</strong> Démembrer un cadavre méthodiquement. Résoudre des conflits au sein d&#x27;un groupe.</p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Séparation du corps en parties autonomes.</li><li>Fusion d'un organe ou membre dans le corps.</li><li>Dissensions au sein d'un groupe.</li><li>Tension entre ethnies ou nationalités voisines.</li><li>Crée une cohésion indestructible d'un tout.</li></ul><p><strong>Compulsions.</strong> Démembrer un cadavre méthodiquement. Résoudre des conflits au sein d'un groupe.</p>",
     "source": "Entre ciel et terre, p. 303",
     "voie": "voie-des-freres-marassa",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.g0bMhkfFArVT77cy",

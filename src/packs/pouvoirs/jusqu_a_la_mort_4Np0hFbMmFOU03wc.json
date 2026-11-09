@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Insensibilité à la douleur et résistance à l&#x27;inconscience.</li><li>Courage féroce indéfectible.</li><li>Pousse à se battre jusqu&#x27;au dernier.</li><li>Montre le massacre comme l&#x27;issue évidente d&#x27;un combat.</li></ul><p><strong>Compulsions.</strong> Laisser s&#x27;enfuir un animal ou un homme grièvement blessé. Dissuader ses compagnons de se lancer dans une bataille qui a toutes les chances de tourner au massacre.</p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Insensibilité à la douleur et résistance à l'inconscience.</li><li>Courage féroce indéfectible.</li><li>Pousse à se battre jusqu'au dernier.</li><li>Montre le massacre comme l'issue évidente d'un combat.</li></ul><p><strong>Compulsions.</strong> Laisser s'enfuir un animal ou un homme grièvement blessé. Dissuader ses compagnons de se lancer dans une bataille qui a toutes les chances de tourner au massacre.</p>",
     "source": "Entre ciel et terre, p. 172",
     "voie": "voie-d-icheiricou-pour-la-guerre",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.ua948TzRBv4MWuy4",

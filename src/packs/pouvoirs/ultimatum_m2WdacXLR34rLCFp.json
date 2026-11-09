@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Donne la certitude de l&#x27;imminence de la guerre.</li><li>Sensation de point de non-retour.</li><li>Favorise une prise de décision rapide.</li><li>Perte de temps en discussions interminables.</li><li>Demande la reddition (demande un Test de Moral).</li></ul><p><strong>Compulsions.</strong> Poser un ultimatum. Se rendre.</p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Donne la certitude de l'imminence de la guerre.</li><li>Sensation de point de non-retour.</li><li>Favorise une prise de décision rapide.</li><li>Perte de temps en discussions interminables.</li><li>Demande la reddition (demande un Test de Moral).</li></ul><p><strong>Compulsions.</strong> Poser un ultimatum. Se rendre.</p>",
     "source": "Entre ciel et terre, p. 306",
     "voie": "voie-d-ogou",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.nT1z9NA3nij69fC3",

@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Déclenche la colère terrible des xapiripë envers quelqu&#x27;un.</li><li>Ressent la colère des xapiripë.</li><li>Fait ressentir un courage inébranlable même contre l&#x27;ennemi le plus dangereux.</li><li>Apparence resplendissante des xapiripë (halo de lumière, perfection du corps et des traits, superbes parures).</li></ul><p><strong>Compulsions.</strong> Dessiner précisément l&#x27;image d&#x27;un xapiripë pour qu&#x27;un profane le voie. Affronter un ennemi plus puissant que soi.</p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Déclenche la colère terrible des xapiripë envers quelqu'un.</li><li>Ressent la colère des xapiripë.</li><li>Fait ressentir un courage inébranlable même contre l'ennemi le plus dangereux.</li><li>Apparence resplendissante des xapiripë (halo de lumière, perfection du corps et des traits, superbes parures).</li></ul><p><strong>Compulsions.</strong> Dessiner précisément l'image d'un xapiripë pour qu'un profane le voie. Affronter un ennemi plus puissant que soi.</p>",
     "source": "Entre ciel et terre, p. 186",
     "voie": "voie-des-xapiripe",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.uLmNntdGMAtLAIsE",

@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Donne l&#x27;illusion d&#x27;une égalité des forces et des moyens.</li><li>Crée une réelle égalité des forces.</li><li>Course à l&#x27;armement entre deux camps.</li><li>Empêche d&#x27;attaquer en cas d&#x27;égalité des forces, ou tant qu&#x27;elles ne sont pas égales.</li><li>Donne des Compétences et des Caractéristiques équivalentes à celles de l&#x27;ennemi.</li></ul><p><strong>Compulsions.</strong> Ne tuer un ennemi que lorsqu&#x27;il est à armes égales. Se faire passer pour plus doué que l&#x27;on est.</p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Donne l'illusion d'une égalité des forces et des moyens.</li><li>Crée une réelle égalité des forces.</li><li>Course à l'armement entre deux camps.</li><li>Empêche d'attaquer en cas d'égalité des forces, ou tant qu'elles ne sont pas égales.</li><li>Donne des Compétences et des Caractéristiques équivalentes à celles de l'ennemi.</li></ul><p><strong>Compulsions.</strong> Ne tuer un ennemi que lorsqu'il est à armes égales. Se faire passer pour plus doué que l'on est.</p>",
     "source": "Entre ciel et terre, p. 307",
     "voie": "voie-d-ogou",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.nT1z9NA3nij69fC3",

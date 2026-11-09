@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Renseignements sur l&#x27;ennemi.</li><li>Donne la sensation de connaître son ennemi.</li><li>Désinformation.</li></ul><p><strong>Compulsions.</strong> Désinformer son propre groupe et étudier sa réaction. Se renseigner en détail sur son ennemi avant de l&#x27;attaquer.</p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Renseignements sur l'ennemi.</li><li>Donne la sensation de connaître son ennemi.</li><li>Désinformation.</li></ul><p><strong>Compulsions.</strong> Désinformer son propre groupe et étudier sa réaction. Se renseigner en détail sur son ennemi avant de l'attaquer.</p>",
     "source": "Entre ciel et terre, p. 178",
     "voie": "voie-d-icheiricou-pour-le-conseil",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.wiw3plsp6sATryBq",

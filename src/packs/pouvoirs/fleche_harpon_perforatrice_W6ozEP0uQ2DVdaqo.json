@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Donne à une flèche la capacité de transpercer tout ce qu&#x27;elle rencontre.</li><li>Prévoir ce qui traversera une défense.</li><li>Le projectile se fiche profondément.</li><li>Le projectile a traversé la cible de part en part sans rester dans la plaie.</li></ul><p><strong>Compulsions.</strong> Empaler un ennemi. Envoyer un projectile perforant une défense physique (palissade, mur, rangs d&#x27;ennemis).</p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Donne à une flèche la capacité de transpercer tout ce qu'elle rencontre.</li><li>Prévoir ce qui traversera une défense.</li><li>Le projectile se fiche profondément.</li><li>Le projectile a traversé la cible de part en part sans rester dans la plaie.</li></ul><p><strong>Compulsions.</strong> Empaler un ennemi. Envoyer un projectile perforant une défense physique (palissade, mur, rangs d'ennemis).</p>",
     "source": "Entre ciel et terre, p. 173",
     "voie": "voie-d-icheiricou-pour-la-guerre",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.ua948TzRBv4MWuy4",

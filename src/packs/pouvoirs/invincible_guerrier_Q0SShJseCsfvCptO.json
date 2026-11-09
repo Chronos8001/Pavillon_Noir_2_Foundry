@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Rend pendant un court instant intouchable au corps à corps.</li><li>Aide au combat au corps à corps.</li><li>Donne l&#x27;impression à l&#x27;adversaire qu&#x27;on ne peut être vaincu.</li><li>Révèle une faille chez un ennemi d&#x27;apparence invincible.</li></ul><p><strong>Compulsions.</strong> Combat seul contre un grand nombre d&#x27;ennemis. Continuer à se battre quelles que soient ses blessures.</p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Rend pendant un court instant intouchable au corps à corps.</li><li>Aide au combat au corps à corps.</li><li>Donne l'impression à l'adversaire qu'on ne peut être vaincu.</li><li>Révèle une faille chez un ennemi d'apparence invincible.</li></ul><p><strong>Compulsions.</strong> Combat seul contre un grand nombre d'ennemis. Continuer à se battre quelles que soient ses blessures.</p>",
     "source": "Entre ciel et terre, p. 173",
     "voie": "voie-d-icheiricou-pour-la-guerre",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.ua948TzRBv4MWuy4",

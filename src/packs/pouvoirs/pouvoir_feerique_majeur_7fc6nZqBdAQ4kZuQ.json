@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Utiliser le pouvoir majeur d&#x27;une fée présente dans la région (paramètres identiques à ceux du pouvoir de la fée).</li><li>Empêcher une fée d&#x27;utiliser ses pouvoirs féeriques mineur et majeur.</li></ul><p><strong>Compulsions.</strong> Voir une fée en train d&#x27;utiliser activement son pouvoir majeur.</p><p><em>Règles particulières : voir Entre ciel et terre, p. 267.</em></p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Utiliser le pouvoir majeur d'une fée présente dans la région (paramètres identiques à ceux du pouvoir de la fée).</li><li>Empêcher une fée d'utiliser ses pouvoirs féeriques mineur et majeur.</li></ul><p><strong>Compulsions.</strong> Voir une fée en train d'utiliser activement son pouvoir majeur.</p><p><em>Règles particulières : voir Entre ciel et terre, p. 267.</em></p>",
     "source": "Entre ciel et terre, p. 267",
     "voie": "voie-du-folklore",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.Iy4OYyIN7hI6KjNY",

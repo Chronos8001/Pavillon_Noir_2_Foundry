@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Contrôle des éléments climatiques.</li><li>Séisme.</li><li>Contrôle des animaux non marins.</li><li>Fait prendre conscience de l&#x27;omniprésence de Dieu.</li></ul><p><strong>Compulsions.</strong> Faire trembler le sol de façon inquiétante. Expliquer systématiquement la volonté de Dieu à travers chaque événement et chaque chose.</p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Contrôle des éléments climatiques.</li><li>Séisme.</li><li>Contrôle des animaux non marins.</li><li>Fait prendre conscience de l'omniprésence de Dieu.</li></ul><p><strong>Compulsions.</strong> Faire trembler le sol de façon inquiétante. Expliquer systématiquement la volonté de Dieu à travers chaque événement et chaque chose.</p>",
     "source": "Entre ciel et terre, p. 214",
     "voie": "voie-de-dieu",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.SPlB5GslKnZdeWKG",

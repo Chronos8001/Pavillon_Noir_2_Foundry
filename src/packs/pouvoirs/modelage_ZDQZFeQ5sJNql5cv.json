@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Sculpte le bois ou la pierre à main nue.</li><li>Effectue des transformations sur le corps humain (ajout de bras, d&#x27;oeil).</li></ul><p><strong>Compulsions.</strong> Sculpter sur un corps humain. Réaliser une statuette en argile.</p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Sculpte le bois ou la pierre à main nue.</li><li>Effectue des transformations sur le corps humain (ajout de bras, d'oeil).</li></ul><p><strong>Compulsions.</strong> Sculpter sur un corps humain. Réaliser une statuette en argile.</p>",
     "source": "Entre ciel et terre, p. 302",
     "voie": "voie-des-freres-marassa",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.g0bMhkfFArVT77cy",

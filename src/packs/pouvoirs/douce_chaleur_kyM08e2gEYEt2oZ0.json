@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Réchauffe le corps engourdi par le froid.</li><li>Chaleur agréable.</li><li>Chaleur suffisante pour pousser à se dévêtir légèrement.</li><li>Sensation d&#x27;un corps proche.</li><li>Apaise un enfant.</li><li>Apaise et calme auprès d&#x27;un feu.</li></ul><p><strong>Compulsions.</strong> Se réchauffer au coin du feu. Serrer le corps d&#x27;un membre du sexe opposé.</p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Réchauffe le corps engourdi par le froid.</li><li>Chaleur agréable.</li><li>Chaleur suffisante pour pousser à se dévêtir légèrement.</li><li>Sensation d'un corps proche.</li><li>Apaise un enfant.</li><li>Apaise et calme auprès d'un feu.</li></ul><p><strong>Compulsions.</strong> Se réchauffer au coin du feu. Serrer le corps d'un membre du sexe opposé.</p>",
     "source": "Entre ciel et terre, p. 304",
     "voie": "voie-d-ogou",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.nT1z9NA3nij69fC3",

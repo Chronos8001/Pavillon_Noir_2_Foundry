@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Réveille les morts, qui ont leur volonté propre mais continuent à pourrir.</li><li>Force à agir les immobilistes.</li><li>Invitation au voyage.</li></ul><p><strong>Compulsions.</strong> Marcher malgré de profondes blessures ou une maladie incapacitante. Effectuer un voyage de plusieurs jours sans s&#x27;arrêter ni se reposer.</p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Réveille les morts, qui ont leur volonté propre mais continuent à pourrir.</li><li>Force à agir les immobilistes.</li><li>Invitation au voyage.</li></ul><p><strong>Compulsions.</strong> Marcher malgré de profondes blessures ou une maladie incapacitante. Effectuer un voyage de plusieurs jours sans s'arrêter ni se reposer.</p>",
     "source": "Entre ciel et terre, p. 213",
     "voie": "voie-de-dieu",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.SPlB5GslKnZdeWKG",

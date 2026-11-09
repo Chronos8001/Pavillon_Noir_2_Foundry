@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Bonne chance.</li><li>Protection contre les mauvaises rencontres.</li><li>Trajet sans encombre.</li><li>Trajet rapide.</li></ul><p><strong>Compulsions.</strong> Raccourcir la durée d&#x27;un voyage ou d&#x27;une quête.</p><p><em>Règles particulières : voir Entre ciel et terre, p. 276.</em></p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Bonne chance.</li><li>Protection contre les mauvaises rencontres.</li><li>Trajet sans encombre.</li><li>Trajet rapide.</li></ul><p><strong>Compulsions.</strong> Raccourcir la durée d'un voyage ou d'une quête.</p><p><em>Règles particulières : voir Entre ciel et terre, p. 276.</em></p>",
     "source": "Entre ciel et terre, p. 276",
     "voie": "voie-d-agwe",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.6bwsVNHhFxnjtf9Q",

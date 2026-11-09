@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Fait passer auprès du dieu porteur du jour ou de la trecena une transgression volontaire des interdictions du calendrier comme une grave offense.</li><li>Punition pour un non-respect du calendrier.</li><li>Donne à un individu n&#x27;appartenant pas au peuple aztèque la sensation que seul le respect du calendrier le sauvera de l&#x27;acharnement du sort.</li></ul><p><strong>Compulsions.</strong> Suivre une personne n&#x27;appartenant pas au peuple aztèque et la punir en secret pour chaque manquement au calendrier.</p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Fait passer auprès du dieu porteur du jour ou de la trecena une transgression volontaire des interdictions du calendrier comme une grave offense.</li><li>Punition pour un non-respect du calendrier.</li><li>Donne à un individu n'appartenant pas au peuple aztèque la sensation que seul le respect du calendrier le sauvera de l'acharnement du sort.</li></ul><p><strong>Compulsions.</strong> Suivre une personne n'appartenant pas au peuple aztèque et la punir en secret pour chaque manquement au calendrier.</p>",
     "source": "Entre ciel et terre, p. 201",
     "voie": "voie-du-calendrier",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.AFWMXMJdfCNP7hit",

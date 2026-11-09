@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Demande conseil au Seigneur.</li><li>Fait entendre des voix, dont il choisit le contenu.</li><li>Faire entendre la voix de Dieu dans le tonnerre ou le grondement.</li></ul><p><strong>Compulsions.</strong> Persuader un fidèle qu&#x27;il a entendu la voix de Dieu. Donner un commandement à un fidèle au nom du Seigneur.</p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Demande conseil au Seigneur.</li><li>Fait entendre des voix, dont il choisit le contenu.</li><li>Faire entendre la voix de Dieu dans le tonnerre ou le grondement.</li></ul><p><strong>Compulsions.</strong> Persuader un fidèle qu'il a entendu la voix de Dieu. Donner un commandement à un fidèle au nom du Seigneur.</p>",
     "source": "Entre ciel et terre, p. 211",
     "voie": "voie-de-dieu",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.SPlB5GslKnZdeWKG",

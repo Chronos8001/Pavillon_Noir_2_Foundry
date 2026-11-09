@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Lire la mémoire du vent marin.</li><li>Illusion sonore maritime.</li><li>Envoyer des messagers ailés ou aériens au-dessus d&#x27;une étendue d&#x27;eau.</li></ul><p><strong>Compulsions.</strong> Apporter un message pour quelqu&#x27;un. Faire inconsidérément confiance aux bruits du vent.</p><p><em>Règles particulières : voir Entre ciel et terre, p. 277.</em></p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Lire la mémoire du vent marin.</li><li>Illusion sonore maritime.</li><li>Envoyer des messagers ailés ou aériens au-dessus d'une étendue d'eau.</li></ul><p><strong>Compulsions.</strong> Apporter un message pour quelqu'un. Faire inconsidérément confiance aux bruits du vent.</p><p><em>Règles particulières : voir Entre ciel et terre, p. 277.</em></p>",
     "source": "Entre ciel et terre, p. 277",
     "voie": "voie-d-agwe",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.6bwsVNHhFxnjtf9Q",

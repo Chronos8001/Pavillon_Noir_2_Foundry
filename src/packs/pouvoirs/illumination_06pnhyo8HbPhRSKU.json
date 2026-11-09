@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Donne l&#x27;impression d&#x27;avoir touché du doigt la vérité.</li><li>Reçoit d&#x27;une divinité la réponse à une question posée.</li><li>Fait surgir la lumière dans un lieu.</li><li>Donne un éclairage particulier à un objet ou une personne pour le mettre en valeur.</li><li>Rend un objet aveuglant s&#x27;il réfléchit la lumière (comme la surface de l&#x27;eau, par exemple).</li></ul><p><strong>Compulsions.</strong> Découvrir une vérité. Illuminer un lieu sombre par un jeu de miroirs.</p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Donne l'impression d'avoir touché du doigt la vérité.</li><li>Reçoit d'une divinité la réponse à une question posée.</li><li>Fait surgir la lumière dans un lieu.</li><li>Donne un éclairage particulier à un objet ou une personne pour le mettre en valeur.</li><li>Rend un objet aveuglant s'il réfléchit la lumière (comme la surface de l'eau, par exemple).</li></ul><p><strong>Compulsions.</strong> Découvrir une vérité. Illuminer un lieu sombre par un jeu de miroirs.</p>",
     "source": "Entre ciel et terre, p. 203",
     "voie": "voie-des-cinq-soleils",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.LIzof8tOOXvNP2kT",

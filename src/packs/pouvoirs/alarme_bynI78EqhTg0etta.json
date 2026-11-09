@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Prévention de la venue d&#x27;un danger potentiel.</li><li>Pressent ou fait pressentir la venue d&#x27;un danger imminent, véritable ou faux.</li><li>Illusion sonore violente, douloureuse et assourdissante.</li><li>Rend anxieux.</li><li>Mobilisation générale face à un danger.</li></ul><p><strong>Compulsions.</strong> Prévenir d&#x27;un danger. Ne pas se soucier d&#x27;un danger qu&#x27;on sait présent.</p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Prévention de la venue d'un danger potentiel.</li><li>Pressent ou fait pressentir la venue d'un danger imminent, véritable ou faux.</li><li>Illusion sonore violente, douloureuse et assourdissante.</li><li>Rend anxieux.</li><li>Mobilisation générale face à un danger.</li></ul><p><strong>Compulsions.</strong> Prévenir d'un danger. Ne pas se soucier d'un danger qu'on sait présent.</p>",
     "source": "Entre ciel et terre, p. 295",
     "voie": "voie-de-papa-legba",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.cLAnYvfRTW6M1YmZ",

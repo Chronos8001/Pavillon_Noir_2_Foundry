@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Métamorphose en géants.</li><li>Métamorphose en êtres minuscules.</li><li>Donne une impression de gigantisme.</li><li>Augmente l&#x27;aura de la Gloire ou de l&#x27;Infamie.</li><li>Tous les félins traquent les personnes de grande taille, ou une personne en particulier.</li></ul><p><strong>Compulsions.</strong> Se montrer plus grand que l&#x27;on est. Voir un félin attaquer une proie plus grande que lui.</p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Métamorphose en géants.</li><li>Métamorphose en êtres minuscules.</li><li>Donne une impression de gigantisme.</li><li>Augmente l'aura de la Gloire ou de l'Infamie.</li><li>Tous les félins traquent les personnes de grande taille, ou une personne en particulier.</li></ul><p><strong>Compulsions.</strong> Se montrer plus grand que l'on est. Voir un félin attaquer une proie plus grande que lui.</p>",
     "source": "Entre ciel et terre, p. 207",
     "voie": "voie-des-cinq-soleils",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.LIzof8tOOXvNP2kT",

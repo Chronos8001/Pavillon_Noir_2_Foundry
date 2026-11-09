@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Fait croître les plants de manioc.</li><li>Donne du manioc en cas de famine.</li><li>Donne l&#x27;énergie d&#x27;un volcan à qui mange de la cassave.</li><li>Divinisation de celui qui prépare ou donne à manger.</li></ul><p><strong>Compulsions.</strong> Préparer la cassave. Donner à manger à ses proches sans rien manger soi-même.</p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Fait croître les plants de manioc.</li><li>Donne du manioc en cas de famine.</li><li>Donne l'énergie d'un volcan à qui mange de la cassave.</li><li>Divinisation de celui qui prépare ou donne à manger.</li></ul><p><strong>Compulsions.</strong> Préparer la cassave. Donner à manger à ses proches sans rien manger soi-même.</p>",
     "source": "Entre ciel et terre, p. 191",
     "voie": "voie-des-zemis",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.adV2aUWhmHXDCarX",

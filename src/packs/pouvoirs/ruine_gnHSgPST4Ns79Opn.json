@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Fait tomber une cité en ruines.</li><li>Ruine physique, financière, sentimentale ou psychologique d&#x27;une personne.</li><li>Voit ce qui est prédisposé à une ruine proche.</li></ul><p><strong>Compulsions.</strong> Ruiner quelqu&#x27;un sans le voler ni le faire jouer au jeu.</p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Fait tomber une cité en ruines.</li><li>Ruine physique, financière, sentimentale ou psychologique d'une personne.</li><li>Voit ce qui est prédisposé à une ruine proche.</li></ul><p><strong>Compulsions.</strong> Ruiner quelqu'un sans le voler ni le faire jouer au jeu.</p>",
     "source": "Entre ciel et terre, p. 284",
     "voie": "voie-de-dambala",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.fVIeiRnBn8ADVFE2",

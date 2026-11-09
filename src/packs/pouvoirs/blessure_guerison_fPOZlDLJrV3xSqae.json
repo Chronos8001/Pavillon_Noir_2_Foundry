@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Inflige une blessure critique.</li><li>Blesse la sensibilité.</li><li>Rend une blessure inguérissable.</li><li>Guérit une blessure du corps, du coeur ou de l&#x27;esprit.</li></ul><p><strong>Compulsions.</strong> Blesser un compagnon. Dire des paroles effroyablement blessantes.</p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Inflige une blessure critique.</li><li>Blesse la sensibilité.</li><li>Rend une blessure inguérissable.</li><li>Guérit une blessure du corps, du coeur ou de l'esprit.</li></ul><p><strong>Compulsions.</strong> Blesser un compagnon. Dire des paroles effroyablement blessantes.</p>",
     "source": "Entre ciel et terre, p. 183",
     "voie": "voie-d-icheiricou-pour-la-protection-et-la-punition",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.yH60f20rPKBEP9j4",

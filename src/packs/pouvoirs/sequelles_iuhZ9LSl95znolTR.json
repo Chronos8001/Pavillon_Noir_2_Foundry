@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Inflige, guérit ou modifie des séquelles physiques.</li><li>Inflige, guérit ou modifie des traumatismes psychologiques.</li><li>Découverte des conséquences durables d&#x27;un événement ou d&#x27;une action.</li></ul><p><strong>Compulsions.</strong> S&#x27;infliger une séquelle sérieuse. Enquêter sur les conséquences d&#x27;un drame.</p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Inflige, guérit ou modifie des séquelles physiques.</li><li>Inflige, guérit ou modifie des traumatismes psychologiques.</li><li>Découverte des conséquences durables d'un événement ou d'une action.</li></ul><p><strong>Compulsions.</strong> S'infliger une séquelle sérieuse. Enquêter sur les conséquences d'un drame.</p>",
     "source": "Entre ciel et terre, p. 303",
     "voie": "voie-des-freres-marassa",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.g0bMhkfFArVT77cy",

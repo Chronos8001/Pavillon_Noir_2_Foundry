@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Appelle les fées environnantes.</li><li>Entend l&#x27;appel d&#x27;une fée en détresse.</li><li>Comprend ce qu&#x27;attend une fée.</li></ul><p><strong>Compulsions.</strong> Se faire aider par une fée. Aider une fée en détresse.</p><p><em>Règles particulières : voir Entre ciel et terre, p. 263.</em></p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Appelle les fées environnantes.</li><li>Entend l'appel d'une fée en détresse.</li><li>Comprend ce qu'attend une fée.</li></ul><p><strong>Compulsions.</strong> Se faire aider par une fée. Aider une fée en détresse.</p><p><em>Règles particulières : voir Entre ciel et terre, p. 263.</em></p>",
     "source": "Entre ciel et terre, p. 263",
     "voie": "voie-du-folklore",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.Iy4OYyIN7hI6KjNY",

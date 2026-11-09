@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Duplique un objet.</li><li>Duplique une personne.</li><li>Sait tout ce que sait une personne, ou ressent tout ce qu&#x27;elle ressent.</li><li>Devient le double physique d&#x27;une personne en mélangeant les deux personnalités et les compétences.</li></ul><p><strong>Compulsions.</strong> Sculpter une statuette parfaitement ressemblante de quelqu&#x27;un. Tuer un jumeau.</p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Duplique un objet.</li><li>Duplique une personne.</li><li>Sait tout ce que sait une personne, ou ressent tout ce qu'elle ressent.</li><li>Devient le double physique d'une personne en mélangeant les deux personnalités et les compétences.</li></ul><p><strong>Compulsions.</strong> Sculpter une statuette parfaitement ressemblante de quelqu'un. Tuer un jumeau.</p>",
     "source": "Entre ciel et terre, p. 299",
     "voie": "voie-de-papa-legba",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.cLAnYvfRTW6M1YmZ",

@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Peut faire reculer toute personne soupçonnée de sorcellerie.</li><li>Repousse les effets de tout pouvoir.</li><li>Consacre un lieu et en bannit les effets des pouvoirs d&#x27;autres religions.</li></ul><p><strong>Compulsions.</strong> Arriver à contrer les intérêts d&#x27;une autre religion. Étudie les actes d&#x27;une personne soupçonnée de sorcellerie.</p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Peut faire reculer toute personne soupçonnée de sorcellerie.</li><li>Repousse les effets de tout pouvoir.</li><li>Consacre un lieu et en bannit les effets des pouvoirs d'autres religions.</li></ul><p><strong>Compulsions.</strong> Arriver à contrer les intérêts d'une autre religion. Étudie les actes d'une personne soupçonnée de sorcellerie.</p>",
     "source": "Entre ciel et terre, p. 210",
     "voie": "voie-de-dieu",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.SPlB5GslKnZdeWKG",

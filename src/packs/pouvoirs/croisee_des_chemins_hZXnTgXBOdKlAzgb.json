@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Rencontre ou absence de rencontre entre deux groupes.</li><li>Amitié de passage.</li><li>Rencontre houleuse.</li><li>Savoir quelle direction suivre pour atteindre une destination.</li><li>Savoir qui est passé sur un carrefour.</li><li>Savoir quel chemin a emprunté une personne et ce qu&#x27;elle est devenue.</li></ul><p><strong>Compulsions.</strong> Prendre volontairement une mauvaise imaginer ce q direction et la suivre jusqu&#x27;au bout. Suivre une per- tique et l sonne au hasard rencontrée à un carrefour.</p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Rencontre ou absence de rencontre entre deux groupes.</li><li>Amitié de passage.</li><li>Rencontre houleuse.</li><li>Savoir quelle direction suivre pour atteindre une destination.</li><li>Savoir qui est passé sur un carrefour.</li><li>Savoir quel chemin a emprunté une personne et ce qu'elle est devenue.</li></ul><p><strong>Compulsions.</strong> Prendre volontairement une mauvaise imaginer ce q direction et la suivre jusqu'au bout. Suivre une per- tique et l sonne au hasard rencontrée à un carrefour.</p>",
     "source": "Entre ciel et terre, p. 298",
     "voie": "voie-de-papa-legba",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.cLAnYvfRTW6M1YmZ",

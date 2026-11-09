@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Repère les trous, les crevasses et les fosses dans le sol.</li><li>Crée une fosse dans un milieu relativement meuble.</li><li>Agrandit un trou ou un fossé.</li><li>Rend les parois d&#x27;une fosse friables.</li><li>Donne une phobie des trous et fosses.</li><li>Pousse une personne à tomber dans une fosse existante.</li></ul><p><strong>Compulsions.</strong> Creuser une fosse dans la forêt. Pousser qu&#x27;un dans un trou.</p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Repère les trous, les crevasses et les fosses dans le sol.</li><li>Crée une fosse dans un milieu relativement meuble.</li><li>Agrandit un trou ou un fossé.</li><li>Rend les parois d'une fosse friables.</li><li>Donne une phobie des trous et fosses.</li><li>Pousse une personne à tomber dans une fosse existante.</li></ul><p><strong>Compulsions.</strong> Creuser une fosse dans la forêt. Pousser qu'un dans un trou.</p>",
     "source": "Entre ciel et terre, p. 203",
     "voie": "voie-des-cinq-soleils",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.LIzof8tOOXvNP2kT",

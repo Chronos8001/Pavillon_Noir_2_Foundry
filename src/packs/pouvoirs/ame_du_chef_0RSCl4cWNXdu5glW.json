@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Transmission de ses pouvoirs sacrés à ses hommes.</li><li>Manipulation du chef en jouant sur ses aspirations.</li><li>Permet à quelqu&#x27;un de trouver sa voie pour devenir chef.</li><li>Crée des doutes chez un chef.</li></ul><p><strong>Compulsions.</strong> Conduire un groupe à la bataille. Faire douter son chef.</p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Transmission de ses pouvoirs sacrés à ses hommes.</li><li>Manipulation du chef en jouant sur ses aspirations.</li><li>Permet à quelqu'un de trouver sa voie pour devenir chef.</li><li>Crée des doutes chez un chef.</li></ul><p><strong>Compulsions.</strong> Conduire un groupe à la bataille. Faire douter son chef.</p>",
     "source": "Entre ciel et terre, p. 308",
     "voie": "voie-d-ogou",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.nT1z9NA3nij69fC3",

@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Voit par les yeux d&#x27;un compagnon de voyage ou d&#x27;un ami.</li><li>Aveugle un compagnon de voyage ou un ami.</li><li>Donne les compétences de n&#x27;importe quel métier au Niveau 3 (professionnel).</li><li>Donne l&#x27;illusion de savoir tout faire.</li><li>Rend conscient de ses limites.</li></ul><p><strong>Compulsions.</strong> Apprendre un nouveau métier.</p><p><em>Règles particulières : voir Entre ciel et terre, p. 265.</em></p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Voit par les yeux d'un compagnon de voyage ou d'un ami.</li><li>Aveugle un compagnon de voyage ou un ami.</li><li>Donne les compétences de n'importe quel métier au Niveau 3 (professionnel).</li><li>Donne l'illusion de savoir tout faire.</li><li>Rend conscient de ses limites.</li></ul><p><strong>Compulsions.</strong> Apprendre un nouveau métier.</p><p><em>Règles particulières : voir Entre ciel et terre, p. 265.</em></p>",
     "source": "Entre ciel et terre, p. 265",
     "voie": "voie-du-folklore",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.Iy4OYyIN7hI6KjNY",

@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Terrasser ses ennemis par la voix.</li><li>Fascination des foules.</li><li>Leader charismatique.</li><li>Avec toi jusqu&#x27;à la mort.</li><li>Mettre son ennemi à genoux.</li></ul><p><strong>Compulsions.</strong> Obtenir la victoire par la négociation. Pousser quelqu&#x27;un à mourir pour soi.</p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Terrasser ses ennemis par la voix.</li><li>Fascination des foules.</li><li>Leader charismatique.</li><li>Avec toi jusqu'à la mort.</li><li>Mettre son ennemi à genoux.</li></ul><p><strong>Compulsions.</strong> Obtenir la victoire par la négociation. Pousser quelqu'un à mourir pour soi.</p>",
     "source": "Entre ciel et terre, p. 253",
     "voie": "voie-du-druidisme",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.444Fft7a0LtvOMIS",

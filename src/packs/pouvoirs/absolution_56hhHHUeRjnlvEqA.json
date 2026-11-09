@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Libération du joug des remords.</li><li>Cible non retenue par des questions d&#x27;ordre éthique.</li><li>Refuse le repos de l&#x27;âme à une personne qui serait tentée de commettre un péché précis.</li></ul><p><strong>Compulsions.</strong> Vérifier si une personne absoute recommence ses méfaits avoués. Libérer une journée un fidèle du joug des dix commandements et de l&#x27;interdiction des sept péchés capitaux.</p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Libération du joug des remords.</li><li>Cible non retenue par des questions d'ordre éthique.</li><li>Refuse le repos de l'âme à une personne qui serait tentée de commettre un péché précis.</li></ul><p><strong>Compulsions.</strong> Vérifier si une personne absoute recommence ses méfaits avoués. Libérer une journée un fidèle du joug des dix commandements et de l'interdiction des sept péchés capitaux.</p>",
     "source": "Entre ciel et terre, p. 209",
     "voie": "voie-de-dieu",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.SPlB5GslKnZdeWKG",

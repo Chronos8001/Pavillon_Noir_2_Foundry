@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Crée un amour, même impossible.</li><li>Rend un amoureux aveugle.</li><li>Pousse un amoureux à faire des folies.</li><li>Rend un aveugle ou un borgne amoureux.</li><li>Explique une stupidité ou un crime par l&#x27;amour et obtient ainsi le pardon.</li><li>Prendre quelqu&#x27;un pour son conjoint.</li></ul><p><strong>Compulsions.</strong> Crever les yeux d&#x27;un couple d&#x27;amoureux. Passer la nuit avec quelqu&#x27;un en se faisant passer pour son conjoint.</p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Crée un amour, même impossible.</li><li>Rend un amoureux aveugle.</li><li>Pousse un amoureux à faire des folies.</li><li>Rend un aveugle ou un borgne amoureux.</li><li>Explique une stupidité ou un crime par l'amour et obtient ainsi le pardon.</li><li>Prendre quelqu'un pour son conjoint.</li></ul><p><strong>Compulsions.</strong> Crever les yeux d'un couple d'amoureux. Passer la nuit avec quelqu'un en se faisant passer pour son conjoint.</p>",
     "source": "Entre ciel et terre, p. 289",
     "voie": "voie-d-erzulie",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.0cPd7IIiO1TgbK81",

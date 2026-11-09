@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Transforme une langue en un langage incompréhensible.</li><li>Crée des abeilles ou une ruche.</li><li>Fait attaquer par de grosses abeilles solitaires.</li><li>Bruit inquiétant, comme un énorme essaim de grosses abeilles.</li></ul><p><strong>Compulsions.</strong> Voler une ruche. Empêcher quelqu&#x27;un de parler à cause de son bavardage.</p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Transforme une langue en un langage incompréhensible.</li><li>Crée des abeilles ou une ruche.</li><li>Fait attaquer par de grosses abeilles solitaires.</li><li>Bruit inquiétant, comme un énorme essaim de grosses abeilles.</li></ul><p><strong>Compulsions.</strong> Voler une ruche. Empêcher quelqu'un de parler à cause de son bavardage.</p>",
     "source": "Entre ciel et terre, p. 186",
     "voie": "voie-des-xapiripe",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.uLmNntdGMAtLAIsE",

@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Reconnaît une maladie.</li><li>Inflige une maladie.</li><li>Donne l&#x27;apparence de la maladie.</li><li>Soigne une maladie.</li></ul><p><strong>Compulsions.</strong> Soigner des malades au risque d&#x27;être contaminé.</p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Reconnaît une maladie.</li><li>Inflige une maladie.</li><li>Donne l'apparence de la maladie.</li><li>Soigne une maladie.</li></ul><p><strong>Compulsions.</strong> Soigner des malades au risque d'être contaminé.</p>",
     "source": "Entre ciel et terre, p. 264",
     "voie": "voie-du-folklore",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.Iy4OYyIN7hI6KjNY",

@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Bouche démesurée pour avaler une proie d&#x27;un mètre de diamètre.</li><li>Cacher un objet en l&#x27;avalant, puis le recracher.</li><li>Avaler une personne.</li><li>Crachat d&#x27;une boule de poils (sur un ennemi, pour faire du fil).</li></ul><p><strong>Compulsions.</strong> Avaler une souris vivante sans la mâcher. Vomir un objet qu&#x27;on avait avalé.</p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Bouche démesurée pour avaler une proie d'un mètre de diamètre.</li><li>Cacher un objet en l'avalant, puis le recracher.</li><li>Avaler une personne.</li><li>Crachat d'une boule de poils (sur un ennemi, pour faire du fil).</li></ul><p><strong>Compulsions.</strong> Avaler une souris vivante sans la mâcher. Vomir un objet qu'on avait avalé.</p>",
     "source": "Entre ciel et terre, p. 284",
     "voie": "voie-de-dambala",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.fVIeiRnBn8ADVFE2",

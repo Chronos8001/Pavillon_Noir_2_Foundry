@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Fait couler une source d&#x27;eau de la roche frappée par un bâton.</li><li>Fait tomber de la grêle.</li><li>Transforme l&#x27;eau d&#x27;une étendue d&#x27;eau ou d&#x27;un cours d&#x27;eau en sang.</li><li>Transforme la poussière du sol en moustiques.</li><li>Transforme un bâton en serpent ou l&#x27;inverse.</li></ul><p><strong>Compulsions.</strong> Trouver un bâton naturellement complètement droit.</p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Fait couler une source d'eau de la roche frappée par un bâton.</li><li>Fait tomber de la grêle.</li><li>Transforme l'eau d'une étendue d'eau ou d'un cours d'eau en sang.</li><li>Transforme la poussière du sol en moustiques.</li><li>Transforme un bâton en serpent ou l'inverse.</li></ul><p><strong>Compulsions.</strong> Trouver un bâton naturellement complètement droit.</p>",
     "source": "Entre ciel et terre, p. 213",
     "voie": "voie-de-dieu",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.SPlB5GslKnZdeWKG",

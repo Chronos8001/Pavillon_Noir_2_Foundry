@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Fait mourir immédiatement un ennemi.</li><li>Résurrection d&#x27;un mort, mais dans le même état qu&#x27;à sa mort.</li><li>Résurrection ou destruction d&#x27;un état de fait.</li></ul><p><strong>Compulsions.</strong> Tuer quelqu&#x27;un dans son sommeil sans qu&#x27;il se réveille. Se suicider (le prêtre va vivre sa première résurrection).</p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Fait mourir immédiatement un ennemi.</li><li>Résurrection d'un mort, mais dans le même état qu'à sa mort.</li><li>Résurrection ou destruction d'un état de fait.</li></ul><p><strong>Compulsions.</strong> Tuer quelqu'un dans son sommeil sans qu'il se réveille. Se suicider (le prêtre va vivre sa première résurrection).</p>",
     "source": "Entre ciel et terre, p. 184",
     "voie": "voie-d-icheiricou-pour-la-protection-et-la-punition",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.yH60f20rPKBEP9j4",

@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Rend un objet dangereux en lui conférant des intentions propres et meurtrières.</li><li>Sait si un objet a servi à tuer (vision instantanée et floue du meurtre).</li><li>En touchant un mort, marque l&#x27;objet qui a servi à le tuer.</li><li>Pousse une personne à la maladresse avec les objets dangereux.</li></ul><p><strong>Compulsions.</strong> S&#x27;entailler la chair avec un objet anodin. Poser une marque sur un objet qui a tué quelqu&#x27;un.</p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Rend un objet dangereux en lui conférant des intentions propres et meurtrières.</li><li>Sait si un objet a servi à tuer (vision instantanée et floue du meurtre).</li><li>En touchant un mort, marque l'objet qui a servi à le tuer.</li><li>Pousse une personne à la maladresse avec les objets dangereux.</li></ul><p><strong>Compulsions.</strong> S'entailler la chair avec un objet anodin. Poser une marque sur un objet qui a tué quelqu'un.</p>",
     "source": "Entre ciel et terre, p. 292",
     "voie": "voie-des-guedes",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.BJZUi8OCwtnsr9Ow",

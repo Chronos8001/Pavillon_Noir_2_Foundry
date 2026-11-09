@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Respiration de la baleine (rester longtemps sous l&#x27;eau sans respirer).</li><li>Ivresse de la noyade.</li><li>Donner des pulsions pour boire la tasse.</li><li>Complaisance dans le malheur.</li><li>Trouver un point d&#x27;eau.</li><li>Suivre une trace à l&#x27;envers.</li><li>Voir les indices d&#x27;une enquête.</li></ul><p><strong>Compulsions.</strong> Résoudre une enquête. Abandonner sans raison la trace que l&#x27;on suivait. Abandonner une enquête.</p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Respiration de la baleine (rester longtemps sous l'eau sans respirer).</li><li>Ivresse de la noyade.</li><li>Donner des pulsions pour boire la tasse.</li><li>Complaisance dans le malheur.</li><li>Trouver un point d'eau.</li><li>Suivre une trace à l'envers.</li><li>Voir les indices d'une enquête.</li></ul><p><strong>Compulsions.</strong> Résoudre une enquête. Abandonner sans raison la trace que l'on suivait. Abandonner une enquête.</p>",
     "source": "Entre ciel et terre, p. 277",
     "voie": "voie-d-agwe",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.6bwsVNHhFxnjtf9Q",

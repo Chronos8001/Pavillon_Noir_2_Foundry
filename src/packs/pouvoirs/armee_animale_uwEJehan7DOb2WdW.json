@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Contrôle de tous les animaux présents dans la région.</li></ul><p><strong>Compulsions.</strong> Entraîner un groupe d&#x27;animaux à des actions de groupe. Armer un groupe d&#x27;animaux de pied en cap.</p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Contrôle de tous les animaux présents dans la région.</li></ul><p><strong>Compulsions.</strong> Entraîner un groupe d'animaux à des actions de groupe. Armer un groupe d'animaux de pied en cap.</p>",
     "source": "Entre ciel et terre, p. 312",
     "voie": "voie-de-cousin-zaka",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.lP05NKFNMs90d9GB",

@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Ment effrontément sans se faire prendre.</li><li>Sent quand quelqu&#x27;un ment.</li><li>Sait tricher au jeu.</li><li>Sent quand quelqu&#x27;un triche.</li><li>Légère modification du fa (destin).</li></ul><p><strong>Compulsions.</strong> Mensonge éhonté. Tricher avec des personnes violentes.</p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Ment effrontément sans se faire prendre.</li><li>Sent quand quelqu'un ment.</li><li>Sait tricher au jeu.</li><li>Sent quand quelqu'un triche.</li><li>Légère modification du fa (destin).</li></ul><p><strong>Compulsions.</strong> Mensonge éhonté. Tricher avec des personnes violentes.</p>",
     "source": "Entre ciel et terre, p. 296",
     "voie": "voie-de-papa-legba",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.cLAnYvfRTW6M1YmZ",

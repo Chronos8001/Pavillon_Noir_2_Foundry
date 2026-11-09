@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Contrôle des émotions d&#x27;autrui.</li><li>Perte des réflexes.</li><li>Geste incontrôlé.</li><li>Enlever à une personne sa capacité à ressentir et penser.</li></ul><p><strong>Compulsions.</strong> Manipuler quelqu&#x27;un selon ses émotions. Triturer le cerveau d&#x27;un mort récent jusqu&#x27;à obtenir des mouvements involontaires.</p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Contrôle des émotions d'autrui.</li><li>Perte des réflexes.</li><li>Geste incontrôlé.</li><li>Enlever à une personne sa capacité à ressentir et penser.</li></ul><p><strong>Compulsions.</strong> Manipuler quelqu'un selon ses émotions. Triturer le cerveau d'un mort récent jusqu'à obtenir des mouvements involontaires.</p>",
     "source": "Entre ciel et terre, p. 284",
     "voie": "voie-de-dambala",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.fVIeiRnBn8ADVFE2",

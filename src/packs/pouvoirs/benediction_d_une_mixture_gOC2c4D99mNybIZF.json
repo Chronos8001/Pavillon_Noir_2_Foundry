@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Conf ère un caractère mystique à un breuvage.</li><li>Augmente les effets d&#x27;un breuvage.</li><li>Altère de façon bénéfique les effets d&#x27;un breuvage.</li><li>Assure la bonne entente lors d&#x27;une cohabitation.</li></ul><p><strong>Compulsions.</strong> Espérer plus d&#x27;un breuvage que ce qu&#x27;il ne peut donner. Avaler un mélange hasardeux.</p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Conf ère un caractère mystique à un breuvage.</li><li>Augmente les effets d'un breuvage.</li><li>Altère de façon bénéfique les effets d'un breuvage.</li><li>Assure la bonne entente lors d'une cohabitation.</li></ul><p><strong>Compulsions.</strong> Espérer plus d'un breuvage que ce qu'il ne peut donner. Avaler un mélange hasardeux.</p>",
     "source": "Entre ciel et terre, p. 300",
     "voie": "voie-des-freres-marassa",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.g0bMhkfFArVT77cy",

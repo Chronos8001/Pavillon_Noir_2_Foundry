@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Fait pousser des crocs.</li><li>Montre les dents.</li><li>Rend menaçante la dentition d&#x27;une personne.</li><li>Fait gronder un animal.</li></ul><p><strong>Compulsions.</strong> Se fixer des crocs de prédateur sur les canines. Mordre violemment quelqu&#x27;un.</p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Fait pousser des crocs.</li><li>Montre les dents.</li><li>Rend menaçante la dentition d'une personne.</li><li>Fait gronder un animal.</li></ul><p><strong>Compulsions.</strong> Se fixer des crocs de prédateur sur les canines. Mordre violemment quelqu'un.</p>",
     "source": "Entre ciel et terre, p. 309",
     "voie": "voie-de-cousin-zaka",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.lP05NKFNMs90d9GB",

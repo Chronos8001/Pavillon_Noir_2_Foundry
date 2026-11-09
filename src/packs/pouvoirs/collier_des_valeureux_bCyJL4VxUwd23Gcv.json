@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Enlève le courage en arrachant un collier ou un objet symbolique.</li><li>Collier donnant du courage et contenant de la chair de mansfénix.</li><li>Révèle le symbole qui donne à l&#x27;ennemi sa cohésion.</li><li>Fait passer pour valeureux ceux qui disposent d&#x27;un collier ou d&#x27;un symbole de courage.</li></ul><p><strong>Compulsions.</strong> Chasse et tue le mansfénix. Rassurer quelqu&#x27;un en lui donnant un objet.</p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Enlève le courage en arrachant un collier ou un objet symbolique.</li><li>Collier donnant du courage et contenant de la chair de mansfénix.</li><li>Révèle le symbole qui donne à l'ennemi sa cohésion.</li><li>Fait passer pour valeureux ceux qui disposent d'un collier ou d'un symbole de courage.</li></ul><p><strong>Compulsions.</strong> Chasse et tue le mansfénix. Rassurer quelqu'un en lui donnant un objet.</p>",
     "source": "Entre ciel et terre, p. 172",
     "voie": "voie-d-icheiricou-pour-la-guerre",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.ua948TzRBv4MWuy4",

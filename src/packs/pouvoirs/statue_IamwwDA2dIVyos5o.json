@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Se rend parfaitement immobile.</li><li>Transforme une personne immobile en statue.</li><li>Sculpte une belle statue selon l&#x27;art inventif, abstrait et symbolique aztèque.</li><li>Immobilise une personne.</li></ul><p><strong>Compulsions.</strong> Passer inaperçu en restant parfaitement immobile. Immobiliser quelqu&#x27;un lors d&#x27;une lutte.</p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Se rend parfaitement immobile.</li><li>Transforme une personne immobile en statue.</li><li>Sculpte une belle statue selon l'art inventif, abstrait et symbolique aztèque.</li><li>Immobilise une personne.</li></ul><p><strong>Compulsions.</strong> Passer inaperçu en restant parfaitement immobile. Immobiliser quelqu'un lors d'une lutte.</p>",
     "source": "Entre ciel et terre, p. 205",
     "voie": "voie-des-cinq-soleils",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.LIzof8tOOXvNP2kT",

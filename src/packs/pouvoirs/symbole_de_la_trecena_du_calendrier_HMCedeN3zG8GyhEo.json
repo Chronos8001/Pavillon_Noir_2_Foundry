@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Donne l&#x27;aspect du symbole de la trecena.</li><li>Métamorphose en ce que représente le symbole de la trecena.</li><li>Utilise le nom du symbole de la trecena comme s&#x27;il s&#x27;agissait d&#x27;un pouvoir (sens propre, figuré, connotations, etc.).</li></ul><p><strong>Compulsions.</strong> Écrire un codex décrivant la vie religieuse de chaque trecena de l&#x27;année religieuse.</p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Donne l'aspect du symbole de la trecena.</li><li>Métamorphose en ce que représente le symbole de la trecena.</li><li>Utilise le nom du symbole de la trecena comme s'il s'agissait d'un pouvoir (sens propre, figuré, connotations, etc.).</li></ul><p><strong>Compulsions.</strong> Écrire un codex décrivant la vie religieuse de chaque trecena de l'année religieuse.</p>",
     "source": "Entre ciel et terre, p. 201",
     "voie": "voie-du-calendrier",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.AFWMXMJdfCNP7hit",

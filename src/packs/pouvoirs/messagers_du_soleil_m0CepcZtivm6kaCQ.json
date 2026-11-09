@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Donne un charisme phénoménal, comme si la cible était Huitzilopochtlui lui-même.</li><li>Décode les messages envoyés par le soleil.</li><li>Transmet un message par rayons lumineux.</li><li>Donne un message au soleil, qui le transmettra sous forme d&#x27;ombres et de lumière.</li><li>Donne des messages au vent ou les interprète.</li></ul><p><strong>Compulsions.</strong> Créer un cache dont les trous permettent, via les rayons du soleil, de faire passer un message. Utiliser un miroir pour envoyer des signaux lumineux.</p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Donne un charisme phénoménal, comme si la cible était Huitzilopochtlui lui-même.</li><li>Décode les messages envoyés par le soleil.</li><li>Transmet un message par rayons lumineux.</li><li>Donne un message au soleil, qui le transmettra sous forme d'ombres et de lumière.</li><li>Donne des messages au vent ou les interprète.</li></ul><p><strong>Compulsions.</strong> Créer un cache dont les trous permettent, via les rayons du soleil, de faire passer un message. Utiliser un miroir pour envoyer des signaux lumineux.</p>",
     "source": "Entre ciel et terre, p. 205",
     "voie": "voie-des-cinq-soleils",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.LIzof8tOOXvNP2kT",

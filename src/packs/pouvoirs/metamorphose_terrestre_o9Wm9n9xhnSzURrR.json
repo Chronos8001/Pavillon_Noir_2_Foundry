@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Métamorphose d&#x27;un être vivant en arbre.</li><li>Fusion dans le sol.</li><li>Métamorphose d&#x27;un être vivant en animal non volant et non aquatique.</li><li>Métamorphose d&#x27;un être vivant en une multitude de petits animaux ou en une nuée d&#x27;insectes.</li></ul><p><strong>Compulsions.</strong> Se déplacer comme un animal pendant une journée. Assister à la sortie d&#x27;un papillon de sa chrysalide.</p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Métamorphose d'un être vivant en arbre.</li><li>Fusion dans le sol.</li><li>Métamorphose d'un être vivant en animal non volant et non aquatique.</li><li>Métamorphose d'un être vivant en une multitude de petits animaux ou en une nuée d'insectes.</li></ul><p><strong>Compulsions.</strong> Se déplacer comme un animal pendant une journée. Assister à la sortie d'un papillon de sa chrysalide.</p>",
     "source": "Entre ciel et terre, p. 311",
     "voie": "voie-de-cousin-zaka",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.lP05NKFNMs90d9GB",

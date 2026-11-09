@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Allumage d&#x27;un feu inoffensif.</li><li>Conservation des aliments.</li><li>Protection de la famille.</li><li>Maintien du feu allumé.</li><li>Maintien de la cohésion du groupe.</li><li>Fabrication rapide d&#x27;armes.</li></ul><p><strong>Compulsions.</strong> Faire vivre un feu pendant 24h. Manger des aliments mal conservés.</p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Allumage d'un feu inoffensif.</li><li>Conservation des aliments.</li><li>Protection de la famille.</li><li>Maintien du feu allumé.</li><li>Maintien de la cohésion du groupe.</li><li>Fabrication rapide d'armes.</li></ul><p><strong>Compulsions.</strong> Faire vivre un feu pendant 24h. Manger des aliments mal conservés.</p>",
     "source": "Entre ciel et terre, p. 249",
     "voie": "voie-du-druidisme",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.444Fft7a0LtvOMIS",

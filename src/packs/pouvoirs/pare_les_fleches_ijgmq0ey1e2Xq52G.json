@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Rend impossible à toucher par les projectiles.</li><li>Rend un projectile impossible à parer ou à esquiver.</li><li>Concentre l&#x27;attention de quelqu&#x27;un sur les projectiles.</li></ul><p><strong>Compulsions.</strong> Se construire un bouclier. S&#x27;acharner à coups de flèches sur une personne.</p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Rend impossible à toucher par les projectiles.</li><li>Rend un projectile impossible à parer ou à esquiver.</li><li>Concentre l'attention de quelqu'un sur les projectiles.</li></ul><p><strong>Compulsions.</strong> Se construire un bouclier. S'acharner à coups de flèches sur une personne.</p>",
     "source": "Entre ciel et terre, p. 172",
     "voie": "voie-d-icheiricou-pour-la-guerre",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.ua948TzRBv4MWuy4",

@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Remplacer un moignon par une prothèse d&#x27;argent. Il n&#x27;est pas possible de faire une prothèse pour un membre qu&#x27;une personne s&#x27;est elle-même amputé. Pour construire la prothèse, il faut disposer de la quantité d&#x27;argent nécessaire. Une fois réalisée, la prothèse fonctionne comme le membre qu&#x27;elle remplace. Lorsque le membre subit des dommages, il est nécessaire de la réparer. Une journée de réparation répare un nombre de Niveaux de santé égal au nombre de Succès obtenus sur un Test de Science (Adr), et consomme 50 pièces de huit en argent par Niveau de Santé réparé.</li></ul><p><strong>Compulsions.</strong> Amputer le bras droit d&#x27;un ami, ou se le faire à soi-même.</p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Remplacer un moignon par une prothèse d'argent. Il n'est pas possible de faire une prothèse pour un membre qu'une personne s'est elle-même amputé. Pour construire la prothèse, il faut disposer de la quantité d'argent nécessaire. Une fois réalisée, la prothèse fonctionne comme le membre qu'elle remplace. Lorsque le membre subit des dommages, il est nécessaire de la réparer. Une journée de réparation répare un nombre de Niveaux de santé égal au nombre de Succès obtenus sur un Test de Science (Adr), et consomme 50 pièces de huit en argent par Niveau de Santé réparé.</li></ul><p><strong>Compulsions.</strong> Amputer le bras droit d'un ami, ou se le faire à soi-même.</p>",
     "source": "Entre ciel et terre, p. 253",
     "voie": "voie-du-druidisme",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.444Fft7a0LtvOMIS",

@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Rend le regard de quelqu&#x27;un d&#x27;une intensité insoutenable.</li><li>Enflamme du regard des matières très inflammables.</li><li>Fait brûler une personne de désir, de colère ou de passion en croisant son regard.</li></ul><p><strong>Compulsions.</strong> Foudroyer quelqu&#x27;un du regard. Créer du désir d&#x27;un seul regard.</p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Rend le regard de quelqu'un d'une intensité insoutenable.</li><li>Enflamme du regard des matières très inflammables.</li><li>Fait brûler une personne de désir, de colère ou de passion en croisant son regard.</li></ul><p><strong>Compulsions.</strong> Foudroyer quelqu'un du regard. Créer du désir d'un seul regard.</p>",
     "source": "Entre ciel et terre, p. 206",
     "voie": "voie-des-cinq-soleils",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.LIzof8tOOXvNP2kT",

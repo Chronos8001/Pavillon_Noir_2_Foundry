@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>L&#x27;ennemi dort d&#x27;un profond sommeil.</li><li>Sommeil tranquille et réparateur.</li><li>Contrôle les rêves des dormeurs en sommeil profond.</li></ul><p><strong>Compulsions.</strong> Réussir à dormir au milieu de la tourmente ou d&#x27;un combat. Contrôler un de ses rêves.</p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>L'ennemi dort d'un profond sommeil.</li><li>Sommeil tranquille et réparateur.</li><li>Contrôle les rêves des dormeurs en sommeil profond.</li></ul><p><strong>Compulsions.</strong> Réussir à dormir au milieu de la tourmente ou d'un combat. Contrôler un de ses rêves.</p>",
     "source": "Entre ciel et terre, p. 173",
     "voie": "voie-d-icheiricou-pour-la-guerre",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.ua948TzRBv4MWuy4",

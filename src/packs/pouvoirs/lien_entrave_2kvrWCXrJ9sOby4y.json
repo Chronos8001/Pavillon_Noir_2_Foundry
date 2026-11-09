@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Perçoit les liens qui unissent les personnes.</li><li>Perçoit les chaînes du coeur ou de l&#x27;esprit qui entravent la liberté.</li><li>Crée un lien ou une entrave.</li><li>Libère d&#x27;une entrave ou brise un lien.</li></ul><p><strong>Compulsions.</strong> Renforcer le lien qui unit deux personnes. S&#x27;enchaîner les bras ou les jambes.</p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Perçoit les liens qui unissent les personnes.</li><li>Perçoit les chaînes du coeur ou de l'esprit qui entravent la liberté.</li><li>Crée un lien ou une entrave.</li><li>Libère d'une entrave ou brise un lien.</li></ul><p><strong>Compulsions.</strong> Renforcer le lien qui unit deux personnes. S'enchaîner les bras ou les jambes.</p>",
     "source": "Entre ciel et terre, p. 193",
     "voie": "voie-des-zemis",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.adV2aUWhmHXDCarX",

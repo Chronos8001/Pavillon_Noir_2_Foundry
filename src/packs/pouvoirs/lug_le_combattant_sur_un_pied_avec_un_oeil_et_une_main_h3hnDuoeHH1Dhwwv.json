@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Immunité à la douleur.</li><li>Réduction des séquelles.</li><li>Protection de son camp.</li><li>Suppression de la gangrène.</li><li>Cycle qui s&#x27;achève.</li></ul><p><strong>Compulsions.</strong> Combattre avec un oeil fermé, à cloche-pied et une main dans le dos. Amputer alors que ce n&#x27;était pas nécessaire.</p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Immunité à la douleur.</li><li>Réduction des séquelles.</li><li>Protection de son camp.</li><li>Suppression de la gangrène.</li><li>Cycle qui s'achève.</li></ul><p><strong>Compulsions.</strong> Combattre avec un oeil fermé, à cloche-pied et une main dans le dos. Amputer alors que ce n'était pas nécessaire.</p>",
     "source": "Entre ciel et terre, p. 251",
     "voie": "voie-du-druidisme",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.444Fft7a0LtvOMIS",

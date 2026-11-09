@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Bloque la maladie, apaise le malade et le protège contre toute tentative d&#x27;attenter à sa vie tant qu&#x27;il reste couché.</li><li>Même chose avec un blessé.</li><li>Rend une personne non contagieuse.</li><li>Conf ère une immunité à la maladie.</li><li>Empêche les personnes malades de s&#x27;approcher, quelle que soit la nature et la gravité de leur maladie.</li></ul><p><strong>Compulsions.</strong> S&#x27;occuper d&#x27;un malade avec attention. Se promener parmi des malades atteints d&#x27;une maladie épidémique bénigne.</p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Bloque la maladie, apaise le malade et le protège contre toute tentative d'attenter à sa vie tant qu'il reste couché.</li><li>Même chose avec un blessé.</li><li>Rend une personne non contagieuse.</li><li>Conf ère une immunité à la maladie.</li><li>Empêche les personnes malades de s'approcher, quelle que soit la nature et la gravité de leur maladie.</li></ul><p><strong>Compulsions.</strong> S'occuper d'un malade avec attention. Se promener parmi des malades atteints d'une maladie épidémique bénigne.</p>",
     "source": "Entre ciel et terre, p. 291",
     "voie": "voie-des-guedes",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.BJZUi8OCwtnsr9Ow",

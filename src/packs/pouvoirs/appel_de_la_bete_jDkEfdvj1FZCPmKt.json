@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Frénésie guerrière.</li><li>Création de pulsions animales.</li><li>Appel des animaux autour de soi.</li><li>Création d&#x27;un climat chaotique et violent.</li></ul><p><strong>Compulsions.</strong> Laisser libre cours à sa colère. Laisser primer l&#x27;agressivité sur la retenue.</p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Frénésie guerrière.</li><li>Création de pulsions animales.</li><li>Appel des animaux autour de soi.</li><li>Création d'un climat chaotique et violent.</li></ul><p><strong>Compulsions.</strong> Laisser libre cours à sa colère. Laisser primer l'agressivité sur la retenue.</p>",
     "source": "Entre ciel et terre, p. 312",
     "voie": "voie-de-cousin-zaka",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.lP05NKFNMs90d9GB",

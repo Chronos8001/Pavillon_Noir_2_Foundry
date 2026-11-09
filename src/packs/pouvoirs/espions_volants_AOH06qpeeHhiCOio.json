@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Voit par les yeux des moustiques et des oiseaux.</li><li>Envoie une nuée de moustiques et d&#x27;oiseaux comme espions.</li><li>Repère les espions.</li><li>Soulève les espions du sol.</li></ul><p><strong>Compulsions.</strong> Suivre un vol d&#x27;oiseau. Démasquer un espion.</p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Voit par les yeux des moustiques et des oiseaux.</li><li>Envoie une nuée de moustiques et d'oiseaux comme espions.</li><li>Repère les espions.</li><li>Soulève les espions du sol.</li></ul><p><strong>Compulsions.</strong> Suivre un vol d'oiseau. Démasquer un espion.</p>",
     "source": "Entre ciel et terre, p. 194",
     "voie": "voie-des-zemis",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.adV2aUWhmHXDCarX",

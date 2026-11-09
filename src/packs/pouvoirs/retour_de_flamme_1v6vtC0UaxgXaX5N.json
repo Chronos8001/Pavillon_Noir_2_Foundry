@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Déclenchement d&#x27;une conséquence tardive et néfaste.</li><li>Implosion d&#x27;un canon ou d&#x27;une arme à feu lors du tir.</li><li>Fait souffrir l&#x27;acteur de la même manière que sa victime.</li><li>Retour d&#x27;effet de pouvoir à l&#x27;envoyeur.</li><li>Rallume un feu éteint.</li></ul><p><strong>Compulsions.</strong> Infliger à quelqu&#x27;un tout ce qu&#x27;il inflige à d&#x27;autres. Allumer un feu de bois mouillé.</p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Déclenchement d'une conséquence tardive et néfaste.</li><li>Implosion d'un canon ou d'une arme à feu lors du tir.</li><li>Fait souffrir l'acteur de la même manière que sa victime.</li><li>Retour d'effet de pouvoir à l'envoyeur.</li><li>Rallume un feu éteint.</li></ul><p><strong>Compulsions.</strong> Infliger à quelqu'un tout ce qu'il inflige à d'autres. Allumer un feu de bois mouillé.</p>",
     "source": "Entre ciel et terre, p. 304",
     "voie": "voie-des-freres-marassa",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.g0bMhkfFArVT77cy",

@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Accès à tous les pouvoirs de la voie, sauf la Voix du Prophète.</li><li>Génère un nouveau courant religieux.</li><li>Donne l&#x27;impression à quelqu&#x27;un qu&#x27;il doit se sacrifier pour le bien de l&#x27;humanité.</li></ul><p><strong>Compulsions.</strong> Accepter à moyen terme de mourir pour l&#x27;humanité. Rassembler des fidèles et leur donner un message nouveau, donc hérétique.</p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Accès à tous les pouvoirs de la voie, sauf la Voix du Prophète.</li><li>Génère un nouveau courant religieux.</li><li>Donne l'impression à quelqu'un qu'il doit se sacrifier pour le bien de l'humanité.</li></ul><p><strong>Compulsions.</strong> Accepter à moyen terme de mourir pour l'humanité. Rassembler des fidèles et leur donner un message nouveau, donc hérétique.</p>",
     "source": "Entre ciel et terre, p. 214",
     "voie": "voie-de-dieu",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.SPlB5GslKnZdeWKG",

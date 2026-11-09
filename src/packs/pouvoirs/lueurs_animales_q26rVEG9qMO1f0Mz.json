@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Voit les animaux ou humains comme des lueurs brillantes.</li><li>Fait briller des yeux dans la nuit.</li><li>Vision infrarouge.</li><li>Éclairage par des lucioles.</li></ul><p><strong>Compulsions.</strong> Emmener une luciole avec soi. Repérer des yeux d&#x27;animaux dans la nuit.</p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Voit les animaux ou humains comme des lueurs brillantes.</li><li>Fait briller des yeux dans la nuit.</li><li>Vision infrarouge.</li><li>Éclairage par des lucioles.</li></ul><p><strong>Compulsions.</strong> Emmener une luciole avec soi. Repérer des yeux d'animaux dans la nuit.</p>",
     "source": "Entre ciel et terre, p. 309",
     "voie": "voie-de-cousin-zaka",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.lP05NKFNMs90d9GB",

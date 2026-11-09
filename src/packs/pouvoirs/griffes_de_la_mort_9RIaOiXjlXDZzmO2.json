@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Prédateur de la nuit. Se métamorphose en un prédateur griffu, silencieux et rapide, à qui boire du sang donne une force extrême.</li><li>Rendre la nuit extrêmement dangereuse à l&#x27;extérieur des habitations.</li><li>Faire mourir quelqu&#x27;un qui dort.</li><li>Affecter quelqu&#x27;un de la maladie du sommeil.</li><li>Arracher un mourant aux griffes de la mort (c&#x27;est-à-dire dans une z le sauver).</li></ul><p><strong>Compulsions.</strong> Errer dans un village ou les rues d&#x27;une ville et vider de son sang le premier venu. Préparer des embuscades nocturnes.</p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Prédateur de la nuit. Se métamorphose en un prédateur griffu, silencieux et rapide, à qui boire du sang donne une force extrême.</li><li>Rendre la nuit extrêmement dangereuse à l'extérieur des habitations.</li><li>Faire mourir quelqu'un qui dort.</li><li>Affecter quelqu'un de la maladie du sommeil.</li><li>Arracher un mourant aux griffes de la mort (c'est-à-dire dans une z le sauver).</li></ul><p><strong>Compulsions.</strong> Errer dans un village ou les rues d'une ville et vider de son sang le premier venu. Préparer des embuscades nocturnes.</p>",
     "source": "Entre ciel et terre, p. 293",
     "voie": "voie-des-guedes",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.BJZUi8OCwtnsr9Ow",

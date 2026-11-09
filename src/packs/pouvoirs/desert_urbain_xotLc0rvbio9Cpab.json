@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Désertion d&#x27;une ville.</li><li>Sensation de solitude dans la foule.</li><li>Destruction de la végétation en ville.</li><li>Assèchement du climat en ville.</li></ul><p><strong>Compulsions.</strong> Brûler un carré de verdure. Arracher systématiquement toute plante.</p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Désertion d'une ville.</li><li>Sensation de solitude dans la foule.</li><li>Destruction de la végétation en ville.</li><li>Assèchement du climat en ville.</li></ul><p><strong>Compulsions.</strong> Brûler un carré de verdure. Arracher systématiquement toute plante.</p>",
     "source": "Entre ciel et terre, p. 311",
     "voie": "voie-de-cousin-zaka",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.lP05NKFNMs90d9GB",

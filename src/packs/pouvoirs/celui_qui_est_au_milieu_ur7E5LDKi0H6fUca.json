@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Fait assumer la tâche de médiateur.</li><li>Celui qui est au milieu devient l&#x27;ennemi de chaque camp.</li><li>Donne à celui qui est au milieu une image de vertu.</li></ul><p><strong>Compulsions.</strong> Prendre la défense du camp adverse. Régler un différend en douceur.</p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Fait assumer la tâche de médiateur.</li><li>Celui qui est au milieu devient l'ennemi de chaque camp.</li><li>Donne à celui qui est au milieu une image de vertu.</li></ul><p><strong>Compulsions.</strong> Prendre la défense du camp adverse. Régler un différend en douceur.</p>",
     "source": "Entre ciel et terre, p. 191",
     "voie": "voie-des-zemis",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.adV2aUWhmHXDCarX",

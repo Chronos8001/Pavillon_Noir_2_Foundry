@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Conseil répondant à une question.</li><li>Capacité à donner confiance en son avis.</li><li>Pousser à demander des conseils.</li><li>Tendance à se tourner vers la religion pour obtenir un conseil.</li></ul><p><strong>Compulsions.</strong> Donner des conseils à qui n&#x27;en a pas besoin. Donner sciemment de mauvais conseils à un mi ou allié.</p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Conseil répondant à une question.</li><li>Capacité à donner confiance en son avis.</li><li>Pousser à demander des conseils.</li><li>Tendance à se tourner vers la religion pour obtenir un conseil.</li></ul><p><strong>Compulsions.</strong> Donner des conseils à qui n'en a pas besoin. Donner sciemment de mauvais conseils à un mi ou allié.</p>",
     "source": "Entre ciel et terre, p. 248",
     "voie": "voie-du-druidisme",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.444Fft7a0LtvOMIS",

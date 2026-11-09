@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Lève une malédiction.</li><li>Prononce une malédiction. Elle devra comporter des effets négatifs, toutefois pas directement mortels, mais aussi une condition simple pour lever la malédiction. Une malédiction peut être transmissible.</li></ul><p><strong>Compulsions.</strong> Convaincre une personne qu&#x27;elle est maudite.</p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Lève une malédiction.</li><li>Prononce une malédiction. Elle devra comporter des effets négatifs, toutefois pas directement mortels, mais aussi une condition simple pour lever la malédiction. Une malédiction peut être transmissible.</li></ul><p><strong>Compulsions.</strong> Convaincre une personne qu'elle est maudite.</p>",
     "source": "Entre ciel et terre, p. 268",
     "voie": "voie-du-folklore",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.Iy4OYyIN7hI6KjNY",

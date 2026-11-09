@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Annulation de la stérilité ou augmentation de la fécondité.</li><li>Assurer la naissance et la bonne santé d&#x27;un nourrisson.</li><li>Fertilité de la terre.</li><li>Multiplication du gibier.</li><li>Exacerbation des pulsions sexuelles.</li></ul><p><strong>Compulsions.</strong> Féconder ou être fécondé. Cultiver un bout de terre. Tuer une femelle enceinte.</p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Annulation de la stérilité ou augmentation de la fécondité.</li><li>Assurer la naissance et la bonne santé d'un nourrisson.</li><li>Fertilité de la terre.</li><li>Multiplication du gibier.</li><li>Exacerbation des pulsions sexuelles.</li></ul><p><strong>Compulsions.</strong> Féconder ou être fécondé. Cultiver un bout de terre. Tuer une femelle enceinte.</p>",
     "source": "Entre ciel et terre, p. 300",
     "voie": "voie-des-freres-marassa",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.g0bMhkfFArVT77cy",

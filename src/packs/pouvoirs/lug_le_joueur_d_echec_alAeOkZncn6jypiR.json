@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Révélation de la tactique de l&#x27;ennemi.</li><li>Tactique avec plusieurs coups d&#x27;avance.</li><li>Esprit calme quels que soient l&#x27;enjeu et l&#x27;environnement.</li><li>Tactique indétectable.</li><li>Utilisation optimale de ses troupes ou de ses pions.</li></ul><p><strong>Compulsions.</strong> Gagner aux échecs contre plus fort que soi. Révéler la tactique de son groupe à l&#x27;ennemi.</p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Révélation de la tactique de l'ennemi.</li><li>Tactique avec plusieurs coups d'avance.</li><li>Esprit calme quels que soient l'enjeu et l'environnement.</li><li>Tactique indétectable.</li><li>Utilisation optimale de ses troupes ou de ses pions.</li></ul><p><strong>Compulsions.</strong> Gagner aux échecs contre plus fort que soi. Révéler la tactique de son groupe à l'ennemi.</p>",
     "source": "Entre ciel et terre, p. 253",
     "voie": "voie-du-druidisme",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.444Fft7a0LtvOMIS",

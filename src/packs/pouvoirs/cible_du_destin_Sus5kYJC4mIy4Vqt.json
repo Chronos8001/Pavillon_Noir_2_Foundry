@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Change le fa (destin) de la proie en un destin néfaste.</li><li>Transforme en porteur de poisse contagieux.</li><li>Échecs répétés pour toute action jugée importante.</li><li>Connaître les grandes lignes du destin de quelqu&#x27;un.</li></ul><p><strong>Compulsions.</strong> Apprendre à lire dans la main. Modifier de façon durable le destin de quelqu&#x27;un.</p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Change le fa (destin) de la proie en un destin néfaste.</li><li>Transforme en porteur de poisse contagieux.</li><li>Échecs répétés pour toute action jugée importante.</li><li>Connaître les grandes lignes du destin de quelqu'un.</li></ul><p><strong>Compulsions.</strong> Apprendre à lire dans la main. Modifier de façon durable le destin de quelqu'un.</p>",
     "source": "Entre ciel et terre, p. 294",
     "voie": "voie-des-guedes",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.BJZUi8OCwtnsr9Ow",

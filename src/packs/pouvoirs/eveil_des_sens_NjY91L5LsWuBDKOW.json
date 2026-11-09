@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Ouverture d&#x27;esprit.</li><li>Extrême sensibilité à la beauté.</li><li>Vigilance accrue.</li><li>Excès incapacitant de sensibilité aux sons, à la lumière, au toucher, au goût ou aux odeurs.</li></ul><p><strong>Compulsions.</strong> Rendre sensible à la beauté un parfait philistin. Se montrer prévoyant et vigilant.</p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Ouverture d'esprit.</li><li>Extrême sensibilité à la beauté.</li><li>Vigilance accrue.</li><li>Excès incapacitant de sensibilité aux sons, à la lumière, au toucher, au goût ou aux odeurs.</li></ul><p><strong>Compulsions.</strong> Rendre sensible à la beauté un parfait philistin. Se montrer prévoyant et vigilant.</p>",
     "source": "Entre ciel et terre, p. 300",
     "voie": "voie-des-freres-marassa",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.g0bMhkfFArVT77cy",

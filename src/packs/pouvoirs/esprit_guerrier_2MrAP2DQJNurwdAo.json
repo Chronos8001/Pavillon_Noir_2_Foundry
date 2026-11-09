@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Donne la volonté de vaincre et empêche de reculer.</li><li>Impose la nécessité d&#x27;entreprendre un raid guerrier.</li><li>Lacère son ennemi des machettes des xapiripë, aiguisées comme des lames de rasoir.</li><li>Sait où se trouve son ennemi et quelles sont ses forces.</li><li>Intimide l&#x27;ennemi.</li></ul><p><strong>Compulsions.</strong> Mordre son ennemi jusqu&#x27;au sang en plein combat. Lacérer son ennemi à mort.</p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Donne la volonté de vaincre et empêche de reculer.</li><li>Impose la nécessité d'entreprendre un raid guerrier.</li><li>Lacère son ennemi des machettes des xapiripë, aiguisées comme des lames de rasoir.</li><li>Sait où se trouve son ennemi et quelles sont ses forces.</li><li>Intimide l'ennemi.</li></ul><p><strong>Compulsions.</strong> Mordre son ennemi jusqu'au sang en plein combat. Lacérer son ennemi à mort.</p>",
     "source": "Entre ciel et terre, p. 188",
     "voie": "voie-des-xapiripe",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.uLmNntdGMAtLAIsE",

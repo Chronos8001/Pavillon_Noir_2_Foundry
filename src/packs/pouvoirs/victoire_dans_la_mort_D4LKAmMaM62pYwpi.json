@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Les hommes continuent à se battre, même morts, jusqu&#x27;à la fin du combat.</li><li>Donne l&#x27;impression que c&#x27;est en mourant que l&#x27;on trouvera la victoire.</li><li>Incite à se soumettre plutôt que de se faire massacrer.</li><li>Conséquences néfastes pour le vainqueur d&#x27;une bataille.</li></ul><p><strong>Compulsions.</strong> Expérimenter une cuisante défaite. Se rendre alors qu&#x27;on était en train de gagner.</p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Les hommes continuent à se battre, même morts, jusqu'à la fin du combat.</li><li>Donne l'impression que c'est en mourant que l'on trouvera la victoire.</li><li>Incite à se soumettre plutôt que de se faire massacrer.</li><li>Conséquences néfastes pour le vainqueur d'une bataille.</li></ul><p><strong>Compulsions.</strong> Expérimenter une cuisante défaite. Se rendre alors qu'on était en train de gagner.</p>",
     "source": "Entre ciel et terre, p. 294",
     "voie": "voie-des-guedes",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.BJZUi8OCwtnsr9Ow",

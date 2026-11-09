@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Métamorphose en chauve-souris.</li><li>Apparence d&#x27;un autre vivant.</li><li>Apparence de la mort.</li><li>Changer l&#x27;apparence d&#x27;un mort.</li></ul><p><strong>Compulsions.</strong> Se faire passer pour un trépassé en masquant son nombril et en agissant bizarrement.</p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Métamorphose en chauve-souris.</li><li>Apparence d'un autre vivant.</li><li>Apparence de la mort.</li><li>Changer l'apparence d'un mort.</li></ul><p><strong>Compulsions.</strong> Se faire passer pour un trépassé en masquant son nombril et en agissant bizarrement.</p>",
     "source": "Entre ciel et terre, p. 195",
     "voie": "voie-des-zemis",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.adV2aUWhmHXDCarX",

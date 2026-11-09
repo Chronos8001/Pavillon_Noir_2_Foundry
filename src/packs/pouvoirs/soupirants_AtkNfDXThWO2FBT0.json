@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Quêtes d&#x27;amour courtois.</li><li>Rendre quelqu&#x27;un mélancolique.</li><li>Transformer une relation en un amour impossible, voire tragique.</li></ul><p><strong>Compulsions.</strong> Asservir quelqu&#x27;un à ses désirs en refusant d&#x27;accéder aux siens. Envoyer sur les roses une personne puissante et imbue d&#x27;elle-même.</p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Quêtes d'amour courtois.</li><li>Rendre quelqu'un mélancolique.</li><li>Transformer une relation en un amour impossible, voire tragique.</li></ul><p><strong>Compulsions.</strong> Asservir quelqu'un à ses désirs en refusant d'accéder aux siens. Envoyer sur les roses une personne puissante et imbue d'elle-même.</p>",
     "source": "Entre ciel et terre, p. 288",
     "voie": "voie-d-erzulie",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.0cPd7IIiO1TgbK81",

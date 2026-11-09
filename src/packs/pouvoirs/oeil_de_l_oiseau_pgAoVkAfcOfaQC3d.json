@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Vision par les yeux d&#x27;un oiseau.</li><li>Crâne de piaf !</li><li>Donne la sensation de dominer autrui.</li><li>Donne une vision d&#x27;ensemble d&#x27;un problème.</li></ul><p><strong>Compulsions.</strong> Expérimenter la vision dans toutes les directions. Décortiquer un problème de manière à ce que rien d&#x27;imprévu ne puisse arriver.</p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Vision par les yeux d'un oiseau.</li><li>Crâne de piaf !</li><li>Donne la sensation de dominer autrui.</li><li>Donne une vision d'ensemble d'un problème.</li></ul><p><strong>Compulsions.</strong> Expérimenter la vision dans toutes les directions. Décortiquer un problème de manière à ce que rien d'imprévu ne puisse arriver.</p>",
     "source": "Entre ciel et terre, p. 310",
     "voie": "voie-de-cousin-zaka",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.lP05NKFNMs90d9GB",

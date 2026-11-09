@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Calme les esprits échauffés.</li><li>Protection contre la peur.</li><li>Ralentit le rythme corporel quand la température baisse.</li><li>Apaise la douleur d&#x27;une blessure.</li><li>Fait passer pour mort (corps froid et raide).</li><li>Tenir pendant des semaines sans nourriture.</li></ul><p><strong>Compulsions.</strong> Rester au soleil jusqu&#x27;à l&#x27;insolation. Rester dans l&#x27;eau froide jusqu&#x27;à engourdissement. Se faire passer pour mort.</p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Calme les esprits échauffés.</li><li>Protection contre la peur.</li><li>Ralentit le rythme corporel quand la température baisse.</li><li>Apaise la douleur d'une blessure.</li><li>Fait passer pour mort (corps froid et raide).</li><li>Tenir pendant des semaines sans nourriture.</li></ul><p><strong>Compulsions.</strong> Rester au soleil jusqu'à l'insolation. Rester dans l'eau froide jusqu'à engourdissement. Se faire passer pour mort.</p>",
     "source": "Entre ciel et terre, p. 282",
     "voie": "voie-de-dambala",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.fVIeiRnBn8ADVFE2",

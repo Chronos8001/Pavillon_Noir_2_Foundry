@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Augmente le vent.</li><li>Calme le vent.</li><li>Dévie la direction de la brise.</li><li>Comprend les odeurs et les sons transportés par le vent.</li><li>Fait changer une femme d&#x27;avis ou de sentiments.</li><li>Apporte le vent porteur de pluie.</li></ul><p><strong>Compulsions.</strong> Admirer un tissu battant dans le vent. Regarder l&#x27;eau pendant un calme plat jusqu&#x27;à ce que le vent reprenne.</p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Augmente le vent.</li><li>Calme le vent.</li><li>Dévie la direction de la brise.</li><li>Comprend les odeurs et les sons transportés par le vent.</li><li>Fait changer une femme d'avis ou de sentiments.</li><li>Apporte le vent porteur de pluie.</li></ul><p><strong>Compulsions.</strong> Admirer un tissu battant dans le vent. Regarder l'eau pendant un calme plat jusqu'à ce que le vent reprenne.</p>",
     "source": "Entre ciel et terre, p. 186",
     "voie": "voie-des-xapiripe",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.uLmNntdGMAtLAIsE",

@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Pousse à abandonner une personne ou un objet.</li><li>Trouve un objet utile ou une personne abandonnée.</li><li>Abandon au plaisir.</li><li>Manque net de retenue et de savoir-vivre.</li></ul><p><strong>Compulsions.</strong> « Oublier » un objet d&#x27;importance. S&#x27;abandonner sans retenue à un vice ou au plaisir.</p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Pousse à abandonner une personne ou un objet.</li><li>Trouve un objet utile ou une personne abandonnée.</li><li>Abandon au plaisir.</li><li>Manque net de retenue et de savoir-vivre.</li></ul><p><strong>Compulsions.</strong> « Oublier » un objet d'importance. S'abandonner sans retenue à un vice ou au plaisir.</p>",
     "source": "Entre ciel et terre, p. 192",
     "voie": "voie-des-zemis",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.adV2aUWhmHXDCarX",

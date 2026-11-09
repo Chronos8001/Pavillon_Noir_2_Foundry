@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Met en colère.</li><li>Ridiculise en public.</li><li>Déstabilise un adversaire.</li><li>Faire passer une accusation pour de l&#x27;humour.</li></ul><p><strong>Compulsions.</strong> Déstabiliser quelqu&#x27;un par une moquerie. Naviguer entre humour et mépris.</p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Met en colère.</li><li>Ridiculise en public.</li><li>Déstabilise un adversaire.</li><li>Faire passer une accusation pour de l'humour.</li></ul><p><strong>Compulsions.</strong> Déstabiliser quelqu'un par une moquerie. Naviguer entre humour et mépris.</p>",
     "source": "Entre ciel et terre, p. 305",
     "voie": "voie-d-ogou",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.nT1z9NA3nij69fC3",

@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Les morts sortent de leurs tombes.</li><li>On ne meurt plus dans le lieu désigné (peut devenir définitif si un gad est déposé).</li><li>Les morts se relèvent sous forme de zombies au service du bokor.</li><li>Luxuriance de la végétation et de la faune.</li></ul><p><strong>Compulsions.</strong> Animer un cadavre comme une marionnette. Déterrer tous les morts d&#x27;un cimetière et les disposer dans des postures macabres.</p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Les morts sortent de leurs tombes.</li><li>On ne meurt plus dans le lieu désigné (peut devenir définitif si un gad est déposé).</li><li>Les morts se relèvent sous forme de zombies au service du bokor.</li><li>Luxuriance de la végétation et de la faune.</li></ul><p><strong>Compulsions.</strong> Animer un cadavre comme une marionnette. Déterrer tous les morts d'un cimetière et les disposer dans des postures macabres.</p>",
     "source": "Entre ciel et terre, p. 295",
     "voie": "voie-des-guedes",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.BJZUi8OCwtnsr9Ow",

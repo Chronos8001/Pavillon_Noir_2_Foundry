@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Ôte toute pensée mauvaise à un être.</li><li>Rend un être stupide.</li><li>Donne l&#x27;apparence de la stupidité.</li><li>Donne l&#x27;apparence de la pureté de l&#x27;âme.</li></ul><p><strong>Compulsions.</strong> Révèle à tous les mauvaises intentions d&#x27;une personne. Mentir avec un air de parfaite sincérité.</p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Ôte toute pensée mauvaise à un être.</li><li>Rend un être stupide.</li><li>Donne l'apparence de la stupidité.</li><li>Donne l'apparence de la pureté de l'âme.</li></ul><p><strong>Compulsions.</strong> Révèle à tous les mauvaises intentions d'une personne. Mentir avec un air de parfaite sincérité.</p>",
     "source": "Entre ciel et terre, p. 191",
     "voie": "voie-des-zemis",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.adV2aUWhmHXDCarX",

@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Clarté de la nuit.</li><li>Durée de la nuit.</li><li>Endort les esprits maléfiques.</li><li>Protège par ses ténèbres.</li><li>Voit la trace des substances pathogènes laissées dans un corps par un esprit maléfique.</li><li>Voit la trace de l&#x27;action des xapiripë.</li><li>Découvre un chemin auparavant caché.</li><li>Sait où passent les esprits lorsqu&#x27;ils descendent de la montagne pour faire leur danse de préparation.</li></ul><p><strong>Compulsions.</strong> Remonter le chemin emprunté par les xapiripë pour descendre des montagnes. Placer des miroirs sur le sol des clairières dans la forêt.</p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Clarté de la nuit.</li><li>Durée de la nuit.</li><li>Endort les esprits maléfiques.</li><li>Protège par ses ténèbres.</li><li>Voit la trace des substances pathogènes laissées dans un corps par un esprit maléfique.</li><li>Voit la trace de l'action des xapiripë.</li><li>Découvre un chemin auparavant caché.</li><li>Sait où passent les esprits lorsqu'ils descendent de la montagne pour faire leur danse de préparation.</li></ul><p><strong>Compulsions.</strong> Remonter le chemin emprunté par les xapiripë pour descendre des montagnes. Placer des miroirs sur le sol des clairières dans la forêt.</p>",
     "source": "Entre ciel et terre, p. 185",
     "voie": "voie-des-xapiripe",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.uLmNntdGMAtLAIsE",

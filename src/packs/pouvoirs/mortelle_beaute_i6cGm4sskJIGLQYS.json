@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Tue à volonté toute personne à qui le houngan/la mambo plaît.</li><li>Fane la beauté.</li><li>Rend le teint cadavérique et effrayant.</li><li>Beauté non soumise aux ravages du temps.</li></ul><p><strong>Compulsions.</strong> Tuer un être de beauté extrême et l&#x27;embaumer. Immortaliser la beauté d&#x27;un lieu ou d&#x27;une personne par une oeuvre d&#x27;art.</p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Tue à volonté toute personne à qui le houngan/la mambo plaît.</li><li>Fane la beauté.</li><li>Rend le teint cadavérique et effrayant.</li><li>Beauté non soumise aux ravages du temps.</li></ul><p><strong>Compulsions.</strong> Tuer un être de beauté extrême et l'embaumer. Immortaliser la beauté d'un lieu ou d'une personne par une oeuvre d'art.</p>",
     "source": "Entre ciel et terre, p. 290",
     "voie": "voie-d-erzulie",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.0cPd7IIiO1TgbK81",

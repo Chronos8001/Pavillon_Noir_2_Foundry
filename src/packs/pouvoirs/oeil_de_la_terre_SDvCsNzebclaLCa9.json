@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Suivre des traces.</li><li>Donne la sensation d&#x27;être au-dessous de quelqu&#x27;un.</li><li>Donne la sensation d&#x27;être foulé aux pieds.</li><li>Interrogation des végétaux sur ce qu&#x27;ils ont senti.</li></ul><p><strong>Compulsions.</strong> Percer des trous dans un plancher et regarder par en dessous.</p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Suivre des traces.</li><li>Donne la sensation d'être au-dessous de quelqu'un.</li><li>Donne la sensation d'être foulé aux pieds.</li><li>Interrogation des végétaux sur ce qu'ils ont senti.</li></ul><p><strong>Compulsions.</strong> Percer des trous dans un plancher et regarder par en dessous.</p>",
     "source": "Entre ciel et terre, p. 310",
     "voie": "voie-de-cousin-zaka",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.lP05NKFNMs90d9GB",

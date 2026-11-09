@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Altération, création ou destruction d&#x27;images fixes, ou presque.</li><li>Invisibilité tant qu&#x27;on reste immobile.</li><li>Envoyer des images à une personne.</li><li>Recevoir des visions d&#x27;un lieu distant.</li><li>Créer l&#x27;illusion d&#x27;un double d&#x27;une personne ou d&#x27;un objet.</li></ul><p><strong>Compulsions.</strong> Destruction d&#x27;oeuvres d&#x27;art figuratives. Choisir de se cacher dans un moment critique.</p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Altération, création ou destruction d'images fixes, ou presque.</li><li>Invisibilité tant qu'on reste immobile.</li><li>Envoyer des images à une personne.</li><li>Recevoir des visions d'un lieu distant.</li><li>Créer l'illusion d'un double d'une personne ou d'un objet.</li></ul><p><strong>Compulsions.</strong> Destruction d'oeuvres d'art figuratives. Choisir de se cacher dans un moment critique.</p>",
     "source": "Entre ciel et terre, p. 287",
     "voie": "voie-d-erzulie",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.0cPd7IIiO1TgbK81",

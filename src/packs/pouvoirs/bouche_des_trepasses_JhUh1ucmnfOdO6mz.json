@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Demande à Opiyel-Guaobiran, le gardien des trépassés, le pouvoir de les faire parler par la bouche du béhique.</li><li>Devine les circonstances de la mort en regardant la forme de la bouche d&#x27;un mort.</li><li>Peut faire parler et se mouvoir la bouche des morts.</li></ul><p><strong>Compulsions.</strong> Dire tout haut ce qu&#x27;un mort n&#x27;a pas pu dire. Faire croire au retour d&#x27;un mort en imitant sa voix.</p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Demande à Opiyel-Guaobiran, le gardien des trépassés, le pouvoir de les faire parler par la bouche du béhique.</li><li>Devine les circonstances de la mort en regardant la forme de la bouche d'un mort.</li><li>Peut faire parler et se mouvoir la bouche des morts.</li></ul><p><strong>Compulsions.</strong> Dire tout haut ce qu'un mort n'a pas pu dire. Faire croire au retour d'un mort en imitant sa voix.</p>",
     "source": "Entre ciel et terre, p. 192",
     "voie": "voie-des-zemis",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.adV2aUWhmHXDCarX",

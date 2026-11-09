@@ -81,6 +81,8 @@ Installation manuelle : télécharger `pavillon-noir-2.zip` depuis la dernière 
 - Bibliothèque de magie : religions, Voies et Pouvoirs des compendiums, filtres, ajout et retrait sur le personnage, import de données (MJ).
 - Compendium « Magie : religions et Voies » : 11 religions et les 21 Voies du supplément.
 - Compendium « Magie : Pouvoirs des Voies » (réservé au MJ) : 785 Pouvoirs de 20 Voies, rangés par Voie, avec Puissance, nom natif, Portée, Cible, Durée, visions et compulsions. La Voie de la Cartomancie (Lames du tarot) n'est pas incluse.
+- Avantages d'*Entre ciel et terre* (dossier « Magie » du compendium des avantages) : Versé dans les arcanes, Touché par le divin, Objet de pouvoir, Affinité, Initié.
+- PNJ surnaturels (dossier « Surnaturel » du compendium des PNJ) : zombie et loup-garou vaudou (vampire), et 24 fées du folklore européen (dont un loup-garou, distinct du vaudou).
 - Effets des Pouvoirs (Active Effects) appliqués aux cibles avec la Durée de la table officielle ; historique des actes sacrés et journal des interventions du MJ ; import sans doublon.
 - Événements divins (panneau MJ) : Aléas, révélations (équivalent du Mat), Quêtes mystiques, Rejets, séquelles et pénitences, Cycles échus, perte de concentration ; secrets tirés en d10 par le MJ et chiffrés.
 - Documentation : `docs/magie.md` (technique), `docs/magie-mj.md` (MJ), `docs/magie-joueur.md` (joueurs), `docs/simulation-magie.md` (probabilités).

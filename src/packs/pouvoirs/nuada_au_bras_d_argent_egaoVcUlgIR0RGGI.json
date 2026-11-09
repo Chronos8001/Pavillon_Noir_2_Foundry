@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Royauté et commandement.</li><li>Récupération du pouvoir.</li><li>Redistribution des richesses.</li><li>Bras droit indestructible.</li></ul><p><strong>Compulsions.</strong> Concevoir un vêtement dont la manche droite est en fils d&#x27;argent. Perdre le pouvoir.</p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Royauté et commandement.</li><li>Récupération du pouvoir.</li><li>Redistribution des richesses.</li><li>Bras droit indestructible.</li></ul><p><strong>Compulsions.</strong> Concevoir un vêtement dont la manche droite est en fils d'argent. Perdre le pouvoir.</p>",
     "source": "Entre ciel et terre, p. 253",
     "voie": "voie-du-druidisme",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.444Fft7a0LtvOMIS",

@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Savoir ce qui se passe dans toute la forêt.</li><li>Communication avec tout être qui s&#x27;y trouve.</li><li>Léger contrôle à distance des animaux, des plantes et des hommes qui s&#x27;y trouvent.</li><li>Unit animaux, hommes et plantes pour agresser les ennemis de la forêt.</li></ul><p><strong>Compulsions.</strong> Partir dans une longue expédition dans la forêt.</p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Savoir ce qui se passe dans toute la forêt.</li><li>Communication avec tout être qui s'y trouve.</li><li>Léger contrôle à distance des animaux, des plantes et des hommes qui s'y trouvent.</li><li>Unit animaux, hommes et plantes pour agresser les ennemis de la forêt.</li></ul><p><strong>Compulsions.</strong> Partir dans une longue expédition dans la forêt.</p>",
     "source": "Entre ciel et terre, p. 189",
     "voie": "voie-des-xapiripe",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.uLmNntdGMAtLAIsE",

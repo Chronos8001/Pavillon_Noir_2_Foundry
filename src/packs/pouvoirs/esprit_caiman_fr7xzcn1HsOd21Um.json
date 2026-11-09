@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Manipulation d&#x27;une arme titanesque.</li><li>Métamorphose en caïman.</li><li>Mettre le feu à n&#x27;importe quoi.</li><li>Rendre un feu invisible.</li><li>Rend une blessure inguérissable.</li></ul><p><strong>Compulsions.</strong> Créer une lame longue de plusieurs mètres. Combattre un caïman.</p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Manipulation d'une arme titanesque.</li><li>Métamorphose en caïman.</li><li>Mettre le feu à n'importe quoi.</li><li>Rendre un feu invisible.</li><li>Rend une blessure inguérissable.</li></ul><p><strong>Compulsions.</strong> Créer une lame longue de plusieurs mètres. Combattre un caïman.</p>",
     "source": "Entre ciel et terre, p. 189",
     "voie": "voie-des-xapiripe",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.uLmNntdGMAtLAIsE",

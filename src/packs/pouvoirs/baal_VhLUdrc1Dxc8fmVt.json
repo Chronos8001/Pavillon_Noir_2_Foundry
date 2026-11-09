@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Invisibilité immobile dans l&#x27;ombre.</li><li>Pyromanie.</li><li>Colère.</li><li>Agressivité.</li><li>Hâte néfaste.</li><li>Manque de ténacité.</li><li>Contrer les pouvoirs de l&#x27;ange Vehuiah.</li></ul><ul><li><strong>Aspect.</strong> Créature à tête d&#x27;homme, de chat ou de crapaud, ou les trois têtes à la fois, avec une voix rauque.</li><li><strong>Heure.</strong> 0h00 à 0h20.</li><li><strong>Jours.</strong> 21 au 26 mars. 22 mars, 4 juin, 19 août, 31 octobre, 10 janvier.</li><li><strong>Couleurs/Cristal.</strong> Magenta ou rose/Cornaline.</li></ul>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Invisibilité immobile dans l'ombre.</li><li>Pyromanie.</li><li>Colère.</li><li>Agressivité.</li><li>Hâte néfaste.</li><li>Manque de ténacité.</li><li>Contrer les pouvoirs de l'ange Vehuiah.</li></ul><ul><li><strong>Aspect.</strong> Créature à tête d'homme, de chat ou de crapaud, ou les trois têtes à la fois, avec une voix rauque.</li><li><strong>Heure.</strong> 0h00 à 0h20.</li><li><strong>Jours.</strong> 21 au 26 mars. 22 mars, 4 juin, 19 août, 31 octobre, 10 janvier.</li><li><strong>Couleurs/Cristal.</strong> Magenta ou rose/Cornaline.</li></ul>",
     "source": "Entre ciel et terre, p. 229",
     "voie": "voie-des-qlipoth",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.28cj5d17pp6tLLr8",

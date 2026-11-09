@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Ajouts d&#x27;excroissances osseuses au corps.</li><li>Ajouts d&#x27;excroissances musculaires préhensibles.</li><li>Développement rapide de branches, racines ou lianes.</li><li>Suppression de tout ce qui dépasse de la norme.</li><li>Développement du marginal au détriment du commun.</li></ul><p><strong>Compulsions.</strong> Amputer un membre. Manifester de s réactions à tout changement.</p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Ajouts d'excroissances osseuses au corps.</li><li>Ajouts d'excroissances musculaires préhensibles.</li><li>Développement rapide de branches, racines ou lianes.</li><li>Suppression de tout ce qui dépasse de la norme.</li><li>Développement du marginal au détriment du commun.</li></ul><p><strong>Compulsions.</strong> Amputer un membre. Manifester de s réactions à tout changement.</p>",
     "source": "Entre ciel et terre, p. 303",
     "voie": "voie-des-freres-marassa",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.g0bMhkfFArVT77cy",

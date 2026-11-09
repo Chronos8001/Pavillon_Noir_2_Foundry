@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Un élément essentiel vient à manquer.</li><li>Persuade qu&#x27;une action est impossible du fait du manque d&#x27;un élément.</li><li>Trouve l&#x27;élément qui manque.</li></ul><p><strong>Compulsions.</strong> Composer un breuvage ou baume en omettant un ingrédient. Rechercher sans répit tout élément manquant.</p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Un élément essentiel vient à manquer.</li><li>Persuade qu'une action est impossible du fait du manque d'un élément.</li><li>Trouve l'élément qui manque.</li></ul><p><strong>Compulsions.</strong> Composer un breuvage ou baume en omettant un ingrédient. Rechercher sans répit tout élément manquant.</p>",
     "source": "Entre ciel et terre, p. 302",
     "voie": "voie-des-freres-marassa",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.g0bMhkfFArVT77cy",

@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Personne ne reconnaît plus la victime.</li><li>Remplace son visage par celui d&#x27;un autre.</li><li>Transmet à distance l&#x27;image du visage de la victime.</li><li>Échange des visages.</li><li>Visage lisse sans aucun trait remarquable.</li><li>Plus de bouche, ni nez, ni joues, ni yeux, ni sourcils.</li></ul><p><strong>Compulsions.</strong> Se faire passer avec succès pour quelqu&#x27;un d&#x27;autre. Maquiller quelqu&#x27;un à son insu.</p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Personne ne reconnaît plus la victime.</li><li>Remplace son visage par celui d'un autre.</li><li>Transmet à distance l'image du visage de la victime.</li><li>Échange des visages.</li><li>Visage lisse sans aucun trait remarquable.</li><li>Plus de bouche, ni nez, ni joues, ni yeux, ni sourcils.</li></ul><p><strong>Compulsions.</strong> Se faire passer avec succès pour quelqu'un d'autre. Maquiller quelqu'un à son insu.</p>",
     "source": "Entre ciel et terre, p. 297",
     "voie": "voie-de-papa-legba",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.cLAnYvfRTW6M1YmZ",

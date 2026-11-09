@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Trouve un lieu aussi propice à la cérémonie que le hounfor.</li><li>Voit les obstacles physiques qui l&#x27;attendent.</li><li>Voit les barrières morales et psychologiques qui limitent les décisions d&#x27;une personne.</li><li>Prévoit les difficultés dans l&#x27;accomplissement d&#x27;une tâche. Voies du Vaudou</li></ul><p><strong>Compulsions.</strong> Entrer dans un édifice gardé sans passer par la porte. Confronter son groupe à un imprévu.</p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Trouve un lieu aussi propice à la cérémonie que le hounfor.</li><li>Voit les obstacles physiques qui l'attendent.</li><li>Voit les barrières morales et psychologiques qui limitent les décisions d'une personne.</li><li>Prévoit les difficultés dans l'accomplissement d'une tâche. Voies du Vaudou</li></ul><p><strong>Compulsions.</strong> Entrer dans un édifice gardé sans passer par la porte. Confronter son groupe à un imprévu.</p>",
     "source": "Entre ciel et terre, p. 297",
     "voie": "voie-de-papa-legba",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.cLAnYvfRTW6M1YmZ",

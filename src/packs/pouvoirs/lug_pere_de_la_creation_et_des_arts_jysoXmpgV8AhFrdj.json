@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Stimulation de la production artistique.</li><li>Pousse à créer.</li><li>Protection de la création humaine.</li><li>Inspiration artistique.</li><li>Trouver une muse.</li></ul><p><strong>Compulsions.</strong> Apprendre à jouer d&#x27;un instrument. Protéger la création artistique d&#x27;autrui.</p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Stimulation de la production artistique.</li><li>Pousse à créer.</li><li>Protection de la création humaine.</li><li>Inspiration artistique.</li><li>Trouver une muse.</li></ul><p><strong>Compulsions.</strong> Apprendre à jouer d'un instrument. Protéger la création artistique d'autrui.</p>",
     "source": "Entre ciel et terre, p. 248",
     "voie": "voie-du-druidisme",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.444Fft7a0LtvOMIS",

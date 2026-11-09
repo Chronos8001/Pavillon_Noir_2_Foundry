@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Métamorphose en poisson ou en cétacé.</li><li>Fusion dans l&#x27;eau et déplacement avec le courant.</li><li>Transformation d&#x27;un poisson en un autre.</li></ul><p><strong>Compulsions.</strong> Nager parmi les poissons dangereux. Se tamorphose faire passer pour un noyé.</p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Métamorphose en poisson ou en cétacé.</li><li>Fusion dans l'eau et déplacement avec le courant.</li><li>Transformation d'un poisson en un autre.</li></ul><p><strong>Compulsions.</strong> Nager parmi les poissons dangereux. Se tamorphose faire passer pour un noyé.</p>",
     "source": "Entre ciel et terre, p. 312",
     "voie": "voie-de-cousin-zaka",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.lP05NKFNMs90d9GB",

@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Lumière dans les ténèbres.</li><li>Stoppe une épidémie en dévorant les esprits maléfiques qui en sont à l&#x27;origine.</li><li>Faire tomber les cheveux et les poils.</li><li>Donne une teinte livide au visage.</li></ul><p><strong>Compulsions.</strong> S&#x27;arracher les poils de la barbe. Se peindre le visage à la cendre.</p><p><em>Règles particulières : voir Entre ciel et terre, p. 187.</em></p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Lumière dans les ténèbres.</li><li>Stoppe une épidémie en dévorant les esprits maléfiques qui en sont à l'origine.</li><li>Faire tomber les cheveux et les poils.</li><li>Donne une teinte livide au visage.</li></ul><p><strong>Compulsions.</strong> S'arracher les poils de la barbe. Se peindre le visage à la cendre.</p><p><em>Règles particulières : voir Entre ciel et terre, p. 187.</em></p>",
     "source": "Entre ciel et terre, p. 187",
     "voie": "voie-des-xapiripe",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.uLmNntdGMAtLAIsE",

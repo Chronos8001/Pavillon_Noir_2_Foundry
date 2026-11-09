@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Fusionne dans le corps d&#x27;un hôte humain ou animal.</li><li>Fait respecter les lois de l&#x27;hospitalité.</li><li>Assure d&#x27;être bien reçu.</li><li>Détecte des personnes hantées par un esprit ou possédées par un lwa.</li><li>Voyage de corps en corps lors de la mort.</li><li>Possession d&#x27;un corps.</li></ul><p><strong>Compulsions.</strong> S&#x27;imposer chez quelqu&#x27;un jusqu&#x27;à se faire mettre dehors. Se faire habiter par un parasite (galle, ver solitaire, amibe).</p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Fusionne dans le corps d'un hôte humain ou animal.</li><li>Fait respecter les lois de l'hospitalité.</li><li>Assure d'être bien reçu.</li><li>Détecte des personnes hantées par un esprit ou possédées par un lwa.</li><li>Voyage de corps en corps lors de la mort.</li><li>Possession d'un corps.</li></ul><p><strong>Compulsions.</strong> S'imposer chez quelqu'un jusqu'à se faire mettre dehors. Se faire habiter par un parasite (galle, ver solitaire, amibe).</p>",
     "source": "Entre ciel et terre, p. 303",
     "voie": "voie-des-freres-marassa",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.g0bMhkfFArVT77cy",

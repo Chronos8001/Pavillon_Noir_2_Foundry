@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Donne l&#x27;impression qu&#x27;une action relève du suicide.</li><li>Crée une volonté fanatique d&#x27;accomplir une mission quoi qu&#x27;il arrive.</li><li>Pousse au suicide au terme d&#x27;une quête.</li></ul><p><strong>Compulsions.</strong> Demander à accomplir la mission la plus difficile. Refroidir des élans héroïques.</p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Donne l'impression qu'une action relève du suicide.</li><li>Crée une volonté fanatique d'accomplir une mission quoi qu'il arrive.</li><li>Pousse au suicide au terme d'une quête.</li></ul><p><strong>Compulsions.</strong> Demander à accomplir la mission la plus difficile. Refroidir des élans héroïques.</p>",
     "source": "Entre ciel et terre, p. 307",
     "voie": "voie-d-ogou",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.nT1z9NA3nij69fC3",

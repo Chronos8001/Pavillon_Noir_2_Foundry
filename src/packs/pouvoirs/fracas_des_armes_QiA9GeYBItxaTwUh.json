@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Illusion sonore d&#x27;une bataille.</li><li>Les bruits d&#x27;armes ne sont pas perceptibles en dehors du combat.</li><li>Fait voler une arme en morceaux sous un choc.</li></ul><p><strong>Compulsions.</strong> Attaque frontale quand la discrétion aurait été préférable. Briser une arme.</p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Illusion sonore d'une bataille.</li><li>Les bruits d'armes ne sont pas perceptibles en dehors du combat.</li><li>Fait voler une arme en morceaux sous un choc.</li></ul><p><strong>Compulsions.</strong> Attaque frontale quand la discrétion aurait été préférable. Briser une arme.</p>",
     "source": "Entre ciel et terre, p. 307",
     "voie": "voie-d-ogou",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.nT1z9NA3nij69fC3",

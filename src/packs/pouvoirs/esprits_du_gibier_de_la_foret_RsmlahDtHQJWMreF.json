@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Trouver les animaux les plus proches.</li><li>Savoir où trouver un animal spécifique.</li><li>Trouver des plantes médicinales, des baies, des fruits ou des racines.</li><li>Léger contrôle des animaux.</li><li>Savoir où trouver une plante spécifique.</li></ul><p><strong>Compulsions.</strong> Ramener un animal que l&#x27;on n&#x27;avait jamais ramené avant. Trouver une plante médicinale.</p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Trouver les animaux les plus proches.</li><li>Savoir où trouver un animal spécifique.</li><li>Trouver des plantes médicinales, des baies, des fruits ou des racines.</li><li>Léger contrôle des animaux.</li><li>Savoir où trouver une plante spécifique.</li></ul><p><strong>Compulsions.</strong> Ramener un animal que l'on n'avait jamais ramené avant. Trouver une plante médicinale.</p>",
     "source": "Entre ciel et terre, p. 187",
     "voie": "voie-des-xapiripe",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.uLmNntdGMAtLAIsE",

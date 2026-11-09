@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Fertilité animale et humaine.</li><li>Appel des chevaux.</li><li>Contrôle des chevaux.</li><li>Métamorphose en cheval.</li><li>Assurer qu&#x27;un mort arrive bien aux rivages de sa nouvelle existence.</li><li>Interroger l&#x27;âme de qui vient de mourir.</li></ul><p><strong>Compulsions.</strong> Monter un cheval sans selle. Participer à l&#x27;accouchement d&#x27;une personne ou d&#x27;un animal.</p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Fertilité animale et humaine.</li><li>Appel des chevaux.</li><li>Contrôle des chevaux.</li><li>Métamorphose en cheval.</li><li>Assurer qu'un mort arrive bien aux rivages de sa nouvelle existence.</li><li>Interroger l'âme de qui vient de mourir.</li></ul><p><strong>Compulsions.</strong> Monter un cheval sans selle. Participer à l'accouchement d'une personne ou d'un animal.</p>",
     "source": "Entre ciel et terre, p. 252",
     "voie": "voie-du-druidisme",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.444Fft7a0LtvOMIS",

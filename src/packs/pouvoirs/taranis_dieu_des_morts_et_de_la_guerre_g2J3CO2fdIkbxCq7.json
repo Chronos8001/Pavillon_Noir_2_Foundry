@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Régénération des blessures.</li><li>Grand guerrier.</li><li>Ardeur au combat.</li><li>Les morts continuent à combattre pendant une courte période.</li><li>Faire s&#x27;entretuer deux groupes de guerriers.</li><li>Recherche d&#x27;une mort glorieuse.</li></ul><p><strong>Compulsions.</strong> Combattre sans arme un ennemi ou un animal sauvage carnivore.</p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Régénération des blessures.</li><li>Grand guerrier.</li><li>Ardeur au combat.</li><li>Les morts continuent à combattre pendant une courte période.</li><li>Faire s'entretuer deux groupes de guerriers.</li><li>Recherche d'une mort glorieuse.</li></ul><p><strong>Compulsions.</strong> Combattre sans arme un ennemi ou un animal sauvage carnivore.</p>",
     "source": "Entre ciel et terre, p. 252",
     "voie": "voie-du-druidisme",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.444Fft7a0LtvOMIS",

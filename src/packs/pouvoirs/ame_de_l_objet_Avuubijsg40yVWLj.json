@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Rend un objet susceptible et vengeur.</li><li>Crée une passion indéfectible pour un objet, ou d&#x27;un objet pour une personne.</li><li>Crée un grigri porte-bonheur, porte-malheur ou protecteur.</li><li>Extraction d&#x27;un objet contenu dans un autre.</li></ul><p><strong>Compulsions.</strong> Casser un objet cher à quelqu&#x27;un d&#x27;autre. Cacher un objet au sein d&#x27;un autre.</p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Rend un objet susceptible et vengeur.</li><li>Crée une passion indéfectible pour un objet, ou d'un objet pour une personne.</li><li>Crée un grigri porte-bonheur, porte-malheur ou protecteur.</li><li>Extraction d'un objet contenu dans un autre.</li></ul><p><strong>Compulsions.</strong> Casser un objet cher à quelqu'un d'autre. Cacher un objet au sein d'un autre.</p>",
     "source": "Entre ciel et terre, p. 298",
     "voie": "voie-de-papa-legba",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.cLAnYvfRTW6M1YmZ",

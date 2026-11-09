@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Paix de l&#x27;âme.</li><li>Paix du corps (Réduction d&#x27;un Niveau de blessure une seule fois par blessure).</li><li>Apaise les esprits échauffés par la colère.</li></ul><p><strong>Compulsions.</strong> Réconforter une âme torturée. Soigner un blessé.</p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Paix de l'âme.</li><li>Paix du corps (Réduction d'un Niveau de blessure une seule fois par blessure).</li><li>Apaise les esprits échauffés par la colère.</li></ul><p><strong>Compulsions.</strong> Réconforter une âme torturée. Soigner un blessé.</p>",
     "source": "Entre ciel et terre, p. 209",
     "voie": "voie-de-dieu",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.SPlB5GslKnZdeWKG",

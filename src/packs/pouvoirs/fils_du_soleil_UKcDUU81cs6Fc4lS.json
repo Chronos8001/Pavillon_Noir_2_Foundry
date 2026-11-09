@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Enfant de son époque (rencontre quelqu&#x27;un pouvant témoigner d&#x27;un lieu ou d&#x27;une époque donnée).</li><li>Impose la nécessité de se sacrifier.</li><li>Rend radieux, élégant, brillant d&#x27;intelligence, charismatique...</li><li>Donne le besoin de ne pas cesser son mouvement.</li></ul><p><strong>Compulsions.</strong> Se parer d&#x27;or et de plumes colorées.</p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Enfant de son époque (rencontre quelqu'un pouvant témoigner d'un lieu ou d'une époque donnée).</li><li>Impose la nécessité de se sacrifier.</li><li>Rend radieux, élégant, brillant d'intelligence, charismatique...</li><li>Donne le besoin de ne pas cesser son mouvement.</li></ul><p><strong>Compulsions.</strong> Se parer d'or et de plumes colorées.</p>",
     "source": "Entre ciel et terre, p. 204",
     "voie": "voie-des-cinq-soleils",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.LIzof8tOOXvNP2kT",

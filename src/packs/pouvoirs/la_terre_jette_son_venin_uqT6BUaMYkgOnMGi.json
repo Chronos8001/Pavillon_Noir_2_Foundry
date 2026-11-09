@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>La vermine sort du sol.</li><li>La terre grouille de serpents venimeux.</li><li>Répand sur le sol du venin qui paralyse celui qui y marche pieds nus.</li><li>Empoisonnement des récoltes.</li><li>Vengeance de la nature sur l&#x27;homme urbain.</li></ul><p><strong>Compulsions.</strong> Empoisonner l&#x27;eau d&#x27;un puits. Faire mourir des récoltes.</p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>La vermine sort du sol.</li><li>La terre grouille de serpents venimeux.</li><li>Répand sur le sol du venin qui paralyse celui qui y marche pieds nus.</li><li>Empoisonnement des récoltes.</li><li>Vengeance de la nature sur l'homme urbain.</li></ul><p><strong>Compulsions.</strong> Empoisonner l'eau d'un puits. Faire mourir des récoltes.</p>",
     "source": "Entre ciel et terre, p. 184",
     "voie": "voie-d-icheiricou-pour-la-protection-et-la-punition",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.yH60f20rPKBEP9j4",

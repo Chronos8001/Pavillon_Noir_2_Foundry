@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Fait tomber des objets des fenêtres, balcons, falaises, etc.</li><li>Rend les rayons du soleil brûlants et abrutissants.</li><li>Donne une phobie des rayons directs du soleil.</li><li>Le soleil crée instantanément de petites brûlures sur la peau.</li></ul><p><strong>Compulsions.</strong> Rester sous le soleil jusqu&#x27;à subir un coup de soleil ou une insolation. Jeter un objet lourd d&#x27;une hauteur sans regarder en bas.</p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Fait tomber des objets des fenêtres, balcons, falaises, etc.</li><li>Rend les rayons du soleil brûlants et abrutissants.</li><li>Donne une phobie des rayons directs du soleil.</li><li>Le soleil crée instantanément de petites brûlures sur la peau.</li></ul><p><strong>Compulsions.</strong> Rester sous le soleil jusqu'à subir un coup de soleil ou une insolation. Jeter un objet lourd d'une hauteur sans regarder en bas.</p>",
     "source": "Entre ciel et terre, p. 203",
     "voie": "voie-des-cinq-soleils",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.LIzof8tOOXvNP2kT",

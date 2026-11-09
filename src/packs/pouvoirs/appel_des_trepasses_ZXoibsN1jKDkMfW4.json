@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Attirance vers la mort.</li><li>Les morts appellent les vivants.</li><li>Le béhique peut franchir aux côtés d&#x27;Opiyel-Guaobiran la barrière séparant les morts et les vivants pour aider un mort dans sa quête du repos.</li><li>Les morts se lèvent pour répondre à l&#x27;appel du béhique et l&#x27;aider dans sa tâche.</li></ul><p><strong>Compulsions.</strong> Déterrer tous les morts d&#x27;un cimetière. Disposer des cadavres comme s&#x27;ils composaient une armée.</p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Attirance vers la mort.</li><li>Les morts appellent les vivants.</li><li>Le béhique peut franchir aux côtés d'Opiyel-Guaobiran la barrière séparant les morts et les vivants pour aider un mort dans sa quête du repos.</li><li>Les morts se lèvent pour répondre à l'appel du béhique et l'aider dans sa tâche.</li></ul><p><strong>Compulsions.</strong> Déterrer tous les morts d'un cimetière. Disposer des cadavres comme s'ils composaient une armée.</p>",
     "source": "Entre ciel et terre, p. 194",
     "voie": "voie-des-zemis",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.adV2aUWhmHXDCarX",

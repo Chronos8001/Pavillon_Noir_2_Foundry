@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Pressent vaguement un événement.</li><li>Confirme si un événement précis est sur le point de se produire.</li><li>Donne de faux pressentiments.</li><li>Devine les émotions.</li></ul><p><strong>Compulsions.</strong> Prédire un événement. Agir d&#x27;instinct sans jamais réfléchir pendant une journée.</p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Pressent vaguement un événement.</li><li>Confirme si un événement précis est sur le point de se produire.</li><li>Donne de faux pressentiments.</li><li>Devine les émotions.</li></ul><p><strong>Compulsions.</strong> Prédire un événement. Agir d'instinct sans jamais réfléchir pendant une journée.</p>",
     "source": "Entre ciel et terre, p. 296",
     "voie": "voie-de-papa-legba",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.cLAnYvfRTW6M1YmZ",

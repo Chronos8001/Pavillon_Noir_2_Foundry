@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Création, altération ou destruction de l&#x27;amour.</li><li>Visualiser l&#x27;amour, sa forme et les liens qui lient les amoureux.</li><li>Accélération du rythme cardiaque, rougeur, pâleur.</li><li>Pousser quelqu&#x27;un à mourir ou à se sacrifier par amour.</li><li>Scelle les émotions pour que leur intensité demeure immortelle.</li><li>Pousse à des folies pour entrer dans l&#x27;Histoire.</li><li>Double les effets de la gloire.</li><li>Savoir le détail des relations amoureuses propres à une personne ou à un lieu.</li></ul><p><strong>Compulsions.</strong> Action d&#x27;éclat qui entrera dans l&#x27;Histoire. Laisser un souvenir mémorable à une communauté.</p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Création, altération ou destruction de l'amour.</li><li>Visualiser l'amour, sa forme et les liens qui lient les amoureux.</li><li>Accélération du rythme cardiaque, rougeur, pâleur.</li><li>Pousser quelqu'un à mourir ou à se sacrifier par amour.</li><li>Scelle les émotions pour que leur intensité demeure immortelle.</li><li>Pousse à des folies pour entrer dans l'Histoire.</li><li>Double les effets de la gloire.</li><li>Savoir le détail des relations amoureuses propres à une personne ou à un lieu.</li></ul><p><strong>Compulsions.</strong> Action d'éclat qui entrera dans l'Histoire. Laisser un souvenir mémorable à une communauté.</p>",
     "source": "Entre ciel et terre, p. 287",
     "voie": "voie-d-erzulie",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.0cPd7IIiO1TgbK81",

@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Inflige une douleur sourde et tenace.</li><li>Inflige une douleur vive et éphémère.</li><li>Fait lâcher son arme ou un objet, voire déséquilibre sous l&#x27;effet de la douleur.</li><li>Apaise la douleur.</li><li>Insensibilité à la douleur.</li></ul><p><strong>Compulsions.</strong> Torturer. Subir une douleur atroce.</p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Inflige une douleur sourde et tenace.</li><li>Inflige une douleur vive et éphémère.</li><li>Fait lâcher son arme ou un objet, voire déséquilibre sous l'effet de la douleur.</li><li>Apaise la douleur.</li><li>Insensibilité à la douleur.</li></ul><p><strong>Compulsions.</strong> Torturer. Subir une douleur atroce.</p>",
     "source": "Entre ciel et terre, p. 301",
     "voie": "voie-des-freres-marassa",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.g0bMhkfFArVT77cy",

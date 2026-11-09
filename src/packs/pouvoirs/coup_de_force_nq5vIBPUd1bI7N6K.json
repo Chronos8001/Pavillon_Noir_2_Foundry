@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Incite à une action d&#x27;éclat difficile.</li><li>Incite à agir directement plutôt que de façon détournée.</li><li>Force surnaturelle pendant quelques instants.</li><li>Prévision des actions violentes.</li><li>Coup imparable.</li><li>Crainte envers le colosse.</li></ul><p><strong>Compulsions.</strong> Résoudre un problème par une action violente. Rouer de coups.</p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Incite à une action d'éclat difficile.</li><li>Incite à agir directement plutôt que de façon détournée.</li><li>Force surnaturelle pendant quelques instants.</li><li>Prévision des actions violentes.</li><li>Coup imparable.</li><li>Crainte envers le colosse.</li></ul><p><strong>Compulsions.</strong> Résoudre un problème par une action violente. Rouer de coups.</p>",
     "source": "Entre ciel et terre, p. 297",
     "voie": "voie-de-papa-legba",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.cLAnYvfRTW6M1YmZ",

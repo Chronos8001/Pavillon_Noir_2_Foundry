@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Creuse aisément la terre.</li><li>Solidification d&#x27;un tunnel.</li><li>Trouver un terrier ou une grotte.</li><li>Donne la sensation d&#x27;être chez soi.</li></ul><p><strong>Compulsions.</strong> Creuser un terrier. Se retrouver chez soi pouss après un long périple.</p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Creuse aisément la terre.</li><li>Solidification d'un tunnel.</li><li>Trouver un terrier ou une grotte.</li><li>Donne la sensation d'être chez soi.</li></ul><p><strong>Compulsions.</strong> Creuser un terrier. Se retrouver chez soi pouss après un long périple.</p>",
     "source": "Entre ciel et terre, p. 310",
     "voie": "voie-de-cousin-zaka",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.lP05NKFNMs90d9GB",

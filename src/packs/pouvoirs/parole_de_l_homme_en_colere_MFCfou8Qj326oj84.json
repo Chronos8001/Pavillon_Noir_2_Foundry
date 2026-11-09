@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Rend de la colère sincère.</li><li>Rend vil et odieux sous le coup de la colère.</li><li>Léger contrôle des paroles de l&#x27;homme en colère.</li><li>Fait pardonner les paroles qui viennent d&#x27;être dites sous le coup de la colère.</li></ul><p><strong>Compulsions.</strong> Minimiser la portée de paroles prononcées sous le coup de la colère. Pousser un homme en colère à dire ce qu&#x27;il pense.</p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Rend de la colère sincère.</li><li>Rend vil et odieux sous le coup de la colère.</li><li>Léger contrôle des paroles de l'homme en colère.</li><li>Fait pardonner les paroles qui viennent d'être dites sous le coup de la colère.</li></ul><p><strong>Compulsions.</strong> Minimiser la portée de paroles prononcées sous le coup de la colère. Pousser un homme en colère à dire ce qu'il pense.</p>",
     "source": "Entre ciel et terre, p. 191",
     "voie": "voie-des-zemis",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.adV2aUWhmHXDCarX",

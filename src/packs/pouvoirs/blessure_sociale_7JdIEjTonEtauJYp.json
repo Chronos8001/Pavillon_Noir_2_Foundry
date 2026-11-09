@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Cause / Soigne un chagrin d&#x27;amour.</li><li>Brouille / Réconcilie deux personnes.</li><li>Fait perdre / retrouver son travail ou de la clientèle.</li><li>Ternit / Redore la réputation de quelqu&#x27;un.</li><li>Fait perdre / Redonne l&#x27;amour paternel, maternel, fraternel ou filial.</li></ul><p><strong>Compulsions.</strong> Dire une parole blessante à un ami. Soigner un petit chagrin.</p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Cause / Soigne un chagrin d'amour.</li><li>Brouille / Réconcilie deux personnes.</li><li>Fait perdre / retrouver son travail ou de la clientèle.</li><li>Ternit / Redore la réputation de quelqu'un.</li><li>Fait perdre / Redonne l'amour paternel, maternel, fraternel ou filial.</li></ul><p><strong>Compulsions.</strong> Dire une parole blessante à un ami. Soigner un petit chagrin.</p>",
     "source": "Entre ciel et terre, p. 264",
     "voie": "voie-du-folklore",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.Iy4OYyIN7hI6KjNY",

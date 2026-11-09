@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Vous pouvez utiliser à tout instant n&#x27;importe quel pouvoir de n&#x27;importe quel dieu du calendrier, avec les paramètres ci-dessus.</li></ul><p><strong>Compulsions.</strong> Automutilation jusqu&#x27;à l&#x27;évanouissement.</p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Vous pouvez utiliser à tout instant n'importe quel pouvoir de n'importe quel dieu du calendrier, avec les paramètres ci-dessus.</li></ul><p><strong>Compulsions.</strong> Automutilation jusqu'à l'évanouissement.</p>",
     "source": "Entre ciel et terre, p. 202",
     "voie": "voie-du-calendrier",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.AFWMXMJdfCNP7hit",

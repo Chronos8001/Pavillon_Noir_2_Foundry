@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Est immobile et invisible dans les ombres, tel Opiyel-Guaobiran, le fils de l&#x27;ombre.</li><li>Fait croître les ombres.</li><li>Joue avec les ombres.</li><li>Voyage par les ombres, entrant dans une et sortant par une autre.</li></ul><p><strong>Compulsions.</strong> Passer inaperçu en restant caché dans l&#x27;ombre.</p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Est immobile et invisible dans les ombres, tel Opiyel-Guaobiran, le fils de l'ombre.</li><li>Fait croître les ombres.</li><li>Joue avec les ombres.</li><li>Voyage par les ombres, entrant dans une et sortant par une autre.</li></ul><p><strong>Compulsions.</strong> Passer inaperçu en restant caché dans l'ombre.</p>",
     "source": "Entre ciel et terre, p. 193",
     "voie": "voie-des-zemis",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.adV2aUWhmHXDCarX",

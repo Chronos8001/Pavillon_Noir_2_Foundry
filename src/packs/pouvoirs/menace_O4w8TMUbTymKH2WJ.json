@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Menace un adversaire de façon intimidante.</li><li>Transforme un propos en menace.</li><li>Rend une menace ridicule.</li><li>Atténue la menace dans un propos.</li></ul><p><strong>Compulsions.</strong> Menacer plus fort que soi. Faire passer parole d&#x27;autrui pour une menace.</p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Menace un adversaire de façon intimidante.</li><li>Transforme un propos en menace.</li><li>Rend une menace ridicule.</li><li>Atténue la menace dans un propos.</li></ul><p><strong>Compulsions.</strong> Menacer plus fort que soi. Faire passer parole d'autrui pour une menace.</p>",
     "source": "Entre ciel et terre, p. 171",
     "voie": "voie-d-icheiricou-pour-la-guerre",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.ua948TzRBv4MWuy4",

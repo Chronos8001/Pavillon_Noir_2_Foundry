@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Donne le nom d&#x27;un assassin.</li><li>L&#x27;assassin entend sans cesse murmurer son nom.</li><li>Fait venir aux lèvres le nom des assassins.</li><li>Pousse au meurtre une personne dont on connaît le nom.</li></ul><p><strong>Compulsions.</strong> Nommer un assassin devant lui. Donner des remords au meurtrier.</p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Donne le nom d'un assassin.</li><li>L'assassin entend sans cesse murmurer son nom.</li><li>Fait venir aux lèvres le nom des assassins.</li><li>Pousse au meurtre une personne dont on connaît le nom.</li></ul><p><strong>Compulsions.</strong> Nommer un assassin devant lui. Donner des remords au meurtrier.</p>",
     "source": "Entre ciel et terre, p. 192",
     "voie": "voie-des-zemis",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.adV2aUWhmHXDCarX",

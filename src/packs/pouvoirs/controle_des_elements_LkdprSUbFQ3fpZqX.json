@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Contrôle total d&#x27;une tempête, un cyclone, un raz-de-marée, un tremblement de terre, une éruption volcanique.</li><li>Fait évoluer lentement la situation pour générer un tel cataclysme.</li><li>Immunité à un tel cataclysme.</li><li>Manipulation du vent et du courant.</li><li>Fissure de la pierre.</li></ul><p><strong>Compulsions.</strong> Faire s&#x27;écrouler un vaste mur ou une falaise.</p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Contrôle total d'une tempête, un cyclone, un raz-de-marée, un tremblement de terre, une éruption volcanique.</li><li>Fait évoluer lentement la situation pour générer un tel cataclysme.</li><li>Immunité à un tel cataclysme.</li><li>Manipulation du vent et du courant.</li><li>Fissure de la pierre.</li></ul><p><strong>Compulsions.</strong> Faire s'écrouler un vaste mur ou une falaise.</p>",
     "source": "Entre ciel et terre, p. 269",
     "voie": "voie-du-folklore",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.Iy4OYyIN7hI6KjNY",

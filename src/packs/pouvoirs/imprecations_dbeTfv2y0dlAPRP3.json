@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Sait lorsque des maléfices sont en train d&#x27;être lancés contre quelqu&#x27;un qu&#x27;il connaît.</li><li>Pousse sa proie à lancer des imprécations contre tout le monde.</li><li>Lance une petite malédiction qui n&#x27;est valable que tant que sa cible y croit (autosuggestion).</li></ul><p><strong>Compulsions.</strong> Maudire une personne et étudier sa réaction à long terme. Pousser une personne à souhaiter du mal à une autre.</p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Sait lorsque des maléfices sont en train d'être lancés contre quelqu'un qu'il connaît.</li><li>Pousse sa proie à lancer des imprécations contre tout le monde.</li><li>Lance une petite malédiction qui n'est valable que tant que sa cible y croit (autosuggestion).</li></ul><p><strong>Compulsions.</strong> Maudire une personne et étudier sa réaction à long terme. Pousser une personne à souhaiter du mal à une autre.</p>",
     "source": "Entre ciel et terre, p. 291",
     "voie": "voie-des-guedes",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.BJZUi8OCwtnsr9Ow",

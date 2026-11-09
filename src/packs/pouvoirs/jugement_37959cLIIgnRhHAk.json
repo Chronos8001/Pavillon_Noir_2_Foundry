@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Condamne aux yeux de la société.</li><li>Change la sentence d&#x27;un jugement.</li><li>Donne une sentence juste.</li><li>Pousse au jugement hâtif.</li></ul><p><strong>Compulsions.</strong> Porter un juste jugement. Pousser à porter un jugement hâtif.</p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Condamne aux yeux de la société.</li><li>Change la sentence d'un jugement.</li><li>Donne une sentence juste.</li><li>Pousse au jugement hâtif.</li></ul><p><strong>Compulsions.</strong> Porter un juste jugement. Pousser à porter un jugement hâtif.</p>",
     "source": "Entre ciel et terre, p. 192",
     "voie": "voie-des-zemis",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.adV2aUWhmHXDCarX",

@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Donne la certitude à l&#x27;ennemi que l&#x27;on est mort.</li><li>Donne l&#x27;apparence de la mort.</li><li>Résurrection suite à un sacrifice pour le groupe.</li></ul><p><strong>Compulsions.</strong> Simuler la mort sur un champ de bataille. Se larder de coups pour impressionner l&#x27;ennemi.</p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Donne la certitude à l'ennemi que l'on est mort.</li><li>Donne l'apparence de la mort.</li><li>Résurrection suite à un sacrifice pour le groupe.</li></ul><p><strong>Compulsions.</strong> Simuler la mort sur un champ de bataille. Se larder de coups pour impressionner l'ennemi.</p>",
     "source": "Entre ciel et terre, p. 173",
     "voie": "voie-d-icheiricou-pour-la-guerre",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.ua948TzRBv4MWuy4",

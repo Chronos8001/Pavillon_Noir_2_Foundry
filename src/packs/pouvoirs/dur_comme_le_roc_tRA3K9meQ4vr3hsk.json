@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Rend une personne dure et sévère.</li><li>Rend dur, voire cassant.</li><li>Rend de la nourriture sèche et immangeable.</li><li>Durcit un matériau trop mou.</li></ul><p><strong>Compulsions.</strong> S&#x27;entraîner à donner des coups de tête dans un mur jusqu&#x27;à ce que ça ne fasse plus mal. Faire fondre un métal ou de la glace.</p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Rend une personne dure et sévère.</li><li>Rend dur, voire cassant.</li><li>Rend de la nourriture sèche et immangeable.</li><li>Durcit un matériau trop mou.</li></ul><p><strong>Compulsions.</strong> S'entraîner à donner des coups de tête dans un mur jusqu'à ce que ça ne fasse plus mal. Faire fondre un métal ou de la glace.</p>",
     "source": "Entre ciel et terre, p. 310",
     "voie": "voie-de-cousin-zaka",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.lP05NKFNMs90d9GB",

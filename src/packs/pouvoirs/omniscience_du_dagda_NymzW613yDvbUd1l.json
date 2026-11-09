@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Vision globale du passé sur le lieu où il se trouve.</li><li>Aperçu immédiat du présent sur le monde entier.</li><li>Trouver la localisation d&#x27;une personne à un moment présent, passé ou futur.</li><li>du futur.</li><li>Compréhension complète de la personnalité d&#x27;une personne et facilité pour prédire ses actions.</li></ul><p><strong>Compulsions.</strong> Acquérir toutes les connaissances disponibles à 100 milles à la ronde sur un sujet académique particulier.</p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Vision globale du passé sur le lieu où il se trouve.</li><li>Aperçu immédiat du présent sur le monde entier.</li><li>Trouver la localisation d'une personne à un moment présent, passé ou futur.</li><li>du futur.</li><li>Compréhension complète de la personnalité d'une personne et facilité pour prédire ses actions.</li></ul><p><strong>Compulsions.</strong> Acquérir toutes les connaissances disponibles à 100 milles à la ronde sur un sujet académique particulier.</p>",
     "source": "Entre ciel et terre, p. 254",
     "voie": "voie-du-druidisme",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.444Fft7a0LtvOMIS",

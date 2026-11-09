@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Absorption des maladies.</li><li>Absorption des poisons.</li><li>Absorption d&#x27;une blessure.</li><li>Absorption des sentiments négatifs.</li><li>Combat les éléments absorbés, dont on recrache les dépouilles en cas de victoire (combat de Pouvoir contre Pouvoir).</li></ul><p><strong>Compulsions.</strong> Extraire du venin par succion. Être infecté par une maladie épidémique mineure.</p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Absorption des maladies.</li><li>Absorption des poisons.</li><li>Absorption d'une blessure.</li><li>Absorption des sentiments négatifs.</li><li>Combat les éléments absorbés, dont on recrache les dépouilles en cas de victoire (combat de Pouvoir contre Pouvoir).</li></ul><p><strong>Compulsions.</strong> Extraire du venin par succion. Être infecté par une maladie épidémique mineure.</p>",
     "source": "Entre ciel et terre, p. 182",
     "voie": "voie-d-icheiricou-pour-la-protection-et-la-punition",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.yH60f20rPKBEP9j4",

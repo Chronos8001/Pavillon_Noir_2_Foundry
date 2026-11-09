@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Venue précoce de la nuit.</li><li>Sortie précoce des animaux nocturnes.</li><li>Envie irrépressible de dormir.</li><li>Insomnies.</li><li>Vole le principe vital de ceux qui s&#x27;attardent dehors lorsque la nuit tombe. Ils tomberont malades et seule la récupération de leur principe vital par les xapiripë leur redonnera la santé.</li></ul><p><strong>Compulsions.</strong> Regarder un objet jusqu&#x27;à ce que les ténèbres nocturnes le fassent disparaître. Attaquer l&#x27;ennemi en début de nuit.</p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Venue précoce de la nuit.</li><li>Sortie précoce des animaux nocturnes.</li><li>Envie irrépressible de dormir.</li><li>Insomnies.</li><li>Vole le principe vital de ceux qui s'attardent dehors lorsque la nuit tombe. Ils tomberont malades et seule la récupération de leur principe vital par les xapiripë leur redonnera la santé.</li></ul><p><strong>Compulsions.</strong> Regarder un objet jusqu'à ce que les ténèbres nocturnes le fassent disparaître. Attaquer l'ennemi en début de nuit.</p>",
     "source": "Entre ciel et terre, p. 188",
     "voie": "voie-des-xapiripe",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.uLmNntdGMAtLAIsE",

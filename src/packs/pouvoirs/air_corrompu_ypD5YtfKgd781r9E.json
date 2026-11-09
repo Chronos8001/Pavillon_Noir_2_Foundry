@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Donne l&#x27;allure d&#x27;une personne corrompue à la victime.</li><li>Révèle la corruption.</li><li>Rend un air malsain, chargé de maladie et de pourriture.</li><li>Fait fondre sur la proie un nuage de moustiques.</li><li>Infecte une région de maladies véhiculées par les moustiques.</li><li>Infeste une région de moustiques.</li><li>Métamorphose personnelle en une nuée de maringouins.</li><li>Donne à une nuée de maringoins la forme désirée.</li></ul><p><strong>Compulsions.</strong> Abandonner son corps aux piqûres des maringouins. Capturer une femelle moustique, lui donner du sang et la relâcher près d&#x27;une étendue d&#x27;eau.</p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Donne l'allure d'une personne corrompue à la victime.</li><li>Révèle la corruption.</li><li>Rend un air malsain, chargé de maladie et de pourriture.</li><li>Fait fondre sur la proie un nuage de moustiques.</li><li>Infecte une région de maladies véhiculées par les moustiques.</li><li>Infeste une région de moustiques.</li><li>Métamorphose personnelle en une nuée de maringouins.</li><li>Donne à une nuée de maringoins la forme désirée.</li></ul><p><strong>Compulsions.</strong> Abandonner son corps aux piqûres des maringouins. Capturer une femelle moustique, lui donner du sang et la relâcher près d'une étendue d'eau.</p>",
     "source": "Entre ciel et terre, p. 183",
     "voie": "voie-d-icheiricou-pour-la-protection-et-la-punition",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.yH60f20rPKBEP9j4",

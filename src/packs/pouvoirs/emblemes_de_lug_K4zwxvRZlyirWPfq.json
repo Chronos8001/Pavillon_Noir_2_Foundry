@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Adresse à la lance.</li><li>Harpe qui fait vibrer les coeurs.</li><li>Métamorphose en sanglier.</li><li>Métamorphose en corbeau.</li><li>La fronde qui vise juste.</li><li>Métamorphose de la paille en acier.</li><li>Apparition et disparition des fils et cordes.</li></ul><p><strong>Compulsions.</strong> Réunir en une journée tous les emblèmes de Lug devant soi. Revêtir la peau d&#x27;un sanglier et les plumes d&#x27;un corbeau qu&#x27;on a tués soi-même.</p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Adresse à la lance.</li><li>Harpe qui fait vibrer les coeurs.</li><li>Métamorphose en sanglier.</li><li>Métamorphose en corbeau.</li><li>La fronde qui vise juste.</li><li>Métamorphose de la paille en acier.</li><li>Apparition et disparition des fils et cordes.</li></ul><p><strong>Compulsions.</strong> Réunir en une journée tous les emblèmes de Lug devant soi. Revêtir la peau d'un sanglier et les plumes d'un corbeau qu'on a tués soi-même.</p>",
     "source": "Entre ciel et terre, p. 253",
     "voie": "voie-du-druidisme",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.444Fft7a0LtvOMIS",

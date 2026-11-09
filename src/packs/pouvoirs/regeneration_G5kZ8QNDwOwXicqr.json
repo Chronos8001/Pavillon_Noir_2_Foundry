@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Récupération extrêmement rapide de toutes les blessures légères, sérieuses et graves.</li><li>Récupération de la fatigue.</li><li>Rechute de maladie.</li><li>Autoréparation d&#x27;un objet légèrement endommagé.</li><li>Élimination des séquelles légères.</li></ul><p><strong>Compulsions.</strong> Tailler un arbuste et le regarder repousser. Redonner de l&#x27;autonomie à un éclopé.</p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Récupération extrêmement rapide de toutes les blessures légères, sérieuses et graves.</li><li>Récupération de la fatigue.</li><li>Rechute de maladie.</li><li>Autoréparation d'un objet légèrement endommagé.</li><li>Élimination des séquelles légères.</li></ul><p><strong>Compulsions.</strong> Tailler un arbuste et le regarder repousser. Redonner de l'autonomie à un éclopé.</p>",
     "source": "Entre ciel et terre, p. 301",
     "voie": "voie-des-freres-marassa",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.g0bMhkfFArVT77cy",

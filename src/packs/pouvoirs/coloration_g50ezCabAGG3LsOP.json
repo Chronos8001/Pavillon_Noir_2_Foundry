@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Modifier la couleur d&#x27;un objet, des yeux, de la peau ou des cheveux.</li><li>Donner des reflets à un objet.</li><li>Les couleurs du caméléon.</li><li>Attachement à un emblème.</li></ul><p><strong>Compulsions.</strong> Se peindre le corps. Admirer les reflets Regarde du soleil couchant sur la mer ou un lac.</p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Modifier la couleur d'un objet, des yeux, de la peau ou des cheveux.</li><li>Donner des reflets à un objet.</li><li>Les couleurs du caméléon.</li><li>Attachement à un emblème.</li></ul><p><strong>Compulsions.</strong> Se peindre le corps. Admirer les reflets Regarde du soleil couchant sur la mer ou un lac.</p>",
     "source": "Entre ciel et terre, p. 203",
     "voie": "voie-des-cinq-soleils",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.LIzof8tOOXvNP2kT",

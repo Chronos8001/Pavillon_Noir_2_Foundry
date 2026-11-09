@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Douleur atroce mais éphémère.</li><li>Stimulation par la douleur (inversion des malus de douleur).</li><li>Transpercer de mille petites piques.</li><li>Savoir quelle est la cause d&#x27;une douleur.</li><li>Masochisme.</li></ul><p><strong>Compulsions.</strong> Se transpercer la peau de dizaines d&#x27;aiguilles. Essayer de trouver du plaisir dans la douleur.</p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Douleur atroce mais éphémère.</li><li>Stimulation par la douleur (inversion des malus de douleur).</li><li>Transpercer de mille petites piques.</li><li>Savoir quelle est la cause d'une douleur.</li><li>Masochisme.</li></ul><p><strong>Compulsions.</strong> Se transpercer la peau de dizaines d'aiguilles. Essayer de trouver du plaisir dans la douleur.</p>",
     "source": "Entre ciel et terre, p. 293",
     "voie": "voie-des-guedes",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.BJZUi8OCwtnsr9Ow",

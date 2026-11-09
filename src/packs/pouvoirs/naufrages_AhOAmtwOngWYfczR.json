@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Provoque un naufrage.</li><li>Réchappe d&#x27;un naufrage.</li><li>Inflige une série de catastrophes réduisant à néant sans tuer.</li><li>Comportement solidaire ou solitaire propre aux naufragés.</li></ul><p><strong>Compulsions.</strong> Générer un naufrage. Se jeter à l&#x27;eau dans la mer en furie.</p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Provoque un naufrage.</li><li>Réchappe d'un naufrage.</li><li>Inflige une série de catastrophes réduisant à néant sans tuer.</li><li>Comportement solidaire ou solitaire propre aux naufragés.</li></ul><p><strong>Compulsions.</strong> Générer un naufrage. Se jeter à l'eau dans la mer en furie.</p>",
     "source": "Entre ciel et terre, p. 184",
     "voie": "voie-d-icheiricou-pour-la-protection-et-la-punition",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.yH60f20rPKBEP9j4",

@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Fait tomber la pluie.</li><li>Fait venir l&#x27;orage.</li><li>Rend le climat d&#x27;une région particulièrement pluvieux.</li><li>Rend le climat d&#x27;une région particulièrement sec.</li></ul><p><strong>Compulsions.</strong> Faire chauffer de l&#x27;eau au-dessus d&#x27;une plaque et recueillir l&#x27;eau condensée. Arroser régulièrement une plante.</p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Fait tomber la pluie.</li><li>Fait venir l'orage.</li><li>Rend le climat d'une région particulièrement pluvieux.</li><li>Rend le climat d'une région particulièrement sec.</li></ul><p><strong>Compulsions.</strong> Faire chauffer de l'eau au-dessus d'une plaque et recueillir l'eau condensée. Arroser régulièrement une plante.</p>",
     "source": "Entre ciel et terre, p. 206",
     "voie": "voie-des-cinq-soleils",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.LIzof8tOOXvNP2kT",

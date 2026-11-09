@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Attise le désir.</li><li>Attise l&#x27;amour.</li><li>Attise la colère.</li><li>Fait croître violemment le feu et jaillir des flammes.</li></ul><p><strong>Compulsions.</strong> Faire un grand feu. Faire croître le désir chez un membre du sexe opposé sans le satisfaire.</p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Attise le désir.</li><li>Attise l'amour.</li><li>Attise la colère.</li><li>Fait croître violemment le feu et jaillir des flammes.</li></ul><p><strong>Compulsions.</strong> Faire un grand feu. Faire croître le désir chez un membre du sexe opposé sans le satisfaire.</p>",
     "source": "Entre ciel et terre, p. 192",
     "voie": "voie-des-zemis",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.adV2aUWhmHXDCarX",

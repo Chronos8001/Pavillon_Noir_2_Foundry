@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Rend la terreur visible.</li><li>Résistance à la terreur inspirée par l&#x27;ennemi.</li><li>Exacerbe la peur.</li><li>Révèle ce qui pourrait terroriser l&#x27;ennemi.</li></ul><p><strong>Compulsions.</strong> Affronter seul le plus terrifiant des ennemis, juste pour ressentir la peur. Renforce la peur ambiante.</p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Rend la terreur visible.</li><li>Résistance à la terreur inspirée par l'ennemi.</li><li>Exacerbe la peur.</li><li>Révèle ce qui pourrait terroriser l'ennemi.</li></ul><p><strong>Compulsions.</strong> Affronter seul le plus terrifiant des ennemis, juste pour ressentir la peur. Renforce la peur ambiante.</p>",
     "source": "Entre ciel et terre, p. 172",
     "voie": "voie-d-icheiricou-pour-la-guerre",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.ua948TzRBv4MWuy4",

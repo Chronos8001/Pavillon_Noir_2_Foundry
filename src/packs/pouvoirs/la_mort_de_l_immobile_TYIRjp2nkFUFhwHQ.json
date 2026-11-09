@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Tout ce qui est immobile meurt lentement, mais la cible le sait.</li><li>Rend impossible de s&#x27;arrêter, de se reposer, de dormir.</li><li>Crée une révolution.</li></ul><p><strong>Compulsions.</strong> Tuer un dormeur de sorte que la mort paraisse naturelle. Changer le commandement d&#x27;un groupe ou le chef d&#x27;une nation.</p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Tout ce qui est immobile meurt lentement, mais la cible le sait.</li><li>Rend impossible de s'arrêter, de se reposer, de dormir.</li><li>Crée une révolution.</li></ul><p><strong>Compulsions.</strong> Tuer un dormeur de sorte que la mort paraisse naturelle. Changer le commandement d'un groupe ou le chef d'une nation.</p>",
     "source": "Entre ciel et terre, p. 208",
     "voie": "voie-des-cinq-soleils",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.LIzof8tOOXvNP2kT",

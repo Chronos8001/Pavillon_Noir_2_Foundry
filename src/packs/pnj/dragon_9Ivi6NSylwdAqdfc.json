@@ -1,0 +1,413 @@
+{
+  "_id": "9Ivi6NSylwdAqdfc",
+  "_key": "!actors!9Ivi6NSylwdAqdfc",
+  "name": "Dragon",
+  "type": "pnj",
+  "img": "systems/pavillon-noir-2/assets/icons/animal.svg",
+  "system": {
+    "caracs": {
+      "adr": {
+        "value": 8
+      },
+      "for": {
+        "value": 13
+      },
+      "res": {
+        "value": 20
+      },
+      "ada": {
+        "value": 5
+      },
+      "eru": {
+        "value": 9
+      },
+      "per": {
+        "value": 8
+      },
+      "cha": {
+        "value": 8
+      },
+      "exp": {
+        "value": 7
+      },
+      "pou": {
+        "value": 10
+      }
+    },
+    "infos": {
+      "titre": "",
+      "profession": "",
+      "poste": "",
+      "peuple": "",
+      "origines": "",
+      "jeunesse": "",
+      "religion": "",
+      "age": "",
+      "taille": "",
+      "poids": "",
+      "surnom": "",
+      "description": ""
+    },
+    "metier": {
+      "nom": "",
+      "carac1": "adr",
+      "carac2": "per"
+    },
+    "secondaires": {
+      "actionsBonus": 0,
+      "initiativeBonus": 0,
+      "chanceBonus": 0
+    },
+    "skills": {
+      "balistique": {
+        "value": 0,
+        "xp": false
+      },
+      "cartographie": {
+        "value": 0,
+        "xp": false
+      },
+      "commerce": {
+        "value": 0,
+        "xp": false
+      },
+      "droit": {
+        "value": 0,
+        "xp": false
+      },
+      "geographie": {
+        "value": 0,
+        "xp": false
+      },
+      "histoire": {
+        "value": 0,
+        "xp": false
+      },
+      "herboristerie": {
+        "value": 0,
+        "xp": false
+      },
+      "ingenierieNavale": {
+        "value": 0,
+        "xp": false
+      },
+      "intendance": {
+        "value": 0,
+        "xp": false
+      },
+      "lireEcrire": {
+        "value": 0,
+        "xp": false
+      },
+      "medecine": {
+        "value": 0,
+        "xp": false
+      },
+      "sciences": {
+        "value": 0,
+        "xp": false
+      },
+      "tactique": {
+        "value": 0,
+        "xp": false
+      },
+      "pointage": {
+        "value": 0,
+        "xp": false
+      },
+      "recharge": {
+        "value": 0,
+        "xp": false
+      },
+      "calfatage": {
+        "value": 0,
+        "xp": false
+      },
+      "charpenterie": {
+        "value": 0,
+        "xp": false
+      },
+      "voilerie": {
+        "value": 0,
+        "xp": false
+      },
+      "cuisine": {
+        "value": 0,
+        "xp": false
+      },
+      "chasse": {
+        "value": 0,
+        "xp": false
+      },
+      "chirurgie": {
+        "value": 0,
+        "xp": false
+      },
+      "dressage": {
+        "value": 0,
+        "xp": false
+      },
+      "premiersSoins": {
+        "value": 0,
+        "xp": false
+      },
+      "connNautiques": {
+        "value": 0,
+        "xp": false
+      },
+      "connNavires": {
+        "value": 0,
+        "xp": false
+      },
+      "connSignalisation": {
+        "value": 0,
+        "xp": false
+      },
+      "hydrographie": {
+        "value": 0,
+        "xp": false
+      },
+      "navigation": {
+        "value": 0,
+        "xp": false
+      },
+      "peche": {
+        "value": 0,
+        "xp": false
+      },
+      "pratiqueNautique": {
+        "value": 0,
+        "xp": false
+      },
+      "timonerie": {
+        "value": 0,
+        "xp": false
+      },
+      "acrobatie": {
+        "value": 0,
+        "xp": false
+      },
+      "athletisme": {
+        "value": 0,
+        "xp": false
+      },
+      "discretion": {
+        "value": 0,
+        "xp": false
+      },
+      "equitation": {
+        "value": 0,
+        "xp": false
+      },
+      "larcins": {
+        "value": 0,
+        "xp": false
+      },
+      "natation": {
+        "value": 0,
+        "xp": false
+      },
+      "survie": {
+        "value": 0,
+        "xp": false
+      },
+      "vigilance": {
+        "value": 0,
+        "xp": false
+      },
+      "comedie": {
+        "value": 0,
+        "xp": false
+      },
+      "empathie": {
+        "value": 0,
+        "xp": false
+      },
+      "enseignement": {
+        "value": 0,
+        "xp": false
+      },
+      "etiquette": {
+        "value": 0,
+        "xp": false
+      },
+      "intimidation": {
+        "value": 0,
+        "xp": false
+      },
+      "jeu": {
+        "value": 0,
+        "xp": false
+      },
+      "meneurHommes": {
+        "value": 0,
+        "xp": false
+      },
+      "persuasion": {
+        "value": 0,
+        "xp": false
+      },
+      "politique": {
+        "value": 0,
+        "xp": false
+      },
+      "seduction": {
+        "value": 0,
+        "xp": false
+      },
+      "mousquet": {
+        "value": 0,
+        "xp": false
+      },
+      "pistolet": {
+        "value": 0,
+        "xp": false
+      },
+      "grenade": {
+        "value": 0,
+        "xp": false
+      },
+      "mainsNues": {
+        "value": 0,
+        "xp": false
+      },
+      "escrime": {
+        "value": 0,
+        "xp": false
+      },
+      "esquive": {
+        "value": 0,
+        "xp": false
+      }
+    },
+    "specs": {},
+    "armesFeuMetier": false,
+    "escrime": {
+      "epee": {
+        "value": 0,
+        "xp": 0,
+        "predilection": false,
+        "pointsBonus": 0
+      },
+      "dague": {
+        "value": 0,
+        "xp": 0,
+        "predilection": false,
+        "pointsBonus": 0
+      },
+      "deuxarmes": {
+        "value": 0,
+        "xp": 0,
+        "predilection": false,
+        "pointsBonus": 0
+      },
+      "sabre": {
+        "value": 0,
+        "xp": 0,
+        "predilection": false,
+        "pointsBonus": 0
+      },
+      "baionnette": {
+        "value": 0,
+        "xp": 0,
+        "predilection": false,
+        "pointsBonus": 0
+      },
+      "hache": {
+        "value": 0,
+        "xp": 0,
+        "predilection": false,
+        "pointsBonus": 0
+      },
+      "pont": {
+        "value": 0,
+        "xp": 0,
+        "predilection": false,
+        "pointsBonus": 0
+      },
+      "destreza": {
+        "value": 0,
+        "xp": 0,
+        "predilection": false,
+        "pointsBonus": 0
+      },
+      "ecole": "",
+      "arme": ""
+    },
+    "sante": {
+      "loc": {
+        "jambeG": {
+          "coches": 0,
+          "protection": 4
+        },
+        "jambeD": {
+          "coches": 0,
+          "protection": 4
+        },
+        "torse": {
+          "coches": 0,
+          "protection": 4
+        },
+        "brasG": {
+          "coches": 0,
+          "protection": 4
+        },
+        "brasD": {
+          "coches": 0,
+          "protection": 4
+        },
+        "tete": {
+          "coches": 0,
+          "protection": 4
+        }
+      }
+    },
+    "reputation": {
+      "gloire": {
+        "score": 0,
+        "depenses": 0
+      },
+      "infamie": {
+        "score": 0,
+        "depenses": 0
+      }
+    },
+    "combat": {
+      "posture": "attentive"
+    },
+    "richesse": {
+      "pieces": 5
+    },
+    "contacts": "",
+    "notes": "<p><strong>Fée Extraordinaire des Déserts et des Forêts.</strong> Écailles : protection 4 sur toutes les localisations. Peut être rencontré sous forme humaine, visible de tous et sans flétrissure.</p><ul><li><strong>Mineur — Carapace magique</strong> (Portée : Personnelle ; Cible : Moi ; Durée : Toujours activé en tant que fée) : Seules les armes naturelles des fées et les armes chimériques le blessent ; ses écailles ne le protègent pas de l'incrédulité, et sa taille l'expose aux regards.</li><li><strong>Majeur — Souffle draconien</strong> (Portée : Là ; Cible : Eux ; Durée : Toujours activé en tant que fée) : Flammes, venin et acide : brûle et décompose matières vivantes et inertes.</li><li><strong>Extraordinaire — Pouvoirs draconiens</strong> (Portée : Là ; Cible : Toi ; Durée : Toujours activé en tant que fée) : Immunisé contre toute magie ; maîtrise les quatre éléments ; prend à volonté sa propre forme humaine ; déplace et assemble les objets par la volonté.</li></ul><p>Fée : invisible aux humains sauf matérialisation ; chaque rencontre avec un groupe incrédule la flétrit d'un niveau (plus de cinq incrédules : un niveau par tour et par personne au-delà de la première). Elle meurt après 2 niveaux (fée mineure), 4 (majeure) ou 6 (extraordinaire). Voir la Voie du Folklore, p. 256.</p><p><em>Entre ciel et terre, p. 258.</em></p>",
+    "biographie": "",
+    "facilites": {
+      "connaissances": 6,
+      "techniques": 6,
+      "maritimes": 6,
+      "physiques": 6,
+      "sociales": 6,
+      "combat": 6
+    },
+    "role": "Fée Extraordinaire des Déserts et des Forêts",
+    "importance": "capitale"
+  },
+  "items": [],
+  "effects": [],
+  "folder": "ItePhzZRfwiC3Azi",
+  "sort": 900,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.345",
+    "systemId": "pavillon-noir-2",
+    "systemVersion": "0.1.0",
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": null
+  }
+}

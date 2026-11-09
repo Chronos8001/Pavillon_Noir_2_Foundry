@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Apaiser/aggraver une blessure, un empoisonnement, apaiser/augmenter la douleur.</li><li>Calmer/exciter les mauvaises pulsions.</li><li>Faire revenir le calme et l&#x27;entente au sein d&#x27;un groupe.</li><li>Faire remonter à la surface les vieilles blessures, tensions, poisons, maladies, mauvaises pulsions, etc.</li></ul><p><strong>Compulsions.</strong> Calmer les souffrances d&#x27;un blessé ou malade. Faire renaître une vieille rancoeur.</p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Apaiser/aggraver une blessure, un empoisonnement, apaiser/augmenter la douleur.</li><li>Calmer/exciter les mauvaises pulsions.</li><li>Faire revenir le calme et l'entente au sein d'un groupe.</li><li>Faire remonter à la surface les vieilles blessures, tensions, poisons, maladies, mauvaises pulsions, etc.</li></ul><p><strong>Compulsions.</strong> Calmer les souffrances d'un blessé ou malade. Faire renaître une vieille rancoeur.</p>",
     "source": "Entre ciel et terre, p. 182",
     "voie": "voie-d-icheiricou-pour-la-protection-et-la-punition",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.yH60f20rPKBEP9j4",

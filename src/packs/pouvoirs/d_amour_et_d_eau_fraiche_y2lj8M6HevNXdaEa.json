@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Se sustenter d&#x27;amour (non physique) et d&#x27;eau fraîche.</li><li>Supprimer complètement l&#x27;appétit ou le sommeil chez un amoureux.</li><li>Déclencher une soif d&#x27;amour ou une soif tout court.</li><li>Ruiner des amoureux.</li></ul><p><strong>Compulsions.</strong> Jeûner pendant un mois. S&#x27;isoler et n&#x27;adresser la parole à personne pendant une semaine entière.</p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Se sustenter d'amour (non physique) et d'eau fraîche.</li><li>Supprimer complètement l'appétit ou le sommeil chez un amoureux.</li><li>Déclencher une soif d'amour ou une soif tout court.</li><li>Ruiner des amoureux.</li></ul><p><strong>Compulsions.</strong> Jeûner pendant un mois. S'isoler et n'adresser la parole à personne pendant une semaine entière.</p>",
     "source": "Entre ciel et terre, p. 288",
     "voie": "voie-d-erzulie",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.0cPd7IIiO1TgbK81",

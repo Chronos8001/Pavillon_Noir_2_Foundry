@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Danse féerique des couleurs.</li><li>Danse cauchemardesque des couleurs.</li><li>Illusion colorée.</li><li>Modification d&#x27;une couleur.</li></ul><p><strong>Compulsions.</strong> Modifier les couleurs d&#x27;un tableau ou d&#x27;un tissu. Absorber des hallucinogènes changeant les couleurs.</p><p><em>Règles particulières : voir Entre ciel et terre, p. 281.</em></p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Danse féerique des couleurs.</li><li>Danse cauchemardesque des couleurs.</li><li>Illusion colorée.</li><li>Modification d'une couleur.</li></ul><p><strong>Compulsions.</strong> Modifier les couleurs d'un tableau ou d'un tissu. Absorber des hallucinogènes changeant les couleurs.</p><p><em>Règles particulières : voir Entre ciel et terre, p. 281.</em></p>",
     "source": "Entre ciel et terre, p. 281",
     "voie": "voie-de-dambala",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.fVIeiRnBn8ADVFE2",

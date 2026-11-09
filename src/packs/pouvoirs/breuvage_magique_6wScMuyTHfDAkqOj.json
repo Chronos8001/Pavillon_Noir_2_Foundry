@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Déterminer le pouvoir à l&#x27;origine des effets contenus dans un breuvage.</li><li>Réaliser un breuvage.</li><li>Diagnostique une maladie.</li><li>Inflige une maladie.</li><li>Soigne une maladie.</li><li>Stoppe une épidémie.</li></ul><p><strong>Compulsions.</strong> Survivre à une maladie. Soigner une maladie. Permettre à une épidémie de se répandre.</p><p><em>Règles particulières : voir Entre ciel et terre, p. 302.</em></p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Déterminer le pouvoir à l'origine des effets contenus dans un breuvage.</li><li>Réaliser un breuvage.</li><li>Diagnostique une maladie.</li><li>Inflige une maladie.</li><li>Soigne une maladie.</li><li>Stoppe une épidémie.</li></ul><p><strong>Compulsions.</strong> Survivre à une maladie. Soigner une maladie. Permettre à une épidémie de se répandre.</p><p><em>Règles particulières : voir Entre ciel et terre, p. 302.</em></p>",
     "source": "Entre ciel et terre, p. 302",
     "voie": "voie-des-freres-marassa",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.g0bMhkfFArVT77cy",

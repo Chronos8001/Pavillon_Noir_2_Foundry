@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Transformation en un géant (10m de haut) hideux.</li><li>Transformation en un ogre (4m de haut) paillard.</li><li>Succès avec les femmes.</li><li>Transformation de la pensée, de la philosophie de vie.</li></ul><p><strong>Compulsions.</strong> Transformer un ami en ennemi et inversement. Terrifier en se faisant passer pour plus grand que l&#x27;on est.</p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Transformation en un géant (10m de haut) hideux.</li><li>Transformation en un ogre (4m de haut) paillard.</li><li>Succès avec les femmes.</li><li>Transformation de la pensée, de la philosophie de vie.</li></ul><p><strong>Compulsions.</strong> Transformer un ami en ennemi et inversement. Terrifier en se faisant passer pour plus grand que l'on est.</p>",
     "source": "Entre ciel et terre, p. 253",
     "voie": "voie-du-druidisme",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.444Fft7a0LtvOMIS",

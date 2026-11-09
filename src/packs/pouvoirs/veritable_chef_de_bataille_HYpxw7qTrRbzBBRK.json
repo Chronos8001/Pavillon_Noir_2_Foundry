@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Pousser l&#x27;ennemi à attaquer.</li><li>Mettre fin à une bataille.</li><li>Faire en sorte qu&#x27;une bataille n&#x27;ait jamais lieu.</li><li>Indique l&#x27;issue d&#x27;une bataille.</li></ul><p><strong>Compulsions.</strong> Convaincre deux clans ou nations de ne pas se faire la guerre. Déclencher un casus belli.</p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Pousser l'ennemi à attaquer.</li><li>Mettre fin à une bataille.</li><li>Faire en sorte qu'une bataille n'ait jamais lieu.</li><li>Indique l'issue d'une bataille.</li></ul><p><strong>Compulsions.</strong> Convaincre deux clans ou nations de ne pas se faire la guerre. Déclencher un casus belli.</p>",
     "source": "Entre ciel et terre, p. 251",
     "voie": "voie-du-druidisme",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.444Fft7a0LtvOMIS",

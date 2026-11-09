@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Apparition de la lune au travers des nuages.</li><li>Lumière de la lune plus forte et plus brillante.</li><li>Donne du réconfort aux hommes tant que la lune brille.</li><li>Vainc les mabouyas qui mangent la lune.</li></ul><p><strong>Compulsions.</strong> Danser pour faire renaître la lune lors de la nouvelle lune. Voir la lune traverser d&#x27;épais nuages.</p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Apparition de la lune au travers des nuages.</li><li>Lumière de la lune plus forte et plus brillante.</li><li>Donne du réconfort aux hommes tant que la lune brille.</li><li>Vainc les mabouyas qui mangent la lune.</li></ul><p><strong>Compulsions.</strong> Danser pour faire renaître la lune lors de la nouvelle lune. Voir la lune traverser d'épais nuages.</p>",
     "source": "Entre ciel et terre, p. 176",
     "voie": "voie-d-icheiricou-pour-le-conseil",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.wiw3plsp6sATryBq",

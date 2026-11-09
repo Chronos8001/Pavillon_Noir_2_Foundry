@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Accomplissement d&#x27;un miracle à taille humaine.</li><li>Requête d&#x27;une aide divine de grande importance, sans préciser la forme de cette aide.</li><li>Fait passer un acte profane pour un miracle.</li><li>Les fidèles voient des miracles partout.</li><li>Compréhension d&#x27;un miracle.</li></ul><p><strong>Compulsions.</strong> Faire passer un événement quelconque pour un miracle. Assister à un miracle, même bénin.</p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Accomplissement d'un miracle à taille humaine.</li><li>Requête d'une aide divine de grande importance, sans préciser la forme de cette aide.</li><li>Fait passer un acte profane pour un miracle.</li><li>Les fidèles voient des miracles partout.</li><li>Compréhension d'un miracle.</li></ul><p><strong>Compulsions.</strong> Faire passer un événement quelconque pour un miracle. Assister à un miracle, même bénin.</p>",
     "source": "Entre ciel et terre, p. 214",
     "voie": "voie-de-dieu",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.SPlB5GslKnZdeWKG",

@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Se sustenter par simple acte sexuel.</li><li>Y trouver des forces, en donner à son partenaire ou l&#x27;épuiser (Aide aux Actions nécessitant de la Force ou de la Résistance).</li><li>Recevoir ou donner un parfait bien-être.</li><li>Voler une partie des souvenirs du partenaire.</li></ul><p><strong>Compulsions.</strong> Tuer son ou sa partenaire à la fin de l&#x27;acte sexuel. Le ou la rejeter définitivement une fois le plaisir pris.</p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Se sustenter par simple acte sexuel.</li><li>Y trouver des forces, en donner à son partenaire ou l'épuiser (Aide aux Actions nécessitant de la Force ou de la Résistance).</li><li>Recevoir ou donner un parfait bien-être.</li><li>Voler une partie des souvenirs du partenaire.</li></ul><p><strong>Compulsions.</strong> Tuer son ou sa partenaire à la fin de l'acte sexuel. Le ou la rejeter définitivement une fois le plaisir pris.</p>",
     "source": "Entre ciel et terre, p. 287",
     "voie": "voie-d-erzulie",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.0cPd7IIiO1TgbK81",

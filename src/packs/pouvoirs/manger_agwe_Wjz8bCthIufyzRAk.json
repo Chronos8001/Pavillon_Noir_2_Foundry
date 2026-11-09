@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Pêcheur prodige.</li><li>Se nourrir d&#x27;eau de mer.</li><li>Sacrifice d&#x27;un être marin.</li></ul><p><strong>Compulsions.</strong> Boire de l&#x27;eau de mer jusqu&#x27;à en être malade. Faire une pêche miraculeuse.</p><p><em>Règles particulières : voir Entre ciel et terre, p. 276.</em></p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Pêcheur prodige.</li><li>Se nourrir d'eau de mer.</li><li>Sacrifice d'un être marin.</li></ul><p><strong>Compulsions.</strong> Boire de l'eau de mer jusqu'à en être malade. Faire une pêche miraculeuse.</p><p><em>Règles particulières : voir Entre ciel et terre, p. 276.</em></p>",
     "source": "Entre ciel et terre, p. 276",
     "voie": "voie-d-agwe",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.6bwsVNHhFxnjtf9Q",

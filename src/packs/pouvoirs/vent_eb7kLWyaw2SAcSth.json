@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Augmentation/diminution du vent.</li><li>Changement de direction du vent.</li><li>Assure à quelqu&#x27;un des vents favorables ou des vents contraires.</li></ul><p><strong>Compulsions.</strong> Suivre la direction du vent. Changer d&#x27;avis sans donner ses raisons.</p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Augmentation/diminution du vent.</li><li>Changement de direction du vent.</li><li>Assure à quelqu'un des vents favorables ou des vents contraires.</li></ul><p><strong>Compulsions.</strong> Suivre la direction du vent. Changer d'avis sans donner ses raisons.</p>",
     "source": "Entre ciel et terre, p. 192",
     "voie": "voie-des-zemis",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.adV2aUWhmHXDCarX",

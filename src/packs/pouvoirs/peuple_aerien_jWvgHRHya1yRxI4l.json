@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Vision des oiseaux.</li><li>Contrôle des oiseaux.</li><li>Respect des oiseaux.</li><li>Fait tourner les centres d&#x27;intérêt vers les arts.</li><li>Oubli des contingences matérielles.</li></ul><p><strong>Compulsions.</strong> Rester dressé tout au bord d&#x27;une falaise. Plonger de très haut.</p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Vision des oiseaux.</li><li>Contrôle des oiseaux.</li><li>Respect des oiseaux.</li><li>Fait tourner les centres d'intérêt vers les arts.</li><li>Oubli des contingences matérielles.</li></ul><p><strong>Compulsions.</strong> Rester dressé tout au bord d'une falaise. Plonger de très haut.</p>",
     "source": "Entre ciel et terre, p. 311",
     "voie": "voie-de-cousin-zaka",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.lP05NKFNMs90d9GB",

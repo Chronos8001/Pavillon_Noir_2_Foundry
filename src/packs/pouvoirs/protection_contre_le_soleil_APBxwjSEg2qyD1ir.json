@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Rend résistant à la chaleur et protège des brûlures.</li><li>Empêche d&#x27;être emporté ou déchiré par le vent.</li><li>Résistance aux séismes et aux écroulements.</li><li>Résiste aux vagues et empêche de se noyer.</li><li>Résiste à un mouvement violent.</li></ul><p><strong>Compulsions.</strong> Enflammer un vêtement. Laisser un vêtement s&#x27;envoler.</p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Rend résistant à la chaleur et protège des brûlures.</li><li>Empêche d'être emporté ou déchiré par le vent.</li><li>Résistance aux séismes et aux écroulements.</li><li>Résiste aux vagues et empêche de se noyer.</li><li>Résiste à un mouvement violent.</li></ul><p><strong>Compulsions.</strong> Enflammer un vêtement. Laisser un vêtement s'envoler.</p>",
     "source": "Entre ciel et terre, p. 203",
     "voie": "voie-des-cinq-soleils",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.LIzof8tOOXvNP2kT",

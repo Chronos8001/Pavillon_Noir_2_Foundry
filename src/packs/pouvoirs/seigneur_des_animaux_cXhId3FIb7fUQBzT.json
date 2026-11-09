@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Contrôle d&#x27;un groupe d&#x27;animaux.</li><li>Impose le respect aux animaux.</li><li>Devient chef de meute dans une population violente.</li><li>Assigne des prédateurs à l&#x27;homme.</li></ul><p><strong>Compulsions.</strong> Dresser un animal à une fonction particulière. Voir un homme dévoré par un animal.</p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Contrôle d'un groupe d'animaux.</li><li>Impose le respect aux animaux.</li><li>Devient chef de meute dans une population violente.</li><li>Assigne des prédateurs à l'homme.</li></ul><p><strong>Compulsions.</strong> Dresser un animal à une fonction particulière. Voir un homme dévoré par un animal.</p>",
     "source": "Entre ciel et terre, p. 312",
     "voie": "voie-de-cousin-zaka",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.lP05NKFNMs90d9GB",

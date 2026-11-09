@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Pulsions carnivores, voire cannibales.</li><li>Crée un solide appétit soudain.</li><li>Affecte de boulimie.</li><li>Attise l&#x27;appât du gain.</li><li>Pousse aux dernières extrémités pour manger ou s&#x27;enrichir.</li></ul><p><strong>Compulsions.</strong> Dévorer la chair crue d&#x27;un animal en public. Ne pas manger quand on a faim.</p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Pulsions carnivores, voire cannibales.</li><li>Crée un solide appétit soudain.</li><li>Affecte de boulimie.</li><li>Attise l'appât du gain.</li><li>Pousse aux dernières extrémités pour manger ou s'enrichir.</li></ul><p><strong>Compulsions.</strong> Dévorer la chair crue d'un animal en public. Ne pas manger quand on a faim.</p>",
     "source": "Entre ciel et terre, p. 310",
     "voie": "voie-de-cousin-zaka",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.lP05NKFNMs90d9GB",

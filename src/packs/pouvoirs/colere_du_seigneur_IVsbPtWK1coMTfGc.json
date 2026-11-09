@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Crée chez un fidèle ou soi-même une juste colère.</li><li>Fait s&#x27;acharner sur un ennemi la colère du Seigneur (malus de Pouvoir).</li><li>Inflige de la Colère (un Éclair par Soleil obtenu en tirant les cartes) à un adorateur d&#x27;un autre dieu.</li></ul><p><strong>Compulsions.</strong> Effectuer un sermon véhément. Punir soi-même un criminel au nom de Dieu.</p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Crée chez un fidèle ou soi-même une juste colère.</li><li>Fait s'acharner sur un ennemi la colère du Seigneur (malus de Pouvoir).</li><li>Inflige de la Colère (un Éclair par Soleil obtenu en tirant les cartes) à un adorateur d'un autre dieu.</li></ul><p><strong>Compulsions.</strong> Effectuer un sermon véhément. Punir soi-même un criminel au nom de Dieu.</p>",
     "source": "Entre ciel et terre, p. 209",
     "voie": "voie-de-dieu",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.SPlB5GslKnZdeWKG",

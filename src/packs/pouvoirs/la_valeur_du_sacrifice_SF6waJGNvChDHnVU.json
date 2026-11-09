@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Donne un attrait tout particulier au sacrifice de soi (physique, moral).</li><li>Fait accorder beaucoup d&#x27;importance à un sacrifice passé ou à l&#x27;absence de sacrifice.</li><li>Sait si un sacrifice plaira à un dieu.</li><li>Rend un sacrifice encore plus appréciable aux yeux d&#x27;un dieu.</li></ul><p><strong>Compulsions.</strong> Se sacrifier pour ses amis. Pousser un ami à se sacrifier pour soi.</p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Donne un attrait tout particulier au sacrifice de soi (physique, moral).</li><li>Fait accorder beaucoup d'importance à un sacrifice passé ou à l'absence de sacrifice.</li><li>Sait si un sacrifice plaira à un dieu.</li><li>Rend un sacrifice encore plus appréciable aux yeux d'un dieu.</li></ul><p><strong>Compulsions.</strong> Se sacrifier pour ses amis. Pousser un ami à se sacrifier pour soi.</p>",
     "source": "Entre ciel et terre, p. 205",
     "voie": "voie-des-cinq-soleils",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.LIzof8tOOXvNP2kT",

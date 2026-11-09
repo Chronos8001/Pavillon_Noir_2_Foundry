@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Permet de retrouver quelqu&#x27;un que l&#x27;on n&#x27;a pas vu depuis longtemps.</li><li>Se fait passer pour une vieille connaissance.</li><li>Sait si une personne est connue d&#x27;une autre depuis longtemps.</li><li>Se souvient d&#x27;un détail d&#x27;un passé lointain.</li></ul><p><strong>Compulsions.</strong> Retrouver un ami de longue date. Se souvenir des noms de toutes les personnes rencontrées lors d&#x27;une aventure.</p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Permet de retrouver quelqu'un que l'on n'a pas vu depuis longtemps.</li><li>Se fait passer pour une vieille connaissance.</li><li>Sait si une personne est connue d'une autre depuis longtemps.</li><li>Se souvient d'un détail d'un passé lointain.</li></ul><p><strong>Compulsions.</strong> Retrouver un ami de longue date. Se souvenir des noms de toutes les personnes rencontrées lors d'une aventure.</p>",
     "source": "Entre ciel et terre, p. 178",
     "voie": "voie-d-icheiricou-pour-le-conseil",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.wiw3plsp6sATryBq",

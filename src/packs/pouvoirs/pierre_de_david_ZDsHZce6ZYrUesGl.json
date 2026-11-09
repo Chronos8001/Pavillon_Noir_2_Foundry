@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Donne la sensation que le petit peut vaincre le grand.</li><li>Découvre une faille chez un adversaire supérieur.</li><li>Une pierre qui tuera net la personne qu&#x27;elle percutera.</li></ul><p><strong>Compulsions.</strong> Abattre l&#x27;ennemi le plus puissant avec lus simple possible. Se battre avec des pierres.</p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Donne la sensation que le petit peut vaincre le grand.</li><li>Découvre une faille chez un adversaire supérieur.</li><li>Une pierre qui tuera net la personne qu'elle percutera.</li></ul><p><strong>Compulsions.</strong> Abattre l'ennemi le plus puissant avec lus simple possible. Se battre avec des pierres.</p>",
     "source": "Entre ciel et terre, p. 212",
     "voie": "voie-de-dieu",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.SPlB5GslKnZdeWKG",

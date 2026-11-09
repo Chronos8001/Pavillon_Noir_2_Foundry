@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Maintien d&#x27;une personne.</li><li>Écraser de son étreinte.</li><li>Écrasement entre deux objets.</li><li>Mal de tête.</li></ul><p><strong>Compulsions.</strong> Étrangler quelqu&#x27;un. Se cogner violemment la tête jusqu&#x27;à perdre conscience.</p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Maintien d'une personne.</li><li>Écraser de son étreinte.</li><li>Écrasement entre deux objets.</li><li>Mal de tête.</li></ul><p><strong>Compulsions.</strong> Étrangler quelqu'un. Se cogner violemment la tête jusqu'à perdre conscience.</p>",
     "source": "Entre ciel et terre, p. 283",
     "voie": "voie-de-dambala",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.fVIeiRnBn8ADVFE2",

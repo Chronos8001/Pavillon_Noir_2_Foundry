@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Faire de quelqu&#x27;un son messager.</li><li>Donner une quête interminable à quelqu&#x27;un, qu&#x27;il devra accomplir en priorité.</li><li>Se faire passer pour un messager.</li><li>Donner à sa parole l&#x27;importance de celle d&#x27;un messager attendu.</li><li>Réaction affective identique pour le messager à celle générée par le contenu de son message.</li></ul><p><strong>Compulsions.</strong> Apporter un message d&#x27;importance à son ennemi. Se faire passer pour un messager.</p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Faire de quelqu'un son messager.</li><li>Donner une quête interminable à quelqu'un, qu'il devra accomplir en priorité.</li><li>Se faire passer pour un messager.</li><li>Donner à sa parole l'importance de celle d'un messager attendu.</li><li>Réaction affective identique pour le messager à celle générée par le contenu de son message.</li></ul><p><strong>Compulsions.</strong> Apporter un message d'importance à son ennemi. Se faire passer pour un messager.</p>",
     "source": "Entre ciel et terre, p. 279",
     "voie": "voie-d-agwe",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.6bwsVNHhFxnjtf9Q",

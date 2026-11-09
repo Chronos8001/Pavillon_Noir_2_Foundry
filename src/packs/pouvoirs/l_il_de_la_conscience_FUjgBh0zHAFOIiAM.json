@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Voit le péché des autres.</li><li>Lit les pensées négatives ou subversives.</li><li>Peut suivre de la pensée une personne qui a des remords.</li></ul><p><strong>Compulsions.</strong> Recueillir des confessions extrêmement poussées d&#x27;un pécheur endurci. Suivre un pécheur dans ses activités quotidiennes.</p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Voit le péché des autres.</li><li>Lit les pensées négatives ou subversives.</li><li>Peut suivre de la pensée une personne qui a des remords.</li></ul><p><strong>Compulsions.</strong> Recueillir des confessions extrêmement poussées d'un pécheur endurci. Suivre un pécheur dans ses activités quotidiennes.</p>",
     "source": "Entre ciel et terre, p. 212",
     "voie": "voie-de-dieu",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.SPlB5GslKnZdeWKG",

@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Contrôle les actions d&#x27;un esprit.</li><li>Voit les relations entre mentor et disciple.</li><li>Attire les disciples.</li><li>Manipulation mentale d&#x27;un disciple.</li></ul><p><strong>Compulsions.</strong> Étudier le comportement d&#x27;un disciple près de son maître. Pousser un de ses disciples à la faute.</p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Contrôle les actions d'un esprit.</li><li>Voit les relations entre mentor et disciple.</li><li>Attire les disciples.</li><li>Manipulation mentale d'un disciple.</li></ul><p><strong>Compulsions.</strong> Étudier le comportement d'un disciple près de son maître. Pousser un de ses disciples à la faute.</p>",
     "source": "Entre ciel et terre, p. 297",
     "voie": "voie-de-papa-legba",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.cLAnYvfRTW6M1YmZ",

@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Contrôle de tous les habitants d&#x27;un village.</li><li>Actes de prédation des animaux envers les habitants d&#x27;un village.</li><li>Manipule quelqu&#x27;un pour le pousser au meurtre.</li><li>Hystérie sanglante collective.</li></ul><p><strong>Compulsions.</strong> Traquer un être humain comme du gibier. Enquête sur un meurtre.</p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Contrôle de tous les habitants d'un village.</li><li>Actes de prédation des animaux envers les habitants d'un village.</li><li>Manipule quelqu'un pour le pousser au meurtre.</li><li>Hystérie sanglante collective.</li></ul><p><strong>Compulsions.</strong> Traquer un être humain comme du gibier. Enquête sur un meurtre.</p>",
     "source": "Entre ciel et terre, p. 190",
     "voie": "voie-des-xapiripe",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.uLmNntdGMAtLAIsE",

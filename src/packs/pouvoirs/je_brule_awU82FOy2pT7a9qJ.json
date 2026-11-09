@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Yocahú embrase le béhique, qui, comme une torche humaine, ne se consume pas, ne souffre pas, mais peut répandre son feu par contact. Le feu est alors dangereux pour autrui.</li><li>Donne la sensation horrible de se consumer de l&#x27;intérieur.</li><li>Enflamme une personne.</li></ul><p><strong>Compulsions.</strong> S&#x27;enflammer les cheveux. Ingérer une quantité dangereuse de piments.</p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Yocahú embrase le béhique, qui, comme une torche humaine, ne se consume pas, ne souffre pas, mais peut répandre son feu par contact. Le feu est alors dangereux pour autrui.</li><li>Donne la sensation horrible de se consumer de l'intérieur.</li><li>Enflamme une personne.</li></ul><p><strong>Compulsions.</strong> S'enflammer les cheveux. Ingérer une quantité dangereuse de piments.</p>",
     "source": "Entre ciel et terre, p. 195",
     "voie": "voie-des-zemis",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.adV2aUWhmHXDCarX",

@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Lame de fond.</li><li>Tsunami.</li><li>Tornade.</li><li>Aboutissement d&#x27;une quête qui changera en mal la face du monde.</li></ul><p><strong>Compulsions.</strong> Contempler paisiblement et sans bouger une catastrophe titanesque, comme un tsunami ou une tornade.</p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Lame de fond.</li><li>Tsunami.</li><li>Tornade.</li><li>Aboutissement d'une quête qui changera en mal la face du monde.</li></ul><p><strong>Compulsions.</strong> Contempler paisiblement et sans bouger une catastrophe titanesque, comme un tsunami ou une tornade.</p>",
     "source": "Entre ciel et terre, p. 279",
     "voie": "voie-d-agwe",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.6bwsVNHhFxnjtf9Q",

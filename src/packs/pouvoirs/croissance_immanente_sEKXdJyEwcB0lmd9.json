@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Un membre coupé repousse.</li><li>Un objet cassé se répare.</li><li>La forêt reprend ses droits sur la civilisation.</li><li>La forêt croît à vue d&#x27;oeil et devient à la fois impénétrable et dangereuse.</li><li>Une personne se met à grandir ou à voir ses extrémités grandir sans raison.</li></ul><p><strong>Compulsions.</strong> Planter une bouture en terre. Revenir sur un ancien village rongé par la forêt.</p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Un membre coupé repousse.</li><li>Un objet cassé se répare.</li><li>La forêt reprend ses droits sur la civilisation.</li><li>La forêt croît à vue d'oeil et devient à la fois impénétrable et dangereuse.</li><li>Une personne se met à grandir ou à voir ses extrémités grandir sans raison.</li></ul><p><strong>Compulsions.</strong> Planter une bouture en terre. Revenir sur un ancien village rongé par la forêt.</p>",
     "source": "Entre ciel et terre, p. 189",
     "voie": "voie-des-xapiripe",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.uLmNntdGMAtLAIsE",

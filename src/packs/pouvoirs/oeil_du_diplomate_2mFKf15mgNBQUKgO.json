@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Savoir de ce qui permettrait de convaincre.</li><li>Voir le talon d&#x27;Achille social de quelqu&#x27;un ou d&#x27;une organisation.</li><li>Découvrir les alliances et les complots secrets.</li></ul><p><strong>Compulsions.</strong> Comprendre les enjeux économiques d&#x27;une ville. Découvrir ce dont une personne réservée a désespérément besoin. Faire chanter quelqu&#x27;un de son entourage.</p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Savoir de ce qui permettrait de convaincre.</li><li>Voir le talon d'Achille social de quelqu'un ou d'une organisation.</li><li>Découvrir les alliances et les complots secrets.</li></ul><p><strong>Compulsions.</strong> Comprendre les enjeux économiques d'une ville. Découvrir ce dont une personne réservée a désespérément besoin. Faire chanter quelqu'un de son entourage.</p>",
     "source": "Entre ciel et terre, p. 283",
     "voie": "voie-de-dambala",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.fVIeiRnBn8ADVFE2",

@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Pulsion pour la douleur.</li><li>Automutilation.</li><li>Guerre intestine.</li><li>Sabordage d&#x27;une entreprise.</li></ul><p><strong>Compulsions.</strong> Se planter des aiguilles de sarbacane dans le corps. Générer un échec du groupe.</p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Pulsion pour la douleur.</li><li>Automutilation.</li><li>Guerre intestine.</li><li>Sabordage d'une entreprise.</li></ul><p><strong>Compulsions.</strong> Se planter des aiguilles de sarbacane dans le corps. Générer un échec du groupe.</p>",
     "source": "Entre ciel et terre, p. 193",
     "voie": "voie-des-zemis",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.adV2aUWhmHXDCarX",

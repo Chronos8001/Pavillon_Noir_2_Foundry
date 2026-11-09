@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Polit une surface.</li><li>Fait qu&#x27;on se retrouve en une personne particulière, comme si elle était notre complémentaire.</li><li>Crée un objet à partir d&#x27;un autre, comme s&#x27;il était réfléchi par un miroir.</li><li>Rend une personne éblouissante, voire aveuglante, comme si elle réfléchissait directement la lumière.</li></ul><p><strong>Compulsions.</strong> Polir une pierre ou une surface. Se couvrir de vêtements ou d&#x27;objets qui reflètent la lumière du soleil.</p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Polit une surface.</li><li>Fait qu'on se retrouve en une personne particulière, comme si elle était notre complémentaire.</li><li>Crée un objet à partir d'un autre, comme s'il était réfléchi par un miroir.</li><li>Rend une personne éblouissante, voire aveuglante, comme si elle réfléchissait directement la lumière.</li></ul><p><strong>Compulsions.</strong> Polir une pierre ou une surface. Se couvrir de vêtements ou d'objets qui reflètent la lumière du soleil.</p>",
     "source": "Entre ciel et terre, p. 205",
     "voie": "voie-des-cinq-soleils",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.LIzof8tOOXvNP2kT",

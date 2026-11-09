@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Découvre les centres d&#x27;intérêt d&#x27;une personne.</li><li>Créer une angoisse sur un sujet particulier.</li><li>Déplace les centres d&#x27;intérêt des gens.</li><li>Crée des obsessions ou, au contraire, un manque de motivation général.</li></ul><p><strong>Compulsions.</strong> Réduire à néant l&#x27;une des passions de quelqu&#x27;un. Susciter une angoisse obsessionnelle.</p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Découvre les centres d'intérêt d'une personne.</li><li>Créer une angoisse sur un sujet particulier.</li><li>Déplace les centres d'intérêt des gens.</li><li>Crée des obsessions ou, au contraire, un manque de motivation général.</li></ul><p><strong>Compulsions.</strong> Réduire à néant l'une des passions de quelqu'un. Susciter une angoisse obsessionnelle.</p>",
     "source": "Entre ciel et terre, p. 287",
     "voie": "voie-d-erzulie",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.0cPd7IIiO1TgbK81",

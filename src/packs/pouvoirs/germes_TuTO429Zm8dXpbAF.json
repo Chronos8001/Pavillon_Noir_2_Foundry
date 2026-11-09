@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Permet à la vie de grandir dans des lieux impossibles.</li><li>Croissance et transmission d&#x27;une maladie.</li><li>Inflige une terreur des germes.</li><li>Prévoit les conséquences d&#x27;événements.</li><li>Insémine une femme ou une femelle.</li></ul><p><strong>Compulsions.</strong> Recueillir les spores de champignons. Inséminer une femelle contre son gré.</p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Permet à la vie de grandir dans des lieux impossibles.</li><li>Croissance et transmission d'une maladie.</li><li>Inflige une terreur des germes.</li><li>Prévoit les conséquences d'événements.</li><li>Insémine une femme ou une femelle.</li></ul><p><strong>Compulsions.</strong> Recueillir les spores de champignons. Inséminer une femelle contre son gré.</p>",
     "source": "Entre ciel et terre, p. 311",
     "voie": "voie-de-cousin-zaka",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.lP05NKFNMs90d9GB",

@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Accès gratuit et illimité aux pouvoirs connus de la Voie (jusqu&#x27;à la Puissance 9) aux heures ou aux jours d&#x27;activité, avec les paramètres de base de ces pouvoirs. Des cartes peuvent être tirées pour obtenir des Soleils afin d&#x27;augmenter ces paramètres.</li><li>Contrer le pouvoir Kether.</li></ul>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Accès gratuit et illimité aux pouvoirs connus de la Voie (jusqu'à la Puissance 9) aux heures ou aux jours d'activité, avec les paramètres de base de ces pouvoirs. Des cartes peuvent être tirées pour obtenir des Soleils afin d'augmenter ces paramètres.</li><li>Contrer le pouvoir Kether.</li></ul>",
     "source": "Entre ciel et terre, p. 247",
     "voie": "voie-des-qlipoth",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.28cj5d17pp6tLLr8",

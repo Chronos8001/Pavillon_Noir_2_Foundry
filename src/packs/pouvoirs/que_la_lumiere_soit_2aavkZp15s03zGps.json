@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Une situation compliquée s&#x27;éclaircit.</li><li>Le ciel s&#x27;éclaircit pour que le soleil ou la lune luise.</li><li>Rencontre un voyageur avec une torche.</li><li>Trouve une chaumière éclairée dans une forêt.</li><li>Aide à allumer un feu de camp.</li></ul><p><strong>Compulsions.</strong> Faire entrer la lumière subitement dans une pièce. Débrouiller une situation complexe.</p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Une situation compliquée s'éclaircit.</li><li>Le ciel s'éclaircit pour que le soleil ou la lune luise.</li><li>Rencontre un voyageur avec une torche.</li><li>Trouve une chaumière éclairée dans une forêt.</li><li>Aide à allumer un feu de camp.</li></ul><p><strong>Compulsions.</strong> Faire entrer la lumière subitement dans une pièce. Débrouiller une situation complexe.</p>",
     "source": "Entre ciel et terre, p. 211",
     "voie": "voie-de-dieu",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.SPlB5GslKnZdeWKG",

@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Fournit ce dont les fidèles manquent le plus cruellement, sauf de l&#x27;or.</li><li>Écarte un problème affectant un groupe de chrétiens.</li><li>Crée une addiction à ce qui vient facilement.</li></ul><p><strong>Compulsions.</strong> Inciter les fidèles à travailler pour obtenir ce qu&#x27;ils attendent de Dieu. Apporter de façon providentielle ce dont a besoin un groupe de personnes.</p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Fournit ce dont les fidèles manquent le plus cruellement, sauf de l'or.</li><li>Écarte un problème affectant un groupe de chrétiens.</li><li>Crée une addiction à ce qui vient facilement.</li></ul><p><strong>Compulsions.</strong> Inciter les fidèles à travailler pour obtenir ce qu'ils attendent de Dieu. Apporter de façon providentielle ce dont a besoin un groupe de personnes.</p>",
     "source": "Entre ciel et terre, p. 210",
     "voie": "voie-de-dieu",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.SPlB5GslKnZdeWKG",

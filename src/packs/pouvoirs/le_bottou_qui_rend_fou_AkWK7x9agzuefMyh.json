@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Un coup de bottou rend fou.</li><li>Maudit une arme, de façon à ce qu&#x27;elle rende fou son porteur.</li><li>Affinité pour la Voie d&#x27;Ichéiricou pour la protection et la punition tant qu&#x27;on utilise le bottou pour transmettre ses maléfices.</li></ul><p><strong>Compulsions.</strong> Asséner un violent coup de bottou sur la tête d&#x27;un ennemi. Mettre un poison de contact sur le manche d&#x27;une arme.</p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Un coup de bottou rend fou.</li><li>Maudit une arme, de façon à ce qu'elle rende fou son porteur.</li><li>Affinité pour la Voie d'Ichéiricou pour la protection et la punition tant qu'on utilise le bottou pour transmettre ses maléfices.</li></ul><p><strong>Compulsions.</strong> Asséner un violent coup de bottou sur la tête d'un ennemi. Mettre un poison de contact sur le manche d'une arme.</p>",
     "source": "Entre ciel et terre, p. 174",
     "voie": "voie-d-icheiricou-pour-la-guerre",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.ua948TzRBv4MWuy4",

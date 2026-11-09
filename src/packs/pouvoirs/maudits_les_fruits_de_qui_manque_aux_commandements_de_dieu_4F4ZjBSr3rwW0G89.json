@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Nourriture empoisonnée pour le fautif.</li><li>Malformation des enfants du fautif.</li><li>Malformation des petits des animaux d&#x27;élevage du fautif.</li><li>Maladie (nielle) s&#x27;abattant sur les récoltes du fautif.</li></ul><p><strong>Compulsions.</strong> Déroger à un commandement de Dieu sans rien en retirer.</p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Nourriture empoisonnée pour le fautif.</li><li>Malformation des enfants du fautif.</li><li>Malformation des petits des animaux d'élevage du fautif.</li><li>Maladie (nielle) s'abattant sur les récoltes du fautif.</li></ul><p><strong>Compulsions.</strong> Déroger à un commandement de Dieu sans rien en retirer.</p>",
     "source": "Entre ciel et terre, p. 212",
     "voie": "voie-de-dieu",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.SPlB5GslKnZdeWKG",

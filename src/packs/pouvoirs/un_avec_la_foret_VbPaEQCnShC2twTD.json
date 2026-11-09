@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Dissimulation dans la forêt.</li><li>Savoir ce qui s&#x27;est passé dans un lieu de la forêt.</li><li>Savoir ce qui se passe ailleurs dans la forêt.</li><li>Se métamorphoser en arbre.</li></ul><p><strong>Compulsions.</strong> Rester totalement immobile une journée dans la forêt. Se camoufler en buisson.</p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Dissimulation dans la forêt.</li><li>Savoir ce qui s'est passé dans un lieu de la forêt.</li><li>Savoir ce qui se passe ailleurs dans la forêt.</li><li>Se métamorphoser en arbre.</li></ul><p><strong>Compulsions.</strong> Rester totalement immobile une journée dans la forêt. Se camoufler en buisson.</p>",
     "source": "Entre ciel et terre, p. 182",
     "voie": "voie-d-icheiricou-pour-la-protection-et-la-punition",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.yH60f20rPKBEP9j4",

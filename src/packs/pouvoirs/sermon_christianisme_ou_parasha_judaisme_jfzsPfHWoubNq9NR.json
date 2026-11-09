@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Force les fidèles à suivre les préceptes édictés dans son discours.</li><li>Rend toute critique claire et positive.</li><li>Crée des remords pour des choses que d&#x27;autres ont fait.</li><li>Crée une tentation.</li><li>Retire une tentation.</li><li>Transforme une tentation.</li><li>Maudit celui qui se laissera tenter alors qu&#x27;il a été prévenu.</li></ul><p><strong>Compulsions.</strong> S&#x27;exposer à la tentation à la limite de l&#x27;assouvissement, puis refuser. Céder à la tentation.</p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Force les fidèles à suivre les préceptes édictés dans son discours.</li><li>Rend toute critique claire et positive.</li><li>Crée des remords pour des choses que d'autres ont fait.</li><li>Crée une tentation.</li><li>Retire une tentation.</li><li>Transforme une tentation.</li><li>Maudit celui qui se laissera tenter alors qu'il a été prévenu.</li></ul><p><strong>Compulsions.</strong> S'exposer à la tentation à la limite de l'assouvissement, puis refuser. Céder à la tentation.</p>",
     "source": "Entre ciel et terre, p. 211",
     "voie": "voie-de-dieu",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.SPlB5GslKnZdeWKG",

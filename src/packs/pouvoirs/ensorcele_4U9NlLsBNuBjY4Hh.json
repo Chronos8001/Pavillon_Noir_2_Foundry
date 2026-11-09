@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Contrôle imparfait du corps, des émotions, et de l&#x27;esprit de la victime. Elle a parfois des comportements erratiques et violents.</li><li>Donne l&#x27;illusion d&#x27;être ensorcelé et pourchassé par des mabouyas.</li><li>Libère d&#x27;un sortilège.</li></ul><p><strong>Compulsions.</strong> Administrer des substances hallucinogènes à une personne à son insu. Faire passer pour profane un acte sacré.</p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Contrôle imparfait du corps, des émotions, et de l'esprit de la victime. Elle a parfois des comportements erratiques et violents.</li><li>Donne l'illusion d'être ensorcelé et pourchassé par des mabouyas.</li><li>Libère d'un sortilège.</li></ul><p><strong>Compulsions.</strong> Administrer des substances hallucinogènes à une personne à son insu. Faire passer pour profane un acte sacré.</p>",
     "source": "Entre ciel et terre, p. 184",
     "voie": "voie-d-icheiricou-pour-la-protection-et-la-punition",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.yH60f20rPKBEP9j4",

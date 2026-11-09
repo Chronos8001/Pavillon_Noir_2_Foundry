@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Apporte la souveraineté.</li><li>Apporte l&#x27;abondance.</li><li>Résurrection des morts très récents.</li></ul><p><strong>Compulsions.</strong> Tenter des résurrections de morts. Tuer un ami.</p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Apporte la souveraineté.</li><li>Apporte l'abondance.</li><li>Résurrection des morts très récents.</li></ul><p><strong>Compulsions.</strong> Tenter des résurrections de morts. Tuer un ami.</p>",
     "source": "Entre ciel et terre, p. 254",
     "voie": "voie-du-druidisme",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.444Fft7a0LtvOMIS",

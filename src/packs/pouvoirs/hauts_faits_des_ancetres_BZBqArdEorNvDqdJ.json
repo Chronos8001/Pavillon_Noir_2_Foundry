@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Pousse à se dépasser pour égaler ses ancêtres.</li><li>Donne la ruse des ancêtres qui convient à la situation.</li><li>Donne une aura de passé glorieux.</li><li>Appelle les ancêtres pour venir se battre à nouveau.</li></ul><p><strong>Compulsions.</strong> Reproduire l&#x27;un des hauts faits d&#x27;un ancêtre. Dire les hauts faits d&#x27;une personne pour qu&#x27;elle passe à la postérité.</p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Pousse à se dépasser pour égaler ses ancêtres.</li><li>Donne la ruse des ancêtres qui convient à la situation.</li><li>Donne une aura de passé glorieux.</li><li>Appelle les ancêtres pour venir se battre à nouveau.</li></ul><p><strong>Compulsions.</strong> Reproduire l'un des hauts faits d'un ancêtre. Dire les hauts faits d'une personne pour qu'elle passe à la postérité.</p>",
     "source": "Entre ciel et terre, p. 174",
     "voie": "voie-d-icheiricou-pour-la-guerre",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.ua948TzRBv4MWuy4",

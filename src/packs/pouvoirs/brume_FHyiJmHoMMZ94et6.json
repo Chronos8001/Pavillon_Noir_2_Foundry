@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Crée une légère brume.</li><li>Épaissit ou lève une brume.</li><li>Embrume l&#x27;esprit ou rend une situation peu claire.</li><li>Rend l&#x27;air chargé d&#x27;humidité.</li></ul><p><strong>Compulsions.</strong> Se déplacer (à pied, par navire) au sein d&#x27;une épaisse brume. Donner des informations contradictoires et étudier l&#x27;effet produit.</p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Crée une légère brume.</li><li>Épaissit ou lève une brume.</li><li>Embrume l'esprit ou rend une situation peu claire.</li><li>Rend l'air chargé d'humidité.</li></ul><p><strong>Compulsions.</strong> Se déplacer (à pied, par navire) au sein d'une épaisse brume. Donner des informations contradictoires et étudier l'effet produit.</p>",
     "source": "Entre ciel et terre, p. 205",
     "voie": "voie-des-cinq-soleils",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.LIzof8tOOXvNP2kT",

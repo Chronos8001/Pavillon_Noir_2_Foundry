@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Augmenter ou diminuer la chaleur.</li><li>Aggraver ou diminuer la fièvre.</li><li>Tenir chaud dans le froid.</li><li>Faire évaporer un liquide.</li><li>Excite le besoin de chaleur corporelle.</li></ul><p><strong>Compulsions.</strong> Prendre un bain de vapeur. Profiter de la chaleur corporelle d&#x27;autrui.</p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Augmenter ou diminuer la chaleur.</li><li>Aggraver ou diminuer la fièvre.</li><li>Tenir chaud dans le froid.</li><li>Faire évaporer un liquide.</li><li>Excite le besoin de chaleur corporelle.</li></ul><p><strong>Compulsions.</strong> Prendre un bain de vapeur. Profiter de la chaleur corporelle d'autrui.</p>",
     "source": "Entre ciel et terre, p. 187",
     "voie": "voie-des-xapiripe",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.uLmNntdGMAtLAIsE",

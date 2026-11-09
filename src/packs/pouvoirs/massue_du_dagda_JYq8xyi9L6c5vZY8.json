@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Consacre un bâton. Frapper avec un bout inflige des Blessures mortelles. Frapper avec l&#x27;autre bout ressuscite un mort relativement récent. L&#x27;enfoncer dans le sol creuse des sillons entre les mondes (ouvre des bras de mer, des crevasses).</li></ul><p><strong>Compulsions.</strong> Fabriquer une massue en bois de fer.</p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Consacre un bâton. Frapper avec un bout inflige des Blessures mortelles. Frapper avec l'autre bout ressuscite un mort relativement récent. L'enfoncer dans le sol creuse des sillons entre les mondes (ouvre des bras de mer, des crevasses).</li></ul><p><strong>Compulsions.</strong> Fabriquer une massue en bois de fer.</p>",
     "source": "Entre ciel et terre, p. 254",
     "voie": "voie-du-druidisme",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.444Fft7a0LtvOMIS",

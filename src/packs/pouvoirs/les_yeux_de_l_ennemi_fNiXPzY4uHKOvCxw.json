@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Voit par les yeux d&#x27;un ennemi.</li><li>Rend un ennemi aveugle.</li><li>Porter sur soi les yeux de l&#x27;ennemi accroît les facultés de perception.</li><li>Les yeux de l&#x27;ennemi le brûlent.</li><li>Donne un regard de fou ou de tueur sanguinaire à l&#x27;ennemi.</li></ul><p><strong>Compulsions.</strong> Arracher les yeux d&#x27;un ennemi. Jeter un liquide désagréable aux yeux de quelqu&#x27;un et étudier sa réaction.</p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Voit par les yeux d'un ennemi.</li><li>Rend un ennemi aveugle.</li><li>Porter sur soi les yeux de l'ennemi accroît les facultés de perception.</li><li>Les yeux de l'ennemi le brûlent.</li><li>Donne un regard de fou ou de tueur sanguinaire à l'ennemi.</li></ul><p><strong>Compulsions.</strong> Arracher les yeux d'un ennemi. Jeter un liquide désagréable aux yeux de quelqu'un et étudier sa réaction.</p>",
     "source": "Entre ciel et terre, p. 306",
     "voie": "voie-d-ogou",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.nT1z9NA3nij69fC3",

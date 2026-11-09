@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Briser les liens et les chaines.</li><li>Soulèvement des opprimés.</li><li>Armement des opprimés pour être à l&#x27;égal des oppresseurs.</li><li>Convaincre les hommes d&#x27;aider des opprimés.</li><li>Malédiction (modérée) envers les oppresseurs.</li></ul><p><strong>Compulsions.</strong> Libérer un prisonnier sans demander l&#x27;accord de son groupe. Pousser les mécontents à la révolte.</p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Briser les liens et les chaines.</li><li>Soulèvement des opprimés.</li><li>Armement des opprimés pour être à l'égal des oppresseurs.</li><li>Convaincre les hommes d'aider des opprimés.</li><li>Malédiction (modérée) envers les oppresseurs.</li></ul><p><strong>Compulsions.</strong> Libérer un prisonnier sans demander l'accord de son groupe. Pousser les mécontents à la révolte.</p>",
     "source": "Entre ciel et terre, p. 249",
     "voie": "voie-du-druidisme",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.444Fft7a0LtvOMIS",

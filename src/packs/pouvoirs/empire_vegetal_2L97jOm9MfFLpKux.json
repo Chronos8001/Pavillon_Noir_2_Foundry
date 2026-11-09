@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>La forêt prolif ère en périphérie et menace d&#x27;envahir les villes.</li><li>Rend une forêt inextricable.</li><li>Contrôle des mouvements (limités) des végétaux.</li></ul><p><strong>Compulsions.</strong> Planter des graines dans une ruine. Vivre quelques temps au milieu de la forêt.</p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>La forêt prolif ère en périphérie et menace d'envahir les villes.</li><li>Rend une forêt inextricable.</li><li>Contrôle des mouvements (limités) des végétaux.</li></ul><p><strong>Compulsions.</strong> Planter des graines dans une ruine. Vivre quelques temps au milieu de la forêt.</p>",
     "source": "Entre ciel et terre, p. 311",
     "voie": "voie-de-cousin-zaka",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.lP05NKFNMs90d9GB",

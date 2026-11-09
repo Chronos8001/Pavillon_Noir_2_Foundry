@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Union bénéfique de deux groupes, même opposés.</li><li>Union de deux objets pour former un outil plus performant.</li><li>Union fraternelle de deux êtres complémentaires.</li><li>Connaître le jeu des alliances.</li><li>Création d&#x27;âmes soeurs inséparables.</li></ul><p><strong>Compulsions.</strong> Rechercher à unir deux êtres incompatibles. Rompre une vieille alliance sans raison.</p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Union bénéfique de deux groupes, même opposés.</li><li>Union de deux objets pour former un outil plus performant.</li><li>Union fraternelle de deux êtres complémentaires.</li><li>Connaître le jeu des alliances.</li><li>Création d'âmes soeurs inséparables.</li></ul><p><strong>Compulsions.</strong> Rechercher à unir deux êtres incompatibles. Rompre une vieille alliance sans raison.</p>",
     "source": "Entre ciel et terre, p. 303",
     "voie": "voie-des-freres-marassa",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.g0bMhkfFArVT77cy",

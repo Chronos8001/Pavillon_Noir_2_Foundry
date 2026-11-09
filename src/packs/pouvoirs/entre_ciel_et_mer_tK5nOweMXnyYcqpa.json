@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Contrôle des oiseaux et des poissons.</li><li>Création d&#x27;un typhon incontrôlable.</li><li>Connaissance de la volonté des lwas.</li></ul><p><strong>Compulsions.</strong> Vivre un mois accroché à une falaise avec un banc de mouettes. Pêcher les poissons d&#x27;un banc jusqu&#x27;au dernier.</p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Contrôle des oiseaux et des poissons.</li><li>Création d'un typhon incontrôlable.</li><li>Connaissance de la volonté des lwas.</li></ul><p><strong>Compulsions.</strong> Vivre un mois accroché à une falaise avec un banc de mouettes. Pêcher les poissons d'un banc jusqu'au dernier.</p>",
     "source": "Entre ciel et terre, p. 284",
     "voie": "voie-de-dambala",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.fVIeiRnBn8ADVFE2",

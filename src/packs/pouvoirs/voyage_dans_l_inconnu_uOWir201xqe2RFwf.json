@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Faire oublier quelque chose à quelqu&#x27;un.</li><li>Faire ressurgir de force un souvenir.</li><li>Donner une peur de l&#x27;inconnu.</li><li>Générer une curiosité sans bornes.</li></ul><p><strong>Compulsions.</strong> Partir sans se renseigner et sans repères. Découvrir activement une nouvelle contrée.</p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Faire oublier quelque chose à quelqu'un.</li><li>Faire ressurgir de force un souvenir.</li><li>Donner une peur de l'inconnu.</li><li>Générer une curiosité sans bornes.</li></ul><p><strong>Compulsions.</strong> Partir sans se renseigner et sans repères. Découvrir activement une nouvelle contrée.</p>",
     "source": "Entre ciel et terre, p. 278",
     "voie": "voie-d-agwe",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.6bwsVNHhFxnjtf9Q",

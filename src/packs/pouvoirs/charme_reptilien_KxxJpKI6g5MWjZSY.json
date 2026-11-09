@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Regard hypnotique.</li><li>Charme et mouvements gracieux.</li><li>Susciter la terreur générée par les serpents.</li></ul><p><strong>Compulsions.</strong> Terrifier quelqu&#x27;un du regard. Apprendre la danse du ventre. Fasciner un groupe de personnes par un récit.</p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Regard hypnotique.</li><li>Charme et mouvements gracieux.</li><li>Susciter la terreur générée par les serpents.</li></ul><p><strong>Compulsions.</strong> Terrifier quelqu'un du regard. Apprendre la danse du ventre. Fasciner un groupe de personnes par un récit.</p>",
     "source": "Entre ciel et terre, p. 283",
     "voie": "voie-de-dambala",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.fVIeiRnBn8ADVFE2",

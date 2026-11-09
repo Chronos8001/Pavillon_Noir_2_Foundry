@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Découverte d&#x27;une grotte menant dans les entrailles de la un vill terre.</li><li>Découverte d&#x27;un terrier.</li><li>Ouverture d&#x27;une faille dans le sol.</li></ul><p><strong>Compulsions.</strong> Détacher un pan d&#x27;une falaise. Descendre dans le cratère d&#x27;un volcan.</p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Découverte d'une grotte menant dans les entrailles de la un vill terre.</li><li>Découverte d'un terrier.</li><li>Ouverture d'une faille dans le sol.</li></ul><p><strong>Compulsions.</strong> Détacher un pan d'une falaise. Descendre dans le cratère d'un volcan.</p>",
     "source": "Entre ciel et terre, p. 195",
     "voie": "voie-des-zemis",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.adV2aUWhmHXDCarX",

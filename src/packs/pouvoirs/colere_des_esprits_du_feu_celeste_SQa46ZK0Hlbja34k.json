@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Pluie de météorites.</li><li>Menace ultime pour ne pas être mis à mort.</li><li>Éclair d&#x27;étoile (un éclat mystique vient frapper le principe vital de quelqu&#x27;un, qui ne pourra jamais en guérir).</li></ul><p><strong>Compulsions.</strong> Trouver un morceau de météorite. Être é alors qu&#x27;on était menacé de mort.</p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Pluie de météorites.</li><li>Menace ultime pour ne pas être mis à mort.</li><li>Éclair d'étoile (un éclat mystique vient frapper le principe vital de quelqu'un, qui ne pourra jamais en guérir).</li></ul><p><strong>Compulsions.</strong> Trouver un morceau de météorite. Être é alors qu'on était menacé de mort.</p>",
     "source": "Entre ciel et terre, p. 190",
     "voie": "voie-des-xapiripe",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.uLmNntdGMAtLAIsE",

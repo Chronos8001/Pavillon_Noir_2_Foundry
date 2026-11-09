@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>La parole du béhique ne saurait être mise en doute.</li><li>La foule s&#x27;acharne sur celui qui dit la vérité.</li><li>Désigner pour un groupe une personne qui devient le garant de la vérité : sur un mensonge d&#x27;une personne de son Porté groupe, elle meurt.</li></ul><p><strong>Compulsions.</strong> Discerner les mensonges de la vérité. Se proposer comme otage pour garantir une transaction.</p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>La parole du béhique ne saurait être mise en doute.</li><li>La foule s'acharne sur celui qui dit la vérité.</li><li>Désigner pour un groupe une personne qui devient le garant de la vérité : sur un mensonge d'une personne de son Porté groupe, elle meurt.</li></ul><p><strong>Compulsions.</strong> Discerner les mensonges de la vérité. Se proposer comme otage pour garantir une transaction.</p>",
     "source": "Entre ciel et terre, p. 194",
     "voie": "voie-des-zemis",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.adV2aUWhmHXDCarX",

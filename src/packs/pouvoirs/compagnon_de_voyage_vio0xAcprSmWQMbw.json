@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Trouver de nouveaux compagnons.</li><li>Voir qui sera un mauvais compagnon de route.</li><li>Infliger des mauvais compagnons.</li><li>Marque du traître.</li></ul><p><strong>Compulsions.</strong> Prouver la traîtrise d&#x27;un compagnon. Engager un compagnon sans se renseigner un tant soit peu sur son origine et ses intentions, et se montrer confiant.</p><p><em>Règles particulières : voir Entre ciel et terre, p. 276.</em></p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Trouver de nouveaux compagnons.</li><li>Voir qui sera un mauvais compagnon de route.</li><li>Infliger des mauvais compagnons.</li><li>Marque du traître.</li></ul><p><strong>Compulsions.</strong> Prouver la traîtrise d'un compagnon. Engager un compagnon sans se renseigner un tant soit peu sur son origine et ses intentions, et se montrer confiant.</p><p><em>Règles particulières : voir Entre ciel et terre, p. 276.</em></p>",
     "source": "Entre ciel et terre, p. 276",
     "voie": "voie-d-agwe",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.6bwsVNHhFxnjtf9Q",

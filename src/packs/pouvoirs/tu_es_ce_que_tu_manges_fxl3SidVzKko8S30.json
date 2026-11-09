@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Métamorphose en l&#x27;animal mangé.</li><li>Acquisition des traits caractéristiques de ce qu&#x27;on mange.</li><li>La victime pourrit si elle mange des mets avariés ou se sent en pleine santé si elle mange sainement.</li><li>Prend le corps de la personne mangée.</li></ul><p><strong>Compulsions.</strong> Manger un homme. Utiliser comme engrais pour un arbre les cendres d&#x27;un arbre de même espèce.</p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Métamorphose en l'animal mangé.</li><li>Acquisition des traits caractéristiques de ce qu'on mange.</li><li>La victime pourrit si elle mange des mets avariés ou se sent en pleine santé si elle mange sainement.</li><li>Prend le corps de la personne mangée.</li></ul><p><strong>Compulsions.</strong> Manger un homme. Utiliser comme engrais pour un arbre les cendres d'un arbre de même espèce.</p>",
     "source": "Entre ciel et terre, p. 183",
     "voie": "voie-d-icheiricou-pour-la-protection-et-la-punition",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.yH60f20rPKBEP9j4",

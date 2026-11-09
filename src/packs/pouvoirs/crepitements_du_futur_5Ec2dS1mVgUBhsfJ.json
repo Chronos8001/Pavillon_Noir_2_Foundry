@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Entend des crépitements lorsqu&#x27;une prédiction est en passe de se vérifier.</li><li>Peut lire l&#x27;avenir dans les flammes à travers un miroir.</li><li>Peut lire l&#x27;avenir des abords d&#x27;un feu.</li><li>Donne à quelqu&#x27;un des visions fugaces du futur. Elles peuvent être courtes, incompréhensibles et effrayantes, ou bien apaisantes.</li></ul><p><strong>Compulsions.</strong> Contempler les crépitements du feu. Transmettre une information de façon parcellaire et incompréhensible.</p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Entend des crépitements lorsqu'une prédiction est en passe de se vérifier.</li><li>Peut lire l'avenir dans les flammes à travers un miroir.</li><li>Peut lire l'avenir des abords d'un feu.</li><li>Donne à quelqu'un des visions fugaces du futur. Elles peuvent être courtes, incompréhensibles et effrayantes, ou bien apaisantes.</li></ul><p><strong>Compulsions.</strong> Contempler les crépitements du feu. Transmettre une information de façon parcellaire et incompréhensible.</p>",
     "source": "Entre ciel et terre, p. 204",
     "voie": "voie-des-cinq-soleils",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.LIzof8tOOXvNP2kT",

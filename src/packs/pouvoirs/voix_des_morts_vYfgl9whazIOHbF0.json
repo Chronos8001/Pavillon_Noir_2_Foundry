@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Pose des questions aux morts.</li><li>Les morts semblent parler pour effrayer les vivants.</li><li>La cible est la seule à croire entendre les morts parler.</li><li>Mutisme.</li><li>Mort sociale.</li></ul><p><strong>Compulsions.</strong> Imiter la voix des morts et effrayer ses interlocuteurs. Accomplir de façon posthume la dernière volonté d&#x27;un mourant.</p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Pose des questions aux morts.</li><li>Les morts semblent parler pour effrayer les vivants.</li><li>La cible est la seule à croire entendre les morts parler.</li><li>Mutisme.</li><li>Mort sociale.</li></ul><p><strong>Compulsions.</strong> Imiter la voix des morts et effrayer ses interlocuteurs. Accomplir de façon posthume la dernière volonté d'un mourant.</p>",
     "source": "Entre ciel et terre, p. 293",
     "voie": "voie-des-guedes",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.BJZUi8OCwtnsr9Ow",

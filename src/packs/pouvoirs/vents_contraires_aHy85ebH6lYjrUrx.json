@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Soumet un navire à des vents contraires à sa destination.</li><li>Chaos de vents en tous sens.</li><li>Impose du vent dans un sens dans une zone et dans un sens contraire dans une zone voisine.</li><li>Succession de difficultés ralentissant l&#x27;accomplissement d&#x27;une tâche.</li></ul><p><strong>Compulsions.</strong> Remonter contre le vent et le courant. Ralentir quelqu&#x27;un.</p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Soumet un navire à des vents contraires à sa destination.</li><li>Chaos de vents en tous sens.</li><li>Impose du vent dans un sens dans une zone et dans un sens contraire dans une zone voisine.</li><li>Succession de difficultés ralentissant l'accomplissement d'une tâche.</li></ul><p><strong>Compulsions.</strong> Remonter contre le vent et le courant. Ralentir quelqu'un.</p>",
     "source": "Entre ciel et terre, p. 182",
     "voie": "voie-d-icheiricou-pour-la-protection-et-la-punition",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.yH60f20rPKBEP9j4",

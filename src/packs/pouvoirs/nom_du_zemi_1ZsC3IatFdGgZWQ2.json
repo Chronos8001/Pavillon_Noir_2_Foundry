@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Donne le nom d&#x27;un zémi libre ou attaché à une statuette.</li><li>Donne les pouvoirs d&#x27;un zémi libre ou attaché à une statuette.</li><li>Donne les noms de quelques zémis possédant un pouvoir spécifique.</li><li>Contrôle partiel et léger d&#x27;un zémi libre dont on connaît le nom.</li></ul><p><strong>Compulsions.</strong> Voir une statuette de zémi.</p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Donne le nom d'un zémi libre ou attaché à une statuette.</li><li>Donne les pouvoirs d'un zémi libre ou attaché à une statuette.</li><li>Donne les noms de quelques zémis possédant un pouvoir spécifique.</li><li>Contrôle partiel et léger d'un zémi libre dont on connaît le nom.</li></ul><p><strong>Compulsions.</strong> Voir une statuette de zémi.</p>",
     "source": "Entre ciel et terre, p. 193",
     "voie": "voie-des-zemis",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.adV2aUWhmHXDCarX",

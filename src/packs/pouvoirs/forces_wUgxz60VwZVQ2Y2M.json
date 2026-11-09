@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Regagne des forces.</li><li>Évalue ou réduit les forces ou le nombre d&#x27;hommes de l &#x27;adversaire.</li><li>Reconnaît les groupes puissants.</li><li>Donne l&#x27;illusion d&#x27;une supériorité de la force ou du nombre.</li></ul><p><strong>Compulsions.</strong> Se battre contre un adversaire supérieur. Donner l&#x27;illusion de l&#x27;inversion du rapport de force.</p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Regagne des forces.</li><li>Évalue ou réduit les forces ou le nombre d'hommes de l 'adversaire.</li><li>Reconnaît les groupes puissants.</li><li>Donne l'illusion d'une supériorité de la force ou du nombre.</li></ul><p><strong>Compulsions.</strong> Se battre contre un adversaire supérieur. Donner l'illusion de l'inversion du rapport de force.</p>",
     "source": "Entre ciel et terre, p. 306",
     "voie": "voie-d-ogou",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.nT1z9NA3nij69fC3",

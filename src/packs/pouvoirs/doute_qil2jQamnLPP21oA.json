@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Sème le doute à propos d&#x27;une autre religion.</li><li>Enlève le doute quant à la justesse des dogmes du christianisme.</li><li>Fait douter de quelque chose qui n&#x27;est pas dit dans le livre saint.</li></ul><p><strong>Compulsions.</strong> Installer le doute chez l&#x27;être le plus confiant. Démontrer que le doute est néfaste à l&#x27;homme.</p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Sème le doute à propos d'une autre religion.</li><li>Enlève le doute quant à la justesse des dogmes du christianisme.</li><li>Fait douter de quelque chose qui n'est pas dit dans le livre saint.</li></ul><p><strong>Compulsions.</strong> Installer le doute chez l'être le plus confiant. Démontrer que le doute est néfaste à l'homme.</p>",
     "source": "Entre ciel et terre, p. 210",
     "voie": "voie-de-dieu",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.SPlB5GslKnZdeWKG",

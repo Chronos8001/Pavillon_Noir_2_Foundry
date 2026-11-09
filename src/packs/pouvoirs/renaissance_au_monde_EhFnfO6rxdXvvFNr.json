@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Boulé-zin (initiation au vaudou).</li><li>Oubli progressif de sa vie actuelle et développement d&#x27;une nouvelle.</li><li>Prise de conscience.</li><li>Devenir un inconnu.</li></ul><p><strong>Compulsions.</strong> S&#x27;efforcer d&#x27;oublier un proche dans le besoin. Ne pas se faire reconnaître par un proche.</p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Boulé-zin (initiation au vaudou).</li><li>Oubli progressif de sa vie actuelle et développement d'une nouvelle.</li><li>Prise de conscience.</li><li>Devenir un inconnu.</li></ul><p><strong>Compulsions.</strong> S'efforcer d'oublier un proche dans le besoin. Ne pas se faire reconnaître par un proche.</p>",
     "source": "Entre ciel et terre, p. 277",
     "voie": "voie-d-agwe",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.6bwsVNHhFxnjtf9Q",

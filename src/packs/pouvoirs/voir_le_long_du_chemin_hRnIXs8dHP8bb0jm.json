@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Rêver les événements futurs d&#x27;un voyage.</li><li>Rêver les lieux visités par une personne.</li></ul><p><strong>Compulsions.</strong> Errer dans le noir dans un endroit dangereux. Toucher une personne puis enquêter sur tout ce qu&#x27;elle a fait.</p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Rêver les événements futurs d'un voyage.</li><li>Rêver les lieux visités par une personne.</li></ul><p><strong>Compulsions.</strong> Errer dans le noir dans un endroit dangereux. Toucher une personne puis enquêter sur tout ce qu'elle a fait.</p>",
     "source": "Entre ciel et terre, p. 278",
     "voie": "voie-d-agwe",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.6bwsVNHhFxnjtf9Q",

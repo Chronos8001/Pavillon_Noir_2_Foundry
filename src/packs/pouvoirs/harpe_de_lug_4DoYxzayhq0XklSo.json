@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Instrument qui joue tout seul.</li><li>Musique divine.</li><li>Musique qui fait rire ou pleurer.</li><li>Musique qui assoupit.</li><li>Musique qui fait dormir.</li></ul><p><strong>Compulsions.</strong> Endormir un enfant. Jouer une musique ou chanter une chanson qui rappelle à quelqu&#x27;un des souvenirs doux ou douloureux.</p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Instrument qui joue tout seul.</li><li>Musique divine.</li><li>Musique qui fait rire ou pleurer.</li><li>Musique qui assoupit.</li><li>Musique qui fait dormir.</li></ul><p><strong>Compulsions.</strong> Endormir un enfant. Jouer une musique ou chanter une chanson qui rappelle à quelqu'un des souvenirs doux ou douloureux.</p>",
     "source": "Entre ciel et terre, p. 249",
     "voie": "voie-du-druidisme",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.444Fft7a0LtvOMIS",

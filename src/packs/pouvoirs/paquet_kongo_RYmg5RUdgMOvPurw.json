@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Réaliser un paquet-kongo.</li></ul><p><strong>Compulsions.</strong> Réaliser une poupée de chiffon très ressemblante d&#x27;une personne. Accéder au divin après avoir péché.</p><p><em>Règles particulières : voir Entre ciel et terre, p. 296.</em></p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Réaliser un paquet-kongo.</li></ul><p><strong>Compulsions.</strong> Réaliser une poupée de chiffon très ressemblante d'une personne. Accéder au divin après avoir péché.</p><p><em>Règles particulières : voir Entre ciel et terre, p. 296.</em></p>",
     "source": "Entre ciel et terre, p. 296",
     "voie": "voie-de-papa-legba",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.cLAnYvfRTW6M1YmZ",

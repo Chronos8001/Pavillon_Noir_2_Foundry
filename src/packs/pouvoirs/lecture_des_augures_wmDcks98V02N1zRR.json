@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>L&#x27;augure indique si les dieux sont favorables ou défavorables à une action.</li><li>Augure par examen du vol des oiseaux.</li><li>Augure par examen de la course d&#x27;un lièvre.</li><li>Augure par examen des convulsions des membres d&#x27;un homme sacrifié.</li></ul><p><strong>Compulsions.</strong> Étudier pendant deux jours sans interruption le vol des oiseaux. Suivre des lièvres pendant une journée. Sacrifier un homme.</p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>L'augure indique si les dieux sont favorables ou défavorables à une action.</li><li>Augure par examen du vol des oiseaux.</li><li>Augure par examen de la course d'un lièvre.</li><li>Augure par examen des convulsions des membres d'un homme sacrifié.</li></ul><p><strong>Compulsions.</strong> Étudier pendant deux jours sans interruption le vol des oiseaux. Suivre des lièvres pendant une journée. Sacrifier un homme.</p>",
     "source": "Entre ciel et terre, p. 250",
     "voie": "voie-du-druidisme",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.444Fft7a0LtvOMIS",

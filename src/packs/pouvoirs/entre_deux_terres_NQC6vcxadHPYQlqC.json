@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Peut s&#x27;enfoncer dans la terre jusqu&#x27;au cou.</li><li>Peut savoir si, au-dessous de lui, existe une cavité.</li><li>En se mettant une motte de terre sur la tête, peut voyager « entre deux terres » et être à l&#x27;abri de tout effet magique ; en revanche, ne peut pas utiliser de pouvoirs pendant ce temps-là.</li></ul><p><strong>Compulsions.</strong> Avancer camouflé dans la jungle. Protéger pendant une journée l&#x27;intérieur d&#x27;un cercle de l&#x27;intrusion de quiconque.</p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Peut s'enfoncer dans la terre jusqu'au cou.</li><li>Peut savoir si, au-dessous de lui, existe une cavité.</li><li>En se mettant une motte de terre sur la tête, peut voyager « entre deux terres » et être à l'abri de tout effet magique ; en revanche, ne peut pas utiliser de pouvoirs pendant ce temps-là.</li></ul><p><strong>Compulsions.</strong> Avancer camouflé dans la jungle. Protéger pendant une journée l'intérieur d'un cercle de l'intrusion de quiconque.</p>",
     "source": "Entre ciel et terre, p. 296",
     "voie": "voie-de-papa-legba",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.cLAnYvfRTW6M1YmZ",

@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Apprentissage rapide d&#x27;une action ou d&#x27;une Compétence.</li><li>Détermine le niveau d&#x27;instruction d&#x27;une personne dans un domaine précis.</li><li>Rend quelqu&#x27;un insupportablement pédant.</li><li>Donne l&#x27;impression de quelqu&#x27;un d&#x27;extrêmement docte, qui force le respect.</li></ul><p><strong>Compulsions.</strong> Dire son plus grand secret. Enseigner son domaine de compétence privilégié.</p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Apprentissage rapide d'une action ou d'une Compétence.</li><li>Détermine le niveau d'instruction d'une personne dans un domaine précis.</li><li>Rend quelqu'un insupportablement pédant.</li><li>Donne l'impression de quelqu'un d'extrêmement docte, qui force le respect.</li></ul><p><strong>Compulsions.</strong> Dire son plus grand secret. Enseigner son domaine de compétence privilégié.</p>",
     "source": "Entre ciel et terre, p. 177",
     "voie": "voie-d-icheiricou-pour-le-conseil",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.wiw3plsp6sATryBq",

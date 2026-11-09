@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Récupération comme au terme de quelques nuits de repos.</li><li>Donne des ressources supplémentaires, matérielles, physiques ou mentales.</li><li>Crée un besoin urgent de retour aux sources et de repos.</li></ul><p><strong>Compulsions.</strong> Repos après une période d&#x27;intense activité. S&#x27;adonner à la flemme.</p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Récupération comme au terme de quelques nuits de repos.</li><li>Donne des ressources supplémentaires, matérielles, physiques ou mentales.</li><li>Crée un besoin urgent de retour aux sources et de repos.</li></ul><p><strong>Compulsions.</strong> Repos après une période d'intense activité. S'adonner à la flemme.</p>",
     "source": "Entre ciel et terre, p. 300",
     "voie": "voie-des-freres-marassa",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.g0bMhkfFArVT77cy",

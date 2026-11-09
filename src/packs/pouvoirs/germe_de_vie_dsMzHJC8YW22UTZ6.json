@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Recueille un germe permettant de créer un être vivant, de l&#x27;homme à la maladie.</li><li>Dépose un germe vivant qui se développera en quelques jours ou en quelques années.</li><li>Voit les germes (de maladie, de plantes, d&#x27;animal inséminé...).</li></ul><p><strong>Compulsions.</strong> Planter des graines. Acte sexuel.</p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Recueille un germe permettant de créer un être vivant, de l'homme à la maladie.</li><li>Dépose un germe vivant qui se développera en quelques jours ou en quelques années.</li><li>Voit les germes (de maladie, de plantes, d'animal inséminé...).</li></ul><p><strong>Compulsions.</strong> Planter des graines. Acte sexuel.</p>",
     "source": "Entre ciel et terre, p. 193",
     "voie": "voie-des-zemis",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.adV2aUWhmHXDCarX",

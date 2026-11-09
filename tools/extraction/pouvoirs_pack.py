@@ -44,7 +44,7 @@ def cle_voie(nom):
 
 
 def description(p):
-    e = html.escape
+    e = lambda s: html.escape(s, quote=False)
     parties = []
     if p["visions"]:
         parties.append("<p><strong>Visions</strong></p><ul>" + "".join(f"<li>{e(v)}</li>" for v in p["visions"]) + "</ul>")

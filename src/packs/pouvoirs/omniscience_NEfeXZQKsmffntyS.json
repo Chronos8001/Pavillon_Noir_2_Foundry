@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Accès à une information.</li><li>Connaissance du passé du lieu où l&#x27;on se trouve ou de la personne que l&#x27;on touche.</li><li>sur l&#x27;avenir du lieu où l&#x27;on se trouve ou de la personne que l&#x27;on touche.</li><li>Sait ce qui doit être connu à propos d&#x27;un contexte particulier.</li><li>Donne la sensation tangible que chaque acte est connu de Dieu et sera jugé.</li></ul><p><strong>Compulsions.</strong> Savoir ce qui se passe à quelques centaines de milles de là au même moment. Générer un événement et en annoncer la venue à l&#x27;avance.</p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Accès à une information.</li><li>Connaissance du passé du lieu où l'on se trouve ou de la personne que l'on touche.</li><li>sur l'avenir du lieu où l'on se trouve ou de la personne que l'on touche.</li><li>Sait ce qui doit être connu à propos d'un contexte particulier.</li><li>Donne la sensation tangible que chaque acte est connu de Dieu et sera jugé.</li></ul><p><strong>Compulsions.</strong> Savoir ce qui se passe à quelques centaines de milles de là au même moment. Générer un événement et en annoncer la venue à l'avance.</p>",
     "source": "Entre ciel et terre, p. 214",
     "voie": "voie-de-dieu",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.SPlB5GslKnZdeWKG",

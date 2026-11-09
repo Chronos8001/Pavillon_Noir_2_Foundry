@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Guide les brebis du Seigneur.</li><li>Pousse à rechercher un guide.</li><li>Désigne un guide ou chef à celui qui en cherche un.</li><li>Assure des bonnes intentions d&#x27;un guide ou chef.</li></ul><p><strong>Compulsions.</strong> Garder un groupe d&#x27;animaux insouciant. Nommer un chef à la tête de son groupe.</p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Guide les brebis du Seigneur.</li><li>Pousse à rechercher un guide.</li><li>Désigne un guide ou chef à celui qui en cherche un.</li><li>Assure des bonnes intentions d'un guide ou chef.</li></ul><p><strong>Compulsions.</strong> Garder un groupe d'animaux insouciant. Nommer un chef à la tête de son groupe.</p>",
     "source": "Entre ciel et terre, p. 213",
     "voie": "voie-de-dieu",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.SPlB5GslKnZdeWKG",

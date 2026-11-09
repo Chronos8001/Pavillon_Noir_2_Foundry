@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Le sol se dérobe sous les pieds de la victime.</li><li>Perte d&#x27;équilibre et vertiges.</li><li>La victime s&#x27;enfonce peu à peu dans le sol à chacun de ses mouvements, jusqu&#x27;à ce qu&#x27;elle soit engloutie ou que quelqu&#x27;un lui vienne en aide.</li></ul><p><strong>Compulsions.</strong> Marcher dans les marécages. Déséquilibrer quelqu&#x27;un près d&#x27;un précipice.</p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Le sol se dérobe sous les pieds de la victime.</li><li>Perte d'équilibre et vertiges.</li><li>La victime s'enfonce peu à peu dans le sol à chacun de ses mouvements, jusqu'à ce qu'elle soit engloutie ou que quelqu'un lui vienne en aide.</li></ul><p><strong>Compulsions.</strong> Marcher dans les marécages. Déséquilibrer quelqu'un près d'un précipice.</p>",
     "source": "Entre ciel et terre, p. 193",
     "voie": "voie-des-zemis",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.adV2aUWhmHXDCarX",

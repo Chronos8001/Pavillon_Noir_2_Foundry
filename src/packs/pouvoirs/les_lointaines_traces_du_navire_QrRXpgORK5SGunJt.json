@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Peut suivre un navire à la trace plusieurs jours après son passage.</li><li>Reconnaît un navire connu ou le gréement d&#x27;un navire d&#x27;après la trace d&#x27;écume que son Ichéiricou fait apparaître à ses yeux.</li><li>Fait apparaître (pour soi seulement) les traces d&#x27;écumes d&#x27;un navire.</li><li>Fait apparaître de fausses traces d&#x27;écume d&#x27;un navire.</li></ul><p><strong>Compulsions.</strong> Rattraper une embarcation prise en chasse. Retrouver des objets jetés à la mer par une embarcation.</p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Peut suivre un navire à la trace plusieurs jours après son passage.</li><li>Reconnaît un navire connu ou le gréement d'un navire d'après la trace d'écume que son Ichéiricou fait apparaître à ses yeux.</li><li>Fait apparaître (pour soi seulement) les traces d'écumes d'un navire.</li><li>Fait apparaître de fausses traces d'écume d'un navire.</li></ul><p><strong>Compulsions.</strong> Rattraper une embarcation prise en chasse. Retrouver des objets jetés à la mer par une embarcation.</p>",
     "source": "Entre ciel et terre, p. 179",
     "voie": "voie-d-icheiricou-pour-le-conseil",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.wiw3plsp6sATryBq",

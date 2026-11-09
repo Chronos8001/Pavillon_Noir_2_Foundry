@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Augmente la chaleur d&#x27;un feu ou d&#x27;un lieu, ou la rend insupportable.</li><li>Augmente soudainement la taille des flammes d&#x27;un feu.</li><li>Augmentation progressive de la chaleur ambiante.</li></ul><p><strong>Compulsions.</strong> Élever la température dans un lieu. Rester dans un lieu dans lequel la température naturelle est insupportable.</p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Augmente la chaleur d'un feu ou d'un lieu, ou la rend insupportable.</li><li>Augmente soudainement la taille des flammes d'un feu.</li><li>Augmentation progressive de la chaleur ambiante.</li></ul><p><strong>Compulsions.</strong> Élever la température dans un lieu. Rester dans un lieu dans lequel la température naturelle est insupportable.</p>",
     "source": "Entre ciel et terre, p. 204",
     "voie": "voie-des-cinq-soleils",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.LIzof8tOOXvNP2kT",

@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Lire l&#x27;avenir dans les cartes.</li><li>Lire l&#x27;avenir dans le mouvement des oiseaux.</li><li>Lire l&#x27;avenir dans les nombres.</li><li>Lire l&#x27;avenir dans les entrailles.</li><li>Lire l&#x27;avenir dans le marc de café.</li><li>Lire l&#x27;avenir dans une boule de cristal.</li><li>Lire l&#x27;avenir dans les lignes de la main.</li></ul><p><strong>Compulsions.</strong> S&#x27;entraîner à lire les lignes de la main. Agir conformément à la prédiction d&#x27;un jeu de tarot.</p><p><em>Règles particulières : voir Entre ciel et terre, p. 264.</em></p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Lire l'avenir dans les cartes.</li><li>Lire l'avenir dans le mouvement des oiseaux.</li><li>Lire l'avenir dans les nombres.</li><li>Lire l'avenir dans les entrailles.</li><li>Lire l'avenir dans le marc de café.</li><li>Lire l'avenir dans une boule de cristal.</li><li>Lire l'avenir dans les lignes de la main.</li></ul><p><strong>Compulsions.</strong> S'entraîner à lire les lignes de la main. Agir conformément à la prédiction d'un jeu de tarot.</p><p><em>Règles particulières : voir Entre ciel et terre, p. 264.</em></p>",
     "source": "Entre ciel et terre, p. 264",
     "voie": "voie-du-folklore",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.Iy4OYyIN7hI6KjNY",

@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Accélère les actions faites sur le long cours (prenant approximativement treize jours).</li><li>Ralentit les actions faites sur le long cours (prenant approximativement treize jours).</li><li>Donne la sensation de n&#x27;avoir rien fait au cours des treize derniers jours.</li><li>Rend fatigué suite à tout ce qu&#x27;on a accompli au cours des treize derniers jours (besoin de prendre un léger repos).</li><li>Contrôle des souvenirs relativement lointains (jusqu&#x27;à treize jours environ).</li><li>Modifie le dieu porteur de la trecena à venir.</li><li>Indique ce qui peut se passer dans la trecena qui vient.</li></ul><p><strong>Compulsions.</strong> Écrire un journal personnel détaillé pendant un mois.</p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Accélère les actions faites sur le long cours (prenant approximativement treize jours).</li><li>Ralentit les actions faites sur le long cours (prenant approximativement treize jours).</li><li>Donne la sensation de n'avoir rien fait au cours des treize derniers jours.</li><li>Rend fatigué suite à tout ce qu'on a accompli au cours des treize derniers jours (besoin de prendre un léger repos).</li><li>Contrôle des souvenirs relativement lointains (jusqu'à treize jours environ).</li><li>Modifie le dieu porteur de la trecena à venir.</li><li>Indique ce qui peut se passer dans la trecena qui vient.</li></ul><p><strong>Compulsions.</strong> Écrire un journal personnel détaillé pendant un mois.</p>",
     "source": "Entre ciel et terre, p. 200",
     "voie": "voie-du-calendrier",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.AFWMXMJdfCNP7hit",

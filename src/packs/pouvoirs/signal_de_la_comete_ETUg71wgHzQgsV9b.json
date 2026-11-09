@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Avertissement d&#x27;un danger ou d&#x27;un événement important par la venue d&#x27;une comète.</li><li>Venue d&#x27;une comète faisant croire à une catastrophe imminente.</li><li>Transmet un message par le passage d&#x27;une comète, que seul un allié pourra décoder.</li><li>Une comète guide quelques instants le boyer vers sa destination.</li><li>Diagnostique une maladie.</li><li>Donne le nom d&#x27;un assassin.</li><li>Rassure une personne une fois son mal connu.</li><li>Associe une aura maléfique à une personne dont on connaît le nom.</li></ul><p><strong>Compulsions.</strong> Accuser une personne des maux de tous. Découvrir le nom d&#x27;un criminel.</p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Avertissement d'un danger ou d'un événement important par la venue d'une comète.</li><li>Venue d'une comète faisant croire à une catastrophe imminente.</li><li>Transmet un message par le passage d'une comète, que seul un allié pourra décoder.</li><li>Une comète guide quelques instants le boyer vers sa destination.</li><li>Diagnostique une maladie.</li><li>Donne le nom d'un assassin.</li><li>Rassure une personne une fois son mal connu.</li><li>Associe une aura maléfique à une personne dont on connaît le nom.</li></ul><p><strong>Compulsions.</strong> Accuser une personne des maux de tous. Découvrir le nom d'un criminel.</p>",
     "source": "Entre ciel et terre, p. 177",
     "voie": "voie-d-icheiricou-pour-le-conseil",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.wiw3plsp6sATryBq",

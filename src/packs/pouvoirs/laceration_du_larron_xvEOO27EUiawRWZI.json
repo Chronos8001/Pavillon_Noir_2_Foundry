@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Punit un voleur connu de lacérations mortelles.</li><li>Marque un voleur inconnu par des lacérations visibles.</li><li>Marque à vie un voleur pour son méfait sous la forme d&#x27;une cicatrice visible que reconnaîtra tout Caraïbe.</li></ul><p><strong>Compulsions.</strong> Défigurer le premier voleur rencontré en lui lacérant le visage à coups de dents d&#x27;agouti.</p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Punit un voleur connu de lacérations mortelles.</li><li>Marque un voleur inconnu par des lacérations visibles.</li><li>Marque à vie un voleur pour son méfait sous la forme d'une cicatrice visible que reconnaîtra tout Caraïbe.</li></ul><p><strong>Compulsions.</strong> Défigurer le premier voleur rencontré en lui lacérant le visage à coups de dents d'agouti.</p>",
     "source": "Entre ciel et terre, p. 182",
     "voie": "voie-d-icheiricou-pour-la-protection-et-la-punition",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.yH60f20rPKBEP9j4",

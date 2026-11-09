@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Fait répéter les erreurs du passé.</li><li>Accroissement de la Gloire.</li><li>Connaissance du passé illustre des ancêtres de quelqu&#x27;un.</li><li>Attribution des connaissances et des Compétences de ses illustres ancêtres.</li></ul><p><strong>Compulsions.</strong> Réagir aux situations comme l&#x27;aurait fait un de ses ancêtres. Découverte d&#x27;une trace d&#x27;un savoir ancien.</p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Fait répéter les erreurs du passé.</li><li>Accroissement de la Gloire.</li><li>Connaissance du passé illustre des ancêtres de quelqu'un.</li><li>Attribution des connaissances et des Compétences de ses illustres ancêtres.</li></ul><p><strong>Compulsions.</strong> Réagir aux situations comme l'aurait fait un de ses ancêtres. Découverte d'une trace d'un savoir ancien.</p>",
     "source": "Entre ciel et terre, p. 180",
     "voie": "voie-d-icheiricou-pour-le-conseil",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.wiw3plsp6sATryBq",

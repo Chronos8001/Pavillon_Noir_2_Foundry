@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Donne le mauvais oeil (malchance).</li><li>Analyser un maléfice et trouver le pouvoir permettant de l&#x27;annuler.</li><li>Percevoir la magie d&#x27;origine humaine autour de lui.</li><li>En se concentrant sur un maléfice existant, peut voir par les yeux de celui qui l&#x27;a envoyé.</li><li>Donne au responsable d&#x27;un maléfice une atroce douleur oculaire.</li><li>Faire grossir l&#x27;oeil d&#x27;un prêtre proche.</li></ul><p><strong>Compulsions.</strong> Froncer les sourcils toute la journée, en faisant mine de jeter le mauvais oeil.</p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Donne le mauvais oeil (malchance).</li><li>Analyser un maléfice et trouver le pouvoir permettant de l'annuler.</li><li>Percevoir la magie d'origine humaine autour de lui.</li><li>En se concentrant sur un maléfice existant, peut voir par les yeux de celui qui l'a envoyé.</li><li>Donne au responsable d'un maléfice une atroce douleur oculaire.</li><li>Faire grossir l'oeil d'un prêtre proche.</li></ul><p><strong>Compulsions.</strong> Froncer les sourcils toute la journée, en faisant mine de jeter le mauvais oeil.</p>",
     "source": "Entre ciel et terre, p. 291",
     "voie": "voie-des-guedes",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.BJZUi8OCwtnsr9Ow",

@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Génération d&#x27;un litige entre deux parties.</li><li>Trouver la meilleure manière de rendre deux parties d &#x27;accord.</li><li>Régler un litige entre deux parties.</li></ul><p><strong>Compulsions.</strong> Conseiller avec succès deux parties en litige.</p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Génération d'un litige entre deux parties.</li><li>Trouver la meilleure manière de rendre deux parties d 'accord.</li><li>Régler un litige entre deux parties.</li></ul><p><strong>Compulsions.</strong> Conseiller avec succès deux parties en litige.</p>",
     "source": "Entre ciel et terre, p. 249",
     "voie": "voie-du-druidisme",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.444Fft7a0LtvOMIS",

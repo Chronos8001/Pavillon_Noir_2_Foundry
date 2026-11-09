@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Fait jaillir les idées.</li><li>Demande conseil à Atabeyra.</li><li>Rend un jardin propice à l&#x27;apparition de zémis de Yocahú.</li><li>Donne une idée à quelqu&#x27;un alors qu&#x27;il est persuadé que c&#x27;est la sienne.</li></ul><p><strong>Compulsions.</strong> Créer une oeuvre d&#x27;art. Faire croître une plante.</p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Fait jaillir les idées.</li><li>Demande conseil à Atabeyra.</li><li>Rend un jardin propice à l'apparition de zémis de Yocahú.</li><li>Donne une idée à quelqu'un alors qu'il est persuadé que c'est la sienne.</li></ul><p><strong>Compulsions.</strong> Créer une oeuvre d'art. Faire croître une plante.</p>",
     "source": "Entre ciel et terre, p. 192",
     "voie": "voie-des-zemis",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.adV2aUWhmHXDCarX",

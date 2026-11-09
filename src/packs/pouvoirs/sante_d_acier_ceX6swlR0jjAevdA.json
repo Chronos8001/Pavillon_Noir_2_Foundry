@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Immunité aux maladies.</li><li>Insensibilité au froid et à la chaleur.</li><li>Résistance à la douleur.</li><li>Infatigable.</li></ul><p><strong>Compulsions.</strong> Résister à une douleur intense. S&#x27;exposer au froid ou au soleil brûlant.</p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Immunité aux maladies.</li><li>Insensibilité au froid et à la chaleur.</li><li>Résistance à la douleur.</li><li>Infatigable.</li></ul><p><strong>Compulsions.</strong> Résister à une douleur intense. S'exposer au froid ou au soleil brûlant.</p>",
     "source": "Entre ciel et terre, p. 301",
     "voie": "voie-des-freres-marassa",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.g0bMhkfFArVT77cy",

@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Métamorphose en jaguar.</li><li>Projection de flamme.</li><li>Enroule dans un cordon de coton incandescent (donne la fièvre).</li><li>Attire les xapiripë, qui se sentiront en sécurité, protégés par l&#x27;esprit jaguar.</li></ul><p><strong>Compulsions.</strong> Jeter de l&#x27;huile dans le feu. Construire une maison et la suspendre au-dessus de soi.</p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Métamorphose en jaguar.</li><li>Projection de flamme.</li><li>Enroule dans un cordon de coton incandescent (donne la fièvre).</li><li>Attire les xapiripë, qui se sentiront en sécurité, protégés par l'esprit jaguar.</li></ul><p><strong>Compulsions.</strong> Jeter de l'huile dans le feu. Construire une maison et la suspendre au-dessus de soi.</p>",
     "source": "Entre ciel et terre, p. 189",
     "voie": "voie-des-xapiripe",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.uLmNntdGMAtLAIsE",

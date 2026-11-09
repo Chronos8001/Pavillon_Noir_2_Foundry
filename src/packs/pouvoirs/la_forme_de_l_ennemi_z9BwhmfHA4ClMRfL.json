@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Savoir comment se présentera l&#x27;ennemi.</li><li>Prend la forme exacte d&#x27;un ennemi.</li><li>Sait reconnaître un ennemi en le voyant.</li></ul><p><strong>Compulsions.</strong> Singer son ennemi pour mieux le comprendre. Créer des épouvantails ressemblant à l&#x27;ennemi pour lui faire peur.</p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Savoir comment se présentera l'ennemi.</li><li>Prend la forme exacte d'un ennemi.</li><li>Sait reconnaître un ennemi en le voyant.</li></ul><p><strong>Compulsions.</strong> Singer son ennemi pour mieux le comprendre. Créer des épouvantails ressemblant à l'ennemi pour lui faire peur.</p>",
     "source": "Entre ciel et terre, p. 172",
     "voie": "voie-d-icheiricou-pour-la-guerre",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.ua948TzRBv4MWuy4",

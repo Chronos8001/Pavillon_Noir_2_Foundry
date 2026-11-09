@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Voyageur perdu.</li><li>Retrouver sa route.</li><li>Récupération des informations nécessaires sur un trajet.</li><li>Sensation de sécurité pour le voyageur.</li></ul><p><strong>Compulsions.</strong> Retrouver son chemin alors qu&#x27;on était perdu. Préparation complète d&#x27;un voyage en termes de connaissance des lieux traversés.</p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Voyageur perdu.</li><li>Retrouver sa route.</li><li>Récupération des informations nécessaires sur un trajet.</li><li>Sensation de sécurité pour le voyageur.</li></ul><p><strong>Compulsions.</strong> Retrouver son chemin alors qu'on était perdu. Préparation complète d'un voyage en termes de connaissance des lieux traversés.</p>",
     "source": "Entre ciel et terre, p. 248",
     "voie": "voie-du-druidisme",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.444Fft7a0LtvOMIS",

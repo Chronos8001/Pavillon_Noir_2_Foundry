@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Crée une union entre deux peuples quels que soient leurs intérêts divergents.</li><li>Enlève toute motivation pour se battre.</li><li>Donne l&#x27;impression d&#x27;être seul contre tous.</li><li>Rallier les alliés des ennemis à sa cause.</li><li>Accord et compréhension entre les peuples.</li></ul><p><strong>Compulsions.</strong> Réunir deux nations différentes pour une expédition. Faire une confiance aveugle à quelqu&#x27;un qui s&#x27;est toujours montré ennemi.</p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Crée une union entre deux peuples quels que soient leurs intérêts divergents.</li><li>Enlève toute motivation pour se battre.</li><li>Donne l'impression d'être seul contre tous.</li><li>Rallier les alliés des ennemis à sa cause.</li><li>Accord et compréhension entre les peuples.</li></ul><p><strong>Compulsions.</strong> Réunir deux nations différentes pour une expédition. Faire une confiance aveugle à quelqu'un qui s'est toujours montré ennemi.</p>",
     "source": "Entre ciel et terre, p. 176",
     "voie": "voie-d-icheiricou-pour-la-guerre",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.ua948TzRBv4MWuy4",

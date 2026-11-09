@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Fait tomber les poils, la peau, les ongles, les dents et les cheveux.</li><li>Fait tomber les feuilles d&#x27;un arbre.</li><li>Fauche les herbes et arbustes.</li><li>Les fait repousser s&#x27;ils sont tombés du fait d&#x27;un maléfice ou de l&#x27;âge.</li></ul><p><strong>Compulsions.</strong> Se raser les cheveux. Arracher les cheveux de quelqu&#x27;un.</p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Fait tomber les poils, la peau, les ongles, les dents et les cheveux.</li><li>Fait tomber les feuilles d'un arbre.</li><li>Fauche les herbes et arbustes.</li><li>Les fait repousser s'ils sont tombés du fait d'un maléfice ou de l'âge.</li></ul><p><strong>Compulsions.</strong> Se raser les cheveux. Arracher les cheveux de quelqu'un.</p>",
     "source": "Entre ciel et terre, p. 291",
     "voie": "voie-des-guedes",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.BJZUi8OCwtnsr9Ow",

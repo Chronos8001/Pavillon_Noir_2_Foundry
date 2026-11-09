@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Sait à qui appartient un objet ou un esclave.</li><li>Voit l&#x27;esprit à l&#x27;origine de la possession d&#x27;une personne.</li><li>La victime se sent possédée.</li><li>Extirpe l&#x27;esprit qui possède une personne.</li><li>Possession forcée d&#x27;une personne par un lwa.</li></ul><p><strong>Compulsions.</strong> Convaincre une personne qu&#x27;elle est possédée. Assister à la possession d&#x27;un autre vaudouisant.</p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Sait à qui appartient un objet ou un esclave.</li><li>Voit l'esprit à l'origine de la possession d'une personne.</li><li>La victime se sent possédée.</li><li>Extirpe l'esprit qui possède une personne.</li><li>Possession forcée d'une personne par un lwa.</li></ul><p><strong>Compulsions.</strong> Convaincre une personne qu'elle est possédée. Assister à la possession d'un autre vaudouisant.</p>",
     "source": "Entre ciel et terre, p. 295",
     "voie": "voie-de-papa-legba",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.cLAnYvfRTW6M1YmZ",

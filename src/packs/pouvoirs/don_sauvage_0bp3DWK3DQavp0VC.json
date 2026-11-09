@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Donne un besoin croissant et irrépressible de revenir à l&#x27;état animal.</li><li>Donne des caractéristiques animales perçues de façon positive.</li><li>Exploitation sauvage de ses dons.</li><li>Crée de l&#x27;admiration pour les comportements primaux.</li></ul><p><strong>Compulsions.</strong> Dresser un animal pour qu&#x27;il se comporte au maximum comme un être humain. Forcer un être humain à expérimenter la vie animale.</p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Donne un besoin croissant et irrépressible de revenir à l'état animal.</li><li>Donne des caractéristiques animales perçues de façon positive.</li><li>Exploitation sauvage de ses dons.</li><li>Crée de l'admiration pour les comportements primaux.</li></ul><p><strong>Compulsions.</strong> Dresser un animal pour qu'il se comporte au maximum comme un être humain. Forcer un être humain à expérimenter la vie animale.</p>",
     "source": "Entre ciel et terre, p. 311",
     "voie": "voie-de-cousin-zaka",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.lP05NKFNMs90d9GB",

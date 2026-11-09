@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Punir quelqu&#x27;un ayant transgressé ses interdits moraux en lui infligeant une déconsidération sociale importante.</li><li>Pousser les cibles à blâmer les personnes présentes qui le méritent.</li><li>Supprimer les effets négatifs d&#x27;un blâme (non magique) en termes de réputation.</li></ul><p><strong>Compulsions.</strong> S&#x27;arranger pour qu&#x27;une personne agissant mal soit déconsidérée sans qu&#x27;elle s&#x27;en aperçoive.</p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Punir quelqu'un ayant transgressé ses interdits moraux en lui infligeant une déconsidération sociale importante.</li><li>Pousser les cibles à blâmer les personnes présentes qui le méritent.</li><li>Supprimer les effets négatifs d'un blâme (non magique) en termes de réputation.</li></ul><p><strong>Compulsions.</strong> S'arranger pour qu'une personne agissant mal soit déconsidérée sans qu'elle s'en aperçoive.</p>",
     "source": "Entre ciel et terre, p. 251",
     "voie": "voie-du-druidisme",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.444Fft7a0LtvOMIS",

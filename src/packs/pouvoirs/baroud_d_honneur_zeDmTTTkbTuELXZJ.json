@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Tout le monde se battra jusqu&#x27;au dernier.</li><li>Combat après la mort même, jusqu&#x27;à la fin du combat.</li><li>Donne du courage dans une situation désespérée.</li><li>Renversement d&#x27;une situation désespérée alors que le camp en infériorité se bat férocement.</li></ul><p><strong>Compulsions.</strong> Voir un animal se battre après avoir été mortellement blessé. Continuer à se battre alors que l&#x27;issue du combat penche en faveur de l&#x27;adversaire.</p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Tout le monde se battra jusqu'au dernier.</li><li>Combat après la mort même, jusqu'à la fin du combat.</li><li>Donne du courage dans une situation désespérée.</li><li>Renversement d'une situation désespérée alors que le camp en infériorité se bat férocement.</li></ul><p><strong>Compulsions.</strong> Voir un animal se battre après avoir été mortellement blessé. Continuer à se battre alors que l'issue du combat penche en faveur de l'adversaire.</p>",
     "source": "Entre ciel et terre, p. 308",
     "voie": "voie-d-ogou",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.nT1z9NA3nij69fC3",

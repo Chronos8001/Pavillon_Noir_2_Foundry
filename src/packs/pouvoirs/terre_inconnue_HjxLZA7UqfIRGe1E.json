@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Rend une contrée inconnue effrayante ou attirante.</li><li>Attise les désirs de découverte.</li><li>Reconnaît une terre inconnue.</li><li>Fait disparaître un lieu de la mémoire d&#x27;une personne.</li></ul><p><strong>Compulsions.</strong> Explorer un territoire inconnu. Dissuader de pénétrer dans un territoire inconnu.</p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Rend une contrée inconnue effrayante ou attirante.</li><li>Attise les désirs de découverte.</li><li>Reconnaît une terre inconnue.</li><li>Fait disparaître un lieu de la mémoire d'une personne.</li></ul><p><strong>Compulsions.</strong> Explorer un territoire inconnu. Dissuader de pénétrer dans un territoire inconnu.</p>",
     "source": "Entre ciel et terre, p. 178",
     "voie": "voie-d-icheiricou-pour-le-conseil",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.wiw3plsp6sATryBq",

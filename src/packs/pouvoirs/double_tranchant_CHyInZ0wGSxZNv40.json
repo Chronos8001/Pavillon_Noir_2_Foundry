@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Pas de réussite sans échec, et inversement.</li><li>Victoire amère ou à la Pyrrhus.</li><li>Choisit les effets indésirables d&#x27;une décision.</li><li>Arme aussi dangereuse pour son porteur que pour son ennemi.</li><li>Découvre des agents doubles.</li><li>Rend tranchant comme une lame de rasoir un objet qui ne l&#x27;est pas ou peu.</li></ul><p><strong>Compulsions.</strong> Rendre coupant un objet mou à l&#x27;origine. Prévoir les effets secondaires indésirables d&#x27;une action.</p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Pas de réussite sans échec, et inversement.</li><li>Victoire amère ou à la Pyrrhus.</li><li>Choisit les effets indésirables d'une décision.</li><li>Arme aussi dangereuse pour son porteur que pour son ennemi.</li><li>Découvre des agents doubles.</li><li>Rend tranchant comme une lame de rasoir un objet qui ne l'est pas ou peu.</li></ul><p><strong>Compulsions.</strong> Rendre coupant un objet mou à l'origine. Prévoir les effets secondaires indésirables d'une action.</p>",
     "source": "Entre ciel et terre, p. 299",
     "voie": "voie-de-papa-legba",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.cLAnYvfRTW6M1YmZ",

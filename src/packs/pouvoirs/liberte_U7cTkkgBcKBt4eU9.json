@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Donne l&#x27;illusion de la liberté.</li><li>Donne une soif inextinguible de liberté.</li><li>Incite à conquérir sa liberté.</li><li>Prive de liberté, emprisonne.</li></ul><p><strong>Compulsions.</strong> Redonner sa liberté à un esclave. Subir un emprisonnement.</p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Donne l'illusion de la liberté.</li><li>Donne une soif inextinguible de liberté.</li><li>Incite à conquérir sa liberté.</li><li>Prive de liberté, emprisonne.</li></ul><p><strong>Compulsions.</strong> Redonner sa liberté à un esclave. Subir un emprisonnement.</p>",
     "source": "Entre ciel et terre, p. 308",
     "voie": "voie-d-ogou",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.nT1z9NA3nij69fC3",

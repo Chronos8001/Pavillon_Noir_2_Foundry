@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Baiser qui apaise la douleur.</li><li>Baiser qui fait régresser définitivement une blessure.</li><li>Baiser qui redonne du courage.</li><li>Baiser qui fait tomber la colère.</li></ul><p><strong>Compulsions.</strong> Embrasser un enfant qui s&#x27;est fait mal. Réaliser un baume pour une blessure.</p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Baiser qui apaise la douleur.</li><li>Baiser qui fait régresser définitivement une blessure.</li><li>Baiser qui redonne du courage.</li><li>Baiser qui fait tomber la colère.</li></ul><p><strong>Compulsions.</strong> Embrasser un enfant qui s'est fait mal. Réaliser un baume pour une blessure.</p>",
     "source": "Entre ciel et terre, p. 285",
     "voie": "voie-d-erzulie",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.0cPd7IIiO1TgbK81",

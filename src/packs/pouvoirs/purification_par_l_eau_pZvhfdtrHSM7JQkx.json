@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Purifier de l&#x27;eau douce.</li><li>Purifier de la nourriture.</li><li>Purifier les plaies ou la peau d&#x27;un malade.</li></ul><p><strong>Compulsions.</strong> Boire de l&#x27;eau grouillant de vers. Survivre Po à un empoisonnement ou à une blessure non soignée.</p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Purifier de l'eau douce.</li><li>Purifier de la nourriture.</li><li>Purifier les plaies ou la peau d'un malade.</li></ul><p><strong>Compulsions.</strong> Boire de l'eau grouillant de vers. Survivre Po à un empoisonnement ou à une blessure non soignée.</p>",
     "source": "Entre ciel et terre, p. 277",
     "voie": "voie-d-agwe",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.6bwsVNHhFxnjtf9Q",

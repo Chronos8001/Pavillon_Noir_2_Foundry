@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Création d&#x27;un être hybride à partir de deux êtres.</li><li>Création d&#x27;un groupe soudé et cohérent à partir de deux groupes quelconques.</li><li>Fusion de deux objets l&#x27;un dans l&#x27;autre, afin de les rendre indissociables et solides.</li><li>Fixation d&#x27;un être ou objet à un autre.</li><li>Passage d&#x27;une matière de l&#x27;état solide à l&#x27;état liquide.</li><li>Élévation de la température.</li></ul><p><strong>Compulsions.</strong> Faire fondre de l&#x27;acier. Tenter un croisement d&#x27;espèces différentes.</p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Création d'un être hybride à partir de deux êtres.</li><li>Création d'un groupe soudé et cohérent à partir de deux groupes quelconques.</li><li>Fusion de deux objets l'un dans l'autre, afin de les rendre indissociables et solides.</li><li>Fixation d'un être ou objet à un autre.</li><li>Passage d'une matière de l'état solide à l'état liquide.</li><li>Élévation de la température.</li></ul><p><strong>Compulsions.</strong> Faire fondre de l'acier. Tenter un croisement d'espèces différentes.</p>",
     "source": "Entre ciel et terre, p. 303",
     "voie": "voie-des-freres-marassa",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.g0bMhkfFArVT77cy",

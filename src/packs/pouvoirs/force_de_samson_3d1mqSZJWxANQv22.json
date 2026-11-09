@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Décuple la force.</li><li>Enlève toute force à qui n&#x27;a pas ou plus de cheveux.</li><li>Enlève toute force à qui est entre les mains d&#x27;une femme.</li><li>Écroulement d&#x27;un bâtiment à colonnes.</li></ul><p><strong>Compulsions.</strong> Raser le crâne d&#x27;un colosse pendant son sommeil. Faire s&#x27;écrouler un bâtiment abritant des ennemis de la Foi.</p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Décuple la force.</li><li>Enlève toute force à qui n'a pas ou plus de cheveux.</li><li>Enlève toute force à qui est entre les mains d'une femme.</li><li>Écroulement d'un bâtiment à colonnes.</li></ul><p><strong>Compulsions.</strong> Raser le crâne d'un colosse pendant son sommeil. Faire s'écrouler un bâtiment abritant des ennemis de la Foi.</p>",
     "source": "Entre ciel et terre, p. 211",
     "voie": "voie-de-dieu",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.SPlB5GslKnZdeWKG",

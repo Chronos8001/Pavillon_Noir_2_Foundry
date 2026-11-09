@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Faire une relique d&#x27;un ossement d&#x27;une personne vertueuse.</li></ul><p><strong>Compulsions.</strong> Trouver les ossements d&#x27;un saint.</p><p><em>Règles particulières : voir Entre ciel et terre, p. 212.</em></p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Faire une relique d'un ossement d'une personne vertueuse.</li></ul><p><strong>Compulsions.</strong> Trouver les ossements d'un saint.</p><p><em>Règles particulières : voir Entre ciel et terre, p. 212.</em></p>",
     "source": "Entre ciel et terre, p. 212",
     "voie": "voie-de-dieu",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.SPlB5GslKnZdeWKG",

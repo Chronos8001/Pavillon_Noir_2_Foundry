@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Imitation de n&#x27;importe quel son.</li><li>Imitation de la voix.</li><li>Se faire passer pour quelqu&#x27;un d&#x27;autre.</li><li>Fait chanter les oiseaux pour imiter une ambiance.</li></ul><p><strong>Compulsions.</strong> Imiter avec succès le bruit d&#x27;un animal à un moment utile. Mission d&#x27;infiltration.</p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Imitation de n'importe quel son.</li><li>Imitation de la voix.</li><li>Se faire passer pour quelqu'un d'autre.</li><li>Fait chanter les oiseaux pour imiter une ambiance.</li></ul><p><strong>Compulsions.</strong> Imiter avec succès le bruit d'un animal à un moment utile. Mission d'infiltration.</p>",
     "source": "Entre ciel et terre, p. 186",
     "voie": "voie-des-xapiripe",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.uLmNntdGMAtLAIsE",

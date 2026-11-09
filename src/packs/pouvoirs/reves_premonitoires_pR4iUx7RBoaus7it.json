@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Fait des rêves permettant d&#x27;éclairer le passé.</li><li>Fait des rêves permettant de prédire l&#x27;avenir.</li><li>Terrifie sa proie par des rêves qu&#x27;elle croit prémonitoires.</li><li>Donne à sa proie des rêves qu&#x27;elle croit prémonitoires.</li></ul><p><strong>Compulsions.</strong> Enquêter pour vérifier si un rêve contient des fragments de vérité. Expliquer le rêve de quelqu&#x27;un comme s&#x27;il s&#x27;agissait d&#x27;une vision prophétique.</p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Fait des rêves permettant d'éclairer le passé.</li><li>Fait des rêves permettant de prédire l'avenir.</li><li>Terrifie sa proie par des rêves qu'elle croit prémonitoires.</li><li>Donne à sa proie des rêves qu'elle croit prémonitoires.</li></ul><p><strong>Compulsions.</strong> Enquêter pour vérifier si un rêve contient des fragments de vérité. Expliquer le rêve de quelqu'un comme s'il s'agissait d'une vision prophétique.</p>",
     "source": "Entre ciel et terre, p. 291",
     "voie": "voie-des-guedes",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.BJZUi8OCwtnsr9Ow",

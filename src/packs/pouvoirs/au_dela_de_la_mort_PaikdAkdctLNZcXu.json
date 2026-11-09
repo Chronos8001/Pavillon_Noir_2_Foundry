@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Permet de voir et de communiquer avec l&#x27;esprit des guerriers morts au combat.</li><li>Rallie les guerriers morts au combat pour combattre de son côté.</li><li>Donne la sensation que le prêtre ou ses hommes poursuivront leurs adversaires de leur malédiction, s&#x27;ils meurent.</li><li>Permet de mourir sciemment et de revenir du côté des vivants.</li><li>Les hommes morts au combat se relèvent.</li></ul><p><strong>Compulsions.</strong> Dresser des cadavres pour effrayer l&#x27;ennemi. Déduire des blessures d&#x27;un mort la façon dont il a succombé.</p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Permet de voir et de communiquer avec l'esprit des guerriers morts au combat.</li><li>Rallie les guerriers morts au combat pour combattre de son côté.</li><li>Donne la sensation que le prêtre ou ses hommes poursuivront leurs adversaires de leur malédiction, s'ils meurent.</li><li>Permet de mourir sciemment et de revenir du côté des vivants.</li><li>Les hommes morts au combat se relèvent.</li></ul><p><strong>Compulsions.</strong> Dresser des cadavres pour effrayer l'ennemi. Déduire des blessures d'un mort la façon dont il a succombé.</p>",
     "source": "Entre ciel et terre, p. 174",
     "voie": "voie-d-icheiricou-pour-la-guerre",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.ua948TzRBv4MWuy4",

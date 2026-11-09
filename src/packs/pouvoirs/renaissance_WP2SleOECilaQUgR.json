@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Faire renaître un mort dans la peau d&#x27;un nouveau-né.</li><li>Réapparition de quelque chose de désuet ou mort.</li><li>Rend quelque chose ou quelqu&#x27;un identique à ce qu&#x27;il était avant un événement.</li><li>Intérêt pour un lointain passé.</li><li>Recomposition lente à partir des cendres.</li></ul><p><strong>Compulsions.</strong> Déterrer des vestiges du passé. Restaurer un objet abîmé.</p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Faire renaître un mort dans la peau d'un nouveau-né.</li><li>Réapparition de quelque chose de désuet ou mort.</li><li>Rend quelque chose ou quelqu'un identique à ce qu'il était avant un événement.</li><li>Intérêt pour un lointain passé.</li><li>Recomposition lente à partir des cendres.</li></ul><p><strong>Compulsions.</strong> Déterrer des vestiges du passé. Restaurer un objet abîmé.</p>",
     "source": "Entre ciel et terre, p. 304",
     "voie": "voie-des-freres-marassa",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.g0bMhkfFArVT77cy",

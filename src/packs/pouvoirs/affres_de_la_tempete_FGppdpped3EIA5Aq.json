@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Multiplication des péripéties et des dangers d&#x27;un voyage.</li><li>Ralentir un voyage.</li><li>Donner une terreur des conflits.</li></ul><p><strong>Compulsions.</strong> Traverser des éléments climatiques déchaînés. Saper le moral de ses proches en plein chaos.</p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Multiplication des péripéties et des dangers d'un voyage.</li><li>Ralentir un voyage.</li><li>Donner une terreur des conflits.</li></ul><p><strong>Compulsions.</strong> Traverser des éléments climatiques déchaînés. Saper le moral de ses proches en plein chaos.</p>",
     "source": "Entre ciel et terre, p. 278",
     "voie": "voie-d-agwe",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.6bwsVNHhFxnjtf9Q",

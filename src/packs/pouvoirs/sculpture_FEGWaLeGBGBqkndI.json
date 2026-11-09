@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Modèle le feu, le vent, l&#x27;eau, la terre ou la pierre à sa guise.</li><li>Crée de vastes tourbillons dans l&#x27;eau.</li><li>Inspiration pour la sculpture.</li></ul><p><strong>Compulsions.</strong> Créer un objet forçant l&#x27;air ou l&#x27;eau à tourbillonner. Naviguer sur un navire à voile.</p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Modèle le feu, le vent, l'eau, la terre ou la pierre à sa guise.</li><li>Crée de vastes tourbillons dans l'eau.</li><li>Inspiration pour la sculpture.</li></ul><p><strong>Compulsions.</strong> Créer un objet forçant l'air ou l'eau à tourbillonner. Naviguer sur un navire à voile.</p>",
     "source": "Entre ciel et terre, p. 207",
     "voie": "voie-des-cinq-soleils",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.LIzof8tOOXvNP2kT",

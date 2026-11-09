@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Rend étouffant l&#x27;absence de rayon du soleil en journée.</li><li>Redonne toute sa vitalité en s&#x27;exposant au soleil.</li><li>Permet de respirer sous l&#x27;eau, sous la terre ou dans les flammes.</li><li>Donne un odorat très développé.</li></ul><p><strong>Compulsions.</strong> Rester longtemps immobile sous le soleil. Inhaler de l&#x27;eau.</p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Rend étouffant l'absence de rayon du soleil en journée.</li><li>Redonne toute sa vitalité en s'exposant au soleil.</li><li>Permet de respirer sous l'eau, sous la terre ou dans les flammes.</li><li>Donne un odorat très développé.</li></ul><p><strong>Compulsions.</strong> Rester longtemps immobile sous le soleil. Inhaler de l'eau.</p>",
     "source": "Entre ciel et terre, p. 204",
     "voie": "voie-des-cinq-soleils",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.LIzof8tOOXvNP2kT",

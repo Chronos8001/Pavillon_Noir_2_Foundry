@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Peau brûlant comme le magma en fusion.</li><li>Fonte des neiges.</li><li>Mer bouillante.</li><li>Contorsions.</li><li>Prendre n&#x27;importe quelle forme.</li><li>Vigueur surhumaine.</li><li>Courage.</li><li>Coup infaillible.</li></ul><p><strong>Compulsions.</strong> Entrer dans de l&#x27;eau bouillante. Affronter seul plus de cinq ennemis armés.</p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Peau brûlant comme le magma en fusion.</li><li>Fonte des neiges.</li><li>Mer bouillante.</li><li>Contorsions.</li><li>Prendre n'importe quelle forme.</li><li>Vigueur surhumaine.</li><li>Courage.</li><li>Coup infaillible.</li></ul><p><strong>Compulsions.</strong> Entrer dans de l'eau bouillante. Affronter seul plus de cinq ennemis armés.</p>",
     "source": "Entre ciel et terre, p. 253",
     "voie": "voie-du-druidisme",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.444Fft7a0LtvOMIS",

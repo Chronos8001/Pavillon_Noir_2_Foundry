@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Dégénérescence d&#x27;une plante.</li><li>Perte de vertu d&#x27;une plante.</li><li>Modification des vertus d&#x27;une plante.</li><li>Modification de la pousse d&#x27;une plante (racines aériennes, vitesse de croissance, etc.).</li></ul><p><strong>Compulsions.</strong> Étudier les propriétés d&#x27;un végétal sous toutes ses formes. Trouver le remède à un poison.</p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Dégénérescence d'une plante.</li><li>Perte de vertu d'une plante.</li><li>Modification des vertus d'une plante.</li><li>Modification de la pousse d'une plante (racines aériennes, vitesse de croissance, etc.).</li></ul><p><strong>Compulsions.</strong> Étudier les propriétés d'un végétal sous toutes ses formes. Trouver le remède à un poison.</p>",
     "source": "Entre ciel et terre, p. 302",
     "voie": "voie-des-freres-marassa",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.g0bMhkfFArVT77cy",

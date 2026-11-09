@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Les hommes énoncent leur serment en présence du druide, qui le valide. Celui de ces hommes qui violera le serment connaîtra une mort infligée par les forces de la nature.</li></ul><p><strong>Compulsions.</strong> Donner à quelqu&#x27;un qui a violé un serment une mort d&#x27;apparence naturelle.</p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Les hommes énoncent leur serment en présence du druide, qui le valide. Celui de ces hommes qui violera le serment connaîtra une mort infligée par les forces de la nature.</li></ul><p><strong>Compulsions.</strong> Donner à quelqu'un qui a violé un serment une mort d'apparence naturelle.</p>",
     "source": "Entre ciel et terre, p. 251",
     "voie": "voie-du-druidisme",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.444Fft7a0LtvOMIS",

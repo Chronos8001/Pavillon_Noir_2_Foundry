@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Détermine ce qu&#x27;il y a de plus nuisible au sein d&#x27;un groupe, d&#x27;un lieu, lors d&#x27;un événement, etc.</li><li>Attire sur un groupe la pire difficulté qui puisse lui arriver, sans assurer pour autant qu&#x27;il périsse.</li></ul><p><strong>Compulsions.</strong> Attirer les pires ennuis sur son groupe. Trouver l&#x27;animal le plus dangereux d&#x27;une île.</p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Détermine ce qu'il y a de plus nuisible au sein d'un groupe, d'un lieu, lors d'un événement, etc.</li><li>Attire sur un groupe la pire difficulté qui puisse lui arriver, sans assurer pour autant qu'il périsse.</li></ul><p><strong>Compulsions.</strong> Attirer les pires ennuis sur son groupe. Trouver l'animal le plus dangereux d'une île.</p>",
     "source": "Entre ciel et terre, p. 179",
     "voie": "voie-d-icheiricou-pour-le-conseil",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.wiw3plsp6sATryBq",

@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Le druide s&#x27;endort et se réveille avec la réponse à la question qu&#x27;il s&#x27;est posée au moment de s&#x27;endormir.</li><li>Donne l&#x27;illusion de connaître.</li><li>Donne la soif de connaissance.</li></ul><p><strong>Compulsions.</strong> Écouter une histoire, s&#x27;endormir et la raconter au réveil. Parler d&#x27;un sujet sans rien y connaître.</p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Le druide s'endort et se réveille avec la réponse à la question qu'il s'est posée au moment de s'endormir.</li><li>Donne l'illusion de connaître.</li><li>Donne la soif de connaissance.</li></ul><p><strong>Compulsions.</strong> Écouter une histoire, s'endormir et la raconter au réveil. Parler d'un sujet sans rien y connaître.</p>",
     "source": "Entre ciel et terre, p. 250",
     "voie": "voie-du-druidisme",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.444Fft7a0LtvOMIS",

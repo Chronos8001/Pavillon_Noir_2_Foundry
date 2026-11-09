@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Fait ressentir des regrets pour une action non accomplie alors que le jour du calendrier y était propice.</li><li>Empêche d&#x27;accomplir ce que le jour du calendrier incite à faire.</li></ul><p><strong>Compulsions.</strong> Faire ce que la trecena du calendrier incite à faire, mais lors de la trecena suivante.</p><p><em>Règles particulières : voir Entre ciel et terre, p. 199.</em></p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Fait ressentir des regrets pour une action non accomplie alors que le jour du calendrier y était propice.</li><li>Empêche d'accomplir ce que le jour du calendrier incite à faire.</li></ul><p><strong>Compulsions.</strong> Faire ce que la trecena du calendrier incite à faire, mais lors de la trecena suivante.</p><p><em>Règles particulières : voir Entre ciel et terre, p. 199.</em></p>",
     "source": "Entre ciel et terre, p. 199",
     "voie": "voie-du-calendrier",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.AFWMXMJdfCNP7hit",

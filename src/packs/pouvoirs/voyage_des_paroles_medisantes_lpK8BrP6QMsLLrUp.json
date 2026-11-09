@@ -5,7 +5,7 @@
   "type": "pouvoir",
   "img": "icons/svg/aura.svg",
   "system": {
-    "description": "<p><strong>Visions</strong></p><ul><li>Entend les médisances de loin.</li><li>Fait entendre à une personne éloignée des paroles médisantes, qu&#x27;elle attribuera à une personne proche d&#x27;elle.</li><li>Répand une rumeur comme une traînée de poudre sur une vaste région.</li><li>Donne une quête à quelqu&#x27;un.</li><li>Change l&#x27;objet d&#x27;une quête.</li><li>Conseils d&#x27;Ichéiricou pour l&#x27;accomplissement d&#x27;une quête.</li></ul><p><strong>Compulsions.</strong> Se fixer une quête et l&#x27;accomplir. Demander conseil à son Ichéiricou avant de partir à l&#x27;aventure.</p>",
+    "description": "<p><strong>Visions</strong></p><ul><li>Entend les médisances de loin.</li><li>Fait entendre à une personne éloignée des paroles médisantes, qu'elle attribuera à une personne proche d'elle.</li><li>Répand une rumeur comme une traînée de poudre sur une vaste région.</li><li>Donne une quête à quelqu'un.</li><li>Change l'objet d'une quête.</li><li>Conseils d'Ichéiricou pour l'accomplissement d'une quête.</li></ul><p><strong>Compulsions.</strong> Se fixer une quête et l'accomplir. Demander conseil à son Ichéiricou avant de partir à l'aventure.</p>",
     "source": "Entre ciel et terre, p. 178",
     "voie": "voie-d-icheiricou-pour-le-conseil",
     "voieUuid": "Compendium.pavillon-noir-2.voies.Item.wiw3plsp6sATryBq",
