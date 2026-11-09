@@ -12,7 +12,9 @@
       "avantage": "Avantage / Faiblesse",
       "manoeuvre": "Manœuvre d'escrime",
       "marchandise": "Marchandise",
-      "historique": "Historique"
+      "historique": "Historique",
+      "voie": "Voie d'illumination",
+      "pouvoir": "Pouvoir sacré"
     }
   }
 }

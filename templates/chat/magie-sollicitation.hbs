@@ -1,0 +1,19 @@
+<div class="pn2-card pn2-magie">
+  <header class="card-header">
+    <h3>{{action}} — sollicitation n° {{lancer.n}}</h3>
+    <div class="sous-titre">{{voie}}</div>
+  </header>
+  <div class="resultat {{#if (eq lancer.resultat "succes")}}reussite{{else}}echec{{/if}}">
+    <span class="d10">d10 : <strong>{{lancer.valeur}}</strong></span>
+    <span>{{#if (eq lancer.resultat "succes")}}Succès sacré{{else}}Colère divine{{/if}}</span>
+  </div>
+  <div class="hint">Acte en cours : {{succes}} Succès sacré(s), {{colereGagnee}} Colère gagnée.</div>
+  {{#if effet}}
+    {{#if (eq effet.type "detachement")}}
+      <p>Détachement réussi : « {{effet.pouvoir.nom}} » quitte le Chemin d'illumination. Niveau de transe {{effet.niveau}}.</p>
+    {{else}}
+      <p>{{#if (eq effet.type "entree")}}Entrée en Transe{{else}}Ascension{{/if}} réussie : « {{effet.pouvoir.nom}} » (Puissance {{effet.pouvoir.puissance}}) rejoint le Chemin d'illumination. Niveau de transe {{effet.niveau}}.</p>
+    {{/if}}
+  {{/if}}
+  {{#if rejet}}<p class="alerte">Rejet ! La divinité repousse le personnage : la Transe prend fin.</p>{{/if}}
+</div>

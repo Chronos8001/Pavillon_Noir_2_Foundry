@@ -1,4 +1,7 @@
 import { PN2 } from "../config.mjs";
+import { cleVoie } from "../magie/regles.mjs";
+
+export { cleVoie };
 
 const f = foundry.data.fields;
 const int = (initial = 0, opts = {}) => new f.NumberField({ required: true, integer: true, initial, ...opts });
@@ -143,6 +146,42 @@ export class HistoriqueData extends BaseItemData {
       religionNom: str(""),
       points: int(12, { min: 0 }),     // professions : points à répartir
       note: str("")
+    };
+  }
+}
+
+/**
+ * Voie d'illumination (Entre ciel et terre). Possédée par un personnage, elle porte ses valeurs
+ * propres : il existe une Foi / Connaissance des Mystères par Voie (p. 90), et une Affinité.
+ */
+export class VoieData extends BaseItemData {
+  static defineSchema() {
+    return {
+      ...super.defineSchema(),
+      cle: str(""),               // identifiant de la Voie (vide : déduit du nom), repris par les Pouvoirs
+      religion: str(""),          // religion de rattachement
+      groupeColere: str(""),      // Colère partagée (vide : groupe par défaut de la religion)
+      foi: int(0, { min: 0 }),    // religions de communion
+      mysteres: int(0, { min: 0 }), // religions de possession : Connaissance des Mystères
+      affinite: int(0),
+      rites: str("")              // rappel des Rites de la Voie
+    };
+  }
+
+  get cleEffective() { return cleVoie(this.parent?.name, this.cle); }
+}
+
+/** Pouvoir d'une Voie d'illumination. */
+export class PouvoirData extends BaseItemData {
+  static defineSchema() {
+    return {
+      ...super.defineSchema(),
+      voie: str(""),                                   // clé de la Voie
+      puissance: int(1, { min: 1, max: 10 }),
+      nomNatif: str(""),                               // nom en langue native
+      compulsion: str(""),
+      accessible: bool(true),                          // compulsion assouvie : le Pouvoir est utilisable
+      visions: str("")
     };
   }
 }

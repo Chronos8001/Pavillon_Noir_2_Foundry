@@ -29,7 +29,9 @@
       "avantage": { "htmlFields": ["description"] },
       "manoeuvre": { "htmlFields": ["description"] },
       "marchandise": { "htmlFields": ["description"] },
-      "historique": { "htmlFields": ["description"] }
+      "historique": { "htmlFields": ["description"] },
+      "voie": { "htmlFields": ["description"] },
+      "pouvoir": { "htmlFields": ["description"] }
     }
   },
   "packs": [

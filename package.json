@@ -5,7 +5,8 @@
   "description": "Système Pavillon Noir 2 pour Foundry VTT",
   "type": "module",
   "scripts": {
-    "build:packs": "node tools/build-packs.mjs"
+    "build:packs": "node tools/build-packs.mjs",
+    "test": "node --test \"tests/**/*.test.mjs\""
   },
   "devDependencies": {
     "@foundryvtt/foundryvtt-cli": "^1.0.0"

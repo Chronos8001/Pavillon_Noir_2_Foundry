@@ -15,7 +15,9 @@ export class PN2Item extends Item {
       avantage: "systems/pavillon-noir-2/assets/icons/avantage.svg",
       manoeuvre: "systems/pavillon-noir-2/assets/icons/manoeuvre.svg",
       marchandise: "systems/pavillon-noir-2/assets/icons/marchandise.svg",
-      historique: "systems/pavillon-noir-2/assets/icons/historique.svg"
+      historique: "systems/pavillon-noir-2/assets/icons/historique.svg",
+      voie: "icons/svg/sun.svg",
+      pouvoir: "icons/svg/aura.svg"
     };
     if (icons[this.type]) this.updateSource({ img: icons[this.type] });
   }

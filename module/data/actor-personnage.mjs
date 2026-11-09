@@ -3,6 +3,7 @@ import {
   valeurMetier, mdForce, mdAdresse, casesParNiveau, niveauBlessure, etatGeneral, niveauReputation, listeCases
 } from "../helpers/tables.mjs";
 import { bourseField, totalBourse } from "../helpers/monnaie.mjs";
+import { deserialiserActe } from "../magie/moteur.mjs";
 
 const f = foundry.data.fields;
 
@@ -68,6 +69,7 @@ export class PersonnageData extends foundry.abstract.TypeDataModel {
       }),
       combat: new f.SchemaField({ posture: str("attentive") }),
       richesse: bourseField(5),
+      magie: magieField(TypedObject),
       contacts: str(),
       notes: html(),
       biographie: html()
@@ -150,10 +152,41 @@ export class PersonnageData extends foundry.abstract.TypeDataModel {
       d.strategieActuelle = mouv.filter(i => i.system.strategie).length;
     }
     s.escrimeur = Object.entries(s.escrime).some(([k, v]) => typeof v === "object" && v.value > 0) || s.skills.escrime.value > 0;
+
+    // Magie (Entre ciel et terre) : Faveurs = Chance (Pouvoir - 5), plus un modificateur temporaire.
+    const m = s.magie;
+    m.faveurs = s.chance + (m.faveursMod ?? 0);
+    m.religionNom = m.religion || s.infos.religion || "";
+    const acte = deserialiserActe(actor?.flags?.[PN2.id]?.acte);
+    m.acteEnCours = acte?.statut === "en-cours";
+    m.enTranse = !!(m.acteEnCours && acte?.type === "transe" && acte.transe?.actif);
   }
 
   /** Facilité d'une compétence pour un PNJ (null pour un PJ). */
   facilitePNJ() { return null; }
+}
+
+/**
+ * Données religieuses persistantes (Entre ciel et terre).
+ * Les Voies (Foi / Connaissance des Mystères, Affinité) et les Pouvoirs sont des objets possédés ;
+ * l'acte sacré en cours est stocké à part, dans flags["pavillon-noir-2"].acte.
+ */
+function magieField(TypedObject) {
+  const colereSchema = new f.SchemaField({
+    valeur: int(0, { min: 0 }),
+    // Temps du monde (secondes) à partir duquel la récupération horaire est comptée
+    reference: new f.NumberField({ required: false, nullable: true, initial: null }),
+    recuperationBloquee: bool(false)   // conséquences particulières d'un Rejet (phases suivantes)
+  });
+  return new f.SchemaField({
+    religion: str(""),          // religion pratiquée (vide : celle de l'historique, system.infos.religion)
+    type: str(""),              // communion | possession (clé de CONFIG.PN2.magie.types)
+    actesFoi: int(0, { min: 0 }),
+    peches: int(0, { min: 0 }),
+    faveursMod: int(0),         // modificateur temporaire des Faveurs (les Faveurs valent la Chance)
+    // Colère divine par groupe : une religion (ou un ensemble religieux) partage une seule Colère
+    colere: f.TypedObjectField ? new TypedObject(colereSchema) : new f.ObjectField()
+  });
 }
 
 /** Protection apportée par les armures équipées (et la qualité « Protection de la main armée »). */

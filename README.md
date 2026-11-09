@@ -72,7 +72,12 @@ Installation manuelle : télécharger `pavillon-noir-2.zip` depuis la dernière 
 - PNJ : archétypes et animaux
 - Navires : chaque type dans chacune de ses configurations d'armement
 
-*Entre ciel et terre* n'est pas encore pris en charge.
+### Magie (*Entre ciel et terre*, adaptation aux d10) — en cours
+- Le tirage de cartes est remplacé par des d10 : 1 à 5 = Succès sacré, 6 à 10 = Colère divine.
+- Voies d'illumination (Foi / Connaissance des Mystères et Affinité par Voie) et Pouvoirs ; religions de communion ou de possession.
+- Auspices, Seuil de Rejet, Colère partagée par religion et récupérée d'un point par heure de temps du monde.
+- Rituels (Puissance, Rejet en fin de tirage, Succès supplémentaires) et Transes (entrée, ascension, détachement, activation, Rejet immédiat).
+- Phase 1 : fenêtre de test (bouton « Magie » de la fiche). Documentation technique : `docs/magie.md`.
 
 ## Développement
 
@@ -81,6 +86,7 @@ Les compendiums sont générés à partir des sources JSON de `src/packs` :
 ```
 npm install
 npm run build:packs
+npm test        # tests automatisés de la magie (Node 20+)
 ```
 
 ## Mentions

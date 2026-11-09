@@ -2,6 +2,8 @@
  * Configuration du système Pavillon Noir 2.
  * Toutes les listes (caractéristiques, compétences, tables) sont regroupées ici.
  */
+import { MAGIE } from "./magie/config-magie.mjs";
+
 export const PN2 = {};
 
 PN2.id = "pavillon-noir-2";
@@ -494,3 +496,9 @@ PN2.actionsNonNum = {
   courte: ["5", "4", "3", "2", "1", "1", "-1 UT", "-1 UT"],
   effets: ["0", "-1 UT", "1", "2", "3", "4", "6", "+1 UT"]
 };
+
+/* -------------------------------------------- */
+/*  Magie (Entre ciel et terre, adaptation d10)  */
+/* -------------------------------------------- */
+
+PN2.magie = MAGIE;

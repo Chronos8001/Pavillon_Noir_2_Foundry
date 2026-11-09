@@ -4,6 +4,7 @@ import { attaquer, competenceArme, degatsFixes, porteeArme, risqueLongFeu, escri
 import { coutManoeuvres, acheterManoeuvres } from "../helpers/escrime.mjs";
 import { comboHTML } from "../documents/item.mjs";
 import { PN2CreationApp } from "../apps/creation.mjs";
+import { PN2MagieApp } from "../magie/app-magie.mjs";
 import { contexteBourse, operationBourse, formatPieces } from "../helpers/monnaie.mjs";
 
 const { HandlebarsApplicationMixin } = foundry.applications.api;
@@ -36,6 +37,7 @@ export class PN2PersonnageSheet extends HandlebarsApplicationMixin(foundry.appli
       ouvrirCompendium: PN2PersonnageSheet.#onOuvrirCompendium,
       bourse: PN2PersonnageSheet.#onBourse,
       creation: PN2PersonnageSheet.#onCreation,
+      magie: PN2PersonnageSheet.#onMagie,
       bourseToutes: PN2PersonnageSheet.#onBourseToutes,
       acheterManoeuvres: PN2PersonnageSheet.#onAcheterManoeuvres
     }
@@ -305,6 +307,10 @@ export class PN2PersonnageSheet extends HandlebarsApplicationMixin(foundry.appli
 
   static #onCreation() {
     new PN2CreationApp(this.document).render(true);
+  }
+
+  static #onMagie() {
+    PN2MagieApp.ouvrir(this.document);
   }
 
   static async #onBourse(event, target) {

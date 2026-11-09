@@ -150,6 +150,31 @@
   </fieldset>
   {{/if}}
 
+  {{#if isType.voie}}
+  <div class="grid-2">
+    <div class="ligne"><label>Religion</label><input type="text" name="system.religion" value="{{system.religion}}"></div>
+    <div class="ligne"><label>Clé de la Voie <span class="hint">(vide : {{cleVoie}})</span></label><input type="text" name="system.cle" value="{{system.cle}}" placeholder="{{cleVoie}}"></div>
+    <div class="ligne"><label>Foi <span class="hint">(communion)</span></label><input type="number" name="system.foi" value="{{system.foi}}" min="0"></div>
+    <div class="ligne"><label>Connaissance des Mystères <span class="hint">(possession)</span></label><input type="number" name="system.mysteres" value="{{system.mysteres}}" min="0"></div>
+    <div class="ligne"><label>Affinité</label><input type="number" name="system.affinite" value="{{system.affinite}}"></div>
+    <div class="ligne"><label>Groupe de Colère <span class="hint">(vide : la religion)</span></label><input type="text" name="system.groupeColere" value="{{system.groupeColere}}"></div>
+  </div>
+  <div class="ligne"><label>Rites</label><input type="text" name="system.rites" value="{{system.rites}}"></div>
+  <p class="hint">La Foi / Connaissance des Mystères est propre à chaque Voie (Entre ciel et terre, p. 90). Toutes les Voies d'une même religion partagent la même Colère divine, sauf groupe de Colère différent.</p>
+  {{/if}}
+
+  {{#if isType.pouvoir}}
+  <div class="grid-2">
+    <div class="ligne"><label>Voie (clé ou nom)</label><input type="text" name="system.voie" value="{{system.voie}}" list="pn2-voies-{{item.id}}">
+      <datalist id="pn2-voies-{{item.id}}">{{#each voiesConnues}}<option value="{{this.cle}}">{{this.nom}}</option>{{/each}}</datalist></div>
+    <div class="ligne"><label>Puissance</label><input type="number" name="system.puissance" value="{{system.puissance}}" min="1" max="10"></div>
+    <div class="ligne"><label>Nom en langue native</label><input type="text" name="system.nomNatif" value="{{system.nomNatif}}"></div>
+    <div class="ligne"><label>Accessible <span class="hint">(compulsion assouvie)</span></label><input type="checkbox" name="system.accessible" {{checked system.accessible}}></div>
+  </div>
+  <div class="ligne"><label>Compulsion</label><input type="text" name="system.compulsion" value="{{system.compulsion}}"></div>
+  <div class="ligne"><label>Visions</label><input type="text" name="system.visions" value="{{system.visions}}"></div>
+  {{/if}}
+
   <h3>Description</h3>
   <div class="description-apercu">{{{descriptionHTML}}}</div>
   <textarea name="system.description" rows="6">{{system.description}}</textarea>

@@ -5,7 +5,7 @@ import { PN2 } from "./config.mjs";
 import { PersonnageData } from "./data/actor-personnage.mjs";
 import { PNJData } from "./data/actor-pnj.mjs";
 import { NavireData } from "./data/actor-navire.mjs";
-import { ArmeData, ArmureData, EquipementData, AvantageData, ManoeuvreData, MarchandiseData, HistoriqueData } from "./data/items.mjs";
+import { ArmeData, ArmureData, EquipementData, AvantageData, ManoeuvreData, MarchandiseData, HistoriqueData, VoieData, PouvoirData } from "./data/items.mjs";
 import { PN2Actor } from "./documents/actor.mjs";
 import { PN2Item } from "./documents/item.mjs";
 import { PN2PersonnageSheet } from "./sheets/actor-personnage-sheet.mjs";
@@ -15,17 +15,26 @@ import * as dice from "./rolls/dice.mjs";
 import * as combat from "./rolls/combat.mjs";
 import * as naval from "./rolls/naval.mjs";
 import * as tables from "./helpers/tables.mjs";
+import * as magie from "./magie/service.mjs";
+import * as magieMoteur from "./magie/moteur.mjs";
+import * as magieRegles from "./magie/regles.mjs";
+import { PN2MagieApp } from "./magie/app-magie.mjs";
 
 Hooks.once("init", () => {
   console.log("Pavillon Noir 2 | Initialisation du système");
   CONFIG.PN2 = PN2;
-  game.pn2 = { config: PN2, dice, combat, naval, tables };
+  game.pn2 = {
+    config: PN2, dice, combat, naval, tables,
+    // Magie (Entre ciel et terre) : game.pn2.magie.ouvrir() ouvre la fenêtre de test
+    magie: { ...magie, moteur: magieMoteur, regles: magieRegles, ouvrir: actor => PN2MagieApp.ouvrir(actor) }
+  };
 
   CONFIG.Actor.documentClass = PN2Actor;
   CONFIG.Item.documentClass = PN2Item;
   CONFIG.Actor.dataModels = { personnage: PersonnageData, pnj: PNJData, navire: NavireData };
   CONFIG.Item.dataModels = {
-    arme: ArmeData, armure: ArmureData, equipement: EquipementData, avantage: AvantageData, manoeuvre: ManoeuvreData, marchandise: MarchandiseData, historique: HistoriqueData
+    arme: ArmeData, armure: ArmureData, equipement: EquipementData, avantage: AvantageData, manoeuvre: ManoeuvreData, marchandise: MarchandiseData, historique: HistoriqueData,
+    voie: VoieData, pouvoir: PouvoirData
   };
   CONFIG.Actor.trackableAttributes = {
     personnage: { bar: [], value: ["initiative", "chance"] },
@@ -51,7 +60,8 @@ Hooks.once("init", () => {
     "systems/pavillon-noir-2/templates/chat/partials/combattant.hbs",
     "systems/pavillon-noir-2/templates/chat/partials/resolution.hbs",
     "systems/pavillon-noir-2/templates/actor/partials/bourse.hbs",
-    "systems/pavillon-noir-2/templates/apps/creation.hbs"
+    "systems/pavillon-noir-2/templates/apps/creation.hbs",
+    "systems/pavillon-noir-2/templates/apps/magie-repartition.hbs"
   ]);
 });
 
@@ -72,7 +82,22 @@ function registerSettings() {
     hint: "Teste automatiquement le long feu (D20) à chaque tir d'arme à feu (L'Art de l'escrime).",
     scope: "world", config: true, type: Boolean, default: true
   });
+  game.settings.register(PN2.id, "magieSeuilVisible", {
+    name: "Magie : Seuil de Rejet visible des joueurs",
+    hint: "Entre ciel et terre : si décoché, le Seuil de Rejet, les Auspices et le dépassement ne sont montrés qu'au MJ (le prêtre ressent la Colère sans la mesurer).",
+    scope: "world", config: true, type: Boolean, default: false
+  });
+  game.settings.register(PN2.id, "magieRecuperationAuto", {
+    name: "Magie : récupération automatique de la Colère",
+    hint: "Retire 1 point de Colère divine par heure de temps du monde écoulée après la fin d'un acte sacré (jamais pendant un Rituel ou une Transe).",
+    scope: "world", config: true, type: Boolean, default: true
+  });
 }
+
+/* Magie : récupération horaire de la Colère quand le temps du monde avance (MJ actif uniquement) */
+Hooks.on("updateWorldTime", worldTime => {
+  magie.surAvanceeDuTemps(worldTime);
+});
 
 function registerHelpers() {
   Handlebars.registerHelper("pn2Signed", v => {

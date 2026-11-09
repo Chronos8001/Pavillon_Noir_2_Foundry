@@ -28,7 +28,7 @@ export class PN2ItemSheet extends HandlebarsApplicationMixin(foundry.application
     context.config = PN2;
     context.editable = this.isEditable;
     context.type = item.type;
-    context.isType = Object.fromEntries(["arme", "armure", "equipement", "avantage", "manoeuvre", "marchandise", "historique"].map(t => [t, item.type === t]));
+    context.isType = Object.fromEntries(["arme", "armure", "equipement", "avantage", "manoeuvre", "marchandise", "historique", "voie", "pouvoir"].map(t => [t, item.type === t]));
     context.caracOptions = Object.fromEntries(Object.entries(PN2.caracs).map(([k, d]) => [k, d.label]));
     const comps = { mainsNues: "Combat à mains nues", mousquet: "Mousquet", pistolet: "Pistolet", grenade: "Grenade", armesBlanches: "Armes blanches (spécialité)", armesJet: "Armes de jet/trait (spécialité)" };
     context.competences = comps;
@@ -58,6 +58,11 @@ export class PN2ItemSheet extends HandlebarsApplicationMixin(foundry.application
     if (item.type === "manoeuvre") {
       context.comboHTML = comboHTML(item.system.combo);
       context.puissance = item.system.puissance;
+    }
+    if (item.type === "voie") context.cleVoie = item.system.cleEffective;
+    if (item.type === "pouvoir") {
+      const voies = item.actor ? item.actor.items.filter(i => i.type === "voie") : game.items.filter(i => i.type === "voie");
+      context.voiesConnues = voies.map(v => ({ cle: v.system.cleEffective, nom: v.name }));
     }
     context.descriptionHTML = await foundry.applications.ux.TextEditor.implementation.enrichHTML(item.system.description ?? "", { async: true, relativeTo: item });
     return context;
