@@ -1,0 +1,42 @@
+{
+  "_id": "B6VwbMmb2LIBnodK",
+  "_key": "!items!B6VwbMmb2LIBnodK",
+  "name": "Marques de la mort",
+  "type": "pouvoir",
+  "img": "icons/svg/aura.svg",
+  "system": {
+    "description": "<p><strong>Visions</strong></p><ul><li>Voir les signes d&#x27;un fa funeste.</li><li>Donne une peau cadavérique.</li><li>Donne une mauvaise haleine ou odeur de pourriture.</li><li>Donne les yeux vitreux.</li></ul><p><strong>Compulsions.</strong> Trouver un être particulièrement chanceux ou portant la guigne.</p><p><em>Règles particulières : voir Entre ciel et terre, p. 290.</em></p>",
+    "source": "Entre ciel et terre, p. 290",
+    "voie": "voie-des-guedes",
+    "voieUuid": "Compendium.pavillon-noir-2.voies.Item.BJZUi8OCwtnsr9Ow",
+    "puissance": 1,
+    "nomNatif": "mak la lanmo",
+    "compulsion": "Trouver un être particulièrement chanceux ou portant la guigne.",
+    "accessible": true,
+    "visions": "Voir les signes d'un fa funeste. · Donne une peau cadavérique. · Donne une mauvaise haleine ou odeur de pourriture. · Donne les yeux vitreux.",
+    "portee": "Ici",
+    "cible": "Lui",
+    "impact": "",
+    "duree": "24 h",
+    "conditions": "",
+    "references": "",
+    "application": "manuel"
+  },
+  "effects": [],
+  "folder": "JpLFK1RzFtuXLx0v",
+  "sort": 10002,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.345",
+    "systemId": "pavillon-noir-2",
+    "systemVersion": "0.7.0",
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": null
+  }
+}

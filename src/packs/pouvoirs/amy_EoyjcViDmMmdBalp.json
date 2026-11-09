@@ -1,0 +1,42 @@
+{
+  "_id": "EoyjcViDmMmdBalp",
+  "_key": "!items!EoyjcViDmMmdBalp",
+  "name": "Amy",
+  "type": "pouvoir",
+  "img": "icons/svg/aura.svg",
+  "system": {
+    "description": "<p><strong>Visions</strong></p><ul><li>Don d&#x27;un familier disposant de 3 capacités spéciales.</li><li>Don d&#x27;un serviteur connaissant des secrets sur les démons.</li><li>Divination par l&#x27;astrologie.</li><li>Découverte d&#x27;un trésor gardé par des démons.</li><li>Chagrin inconsolable.</li><li>Maladie inguérissable.</li><li>Bris du fer.</li><li>Colère ou absence de colère.</li><li>Domination** des meurtriers.</li><li>Domination** des êtres mauvais.</li><li>Contrer les pouvoirs de l&#x27;ange Ieialel.</li></ul><ul><li><strong>Aspect.</strong> Homme, éventuellement entouré de flammes.</li><li><strong>Heure.</strong> 19h00 à 19h20.</li><li><strong>Jours.</strong> 5 au 10 janvier. 18 mai, 1er août, 15 octobre, 27 décembre, 7 mars.</li><li><strong>Couleurs/Cristal.</strong> Turquoise pâle ou rose/Perle.</li></ul>",
+    "source": "Entre ciel et terre, p. 244",
+    "voie": "voie-des-qlipoth",
+    "voieUuid": "Compendium.pavillon-noir-2.voies.Item.28cj5d17pp6tLLr8",
+    "puissance": 8,
+    "nomNatif": "Accusateur ou Exécuteur",
+    "compulsion": "",
+    "accessible": true,
+    "visions": "Don d'un familier disposant de 3 capacités spéciales. · Don d'un serviteur connaissant des secrets sur les démons. · Divination par l'astrologie. · Découverte d'un trésor gardé par des démons. · Chagrin inconsolable. · Maladie inguérissable. · Bris du fer. · Colère ou absence de colère. · Domination** des meurtriers. · Domination** des êtres mauvais. · Contrer les pouvoirs de l'ange Ieialel.",
+    "portee": "Voix",
+    "cible": "Lui (Maladie...) ou Eux",
+    "impact": "",
+    "duree": "24 h, 1 année (Don..., Chagrin...) ou Permanent (Maladie...)",
+    "conditions": "",
+    "references": "",
+    "application": "manuel"
+  },
+  "effects": [],
+  "folder": "I3FQOgCqphyIoMbm",
+  "sort": 80057,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.345",
+    "systemId": "pavillon-noir-2",
+    "systemVersion": "0.7.0",
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": null
+  }
+}

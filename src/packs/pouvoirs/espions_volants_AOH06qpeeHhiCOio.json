@@ -1,0 +1,42 @@
+{
+  "_id": "AOH06qpeeHhiCOio",
+  "_key": "!items!AOH06qpeeHhiCOio",
+  "name": "Espions volants",
+  "type": "pouvoir",
+  "img": "icons/svg/aura.svg",
+  "system": {
+    "description": "<p><strong>Visions</strong></p><ul><li>Voit par les yeux des moustiques et des oiseaux.</li><li>Envoie une nuée de moustiques et d&#x27;oiseaux comme espions.</li><li>Repère les espions.</li><li>Soulève les espions du sol.</li></ul><p><strong>Compulsions.</strong> Suivre un vol d&#x27;oiseau. Démasquer un espion.</p>",
+    "source": "Entre ciel et terre, p. 194",
+    "voie": "voie-des-zemis",
+    "voieUuid": "Compendium.pavillon-noir-2.voies.Item.adV2aUWhmHXDCarX",
+    "puissance": 6,
+    "nomNatif": "aetera elemencatium",
+    "compulsion": "Suivre un vol d'oiseau. Démasquer un espion.",
+    "accessible": true,
+    "visions": "Voit par les yeux des moustiques et des oiseaux. · Envoie une nuée de moustiques et d'oiseaux comme espions. · Repère les espions. · Soulève les espions du sol.",
+    "portee": "Vue/Voix/Ouïe",
+    "cible": "Vous",
+    "impact": "",
+    "duree": "1 cycle",
+    "conditions": "",
+    "references": "",
+    "application": "manuel"
+  },
+  "effects": [],
+  "folder": "pdOB4V6FtlhUIRJ0",
+  "sort": 60025,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.345",
+    "systemId": "pavillon-noir-2",
+    "systemVersion": "0.7.0",
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": null
+  }
+}

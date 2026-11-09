@@ -1,0 +1,42 @@
+{
+  "_id": "gezmcyAejpZ6yPZA",
+  "_key": "!items!gezmcyAejpZ6yPZA",
+  "name": "Invitation à la guerre",
+  "type": "pouvoir",
+  "img": "icons/svg/aura.svg",
+  "system": {
+    "description": "<p><strong>Visions</strong></p><ul><li>Donne envie d&#x27;en découdre.</li><li>Rassemble les guerriers.</li><li>Préparatifs guerriers.</li><li>Pousse à déclencher des hostilités.</li><li>Fait passer un propos emporté pour une déclaration de guerre.</li></ul><p><strong>Compulsions.</strong> Déclaration de guerre ou de bataille. Préparatifs d&#x27;expédition.</p>",
+    "source": "Entre ciel et terre, p. 171",
+    "voie": "voie-d-icheiricou-pour-la-guerre",
+    "voieUuid": "Compendium.pavillon-noir-2.voies.Item.ua948TzRBv4MWuy4",
+    "puissance": 2,
+    "nomNatif": "atouloubaiatina nhaone bouitonum",
+    "compulsion": "Déclaration de guerre ou de bataille. Préparatifs d'expédition.",
+    "accessible": true,
+    "visions": "Donne envie d'en découdre. · Rassemble les guerriers. · Préparatifs guerriers. · Pousse à déclencher des hostilités. · Fait passer un propos emporté pour une déclaration de guerre.",
+    "portee": "Là",
+    "cible": "Vous",
+    "impact": "",
+    "duree": "24 h",
+    "conditions": "",
+    "references": "",
+    "application": "manuel"
+  },
+  "effects": [],
+  "folder": "tYn7s19RmGg8GMUR",
+  "sort": 20007,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.345",
+    "systemId": "pavillon-noir-2",
+    "systemVersion": "0.7.0",
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": null
+  }
+}

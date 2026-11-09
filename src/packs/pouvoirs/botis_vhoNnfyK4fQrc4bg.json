@@ -1,0 +1,42 @@
+{
+  "_id": "vhoNnfyK4fQrc4bg",
+  "_key": "!items!vhoNnfyK4fQrc4bg",
+  "name": "Botis",
+  "type": "pouvoir",
+  "img": "icons/svg/aura.svg",
+  "system": {
+    "description": "<p><strong>Visions</strong></p><ul><li>Dévoile ce qui s&#x27;est passé la veille ou ce qui se passera le lendemain dans le lieu où se trouve le Mage Noir.</li><li>Réconciliation de l&#x27;ennemi avec soi.</li><li>Éloigne de Dieu.</li><li>Développement des philosophies impies.</li><li>Pousse à attaquer les dogmes de la religion.</li><li>Tourments d&#x27;esprits.</li><li>Nuit sans repos.</li><li>Musique insupportable.</li><li>Contrer les pouvoirs de l&#x27;ange Lauviah.</li></ul><ul><li><strong>Aspect.</strong> Vipère affreuse, ou homme avec deux cornes et de grandes dents tenant une épée brillante et acérée.</li><li><strong>Heure.</strong> 5h20 à 5h40.</li><li><strong>Jours.</strong> 11 au 15 juin. 7 avril, 20 juin, 4 septembre, 16 novembre, 25 janvier.</li><li><strong>Couleurs/Cristal.</strong> Violet pâle ou rose/Aigue marine.</li></ul>",
+    "source": "Entre ciel et terre, p. 234",
+    "voie": "voie-des-qlipoth",
+    "voieUuid": "Compendium.pavillon-noir-2.voies.Item.28cj5d17pp6tLLr8",
+    "puissance": 3,
+    "nomNatif": "Vase d'Iniquité",
+    "compulsion": "",
+    "accessible": true,
+    "visions": "Dévoile ce qui s'est passé la veille ou ce qui se passera le lendemain dans le lieu où se trouve le Mage Noir. · Réconciliation de l'ennemi avec soi. · Éloigne de Dieu. · Développement des philosophies impies. · Pousse à attaquer les dogmes de la religion. · Tourments d'esprits. · Nuit sans repos. · Musique insupportable. · Contrer les pouvoirs de l'ange Lauviah.",
+    "portee": "Voix",
+    "cible": "Lui",
+    "impact": "",
+    "duree": "30 min",
+    "conditions": "",
+    "references": "",
+    "application": "manuel"
+  },
+  "effects": [],
+  "folder": "I3FQOgCqphyIoMbm",
+  "sort": 30017,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.345",
+    "systemId": "pavillon-noir-2",
+    "systemVersion": "0.7.0",
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": null
+  }
+}

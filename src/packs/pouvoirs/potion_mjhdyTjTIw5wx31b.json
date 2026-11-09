@@ -1,0 +1,42 @@
+{
+  "_id": "mjhdyTjTIw5wx31b",
+  "_key": "!items!mjhdyTjTIw5wx31b",
+  "name": "Potion",
+  "type": "pouvoir",
+  "img": "icons/svg/aura.svg",
+  "system": {
+    "description": "<p><strong>Visions</strong></p><ul><li>Réaliser une potion.</li></ul><p><strong>Compulsions.</strong> Mélanger des ingrédients peu ragoûtants pris au hasard et boire le tout.</p><p><em>Règles particulières : voir Entre ciel et terre, p. 265.</em></p>",
+    "source": "Entre ciel et terre, p. 265",
+    "voie": "voie-du-folklore",
+    "voieUuid": "Compendium.pavillon-noir-2.voies.Item.Iy4OYyIN7hI6KjNY",
+    "puissance": 4,
+    "nomNatif": "",
+    "compulsion": "Mélanger des ingrédients peu ragoûtants pris au hasard et boire le tout.",
+    "accessible": true,
+    "visions": "Réaliser une potion.",
+    "portee": "Personnelle",
+    "cible": "Moi",
+    "impact": "",
+    "duree": "Permanente",
+    "conditions": "",
+    "references": "",
+    "application": "manuel"
+  },
+  "effects": [],
+  "folder": "aLFfT6IKRuY7TugP",
+  "sort": 40018,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.345",
+    "systemId": "pavillon-noir-2",
+    "systemVersion": "0.7.0",
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": null
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "_id": "wnUiBTJ3erJaFMoI",
+  "_key": "!items!wnUiBTJ3erJaFMoI",
+  "name": "Cimeries",
+  "type": "pouvoir",
+  "img": "icons/svg/aura.svg",
+  "system": {
+    "description": "<p><strong>Visions</strong></p><ul><li>Guerrier extraordinaire (+5D dans les compétences de combat).</li><li>Passage immédiat d&#x27;un rivage d&#x27;une rivière, d&#x27;un lac ou d&#x27;un océan à un autre.</li><li>Foudre divine.</li><li>Végétation rampante, effrayante et engloutissant les êtres vivants.</li><li>Cauchemars détruisant la psyché.</li><li>Transformation en être vils et malformés.</li><li>Transformation d&#x27;une foule en un monstre titanesque de corps amalgamés.</li><li>Transformation la nuit en un être vile cherchant à détruire l&#x27;être qui vit le jour.</li><li>Contrer les pouvoirs de l&#x27;ange Manakel.</li></ul><ul><li><strong>Aspect.</strong> Dieu guerrier montant un cheval noir.</li><li><strong>Heure.</strong> 21h40 à 22h00.</li><li><strong>Jours.</strong> 14 au 19 février. 26 mai, 9 août, 23 octobre, 4 janvier, 16 mars.</li><li><strong>Couleurs/Cristal.</strong> Vert ou bleu/Topaze bleue.</li></ul>",
+    "source": "Entre ciel et terre, p. 245",
+    "voie": "voie-des-qlipoth",
+    "voieUuid": "Compendium.pavillon-noir-2.voies.Item.28cj5d17pp6tLLr8",
+    "puissance": 9,
+    "nomNatif": "Tentateur ou Guetteur",
+    "compulsion": "",
+    "accessible": true,
+    "visions": "Guerrier extraordinaire (+5D dans les compétences de combat). · Passage immédiat d'un rivage d'une rivière, d'un lac ou d'un océan à un autre. · Foudre divine. · Végétation rampante, effrayante et engloutissant les êtres vivants. · Cauchemars détruisant la psyché. · Transformation en être vils et malformés. · Transformation d'une foule en un monstre titanesque de corps amalgamés. · Transformation la nuit en un être vile cherchant à détruire l'être qui vit le jour. · Contrer les pouvoirs de l'ange Manakel.",
+    "portee": "Là",
+    "cible": "Toi (Guerrier...), Lui (Transformation la nuit...), Nous (Passage...) ou Eux",
+    "impact": "",
+    "duree": "4 h ou Permanent (Cauchemars)",
+    "conditions": "",
+    "references": "",
+    "application": "manuel"
+  },
+  "effects": [],
+  "folder": "I3FQOgCqphyIoMbm",
+  "sort": 90065,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.345",
+    "systemId": "pavillon-noir-2",
+    "systemVersion": "0.7.0",
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": null
+  }
+}

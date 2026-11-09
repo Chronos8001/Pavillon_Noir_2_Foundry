@@ -1,0 +1,42 @@
+{
+  "_id": "1s4wuP8cS5qhYbDE",
+  "_key": "!items!1s4wuP8cS5qhYbDE",
+  "name": "Forme du Dagda",
+  "type": "pouvoir",
+  "img": "icons/svg/aura.svg",
+  "system": {
+    "description": "<p><strong>Visions</strong></p><ul><li>Transformation en un géant (10m de haut) hideux.</li><li>Transformation en un ogre (4m de haut) paillard.</li><li>Succès avec les femmes.</li><li>Transformation de la pensée, de la philosophie de vie.</li></ul><p><strong>Compulsions.</strong> Transformer un ami en ennemi et inversement. Terrifier en se faisant passer pour plus grand que l&#x27;on est.</p>",
+    "source": "Entre ciel et terre, p. 253",
+    "voie": "voie-du-druidisme",
+    "voieUuid": "Compendium.pavillon-noir-2.voies.Item.444Fft7a0LtvOMIS",
+    "puissance": 7,
+    "nomNatif": "",
+    "compulsion": "Transformer un ami en ennemi et inversement. Terrifier en se faisant passer pour plus grand que l'on est.",
+    "accessible": true,
+    "visions": "Transformation en un géant (10m de haut) hideux. · Transformation en un ogre (4m de haut) paillard. · Succès avec les femmes. · Transformation de la pensée, de la philosophie de vie.",
+    "portee": "Toucher",
+    "cible": "Toi",
+    "impact": "",
+    "duree": "1 mois",
+    "conditions": "",
+    "references": "",
+    "application": "manuel"
+  },
+  "effects": [],
+  "folder": "GhMxnwLVYmucd3Qt",
+  "sort": 70044,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.345",
+    "systemId": "pavillon-noir-2",
+    "systemVersion": "0.7.0",
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": null
+  }
+}

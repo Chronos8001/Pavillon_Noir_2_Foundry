@@ -1,0 +1,42 @@
+{
+  "_id": "qilQZWPQ7rRFtQeF",
+  "_key": "!items!qilQZWPQ7rRFtQeF",
+  "name": "Separ",
+  "type": "pouvoir",
+  "img": "icons/svg/aura.svg",
+  "system": {
+    "description": "<p><strong>Visions</strong></p><ul><li>Amour, éventuellement réciproque, d&#x27;une femme pour l&#x27;homme de son choix.</li><li>Stérilité temporaire d&#x27;une femme.</li><li>Protection des traîtres.</li><li>Domination des traîtres.</li><li>Trahison.</li><li>Sédition ou révolte.</li><li>Course à l&#x27;armement.</li><li>Défaut de conception d&#x27;une arme de guerre.</li><li>Promotion d&#x27;un commandant incompétent.</li><li>Contrer les pouvoirs de l&#x27;ange Hakamiah.</li></ul><ul><li><strong>Aspect.</strong> Soldat en armure sous un manteau rouge.</li><li><strong>Heure.</strong> 5h00 à 5h20.</li><li><strong>Jours.</strong> 6 au 11 juin. 6 avril, 19 juin, 3 septembre, 15 novembre, 24 janvier.</li><li><strong>Couleurs/Cristal.</strong> Violet pâle ou indigo/Sodalite.</li></ul>",
+    "source": "Entre ciel et terre, p. 234",
+    "voie": "voie-des-qlipoth",
+    "voieUuid": "Compendium.pavillon-noir-2.voies.Item.28cj5d17pp6tLLr8",
+    "puissance": 2,
+    "nomNatif": "Esprit de Mensonge",
+    "compulsion": "",
+    "accessible": true,
+    "visions": "Amour, éventuellement réciproque, d'une femme pour l'homme de son choix. · Stérilité temporaire d'une femme. · Protection des traîtres. · Domination des traîtres. · Trahison. · Sédition ou révolte. · Course à l'armement. · Défaut de conception d'une arme de guerre. · Promotion d'un commandant incompétent. · Contrer les pouvoirs de l'ange Hakamiah.",
+    "portee": "Toucher",
+    "cible": "Lui",
+    "impact": "",
+    "duree": "30 min ou 24 h (Amour..., Stérilité...)",
+    "conditions": "",
+    "references": "",
+    "application": "manuel"
+  },
+  "effects": [],
+  "folder": "I3FQOgCqphyIoMbm",
+  "sort": 20016,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.345",
+    "systemId": "pavillon-noir-2",
+    "systemVersion": "0.7.0",
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": null
+  }
+}

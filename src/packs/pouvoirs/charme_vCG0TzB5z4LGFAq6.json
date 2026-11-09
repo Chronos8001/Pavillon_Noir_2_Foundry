@@ -1,0 +1,42 @@
+{
+  "_id": "vCG0TzB5z4LGFAq6",
+  "_key": "!items!vCG0TzB5z4LGFAq6",
+  "name": "Charme",
+  "type": "pouvoir",
+  "img": "icons/svg/aura.svg",
+  "system": {
+    "description": "<p><strong>Visions</strong></p><ul><li>Réalisation d&#x27;un charme.</li></ul><p><strong>Compulsions.</strong> Cultiver les plantes nécessaires à un charme de chasse.</p><p><em>Règles particulières : voir Entre ciel et terre, p. 186.</em></p>",
+    "source": "Entre ciel et terre, p. 186",
+    "voie": "voie-des-xapiripe",
+    "voieUuid": "Compendium.pavillon-noir-2.voies.Item.uLmNntdGMAtLAIsE",
+    "puissance": 3,
+    "nomNatif": "rixi",
+    "compulsion": "Cultiver les plantes nécessaires à un charme de chasse.",
+    "accessible": true,
+    "visions": "Réalisation d'un charme.",
+    "portee": "Personnelle",
+    "cible": "Moi",
+    "impact": "",
+    "duree": "Permanent",
+    "conditions": "",
+    "references": "",
+    "application": "manuel"
+  },
+  "effects": [],
+  "folder": "MTKTGwYLgyfOOhl1",
+  "sort": 30009,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.345",
+    "systemId": "pavillon-noir-2",
+    "systemVersion": "0.7.0",
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": null
+  }
+}

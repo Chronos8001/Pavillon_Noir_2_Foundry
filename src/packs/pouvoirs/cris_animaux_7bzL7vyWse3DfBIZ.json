@@ -1,0 +1,42 @@
+{
+  "_id": "7bzL7vyWse3DfBIZ",
+  "_key": "!items!7bzL7vyWse3DfBIZ",
+  "name": "Cris animaux",
+  "type": "pouvoir",
+  "img": "icons/svg/aura.svg",
+  "system": {
+    "description": "<p><strong>Visions</strong></p><ul><li>Imitation de cris d&#x27;animaux.</li><li>Incite les animaux à pousser des cris.</li><li>Reconnaître des animaux à leurs cris.</li><li>Suivre quelqu&#x27;un dans la nature en écoutant les cris des animaux.</li></ul><p><strong>Compulsions.</strong> Étudier les différents cris d&#x27;un animal (nourriture, agressivité, danger). Rester à l&#x27;affût des cris d&#x27;animaux.</p>",
+    "source": "Entre ciel et terre, p. 309",
+    "voie": "voie-de-cousin-zaka",
+    "voieUuid": "Compendium.pavillon-noir-2.voies.Item.lP05NKFNMs90d9GB",
+    "puissance": 2,
+    "nomNatif": "zannimo rele",
+    "compulsion": "Étudier les différents cris d'un animal (nourriture, agressivité, danger). Rester à l'affût des cris d'animaux.",
+    "accessible": true,
+    "visions": "Imitation de cris d'animaux. · Incite les animaux à pousser des cris. · Reconnaître des animaux à leurs cris. · Suivre quelqu'un dans la nature en écoutant les cris des animaux.",
+    "portee": "Voix/Ouïe",
+    "cible": "Vous",
+    "impact": "",
+    "duree": "1 h",
+    "conditions": "",
+    "references": "",
+    "application": "manuel"
+  },
+  "effects": [],
+  "folder": "Ha5xoeLM6LLXX7ma",
+  "sort": 20005,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.345",
+    "systemId": "pavillon-noir-2",
+    "systemVersion": "0.7.0",
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": null
+  }
+}

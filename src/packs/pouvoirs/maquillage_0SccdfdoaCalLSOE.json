@@ -1,0 +1,42 @@
+{
+  "_id": "0SccdfdoaCalLSOE",
+  "_key": "!items!0SccdfdoaCalLSOE",
+  "name": "Maquillage",
+  "type": "pouvoir",
+  "img": "icons/svg/aura.svg",
+  "system": {
+    "description": "<p><strong>Visions</strong></p><ul><li>Légère modification de l&#x27;apparence (personne, animal, plante, objet).</li><li>Découvrir quand et dans quel but un objet a été modifié.</li><li>Voir ce qui se cache derrière une fausse apparence (déguisement, comédie, maquillage).</li></ul><p><strong>Compulsions.</strong> S&#x27;embellir en se maquillant. Enlaidir quelqu&#x27;un en le maquillant.</p>",
+    "source": "Entre ciel et terre, p. 285",
+    "voie": "voie-d-erzulie",
+    "voieUuid": "Compendium.pavillon-noir-2.voies.Item.0cPd7IIiO1TgbK81",
+    "puissance": 1,
+    "nomNatif": "fè bèl",
+    "compulsion": "S'embellir en se maquillant. Enlaidir quelqu'un en le maquillant.",
+    "accessible": true,
+    "visions": "Légère modification de l'apparence (personne, animal, plante, objet). · Découvrir quand et dans quel but un objet a été modifié. · Voir ce qui se cache derrière une fausse apparence (déguisement, comédie, maquillage).",
+    "portee": "Toucher",
+    "cible": "Toi",
+    "impact": "",
+    "duree": "1 cycle",
+    "conditions": "",
+    "references": "",
+    "application": "manuel"
+  },
+  "effects": [],
+  "folder": "46EaXMNeQpoA9M1j",
+  "sort": 10002,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.345",
+    "systemId": "pavillon-noir-2",
+    "systemVersion": "0.7.0",
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": null
+  }
+}

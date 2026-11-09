@@ -1,0 +1,42 @@
+{
+  "_id": "SpzHcSdorNNfCwma",
+  "_key": "!items!SpzHcSdorNNfCwma",
+  "name": "Statuette gardienne",
+  "type": "pouvoir",
+  "img": "icons/svg/aura.svg",
+  "system": {
+    "description": "<p><strong>Visions</strong></p><ul><li>Protection du possesseur du gad.</li><li>Fait se retourner un gad contre son possesseur.</li></ul><p><strong>Compulsions.</strong> Sculpter une statuette décrivant la créature d&#x27;un de ses cauchemars.</p><p><em>Règles particulières : voir Entre ciel et terre, p. 292.</em></p>",
+    "source": "Entre ciel et terre, p. 292",
+    "voie": "voie-des-guedes",
+    "voieUuid": "Compendium.pavillon-noir-2.voies.Item.BJZUi8OCwtnsr9Ow",
+    "puissance": 4,
+    "nomNatif": "gad, baka",
+    "compulsion": "Sculpter une statuette décrivant la créature d'un de ses cauchemars.",
+    "accessible": true,
+    "visions": "Protection du possesseur du gad. · Fait se retourner un gad contre son possesseur.",
+    "portee": "Personnelle",
+    "cible": "Moi",
+    "impact": "",
+    "duree": "Permanent",
+    "conditions": "",
+    "references": "",
+    "application": "manuel"
+  },
+  "effects": [],
+  "folder": "JpLFK1RzFtuXLx0v",
+  "sort": 40012,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.345",
+    "systemId": "pavillon-noir-2",
+    "systemVersion": "0.7.0",
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": null
+  }
+}

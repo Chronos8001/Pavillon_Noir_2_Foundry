@@ -1,0 +1,42 @@
+{
+  "_id": "SnugwpE76bwQfaf2",
+  "_key": "!items!SnugwpE76bwQfaf2",
+  "name": "Mebahiah",
+  "type": "pouvoir",
+  "img": "icons/svg/aura.svg",
+  "system": {
+    "description": "<p><strong>Visions</strong></p><ul><li>Tirer des cartes et stocker les Soleils pour un autre Acte Sacré.</li><li>Force morale et religieuse.</li><li>Illumination divine (réserve de 10 points à dépenser pour ajouter +1D à un ou des Tests de compétence Mental, Social ou Maritime).</li><li>Piété et vertu.</li><li>Fécondité physique, mentale ou spirituelle.</li><li>Contrer les pouvoirs du démon Orobas.</li></ul><ul><li><strong>Attribut.</strong> Dieu éternel.</li><li><strong>Heure.</strong> 18h00 à 18h20.</li><li><strong>Jours.</strong> 22 au 27 décembre. 15 mai, 29 juillet, 12 octobre, 24 décembre, 4 mars.</li><li><strong>Couleurs/Cristal.</strong> Bleu/Sodalite.</li><li><strong>Prière.</strong> « Tu autem Domine in aeternum permanes. Et memoriale tuum in generationem. »</li></ul>",
+    "source": "Entre ciel et terre, p. 225",
+    "voie": "voie-des-sephiroth",
+    "voieUuid": "Compendium.pavillon-noir-2.voies.Item.5soP14P6cbQPMX5I",
+    "puissance": 7,
+    "nomNatif": "Principauté",
+    "compulsion": "",
+    "accessible": true,
+    "visions": "Tirer des cartes et stocker les Soleils pour un autre Acte Sacré. · Force morale et religieuse. · Illumination divine (réserve de 10 points à dépenser pour ajouter +1D à un ou des Tests de compétence Mental, Social ou Maritime). · Piété et vertu. · Fécondité physique, mentale ou spirituelle. · Contrer les pouvoirs du démon Orobas.",
+    "portee": "Toucher",
+    "cible": "Toi",
+    "impact": "",
+    "duree": "24 h",
+    "conditions": "",
+    "references": "",
+    "application": "manuel"
+  },
+  "effects": [],
+  "folder": "bbVpwWTAqt36UWdh",
+  "sort": 70055,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.345",
+    "systemId": "pavillon-noir-2",
+    "systemVersion": "0.7.0",
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": null
+  }
+}

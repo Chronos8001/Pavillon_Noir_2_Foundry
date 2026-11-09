@@ -1,0 +1,42 @@
+{
+  "_id": "gOC2c4D99mNybIZF",
+  "_key": "!items!gOC2c4D99mNybIZF",
+  "name": "Bénédiction d'une mixture",
+  "type": "pouvoir",
+  "img": "icons/svg/aura.svg",
+  "system": {
+    "description": "<p><strong>Visions</strong></p><ul><li>Conf ère un caractère mystique à un breuvage.</li><li>Augmente les effets d&#x27;un breuvage.</li><li>Altère de façon bénéfique les effets d&#x27;un breuvage.</li><li>Assure la bonne entente lors d&#x27;une cohabitation.</li></ul><p><strong>Compulsions.</strong> Espérer plus d&#x27;un breuvage que ce qu&#x27;il ne peut donner. Avaler un mélange hasardeux.</p>",
+    "source": "Entre ciel et terre, p. 300",
+    "voie": "voie-des-freres-marassa",
+    "voieUuid": "Compendium.pavillon-noir-2.voies.Item.g0bMhkfFArVT77cy",
+    "puissance": 1,
+    "nomNatif": "benediksyon melanj",
+    "compulsion": "Espérer plus d'un breuvage que ce qu'il ne peut donner. Avaler un mélange hasardeux.",
+    "accessible": true,
+    "visions": "Conf ère un caractère mystique à un breuvage. · Augmente les effets d'un breuvage. · Altère de façon bénéfique les effets d'un breuvage. · Assure la bonne entente lors d'une cohabitation.",
+    "portee": "Ici",
+    "cible": "Toi",
+    "impact": "",
+    "duree": "24 h",
+    "conditions": "",
+    "references": "",
+    "application": "manuel"
+  },
+  "effects": [],
+  "folder": "44qmjJBQHiy5XpLM",
+  "sort": 10001,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.345",
+    "systemId": "pavillon-noir-2",
+    "systemVersion": "0.7.0",
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": null
+  }
+}

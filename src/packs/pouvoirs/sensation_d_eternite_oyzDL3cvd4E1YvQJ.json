@@ -1,0 +1,42 @@
+{
+  "_id": "oyzDL3cvd4E1YvQJ",
+  "_key": "!items!oyzDL3cvd4E1YvQJ",
+  "name": "Sensation d'éternité",
+  "type": "pouvoir",
+  "img": "icons/svg/aura.svg",
+  "system": {
+    "description": "<p><strong>Visions</strong></p><ul><li>Le temps semble s&#x27;arrêter : le prêtre peut réfléchir, mais pas agir.</li><li>Force la proie à revivre éternellement un événement éprouvant.</li><li>Donne l&#x27;impression d&#x27;être mort ou immortel.</li><li>La proie pense avoir tout son temps.</li><li>Ralentit les mouvements et la pensée de la cible.</li></ul><p><strong>Compulsions.</strong> Rester une journée et une nuit debout sans bouger un cil. Apprendre le nom des étoiles.</p>",
+    "source": "Entre ciel et terre, p. 294",
+    "voie": "voie-des-guedes",
+    "voieUuid": "Compendium.pavillon-noir-2.voies.Item.BJZUi8OCwtnsr9Ow",
+    "puissance": 7,
+    "nomNatif": "santi deyo fen",
+    "compulsion": "Rester une journée et une nuit debout sans bouger un cil. Apprendre le nom des étoiles.",
+    "accessible": true,
+    "visions": "Le temps semble s'arrêter : le prêtre peut réfléchir, mais pas agir. · Force la proie à revivre éternellement un événement éprouvant. · Donne l'impression d'être mort ou immortel. · La proie pense avoir tout son temps. · Ralentit les mouvements et la pensée de la cible.",
+    "portee": "Là-bas",
+    "cible": "Lui",
+    "impact": "",
+    "duree": "1 mois",
+    "conditions": "",
+    "references": "",
+    "application": "manuel"
+  },
+  "effects": [],
+  "folder": "JpLFK1RzFtuXLx0v",
+  "sort": 70027,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.345",
+    "systemId": "pavillon-noir-2",
+    "systemVersion": "0.7.0",
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": null
+  }
+}

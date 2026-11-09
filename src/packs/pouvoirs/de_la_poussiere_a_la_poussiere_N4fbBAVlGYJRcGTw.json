@@ -1,0 +1,42 @@
+{
+  "_id": "N4fbBAVlGYJRcGTw",
+  "_key": "!items!N4fbBAVlGYJRcGTw",
+  "name": "De la poussière à la poussière",
+  "type": "pouvoir",
+  "img": "icons/svg/aura.svg",
+  "system": {
+    "description": "<p><strong>Visions</strong></p><ul><li>Un mort ou un objet tombe en poussière.</li><li>Fait prendre conscience du caractère éphémère de toute chose terrestre.</li><li>Empêche toute magie de ramener un mort à la vie.</li></ul><p><strong>Compulsions.</strong> Installer un cadavre dans le lit de quelqu&#x27;un. S&#x27;assurer qu&#x27;un mort est trois fois mort.</p>",
+    "source": "Entre ciel et terre, p. 211",
+    "voie": "voie-de-dieu",
+    "voieUuid": "Compendium.pavillon-noir-2.voies.Item.SPlB5GslKnZdeWKG",
+    "puissance": 4,
+    "nomNatif": "",
+    "compulsion": "Installer un cadavre dans le lit de quelqu'un. S'assurer qu'un mort est trois fois mort.",
+    "accessible": true,
+    "visions": "Un mort ou un objet tombe en poussière. · Fait prendre conscience du caractère éphémère de toute chose terrestre. · Empêche toute magie de ramener un mort à la vie.",
+    "portee": "Ici",
+    "cible": "Lui",
+    "impact": "",
+    "duree": "Permanent",
+    "conditions": "",
+    "references": "",
+    "application": "manuel"
+  },
+  "effects": [],
+  "folder": "3eghhFTqBb7T4d5D",
+  "sort": 40014,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.345",
+    "systemId": "pavillon-noir-2",
+    "systemVersion": "0.7.0",
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": null
+  }
+}

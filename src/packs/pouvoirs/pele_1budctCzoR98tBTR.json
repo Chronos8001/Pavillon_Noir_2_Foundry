@@ -1,0 +1,42 @@
+{
+  "_id": "1budctCzoR98tBTR",
+  "_key": "!items!1budctCzoR98tBTR",
+  "name": "Pelé",
+  "type": "pouvoir",
+  "img": "icons/svg/aura.svg",
+  "system": {
+    "description": "<p><strong>Visions</strong></p><ul><li>Fait tomber les poils, la peau, les ongles, les dents et les cheveux.</li><li>Fait tomber les feuilles d&#x27;un arbre.</li><li>Fauche les herbes et arbustes.</li><li>Les fait repousser s&#x27;ils sont tombés du fait d&#x27;un maléfice ou de l&#x27;âge.</li></ul><p><strong>Compulsions.</strong> Se raser les cheveux. Arracher les cheveux de quelqu&#x27;un.</p>",
+    "source": "Entre ciel et terre, p. 291",
+    "voie": "voie-des-guedes",
+    "voieUuid": "Compendium.pavillon-noir-2.voies.Item.BJZUi8OCwtnsr9Ow",
+    "puissance": 2,
+    "nomNatif": "toutouni",
+    "compulsion": "Se raser les cheveux. Arracher les cheveux de quelqu'un.",
+    "accessible": true,
+    "visions": "Fait tomber les poils, la peau, les ongles, les dents et les cheveux. · Fait tomber les feuilles d'un arbre. · Fauche les herbes et arbustes. · Les fait repousser s'ils sont tombés du fait d'un maléfice ou de l'âge.",
+    "portee": "Toucher",
+    "cible": "Toi",
+    "impact": "",
+    "duree": "Permanent",
+    "conditions": "",
+    "references": "",
+    "application": "manuel"
+  },
+  "effects": [],
+  "folder": "JpLFK1RzFtuXLx0v",
+  "sort": 20005,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.345",
+    "systemId": "pavillon-noir-2",
+    "systemVersion": "0.7.0",
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": null
+  }
+}

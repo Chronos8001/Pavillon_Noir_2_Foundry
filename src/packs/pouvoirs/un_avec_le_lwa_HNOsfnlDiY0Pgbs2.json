@@ -1,0 +1,42 @@
+{
+  "_id": "HNOsfnlDiY0Pgbs2",
+  "_key": "!items!HNOsfnlDiY0Pgbs2",
+  "name": "Un avec le lwa",
+  "type": "pouvoir",
+  "img": "icons/svg/aura.svg",
+  "system": {
+    "description": "<p><strong>Visions</strong></p><ul><li>Se fondre dans la mer.</li><li>Plonger quelque part et ressortir ailleurs dans la même étendue d&#x27;eau.</li><li>Donner une attirance irrésistible pour la baignade.</li><li>Donner un respect immodéré pour Agwé.</li><li>Pousser à se donner des quêtes.</li></ul><p><strong>Compulsions.</strong> Se noyer volontairement (n&#x27;en mourra pas). Aller d&#x27;un îlot à un autre assez distant en apnée.</p>",
+    "source": "Entre ciel et terre, p. 278",
+    "voie": "voie-d-agwe",
+    "voieUuid": "Compendium.pavillon-noir-2.voies.Item.6bwsVNHhFxnjtf9Q",
+    "puissance": 7,
+    "nomNatif": "youn lak lwa",
+    "compulsion": "Se noyer volontairement (n'en mourra pas). Aller d'un îlot à un autre assez distant en apnée.",
+    "accessible": true,
+    "visions": "Se fondre dans la mer. · Plonger quelque part et ressortir ailleurs dans la même étendue d'eau. · Donner une attirance irrésistible pour la baignade. · Donner un respect immodéré pour Agwé. · Pousser à se donner des quêtes.",
+    "portee": "Là",
+    "cible": "Toi",
+    "impact": "",
+    "duree": "1 cycle",
+    "conditions": "",
+    "references": "",
+    "application": "manuel"
+  },
+  "effects": [],
+  "folder": "xaG58lKGMpuXcD6x",
+  "sort": 70022,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.345",
+    "systemId": "pavillon-noir-2",
+    "systemVersion": "0.7.0",
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": null
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "_id": "1v6vtC0UaxgXaX5N",
+  "_key": "!items!1v6vtC0UaxgXaX5N",
+  "name": "Retour de flamme",
+  "type": "pouvoir",
+  "img": "icons/svg/aura.svg",
+  "system": {
+    "description": "<p><strong>Visions</strong></p><ul><li>Déclenchement d&#x27;une conséquence tardive et néfaste.</li><li>Implosion d&#x27;un canon ou d&#x27;une arme à feu lors du tir.</li><li>Fait souffrir l&#x27;acteur de la même manière que sa victime.</li><li>Retour d&#x27;effet de pouvoir à l&#x27;envoyeur.</li><li>Rallume un feu éteint.</li></ul><p><strong>Compulsions.</strong> Infliger à quelqu&#x27;un tout ce qu&#x27;il inflige à d&#x27;autres. Allumer un feu de bois mouillé.</p>",
+    "source": "Entre ciel et terre, p. 304",
+    "voie": "voie-des-freres-marassa",
+    "voieUuid": "Compendium.pavillon-noir-2.voies.Item.g0bMhkfFArVT77cy",
+    "puissance": 8,
+    "nomNatif": "reverse la flanm",
+    "compulsion": "Infliger à quelqu'un tout ce qu'il inflige à d'autres. Allumer un feu de bois mouillé.",
+    "accessible": true,
+    "visions": "Déclenchement d'une conséquence tardive et néfaste. · Implosion d'un canon ou d'une arme à feu lors du tir. · Fait souffrir l'acteur de la même manière que sa victime. · Retour d'effet de pouvoir à l'envoyeur. · Rallume un feu éteint.",
+    "portee": "Là",
+    "cible": "Eux",
+    "impact": "",
+    "duree": "24 h",
+    "conditions": "",
+    "references": "",
+    "application": "manuel"
+  },
+  "effects": [],
+  "folder": "44qmjJBQHiy5XpLM",
+  "sort": 80033,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.345",
+    "systemId": "pavillon-noir-2",
+    "systemVersion": "0.7.0",
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": null
+  }
+}

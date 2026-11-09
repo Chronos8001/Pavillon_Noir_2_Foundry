@@ -1,0 +1,42 @@
+{
+  "_id": "ptUKGmyBYAx0da6d",
+  "_key": "!items!ptUKGmyBYAx0da6d",
+  "name": "Chaudron du Dagda",
+  "type": "pouvoir",
+  "img": "icons/svg/aura.svg",
+  "system": {
+    "description": "<p><strong>Visions</strong></p><ul><li>Apporte la souveraineté.</li><li>Apporte l&#x27;abondance.</li><li>Résurrection des morts très récents.</li></ul><p><strong>Compulsions.</strong> Tenter des résurrections de morts. Tuer un ami.</p>",
+    "source": "Entre ciel et terre, p. 254",
+    "voie": "voie-du-druidisme",
+    "voieUuid": "Compendium.pavillon-noir-2.voies.Item.444Fft7a0LtvOMIS",
+    "puissance": 8,
+    "nomNatif": "",
+    "compulsion": "Tenter des résurrections de morts. Tuer un ami.",
+    "accessible": true,
+    "visions": "Apporte la souveraineté. · Apporte l'abondance. · Résurrection des morts très récents.",
+    "portee": "Chaudron",
+    "cible": "Toi",
+    "impact": "",
+    "duree": "Permanent",
+    "conditions": "",
+    "references": "",
+    "application": "manuel"
+  },
+  "effects": [],
+  "folder": "GhMxnwLVYmucd3Qt",
+  "sort": 80049,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.345",
+    "systemId": "pavillon-noir-2",
+    "systemVersion": "0.7.0",
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": null
+  }
+}

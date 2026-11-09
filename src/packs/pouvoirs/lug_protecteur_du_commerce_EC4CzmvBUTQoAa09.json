@@ -1,0 +1,42 @@
+{
+  "_id": "EC4CzmvBUTQoAa09",
+  "_key": "!items!EC4CzmvBUTQoAa09",
+  "name": "Lug, protecteur du commerce",
+  "type": "pouvoir",
+  "img": "icons/svg/aura.svg",
+  "system": {
+    "description": "<p><strong>Visions</strong></p><ul><li>Protection d&#x27;un convoi.</li><li>Avertissement lorsqu&#x27;un concurrent se manifeste.</li><li>Attraction des clients.</li><li>Obligation pour un artisan de faire du bon travail.</li><li>Sensation aux marchands d&#x27;être protégés.</li></ul><p><strong>Compulsions.</strong> Acheter et vendre de menus objets. Fabriquer un objet d&#x27;artisanat.</p>",
+    "source": "Entre ciel et terre, p. 248",
+    "voie": "voie-du-druidisme",
+    "voieUuid": "Compendium.pavillon-noir-2.voies.Item.444Fft7a0LtvOMIS",
+    "puissance": 1,
+    "nomNatif": "",
+    "compulsion": "Acheter et vendre de menus objets. Fabriquer un objet d'artisanat.",
+    "accessible": true,
+    "visions": "Protection d'un convoi. · Avertissement lorsqu'un concurrent se manifeste. · Attraction des clients. · Obligation pour un artisan de faire du bon travail. · Sensation aux marchands d'être protégés.",
+    "portee": "Vue/Voix/Ouïe",
+    "cible": "Nous",
+    "impact": "",
+    "duree": "4 h",
+    "conditions": "",
+    "references": "",
+    "application": "manuel"
+  },
+  "effects": [],
+  "folder": "GhMxnwLVYmucd3Qt",
+  "sort": 10004,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.345",
+    "systemId": "pavillon-noir-2",
+    "systemVersion": "0.7.0",
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": null
+  }
+}

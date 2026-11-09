@@ -1,0 +1,42 @@
+{
+  "_id": "hVidOWdKMSJqMhnb",
+  "_key": "!items!hVidOWdKMSJqMhnb",
+  "name": "Rumeurs",
+  "type": "pouvoir",
+  "img": "icons/svg/aura.svg",
+  "system": {
+    "description": "<p><strong>Visions</strong></p><ul><li>Faire taire ou lancer des rumeurs.</li><li>Être au courant des rumeurs proches.</li><li>Savoir qui a lancé une rumeur.</li><li>Faire en sorte qu&#x27;une personne ne soit jamais au courant d&#x27;une rumeur.</li></ul><p><strong>Compulsions.</strong> Lancer un faux bruit nuisant à un proche. Faire taire une rumeur fondée.</p>",
+    "source": "Entre ciel et terre, p. 287",
+    "voie": "voie-d-erzulie",
+    "voieUuid": "Compendium.pavillon-noir-2.voies.Item.0cPd7IIiO1TgbK81",
+    "puissance": 3,
+    "nomNatif": "chuichui",
+    "compulsion": "Lancer un faux bruit nuisant à un proche. Faire taire une rumeur fondée.",
+    "accessible": true,
+    "visions": "Faire taire ou lancer des rumeurs. · Être au courant des rumeurs proches. · Savoir qui a lancé une rumeur. · Faire en sorte qu'une personne ne soit jamais au courant d'une rumeur.",
+    "portee": "Voix/Ouïe",
+    "cible": "Lui",
+    "impact": "",
+    "duree": "1 mois",
+    "conditions": "",
+    "references": "",
+    "application": "manuel"
+  },
+  "effects": [],
+  "folder": "46EaXMNeQpoA9M1j",
+  "sort": 30014,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.345",
+    "systemId": "pavillon-noir-2",
+    "systemVersion": "0.7.0",
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": null
+  }
+}

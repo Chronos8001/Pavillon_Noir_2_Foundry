@@ -1,0 +1,42 @@
+{
+  "_id": "9FFJQMf811JNjVOq",
+  "_key": "!items!9FFJQMf811JNjVOq",
+  "name": "Coup de pouce",
+  "type": "pouvoir",
+  "img": "icons/svg/aura.svg",
+  "system": {
+    "description": "<p><strong>Visions</strong></p><ul><li>Déséquilibre.</li><li>Chute de quelqu&#x27;un de déséquilibré.</li><li>Petite aide dans les moments difficiles.</li><li>Requérir de l&#x27;aide d&#x27;un allié proche.</li></ul><p><strong>Compulsions.</strong> Aider un démuni. Pousser quelqu&#x27;un dans le vide.</p>",
+    "source": "Entre ciel et terre, p. 295",
+    "voie": "voie-de-papa-legba",
+    "voieUuid": "Compendium.pavillon-noir-2.voies.Item.cLAnYvfRTW6M1YmZ",
+    "puissance": 1,
+    "nomNatif": "ti èd",
+    "compulsion": "Aider un démuni. Pousser quelqu'un dans le vide.",
+    "accessible": true,
+    "visions": "Déséquilibre. · Chute de quelqu'un de déséquilibré. · Petite aide dans les moments difficiles. · Requérir de l'aide d'un allié proche.",
+    "portee": "Ici",
+    "cible": "Toi",
+    "impact": "",
+    "duree": "1 cycle",
+    "conditions": "",
+    "references": "",
+    "application": "manuel"
+  },
+  "effects": [],
+  "folder": "cxj6xXxtlHVMonir",
+  "sort": 10001,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.345",
+    "systemId": "pavillon-noir-2",
+    "systemVersion": "0.7.0",
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": null
+  }
+}

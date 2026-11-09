@@ -1,0 +1,42 @@
+{
+  "_id": "UXX3fgzXAGntuTD1",
+  "_key": "!items!UXX3fgzXAGntuTD1",
+  "name": "Veine commerciale",
+  "type": "pouvoir",
+  "img": "icons/svg/aura.svg",
+  "system": {
+    "description": "<p><strong>Visions</strong></p><ul><li>Un filon à portée de main.</li><li>L&#x27;homme qui se dit commerçant.</li><li>Attrait pour l&#x27;or ; besoin d&#x27;argent.</li><li>Nature des besoins commerciaux.</li></ul><p><strong>Compulsions.</strong> Trouver ce dont rêve un ami sans le lui demander. Faire une affaire. Faire endosser un rôle de commerçant à quelqu&#x27;un qui n&#x27;est pas doué pour ce métier.</p><p><em>Règles particulières : voir Entre ciel et terre, p. 280.</em></p>",
+    "source": "Entre ciel et terre, p. 280",
+    "voie": "voie-de-dambala",
+    "voieUuid": "Compendium.pavillon-noir-2.voies.Item.fVIeiRnBn8ADVFE2",
+    "puissance": 1,
+    "nomNatif": "chans negos",
+    "compulsion": "Trouver ce dont rêve un ami sans le lui demander. Faire une affaire. Faire endosser un rôle de commerçant à quelqu'un qui n'est pas doué pour ce métier.",
+    "accessible": true,
+    "visions": "Un filon à portée de main. · L'homme qui se dit commerçant. · Attrait pour l'or ; besoin d'argent. · Nature des besoins commerciaux.",
+    "portee": "Là",
+    "cible": "Lui",
+    "impact": "",
+    "duree": "1 cycle",
+    "conditions": "",
+    "references": "",
+    "application": "manuel"
+  },
+  "effects": [],
+  "folder": "BsFkHFCdWu35mdPn",
+  "sort": 10003,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.345",
+    "systemId": "pavillon-noir-2",
+    "systemVersion": "0.7.0",
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": null
+  }
+}

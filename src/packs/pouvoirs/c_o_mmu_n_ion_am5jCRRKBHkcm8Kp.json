@@ -1,0 +1,42 @@
+{
+  "_id": "am5jCRRKBHkcm8Kp",
+  "_key": "!items!am5jCRRKBHkcm8Kp",
+  "name": "C o mmu n ion",
+  "type": "pouvoir",
+  "img": "icons/svg/aura.svg",
+  "system": {
+    "description": "<p><strong>Visions</strong></p><ul><li>Partage apaisant de sentiment.</li><li>Vit ce qu&#x27;a vécu une personne.</li><li>Partage de l&#x27;expérience.</li><li>Sentiment de cohésion et de compréhension mutuelle.</li></ul><p><strong>Compulsions.</strong> Obtenir des confidences importantes. Partager réellement une expérience avec un ennemi.</p>",
+    "source": "Entre ciel et terre, p. 303",
+    "voie": "voie-des-freres-marassa",
+    "voieUuid": "Compendium.pavillon-noir-2.voies.Item.g0bMhkfFArVT77cy",
+    "puissance": 7,
+    "nomNatif": "pata j e",
+    "compulsion": "Obtenir des confidences importantes. Partager réellement une expérience avec un ennemi.",
+    "accessible": true,
+    "visions": "Partage apaisant de sentiment. · Vit ce qu'a vécu une personne. · Partage de l'expérience. · Sentiment de cohésion et de compréhension mutuelle.",
+    "portee": "Voix/Ouïe",
+    "cible": "Nous",
+    "impact": "",
+    "duree": "1 semaine",
+    "conditions": "",
+    "references": "",
+    "application": "manuel"
+  },
+  "effects": [],
+  "folder": "44qmjJBQHiy5XpLM",
+  "sort": 70027,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.345",
+    "systemId": "pavillon-noir-2",
+    "systemVersion": "0.7.0",
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": null
+  }
+}

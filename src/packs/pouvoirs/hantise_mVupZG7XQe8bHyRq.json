@@ -1,0 +1,42 @@
+{
+  "_id": "mVupZG7XQe8bHyRq",
+  "_key": "!items!mVupZG7XQe8bHyRq",
+  "name": "Hantise",
+  "type": "pouvoir",
+  "img": "icons/svg/aura.svg",
+  "system": {
+    "description": "<p><strong>Visions</strong></p><ul><li>Attache à un lieu ou un objet une aura négative, qui inspire la peur.</li><li>Rend un lieu vivant et lui conf ère des intentions hostiles.</li><li>Donne des obsessions et hallucinations morbides.</li><li>Inspire le doute.</li><li>Donne à un objet, voire à un navire, une volonté propre.</li></ul><p><strong>Compulsions.</strong> Faire croire à quelqu&#x27;un qu&#x27;un lieu ou un objet est hanté.</p>",
+    "source": "Entre ciel et terre, p. 294",
+    "voie": "voie-des-guedes",
+    "voieUuid": "Compendium.pavillon-noir-2.voies.Item.BJZUi8OCwtnsr9Ow",
+    "puissance": 7,
+    "nomNatif": "kote rete",
+    "compulsion": "Faire croire à quelqu'un qu'un lieu ou un objet est hanté.",
+    "accessible": true,
+    "visions": "Attache à un lieu ou un objet une aura négative, qui inspire la peur. · Rend un lieu vivant et lui conf ère des intentions hostiles. · Donne des obsessions et hallucinations morbides. · Inspire le doute. · Donne à un objet, voire à un navire, une volonté propre.",
+    "portee": "Là",
+    "cible": "Toi",
+    "impact": "",
+    "duree": "Permanent",
+    "conditions": "",
+    "references": "",
+    "application": "manuel"
+  },
+  "effects": [],
+  "folder": "JpLFK1RzFtuXLx0v",
+  "sort": 70026,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.345",
+    "systemId": "pavillon-noir-2",
+    "systemVersion": "0.7.0",
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": null
+  }
+}

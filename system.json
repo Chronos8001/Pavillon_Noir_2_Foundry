@@ -43,13 +43,14 @@
     { "name": "manoeuvres-escrime", "label": "Manœuvres d'escrime", "path": "packs/manoeuvres-escrime", "type": "Item", "ownership": { "PLAYER": "OBSERVER", "ASSISTANT": "OWNER" } },
     { "name": "pnj", "label": "PNJ (archétypes)", "path": "packs/pnj", "type": "Actor", "ownership": { "PLAYER": "NONE", "ASSISTANT": "OWNER" } },
     { "name": "navires", "label": "Navires", "path": "packs/navires", "type": "Actor", "ownership": { "PLAYER": "OBSERVER", "ASSISTANT": "OWNER" } },
-    { "name": "voies", "label": "Magie : religions et Voies (Entre ciel et terre)", "path": "packs/voies", "type": "Item", "ownership": { "PLAYER": "OBSERVER", "ASSISTANT": "OWNER" } }
+    { "name": "voies", "label": "Magie : religions et Voies (Entre ciel et terre)", "path": "packs/voies", "type": "Item", "ownership": { "PLAYER": "OBSERVER", "ASSISTANT": "OWNER" } },
+    { "name": "pouvoirs", "label": "Magie : Pouvoirs des Voies (Entre ciel et terre, MJ)", "path": "packs/pouvoirs", "type": "Item", "ownership": { "PLAYER": "NONE", "ASSISTANT": "OWNER" } }
   ],
   "packFolders": [
     {
       "name": "Pavillon Noir 2",
       "sorting": "m",
-      "packs": ["historiques", "avantages-faiblesses", "equipement", "manoeuvres-escrime", "voies", "pnj", "navires"]
+      "packs": ["historiques", "avantages-faiblesses", "equipement", "manoeuvres-escrime", "voies", "pouvoirs", "pnj", "navires"]
     }
   ],
   "grid": { "distance": 1, "units": "m" },

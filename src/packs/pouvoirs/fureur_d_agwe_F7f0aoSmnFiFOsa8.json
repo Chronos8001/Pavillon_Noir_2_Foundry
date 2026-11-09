@@ -1,0 +1,42 @@
+{
+  "_id": "F7f0aoSmnFiFOsa8",
+  "_key": "!items!F7f0aoSmnFiFOsa8",
+  "name": "Fureur d'Agwé",
+  "type": "pouvoir",
+  "img": "icons/svg/aura.svg",
+  "system": {
+    "description": "<p><strong>Visions</strong></p><ul><li>Lame de fond.</li><li>Tsunami.</li><li>Tornade.</li><li>Aboutissement d&#x27;une quête qui changera en mal la face du monde.</li></ul><p><strong>Compulsions.</strong> Contempler paisiblement et sans bouger une catastrophe titanesque, comme un tsunami ou une tornade.</p>",
+    "source": "Entre ciel et terre, p. 279",
+    "voie": "voie-d-agwe",
+    "voieUuid": "Compendium.pavillon-noir-2.voies.Item.6bwsVNHhFxnjtf9Q",
+    "puissance": 10,
+    "nomNatif": "kolè Agwé",
+    "compulsion": "Contempler paisiblement et sans bouger une catastrophe titanesque, comme un tsunami ou une tornade.",
+    "accessible": true,
+    "visions": "Lame de fond. · Tsunami. · Tornade. · Aboutissement d'une quête qui changera en mal la face du monde.",
+    "portee": "Océan",
+    "cible": "Eux",
+    "impact": "",
+    "duree": "24 h",
+    "conditions": "",
+    "references": "",
+    "application": "manuel"
+  },
+  "effects": [],
+  "folder": "xaG58lKGMpuXcD6x",
+  "sort": 100027,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.345",
+    "systemId": "pavillon-noir-2",
+    "systemVersion": "0.7.0",
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": null
+  }
+}

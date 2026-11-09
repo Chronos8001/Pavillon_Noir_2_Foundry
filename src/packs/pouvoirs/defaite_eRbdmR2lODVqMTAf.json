@@ -1,0 +1,42 @@
+{
+  "_id": "eRbdmR2lODVqMTAf",
+  "_key": "!items!eRbdmR2lODVqMTAf",
+  "name": "Défaite",
+  "type": "pouvoir",
+  "img": "icons/svg/aura.svg",
+  "system": {
+    "description": "<p><strong>Visions</strong></p><ul><li>Défaite personnelle ou militaire.</li><li>Traumatisme psychologique suite à une défaite minime.</li><li>Sensation irraisonnée de défaite ou de victoire proche ou passée.</li><li>Déstructuration d&#x27;un objet composé.</li></ul><p><strong>Compulsions.</strong> Démonter un objet complexe et énorme, comme un petit navire, pièce par pièce. OEuvrer pour la défaite militaire de son groupe.</p>",
+    "source": "Entre ciel et terre, p. 294",
+    "voie": "voie-des-guedes",
+    "voieUuid": "Compendium.pavillon-noir-2.voies.Item.BJZUi8OCwtnsr9Ow",
+    "puissance": 8,
+    "nomNatif": "bat",
+    "compulsion": "Démonter un objet complexe et énorme, comme un petit navire, pièce par pièce. OEuvrer pour la défaite militaire de son groupe.",
+    "accessible": true,
+    "visions": "Défaite personnelle ou militaire. · Traumatisme psychologique suite à une défaite minime. · Sensation irraisonnée de défaite ou de victoire proche ou passée. · Déstructuration d'un objet composé.",
+    "portee": "Là-bas",
+    "cible": "Eux",
+    "impact": "",
+    "duree": "24 h",
+    "conditions": "",
+    "references": "",
+    "application": "manuel"
+  },
+  "effects": [],
+  "folder": "JpLFK1RzFtuXLx0v",
+  "sort": 80028,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.345",
+    "systemId": "pavillon-noir-2",
+    "systemVersion": "0.7.0",
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": null
+  }
+}

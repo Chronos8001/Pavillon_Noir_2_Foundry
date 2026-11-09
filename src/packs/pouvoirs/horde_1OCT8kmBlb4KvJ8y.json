@@ -1,0 +1,42 @@
+{
+  "_id": "1OCT8kmBlb4KvJ8y",
+  "_key": "!items!1OCT8kmBlb4KvJ8y",
+  "name": "Horde",
+  "type": "pouvoir",
+  "img": "icons/svg/aura.svg",
+  "system": {
+    "description": "<p><strong>Visions</strong></p><ul><li>Contrôle une masse importante d&#x27;individus plus ou moins d&#x27;accord.</li><li>Comportement parfaitement organisé d&#x27;un groupe.</li><li>Donne la sensation d&#x27;être submergé.</li><li>Appel d&#x27;une pluie de sauterelles ou de fourmis rouges.</li><li>Localisation des groupes importants d&#x27;individus.</li></ul><p><strong>Compulsions.</strong> Vivre à côté d&#x27;une fourmilière de fourmis rouges ou suivre un essaim de sauterelles.</p>",
+    "source": "Entre ciel et terre, p. 308",
+    "voie": "voie-d-ogou",
+    "voieUuid": "Compendium.pavillon-noir-2.voies.Item.nT1z9NA3nij69fC3",
+    "puissance": 10,
+    "nomNatif": "pake zannimo",
+    "compulsion": "Vivre à côté d'une fourmilière de fourmis rouges ou suivre un essaim de sauterelles.",
+    "accessible": true,
+    "visions": "Contrôle une masse importante d'individus plus ou moins d'accord. · Comportement parfaitement organisé d'un groupe. · Donne la sensation d'être submergé. · Appel d'une pluie de sauterelles ou de fourmis rouges. · Localisation des groupes importants d'individus.",
+    "portee": "Là-bas",
+    "cible": "Eux",
+    "impact": "",
+    "duree": "1 mois",
+    "conditions": "",
+    "references": "",
+    "application": "manuel"
+  },
+  "effects": [],
+  "folder": "jrCp3TXiMnGmStXb",
+  "sort": 100034,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.345",
+    "systemId": "pavillon-noir-2",
+    "systemVersion": "0.7.0",
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": null
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "_id": "RsmlahDtHQJWMreF",
+  "_key": "!items!RsmlahDtHQJWMreF",
+  "name": "Esprits du gibier de la forêt",
+  "type": "pouvoir",
+  "img": "icons/svg/aura.svg",
+  "system": {
+    "description": "<p><strong>Visions</strong></p><ul><li>Trouver les animaux les plus proches.</li><li>Savoir où trouver un animal spécifique.</li><li>Trouver des plantes médicinales, des baies, des fruits ou des racines.</li><li>Léger contrôle des animaux.</li><li>Savoir où trouver une plante spécifique.</li></ul><p><strong>Compulsions.</strong> Ramener un animal que l&#x27;on n&#x27;avait jamais ramené avant. Trouver une plante médicinale.</p>",
+    "source": "Entre ciel et terre, p. 187",
+    "voie": "voie-des-xapiripe",
+    "voieUuid": "Compendium.pavillon-noir-2.voies.Item.uLmNntdGMAtLAIsE",
+    "puissance": 4,
+    "nomNatif": "yaroripë",
+    "compulsion": "Ramener un animal que l'on n'avait jamais ramené avant. Trouver une plante médicinale.",
+    "accessible": true,
+    "visions": "Trouver les animaux les plus proches. · Savoir où trouver un animal spécifique. · Trouver des plantes médicinales, des baies, des fruits ou des racines. · Léger contrôle des animaux. · Savoir où trouver une plante spécifique.",
+    "portee": "Là",
+    "cible": "Vous",
+    "impact": "",
+    "duree": "1 cycle",
+    "conditions": "",
+    "references": "",
+    "application": "manuel"
+  },
+  "effects": [],
+  "folder": "MTKTGwYLgyfOOhl1",
+  "sort": 40016,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.345",
+    "systemId": "pavillon-noir-2",
+    "systemVersion": "0.7.0",
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": null
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "_id": "xHpmPYf7h2YDdpvb",
+  "_key": "!items!xHpmPYf7h2YDdpvb",
+  "name": "Bruissement",
+  "type": "pouvoir",
+  "img": "icons/svg/aura.svg",
+  "system": {
+    "description": "<p><strong>Visions</strong></p><ul><li>Crée un bruit de masse (arbres, combat, armes à feu).</li><li>Crée un bruit naturel (cascade, ressac de la mer, avalanche lointaine de cailloux).</li><li>Couvre un bruit par un bruit naturel.</li></ul><p><strong>Compulsions.</strong> Faire passer un bruit humain pour un bruissement d&#x27;arme. Créer une avalanche de cailloux.</p>",
+    "source": "Entre ciel et terre, p. 304",
+    "voie": "voie-d-ogou",
+    "voieUuid": "Compendium.pavillon-noir-2.voies.Item.nT1z9NA3nij69fC3",
+    "puissance": 1,
+    "nomNatif": "bwi pyebwa",
+    "compulsion": "Faire passer un bruit humain pour un bruissement d'arme. Créer une avalanche de cailloux.",
+    "accessible": true,
+    "visions": "Crée un bruit de masse (arbres, combat, armes à feu). · Crée un bruit naturel (cascade, ressac de la mer, avalanche lointaine de cailloux). · Couvre un bruit par un bruit naturel.",
+    "portee": "Voix",
+    "cible": "Vous",
+    "impact": "",
+    "duree": "1 cycle",
+    "conditions": "",
+    "references": "",
+    "application": "manuel"
+  },
+  "effects": [],
+  "folder": "jrCp3TXiMnGmStXb",
+  "sort": 10001,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.345",
+    "systemId": "pavillon-noir-2",
+    "systemVersion": "0.7.0",
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": null
+  }
+}

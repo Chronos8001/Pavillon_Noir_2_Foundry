@@ -1,0 +1,42 @@
+{
+  "_id": "fphO0w0Sc8aiJmFM",
+  "_key": "!items!fphO0w0Sc8aiJmFM",
+  "name": "Mumiah",
+  "type": "pouvoir",
+  "img": "icons/svg/aura.svg",
+  "system": {
+    "description": "<p><strong>Visions</strong></p><ul><li>Fin de toute (n&#x27;importe quelle) chose.</li><li>Succès en toute (n&#x27;importe quelle) chose.</li><li>Protection des opérations occultes.</li><li>Richesse des réalisations.</li><li>Secrets miraculeux menant au bonheur.</li><li>Découverte des secrets de la nature.</li><li>Longue vie.</li><li>Protection des pauvres et des malades.</li><li>Don de guérison et maîtrise de la médecine (Niveau 8 en Chirurgie, Herboristerie, Médecine ou Premiers Soins).</li><li>Contrer les pouvoirs du démon Andromalius.</li></ul><ul><li><strong>Attribut.</strong> Oméga, fin de toute chose.</li><li><strong>Heure.</strong> 23h40 à 00h00.</li><li><strong>Jours.</strong> 16 au 21 mars. 1er juin, 15 août, 29 octobre, 10 janvier, 22 mars.</li><li><strong>Couleurs/Cristal.</strong> Turquoise ou bleu pâle/Turquoise.</li><li><strong>Prière.</strong> « Convertere anima mea in requiem tuam. Quia Dominus beneficit tibi. »</li></ul>",
+    "source": "Entre ciel et terre, p. 229",
+    "voie": "voie-des-sephiroth",
+    "voieUuid": "Compendium.pavillon-noir-2.voies.Item.5soP14P6cbQPMX5I",
+    "puissance": 9,
+    "nomNatif": "Ange",
+    "compulsion": "",
+    "accessible": true,
+    "visions": "Fin de toute (n'importe quelle) chose. · Succès en toute (n'importe quelle) chose. · Protection des opérations occultes. · Richesse des réalisations. · Secrets miraculeux menant au bonheur. · Découverte des secrets de la nature. · Longue vie. · Protection des pauvres et des malades. · Don de guérison et maîtrise de la médecine (Niveau 8 en Chirurgie, Herboristerie, Médecine ou Premiers Soins). · Contrer les pouvoirs du démon Andromalius.",
+    "portee": "Continent/Océan",
+    "cible": "Eux",
+    "impact": "",
+    "duree": "1 année",
+    "conditions": "",
+    "references": "",
+    "application": "manuel"
+  },
+  "effects": [],
+  "folder": "bbVpwWTAqt36UWdh",
+  "sort": 90072,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.345",
+    "systemId": "pavillon-noir-2",
+    "systemVersion": "0.7.0",
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": null
+  }
+}

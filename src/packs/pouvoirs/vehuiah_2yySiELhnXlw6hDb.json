@@ -1,0 +1,42 @@
+{
+  "_id": "2yySiELhnXlw6hDb",
+  "_key": "!items!2yySiELhnXlw6hDb",
+  "name": "Vehuiah",
+  "type": "pouvoir",
+  "img": "icons/svg/aura.svg",
+  "system": {
+    "description": "<p><strong>Visions</strong></p><ul><li>Illumination divine dans les moments de méditation.</li><li>Aide à la réalisation d&#x27;un exploit moral ou mental.</li><li>Point de vue plus élevé.</li><li>Lucidité.</li><li>Détecter les mensonges et les pièges faits par voie verbale.</li><li>Suppression des sentiments de colère et de violence.</li><li>Contrer les pouvoirs du démon Baal.</li></ul><ul><li><strong>Attribut.</strong> Dieu élevé et exalté au-dessus de toute chose.</li><li><strong>Heure.</strong> 0h00 à 0h20.</li><li><strong>Jours.</strong> 21 au 26 mars. 22 mars, 4 juin, 19 août, 31 octobre, 10 janvier.</li><li><strong>Couleurs/Cristal.</strong> Magenta ou rose/Cornaline.</li><li><strong>Prière.</strong> « Et tu Domine susceptor meus et gloria mea et exaltans caput meum. »</li></ul>",
+    "source": "Entre ciel et terre, p. 214",
+    "voie": "voie-des-sephiroth",
+    "voieUuid": "Compendium.pavillon-noir-2.voies.Item.5soP14P6cbQPMX5I",
+    "puissance": 1,
+    "nomNatif": "Séraphin",
+    "compulsion": "",
+    "accessible": true,
+    "visions": "Illumination divine dans les moments de méditation. · Aide à la réalisation d'un exploit moral ou mental. · Point de vue plus élevé. · Lucidité. · Détecter les mensonges et les pièges faits par voie verbale. · Suppression des sentiments de colère et de violence. · Contrer les pouvoirs du démon Baal.",
+    "portee": "Personnelle",
+    "cible": "Moi",
+    "impact": "",
+    "duree": "30 min",
+    "conditions": "",
+    "references": "",
+    "application": "manuel"
+  },
+  "effects": [],
+  "folder": "bbVpwWTAqt36UWdh",
+  "sort": 10001,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.345",
+    "systemId": "pavillon-noir-2",
+    "systemVersion": "0.7.0",
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": null
+  }
+}

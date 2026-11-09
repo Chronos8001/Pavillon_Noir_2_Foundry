@@ -1,0 +1,42 @@
+{
+  "_id": "ypD5YtfKgd781r9E",
+  "_key": "!items!ypD5YtfKgd781r9E",
+  "name": "Air corrompu",
+  "type": "pouvoir",
+  "img": "icons/svg/aura.svg",
+  "system": {
+    "description": "<p><strong>Visions</strong></p><ul><li>Donne l&#x27;allure d&#x27;une personne corrompue à la victime.</li><li>Révèle la corruption.</li><li>Rend un air malsain, chargé de maladie et de pourriture.</li><li>Fait fondre sur la proie un nuage de moustiques.</li><li>Infecte une région de maladies véhiculées par les moustiques.</li><li>Infeste une région de moustiques.</li><li>Métamorphose personnelle en une nuée de maringouins.</li><li>Donne à une nuée de maringoins la forme désirée.</li></ul><p><strong>Compulsions.</strong> Abandonner son corps aux piqûres des maringouins. Capturer une femelle moustique, lui donner du sang et la relâcher près d&#x27;une étendue d&#x27;eau.</p>",
+    "source": "Entre ciel et terre, p. 183",
+    "voie": "voie-d-icheiricou-pour-la-protection-et-la-punition",
+    "voieUuid": "Compendium.pavillon-noir-2.voies.Item.yH60f20rPKBEP9j4",
+    "puissance": 6,
+    "nomNatif": "toubourri",
+    "compulsion": "Abandonner son corps aux piqûres des maringouins. Capturer une femelle moustique, lui donner du sang et la relâcher près d'une étendue d'eau.",
+    "accessible": true,
+    "visions": "Donne l'allure d'une personne corrompue à la victime. · Révèle la corruption. · Rend un air malsain, chargé de maladie et de pourriture. · Fait fondre sur la proie un nuage de moustiques. · Infecte une région de maladies véhiculées par les moustiques. · Infeste une région de moustiques. · Métamorphose personnelle en une nuée de maringouins. · Donne à une nuée de maringoins la forme désirée.",
+    "portee": "Là-bas",
+    "cible": "Lui",
+    "impact": "",
+    "duree": "1 semaine",
+    "conditions": "",
+    "references": "",
+    "application": "manuel"
+  },
+  "effects": [],
+  "folder": "aNYZvvAOkWDjlSbd",
+  "sort": 60020,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.345",
+    "systemId": "pavillon-noir-2",
+    "systemVersion": "0.7.0",
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": null
+  }
+}

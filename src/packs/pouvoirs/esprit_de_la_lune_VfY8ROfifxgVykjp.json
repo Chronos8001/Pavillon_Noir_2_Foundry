@@ -1,0 +1,42 @@
+{
+  "_id": "VfY8ROfifxgVykjp",
+  "_key": "!items!VfY8ROfifxgVykjp",
+  "name": "Esprit de la lune",
+  "type": "pouvoir",
+  "img": "icons/svg/aura.svg",
+  "system": {
+    "description": "<p><strong>Visions</strong></p><ul><li>Lumière dans les ténèbres.</li><li>Stoppe une épidémie en dévorant les esprits maléfiques qui en sont à l&#x27;origine.</li><li>Faire tomber les cheveux et les poils.</li><li>Donne une teinte livide au visage.</li></ul><p><strong>Compulsions.</strong> S&#x27;arracher les poils de la barbe. Se peindre le visage à la cendre.</p><p><em>Règles particulières : voir Entre ciel et terre, p. 187.</em></p>",
+    "source": "Entre ciel et terre, p. 187",
+    "voie": "voie-des-xapiripe",
+    "voieUuid": "Compendium.pavillon-noir-2.voies.Item.uLmNntdGMAtLAIsE",
+    "puissance": 4,
+    "nomNatif": "poriporiri",
+    "compulsion": "S'arracher les poils de la barbe. Se peindre le visage à la cendre.",
+    "accessible": true,
+    "visions": "Lumière dans les ténèbres. · Stoppe une épidémie en dévorant les esprits maléfiques qui en sont à l'origine. · Faire tomber les cheveux et les poils. · Donne une teinte livide au visage.",
+    "portee": "Là",
+    "cible": "Nous",
+    "impact": "",
+    "duree": "Permanent",
+    "conditions": "",
+    "references": "",
+    "application": "manuel"
+  },
+  "effects": [],
+  "folder": "MTKTGwYLgyfOOhl1",
+  "sort": 40019,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.345",
+    "systemId": "pavillon-noir-2",
+    "systemVersion": "0.7.0",
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": null
+  }
+}

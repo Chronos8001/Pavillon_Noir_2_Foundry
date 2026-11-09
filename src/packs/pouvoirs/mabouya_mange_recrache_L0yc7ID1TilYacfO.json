@@ -1,0 +1,42 @@
+{
+  "_id": "L0yc7ID1TilYacfO",
+  "_key": "!items!L0yc7ID1TilYacfO",
+  "name": "Mabouya mange/recrache",
+  "type": "pouvoir",
+  "img": "icons/svg/aura.svg",
+  "system": {
+    "description": "<p><strong>Visions</strong></p><ul><li>Mabouya mange le coeur et rend insensible, ou recrache le coeur et redonne sa sensibilité.</li><li>Mabouya mange le corps et flétrit une partie du corps, ou recrache le corps et fait renaître une partie du corps ger l&#x27; amputée ou flétrie.</li><li>Mabouya mange l&#x27;esprit et rend stupide ou rongé par de sombres pensées, ou Mabouya recrache l&#x27;esprit et rend son intelligence et sa paix d&#x27;esprit.</li><li>Mabouya mange l&#x27;esprit et rend stupide ou hébété, ou Mabouya recrache l&#x27;esprit et libère l&#x27;esprit enchainé (zombie, etc.).</li><li>Mabouya mange le soleil et apporte les nuages, ou Mabouya recrache le soleil et rend le ciel bleu et le soleil rayonnant.</li><li>Mabouya mange la lune et rend les nuits noires et effrayantes, ou Mabouya recrache la lune, qui éclaire la nuit et apaise les coeurs des dormeurs et des enfants.</li></ul><p><strong>Compulsions.</strong> Manger le coeur d&#x27;un ennemi. Rendre idiot à coups de bâton.</p>",
+    "source": "Entre ciel et terre, p. 183",
+    "voie": "voie-d-icheiricou-pour-la-protection-et-la-punition",
+    "voieUuid": "Compendium.pavillon-noir-2.voies.Item.yH60f20rPKBEP9j4",
+    "puissance": 6,
+    "nomNatif": "esprit, corps, coeur, lune, soleil",
+    "compulsion": "Manger le coeur d'un ennemi. Rendre idiot à coups de bâton.",
+    "accessible": true,
+    "visions": "Mabouya mange le coeur et rend insensible, ou recrache le coeur et redonne sa sensibilité. · Mabouya mange le corps et flétrit une partie du corps, ou recrache le corps et fait renaître une partie du corps ger l' amputée ou flétrie. · Mabouya mange l'esprit et rend stupide ou rongé par de sombres pensées, ou Mabouya recrache l'esprit et rend son intelligence et sa paix d'esprit. · Mabouya mange l'esprit et rend stupide ou hébété, ou Mabouya recrache l'esprit et libère l'esprit enchainé (zombie, etc.). · Mabouya mange le soleil et apporte les nuages, ou Mabouya recrache le soleil et rend le ciel bleu et le soleil rayonnant. · Mabouya mange la lune et rend les nuits noires et effrayantes, ou Mabouya recrache la lune, qui éclaire la nuit et apaise les coeurs des dormeurs et des enfants.",
+    "portee": "Vue/Voix/Ouïe",
+    "cible": "Eux",
+    "impact": "",
+    "duree": "1 année",
+    "conditions": "",
+    "references": "",
+    "application": "manuel"
+  },
+  "effects": [],
+  "folder": "aNYZvvAOkWDjlSbd",
+  "sort": 60017,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.345",
+    "systemId": "pavillon-noir-2",
+    "systemVersion": "0.7.0",
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": null
+  }
+}

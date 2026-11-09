@@ -1,0 +1,42 @@
+{
+  "_id": "gVAj5IcUEPzPTiuK",
+  "_key": "!items!gVAj5IcUEPzPTiuK",
+  "name": "Esprits des arbres",
+  "type": "pouvoir",
+  "img": "icons/svg/aura.svg",
+  "system": {
+    "description": "<p><strong>Visions</strong></p><ul><li>Parler aux arbres ou faire parler les arbres.</li><li>Métamorphose en arbre.</li><li>Protection par un arbre.</li><li>Soigne un arbre moribond.</li><li>Fait mourir lentement un arbre en attaquant son principe vital.</li></ul><p><strong>Compulsions.</strong> Trouver un arbre mort et creux. Faire repousser une plante presque morte.</p>",
+    "source": "Entre ciel et terre, p. 185",
+    "voie": "voie-des-xapiripe",
+    "voieUuid": "Compendium.pavillon-noir-2.voies.Item.uLmNntdGMAtLAIsE",
+    "puissance": 2,
+    "nomNatif": "huutihiripë",
+    "compulsion": "Trouver un arbre mort et creux. Faire repousser une plante presque morte.",
+    "accessible": true,
+    "visions": "Parler aux arbres ou faire parler les arbres. · Métamorphose en arbre. · Protection par un arbre. · Soigne un arbre moribond. · Fait mourir lentement un arbre en attaquant son principe vital.",
+    "portee": "Toucher",
+    "cible": "Toi",
+    "impact": "",
+    "duree": "1 cycle ou Permanent (soigner un arbre, le faire mourir)",
+    "conditions": "",
+    "references": "",
+    "application": "manuel"
+  },
+  "effects": [],
+  "folder": "MTKTGwYLgyfOOhl1",
+  "sort": 20005,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.345",
+    "systemId": "pavillon-noir-2",
+    "systemVersion": "0.7.0",
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": null
+  }
+}

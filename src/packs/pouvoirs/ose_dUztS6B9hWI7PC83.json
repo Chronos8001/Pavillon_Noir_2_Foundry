@@ -1,0 +1,42 @@
+{
+  "_id": "dUztS6B9hWI7PC83",
+  "_key": "!items!dUztS6B9hWI7PC83",
+  "name": "Ose",
+  "type": "pouvoir",
+  "img": "icons/svg/aura.svg",
+  "system": {
+    "description": "<p><strong>Visions</strong></p><ul><li>Fait croire à une personne qu&#x27;elle est qui ou ce que le Mage Noir désire.</li><li>Trahisons.</li><li>Incompréhension entre les chefs.</li><li>Écroulement sous l&#x27;effort.</li><li>Lâcheté et paresse.</li><li>Domination** des hommes pusillanimes.</li><li>Domination** de ceux qui attaquent les êtres sans défense.</li><li>Contrer les pouvoirs de l&#x27;ange Nemamiah.</li></ul><ul><li><strong>Aspect.</strong> Léopard qui se change en homme.</li><li><strong>Heure.</strong> 18h40 à 19h00.</li><li><strong>Jours.</strong> 1er au 5 janvier. 17 mai, 31 juillet, 14 octobre, 26 décembre, 6 mars.</li><li><strong>Couleurs/Cristal.</strong> Violet ou orange/Sugilite.</li></ul>",
+    "source": "Entre ciel et terre, p. 243",
+    "voie": "voie-des-qlipoth",
+    "voieUuid": "Compendium.pavillon-noir-2.voies.Item.28cj5d17pp6tLLr8",
+    "puissance": 8,
+    "nomNatif": "Accusateur ou Exécuteur",
+    "compulsion": "",
+    "accessible": true,
+    "visions": "Fait croire à une personne qu'elle est qui ou ce que le Mage Noir désire. · Trahisons. · Incompréhension entre les chefs. · Écroulement sous l'effort. · Lâcheté et paresse. · Domination** des hommes pusillanimes. · Domination** de ceux qui attaquent les êtres sans défense. · Contrer les pouvoirs de l'ange Nemamiah.",
+    "portee": "Voix",
+    "cible": "Lui (Fait...) ou Eux",
+    "impact": "",
+    "duree": "1 mois ou Permanent (Fait...)",
+    "conditions": "",
+    "references": "",
+    "application": "manuel"
+  },
+  "effects": [],
+  "folder": "I3FQOgCqphyIoMbm",
+  "sort": 80056,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.345",
+    "systemId": "pavillon-noir-2",
+    "systemVersion": "0.7.0",
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": null
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "_id": "sUCNOUsI2M3c0VYv",
+  "_key": "!items!sUCNOUsI2M3c0VYv",
+  "name": "Veualiah",
+  "type": "pouvoir",
+  "img": "icons/svg/aura.svg",
+  "system": {
+    "description": "<p><strong>Visions</strong></p><ul><li>Suppression totale d&#x27;un des dangers propres à une entreprise (ex : silence total ou absence de sentinelles lors d&#x27;un raid).</li><li>Prospérité.</li><li>Faveurs de personnages haut placés.</li><li>Succès d&#x27;action dans le cadre d&#x27;une cause juste.</li><li>Découverte des complots.</li><li>Gloire militaire et effets décuplés de la Gloire.</li><li>Contrer les pouvoirs du démon Vepar.</li></ul><ul><li><strong>Attribut.</strong> Roi dominateur.</li><li><strong>Heure.</strong> 14h00 à 14h20.</li><li><strong>Jours.</strong> 24 au 29 octobre. 3 mai, 17 juillet, 30 septembre, 12 décembre, 20 février.</li><li><strong>Couleurs/Cristal.</strong> Violet pâle ou vert pâle/Émeraude.</li><li><strong>Prière.</strong> « Et ego ad te Domine clamavi. Et mane oratio mea praeveniet te. »</li></ul>",
+    "source": "Entre ciel et terre, p. 223",
+    "voie": "voie-des-sephiroth",
+    "voieUuid": "Compendium.pavillon-noir-2.voies.Item.5soP14P6cbQPMX5I",
+    "puissance": 6,
+    "nomNatif": "Vertu",
+    "compulsion": "",
+    "accessible": true,
+    "visions": "Suppression totale d'un des dangers propres à une entreprise (ex : silence total ou absence de sentinelles lors d'un raid). · Prospérité. · Faveurs de personnages haut placés. · Succès d'action dans le cadre d'une cause juste. · Découverte des complots. · Gloire militaire et effets décuplés de la Gloire. · Contrer les pouvoirs du démon Vepar.",
+    "portee": "Ici",
+    "cible": "Nous",
+    "impact": "",
+    "duree": "30 min ou 1 semaine (Faveurs de personnages haut placés)",
+    "conditions": "",
+    "references": "",
+    "application": "manuel"
+  },
+  "effects": [],
+  "folder": "bbVpwWTAqt36UWdh",
+  "sort": 60043,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.345",
+    "systemId": "pavillon-noir-2",
+    "systemVersion": "0.7.0",
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": null
+  }
+}

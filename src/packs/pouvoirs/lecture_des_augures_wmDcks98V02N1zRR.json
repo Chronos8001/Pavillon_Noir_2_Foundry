@@ -1,0 +1,42 @@
+{
+  "_id": "wmDcks98V02N1zRR",
+  "_key": "!items!wmDcks98V02N1zRR",
+  "name": "Lecture des augures",
+  "type": "pouvoir",
+  "img": "icons/svg/aura.svg",
+  "system": {
+    "description": "<p><strong>Visions</strong></p><ul><li>L&#x27;augure indique si les dieux sont favorables ou défavorables à une action.</li><li>Augure par examen du vol des oiseaux.</li><li>Augure par examen de la course d&#x27;un lièvre.</li><li>Augure par examen des convulsions des membres d&#x27;un homme sacrifié.</li></ul><p><strong>Compulsions.</strong> Étudier pendant deux jours sans interruption le vol des oiseaux. Suivre des lièvres pendant une journée. Sacrifier un homme.</p>",
+    "source": "Entre ciel et terre, p. 250",
+    "voie": "voie-du-druidisme",
+    "voieUuid": "Compendium.pavillon-noir-2.voies.Item.444Fft7a0LtvOMIS",
+    "puissance": 3,
+    "nomNatif": "",
+    "compulsion": "Étudier pendant deux jours sans interruption le vol des oiseaux. Suivre des lièvres pendant une journée. Sacrifier un homme.",
+    "accessible": true,
+    "visions": "L'augure indique si les dieux sont favorables ou défavorables à une action. · Augure par examen du vol des oiseaux. · Augure par examen de la course d'un lièvre. · Augure par examen des convulsions des membres d'un homme sacrifié.",
+    "portee": "Personnelle",
+    "cible": "Moi",
+    "impact": "",
+    "duree": "2 min",
+    "conditions": "",
+    "references": "",
+    "application": "manuel"
+  },
+  "effects": [],
+  "folder": "GhMxnwLVYmucd3Qt",
+  "sort": 30018,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.345",
+    "systemId": "pavillon-noir-2",
+    "systemVersion": "0.7.0",
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": null
+  }
+}

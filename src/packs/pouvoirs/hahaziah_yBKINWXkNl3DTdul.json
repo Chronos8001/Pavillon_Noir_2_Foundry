@@ -1,0 +1,42 @@
+{
+  "_id": "yBKINWXkNl3DTdul",
+  "_key": "!items!yBKINWXkNl3DTdul",
+  "name": "Hahaziah",
+  "type": "pouvoir",
+  "img": "icons/svg/aura.svg",
+  "system": {
+    "description": "<p><strong>Visions</strong></p><ul><li>Réponse à toute question concernant le règne minéral, animal ou végétal.</li><li>Révélation des mystères occultes.</li><li>Révélation des événements et des objets cachés.</li><li>Mettre au jour complots et trahisons.</li><li>Donne une mission divine ou rend divine une mission.</li><li>Protection contre la convoitise.</li><li>Guérison de toutes les douleurs, maladies et blessures.</li><li>Contrer les pouvoirs du démon Balam.</li></ul><ul><li><strong>Attribut.</strong> Dieu caché.</li><li><strong>Heure.</strong> 16h40 à 17h00.</li><li><strong>Jours.</strong> 2 au 7 décembre. 11 mai, 25 juillet, 8 octobre, 20 décembre, 28 février.</li><li><strong>Couleurs/Cristal.</strong> Violet/Magnésite.</li><li><strong>Prière.</strong> « Sit gloria Domini in saeculum. Laetabitur Dominus in operibus suis. »</li></ul>",
+    "source": "Entre ciel et terre, p. 224",
+    "voie": "voie-des-sephiroth",
+    "voieUuid": "Compendium.pavillon-noir-2.voies.Item.5soP14P6cbQPMX5I",
+    "puissance": 7,
+    "nomNatif": "Principauté",
+    "compulsion": "",
+    "accessible": true,
+    "visions": "Réponse à toute question concernant le règne minéral, animal ou végétal. · Révélation des mystères occultes. · Révélation des événements et des objets cachés. · Mettre au jour complots et trahisons. · Donne une mission divine ou rend divine une mission. · Protection contre la convoitise. · Guérison de toutes les douleurs, maladies et blessures. · Contrer les pouvoirs du démon Balam.",
+    "portee": "Là",
+    "cible": "Vous",
+    "impact": "",
+    "duree": "24 h",
+    "conditions": "",
+    "references": "",
+    "application": "manuel"
+  },
+  "effects": [],
+  "folder": "bbVpwWTAqt36UWdh",
+  "sort": 70051,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.345",
+    "systemId": "pavillon-noir-2",
+    "systemVersion": "0.7.0",
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": null
+  }
+}

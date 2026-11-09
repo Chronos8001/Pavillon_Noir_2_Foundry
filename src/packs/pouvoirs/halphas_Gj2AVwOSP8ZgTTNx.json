@@ -1,0 +1,42 @@
+{
+  "_id": "Gj2AVwOSP8ZgTTNx",
+  "_key": "!items!Gj2AVwOSP8ZgTTNx",
+  "name": "Halphas",
+  "type": "pouvoir",
+  "img": "icons/svg/aura.svg",
+  "system": {
+    "description": "<p><strong>Visions</strong></p><ul><li>Enseignement*** du commandement des troupes (+2D en Tactique et en Meneur d&#x27;hommes ou +1 en Combat de groupe).</li><li>Attraction de la foudre.</li><li>Appel de l&#x27;esprit infernal : démon combattant sous ses ordres (4 F 9 en Combat à mains nues et +3 aux dégâts).</li><li>Attaque d&#x27;animaux féroces.</li><li>Erreur et mensonge.</li><li>Contrôle* de ceux qui n&#x27;ont pas de principe de religion.</li><li>Contrer les pouvoirs de l&#x27;ange Haamiah.</li></ul><ul><li><strong>Aspect.</strong> Cigogne.</li><li><strong>Heure.</strong> 12h20 à 12h40.</li><li><strong>Jours.</strong> 29 septembre au 3 octobre. 28 avril, 12 juillet, 25 septembre, 7 décembre, 15 février.</li><li><strong>Couleurs/Cristal.</strong> Orange ou indigo/Péridot.</li></ul>",
+    "source": "Entre ciel et terre, p. 239",
+    "voie": "voie-des-qlipoth",
+    "voieUuid": "Compendium.pavillon-noir-2.voies.Item.28cj5d17pp6tLLr8",
+    "puissance": 5,
+    "nomNatif": "Prestidigitateur",
+    "compulsion": "",
+    "accessible": true,
+    "visions": "Enseignement*** du commandement des troupes (+2D en Tactique et en Meneur d'hommes ou +1 en Combat de groupe). · Attraction de la foudre. · Appel de l'esprit infernal : démon combattant sous ses ordres (4 F 9 en Combat à mains nues et +3 aux dégâts). · Attaque d'animaux féroces. · Erreur et mensonge. · Contrôle* de ceux qui n'ont pas de principe de religion. · Contrer les pouvoirs de l'ange Haamiah.",
+    "portee": "Voix",
+    "cible": "Toi (Enseignement...) ou Eux",
+    "impact": "",
+    "duree": "2 min (Appel...) ou 4 h",
+    "conditions": "",
+    "references": "",
+    "application": "manuel"
+  },
+  "effects": [],
+  "folder": "I3FQOgCqphyIoMbm",
+  "sort": 50037,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.345",
+    "systemId": "pavillon-noir-2",
+    "systemVersion": "0.7.0",
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": null
+  }
+}

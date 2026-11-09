@@ -1,0 +1,42 @@
+{
+  "_id": "akSDBkKvakQ2bf6i",
+  "_key": "!items!akSDBkKvakQ2bf6i",
+  "name": "Pas de l'ocelot",
+  "type": "pouvoir",
+  "img": "icons/svg/aura.svg",
+  "system": {
+    "description": "<p><strong>Visions</strong></p><ul><li>Ne laisse que des traces d&#x27;ocelot en se déplaçant.</li><li>Extrême discrétion.</li><li>Agilité et capacité à escalader.</li></ul><p><strong>Compulsions.</strong> Attaquer un ennemi à mains nues en imitant les mouvements de l&#x27;ocelot. S&#x27;attacher une patte de l&#x27;ocelot que l&#x27;on a tué autour du cou.</p>",
+    "source": "Entre ciel et terre, p. 172",
+    "voie": "voie-d-icheiricou-pour-la-guerre",
+    "voieUuid": "Compendium.pavillon-noir-2.voies.Item.ua948TzRBv4MWuy4",
+    "puissance": 4,
+    "nomNatif": "caicouchi tabire",
+    "compulsion": "Attaquer un ennemi à mains nues en imitant les mouvements de l'ocelot. S'attacher une patte de l'ocelot que l'on a tué autour du cou.",
+    "accessible": true,
+    "visions": "Ne laisse que des traces d'ocelot en se déplaçant. · Extrême discrétion. · Agilité et capacité à escalader.",
+    "portee": "Toucher",
+    "cible": "Moi",
+    "impact": "",
+    "duree": "1 cycle",
+    "conditions": "",
+    "references": "",
+    "application": "manuel"
+  },
+  "effects": [],
+  "folder": "tYn7s19RmGg8GMUR",
+  "sort": 40015,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.345",
+    "systemId": "pavillon-noir-2",
+    "systemVersion": "0.7.0",
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": null
+  }
+}

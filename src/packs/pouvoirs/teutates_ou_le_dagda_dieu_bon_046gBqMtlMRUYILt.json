@@ -1,0 +1,42 @@
+{
+  "_id": "046gBqMtlMRUYILt",
+  "_key": "!items!046gBqMtlMRUYILt",
+  "name": "Teutatès (ou Le Dagda), dieu bon",
+  "type": "pouvoir",
+  "img": "icons/svg/aura.svg",
+  "system": {
+    "description": "<p><strong>Visions</strong></p><ul><li>Connaissance des rites sacrés (quelle que soit la religion). Autres religions et traditions européennes</li><li>Puits de science.</li><li>Contrats scellés.</li><li>Inviolables serments.</li></ul><p><strong>Compulsions.</strong> Ne pas tenir compte d&#x27;un contrat. Punir qui a violé un serment (peut être un serment de mariage, par exemple).</p>",
+    "source": "Entre ciel et terre, p. 252",
+    "voie": "voie-du-druidisme",
+    "voieUuid": "Compendium.pavillon-noir-2.voies.Item.444Fft7a0LtvOMIS",
+    "puissance": 5,
+    "nomNatif": "",
+    "compulsion": "Ne pas tenir compte d'un contrat. Punir qui a violé un serment (peut être un serment de mariage, par exemple).",
+    "accessible": true,
+    "visions": "Connaissance des rites sacrés (quelle que soit la religion). Autres religions et traditions européennes · Puits de science. · Contrats scellés. · Inviolables serments.",
+    "portee": "Toucher",
+    "cible": "Toi",
+    "impact": "",
+    "duree": "4 h ou Permanent",
+    "conditions": "",
+    "references": "",
+    "application": "manuel"
+  },
+  "effects": [],
+  "folder": "GhMxnwLVYmucd3Qt",
+  "sort": 50031,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.345",
+    "systemId": "pavillon-noir-2",
+    "systemVersion": "0.7.0",
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": null
+  }
+}

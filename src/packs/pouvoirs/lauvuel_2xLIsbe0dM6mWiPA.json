@@ -1,0 +1,42 @@
+{
+  "_id": "2xLIsbe0dM6mWiPA",
+  "_key": "!items!2xLIsbe0dM6mWiPA",
+  "name": "Lauvuel",
+  "type": "pouvoir",
+  "img": "icons/svg/aura.svg",
+  "system": {
+    "description": "<p><strong>Visions</strong></p><ul><li>Faveurs de personnes célèbres.</li><li>Protection contre la médisance, la jalousie, la calomnie et l&#x27;orgueil des autres.</li><li>Perception des vies antérieures.</li><li>Retrouvailles avec d&#x27;anciennes connaissances.</li><li>Renouer les liens.</li><li>Contrer les pouvoirs du démon Gusion.</li></ul><ul><li><strong>Attribut.</strong> Dieu loué et exalté.</li><li><strong>Heure.</strong> 3h20 à 3h40.</li><li><strong>Jours.</strong> 10 au 15 mai. 1er avril, 14 juin, 29 août, 10 novembre, 19 janvier.</li><li><strong>Couleurs/Cristal.</strong> Jaune pâle ou bleu pâle/Quartz fumé.</li><li><strong>Prière.</strong> « Vivit Dominus et benedictus Deus meus, et exultatur Deus salutis meae. »</li></ul>",
+    "source": "Entre ciel et terre, p. 216",
+    "voie": "voie-des-sephiroth",
+    "voieUuid": "Compendium.pavillon-noir-2.voies.Item.5soP14P6cbQPMX5I",
+    "puissance": 2,
+    "nomNatif": "Chérubin",
+    "compulsion": "",
+    "accessible": true,
+    "visions": "Faveurs de personnes célèbres. · Protection contre la médisance, la jalousie, la calomnie et l'orgueil des autres. · Perception des vies antérieures. · Retrouvailles avec d'anciennes connaissances. · Renouer les liens. · Contrer les pouvoirs du démon Gusion.",
+    "portee": "Personnelle",
+    "cible": "Moi",
+    "impact": "",
+    "duree": "4 h",
+    "conditions": "",
+    "references": "",
+    "application": "manuel"
+  },
+  "effects": [],
+  "folder": "bbVpwWTAqt36UWdh",
+  "sort": 20011,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.345",
+    "systemId": "pavillon-noir-2",
+    "systemVersion": "0.7.0",
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": null
+  }
+}

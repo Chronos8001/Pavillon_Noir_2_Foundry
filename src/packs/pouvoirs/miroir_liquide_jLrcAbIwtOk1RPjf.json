@@ -1,0 +1,42 @@
+{
+  "_id": "jLrcAbIwtOk1RPjf",
+  "_key": "!items!jLrcAbIwtOk1RPjf",
+  "name": "Miroir liquide",
+  "type": "pouvoir",
+  "img": "icons/svg/aura.svg",
+  "system": {
+    "description": "<p><strong>Visions</strong></p><ul><li>Miroir du présent (voir ce qui se passe dans ou sur l&#x27;éten- P due d&#x27;eau que l&#x27;on regarde).</li><li>Suivre la trace des navires.</li></ul><p><strong>Compulsions.</strong> Regarder une scène marquante se dérouler d&#x27;en dessous de l&#x27;eau. Retrouver un navire que l&#x27;on avait perdu de vue.</p>",
+    "source": "Entre ciel et terre, p. 278",
+    "voie": "voie-d-agwe",
+    "voieUuid": "Compendium.pavillon-noir-2.voies.Item.6bwsVNHhFxnjtf9Q",
+    "puissance": 6,
+    "nomNatif": "vè likid",
+    "compulsion": "Regarder une scène marquante se dérouler d'en dessous de l'eau. Retrouver un navire que l'on avait perdu de vue.",
+    "accessible": true,
+    "visions": "Miroir du présent (voir ce qui se passe dans ou sur l'éten- P due d'eau que l'on regarde). · Suivre la trace des navires.",
+    "portee": "Là-bas",
+    "cible": "Eux",
+    "impact": "",
+    "duree": "1 cycle",
+    "conditions": "",
+    "references": "",
+    "application": "manuel"
+  },
+  "effects": [],
+  "folder": "xaG58lKGMpuXcD6x",
+  "sort": 60016,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.345",
+    "systemId": "pavillon-noir-2",
+    "systemVersion": "0.7.0",
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": null
+  }
+}

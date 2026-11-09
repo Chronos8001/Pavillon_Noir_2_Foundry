@@ -1,0 +1,42 @@
+{
+  "_id": "4qNFngJ4Emsv2FRq",
+  "_key": "!items!4qNFngJ4Emsv2FRq",
+  "name": "Appendice reptilien",
+  "type": "pouvoir",
+  "img": "icons/svg/aura.svg",
+  "system": {
+    "description": "<p><strong>Visions</strong></p><ul><li>Chevelure de serpents.</li><li>Transformer un membre en queue ou en corps et tête de serpent.</li><li>Coller un serpent sur son corps et le contrôler comme un membre.</li><li>Transformer des objets allongés en serpents.</li><li>Transformer un serpent en bâton. Il reprendra sa forme en étant frappé sur le sol.</li></ul><p><strong>Compulsions.</strong> Danser avec un serpent venimeux sans lui tenir la tête. Mordre un homme avec un serpent sculpté dans un bâton de façon à ce qu&#x27;il se croit infecté.</p>",
+    "source": "Entre ciel et terre, p. 284",
+    "voie": "voie-de-dambala",
+    "voieUuid": "Compendium.pavillon-noir-2.voies.Item.fVIeiRnBn8ADVFE2",
+    "puissance": 8,
+    "nomNatif": "ekstremitè",
+    "compulsion": "Danser avec un serpent venimeux sans lui tenir la tête. Mordre un homme avec un serpent sculpté dans un bâton de façon à ce qu'il se croit infecté.",
+    "accessible": true,
+    "visions": "Chevelure de serpents. · Transformer un membre en queue ou en corps et tête de serpent. · Coller un serpent sur son corps et le contrôler comme un membre. · Transformer des objets allongés en serpents. · Transformer un serpent en bâton. Il reprendra sa forme en étant frappé sur le sol.",
+    "portee": "Là",
+    "cible": "Nous",
+    "impact": "",
+    "duree": "1 cycle",
+    "conditions": "",
+    "references": "",
+    "application": "manuel"
+  },
+  "effects": [],
+  "folder": "BsFkHFCdWu35mdPn",
+  "sort": 80028,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.345",
+    "systemId": "pavillon-noir-2",
+    "systemVersion": "0.7.0",
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": null
+  }
+}

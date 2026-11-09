@@ -1,0 +1,42 @@
+{
+  "_id": "Zw5dvGT7O24ekf3J",
+  "_key": "!items!Zw5dvGT7O24ekf3J",
+  "name": "Apaisement / Renaissance du mal",
+  "type": "pouvoir",
+  "img": "icons/svg/aura.svg",
+  "system": {
+    "description": "<p><strong>Visions</strong></p><ul><li>Apaiser/aggraver une blessure, un empoisonnement, apaiser/augmenter la douleur.</li><li>Calmer/exciter les mauvaises pulsions.</li><li>Faire revenir le calme et l&#x27;entente au sein d&#x27;un groupe.</li><li>Faire remonter à la surface les vieilles blessures, tensions, poisons, maladies, mauvaises pulsions, etc.</li></ul><p><strong>Compulsions.</strong> Calmer les souffrances d&#x27;un blessé ou malade. Faire renaître une vieille rancoeur.</p>",
+    "source": "Entre ciel et terre, p. 182",
+    "voie": "voie-d-icheiricou-pour-la-protection-et-la-punition",
+    "voieUuid": "Compendium.pavillon-noir-2.voies.Item.yH60f20rPKBEP9j4",
+    "puissance": 5,
+    "nomNatif": "acacôchoua nale tiem",
+    "compulsion": "Calmer les souffrances d'un blessé ou malade. Faire renaître une vieille rancoeur.",
+    "accessible": true,
+    "visions": "Apaiser/aggraver une blessure, un empoisonnement, apaiser/augmenter la douleur. · Calmer/exciter les mauvaises pulsions. · Faire revenir le calme et l'entente au sein d'un groupe. · Faire remonter à la surface les vieilles blessures, tensions, poisons, maladies, mauvaises pulsions, etc.",
+    "portee": "Là",
+    "cible": "Nous",
+    "impact": "",
+    "duree": "24 h",
+    "conditions": "",
+    "references": "",
+    "application": "manuel"
+  },
+  "effects": [],
+  "folder": "aNYZvvAOkWDjlSbd",
+  "sort": 50014,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.345",
+    "systemId": "pavillon-noir-2",
+    "systemVersion": "0.7.0",
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": null
+  }
+}

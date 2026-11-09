@@ -1,0 +1,42 @@
+{
+  "_id": "xdxXkV45LJuvVjEf",
+  "_key": "!items!xdxXkV45LJuvVjEf",
+  "name": "Conjoint féerique",
+  "type": "pouvoir",
+  "img": "icons/svg/aura.svg",
+  "system": {
+    "description": "<p><strong>Visions</strong></p><ul><li>Rencontre avec une fée amoureuse.</li></ul><p><strong>Compulsions.</strong> Courtiser une fée ou être courtisé par une fée.</p><p><em>Règles particulières : voir Entre ciel et terre, p. 267.</em></p>",
+    "source": "Entre ciel et terre, p. 267",
+    "voie": "voie-du-folklore",
+    "voieUuid": "Compendium.pavillon-noir-2.voies.Item.Iy4OYyIN7hI6KjNY",
+    "puissance": 7,
+    "nomNatif": "",
+    "compulsion": "Courtiser une fée ou être courtisé par une fée.",
+    "accessible": true,
+    "visions": "Rencontre avec une fée amoureuse.",
+    "portee": "Personnelle",
+    "cible": "Moi",
+    "impact": "",
+    "duree": "Permanent",
+    "conditions": "",
+    "references": "",
+    "application": "manuel"
+  },
+  "effects": [],
+  "folder": "aLFfT6IKRuY7TugP",
+  "sort": 70029,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.345",
+    "systemId": "pavillon-noir-2",
+    "systemVersion": "0.7.0",
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": null
+  }
+}

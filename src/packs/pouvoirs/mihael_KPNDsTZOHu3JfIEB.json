@@ -1,0 +1,42 @@
+{
+  "_id": "KPNDsTZOHu3JfIEB",
+  "_key": "!items!KPNDsTZOHu3JfIEB",
+  "name": "Mihael",
+  "type": "pouvoir",
+  "img": "icons/svg/aura.svg",
+  "system": {
+    "description": "<p><strong>Visions</strong></p><ul><li>Célébration de l&#x27;amour maternel.</li><li>Certitude juste et apaisante.</li><li>Recherche de bien-être.</li><li>Amour et paix.</li><li>Rencontre de l&#x27;âme soeur.</li><li>Voir au-delà des faits, des actes et des paroles.</li><li>Visualisation des âmes en peine et communication avec elles.</li><li>Donne le repos aux âmes en peine.</li><li>Donne un corps juste mort à une âme en peine pour qu&#x27;elle revienne à la vie.</li><li>Contrer les pouvoirs du démon Haagenti.</li></ul><ul><li><strong>Attribut.</strong> Dieu, père secourable.</li><li><strong>Heure.</strong> 15h40 à 16h00.</li><li><strong>Jours.</strong> 18 au 23 novembre. 8 mai, 22 juillet, 5 octobre, 17 décembre, 25 février.</li><li><strong>Couleurs/Cristal.</strong> Rose magenta/Turquoise.</li><li><strong>Prière.</strong> « Notum fecit Dominus salutare suum. In conspectu gentium revelatit justitiam suam. »</li></ul>",
+    "source": "Entre ciel et terre, p. 224",
+    "voie": "voie-des-sephiroth",
+    "voieUuid": "Compendium.pavillon-noir-2.voies.Item.5soP14P6cbQPMX5I",
+    "puissance": 6,
+    "nomNatif": "Vertu",
+    "compulsion": "",
+    "accessible": true,
+    "visions": "Célébration de l'amour maternel. · Certitude juste et apaisante. · Recherche de bien-être. · Amour et paix. · Rencontre de l'âme soeur. · Voir au-delà des faits, des actes et des paroles. · Visualisation des âmes en peine et communication avec elles. · Donne le repos aux âmes en peine. · Donne un corps juste mort à une âme en peine pour qu'elle revienne à la vie. · Contrer les pouvoirs du démon Haagenti.",
+    "portee": "Voix/Vue/Ouïe",
+    "cible": "Lui",
+    "impact": "",
+    "duree": "24 h ou Permanent (Donne le repos... et Donne un corps...)",
+    "conditions": "",
+    "references": "",
+    "application": "manuel"
+  },
+  "effects": [],
+  "folder": "bbVpwWTAqt36UWdh",
+  "sort": 60048,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.345",
+    "systemId": "pavillon-noir-2",
+    "systemVersion": "0.7.0",
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": null
+  }
+}

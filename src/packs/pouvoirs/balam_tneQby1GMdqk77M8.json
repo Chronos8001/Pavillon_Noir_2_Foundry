@@ -1,0 +1,42 @@
+{
+  "_id": "tneQby1GMdqk77M8",
+  "_key": "!items!tneQby1GMdqk77M8",
+  "name": "Balam",
+  "type": "pouvoir",
+  "img": "icons/svg/aura.svg",
+  "system": {
+    "description": "<p><strong>Visions</strong></p><ul><li>Invisibilité.</li><li>Intelligence (+2 en Perception, +2 en Adaptabilité et +2 en Érudition).</li><li>Crédulité des foules.</li><li>Effet contraire des simples (herbes et minéraux médicinaux).</li><li>Recherche de la richesse par des moyens inadéquats.</li><li>Domination** des charlatans.</li><li>Contrer les pouvoirs de l&#x27;ange Hahaziah.</li></ul><ul><li><strong>Aspect.</strong> Homme à trois têtes : une de taureau, une d&#x27;homme et une de bélier. Des flammes lui sortent des yeux et il a une queue de serpent. Il tient un faucon sur son poing et monte un ours fort.</li><li><strong>Heure.</strong> 16h40 à 17h00.</li><li><strong>Jours.</strong> 2 au 7 décembre. 11 mai, 25 juillet, 8 octobre, 20 décembre, 28 février.</li><li><strong>Couleurs/Cristal.</strong> Violet/Magnésite.</li></ul>",
+    "source": "Entre ciel et terre, p. 242",
+    "voie": "voie-des-qlipoth",
+    "voieUuid": "Compendium.pavillon-noir-2.voies.Item.28cj5d17pp6tLLr8",
+    "puissance": 7,
+    "nomNatif": "Furie semeuse de Maux",
+    "compulsion": "",
+    "accessible": true,
+    "visions": "Invisibilité. · Intelligence (+2 en Perception, +2 en Adaptabilité et +2 en Érudition). · Crédulité des foules. · Effet contraire des simples (herbes et minéraux médicinaux). · Recherche de la richesse par des moyens inadéquats. · Domination** des charlatans. · Contrer les pouvoirs de l'ange Hahaziah.",
+    "portee": "Voix",
+    "cible": "Eux",
+    "impact": "",
+    "duree": "4 h",
+    "conditions": "",
+    "references": "",
+    "application": "manuel"
+  },
+  "effects": [],
+  "folder": "I3FQOgCqphyIoMbm",
+  "sort": 70050,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.345",
+    "systemId": "pavillon-noir-2",
+    "systemVersion": "0.7.0",
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": null
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "_id": "lSJ0qKL1gl8zILe6",
+  "_key": "!items!lSJ0qKL1gl8zILe6",
+  "name": "Colère, courage, apparence resplendissante des esprits chamaniques",
+  "type": "pouvoir",
+  "img": "icons/svg/aura.svg",
+  "system": {
+    "description": "<p><strong>Visions</strong></p><ul><li>Déclenche la colère terrible des xapiripë envers quelqu&#x27;un.</li><li>Ressent la colère des xapiripë.</li><li>Fait ressentir un courage inébranlable même contre l&#x27;ennemi le plus dangereux.</li><li>Apparence resplendissante des xapiripë (halo de lumière, perfection du corps et des traits, superbes parures).</li></ul><p><strong>Compulsions.</strong> Dessiner précisément l&#x27;image d&#x27;un xapiripë pour qu&#x27;un profane le voie. Affronter un ennemi plus puissant que soi.</p>",
+    "source": "Entre ciel et terre, p. 186",
+    "voie": "voie-des-xapiripe",
+    "voieUuid": "Compendium.pavillon-noir-2.voies.Item.uLmNntdGMAtLAIsE",
+    "puissance": 2,
+    "nomNatif": "utupë xapiripë",
+    "compulsion": "Dessiner précisément l'image d'un xapiripë pour qu'un profane le voie. Affronter un ennemi plus puissant que soi.",
+    "accessible": true,
+    "visions": "Déclenche la colère terrible des xapiripë envers quelqu'un. · Ressent la colère des xapiripë. · Fait ressentir un courage inébranlable même contre l'ennemi le plus dangereux. · Apparence resplendissante des xapiripë (halo de lumière, perfection du corps et des traits, superbes parures).",
+    "portee": "Vue/Voix/Ouïe",
+    "cible": "Toi",
+    "impact": "",
+    "duree": "1 cycle",
+    "conditions": "",
+    "references": "",
+    "application": "manuel"
+  },
+  "effects": [],
+  "folder": "MTKTGwYLgyfOOhl1",
+  "sort": 20007,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.345",
+    "systemId": "pavillon-noir-2",
+    "systemVersion": "0.7.0",
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": null
+  }
+}

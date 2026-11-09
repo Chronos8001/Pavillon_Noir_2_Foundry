@@ -1,0 +1,42 @@
+{
+  "_id": "ktgBqUiz7yIzhqTg",
+  "_key": "!items!ktgBqUiz7yIzhqTg",
+  "name": "Retour des spectres",
+  "type": "pouvoir",
+  "img": "icons/svg/aura.svg",
+  "system": {
+    "description": "<p><strong>Visions</strong></p><ul><li>Les hommes ne meurent plus, ils se rassemblent pour servir le chaman.</li><li>Les morts à qui l&#x27;on n&#x27;a pas donné l&#x27;oubli reviennent pour dévorer les vivants.</li><li>Les yeux des hommes meurent, et ils peuvent progressivement voir les xapiripë.</li><li>Épidémie de masse.</li></ul><p><strong>Compulsions.</strong> Disposer des cadavres comme s&#x27;il s&#x27;agissait d&#x27;une armée. Survivre à une épidémie.</p>",
+    "source": "Entre ciel et terre, p. 190",
+    "voie": "voie-des-xapiripe",
+    "voieUuid": "Compendium.pavillon-noir-2.voies.Item.uLmNntdGMAtLAIsE",
+    "puissance": 9,
+    "nomNatif": "napëpë waripë",
+    "compulsion": "Disposer des cadavres comme s'il s'agissait d'une armée. Survivre à une épidémie.",
+    "accessible": true,
+    "visions": "Les hommes ne meurent plus, ils se rassemblent pour servir le chaman. · Les morts à qui l'on n'a pas donné l'oubli reviennent pour dévorer les vivants. · Les yeux des hommes meurent, et ils peuvent progressivement voir les xapiripë. · Épidémie de masse.",
+    "portee": "Là-bas",
+    "cible": "Eux",
+    "impact": "",
+    "duree": "1 semaine",
+    "conditions": "",
+    "references": "",
+    "application": "manuel"
+  },
+  "effects": [],
+  "folder": "MTKTGwYLgyfOOhl1",
+  "sort": 90038,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.345",
+    "systemId": "pavillon-noir-2",
+    "systemVersion": "0.7.0",
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": null
+  }
+}

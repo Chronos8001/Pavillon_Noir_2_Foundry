@@ -1,0 +1,42 @@
+{
+  "_id": "AD6XkxuwCKaGCAv0",
+  "_key": "!items!AD6XkxuwCKaGCAv0",
+  "name": "Vine",
+  "type": "pouvoir",
+  "img": "icons/svg/aura.svg",
+  "system": {
+    "description": "<p><strong>Visions</strong></p><ul><li>Invisibilité des méchants et des orgueilleux.</li><li>Découverte des sorcières et des personnes cachées.</li><li>Écroulement des murs et des tours.</li><li>Canicule ou vent brûlant.</li><li>Grand froid ou vent glacial.</li><li>Sécheresse.</li><li>Pluies diluviennes et mer démontée.</li><li>Acharnement sur les humiliés et les déchus.</li><li>Contrer les pouvoirs de l&#x27;ange Sealiah.</li></ul><ul><li><strong>Aspect.</strong> Lion tenant un serpent dans sa main et montant un cheval noir.</li><li><strong>Heure.</strong> 14h40 à 15h00.</li><li><strong>Jours.</strong> 3 au 7 novembre. 5 mai, 19 juillet, 2 octobre, 14 décembre, 22 février.</li><li><strong>Couleurs/Cristal.</strong> Rose magenta ou violet/Tourmaline noire.</li></ul>",
+    "source": "Entre ciel et terre, p. 241",
+    "voie": "voie-des-qlipoth",
+    "voieUuid": "Compendium.pavillon-noir-2.voies.Item.28cj5d17pp6tLLr8",
+    "puissance": 6,
+    "nomNatif": "Puissance de l'Air",
+    "compulsion": "",
+    "accessible": true,
+    "visions": "Invisibilité des méchants et des orgueilleux. · Découverte des sorcières et des personnes cachées. · Écroulement des murs et des tours. · Canicule ou vent brûlant. · Grand froid ou vent glacial. · Sécheresse. · Pluies diluviennes et mer démontée. · Acharnement sur les humiliés et les déchus. · Contrer les pouvoirs de l'ange Sealiah.",
+    "portee": "Là-bas",
+    "cible": "Eux",
+    "impact": "",
+    "duree": "24 h ou 1 mois (Sécheresse)",
+    "conditions": "",
+    "references": "",
+    "application": "manuel"
+  },
+  "effects": [],
+  "folder": "I3FQOgCqphyIoMbm",
+  "sort": 60044,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.345",
+    "systemId": "pavillon-noir-2",
+    "systemVersion": "0.7.0",
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": null
+  }
+}

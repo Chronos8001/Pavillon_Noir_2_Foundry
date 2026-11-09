@@ -1,0 +1,42 @@
+{
+  "_id": "N7gM1WzDsLKFbN67",
+  "_key": "!items!N7gM1WzDsLKFbN67",
+  "name": "Porteur de vérité",
+  "type": "pouvoir",
+  "img": "icons/svg/aura.svg",
+  "system": {
+    "description": "<p><strong>Visions</strong></p><ul><li>La parole du béhique ne saurait être mise en doute.</li><li>La foule s&#x27;acharne sur celui qui dit la vérité.</li><li>Désigner pour un groupe une personne qui devient le garant de la vérité : sur un mensonge d&#x27;une personne de son Porté groupe, elle meurt.</li></ul><p><strong>Compulsions.</strong> Discerner les mensonges de la vérité. Se proposer comme otage pour garantir une transaction.</p>",
+    "source": "Entre ciel et terre, p. 194",
+    "voie": "voie-des-zemis",
+    "voieUuid": "Compendium.pavillon-noir-2.voies.Item.adV2aUWhmHXDCarX",
+    "puissance": 6,
+    "nomNatif": "inalemaintina",
+    "compulsion": "Discerner les mensonges de la vérité. Se proposer comme otage pour garantir une transaction.",
+    "accessible": true,
+    "visions": "La parole du béhique ne saurait être mise en doute. · La foule s'acharne sur celui qui dit la vérité. · Désigner pour un groupe une personne qui devient le garant de la vérité : sur un mensonge d'une personne de son Porté groupe, elle meurt.",
+    "portee": "Là",
+    "cible": "Eux",
+    "impact": "",
+    "duree": "24 h",
+    "conditions": "",
+    "references": "",
+    "application": "manuel"
+  },
+  "effects": [],
+  "folder": "pdOB4V6FtlhUIRJ0",
+  "sort": 60026,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.345",
+    "systemId": "pavillon-noir-2",
+    "systemVersion": "0.7.0",
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": null
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "_id": "tgP69rYeweHu0qBc",
+  "_key": "!items!tgP69rYeweHu0qBc",
+  "name": "Sagesse du serpent",
+  "type": "pouvoir",
+  "img": "icons/svg/aura.svg",
+  "system": {
+    "description": "<p><strong>Visions</strong></p><ul><li>Bon sens.</li><li>Donner des arguments sans émotion.</li><li>Aide à la résolution de problème ou à la réaction en période de tension émotionnelle.</li></ul><p><strong>Compulsions.</strong> Agir froidement sans aucune émotion ou sans considération de valeurs. Contrôler une émotion intense.</p>",
+    "source": "Entre ciel et terre, p. 282",
+    "voie": "voie-de-dambala",
+    "voieUuid": "Compendium.pavillon-noir-2.voies.Item.fVIeiRnBn8ADVFE2",
+    "puissance": 3,
+    "nomNatif": "lasajès koulèv",
+    "compulsion": "Agir froidement sans aucune émotion ou sans considération de valeurs. Contrôler une émotion intense.",
+    "accessible": true,
+    "visions": "Bon sens. · Donner des arguments sans émotion. · Aide à la résolution de problème ou à la réaction en période de tension émotionnelle.",
+    "portee": "Personnelle",
+    "cible": "Moi",
+    "impact": "",
+    "duree": "1 semaine",
+    "conditions": "",
+    "references": "",
+    "application": "manuel"
+  },
+  "effects": [],
+  "folder": "BsFkHFCdWu35mdPn",
+  "sort": 30011,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.345",
+    "systemId": "pavillon-noir-2",
+    "systemVersion": "0.7.0",
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": null
+  }
+}

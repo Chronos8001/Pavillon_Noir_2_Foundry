@@ -1,0 +1,42 @@
+{
+  "_id": "bjHPJr5hNgDtCXbw",
+  "_key": "!items!bjHPJr5hNgDtCXbw",
+  "name": "Haiaiel",
+  "type": "pouvoir",
+  "img": "icons/svg/aura.svg",
+  "system": {
+    "description": "<p><strong>Visions</strong></p><ul><li>Maître des forces cosmiques (mouvement des planètes et des étoiles, rayonnement cosmique mortel, météorites, etc.).</li><li>Protection contre tout.</li><li>Courage face au danger.</li><li>Victoire dans les justes combats.</li><li>Confusion des méchants.</li><li>Contrer les pouvoirs du démon Dantalian.</li></ul><ul><li><strong>Attribut.</strong> Dieu maître de l&#x27;univers.</li><li><strong>Heure.</strong> 23h20 à 23h40.</li><li><strong>Jours.</strong> 11 au 15 mars. 31 mai, 14 août, 28 octobre, 9 janvier, 21 mars.</li><li><strong>Couleurs/Cristal.</strong> Violet pâle ou bleu pâle/Diamant.</li><li><strong>Prière.</strong> « Confitebor Domino nimis in ore meo. Et in medio multorum laudabo eum. »</li></ul>",
+    "source": "Entre ciel et terre, p. 229",
+    "voie": "voie-des-sephiroth",
+    "voieUuid": "Compendium.pavillon-noir-2.voies.Item.5soP14P6cbQPMX5I",
+    "puissance": 9,
+    "nomNatif": "Ange",
+    "compulsion": "",
+    "accessible": true,
+    "visions": "Maître des forces cosmiques (mouvement des planètes et des étoiles, rayonnement cosmique mortel, météorites, etc.). · Protection contre tout. · Courage face au danger. · Victoire dans les justes combats. · Confusion des méchants. · Contrer les pouvoirs du démon Dantalian.",
+    "portee": "Univers",
+    "cible": "Au-delà d'Eux",
+    "impact": "",
+    "duree": "24 h",
+    "conditions": "",
+    "references": "",
+    "application": "manuel"
+  },
+  "effects": [],
+  "folder": "bbVpwWTAqt36UWdh",
+  "sort": 90071,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.345",
+    "systemId": "pavillon-noir-2",
+    "systemVersion": "0.7.0",
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": null
+  }
+}

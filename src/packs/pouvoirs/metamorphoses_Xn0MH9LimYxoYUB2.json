@@ -1,0 +1,42 @@
+{
+  "_id": "Xn0MH9LimYxoYUB2",
+  "_key": "!items!Xn0MH9LimYxoYUB2",
+  "name": "Métamorphoses",
+  "type": "pouvoir",
+  "img": "icons/svg/aura.svg",
+  "system": {
+    "description": "<p><strong>Visions</strong></p><ul><li>Métamorphose.</li><li>Redonner sa véritable forme.</li></ul><p><strong>Compulsions.</strong> Dresser un alligator pour qu&#x27;il ne mange plus d&#x27;êtres humains. Dresser un singe pour qu&#x27;il se comporte comme un être humain</p><p><em>Règles particulières : voir Entre ciel et terre, p. 208.</em></p>",
+    "source": "Entre ciel et terre, p. 208",
+    "voie": "voie-des-cinq-soleils",
+    "voieUuid": "Compendium.pavillon-noir-2.voies.Item.LIzof8tOOXvNP2kT",
+    "puissance": 9,
+    "nomNatif": "tlacuepaliztin",
+    "compulsion": "Dresser un alligator pour qu'il ne mange plus d'êtres humains. Dresser un singe pour qu'il se comporte comme un être humain",
+    "accessible": true,
+    "visions": "Métamorphose. · Redonner sa véritable forme.",
+    "portee": "Là-bas",
+    "cible": "Lui ou Eux (métamorphose en singe ou en poisson)",
+    "impact": "",
+    "duree": "Permanent",
+    "conditions": "",
+    "references": "",
+    "application": "manuel"
+  },
+  "effects": [],
+  "folder": "hUdmcEpw2ErgQ3ld",
+  "sort": 90039,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.345",
+    "systemId": "pavillon-noir-2",
+    "systemVersion": "0.7.0",
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": null
+  }
+}

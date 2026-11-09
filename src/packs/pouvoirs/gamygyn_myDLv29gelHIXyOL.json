@@ -1,0 +1,42 @@
+{
+  "_id": "myDLv29gelHIXyOL",
+  "_key": "!items!myDLv29gelHIXyOL",
+  "name": "Gamygyn",
+  "type": "pouvoir",
+  "img": "icons/svg/aura.svg",
+  "system": {
+    "description": "<p><strong>Visions</strong></p><ul><li>Connaissance dans les sciences humaines.</li><li>Savoir qui est mort dans le péché ou noyé en mer.</li><li>Mauvaise éducation, pousse au vol.</li><li>Aide dans les recherches pour nuire à autrui ou blesser autrui.</li><li>Refus de s&#x27;engager dans une entreprise.</li><li>Frein dans une entreprise.</li><li>Casanier.</li><li>Mauvaise fortune pour les voyages maritimes.</li><li>Contrer les pouvoirs de l&#x27;ange Elemiah.</li></ul><ul><li><strong>Aspect.</strong> Poney ou âne parlant d&#x27;une voix rauque pouvant se changer en homme à la requête du Mage Noir.</li><li><strong>Heure.</strong> 1h00 à 1h20.</li><li><strong>Jours.</strong> 5 au 9 avril. 25 mars, 7 juin, 22 août, 3 novembre, 13 janvier.</li><li><strong>Couleurs/Cristal.</strong> Indigo ou or/Citrine.</li></ul>",
+    "source": "Entre ciel et terre, p. 230",
+    "voie": "voie-des-qlipoth",
+    "voieUuid": "Compendium.pavillon-noir-2.voies.Item.28cj5d17pp6tLLr8",
+    "puissance": 1,
+    "nomNatif": "Faux dieu",
+    "compulsion": "",
+    "accessible": true,
+    "visions": "Connaissance dans les sciences humaines. · Savoir qui est mort dans le péché ou noyé en mer. · Mauvaise éducation, pousse au vol. · Aide dans les recherches pour nuire à autrui ou blesser autrui. · Refus de s'engager dans une entreprise. · Frein dans une entreprise. · Casanier. · Mauvaise fortune pour les voyages maritimes. · Contrer les pouvoirs de l'ange Elemiah.",
+    "portee": "Vue/Voix/Ouïe",
+    "cible": "Lui",
+    "impact": "",
+    "duree": "2 min",
+    "conditions": "",
+    "references": "",
+    "application": "manuel"
+  },
+  "effects": [],
+  "folder": "I3FQOgCqphyIoMbm",
+  "sort": 10004,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.345",
+    "systemId": "pavillon-noir-2",
+    "systemVersion": "0.7.0",
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": null
+  }
+}

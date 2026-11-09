@@ -1,0 +1,42 @@
+{
+  "_id": "sDvUspWwohnHwNiV",
+  "_key": "!items!sDvUspWwohnHwNiV",
+  "name": "Résurrection",
+  "type": "pouvoir",
+  "img": "icons/svg/aura.svg",
+  "system": {
+    "description": "<p><strong>Visions</strong></p><ul><li>Retour à la vie.</li><li>Assure le caractère définitif d&#x27;une mort.</li></ul><p><strong>Compulsions.</strong> Retrouver le sosie d&#x27;un ami mort.</p>",
+    "source": "Entre ciel et terre, p. 304",
+    "voie": "voie-des-freres-marassa",
+    "voieUuid": "Compendium.pavillon-noir-2.voies.Item.g0bMhkfFArVT77cy",
+    "puissance": 10,
+    "nomNatif": "tounen vivan anko",
+    "compulsion": "Retrouver le sosie d'un ami mort.",
+    "accessible": true,
+    "visions": "Retour à la vie. · Assure le caractère définitif d'une mort.",
+    "portee": "Toucher",
+    "cible": "Lui",
+    "impact": "",
+    "duree": "Permanent",
+    "conditions": "",
+    "references": "",
+    "application": "manuel"
+  },
+  "effects": [],
+  "folder": "44qmjJBQHiy5XpLM",
+  "sort": 100036,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.345",
+    "systemId": "pavillon-noir-2",
+    "systemVersion": "0.7.0",
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": null
+  }
+}

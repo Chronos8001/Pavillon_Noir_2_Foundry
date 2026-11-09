@@ -1,0 +1,42 @@
+{
+  "_id": "zW44herZ7aFrIZQT",
+  "_key": "!items!zW44herZ7aFrIZQT",
+  "name": "Solidarité des opprimés",
+  "type": "pouvoir",
+  "img": "icons/svg/aura.svg",
+  "system": {
+    "description": "<p><strong>Visions</strong></p><ul><li>Imposer la solidarité parmi les laissés pour compte.</li><li>Recrutement pour un équipage pirate.</li><li>Susciter des élans solidaires.</li></ul><p><strong>Compulsions.</strong> Créer un mouvement de solidarité. Expérimenter le côté inique de la société.</p>",
+    "source": "Entre ciel et terre, p. 304",
+    "voie": "voie-d-ogou",
+    "voieUuid": "Compendium.pavillon-noir-2.voies.Item.nT1z9NA3nij69fC3",
+    "puissance": 1,
+    "nomNatif": "zanmi opimè",
+    "compulsion": "Créer un mouvement de solidarité. Expérimenter le côté inique de la société.",
+    "accessible": true,
+    "visions": "Imposer la solidarité parmi les laissés pour compte. · Recrutement pour un équipage pirate. · Susciter des élans solidaires.",
+    "portee": "Voix",
+    "cible": "Nous",
+    "impact": "",
+    "duree": "24 h",
+    "conditions": "",
+    "references": "",
+    "application": "manuel"
+  },
+  "effects": [],
+  "folder": "jrCp3TXiMnGmStXb",
+  "sort": 10004,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.345",
+    "systemId": "pavillon-noir-2",
+    "systemVersion": "0.7.0",
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": null
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "_id": "zcERd3quLbYe7LDo",
+  "_key": "!items!zcERd3quLbYe7LDo",
+  "name": "Propre et sain",
+  "type": "pouvoir",
+  "img": "icons/svg/aura.svg",
+  "system": {
+    "description": "<p><strong>Visions</strong></p><ul><li>Assure la santé à qui se tient propre.</li><li>Non-infection d&#x27;une plaie nettoyée.</li><li>Assainit ou nettoie.</li></ul><p><strong>Compulsions.</strong> Arriver à convaincre un être sale de rester propre. Nettoyer une plaie.</p>",
+    "source": "Entre ciel et terre, p. 180",
+    "voie": "voie-d-icheiricou-pour-le-conseil",
+    "voieUuid": "Compendium.pavillon-noir-2.voies.Item.wiw3plsp6sATryBq",
+    "puissance": 1,
+    "nomNatif": "ancalati ora",
+    "compulsion": "Arriver à convaincre un être sale de rester propre. Nettoyer une plaie.",
+    "accessible": true,
+    "visions": "Assure la santé à qui se tient propre. · Non-infection d'une plaie nettoyée. · Assainit ou nettoie.",
+    "portee": "Toucher",
+    "cible": "Toi",
+    "impact": "",
+    "duree": "24 h",
+    "conditions": "",
+    "references": "",
+    "application": "manuel"
+  },
+  "effects": [],
+  "folder": "ZyTz3Sqh4HxLti9u",
+  "sort": 10033,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.345",
+    "systemId": "pavillon-noir-2",
+    "systemVersion": "0.7.0",
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": null
+  }
+}

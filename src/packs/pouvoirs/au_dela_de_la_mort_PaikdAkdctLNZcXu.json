@@ -1,0 +1,42 @@
+{
+  "_id": "PaikdAkdctLNZcXu",
+  "_key": "!items!PaikdAkdctLNZcXu",
+  "name": "Au-delà de la mort",
+  "type": "pouvoir",
+  "img": "icons/svg/aura.svg",
+  "system": {
+    "description": "<p><strong>Visions</strong></p><ul><li>Permet de voir et de communiquer avec l&#x27;esprit des guerriers morts au combat.</li><li>Rallie les guerriers morts au combat pour combattre de son côté.</li><li>Donne la sensation que le prêtre ou ses hommes poursuivront leurs adversaires de leur malédiction, s&#x27;ils meurent.</li><li>Permet de mourir sciemment et de revenir du côté des vivants.</li><li>Les hommes morts au combat se relèvent.</li></ul><p><strong>Compulsions.</strong> Dresser des cadavres pour effrayer l&#x27;ennemi. Déduire des blessures d&#x27;un mort la façon dont il a succombé.</p>",
+    "source": "Entre ciel et terre, p. 174",
+    "voie": "voie-d-icheiricou-pour-la-guerre",
+    "voieUuid": "Compendium.pavillon-noir-2.voies.Item.ua948TzRBv4MWuy4",
+    "puissance": 7,
+    "nomNatif": "coüalioüa",
+    "compulsion": "Dresser des cadavres pour effrayer l'ennemi. Déduire des blessures d'un mort la façon dont il a succombé.",
+    "accessible": true,
+    "visions": "Permet de voir et de communiquer avec l'esprit des guerriers morts au combat. · Rallie les guerriers morts au combat pour combattre de son côté. · Donne la sensation que le prêtre ou ses hommes poursuivront leurs adversaires de leur malédiction, s'ils meurent. · Permet de mourir sciemment et de revenir du côté des vivants. · Les hommes morts au combat se relèvent.",
+    "portee": "Vue/Voix/Ouïe",
+    "cible": "Eux",
+    "impact": "",
+    "duree": "1 cycle",
+    "conditions": "",
+    "references": "",
+    "application": "manuel"
+  },
+  "effects": [],
+  "folder": "tYn7s19RmGg8GMUR",
+  "sort": 70026,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.345",
+    "systemId": "pavillon-noir-2",
+    "systemVersion": "0.7.0",
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": null
+  }
+}

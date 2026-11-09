@@ -1,0 +1,42 @@
+{
+  "_id": "xeJcbkwCcqI63uFy",
+  "_key": "!items!xeJcbkwCcqI63uFy",
+  "name": "Furfur",
+  "type": "pouvoir",
+  "img": "icons/svg/aura.svg",
+  "system": {
+    "description": "<p><strong>Visions</strong></p><ul><li>Orage ou tempête.</li><li>Tonnerre et éclairs.</li><li>Faire dire la vérité au menteur.</li><li>Discorde.</li><li>Guerre et esprit belliqueux.</li><li>Mensonges et trahisons.</li><li>Une nation avance vers sa ruine.</li><li>Contrer les pouvoirs de l&#x27;ange Lehahiah.</li></ul><ul><li><strong>Aspect.</strong> Cerf, parfois ailé, ou ange.</li><li><strong>Heure.</strong> 11h00 à 11h20.</li><li><strong>Jours.</strong> 8 au 13 septembre. 24 avril, 8 juillet, 21 septembre, 3 décembre, 11 février.</li><li><strong>Couleurs/Cristal.</strong> Indigo ou pourpre/Quartz</li></ul>",
+    "source": "Entre ciel et terre, p. 238",
+    "voie": "voie-des-qlipoth",
+    "voieUuid": "Compendium.pavillon-noir-2.voies.Item.28cj5d17pp6tLLr8",
+    "puissance": 5,
+    "nomNatif": "Prestidigitateur",
+    "compulsion": "",
+    "accessible": true,
+    "visions": "Orage ou tempête. · Tonnerre et éclairs. · Faire dire la vérité au menteur. · Discorde. · Guerre et esprit belliqueux. · Mensonges et trahisons. · Une nation avance vers sa ruine. · Contrer les pouvoirs de l'ange Lehahiah.",
+    "portee": "Là-bas",
+    "cible": "Eux",
+    "impact": "",
+    "duree": "24 h",
+    "conditions": "",
+    "references": "",
+    "application": "manuel"
+  },
+  "effects": [],
+  "folder": "I3FQOgCqphyIoMbm",
+  "sort": 50033,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.345",
+    "systemId": "pavillon-noir-2",
+    "systemVersion": "0.7.0",
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": null
+  }
+}

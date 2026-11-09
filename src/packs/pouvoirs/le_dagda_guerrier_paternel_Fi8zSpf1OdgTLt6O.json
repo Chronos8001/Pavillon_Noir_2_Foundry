@@ -1,0 +1,42 @@
+{
+  "_id": "Fi8zSpf1OdgTLt6O",
+  "_key": "!items!Fi8zSpf1OdgTLt6O",
+  "name": "Le Dagda, guerrier paternel",
+  "type": "pouvoir",
+  "img": "icons/svg/aura.svg",
+  "system": {
+    "description": "<p><strong>Visions</strong></p><ul><li>Effets de l&#x27;âge sur un combattant d&#x27;âge mur.</li><li>Expérience au combat.</li><li>Tactique et défense contre les tactiques.</li><li>Protection par un allié.</li><li>Parrainage d&#x27;un allié plus jeune ou de la part d&#x27;un allié plus âgé.</li><li>L&#x27;ennemi trouve chez vous des traits de son père.</li></ul><p><strong>Compulsions.</strong> Protéger un plus jeune que soi durant un combat. Mimer les mouvements de la personne qu&#x27;on affronte.</p>",
+    "source": "Entre ciel et terre, p. 249",
+    "voie": "voie-du-druidisme",
+    "voieUuid": "Compendium.pavillon-noir-2.voies.Item.444Fft7a0LtvOMIS",
+    "puissance": 3,
+    "nomNatif": "",
+    "compulsion": "Protéger un plus jeune que soi durant un combat. Mimer les mouvements de la personne qu'on affronte.",
+    "accessible": true,
+    "visions": "Effets de l'âge sur un combattant d'âge mur. · Expérience au combat. · Tactique et défense contre les tactiques. · Protection par un allié. · Parrainage d'un allié plus jeune ou de la part d'un allié plus âgé. · L'ennemi trouve chez vous des traits de son père.",
+    "portee": "Ici",
+    "cible": "Toi",
+    "impact": "",
+    "duree": "2 min",
+    "conditions": "",
+    "references": "",
+    "application": "manuel"
+  },
+  "effects": [],
+  "folder": "GhMxnwLVYmucd3Qt",
+  "sort": 30016,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.345",
+    "systemId": "pavillon-noir-2",
+    "systemVersion": "0.7.0",
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": null
+  }
+}

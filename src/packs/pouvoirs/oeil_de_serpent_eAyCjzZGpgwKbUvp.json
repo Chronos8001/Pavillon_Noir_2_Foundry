@@ -1,0 +1,42 @@
+{
+  "_id": "eAyCjzZGpgwKbUvp",
+  "_key": "!items!eAyCjzZGpgwKbUvp",
+  "name": "OEil de serpent",
+  "type": "pouvoir",
+  "img": "icons/svg/aura.svg",
+  "system": {
+    "description": "<p><strong>Visions</strong></p><ul><li>Transformation des pupilles rondes en fente.</li><li>Pellicule protectrice sur des yeux.</li><li>Vision des corps chauds.</li><li>Donner un regard de comploteur.</li><li>Vision des complots.</li></ul><p><strong>Compulsions.</strong> Organiser un complot. Garder les yeux ouverts dans un environnement agressif pour les yeux (fumée, eau sale), se diriger pendant une nuit sans ouvrir les yeux.</p>",
+    "source": "Entre ciel et terre, p. 282",
+    "voie": "voie-de-dambala",
+    "voieUuid": "Compendium.pavillon-noir-2.voies.Item.fVIeiRnBn8ADVFE2",
+    "puissance": 2,
+    "nomNatif": "zye koulèv",
+    "compulsion": "Organiser un complot. Garder les yeux ouverts dans un environnement agressif pour les yeux (fumée, eau sale), se diriger pendant une nuit sans ouvrir les yeux.",
+    "accessible": true,
+    "visions": "Transformation des pupilles rondes en fente. · Pellicule protectrice sur des yeux. · Vision des corps chauds. · Donner un regard de comploteur. · Vision des complots.",
+    "portee": "Ici",
+    "cible": "Toi",
+    "impact": "",
+    "duree": "1 cycle",
+    "conditions": "",
+    "references": "",
+    "application": "manuel"
+  },
+  "effects": [],
+  "folder": "BsFkHFCdWu35mdPn",
+  "sort": 20007,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.345",
+    "systemId": "pavillon-noir-2",
+    "systemVersion": "0.7.0",
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": null
+  }
+}

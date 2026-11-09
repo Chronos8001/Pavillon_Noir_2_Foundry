@@ -1,0 +1,42 @@
+{
+  "_id": "WRJETR27QPvMIkKu",
+  "_key": "!items!WRJETR27QPvMIkKu",
+  "name": "Réveil",
+  "type": "pouvoir",
+  "img": "icons/svg/aura.svg",
+  "system": {
+    "description": "<p><strong>Visions</strong></p><ul><li>Sommeil non réparateur, inquiet et entrecoupé de périodes d&#x27;éveil.</li><li>Réveille lorsque point le danger.</li><li>Réveille le blessé comateux.</li></ul><p><strong>Compulsions.</strong> Se réveiller la nuit par soi-même. Rester éveillé pendant une semaine sans interruption.</p>",
+    "source": "Entre ciel et terre, p. 171",
+    "voie": "voie-d-icheiricou-pour-la-guerre",
+    "voieUuid": "Compendium.pavillon-noir-2.voies.Item.ua948TzRBv4MWuy4",
+    "puissance": 1,
+    "nomNatif": "acacotoni",
+    "compulsion": "Se réveiller la nuit par soi-même. Rester éveillé pendant une semaine sans interruption.",
+    "accessible": true,
+    "visions": "Sommeil non réparateur, inquiet et entrecoupé de périodes d'éveil. · Réveille lorsque point le danger. · Réveille le blessé comateux.",
+    "portee": "Toucher",
+    "cible": "Lui",
+    "impact": "",
+    "duree": "1 nuit",
+    "conditions": "",
+    "references": "",
+    "application": "manuel"
+  },
+  "effects": [],
+  "folder": "tYn7s19RmGg8GMUR",
+  "sort": 10001,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.345",
+    "systemId": "pavillon-noir-2",
+    "systemVersion": "0.7.0",
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": null
+  }
+}

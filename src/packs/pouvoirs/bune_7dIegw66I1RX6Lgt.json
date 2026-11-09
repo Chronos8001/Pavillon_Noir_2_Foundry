@@ -1,0 +1,42 @@
+{
+  "_id": "7dIegw66I1RX6Lgt",
+  "_key": "!items!7dIegw66I1RX6Lgt",
+  "name": "Bune",
+  "type": "pouvoir",
+  "img": "icons/svg/aura.svg",
+  "system": {
+    "description": "<p><strong>Visions</strong></p><ul><li>Transformation d&#x27;un cadavre en goule hantant les sépulcres et dévorant les vivants comme les morts.</li><li>Don d&#x27;un serviteur goule.</li><li>Véritable réponse à une unique question sur un lieu.</li><li>Éloquence et sagesse (+2D en Persuasion et en Meneur d &#x27;hommes).</li><li>Protection du traître.</li><li>Ambition dévorante.</li><li>Obnubilation par une théorie de conspiration.</li><li>Protection du secret d&#x27;une conspiration.</li><li>Échec d&#x27;une tentative de conciliation.</li><li>Politicien véreux.</li><li>Attrait de la corruption.</li><li>Contrer les pouvoirs de l&#x27;ange Haaiah. Ronove ( Vengeur des Crimes) e : Personnelle (Don...) ou Vue/Voix/Ouïe ; Cible : Moi (Don) ou Eux ; Durée : 30 min ou 1 mois (Don..., Réduction...).</li><li>Don d&#x27;un serviteur polyglotte.</li><li>Réduction en esclavage.</li><li>Connaissance des langues (Niveau minimum de 3 dans chaque Langue étrangère).</li><li>Moisson des âmes des êtres proches de la mort.</li><li>Faveur des ennemis comme des amis.</li><li>Protection des méchants et des calomniateurs.</li><li>Proie de ses ennemis.</li><li>Attrait de l&#x27;ignorance.</li><li>Violente intolérance.</li><li>Apparence normalité de l&#x27;esclavage.</li><li>Contrer les pouvoirs de l&#x27;ange Ierathel.</li></ul><ul><li><strong>Aspect.</strong> Monstre tenant un bâton.</li><li><strong>Heure.</strong> 8h40 à 9h00.</li><li><strong>Jours.</strong> 2 au 7 août. 17 avril, 1er juillet, 14 septembre, 26 novembre, 4 février.</li><li><strong>Couleurs/Cristal.</strong> Rose magenta ou or/Quartz morion.</li></ul>",
+    "source": "Entre ciel et terre, p. 236",
+    "voie": "voie-des-qlipoth",
+    "voieUuid": "Compendium.pavillon-noir-2.voies.Item.28cj5d17pp6tLLr8",
+    "puissance": 4,
+    "nomNatif": "Vengeur des Crimes",
+    "compulsion": "",
+    "accessible": true,
+    "visions": "Transformation d'un cadavre en goule hantant les sépulcres et dévorant les vivants comme les morts. · Don d'un serviteur goule. · Véritable réponse à une unique question sur un lieu. · Éloquence et sagesse (+2D en Persuasion et en Meneur d 'hommes). · Protection du traître. · Ambition dévorante. · Obnubilation par une théorie de conspiration. · Protection du secret d'une conspiration. · Échec d'une tentative de conciliation. · Politicien véreux. · Attrait de la corruption. · Contrer les pouvoirs de l'ange Haaiah. Ronove ( Vengeur des Crimes) e : Personnelle (Don...) ou Vue/Voix/Ouïe ; Cible : Moi (Don) ou Eux ; Durée : 30 min ou 1 mois (Don..., Réduction...). · Don d'un serviteur polyglotte. · Réduction en esclavage. · Connaissance des langues (Niveau minimum de 3 dans chaque Langue étrangère). · Moisson des âmes des êtres proches de la mort. · Faveur des ennemis comme des amis. · Protection des méchants et des calomniateurs. · Proie de ses ennemis. · Attrait de l'ignorance. · Violente intolérance. · Apparence normalité de l'esclavage. · Contrer les pouvoirs de l'ange Ierathel.",
+    "portee": "Vue/Voix/Ouïe",
+    "cible": "Moi (Don...) ou Lui",
+    "impact": "",
+    "duree": "30 min ou 1 mois (Transformation..., Don ...)",
+    "conditions": "",
+    "references": "",
+    "application": "manuel"
+  },
+  "effects": [],
+  "folder": "I3FQOgCqphyIoMbm",
+  "sort": 40026,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.345",
+    "systemId": "pavillon-noir-2",
+    "systemVersion": "0.7.0",
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": null
+  }
+}

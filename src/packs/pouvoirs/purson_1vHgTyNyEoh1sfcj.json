@@ -1,0 +1,42 @@
+{
+  "_id": "1vHgTyNyEoh1sfcj",
+  "_key": "!items!1vHgTyNyEoh1sfcj",
+  "name": "Purson",
+  "type": "pouvoir",
+  "img": "icons/svg/aura.svg",
+  "system": {
+    "description": "<p><strong>Visions</strong></p><ul><li>Don de familier.</li><li>Savoir sur une chose cachée.</li><li>Comportement amoral.</li><li>Irréligion.</li><li>Contrôle* de l&#x27;apostat (celui qui a renié sa foi).</li><li>Contrôle* du libertin dans son libertinage.</li><li>Contrôle* du renégat (qui a trahi sa religion, ou sa patrie, ou son équipage pour un pirate).</li><li>Contrer les pouvoirs de l&#x27;ange Pahaliah.</li></ul><ul><li><strong>Aspect.</strong> Homme à tête de lion portant une vipère fé- queue de roce dans sa main et montant un ours. Des trompettes peuvent être entendues avant sa venue.</li><li><strong>Heure.</strong> 6h20 à 6h40.</li><li><strong>Jours.</strong> 28 juin au 2 juillet. 10 avril, 23 juin, 7 septembre, 19 novembre, 28 janvier.</li><li><strong>Couleurs/Cristal.</strong> Bleu ou rouge/Malachite.</li></ul>",
+    "source": "Entre ciel et terre, p. 235",
+    "voie": "voie-des-qlipoth",
+    "voieUuid": "Compendium.pavillon-noir-2.voies.Item.28cj5d17pp6tLLr8",
+    "puissance": 3,
+    "nomNatif": "Vase d'Iniquité",
+    "compulsion": "",
+    "accessible": true,
+    "visions": "Don de familier. · Savoir sur une chose cachée. · Comportement amoral. · Irréligion. · Contrôle* de l'apostat (celui qui a renié sa foi). · Contrôle* du libertin dans son libertinage. · Contrôle* du renégat (qui a trahi sa religion, ou sa patrie, ou son équipage pour un pirate). · Contrer les pouvoirs de l'ange Pahaliah.",
+    "portee": "Voix",
+    "cible": "Lui",
+    "impact": "",
+    "duree": "30 min ou 1 mois (Don de familier)",
+    "conditions": "",
+    "references": "",
+    "application": "manuel"
+  },
+  "effects": [],
+  "folder": "I3FQOgCqphyIoMbm",
+  "sort": 30020,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.345",
+    "systemId": "pavillon-noir-2",
+    "systemVersion": "0.7.0",
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": null
+  }
+}

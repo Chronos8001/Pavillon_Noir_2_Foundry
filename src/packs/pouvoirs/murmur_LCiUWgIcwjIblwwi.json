@@ -1,0 +1,42 @@
+{
+  "_id": "LCiUWgIcwjIblwwi",
+  "_key": "!items!LCiUWgIcwjIblwwi",
+  "name": "Murmur",
+  "type": "pouvoir",
+  "img": "icons/svg/aura.svg",
+  "system": {
+    "description": "<p><strong>Visions</strong></p><ul><li>Interrogation des morts.</li><li>Perception différée de tout ce qui se passe à la ronde en écoutant les murmures du vent.</li><li>Agent charismatique et reconnu de la ruine des empires.</li><li>Leader révolutionnaire.</li><li>Bouleversement des traditions et des faits acquis.</li><li>Prise de pouvoir.</li><li>Contrôle** des activités entreprises pour la première fois.</li><li>Contrer les pouvoirs de l&#x27;ange Nithael.</li></ul><ul><li><strong>Aspect.</strong> Soldat portant une couronne ducale et montant un vautour ou un griffon.</li><li><strong>Heure.</strong> 17h40 à 18h00.</li><li><strong>Jours.</strong> 28 au 22 décembre. 14 mai, 28 juillet, 11 octobre, 23 décembre, 3 mars.</li><li><strong>Couleurs/Cristal.</strong> Jaune/Rubis.</li></ul>",
+    "source": "Entre ciel et terre, p. 243",
+    "voie": "voie-des-qlipoth",
+    "voieUuid": "Compendium.pavillon-noir-2.voies.Item.28cj5d17pp6tLLr8",
+    "puissance": 7,
+    "nomNatif": "Furie semeuse de Maux",
+    "compulsion": "",
+    "accessible": true,
+    "visions": "Interrogation des morts. · Perception différée de tout ce qui se passe à la ronde en écoutant les murmures du vent. · Agent charismatique et reconnu de la ruine des empires. · Leader révolutionnaire. · Bouleversement des traditions et des faits acquis. · Prise de pouvoir. · Contrôle** des activités entreprises pour la première fois. · Contrer les pouvoirs de l'ange Nithael.",
+    "portee": "Là-bas",
+    "cible": "Toi ou Eux (Interrogation..., Bouleversement...)",
+    "impact": "",
+    "duree": "1 mois ou Permanent (Bouleversement..., Prise...)",
+    "conditions": "",
+    "references": "",
+    "application": "manuel"
+  },
+  "effects": [],
+  "folder": "I3FQOgCqphyIoMbm",
+  "sort": 70053,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.345",
+    "systemId": "pavillon-noir-2",
+    "systemVersion": "0.7.0",
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": null
+  }
+}

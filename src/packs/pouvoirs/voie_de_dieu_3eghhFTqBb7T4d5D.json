@@ -1,0 +1,22 @@
+{
+  "_id": "3eghhFTqBb7T4d5D",
+  "_key": "!folders!3eghhFTqBb7T4d5D",
+  "name": "Voie de Dieu",
+  "type": "Item",
+  "folder": null,
+  "sorting": "m",
+  "sort": 800000,
+  "color": null,
+  "description": "",
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.345",
+    "systemId": "pavillon-noir-2",
+    "systemVersion": "0.7.0",
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": null
+  }
+}

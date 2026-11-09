@@ -1,0 +1,42 @@
+{
+  "_id": "xg8IgzncJ8neLqFa",
+  "_key": "!items!xg8IgzncJ8neLqFa",
+  "name": "Celui qui interprète le calendrier",
+  "type": "pouvoir",
+  "img": "icons/svg/aura.svg",
+  "system": {
+    "description": "<p><strong>Visions</strong></p><ul><li>Rend funeste n&#x27;importe quelle action de son choix.</li><li>Rend faste le jour ou la trecena présente (à condition de ne pas accomplir d&#x27;action impie).</li><li>Modifie instantanément et temporairement les porteurs qui emp du jour ou de la trecena.</li><li>Donne à quelqu&#x27;un la capacité d&#x27;utiliser les pouvoirs que l&#x27;on connaît de la Voie du Calendrier.</li></ul><p><strong>Compulsions.</strong> Passer une journée à faire plusieurs choses en même temps, sans un moment de répit.</p>",
+    "source": "Entre ciel et terre, p. 202",
+    "voie": "voie-du-calendrier",
+    "voieUuid": "Compendium.pavillon-noir-2.voies.Item.AFWMXMJdfCNP7hit",
+    "puissance": 9,
+    "nomNatif": "tetonalpohuiani",
+    "compulsion": "Passer une journée à faire plusieurs choses en même temps, sans un moment de répit.",
+    "accessible": true,
+    "visions": "Rend funeste n'importe quelle action de son choix. · Rend faste le jour ou la trecena présente (à condition de ne pas accomplir d'action impie). · Modifie instantanément et temporairement les porteurs qui emp du jour ou de la trecena. · Donne à quelqu'un la capacité d'utiliser les pouvoirs que l'on connaît de la Voie du Calendrier.",
+    "portee": "Ici",
+    "cible": "Eux",
+    "impact": "",
+    "duree": "1 cycle",
+    "conditions": "",
+    "references": "",
+    "application": "manuel"
+  },
+  "effects": [],
+  "folder": "5N19UMmD8j5jNoqn",
+  "sort": 90022,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.345",
+    "systemId": "pavillon-noir-2",
+    "systemVersion": "0.7.0",
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": null
+  }
+}

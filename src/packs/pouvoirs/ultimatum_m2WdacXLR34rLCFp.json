@@ -1,0 +1,42 @@
+{
+  "_id": "m2WdacXLR34rLCFp",
+  "_key": "!items!m2WdacXLR34rLCFp",
+  "name": "Ultimatum",
+  "type": "pouvoir",
+  "img": "icons/svg/aura.svg",
+  "system": {
+    "description": "<p><strong>Visions</strong></p><ul><li>Donne la certitude de l&#x27;imminence de la guerre.</li><li>Sensation de point de non-retour.</li><li>Favorise une prise de décision rapide.</li><li>Perte de temps en discussions interminables.</li><li>Demande la reddition (demande un Test de Moral).</li></ul><p><strong>Compulsions.</strong> Poser un ultimatum. Se rendre.</p>",
+    "source": "Entre ciel et terre, p. 306",
+    "voie": "voie-d-ogou",
+    "voieUuid": "Compendium.pavillon-noir-2.voies.Item.nT1z9NA3nij69fC3",
+    "puissance": 3,
+    "nomNatif": "denye avèti",
+    "compulsion": "Poser un ultimatum. Se rendre.",
+    "accessible": true,
+    "visions": "Donne la certitude de l'imminence de la guerre. · Sensation de point de non-retour. · Favorise une prise de décision rapide. · Perte de temps en discussions interminables. · Demande la reddition (demande un Test de Moral).",
+    "portee": "Vue/Voix/Ouïe",
+    "cible": "Eux",
+    "impact": "",
+    "duree": "1 cycle",
+    "conditions": "",
+    "references": "",
+    "application": "manuel"
+  },
+  "effects": [],
+  "folder": "jrCp3TXiMnGmStXb",
+  "sort": 30013,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.345",
+    "systemId": "pavillon-noir-2",
+    "systemVersion": "0.7.0",
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": null
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "_id": "lHfnA8UeFfw3jny9",
+  "_key": "!items!lHfnA8UeFfw3jny9",
+  "name": "Orobas",
+  "type": "pouvoir",
+  "img": "icons/svg/aura.svg",
+  "system": {
+    "description": "<p><strong>Visions</strong></p><ul><li>Conf ère une dignité (titre de noblesse, titre militaire, titre religieux) de façon permanente.</li><li>Protection contre les esprits malins.</li><li>Vérité inaccessible, terrifiante ou destructrice.</li><li>Empêchement de la régénération (guérison, ressource, cultures, etc.).</li><li>Déchéance du prince défenseur de la religion.</li><li>Éloignement de la religion.</li><li>Contrer les pouvoirs de l&#x27;ange Mebahiah.</li></ul><ul><li><strong>Aspect.</strong> Cheval debout pouvant se changer en homme.</li><li><strong>Heure.</strong> 18h00 à 18h20.</li><li><strong>Jours.</strong> 22 au 27 décembre. 15 mai, 29 juillet, 12 octobre, 24 décembre, 4 mars.</li><li><strong>Couleurs/Cristal.</strong> Bleu/Sodalite.</li></ul>",
+    "source": "Entre ciel et terre, p. 243",
+    "voie": "voie-des-qlipoth",
+    "voieUuid": "Compendium.pavillon-noir-2.voies.Item.28cj5d17pp6tLLr8",
+    "puissance": 7,
+    "nomNatif": "Furie semeuse de Maux",
+    "compulsion": "",
+    "accessible": true,
+    "visions": "Conf ère une dignité (titre de noblesse, titre militaire, titre religieux) de façon permanente. · Protection contre les esprits malins. · Vérité inaccessible, terrifiante ou destructrice. · Empêchement de la régénération (guérison, ressource, cultures, etc.). · Déchéance du prince défenseur de la religion. · Éloignement de la religion. · Contrer les pouvoirs de l'ange Mebahiah.",
+    "portee": "Là",
+    "cible": "Moi (Confère...) ou Eux",
+    "impact": "",
+    "duree": "1 mois ou Permanent (Confère...)",
+    "conditions": "",
+    "references": "",
+    "application": "manuel"
+  },
+  "effects": [],
+  "folder": "I3FQOgCqphyIoMbm",
+  "sort": 70054,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.345",
+    "systemId": "pavillon-noir-2",
+    "systemVersion": "0.7.0",
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": null
+  }
+}

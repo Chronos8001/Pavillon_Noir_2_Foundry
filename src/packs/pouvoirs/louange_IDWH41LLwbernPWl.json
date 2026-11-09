@@ -1,0 +1,42 @@
+{
+  "_id": "IDWH41LLwbernPWl",
+  "_key": "!items!IDWH41LLwbernPWl",
+  "name": "Louange",
+  "type": "pouvoir",
+  "img": "icons/svg/aura.svg",
+  "system": {
+    "description": "<p><strong>Visions</strong></p><ul><li>Asseoir la réputation d&#x27;une personne en faisant son éloge public après qu&#x27;elle se soit bien comportée selon les canons de son groupe.</li></ul><p><strong>Compulsions.</strong> Pousser une personne à faire l&#x27;éloge d&#x27;une autre.</p>",
+    "source": "Entre ciel et terre, p. 249",
+    "voie": "voie-du-druidisme",
+    "voieUuid": "Compendium.pavillon-noir-2.voies.Item.444Fft7a0LtvOMIS",
+    "puissance": 2,
+    "nomNatif": "",
+    "compulsion": "Pousser une personne à faire l'éloge d'une autre.",
+    "accessible": true,
+    "visions": "Asseoir la réputation d'une personne en faisant son éloge public après qu'elle se soit bien comportée selon les canons de son groupe.",
+    "portee": "Voix",
+    "cible": "Toi",
+    "impact": "",
+    "duree": "1 semaine",
+    "conditions": "",
+    "references": "",
+    "application": "manuel"
+  },
+  "effects": [],
+  "folder": "GhMxnwLVYmucd3Qt",
+  "sort": 20012,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.345",
+    "systemId": "pavillon-noir-2",
+    "systemVersion": "0.7.0",
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": null
+  }
+}

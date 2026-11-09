@@ -1,0 +1,42 @@
+{
+  "_id": "kRnCIhrR1xZ5yXfQ",
+  "_key": "!items!kRnCIhrR1xZ5yXfQ",
+  "name": "Esprit spectre",
+  "type": "pouvoir",
+  "img": "icons/svg/aura.svg",
+  "system": {
+    "description": "<p><strong>Visions</strong></p><ul><li>Trouve du curare.</li><li>Met du curare dans un aliment ou sur une arme.</li><li>Fait tomber les cheveux et rend le visage squelettique.</li><li>Devient intangible.</li><li>Hante un vivant pendant son sommeil.</li></ul><p><strong>Compulsions.</strong> S&#x27;inoculer du curare. Foncer contre un arbre en espérant passer au travers.</p><p><em>Règles particulières : voir Entre ciel et terre, p. 189.</em></p>",
+    "source": "Entre ciel et terre, p. 189",
+    "voie": "voie-des-xapiripe",
+    "voieUuid": "Compendium.pavillon-noir-2.voies.Item.uLmNntdGMAtLAIsE",
+    "puissance": 6,
+    "nomNatif": "poreporeri",
+    "compulsion": "S'inoculer du curare. Foncer contre un arbre en espérant passer au travers.",
+    "accessible": true,
+    "visions": "Trouve du curare. · Met du curare dans un aliment ou sur une arme. · Fait tomber les cheveux et rend le visage squelettique. · Devient intangible. · Hante un vivant pendant son sommeil.",
+    "portee": "Forêt",
+    "cible": "Lui",
+    "impact": "",
+    "duree": "1 cycle",
+    "conditions": "",
+    "references": "",
+    "application": "manuel"
+  },
+  "effects": [],
+  "folder": "MTKTGwYLgyfOOhl1",
+  "sort": 60029,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.345",
+    "systemId": "pavillon-noir-2",
+    "systemVersion": "0.7.0",
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": null
+  }
+}

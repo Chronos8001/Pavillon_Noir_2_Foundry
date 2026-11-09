@@ -1,0 +1,42 @@
+{
+  "_id": "pf1fXtnsSE82zQwv",
+  "_key": "!items!pf1fXtnsSE82zQwv",
+  "name": "Maladies vénériennes",
+  "type": "pouvoir",
+  "img": "icons/svg/aura.svg",
+  "system": {
+    "description": "<p><strong>Visions</strong></p><ul><li>Guérison d&#x27;une maladie vénérienne.</li><li>Transmission d&#x27;une maladie vénérienne.</li><li>Lance une rumeur sur une personne, supposée être affectée par une maladie vénérienne.</li></ul><p><strong>Compulsions.</strong> Copuler avec un malade contagieux. Boire le sang d&#x27;un malade contagieux. Ruiner la réputation d&#x27;une femme du monde.</p>",
+    "source": "Entre ciel et terre, p. 286",
+    "voie": "voie-d-erzulie",
+    "voieUuid": "Compendium.pavillon-noir-2.voies.Item.0cPd7IIiO1TgbK81",
+    "puissance": 2,
+    "nomNatif": "maladi sèks",
+    "compulsion": "Copuler avec un malade contagieux. Boire le sang d'un malade contagieux. Ruiner la réputation d'une femme du monde.",
+    "accessible": true,
+    "visions": "Guérison d'une maladie vénérienne. · Transmission d'une maladie vénérienne. · Lance une rumeur sur une personne, supposée être affectée par une maladie vénérienne.",
+    "portee": "Toucher",
+    "cible": "Lui",
+    "impact": "",
+    "duree": "Permanent",
+    "conditions": "",
+    "references": "",
+    "application": "manuel"
+  },
+  "effects": [],
+  "folder": "46EaXMNeQpoA9M1j",
+  "sort": 20008,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.345",
+    "systemId": "pavillon-noir-2",
+    "systemVersion": "0.7.0",
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": null
+  }
+}

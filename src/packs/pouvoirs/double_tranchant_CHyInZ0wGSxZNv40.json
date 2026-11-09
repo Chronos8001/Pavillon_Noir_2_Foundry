@@ -1,0 +1,42 @@
+{
+  "_id": "CHyInZ0wGSxZNv40",
+  "_key": "!items!CHyInZ0wGSxZNv40",
+  "name": "Double tranchant",
+  "type": "pouvoir",
+  "img": "icons/svg/aura.svg",
+  "system": {
+    "description": "<p><strong>Visions</strong></p><ul><li>Pas de réussite sans échec, et inversement.</li><li>Victoire amère ou à la Pyrrhus.</li><li>Choisit les effets indésirables d&#x27;une décision.</li><li>Arme aussi dangereuse pour son porteur que pour son ennemi.</li><li>Découvre des agents doubles.</li><li>Rend tranchant comme une lame de rasoir un objet qui ne l&#x27;est pas ou peu.</li></ul><p><strong>Compulsions.</strong> Rendre coupant un objet mou à l&#x27;origine. Prévoir les effets secondaires indésirables d&#x27;une action.</p>",
+    "source": "Entre ciel et terre, p. 299",
+    "voie": "voie-de-papa-legba",
+    "voieUuid": "Compendium.pavillon-noir-2.voies.Item.cLAnYvfRTW6M1YmZ",
+    "puissance": 8,
+    "nomNatif": "doub kwen",
+    "compulsion": "Rendre coupant un objet mou à l'origine. Prévoir les effets secondaires indésirables d'une action.",
+    "accessible": true,
+    "visions": "Pas de réussite sans échec, et inversement. · Victoire amère ou à la Pyrrhus. · Choisit les effets indésirables d'une décision. · Arme aussi dangereuse pour son porteur que pour son ennemi. · Découvre des agents doubles. · Rend tranchant comme une lame de rasoir un objet qui ne l'est pas ou peu.",
+    "portee": "Là",
+    "cible": "Lui",
+    "impact": "",
+    "duree": "24 h",
+    "conditions": "",
+    "references": "",
+    "application": "manuel"
+  },
+  "effects": [],
+  "folder": "cxj6xXxtlHVMonir",
+  "sort": 80027,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.345",
+    "systemId": "pavillon-noir-2",
+    "systemVersion": "0.7.0",
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": null
+  }
+}

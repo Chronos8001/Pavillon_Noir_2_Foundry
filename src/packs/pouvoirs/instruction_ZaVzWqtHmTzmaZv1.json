@@ -1,0 +1,42 @@
+{
+  "_id": "ZaVzWqtHmTzmaZv1",
+  "_key": "!items!ZaVzWqtHmTzmaZv1",
+  "name": "Instruction",
+  "type": "pouvoir",
+  "img": "icons/svg/aura.svg",
+  "system": {
+    "description": "<p><strong>Visions</strong></p><ul><li>Apprentissage rapide d&#x27;une action ou d&#x27;une Compétence.</li><li>Détermine le niveau d&#x27;instruction d&#x27;une personne dans un domaine précis.</li><li>Rend quelqu&#x27;un insupportablement pédant.</li><li>Donne l&#x27;impression de quelqu&#x27;un d&#x27;extrêmement docte, qui force le respect.</li></ul><p><strong>Compulsions.</strong> Dire son plus grand secret. Enseigner son domaine de compétence privilégié.</p>",
+    "source": "Entre ciel et terre, p. 177",
+    "voie": "voie-d-icheiricou-pour-le-conseil",
+    "voieUuid": "Compendium.pavillon-noir-2.voies.Item.wiw3plsp6sATryBq",
+    "puissance": 3,
+    "nomNatif": "abakêtoni",
+    "compulsion": "Dire son plus grand secret. Enseigner son domaine de compétence privilégié.",
+    "accessible": true,
+    "visions": "Apprentissage rapide d'une action ou d'une Compétence. · Détermine le niveau d'instruction d'une personne dans un domaine précis. · Rend quelqu'un insupportablement pédant. · Donne l'impression de quelqu'un d'extrêmement docte, qui force le respect.",
+    "portee": "Vue/Voix/Ouïe",
+    "cible": "Lui",
+    "impact": "",
+    "duree": "1 cycle",
+    "conditions": "",
+    "references": "",
+    "application": "manuel"
+  },
+  "effects": [],
+  "folder": "ZyTz3Sqh4HxLti9u",
+  "sort": 30010,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.345",
+    "systemId": "pavillon-noir-2",
+    "systemVersion": "0.7.0",
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": null
+  }
+}

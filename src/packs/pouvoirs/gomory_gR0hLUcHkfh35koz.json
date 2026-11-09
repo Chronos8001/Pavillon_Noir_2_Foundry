@@ -1,0 +1,42 @@
+{
+  "_id": "gR0hLUcHkfh35koz",
+  "_key": "!items!gR0hLUcHkfh35koz",
+  "name": "Gomory",
+  "type": "pouvoir",
+  "img": "icons/svg/aura.svg",
+  "system": {
+    "description": "<p><strong>Visions</strong></p><ul><li>Don d&#x27;un familier lisant les émotions des femmes.</li><li>Amour inconditionnel de la part des femmes, jeunes ou vieilles.</li><li>Harem naturel.</li><li>Prédiction du futur d&#x27;une relation humaine.</li><li>Découverte de trésors, de n&#x27;importe quelle nature, cachés.</li><li>Notoriété pour sa lâcheté, ses méfaits, sa petitesse...</li><li>Ambition et orgueils déplacés.</li><li>Domination** des faibles.</li><li>Domination** de ceux qui s&#x27;érigent en maîtres.</li><li>Perte d&#x27;un objet ou d&#x27;un bien cher.</li><li>Contrer les pouvoirs de l&#x27;ange Poiel.</li></ul><ul><li><strong>Aspect.</strong> Très belle femme portant une couronne de duchesse attachée à sa taille et montant un chameau.</li><li><strong>Heure.</strong> 18h20 à 18h40.</li><li><strong>Jours.</strong> 28 au 31 décembre. 16 mai, 30 juillet, 13 octobre, 25 décembre, 5 mars.</li><li><strong>Couleurs/Cristal.</strong> Magenta/OEil de taureau.</li></ul>",
+    "source": "Entre ciel et terre, p. 243",
+    "voie": "voie-des-qlipoth",
+    "voieUuid": "Compendium.pavillon-noir-2.voies.Item.28cj5d17pp6tLLr8",
+    "puissance": 7,
+    "nomNatif": "Furie semeuse de Maux",
+    "compulsion": "",
+    "accessible": true,
+    "visions": "Don d'un familier lisant les émotions des femmes. · Amour inconditionnel de la part des femmes, jeunes ou vieilles. · Harem naturel. · Prédiction du futur d'une relation humaine. · Découverte de trésors, de n'importe quelle nature, cachés. · Notoriété pour sa lâcheté, ses méfaits, sa petitesse... · Ambition et orgueils déplacés. · Domination** des faibles. · Domination** de ceux qui s'érigent en maîtres. · Perte d'un objet ou d'un bien cher. · Contrer les pouvoirs de l'ange Poiel.",
+    "portee": "Vue/Voix",
+    "cible": "Eux",
+    "impact": "",
+    "duree": "24 h ou 1 année (Don..., Harem..., Amour...)",
+    "conditions": "",
+    "references": "",
+    "application": "manuel"
+  },
+  "effects": [],
+  "folder": "I3FQOgCqphyIoMbm",
+  "sort": 70055,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.345",
+    "systemId": "pavillon-noir-2",
+    "systemVersion": "0.7.0",
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": null
+  }
+}

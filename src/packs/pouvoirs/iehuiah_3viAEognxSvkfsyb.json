@@ -1,0 +1,42 @@
+{
+  "_id": "3viAEognxSvkfsyb",
+  "_key": "!items!3viAEognxSvkfsyb",
+  "name": "Iehuiah",
+  "type": "pouvoir",
+  "img": "icons/svg/aura.svg",
+  "system": {
+    "description": "<p><strong>Visions</strong></p><ul><li>Érudition supérieure.</li><li>Révélation des traîtrises.</li><li>Évitement des pièges.</li><li>Découverte de ses propres erreurs.</li><li>Réussite professionnelle.</li><li>Découverte de ce qui est caché.</li><li>Contrer les pouvoirs du démon Gaap.</li></ul><ul><li><strong>Attribut.</strong> Dieu qui connaît toute chose.</li><li><strong>Heure.</strong> 10h40 à 11h00.</li><li><strong>Jours.</strong> 3 au 8 septembre. 23 avril, 7 juillet, 20 septembre, 2 décembre, 10 février.</li><li><strong>Couleurs/Cristal.</strong> Rose magenta ou rouge/Rhodocrosite</li><li><strong>Prière.</strong> « Dominus scit cogitationes hominium quoniam vanae sunt. »</li></ul>",
+    "source": "Entre ciel et terre, p. 221",
+    "voie": "voie-des-sephiroth",
+    "voieUuid": "Compendium.pavillon-noir-2.voies.Item.5soP14P6cbQPMX5I",
+    "puissance": 5,
+    "nomNatif": "Puissance",
+    "compulsion": "",
+    "accessible": true,
+    "visions": "Érudition supérieure. · Révélation des traîtrises. · Évitement des pièges. · Découverte de ses propres erreurs. · Réussite professionnelle. · Découverte de ce qui est caché. · Contrer les pouvoirs du démon Gaap.",
+    "portee": "Vue/Voix/Ouïe",
+    "cible": "Lui",
+    "impact": "",
+    "duree": "4 h",
+    "conditions": "",
+    "references": "",
+    "application": "manuel"
+  },
+  "effects": [],
+  "folder": "bbVpwWTAqt36UWdh",
+  "sort": 50033,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.345",
+    "systemId": "pavillon-noir-2",
+    "systemVersion": "0.7.0",
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": null
+  }
+}

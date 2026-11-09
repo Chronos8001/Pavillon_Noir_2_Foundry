@@ -1,0 +1,42 @@
+{
+  "_id": "6xPGCFTx4bgJtKln",
+  "_key": "!items!6xPGCFTx4bgJtKln",
+  "name": "Vaiariah",
+  "type": "pouvoir",
+  "img": "icons/svg/aura.svg",
+  "system": {
+    "description": "<p><strong>Visions</strong></p><ul><li>Punit ceux qui contreviennent à la loi.</li><li>Favorise les justes.</li><li>L&#x27;injustice ne paie pas.</li><li>Trouver un bon avocat et un juge équitable.</li><li>Renforcement conséquent de l&#x27;Érudition et de l&#x27;Expression.</li><li>Contrer les pouvoirs du démon Asmoday.</li></ul><ul><li><strong>Attribut.</strong> Dieu juste.</li><li><strong>Heure.</strong> 10h20 à 10h40.</li><li><strong>Jours.</strong> 28 août au 2 septembre. 22 avril, 6 juillet, 19 septembre, 1er décembre, 9 février.</li><li><strong>Couleurs/Cristal.</strong> Couleur claire ou bleu/Saphir</li><li><strong>Prière.</strong> « Quia rectum est verbum Domini, et monia opera ejus in fide. »</li></ul>",
+    "source": "Entre ciel et terre, p. 221",
+    "voie": "voie-des-sephiroth",
+    "voieUuid": "Compendium.pavillon-noir-2.voies.Item.5soP14P6cbQPMX5I",
+    "puissance": 4,
+    "nomNatif": "Domination",
+    "compulsion": "",
+    "accessible": true,
+    "visions": "Punit ceux qui contreviennent à la loi. · Favorise les justes. · L'injustice ne paie pas. · Trouver un bon avocat et un juge équitable. · Renforcement conséquent de l'Érudition et de l'Expression. · Contrer les pouvoirs du démon Asmoday.",
+    "portee": "Là",
+    "cible": "Eux",
+    "impact": "",
+    "duree": "2 min",
+    "conditions": "",
+    "references": "",
+    "application": "manuel"
+  },
+  "effects": [],
+  "folder": "bbVpwWTAqt36UWdh",
+  "sort": 40032,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.345",
+    "systemId": "pavillon-noir-2",
+    "systemVersion": "0.7.0",
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": null
+  }
+}

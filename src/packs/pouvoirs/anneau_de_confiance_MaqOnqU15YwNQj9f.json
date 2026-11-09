@@ -1,0 +1,42 @@
+{
+  "_id": "MaqOnqU15YwNQj9f",
+  "_key": "!items!MaqOnqU15YwNQj9f",
+  "name": "Anneau de confiance",
+  "type": "pouvoir",
+  "img": "icons/svg/aura.svg",
+  "system": {
+    "description": "<p><strong>Visions</strong></p><ul><li>Que les personnes présentes en qui la confiance ne peut être mise sortent du cercle !</li><li>Donner un anneau qui donne une confiance aveugle tant qu&#x27;il sera porté.</li><li>Celui qui trahit la confiance du prêtre perd un anneau qui lui a été donné.</li><li>Un groupe qui forme un cercle honore le temps du cercle la confiance du groupe.</li><li>Aucun traître ne peut signer sur la signature en cercle de la chasse-partie.</li><li>Pour une tâche spécifique, un petit groupe de personnes est lié par une confiance mutuelle.</li></ul><p><strong>Compulsions.</strong> Réussir à symboliser pour quelqu&#x27;un la confiance par un objet. Créer une confiance au sein faire pre d&#x27;un groupe comprenant des tensions.</p>",
+    "source": "Entre ciel et terre, p. 282",
+    "voie": "voie-de-dambala",
+    "voieUuid": "Compendium.pavillon-noir-2.voies.Item.fVIeiRnBn8ADVFE2",
+    "puissance": 4,
+    "nomNatif": "bag konfyans",
+    "compulsion": "Réussir à symboliser pour quelqu'un la confiance par un objet. Créer une confiance au sein faire pre d'un groupe comprenant des tensions.",
+    "accessible": true,
+    "visions": "Que les personnes présentes en qui la confiance ne peut être mise sortent du cercle ! · Donner un anneau qui donne une confiance aveugle tant qu'il sera porté. · Celui qui trahit la confiance du prêtre perd un anneau qui lui a été donné. · Un groupe qui forme un cercle honore le temps du cercle la confiance du groupe. · Aucun traître ne peut signer sur la signature en cercle de la chasse-partie. · Pour une tâche spécifique, un petit groupe de personnes est lié par une confiance mutuelle.",
+    "portee": "Ici",
+    "cible": "Nous",
+    "impact": "",
+    "duree": "Existence de « l'anneau »",
+    "conditions": "",
+    "references": "",
+    "application": "manuel"
+  },
+  "effects": [],
+  "folder": "BsFkHFCdWu35mdPn",
+  "sort": 40014,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.345",
+    "systemId": "pavillon-noir-2",
+    "systemVersion": "0.7.0",
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": null
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "_id": "RQ8ZL6T9Ppn3R8C6",
+  "_key": "!items!RQ8ZL6T9Ppn3R8C6",
+  "name": "Malphas",
+  "type": "pouvoir",
+  "img": "icons/svg/aura.svg",
+  "system": {
+    "description": "<p><strong>Visions</strong></p><ul><li>Don de familier repérant les faiblesses des fortifications.</li><li>Attraction des artificiers (+3D en Empathie et en Persuasion pour le recrutement d&#x27;artilleurs, d&#x27;artificiers ou d &#x27;armuriers).</li><li>Camp ou fort inattaquable (-2S pour qui tente de l&#x27;attaquer en Combat ou de le détruire par Canonnade.</li><li>Explosion d&#x27;une poudrière terrestre.</li><li>Maladie ou aggravation des maladies.</li><li>Repérer, contrôler le parricide ou l&#x27;infanticide.</li><li>Pousser au parricide ou à l&#x27;infanticide.</li><li>Contrer les pouvoirs de l&#x27;ange Rehael.</li></ul><ul><li><strong>Aspect.</strong> Corneille, puis homme parlant avec une voix enrouée.</li><li><strong>Heure.</strong> 12h40 à 13h00.</li><li><strong>Jours.</strong> 3 au 8 octobre. 29 avril, 13 juillet, 26 septembre, 8 décembre, 16 février.</li><li><strong>Couleurs/Cristal.</strong> Turquoise/Quartz rose.</li></ul>",
+    "source": "Entre ciel et terre, p. 239",
+    "voie": "voie-des-qlipoth",
+    "voieUuid": "Compendium.pavillon-noir-2.voies.Item.28cj5d17pp6tLLr8",
+    "puissance": 5,
+    "nomNatif": "Prestidigitateur",
+    "compulsion": "",
+    "accessible": true,
+    "visions": "Don de familier repérant les faiblesses des fortifications. · Attraction des artificiers (+3D en Empathie et en Persuasion pour le recrutement d'artilleurs, d'artificiers ou d 'armuriers). · Camp ou fort inattaquable (-2S pour qui tente de l'attaquer en Combat ou de le détruire par Canonnade. · Explosion d'une poudrière terrestre. · Maladie ou aggravation des maladies. · Repérer, contrôler le parricide ou l'infanticide. · Pousser au parricide ou à l'infanticide. · Contrer les pouvoirs de l'ange Rehael.",
+    "portee": "Vue",
+    "cible": "Moi (Don...) ou Eux",
+    "impact": "",
+    "duree": "4 h ou 1 mois (Don...)",
+    "conditions": "",
+    "references": "",
+    "application": "manuel"
+  },
+  "effects": [],
+  "folder": "I3FQOgCqphyIoMbm",
+  "sort": 50038,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.345",
+    "systemId": "pavillon-noir-2",
+    "systemVersion": "0.7.0",
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": null
+  }
+}

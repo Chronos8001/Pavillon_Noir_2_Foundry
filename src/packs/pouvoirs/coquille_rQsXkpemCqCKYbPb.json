@@ -1,0 +1,42 @@
+{
+  "_id": "rQsXkpemCqCKYbPb",
+  "_key": "!items!rQsXkpemCqCKYbPb",
+  "name": "Coquille",
+  "type": "pouvoir",
+  "img": "icons/svg/aura.svg",
+  "system": {
+    "description": "<p><strong>Visions</strong></p><ul><li>La cible se renferme sur elle-même.</li><li>Légère protection sur la peau.</li><li>Trouve un abri pour la nuit.</li><li>Crée une attitude défensive face au monde extérieur.</li><li>Conduite défensive aveugle.</li></ul><p><strong>Compulsions.</strong> Confectionner une armure de coquillage. Rester sur la défensive.</p>",
+    "source": "Entre ciel et terre, p. 301",
+    "voie": "voie-des-freres-marassa",
+    "voieUuid": "Compendium.pavillon-noir-2.voies.Item.g0bMhkfFArVT77cy",
+    "puissance": 4,
+    "nomNatif": "kok",
+    "compulsion": "Confectionner une armure de coquillage. Rester sur la défensive.",
+    "accessible": true,
+    "visions": "La cible se renferme sur elle-même. · Légère protection sur la peau. · Trouve un abri pour la nuit. · Crée une attitude défensive face au monde extérieur. · Conduite défensive aveugle.",
+    "portee": "Toucher ou Vue/Voix/Ouïe",
+    "cible": "Lui",
+    "impact": "",
+    "duree": "24 h",
+    "conditions": "",
+    "references": "",
+    "application": "manuel"
+  },
+  "effects": [],
+  "folder": "44qmjJBQHiy5XpLM",
+  "sort": 40015,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.345",
+    "systemId": "pavillon-noir-2",
+    "systemVersion": "0.7.0",
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": null
+  }
+}

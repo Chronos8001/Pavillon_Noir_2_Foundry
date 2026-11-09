@@ -1,0 +1,42 @@
+{
+  "_id": "hRofc0HjDFvsyH9i",
+  "_key": "!items!hRofc0HjDFvsyH9i",
+  "name": "Météo marine",
+  "type": "pouvoir",
+  "img": "icons/svg/aura.svg",
+  "system": {
+    "description": "<p><strong>Visions</strong></p><ul><li>Prévisions météo.</li><li>Mise en garde sur les conditions climatiques.</li></ul><p><strong>Compulsions.</strong> Se promener sous la pluie. Attendre, patient et immobile, que le temps passe du beau temps à l&#x27;orage, ou inversement.</p><p><em>Règles particulières : voir Entre ciel et terre, p. 276.</em></p>",
+    "source": "Entre ciel et terre, p. 276",
+    "voie": "voie-d-agwe",
+    "voieUuid": "Compendium.pavillon-noir-2.voies.Item.6bwsVNHhFxnjtf9Q",
+    "puissance": 1,
+    "nomNatif": "klimat lanmè",
+    "compulsion": "Se promener sous la pluie. Attendre, patient et immobile, que le temps passe du beau temps à l'orage, ou inversement.",
+    "accessible": true,
+    "visions": "Prévisions météo. · Mise en garde sur les conditions climatiques.",
+    "portee": "Là-bas",
+    "cible": "Moi",
+    "impact": "",
+    "duree": "24 h",
+    "conditions": "",
+    "references": "",
+    "application": "manuel"
+  },
+  "effects": [],
+  "folder": "xaG58lKGMpuXcD6x",
+  "sort": 10001,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.345",
+    "systemId": "pavillon-noir-2",
+    "systemVersion": "0.7.0",
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": null
+  }
+}

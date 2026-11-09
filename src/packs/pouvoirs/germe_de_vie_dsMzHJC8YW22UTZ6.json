@@ -1,0 +1,42 @@
+{
+  "_id": "dsMzHJC8YW22UTZ6",
+  "_key": "!items!dsMzHJC8YW22UTZ6",
+  "name": "Germe de vie",
+  "type": "pouvoir",
+  "img": "icons/svg/aura.svg",
+  "system": {
+    "description": "<p><strong>Visions</strong></p><ul><li>Recueille un germe permettant de créer un être vivant, de l&#x27;homme à la maladie.</li><li>Dépose un germe vivant qui se développera en quelques jours ou en quelques années.</li><li>Voit les germes (de maladie, de plantes, d&#x27;animal inséminé...).</li></ul><p><strong>Compulsions.</strong> Planter des graines. Acte sexuel.</p>",
+    "source": "Entre ciel et terre, p. 193",
+    "voie": "voie-des-zemis",
+    "voieUuid": "Compendium.pavillon-noir-2.voies.Item.adV2aUWhmHXDCarX",
+    "puissance": 6,
+    "nomNatif": "takêcheni",
+    "compulsion": "Planter des graines. Acte sexuel.",
+    "accessible": true,
+    "visions": "Recueille un germe permettant de créer un être vivant, de l'homme à la maladie. · Dépose un germe vivant qui se développera en quelques jours ou en quelques années. · Voit les germes (de maladie, de plantes, d'animal inséminé...).",
+    "portee": "Toucher",
+    "cible": "Toi",
+    "impact": "",
+    "duree": "1 cycle",
+    "conditions": "",
+    "references": "",
+    "application": "manuel"
+  },
+  "effects": [],
+  "folder": "pdOB4V6FtlhUIRJ0",
+  "sort": 60024,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.345",
+    "systemId": "pavillon-noir-2",
+    "systemVersion": "0.7.0",
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": null
+  }
+}

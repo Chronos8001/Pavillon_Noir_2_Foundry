@@ -1,0 +1,42 @@
+{
+  "_id": "52UugXyvHYmJrHfj",
+  "_key": "!items!52UugXyvHYmJrHfj",
+  "name": "Le vin de l'assassin",
+  "type": "pouvoir",
+  "img": "icons/svg/aura.svg",
+  "system": {
+    "description": "<p><strong>Visions</strong></p><ul><li>Empoisonne du vin.</li><li>Un vin donne de fortes pulsions meurtrières.</li><li>Le meurtre (sa préparation ou l&#x27;avoir commis) donne une envie de boire du vin.</li></ul><p><strong>Compulsions.</strong> Empoisonner du vin. Pousser un homme aviné au meurtre.</p>",
+    "source": "Entre ciel et terre, p. 179",
+    "voie": "voie-d-icheiricou-pour-le-conseil",
+    "voieUuid": "Compendium.pavillon-noir-2.voies.Item.wiw3plsp6sATryBq",
+    "puissance": 6,
+    "nomNatif": "aparouti natoni boman",
+    "compulsion": "Empoisonner du vin. Pousser un homme aviné au meurtre.",
+    "accessible": true,
+    "visions": "Empoisonne du vin. · Un vin donne de fortes pulsions meurtrières. · Le meurtre (sa préparation ou l'avoir commis) donne une envie de boire du vin.",
+    "portee": "Toucher ou Là-bas (pulsions alcooliques)",
+    "cible": "Lui",
+    "impact": "",
+    "duree": "24 h",
+    "conditions": "",
+    "references": "",
+    "application": "manuel"
+  },
+  "effects": [],
+  "folder": "ZyTz3Sqh4HxLti9u",
+  "sort": 60022,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.345",
+    "systemId": "pavillon-noir-2",
+    "systemVersion": "0.7.0",
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": null
+  }
+}

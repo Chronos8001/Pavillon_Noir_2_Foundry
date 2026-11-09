@@ -1,0 +1,42 @@
+{
+  "_id": "AeZeSRHd8sxPABG9",
+  "_key": "!items!AeZeSRHd8sxPABG9",
+  "name": "Traversée du danger",
+  "type": "pouvoir",
+  "img": "icons/svg/aura.svg",
+  "system": {
+    "description": "<p><strong>Visions</strong></p><ul><li>Volonté de traverser délibérément un danger.</li><li>Donner une incapacité à se mettre en danger.</li><li>Sauvegarde lors de la traversée d&#x27;un danger.</li></ul><p><strong>Compulsions.</strong> Traverser une zone de danger en se fiant uniquement à sa chance. Montrer un danger comme infranchissable.</p>",
+    "source": "Entre ciel et terre, p. 278",
+    "voie": "voie-d-agwe",
+    "voieUuid": "Compendium.pavillon-noir-2.voies.Item.6bwsVNHhFxnjtf9Q",
+    "puissance": 7,
+    "nomNatif": "janbe danje",
+    "compulsion": "Traverser une zone de danger en se fiant uniquement à sa chance. Montrer un danger comme infranchissable.",
+    "accessible": true,
+    "visions": "Volonté de traverser délibérément un danger. · Donner une incapacité à se mettre en danger. · Sauvegarde lors de la traversée d'un danger.",
+    "portee": "Voix",
+    "cible": "Vous",
+    "impact": "",
+    "duree": "1 cycle",
+    "conditions": "",
+    "references": "",
+    "application": "manuel"
+  },
+  "effects": [],
+  "folder": "xaG58lKGMpuXcD6x",
+  "sort": 70021,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.345",
+    "systemId": "pavillon-noir-2",
+    "systemVersion": "0.7.0",
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": null
+  }
+}

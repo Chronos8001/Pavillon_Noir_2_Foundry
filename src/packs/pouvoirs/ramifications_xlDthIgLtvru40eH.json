@@ -1,0 +1,42 @@
+{
+  "_id": "xlDthIgLtvru40eH",
+  "_key": "!items!xlDthIgLtvru40eH",
+  "name": "Ramifications",
+  "type": "pouvoir",
+  "img": "icons/svg/aura.svg",
+  "system": {
+    "description": "<p><strong>Visions</strong></p><ul><li>Étend les ramifications d&#x27;un arbre.</li><li>Découvre les ramifications d&#x27;une organisation ou d&#x27;un problème.</li><li>Fait pousser des bois de cerf.</li><li>Accroissement de la taille de la forêt.</li><li>Croissance de nouveaux membres.</li></ul><p><strong>Compulsions.</strong> Trouver un arbre aux racines aériennes. Rendre un problème impossible à aborder du fait de ses ramifications.</p>",
+    "source": "Entre ciel et terre, p. 311",
+    "voie": "voie-de-cousin-zaka",
+    "voieUuid": "Compendium.pavillon-noir-2.voies.Item.lP05NKFNMs90d9GB",
+    "puissance": 5,
+    "nomNatif": "branch deyo",
+    "compulsion": "Trouver un arbre aux racines aériennes. Rendre un problème impossible à aborder du fait de ses ramifications.",
+    "accessible": true,
+    "visions": "Étend les ramifications d'un arbre. · Découvre les ramifications d'une organisation ou d'un problème. · Fait pousser des bois de cerf. · Accroissement de la taille de la forêt. · Croissance de nouveaux membres.",
+    "portee": "Là",
+    "cible": "Vous",
+    "impact": "",
+    "duree": "24 h ou Permanent (accroissement de la forêt)",
+    "conditions": "",
+    "references": "",
+    "application": "manuel"
+  },
+  "effects": [],
+  "folder": "Ha5xoeLM6LLXX7ma",
+  "sort": 50024,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.345",
+    "systemId": "pavillon-noir-2",
+    "systemVersion": "0.7.0",
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": null
+  }
+}

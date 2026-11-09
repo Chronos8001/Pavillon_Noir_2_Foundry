@@ -1,0 +1,42 @@
+{
+  "_id": "Eg7ca739Mxe4eRDh",
+  "_key": "!items!Eg7ca739Mxe4eRDh",
+  "name": "Ipos",
+  "type": "pouvoir",
+  "img": "icons/svg/aura.svg",
+  "system": {
+    "description": "<p><strong>Visions</strong></p><ul><li>Découverte des choses cachées présentes, passées ou à venir dans les limites de la portée et de la durée.</li><li>Vaillance et intelligence au combat (+1D dans les compétences de combat).</li><li>Contrôle* d&#x27;un pirate, d&#x27;un corsaire ou d&#x27;un esclave.</li><li>Facilité de recrutement pour un pirate ou un corsaire.</li><li>Aide pour un raid ou l&#x27;attaque d&#x27;un navire.</li><li>Déboires dans une expédition maritime.</li><li>Vents contraires.</li><li>Contrer les pouvoirs de l&#x27;ange Ieiaiel.</li></ul><ul><li><strong>Aspect.</strong> Corps d&#x27;ange et tête de lion ou de vautour, lièvre et pattes d&#x27;oie.</li><li><strong>Heure.</strong> 7h00 à 7h20.</li><li><strong>Jours.</strong> 7 au 13 juillet. 12 avril, 25 juin, 9 septembre, 21 novembre, 30 janvier.</li><li><strong>Couleurs/Cristal.</strong> Jaune ou rose doré/Pyrite.</li></ul>",
+    "source": "Entre ciel et terre, p. 235",
+    "voie": "voie-des-qlipoth",
+    "voieUuid": "Compendium.pavillon-noir-2.voies.Item.28cj5d17pp6tLLr8",
+    "puissance": 3,
+    "nomNatif": "Vase d'Iniquité",
+    "compulsion": "",
+    "accessible": true,
+    "visions": "Découverte des choses cachées présentes, passées ou à venir dans les limites de la portée et de la durée. · Vaillance et intelligence au combat (+1D dans les compétences de combat). · Contrôle* d'un pirate, d'un corsaire ou d'un esclave. · Facilité de recrutement pour un pirate ou un corsaire. · Aide pour un raid ou l'attaque d'un navire. · Déboires dans une expédition maritime. · Vents contraires. · Contrer les pouvoirs de l'ange Ieiaiel.",
+    "portee": "Là",
+    "cible": "Toi",
+    "impact": "",
+    "duree": "2 min",
+    "conditions": "",
+    "references": "",
+    "application": "manuel"
+  },
+  "effects": [],
+  "folder": "I3FQOgCqphyIoMbm",
+  "sort": 30022,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.345",
+    "systemId": "pavillon-noir-2",
+    "systemVersion": "0.7.0",
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": null
+  }
+}

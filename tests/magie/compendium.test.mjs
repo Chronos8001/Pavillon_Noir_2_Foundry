@@ -51,6 +51,41 @@ test("pas de Transe dans la Kabbale, la Cartomancie ni la Voie du Calendrier (EC
   assert.deepEqual(sans, ["Voie de la Cartomancie", "Voie des Qlipoth", "Voie des Sephiroth", "Voie du Calendrier"]);
 });
 
+test("compendium des Pouvoirs : 785 Pouvoirs complets, rattachés à leur Voie", () => {
+  const PREFIXE = "Compendium.pavillon-noir-2.voies.Item.";
+  const pack = lire("src/packs/pouvoirs");
+  const dossiers = new Map(pack.filter(d => d._key.startsWith("!folders!")).map(d => [d._id, d]));
+  const pouvoirs = pack.filter(d => d.type === "pouvoir");
+  assert.equal(pouvoirs.length, 785);
+  assert.equal(dossiers.size, 20);
+  const voies = new Map(voiesPack.filter(d => d.type === "voie").map(v => [v._id, v]));
+  const champs = ["description", "source", "voie", "voieUuid", "puissance", "nomNatif", "compulsion", "accessible", "visions",
+    "portee", "cible", "impact", "duree", "conditions", "references", "application"];
+  for (const p of pouvoirs) {
+    const s = p.system;
+    assert.deepEqual(Object.keys(s).sort(), [...champs].sort(), p.name);
+    assert.equal(p._key, `!items!${p._id}`);
+    assert.match(p._id, /^[A-Za-z0-9]{16}$/);
+    assert.ok(Number.isInteger(s.puissance) && s.puissance >= 1 && s.puissance <= 10, `${p.name} : Puissance`);
+    const voie = voies.get(s.voieUuid.slice(PREFIXE.length));
+    assert.ok(s.voieUuid.startsWith(PREFIXE) && voie, `${p.name} : Voie introuvable`);
+    assert.equal(s.voie, cleVoie(voie.name, voie.system.cle), `${p.name} : clé de Voie`);
+    assert.equal(dossiers.get(p.folder)?.name, voie.name, `${p.name} : dossier`);
+    for (const c of ["portee", "cible", "duree", "visions"]) assert.ok(s[c], `${p.name} : ${c} vide`);
+    // Aucun reste d'extraction : lettres espacées, puces ou paramètres collés
+    assert.doesNotMatch(`${p.name} ${s.nomNatif}`, /(\b\p{L} ){3,}/u, `${p.name} : lettres espacées`);
+    assert.doesNotMatch(`${s.visions} ${s.compulsion}`, /Portée\s*:|Compulsions\.|­/, `${p.name} : débris`);
+  }
+  const ids = pack.map(d => d._id);
+  assert.equal(new Set(ids).size, ids.length, "identifiants uniques");
+  const noms = pouvoirs.map(p => `${p.system.voie}|${p.name}`);
+  assert.equal(new Set(noms).size, noms.length, "pas de Pouvoir en double dans une Voie");
+  // La Cartomancie (Lames du tarot, sans Puissance) n'est pas dans ce compendium
+  assert.ok(!pouvoirs.some(p => p.system.voie === "voie-de-la-cartomancie"));
+  // Kabbale (Sephiroth, Qlipoth) : pas de compulsion (ECT p. 214, 229)
+  assert.ok(pouvoirs.filter(p => /sephiroth|qlipoth/.test(p.system.voie)).every(p => !p.system.compulsion));
+});
+
 test("religions du compendium de magie : références UUID cohérentes avec les Voies", () => {
   const PREFIXE = "Compendium.pavillon-noir-2.voies.Item.";
   const parId = new Map(voiesPack.map(d => [d._id, d]));

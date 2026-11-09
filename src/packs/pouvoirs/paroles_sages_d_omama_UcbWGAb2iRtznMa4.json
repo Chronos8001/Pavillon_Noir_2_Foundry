@@ -1,0 +1,42 @@
+{
+  "_id": "UcbWGAb2iRtznMa4",
+  "_key": "!items!UcbWGAb2iRtznMa4",
+  "name": "Paroles sages d'Omama",
+  "type": "pouvoir",
+  "img": "icons/svg/aura.svg",
+  "system": {
+    "description": "<p><strong>Visions</strong></p><ul><li>Trouver les paroles les plus sages.</li><li>Faire entendre une parole comme si elle venait du sage Omama lui-même.</li><li>Voit si les idées d&#x27;une personne viennent d&#x27;elle.</li></ul><p><strong>Compulsions.</strong> Contredire systématiquement une personne connue pour sa sagesse. Convaincre quelqu&#x27;un d&#x27;une parfaite ineptie.</p>",
+    "source": "Entre ciel et terre, p. 185",
+    "voie": "voie-des-xapiripe",
+    "voieUuid": "Compendium.pavillon-noir-2.voies.Item.uLmNntdGMAtLAIsE",
+    "puissance": 2,
+    "nomNatif": "Omama amoa",
+    "compulsion": "Contredire systématiquement une personne connue pour sa sagesse. Convaincre quelqu'un d'une parfaite ineptie.",
+    "accessible": true,
+    "visions": "Trouver les paroles les plus sages. · Faire entendre une parole comme si elle venait du sage Omama lui-même. · Voit si les idées d'une personne viennent d'elle.",
+    "portee": "Vue/Voix/Ouïe",
+    "cible": "Lui",
+    "impact": "",
+    "duree": "1 cycle",
+    "conditions": "",
+    "references": "",
+    "application": "manuel"
+  },
+  "effects": [],
+  "folder": "MTKTGwYLgyfOOhl1",
+  "sort": 20004,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.345",
+    "systemId": "pavillon-noir-2",
+    "systemVersion": "0.7.0",
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": null
+  }
+}

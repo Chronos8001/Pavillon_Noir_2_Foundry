@@ -1,0 +1,42 @@
+{
+  "_id": "0RSCl4cWNXdu5glW",
+  "_key": "!items!0RSCl4cWNXdu5glW",
+  "name": "Ame du chef",
+  "type": "pouvoir",
+  "img": "icons/svg/aura.svg",
+  "system": {
+    "description": "<p><strong>Visions</strong></p><ul><li>Transmission de ses pouvoirs sacrés à ses hommes.</li><li>Manipulation du chef en jouant sur ses aspirations.</li><li>Permet à quelqu&#x27;un de trouver sa voie pour devenir chef.</li><li>Crée des doutes chez un chef.</li></ul><p><strong>Compulsions.</strong> Conduire un groupe à la bataille. Faire douter son chef.</p>",
+    "source": "Entre ciel et terre, p. 308",
+    "voie": "voie-d-ogou",
+    "voieUuid": "Compendium.pavillon-noir-2.voies.Item.nT1z9NA3nij69fC3",
+    "puissance": 9,
+    "nomNatif": "lespri dirije",
+    "compulsion": "Conduire un groupe à la bataille. Faire douter son chef.",
+    "accessible": true,
+    "visions": "Transmission de ses pouvoirs sacrés à ses hommes. · Manipulation du chef en jouant sur ses aspirations. · Permet à quelqu'un de trouver sa voie pour devenir chef. · Crée des doutes chez un chef.",
+    "portee": "Là",
+    "cible": "Nous",
+    "impact": "",
+    "duree": "1 semaine",
+    "conditions": "",
+    "references": "",
+    "application": "manuel"
+  },
+  "effects": [],
+  "folder": "jrCp3TXiMnGmStXb",
+  "sort": 90033,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.345",
+    "systemId": "pavillon-noir-2",
+    "systemVersion": "0.7.0",
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": null
+  }
+}

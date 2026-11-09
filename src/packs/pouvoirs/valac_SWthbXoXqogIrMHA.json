@@ -1,0 +1,42 @@
+{
+  "_id": "SWthbXoXqogIrMHA",
+  "_key": "!items!SWthbXoXqogIrMHA",
+  "name": "Valac",
+  "type": "pouvoir",
+  "img": "icons/svg/aura.svg",
+  "system": {
+    "description": "<p><strong>Visions</strong></p><ul><li>Apparition et Contrôle* d&#x27;un océan de serpents.</li><li>Distinction par l&#x27;immodestie et le vice.</li><li>Illusion du luxe.</li><li>Ultime tentation.</li><li>Inconstance et divorce.</li><li>Phobie du silence et de la solitude.</li><li>Séparation.</li><li>Contrer les pouvoirs de l&#x27;ange Iahhel.</li></ul><ul><li><strong>Aspect.</strong> Petit garçon pauvre avec des ailes d&#x27;ange montant un dragon à deux têtes.</li><li><strong>Heure.</strong> 20h20 à 20h40.</li><li><strong>Jours.</strong> 25 au 30 janvier. 22 mai, 5 août, 19 octobre, 31 décembre, 12 mars.</li><li><strong>Couleurs/Cristal.</strong> Couleur claire ou orange/Perle.</li></ul>",
+    "source": "Entre ciel et terre, p. 244",
+    "voie": "voie-des-qlipoth",
+    "voieUuid": "Compendium.pavillon-noir-2.voies.Item.28cj5d17pp6tLLr8",
+    "puissance": 8,
+    "nomNatif": "Accusateur ou Exécuteur",
+    "compulsion": "",
+    "accessible": true,
+    "visions": "Apparition et Contrôle* d'un océan de serpents. · Distinction par l'immodestie et le vice. · Illusion du luxe. · Ultime tentation. · Inconstance et divorce. · Phobie du silence et de la solitude. · Séparation. · Contrer les pouvoirs de l'ange Iahhel.",
+    "portee": "Là-bas",
+    "cible": "Eux",
+    "impact": "",
+    "duree": "30 min (Apparition...), 1 année ou Permanent (Séparation...)",
+    "conditions": "",
+    "references": "",
+    "application": "manuel"
+  },
+  "effects": [],
+  "folder": "I3FQOgCqphyIoMbm",
+  "sort": 80061,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.345",
+    "systemId": "pavillon-noir-2",
+    "systemVersion": "0.7.0",
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": null
+  }
+}

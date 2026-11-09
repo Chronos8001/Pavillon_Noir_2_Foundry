@@ -1,0 +1,42 @@
+{
+  "_id": "aHy85ebH6lYjrUrx",
+  "_key": "!items!aHy85ebH6lYjrUrx",
+  "name": "Vents contraires",
+  "type": "pouvoir",
+  "img": "icons/svg/aura.svg",
+  "system": {
+    "description": "<p><strong>Visions</strong></p><ul><li>Soumet un navire à des vents contraires à sa destination.</li><li>Chaos de vents en tous sens.</li><li>Impose du vent dans un sens dans une zone et dans un sens contraire dans une zone voisine.</li><li>Succession de difficultés ralentissant l&#x27;accomplissement d&#x27;une tâche.</li></ul><p><strong>Compulsions.</strong> Remonter contre le vent et le courant. Ralentir quelqu&#x27;un.</p>",
+    "source": "Entre ciel et terre, p. 182",
+    "voie": "voie-d-icheiricou-pour-la-protection-et-la-punition",
+    "voieUuid": "Compendium.pavillon-noir-2.voies.Item.yH60f20rPKBEP9j4",
+    "puissance": 4,
+    "nomNatif": "niboupoyenhénli bebéite",
+    "compulsion": "Remonter contre le vent et le courant. Ralentir quelqu'un.",
+    "accessible": true,
+    "visions": "Soumet un navire à des vents contraires à sa destination. · Chaos de vents en tous sens. · Impose du vent dans un sens dans une zone et dans un sens contraire dans une zone voisine. · Succession de difficultés ralentissant l'accomplissement d'une tâche.",
+    "portee": "Là-bas",
+    "cible": "Vous",
+    "impact": "",
+    "duree": "24 h",
+    "conditions": "",
+    "references": "",
+    "application": "manuel"
+  },
+  "effects": [],
+  "folder": "aNYZvvAOkWDjlSbd",
+  "sort": 40011,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.345",
+    "systemId": "pavillon-noir-2",
+    "systemVersion": "0.7.0",
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": null
+  }
+}

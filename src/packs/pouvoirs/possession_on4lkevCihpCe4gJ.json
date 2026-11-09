@@ -1,0 +1,42 @@
+{
+  "_id": "on4lkevCihpCe4gJ",
+  "_key": "!items!on4lkevCihpCe4gJ",
+  "name": "Possession",
+  "type": "pouvoir",
+  "img": "icons/svg/aura.svg",
+  "system": {
+    "description": "<p><strong>Visions</strong></p><ul><li>Sait à qui appartient un objet ou un esclave.</li><li>Voit l&#x27;esprit à l&#x27;origine de la possession d&#x27;une personne.</li><li>La victime se sent possédée.</li><li>Extirpe l&#x27;esprit qui possède une personne.</li><li>Possession forcée d&#x27;une personne par un lwa.</li></ul><p><strong>Compulsions.</strong> Convaincre une personne qu&#x27;elle est possédée. Assister à la possession d&#x27;un autre vaudouisant.</p>",
+    "source": "Entre ciel et terre, p. 295",
+    "voie": "voie-de-papa-legba",
+    "voieUuid": "Compendium.pavillon-noir-2.voies.Item.cLAnYvfRTW6M1YmZ",
+    "puissance": 1,
+    "nomNatif": "possede",
+    "compulsion": "Convaincre une personne qu'elle est possédée. Assister à la possession d'un autre vaudouisant.",
+    "accessible": true,
+    "visions": "Sait à qui appartient un objet ou un esclave. · Voit l'esprit à l'origine de la possession d'une personne. · La victime se sent possédée. · Extirpe l'esprit qui possède une personne. · Possession forcée d'une personne par un lwa.",
+    "portee": "Vue/Voix/Ouïe",
+    "cible": "Toi",
+    "impact": "",
+    "duree": "1 cycle",
+    "conditions": "",
+    "references": "",
+    "application": "manuel"
+  },
+  "effects": [],
+  "folder": "cxj6xXxtlHVMonir",
+  "sort": 10002,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.345",
+    "systemId": "pavillon-noir-2",
+    "systemVersion": "0.7.0",
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": null
+  }
+}

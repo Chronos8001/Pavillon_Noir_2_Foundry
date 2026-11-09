@@ -1,0 +1,42 @@
+{
+  "_id": "wkVIFw3ZsQ8jEAMJ",
+  "_key": "!items!wkVIFw3ZsQ8jEAMJ",
+  "name": "La flèche de la trahison",
+  "type": "pouvoir",
+  "img": "icons/svg/aura.svg",
+  "system": {
+    "description": "<p><strong>Visions</strong></p><ul><li>Une flèche touchera le traître visé à coup sûr.</li><li>Une flèche indique la position d&#x27;un traître.</li><li>Une arme crée une dissension dans un groupe.</li><li>Prophétise qu&#x27;une personne mourra d&#x27;une flèche ou qu&#x27;une flèche permettra d&#x27;accomplir un acte de trahison.</li><li>Permet de retrouver le traître à partir d&#x27;une de ses armes.</li></ul><p><strong>Compulsions.</strong> Tirer une flèche dans le dos d&#x27;un ami. Empoisonner une flèche.</p>",
+    "source": "Entre ciel et terre, p. 177",
+    "voie": "voie-d-icheiricou-pour-le-conseil",
+    "voieUuid": "Compendium.pavillon-noir-2.voies.Item.wiw3plsp6sATryBq",
+    "puissance": 3,
+    "nomNatif": "ikênatobou",
+    "compulsion": "Tirer une flèche dans le dos d'un ami. Empoisonner une flèche.",
+    "accessible": true,
+    "visions": "Une flèche touchera le traître visé à coup sûr. · Une flèche indique la position d'un traître. · Une arme crée une dissension dans un groupe. · Prophétise qu'une personne mourra d'une flèche ou qu'une flèche permettra d'accomplir un acte de trahison. · Permet de retrouver le traître à partir d'une de ses armes.",
+    "portee": "Toucher ou Là-bas (prophétie, retrouver le traître)",
+    "cible": "Lui",
+    "impact": "",
+    "duree": "1 mois",
+    "conditions": "",
+    "references": "",
+    "application": "manuel"
+  },
+  "effects": [],
+  "folder": "ZyTz3Sqh4HxLti9u",
+  "sort": 30013,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.345",
+    "systemId": "pavillon-noir-2",
+    "systemVersion": "0.7.0",
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": null
+  }
+}

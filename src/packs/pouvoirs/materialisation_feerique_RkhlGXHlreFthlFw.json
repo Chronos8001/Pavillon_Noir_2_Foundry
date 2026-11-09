@@ -1,0 +1,42 @@
+{
+  "_id": "RkhlGXHlreFthlFw",
+  "_key": "!items!RkhlGXHlreFthlFw",
+  "name": "Matérialisation féerique",
+  "type": "pouvoir",
+  "img": "icons/svg/aura.svg",
+  "system": {
+    "description": "<p><strong>Visions</strong></p><ul><li>Matérialise une fée (la rend visible par tous) : elle subira la flétrissure due à l&#x27;incrédulité.</li><li>Donne corps aux rêves les plus fous d&#x27;une personne.</li><li>Crée une fée qui aidera une personne à résoudre un problème donné.</li><li>Matérialise le pire cauchemar d&#x27;une personne.</li></ul><p><strong>Compulsions.</strong> Peindre, dessiner ou sculpter une fée. Aider quelqu&#x27;un à réaliser un rêve.</p><p><em>Règles particulières : voir Entre ciel et terre, p. 265.</em></p>",
+    "source": "Entre ciel et terre, p. 265",
+    "voie": "voie-du-folklore",
+    "voieUuid": "Compendium.pavillon-noir-2.voies.Item.Iy4OYyIN7hI6KjNY",
+    "puissance": 4,
+    "nomNatif": "",
+    "compulsion": "Peindre, dessiner ou sculpter une fée. Aider quelqu'un à réaliser un rêve.",
+    "accessible": true,
+    "visions": "Matérialise une fée (la rend visible par tous) : elle subira la flétrissure due à l'incrédulité. · Donne corps aux rêves les plus fous d'une personne. · Crée une fée qui aidera une personne à résoudre un problème donné. · Matérialise le pire cauchemar d'une personne.",
+    "portee": "Là",
+    "cible": "Vous",
+    "impact": "",
+    "duree": "1 h",
+    "conditions": "",
+    "references": "",
+    "application": "manuel"
+  },
+  "effects": [],
+  "folder": "aLFfT6IKRuY7TugP",
+  "sort": 40017,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.345",
+    "systemId": "pavillon-noir-2",
+    "systemVersion": "0.7.0",
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": null
+  }
+}

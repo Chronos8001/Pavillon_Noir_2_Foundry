@@ -1,0 +1,42 @@
+{
+  "_id": "ITrLwwcPXfulxV2Y",
+  "_key": "!items!ITrLwwcPXfulxV2Y",
+  "name": "Andromalius",
+  "type": "pouvoir",
+  "img": "icons/svg/aura.svg",
+  "system": {
+    "description": "<p><strong>Visions</strong></p><ul><li>Découverte et punition des agents du Mal (si si...).</li><li>Récupération de biens volés avec les voleurs pieds et poings liés.</li><li>Talisman inversé. Désormais, en plaçant sur le frontispice d&#x27;un lieu immobile, sombre et fermé le nom d&#x27;Andromalius au dos d&#x27;un talisman, le Mage Noir le transforme en lieu profané, où tout accès à l&#x27;Arbre de vie ou effet de celui-ci est impossible, et où un Mage Noir peut supporter +3 éclairs de plus. De plus, la lumière autre que celle de cierges exorcisés pour l&#x27;Arbre inversé ne peut plus y rayonner. Un même lieu ne peut être profané qu&#x27;une seule fois.</li><li>Désespoir et suicide.</li><li>Contrer les pouvoirs de l&#x27;ange Mumiah.</li></ul><ul><li><strong>Aspect.</strong> Homme tenant un grand serpent dans sa main.</li><li><strong>Heure.</strong> 23h40 à 00h00.</li><li><strong>Jours.</strong> 16 au 21 mars. 1er juin, 15 août, 29 octobre, 10 janvier, 22 mars.</li><li><strong>Couleurs/Cristal.</strong> Turquoise ou bleu pâle/Turquoise.</li></ul>",
+    "source": "Entre ciel et terre, p. 247",
+    "voie": "voie-des-qlipoth",
+    "voieUuid": "Compendium.pavillon-noir-2.voies.Item.28cj5d17pp6tLLr8",
+    "puissance": 9,
+    "nomNatif": "Tentateur ou Guetteur",
+    "compulsion": "",
+    "accessible": true,
+    "visions": "Découverte et punition des agents du Mal (si si...). · Récupération de biens volés avec les voleurs pieds et poings liés. · Talisman inversé. Désormais, en plaçant sur le frontispice d'un lieu immobile, sombre et fermé le nom d'Andromalius au dos d'un talisman, le Mage Noir le transforme en lieu profané, où tout accès à l'Arbre de vie ou effet de celui-ci est impossible, et où un Mage Noir peut supporter +3 éclairs de plus. De plus, la lumière autre que celle de cierges exorcisés pour l'Arbre inversé ne peut plus y rayonner. Un même lieu ne peut être profané qu'une seule fois. · Désespoir et suicide. · Contrer les pouvoirs de l'ange Mumiah.",
+    "portee": "Ici (Talisman...) ou Là-bas",
+    "cible": "Lui ou Eux (Découverte..., Récupération...)",
+    "impact": "",
+    "duree": "24 h (Récupération..., Découverte...) ou Permanent",
+    "conditions": "",
+    "references": "",
+    "application": "manuel"
+  },
+  "effects": [],
+  "folder": "I3FQOgCqphyIoMbm",
+  "sort": 90071,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.345",
+    "systemId": "pavillon-noir-2",
+    "systemVersion": "0.7.0",
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": null
+  }
+}

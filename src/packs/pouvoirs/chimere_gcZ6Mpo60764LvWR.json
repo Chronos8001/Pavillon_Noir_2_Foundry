@@ -1,0 +1,42 @@
+{
+  "_id": "gcZ6Mpo60764LvWR",
+  "_key": "!items!gcZ6Mpo60764LvWR",
+  "name": "Chimère",
+  "type": "pouvoir",
+  "img": "icons/svg/aura.svg",
+  "system": {
+    "description": "<p><strong>Visions</strong></p><ul><li>Fait croire à tout le monde qu&#x27;un objet est mythique.</li><li>Conf ère à un objet tous les pouvoirs d&#x27;un objet mythique disparu (la chimère souffre de l&#x27;incrédulité comme une fée).</li><li>Donne une hallucination visuelle.</li><li>Manipule les rêves d&#x27;autrui.</li></ul><p><strong>Compulsions.</strong> Faire croire qu&#x27;un objet a appartenu à un de célèbre. Trouver un objet célèbre.</p><p><em>Règles particulières : voir Entre ciel et terre, p. 264.</em></p>",
+    "source": "Entre ciel et terre, p. 264",
+    "voie": "voie-du-folklore",
+    "voieUuid": "Compendium.pavillon-noir-2.voies.Item.Iy4OYyIN7hI6KjNY",
+    "puissance": 4,
+    "nomNatif": "",
+    "compulsion": "Faire croire qu'un objet a appartenu à un de célèbre. Trouver un objet célèbre.",
+    "accessible": true,
+    "visions": "Fait croire à tout le monde qu'un objet est mythique. · Conf ère à un objet tous les pouvoirs d'un objet mythique disparu (la chimère souffre de l'incrédulité comme une fée). · Donne une hallucination visuelle. · Manipule les rêves d'autrui.",
+    "portee": "Toucher",
+    "cible": "Toi",
+    "impact": "",
+    "duree": "1 semaine",
+    "conditions": "",
+    "references": "",
+    "application": "manuel"
+  },
+  "effects": [],
+  "folder": "aLFfT6IKRuY7TugP",
+  "sort": 40014,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.345",
+    "systemId": "pavillon-noir-2",
+    "systemVersion": "0.7.0",
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": null
+  }
+}

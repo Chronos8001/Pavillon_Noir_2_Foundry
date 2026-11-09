@@ -1,0 +1,42 @@
+{
+  "_id": "enlpG4DEId9ODgKV",
+  "_key": "!items!enlpG4DEId9ODgKV",
+  "name": "Auto-infliger",
+  "type": "pouvoir",
+  "img": "icons/svg/aura.svg",
+  "system": {
+    "description": "<p><strong>Visions</strong></p><ul><li>Pulsion pour la douleur.</li><li>Automutilation.</li><li>Guerre intestine.</li><li>Sabordage d&#x27;une entreprise.</li></ul><p><strong>Compulsions.</strong> Se planter des aiguilles de sarbacane dans le corps. Générer un échec du groupe.</p>",
+    "source": "Entre ciel et terre, p. 193",
+    "voie": "voie-des-zemis",
+    "voieUuid": "Compendium.pavillon-noir-2.voies.Item.adV2aUWhmHXDCarX",
+    "puissance": 4,
+    "nomNatif": "natanimaboüiatibou boromancoüa",
+    "compulsion": "Se planter des aiguilles de sarbacane dans le corps. Générer un échec du groupe.",
+    "accessible": true,
+    "visions": "Pulsion pour la douleur. · Automutilation. · Guerre intestine. · Sabordage d'une entreprise.",
+    "portee": "Voix",
+    "cible": "Vous",
+    "impact": "",
+    "duree": "1 semaine",
+    "conditions": "",
+    "references": "",
+    "application": "manuel"
+  },
+  "effects": [],
+  "folder": "pdOB4V6FtlhUIRJ0",
+  "sort": 40018,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.345",
+    "systemId": "pavillon-noir-2",
+    "systemVersion": "0.7.0",
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": null
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "_id": "ncTjUieX9bw7w9UR",
+  "_key": "!items!ncTjUieX9bw7w9UR",
+  "name": "Philtre",
+  "type": "pouvoir",
+  "img": "icons/svg/aura.svg",
+  "system": {
+    "description": "<p><strong>Visions</strong></p><ul><li>Réaliser un philtre.</li></ul><p><strong>Compulsions.</strong> Boire un breuvage louche et inconnu.</p><p><em>Règles particulières : voir Entre ciel et terre, p. 265.</em></p>",
+    "source": "Entre ciel et terre, p. 265",
+    "voie": "voie-du-folklore",
+    "voieUuid": "Compendium.pavillon-noir-2.voies.Item.Iy4OYyIN7hI6KjNY",
+    "puissance": 5,
+    "nomNatif": "",
+    "compulsion": "Boire un breuvage louche et inconnu.",
+    "accessible": true,
+    "visions": "Réaliser un philtre.",
+    "portee": "Personnelle",
+    "cible": "Moi",
+    "impact": "",
+    "duree": "Permanent",
+    "conditions": "",
+    "references": "",
+    "application": "manuel"
+  },
+  "effects": [],
+  "folder": "aLFfT6IKRuY7TugP",
+  "sort": 50020,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.345",
+    "systemId": "pavillon-noir-2",
+    "systemVersion": "0.7.0",
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": null
+  }
+}

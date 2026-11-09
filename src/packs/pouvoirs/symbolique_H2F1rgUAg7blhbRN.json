@@ -1,0 +1,42 @@
+{
+  "_id": "H2F1rgUAg7blhbRN",
+  "_key": "!items!H2F1rgUAg7blhbRN",
+  "name": "Symbolique",
+  "type": "pouvoir",
+  "img": "icons/svg/aura.svg",
+  "system": {
+    "description": "<p><strong>Visions</strong></p><ul><li>Capte toute la symbolique d&#x27;un acte.</li><li>Fait passer un acte profane pour symbolique.</li><li>Explique une symbolique inexistante.</li><li>Compréhension de symboles inconnus.</li><li>Charge un acte d&#x27;une symbolique forte, visible et compréhensible par tous, ou seulement par des amis ou des initiés.</li></ul><p><strong>Compulsions.</strong> Laisser un message cryptique à des amis. Tromper sur la symbolique d&#x27;un fait ou objet.</p>",
+    "source": "Entre ciel et terre, p. 302",
+    "voie": "voie-des-freres-marassa",
+    "voieUuid": "Compendium.pavillon-noir-2.voies.Item.g0bMhkfFArVT77cy",
+    "puissance": 5,
+    "nomNatif": "siy",
+    "compulsion": "Laisser un message cryptique à des amis. Tromper sur la symbolique d'un fait ou objet.",
+    "accessible": true,
+    "visions": "Capte toute la symbolique d'un acte. · Fait passer un acte profane pour symbolique. · Explique une symbolique inexistante. · Compréhension de symboles inconnus. · Charge un acte d'une symbolique forte, visible et compréhensible par tous, ou seulement par des amis ou des initiés.",
+    "portee": "Vue/Voix/Ouïe",
+    "cible": "Lui",
+    "impact": "",
+    "duree": "1 cycle",
+    "conditions": "",
+    "references": "",
+    "application": "manuel"
+  },
+  "effects": [],
+  "folder": "44qmjJBQHiy5XpLM",
+  "sort": 50023,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.345",
+    "systemId": "pavillon-noir-2",
+    "systemVersion": "0.7.0",
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": null
+  }
+}

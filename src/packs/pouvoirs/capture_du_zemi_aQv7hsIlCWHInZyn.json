@@ -1,0 +1,42 @@
+{
+  "_id": "aQv7hsIlCWHInZyn",
+  "_key": "!items!aQv7hsIlCWHInZyn",
+  "name": "Capture du zémi",
+  "type": "pouvoir",
+  "img": "icons/svg/aura.svg",
+  "system": {
+    "description": "<p><strong>Visions</strong></p><ul><li>Capture du zémi.</li></ul><p><strong>Compulsions.</strong> Aucune.</p><p><em>Règles particulières : voir Entre ciel et terre, p. 194.</em></p>",
+    "source": "Entre ciel et terre, p. 194",
+    "voie": "voie-des-zemis",
+    "voieUuid": "Compendium.pavillon-noir-2.voies.Item.adV2aUWhmHXDCarX",
+    "puissance": 6,
+    "nomNatif": "ioüítouli zémi",
+    "compulsion": "Aucune.",
+    "accessible": true,
+    "visions": "Capture du zémi.",
+    "portee": "Personnelle",
+    "cible": "Moi",
+    "impact": "",
+    "duree": "Permanent",
+    "conditions": "",
+    "references": "",
+    "application": "manuel"
+  },
+  "effects": [],
+  "folder": "pdOB4V6FtlhUIRJ0",
+  "sort": 60027,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.345",
+    "systemId": "pavillon-noir-2",
+    "systemVersion": "0.7.0",
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": null
+  }
+}

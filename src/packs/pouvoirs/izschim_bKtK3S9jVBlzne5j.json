@@ -1,0 +1,42 @@
+{
+  "_id": "bKtK3S9jVBlzne5j",
+  "_key": "!items!bKtK3S9jVBlzne5j",
+  "name": "Izschim",
+  "type": "pouvoir",
+  "img": "icons/svg/aura.svg",
+  "system": {
+    "description": "<p><strong>Visions</strong></p><ul><li>Vie éternelle : accéder à ce pouvoir donne la vie éternelle. À la mort du corps, l&#x27;esprit se détache et vient habiter un autre corps, préférentiellement celui d&#x27;un nourrisson.</li><li>Repérer les petites Âmes Damnées (les êtres malfaisants pour soi).</li><li>Brûler les grandes Âmes Damnées (ceux qui ont recours aux Puissances Infernales).</li><li>Contrer le pouvoir Âme Damnée.</li></ul><ul><li><strong>Attribut.</strong> Âme glorifiée.</li><li><strong>Heure.</strong> Toute.</li><li><strong>Jours.</strong> Tous.</li></ul>",
+    "source": "Entre ciel et terre, p. 229",
+    "voie": "voie-des-sephiroth",
+    "voieUuid": "Compendium.pavillon-noir-2.voies.Item.5soP14P6cbQPMX5I",
+    "puissance": 10,
+    "nomNatif": "",
+    "compulsion": "",
+    "accessible": true,
+    "visions": "Vie éternelle : accéder à ce pouvoir donne la vie éternelle. À la mort du corps, l'esprit se détache et vient habiter un autre corps, préférentiellement celui d'un nourrisson. · Repérer les petites Âmes Damnées (les êtres malfaisants pour soi). · Brûler les grandes Âmes Damnées (ceux qui ont recours aux Puissances Infernales). · Contrer le pouvoir Âme Damnée.",
+    "portee": "Personnelle (Vie éternelle), Vue (Brûler les grandes Âmes Damnées) ou Là-bas (Repérer les petites Âmes Damnées)",
+    "cible": "Moi (Vie éternelle) ou Eux",
+    "impact": "",
+    "duree": "Permanent",
+    "conditions": "",
+    "references": "",
+    "application": "manuel"
+  },
+  "effects": [],
+  "folder": "bbVpwWTAqt36UWdh",
+  "sort": 100074,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.345",
+    "systemId": "pavillon-noir-2",
+    "systemVersion": "0.7.0",
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": null
+  }
+}

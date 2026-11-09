@@ -1,0 +1,42 @@
+{
+  "_id": "oYyBBYSukybQp06s",
+  "_key": "!items!oYyBBYSukybQp06s",
+  "name": "Mabouya retourne à son sorcier",
+  "type": "pouvoir",
+  "img": "icons/svg/aura.svg",
+  "system": {
+    "description": "<p><strong>Visions</strong></p><ul><li>Retour des maléfices à leur envoyeur.</li><li>Un mabouya comme animal de compagnie.</li><li>Le mabouya montre le chemin jusqu&#x27;au sorcier qui l&#x27;a envoyé.</li></ul><p><strong>Compulsions.</strong> Punir un sorcier (comprendre « un prêtre ») pour les sortilèges qu&#x27;il a lancés (pour les maux qu&#x27;on lui attribue).</p>",
+    "source": "Entre ciel et terre, p. 184",
+    "voie": "voie-d-icheiricou-pour-la-protection-et-la-punition",
+    "voieUuid": "Compendium.pavillon-noir-2.voies.Item.yH60f20rPKBEP9j4",
+    "puissance": 7,
+    "nomNatif": "mapoya abienra",
+    "compulsion": "Punir un sorcier (comprendre « un prêtre ») pour les sortilèges qu'il a lancés (pour les maux qu'on lui attribue).",
+    "accessible": true,
+    "visions": "Retour des maléfices à leur envoyeur. · Un mabouya comme animal de compagnie. · Le mabouya montre le chemin jusqu'au sorcier qui l'a envoyé.",
+    "portee": "Continent",
+    "cible": "Lui",
+    "impact": "",
+    "duree": "1 mois",
+    "conditions": "",
+    "references": "",
+    "application": "manuel"
+  },
+  "effects": [],
+  "folder": "aNYZvvAOkWDjlSbd",
+  "sort": 70022,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.345",
+    "systemId": "pavillon-noir-2",
+    "systemVersion": "0.7.0",
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": null
+  }
+}

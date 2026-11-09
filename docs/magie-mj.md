@@ -6,7 +6,7 @@ Règles officielles (*Entre ciel et terre*) et adaptations maison : voir le tabl
 
 1. **Clé du coffre** : à la première connexion, une clé est créée. Panneau **Événements divins** (onglet Acteurs) → *Afficher la clé* → conservez-la. Sur un autre navigateur : *Importer la clé*.
 2. **Réglages du système** : validation du MJ, Seuil visible, paramètres des Pouvoirs visibles, mode et chance des Aléas, chance de révélation, récupération de la Colère.
-3. **Contenu** : le compendium *Magie : religions et Voies* fournit 11 religions et 21 Voies. Les Pouvoirs et Aléas officiels ne sont pas fournis : créez-les ou importez-les (Bibliothèque → *Compendiums du monde*, puis *Importer*).
+3. **Contenu** : le compendium *Magie : religions et Voies* fournit 11 religions et 21 Voies ; le compendium *Magie : Pouvoirs des Voies*, visible du seul MJ, fournit 785 Pouvoirs (toutes les Voies sauf la Cartomancie). Les effets mécaniques (Active Effects) et les Aléas officiels ne sont pas fournis : ajoutez-les vous-même ou importez-les (Bibliothèque → *Compendiums du monde*, puis *Importer*).
 
 ## Pendant la partie
 

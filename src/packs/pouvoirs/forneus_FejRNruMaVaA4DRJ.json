@@ -1,0 +1,42 @@
+{
+  "_id": "FejRNruMaVaA4DRJ",
+  "_key": "!items!FejRNruMaVaA4DRJ",
+  "name": "Forneus",
+  "type": "pouvoir",
+  "img": "icons/svg/aura.svg",
+  "system": {
+    "description": "<p><strong>Visions</strong></p><ul><li>Enseignement*** de la rhétorique (+2D en Persuasion).</li><li>Connaissance des langues (Niveau minimum de 3 dans chaque Langue étrangère).</li><li>Bonne réputation.</li><li>Bonnes relations avec ses ennemis.</li><li>Ennemi de la propagation des êtres.</li><li>Stérilité de et en toute chose.</li><li>Naissance monstrueuse.</li><li>Phénomène monstrueux.</li><li>Réaction chimique dangereuse.</li><li>Contrer les pouvoirs de l&#x27;ange Omael.</li></ul><ul><li><strong>Aspect.</strong> Monstre marin.</li><li><strong>Heure.</strong> 9h40 à 10h00.</li><li><strong>Jours.</strong> 18 au 23 août. 20 avril, 4 juillet, 17 septembre, 29 novembre, 7 février.</li><li><strong>Couleurs/Cristal.</strong> Couleur claire ou or/Grenat.</li></ul>",
+    "source": "Entre ciel et terre, p. 237",
+    "voie": "voie-des-qlipoth",
+    "voieUuid": "Compendium.pavillon-noir-2.voies.Item.28cj5d17pp6tLLr8",
+    "puissance": 4,
+    "nomNatif": "Vengeur des Crimes",
+    "compulsion": "",
+    "accessible": true,
+    "visions": "Enseignement*** de la rhétorique (+2D en Persuasion). · Connaissance des langues (Niveau minimum de 3 dans chaque Langue étrangère). · Bonne réputation. · Bonnes relations avec ses ennemis. · Ennemi de la propagation des êtres. · Stérilité de et en toute chose. · Naissance monstrueuse. · Phénomène monstrueux. · Réaction chimique dangereuse. · Contrer les pouvoirs de l'ange Omael.",
+    "portee": "Vue/Voix/Ouïe",
+    "cible": "Moi (Enseignement...) ou Eux",
+    "impact": "",
+    "duree": "4 h ou Permanent (Naissance...)",
+    "conditions": "",
+    "references": "",
+    "application": "manuel"
+  },
+  "effects": [],
+  "folder": "I3FQOgCqphyIoMbm",
+  "sort": 40029,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.345",
+    "systemId": "pavillon-noir-2",
+    "systemVersion": "0.7.0",
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": null
+  }
+}

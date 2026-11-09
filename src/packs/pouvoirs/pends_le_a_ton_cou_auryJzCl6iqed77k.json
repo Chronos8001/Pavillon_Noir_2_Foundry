@@ -1,0 +1,42 @@
+{
+  "_id": "auryJzCl6iqed77k",
+  "_key": "!items!auryJzCl6iqed77k",
+  "name": "Pends-le à ton cou",
+  "type": "pouvoir",
+  "img": "icons/svg/aura.svg",
+  "system": {
+    "description": "<p><strong>Visions</strong></p><ul><li>Rend affectueux.</li><li>Protection contre ce dont on peut pendre une représentation ou une partie autour de son cou (une statuette de mabouya par exemple).</li><li>Besoin irrésistible de montrer un objet de valeur.</li></ul><p><strong>Compulsions.</strong> Sculpter une représentation de son cauchemar et le pendre à son cou. Montrer l&#x27;objet qu&#x27;il aurait fallu garder caché.</p>",
+    "source": "Entre ciel et terre, p. 180",
+    "voie": "voie-d-icheiricou-pour-le-conseil",
+    "voieUuid": "Compendium.pavillon-noir-2.voies.Item.wiw3plsp6sATryBq",
+    "puissance": 1,
+    "nomNatif": "coulaba bourocou",
+    "compulsion": "Sculpter une représentation de son cauchemar et le pendre à son cou. Montrer l'objet qu'il aurait fallu garder caché.",
+    "accessible": true,
+    "visions": "Rend affectueux. · Protection contre ce dont on peut pendre une représentation ou une partie autour de son cou (une statuette de mabouya par exemple). · Besoin irrésistible de montrer un objet de valeur.",
+    "portee": "Toucher",
+    "cible": "Lui",
+    "impact": "",
+    "duree": "1 cycle ou 1 semaine (protection)",
+    "conditions": "",
+    "references": "",
+    "application": "manuel"
+  },
+  "effects": [],
+  "folder": "ZyTz3Sqh4HxLti9u",
+  "sort": 10034,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.345",
+    "systemId": "pavillon-noir-2",
+    "systemVersion": "0.7.0",
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": null
+  }
+}

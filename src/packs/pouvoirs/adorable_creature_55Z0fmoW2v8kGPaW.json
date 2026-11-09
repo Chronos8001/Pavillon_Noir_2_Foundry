@@ -1,0 +1,42 @@
+{
+  "_id": "55Z0fmoW2v8kGPaW",
+  "_key": "!items!55Z0fmoW2v8kGPaW",
+  "name": "Adorable créature",
+  "type": "pouvoir",
+  "img": "icons/svg/aura.svg",
+  "system": {
+    "description": "<p><strong>Visions</strong></p><ul><li>Si adorable qu&#x27;on ne peut que l&#x27;adorer.</li><li>On lui pardonne tout (sauf le meurtre de sang-froid) et on ne peut lui vouloir du mal.</li><li>Sans se mettre à son service, on lui rend la vie la plus agréable possible.</li><li>Voit à quoi ressemble la plus exquise des créatures aux yeux d&#x27;une personne et peut paraître comme telle.</li></ul><p><strong>Compulsions.</strong> Réussir à blesser profondément et à se faire pardonner. S&#x27;exposer sans se défendre aux coups en espérant jouer de son charme.</p>",
+    "source": "Entre ciel et terre, p. 289",
+    "voie": "voie-d-erzulie",
+    "voieUuid": "Compendium.pavillon-noir-2.voies.Item.0cPd7IIiO1TgbK81",
+    "puissance": 7,
+    "nomNatif": "bèl kreyat",
+    "compulsion": "Réussir à blesser profondément et à se faire pardonner. S'exposer sans se défendre aux coups en espérant jouer de son charme.",
+    "accessible": true,
+    "visions": "Si adorable qu'on ne peut que l'adorer. · On lui pardonne tout (sauf le meurtre de sang-froid) et on ne peut lui vouloir du mal. · Sans se mettre à son service, on lui rend la vie la plus agréable possible. · Voit à quoi ressemble la plus exquise des créatures aux yeux d'une personne et peut paraître comme telle.",
+    "portee": "Ici",
+    "cible": "Eux",
+    "impact": "",
+    "duree": "24 h",
+    "conditions": "",
+    "references": "",
+    "application": "manuel"
+  },
+  "effects": [],
+  "folder": "46EaXMNeQpoA9M1j",
+  "sort": 70030,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.345",
+    "systemId": "pavillon-noir-2",
+    "systemVersion": "0.7.0",
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": null
+  }
+}

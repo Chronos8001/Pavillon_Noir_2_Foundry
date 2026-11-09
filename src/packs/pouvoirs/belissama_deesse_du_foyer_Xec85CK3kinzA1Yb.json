@@ -1,0 +1,42 @@
+{
+  "_id": "Xec85CK3kinzA1Yb",
+  "_key": "!items!Xec85CK3kinzA1Yb",
+  "name": "Belissama, déesse du foyer",
+  "type": "pouvoir",
+  "img": "icons/svg/aura.svg",
+  "system": {
+    "description": "<p><strong>Visions</strong></p><ul><li>Allumage d&#x27;un feu inoffensif.</li><li>Conservation des aliments.</li><li>Protection de la famille.</li><li>Maintien du feu allumé.</li><li>Maintien de la cohésion du groupe.</li><li>Fabrication rapide d&#x27;armes.</li></ul><p><strong>Compulsions.</strong> Faire vivre un feu pendant 24h. Manger des aliments mal conservés.</p>",
+    "source": "Entre ciel et terre, p. 249",
+    "voie": "voie-du-druidisme",
+    "voieUuid": "Compendium.pavillon-noir-2.voies.Item.444Fft7a0LtvOMIS",
+    "puissance": 2,
+    "nomNatif": "",
+    "compulsion": "Faire vivre un feu pendant 24h. Manger des aliments mal conservés.",
+    "accessible": true,
+    "visions": "Allumage d'un feu inoffensif. · Conservation des aliments. · Protection de la famille. · Maintien du feu allumé. · Maintien de la cohésion du groupe. · Fabrication rapide d'armes.",
+    "portee": "Ici",
+    "cible": "Nous",
+    "impact": "",
+    "duree": "24 h",
+    "conditions": "",
+    "references": "",
+    "application": "manuel"
+  },
+  "effects": [],
+  "folder": "GhMxnwLVYmucd3Qt",
+  "sort": 20009,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.345",
+    "systemId": "pavillon-noir-2",
+    "systemVersion": "0.7.0",
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": null
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "_id": "dF4inBYWQcc3vPTs",
+  "_key": "!items!dF4inBYWQcc3vPTs",
+  "name": "Satire",
+  "type": "pouvoir",
+  "img": "icons/svg/aura.svg",
+  "system": {
+    "description": "<p><strong>Visions</strong></p><ul><li>Énoncer publiquement à quelqu&#x27;un sa trahison et le condamner à mort. Si les membres de son groupe ne le font pas, c&#x27;est la nature qui s&#x27;en chargera.</li></ul><p><strong>Compulsions.</strong> Donner à quelqu&#x27;un qui a violé un serment une mort d&#x27;apparence naturelle.</p>",
+    "source": "Entre ciel et terre, p. 252",
+    "voie": "voie-du-druidisme",
+    "voieUuid": "Compendium.pavillon-noir-2.voies.Item.444Fft7a0LtvOMIS",
+    "puissance": 6,
+    "nomNatif": "",
+    "compulsion": "Donner à quelqu'un qui a violé un serment une mort d'apparence naturelle.",
+    "accessible": true,
+    "visions": "Énoncer publiquement à quelqu'un sa trahison et le condamner à mort. Si les membres de son groupe ne le font pas, c'est la nature qui s'en chargera.",
+    "portee": "Voix",
+    "cible": "Toi",
+    "impact": "",
+    "duree": "Permanent",
+    "conditions": "",
+    "references": "",
+    "application": "manuel"
+  },
+  "effects": [],
+  "folder": "GhMxnwLVYmucd3Qt",
+  "sort": 60035,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.345",
+    "systemId": "pavillon-noir-2",
+    "systemVersion": "0.7.0",
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": null
+  }
+}

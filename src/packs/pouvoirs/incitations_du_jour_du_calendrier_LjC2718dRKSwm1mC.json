@@ -1,0 +1,42 @@
+{
+  "_id": "LjC2718dRKSwm1mC",
+  "_key": "!items!LjC2718dRKSwm1mC",
+  "name": "Incitations du jour du calendrier",
+  "type": "pouvoir",
+  "img": "icons/svg/aura.svg",
+  "system": {
+    "description": "<p><strong>Visions</strong></p><ul><li>Inciter une personne à accomplir une action incitée par le ( a hu i calendrier pour ce jour.</li><li>Réussir une action incitée par le calendrier pour ce jour.</li></ul><p><strong>Compulsions.</strong> Laisser passer une bonne occasion de Ne pas accomplir c s&#x27;enrichir ou de gagner du pouvoir. Faire ce que le ca- faire n&#x27;est pa lendrier indique même si cela paraît déplacé.</p><p><em>Règles particulières : voir Entre ciel et terre, p. 199.</em></p>",
+    "source": "Entre ciel et terre, p. 199",
+    "voie": "voie-du-calendrier",
+    "voieUuid": "Compendium.pavillon-noir-2.voies.Item.AFWMXMJdfCNP7hit",
+    "puissance": 1,
+    "nomNatif": "tlaimman tonalli tonalamapan",
+    "compulsion": "Laisser passer une bonne occasion de Ne pas accomplir c s'enrichir ou de gagner du pouvoir. Faire ce que le ca- faire n'est pa lendrier indique même si cela paraît déplacé.",
+    "accessible": true,
+    "visions": "Inciter une personne à accomplir une action incitée par le ( a hu i calendrier pour ce jour. · Réussir une action incitée par le calendrier pour ce jour.",
+    "portee": "Là",
+    "cible": "Toi",
+    "impact": "",
+    "duree": "24 h",
+    "conditions": "",
+    "references": "",
+    "application": "manuel"
+  },
+  "effects": [],
+  "folder": "5N19UMmD8j5jNoqn",
+  "sort": 10001,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.345",
+    "systemId": "pavillon-noir-2",
+    "systemVersion": "0.7.0",
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": null
+  }
+}

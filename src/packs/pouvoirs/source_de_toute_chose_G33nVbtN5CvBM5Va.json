@@ -1,0 +1,42 @@
+{
+  "_id": "G33nVbtN5CvBM5Va",
+  "_key": "!items!G33nVbtN5CvBM5Va",
+  "name": "Source de toute chose",
+  "type": "pouvoir",
+  "img": "icons/svg/aura.svg",
+  "system": {
+    "description": "<p><strong>Visions</strong></p><ul><li>Sait ce qui est à la source d&#x27;une chose.</li><li>Peut faire jaillir de soi toute chose.</li><li>Trouve ce qui est à la source d&#x27;une chose, d&#x27;un concept, d&#x27;une émotion.</li><li>Corne d&#x27;abondance.</li><li>Peut bénéficier en permanence des conseils d&#x27;Ichéiricou.</li><li>Lapsus révélateur.</li><li>Mot de travers.</li><li>Repère le menteur.</li><li>Donne une langue de serpent.</li></ul><p><strong>Compulsions.</strong> Dire ce qu&#x27;il ne fallait pas dire. Dire un mensonge éhonté.</p>",
+    "source": "Entre ciel et terre, p. 180",
+    "voie": "voie-d-icheiricou-pour-le-conseil",
+    "voieUuid": "Compendium.pavillon-noir-2.voies.Item.wiw3plsp6sATryBq",
+    "puissance": 10,
+    "nomNatif": "aboulichagoni",
+    "compulsion": "Dire ce qu'il ne fallait pas dire. Dire un mensonge éhonté.",
+    "accessible": true,
+    "visions": "Sait ce qui est à la source d'une chose. · Peut faire jaillir de soi toute chose. · Trouve ce qui est à la source d'une chose, d'un concept, d'une émotion. · Corne d'abondance. · Peut bénéficier en permanence des conseils d'Ichéiricou. · Lapsus révélateur. · Mot de travers. · Repère le menteur. · Donne une langue de serpent.",
+    "portee": "Toucher",
+    "cible": "Moi",
+    "impact": "",
+    "duree": "Permanent",
+    "conditions": "",
+    "references": "",
+    "application": "manuel"
+  },
+  "effects": [],
+  "folder": "ZyTz3Sqh4HxLti9u",
+  "sort": 100032,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.345",
+    "systemId": "pavillon-noir-2",
+    "systemVersion": "0.7.0",
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": null
+  }
+}

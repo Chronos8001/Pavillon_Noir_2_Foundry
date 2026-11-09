@@ -1,0 +1,42 @@
+{
+  "_id": "Ml2WcVFBEDFd1Vy2",
+  "_key": "!items!Ml2WcVFBEDFd1Vy2",
+  "name": "Trempe",
+  "type": "pouvoir",
+  "img": "icons/svg/aura.svg",
+  "system": {
+    "description": "<p><strong>Visions</strong></p><ul><li>Fait casser une arme au moindre choc.</li><li>Rend une arme incassable.</li><li>Confère la qualité « Trempe » à une arme qui ne l&#x27;avait pas encore.</li><li>Fait rouer de coups une personne.</li><li>Donne l&#x27;illusion du courage.</li><li>Inspire du courage.</li></ul><p><strong>Compulsions.</strong> Forger une arme. Battre une personne jusqu&#x27;à ce qu&#x27;elle ne bouge plus.</p>",
+    "source": "Entre ciel et terre, p. 305",
+    "voie": "voie-d-ogou",
+    "voieUuid": "Compendium.pavillon-noir-2.voies.Item.nT1z9NA3nij69fC3",
+    "puissance": 2,
+    "nomNatif": "tranp",
+    "compulsion": "Forger une arme. Battre une personne jusqu'à ce qu'elle ne bouge plus.",
+    "accessible": true,
+    "visions": "Fait casser une arme au moindre choc. · Rend une arme incassable. · Confère la qualité « Trempe » à une arme qui ne l'avait pas encore. · Fait rouer de coups une personne. · Donne l'illusion du courage. · Inspire du courage.",
+    "portee": "Toucher",
+    "cible": "Lui",
+    "impact": "",
+    "duree": "24 h ou Permanent (arme incassable seulement)",
+    "conditions": "",
+    "references": "",
+    "application": "manuel"
+  },
+  "effects": [],
+  "folder": "jrCp3TXiMnGmStXb",
+  "sort": 20008,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.345",
+    "systemId": "pavillon-noir-2",
+    "systemVersion": "0.7.0",
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": null
+  }
+}

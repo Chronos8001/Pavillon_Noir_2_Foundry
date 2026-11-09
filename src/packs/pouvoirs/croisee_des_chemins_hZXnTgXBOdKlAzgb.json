@@ -1,0 +1,42 @@
+{
+  "_id": "hZXnTgXBOdKlAzgb",
+  "_key": "!items!hZXnTgXBOdKlAzgb",
+  "name": "Croisée des chemins",
+  "type": "pouvoir",
+  "img": "icons/svg/aura.svg",
+  "system": {
+    "description": "<p><strong>Visions</strong></p><ul><li>Rencontre ou absence de rencontre entre deux groupes.</li><li>Amitié de passage.</li><li>Rencontre houleuse.</li><li>Savoir quelle direction suivre pour atteindre une destination.</li><li>Savoir qui est passé sur un carrefour.</li><li>Savoir quel chemin a emprunté une personne et ce qu&#x27;elle est devenue.</li></ul><p><strong>Compulsions.</strong> Prendre volontairement une mauvaise imaginer ce q direction et la suivre jusqu&#x27;au bout. Suivre une per- tique et l sonne au hasard rencontrée à un carrefour.</p>",
+    "source": "Entre ciel et terre, p. 298",
+    "voie": "voie-de-papa-legba",
+    "voieUuid": "Compendium.pavillon-noir-2.voies.Item.cLAnYvfRTW6M1YmZ",
+    "puissance": 5,
+    "nomNatif": "kafou",
+    "compulsion": "Prendre volontairement une mauvaise imaginer ce q direction et la suivre jusqu'au bout. Suivre une per- tique et l sonne au hasard rencontrée à un carrefour.",
+    "accessible": true,
+    "visions": "Rencontre ou absence de rencontre entre deux groupes. · Amitié de passage. · Rencontre houleuse. · Savoir quelle direction suivre pour atteindre une destination. · Savoir qui est passé sur un carrefour. · Savoir quel chemin a emprunté une personne et ce qu'elle est devenue.",
+    "portee": "Là-bas",
+    "cible": "Nous",
+    "impact": "",
+    "duree": "24 h",
+    "conditions": "",
+    "references": "",
+    "application": "manuel"
+  },
+  "effects": [],
+  "folder": "cxj6xXxtlHVMonir",
+  "sort": 50018,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.345",
+    "systemId": "pavillon-noir-2",
+    "systemVersion": "0.7.0",
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": null
+  }
+}

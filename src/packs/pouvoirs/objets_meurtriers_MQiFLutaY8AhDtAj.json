@@ -1,0 +1,42 @@
+{
+  "_id": "MQiFLutaY8AhDtAj",
+  "_key": "!items!MQiFLutaY8AhDtAj",
+  "name": "Objets meurtriers",
+  "type": "pouvoir",
+  "img": "icons/svg/aura.svg",
+  "system": {
+    "description": "<p><strong>Visions</strong></p><ul><li>Rend un objet dangereux en lui conférant des intentions propres et meurtrières.</li><li>Sait si un objet a servi à tuer (vision instantanée et floue du meurtre).</li><li>En touchant un mort, marque l&#x27;objet qui a servi à le tuer.</li><li>Pousse une personne à la maladresse avec les objets dangereux.</li></ul><p><strong>Compulsions.</strong> S&#x27;entailler la chair avec un objet anodin. Poser une marque sur un objet qui a tué quelqu&#x27;un.</p>",
+    "source": "Entre ciel et terre, p. 292",
+    "voie": "voie-des-guedes",
+    "voieUuid": "Compendium.pavillon-noir-2.voies.Item.BJZUi8OCwtnsr9Ow",
+    "puissance": 4,
+    "nomNatif": "bagay tiye",
+    "compulsion": "S'entailler la chair avec un objet anodin. Poser une marque sur un objet qui a tué quelqu'un.",
+    "accessible": true,
+    "visions": "Rend un objet dangereux en lui conférant des intentions propres et meurtrières. · Sait si un objet a servi à tuer (vision instantanée et floue du meurtre). · En touchant un mort, marque l'objet qui a servi à le tuer. · Pousse une personne à la maladresse avec les objets dangereux.",
+    "portee": "Toucher",
+    "cible": "Toi",
+    "impact": "",
+    "duree": "24 h",
+    "conditions": "",
+    "references": "",
+    "application": "manuel"
+  },
+  "effects": [],
+  "folder": "JpLFK1RzFtuXLx0v",
+  "sort": 40015,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.345",
+    "systemId": "pavillon-noir-2",
+    "systemVersion": "0.7.0",
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": null
+  }
+}

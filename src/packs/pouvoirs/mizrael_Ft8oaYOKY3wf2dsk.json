@@ -1,0 +1,42 @@
+{
+  "_id": "Ft8oaYOKY3wf2dsk",
+  "_key": "!items!Ft8oaYOKY3wf2dsk",
+  "name": "Mizrael",
+  "type": "pouvoir",
+  "img": "icons/svg/aura.svg",
+  "system": {
+    "description": "<p><strong>Visions</strong></p><ul><li>Fin d&#x27;un type d&#x27;oppression ou de persécution.</li><li>Guérison des maladies mentales.</li><li>Longue vie.</li><li>Obéissance des subordonnés.</li><li>Distinction par la vertu et par les talents.</li><li>Énergie cosmique.</li><li>Contrer les pouvoirs du démon Vapula.</li></ul><ul><li><strong>Attribut.</strong> Dieu qui soulage les opprimés.</li><li><strong>Heure.</strong> 19h40 à 20h00.</li><li><strong>Jours.</strong> 15 au 20 janvier. 20 mai, 3 août, 17 octobre, 29 décembre, 9 mars.</li><li><strong>Couleurs/Cristal.</strong> Violet ou vert/OEil de tigre.</li><li><strong>Prière.</strong> « Justus Dominus in omnibus viis suis. Et sanctus in omnibus operibus suis. »</li></ul>",
+    "source": "Entre ciel et terre, p. 226",
+    "voie": "voie-des-sephiroth",
+    "voieUuid": "Compendium.pavillon-noir-2.voies.Item.5soP14P6cbQPMX5I",
+    "puissance": 8,
+    "nomNatif": "Archange",
+    "compulsion": "",
+    "accessible": true,
+    "visions": "Fin d'un type d'oppression ou de persécution. · Guérison des maladies mentales. · Longue vie. · Obéissance des subordonnés. · Distinction par la vertu et par les talents. · Énergie cosmique. · Contrer les pouvoirs du démon Vapula.",
+    "portee": "Là-bas",
+    "cible": "Vous",
+    "impact": "",
+    "duree": "1 année",
+    "conditions": "",
+    "references": "",
+    "application": "manuel"
+  },
+  "effects": [],
+  "folder": "bbVpwWTAqt36UWdh",
+  "sort": 80060,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.345",
+    "systemId": "pavillon-noir-2",
+    "systemVersion": "0.7.0",
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": null
+  }
+}

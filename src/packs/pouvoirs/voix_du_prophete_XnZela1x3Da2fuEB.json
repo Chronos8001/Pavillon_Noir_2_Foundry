@@ -1,0 +1,42 @@
+{
+  "_id": "XnZela1x3Da2fuEB",
+  "_key": "!items!XnZela1x3Da2fuEB",
+  "name": "Voix du prophète",
+  "type": "pouvoir",
+  "img": "icons/svg/aura.svg",
+  "system": {
+    "description": "<p><strong>Visions</strong></p><ul><li>Est écouté comme la parole de Dieu.</li><li>Est suivi par une horde de fidèles et disciples.</li><li>Crée un acharnement des foules sur une personne qui montre une certaine compréhension de l&#x27;avenir.</li><li>Formule une prophétie à échéance d&#x27;autant plus longue qu&#x27;elle concerne un grand nombre de personnes (plusieurs siècles pour l&#x27;humanité, un mois pour une grande ville, une heure pour une personne).</li></ul><p><strong>Compulsions.</strong> Énoncer une prophétie et tout faire pour qu&#x27;elle se réalise. Protéger un oiseau de mauvais augure de la violence des foules.</p>",
+    "source": "Entre ciel et terre, p. 214",
+    "voie": "voie-de-dieu",
+    "voieUuid": "Compendium.pavillon-noir-2.voies.Item.SPlB5GslKnZdeWKG",
+    "puissance": 10,
+    "nomNatif": "",
+    "compulsion": "Énoncer une prophétie et tout faire pour qu'elle se réalise. Protéger un oiseau de mauvais augure de la violence des foules.",
+    "accessible": true,
+    "visions": "Est écouté comme la parole de Dieu. · Est suivi par une horde de fidèles et disciples. · Crée un acharnement des foules sur une personne qui montre une certaine compréhension de l'avenir. · Formule une prophétie à échéance d'autant plus longue qu'elle concerne un grand nombre de personnes (plusieurs siècles pour l'humanité, un mois pour une grande ville, une heure pour une personne).",
+    "portee": "Continent",
+    "cible": "Eux",
+    "impact": "",
+    "duree": "Permanent",
+    "conditions": "",
+    "references": "",
+    "application": "manuel"
+  },
+  "effects": [],
+  "folder": "3eghhFTqBb7T4d5D",
+  "sort": 100042,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.345",
+    "systemId": "pavillon-noir-2",
+    "systemVersion": "0.7.0",
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": null
+  }
+}

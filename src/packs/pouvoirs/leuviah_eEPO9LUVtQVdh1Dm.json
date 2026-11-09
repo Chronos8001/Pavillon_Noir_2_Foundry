@@ -1,0 +1,42 @@
+{
+  "_id": "eEPO9LUVtQVdh1Dm",
+  "_key": "!items!eEPO9LUVtQVdh1Dm",
+  "name": "Leuviah",
+  "type": "pouvoir",
+  "img": "icons/svg/aura.svg",
+  "system": {
+    "description": "<p><strong>Visions</strong></p><ul><li>Souvenir de vies antérieures.</li><li>Inspiration artistique et poétique.</li><li>Rencontre d&#x27;artistes.</li><li>Inspiration.</li><li>Renforcement de l&#x27;Ingénierie (Navale) ou Niveau Professionnel (3).</li><li>Contrer les pouvoirs du démon Saleos.</li></ul><ul><li><strong>Attribut.</strong> Dieu qui exauce les pécheurs.</li><li><strong>Heure.</strong> 6h00 à 6h20.</li><li><strong>Jours.</strong> 22 au 27 juin. 9 avril, 22 juin, 6 septembre, 18 novembre, 27 janvier.</li><li><strong>Couleurs/Cristal.</strong> Vert pâle ou indigo/Moldavite.</li><li><strong>Prière.</strong> « Expectans expectavi Dominum, et intendit mibi. »</li></ul>",
+    "source": "Entre ciel et terre, p. 218",
+    "voie": "voie-des-sephiroth",
+    "voieUuid": "Compendium.pavillon-noir-2.voies.Item.5soP14P6cbQPMX5I",
+    "puissance": 3,
+    "nomNatif": "Trône",
+    "compulsion": "",
+    "accessible": true,
+    "visions": "Souvenir de vies antérieures. · Inspiration artistique et poétique. · Rencontre d'artistes. · Inspiration. · Renforcement de l'Ingénierie (Navale) ou Niveau Professionnel (3). · Contrer les pouvoirs du démon Saleos.",
+    "portee": "Personnelle",
+    "cible": "Moi",
+    "impact": "",
+    "duree": "30 min",
+    "conditions": "",
+    "references": "",
+    "application": "manuel"
+  },
+  "effects": [],
+  "folder": "bbVpwWTAqt36UWdh",
+  "sort": 30019,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.345",
+    "systemId": "pavillon-noir-2",
+    "systemVersion": "0.7.0",
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": null
+  }
+}

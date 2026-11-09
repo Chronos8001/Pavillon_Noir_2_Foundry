@@ -1,0 +1,42 @@
+{
+  "_id": "r7MxkkV0cz2qwOYw",
+  "_key": "!items!r7MxkkV0cz2qwOYw",
+  "name": "Exhiber ses ornements",
+  "type": "pouvoir",
+  "img": "icons/svg/aura.svg",
+  "system": {
+    "description": "<p><strong>Visions</strong></p><ul><li>Incite à montrer ce qu&#x27;il possède.</li><li>S&#x27;attache aux apparences.</li><li>Pulsions exhibitionnistes (hors Yanomamis).</li><li>Rend incapable de conserver un secret.</li></ul><p><strong>Compulsions.</strong> Faire passer les apparences pour le fond. Révéler un secret.</p>",
+    "source": "Entre ciel et terre, p. 187",
+    "voie": "voie-des-xapiripe",
+    "voieUuid": "Compendium.pavillon-noir-2.voies.Item.uLmNntdGMAtLAIsE",
+    "puissance": 3,
+    "nomNatif": "matihimu",
+    "compulsion": "Faire passer les apparences pour le fond. Révéler un secret.",
+    "accessible": true,
+    "visions": "Incite à montrer ce qu'il possède. · S'attache aux apparences. · Pulsions exhibitionnistes (hors Yanomamis). · Rend incapable de conserver un secret.",
+    "portee": "Voix",
+    "cible": "Toi",
+    "impact": "",
+    "duree": "1 cycle",
+    "conditions": "",
+    "references": "",
+    "application": "manuel"
+  },
+  "effects": [],
+  "folder": "MTKTGwYLgyfOOhl1",
+  "sort": 30013,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.345",
+    "systemId": "pavillon-noir-2",
+    "systemVersion": "0.7.0",
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": null
+  }
+}

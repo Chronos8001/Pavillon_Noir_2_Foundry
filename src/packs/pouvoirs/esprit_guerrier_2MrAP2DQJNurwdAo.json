@@ -1,0 +1,42 @@
+{
+  "_id": "2MrAP2DQJNurwdAo",
+  "_key": "!items!2MrAP2DQJNurwdAo",
+  "name": "Esprit guerrier",
+  "type": "pouvoir",
+  "img": "icons/svg/aura.svg",
+  "system": {
+    "description": "<p><strong>Visions</strong></p><ul><li>Donne la volonté de vaincre et empêche de reculer.</li><li>Impose la nécessité d&#x27;entreprendre un raid guerrier.</li><li>Lacère son ennemi des machettes des xapiripë, aiguisées comme des lames de rasoir.</li><li>Sait où se trouve son ennemi et quelles sont ses forces.</li><li>Intimide l&#x27;ennemi.</li></ul><p><strong>Compulsions.</strong> Mordre son ennemi jusqu&#x27;au sang en plein combat. Lacérer son ennemi à mort.</p>",
+    "source": "Entre ciel et terre, p. 188",
+    "voie": "voie-des-xapiripe",
+    "voieUuid": "Compendium.pavillon-noir-2.voies.Item.uLmNntdGMAtLAIsE",
+    "puissance": 5,
+    "nomNatif": "õcõeri",
+    "compulsion": "Mordre son ennemi jusqu'au sang en plein combat. Lacérer son ennemi à mort.",
+    "accessible": true,
+    "visions": "Donne la volonté de vaincre et empêche de reculer. · Impose la nécessité d'entreprendre un raid guerrier. · Lacère son ennemi des machettes des xapiripë, aiguisées comme des lames de rasoir. · Sait où se trouve son ennemi et quelles sont ses forces. · Intimide l'ennemi.",
+    "portee": "Vue/Voix/Ouïe",
+    "cible": "Nous",
+    "impact": "",
+    "duree": "1 cycle",
+    "conditions": "",
+    "references": "",
+    "application": "manuel"
+  },
+  "effects": [],
+  "folder": "MTKTGwYLgyfOOhl1",
+  "sort": 50022,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.345",
+    "systemId": "pavillon-noir-2",
+    "systemVersion": "0.7.0",
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": null
+  }
+}

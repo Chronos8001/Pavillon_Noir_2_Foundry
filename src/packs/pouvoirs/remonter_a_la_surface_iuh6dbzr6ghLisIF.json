@@ -1,0 +1,42 @@
+{
+  "_id": "iuh6dbzr6ghLisIF",
+  "_key": "!items!iuh6dbzr6ghLisIF",
+  "name": "Remonter à la surface",
+  "type": "pouvoir",
+  "img": "icons/svg/aura.svg",
+  "system": {
+    "description": "<p><strong>Visions</strong></p><ul><li>Flottera, flottera pas...</li><li>Un morceau d&#x27;épave remonte à la surface.</li><li>Donner des ressources à un être en train de se noyer ou débordé par les événements.</li><li>Faire réapparaître les secrets enfouis.</li></ul><p><strong>Compulsions.</strong> Cacher volontairement un indice utile connu de soi seul. Pousser quelqu&#x27;un au mensonge.</p>",
+    "source": "Entre ciel et terre, p. 277",
+    "voie": "voie-d-agwe",
+    "voieUuid": "Compendium.pavillon-noir-2.voies.Item.6bwsVNHhFxnjtf9Q",
+    "puissance": 4,
+    "nomNatif": "remonte anlè",
+    "compulsion": "Cacher volontairement un indice utile connu de soi seul. Pousser quelqu'un au mensonge.",
+    "accessible": true,
+    "visions": "Flottera, flottera pas... · Un morceau d'épave remonte à la surface. · Donner des ressources à un être en train de se noyer ou débordé par les événements. · Faire réapparaître les secrets enfouis.",
+    "portee": "Là",
+    "cible": "Toi",
+    "impact": "",
+    "duree": "1 cycle",
+    "conditions": "",
+    "references": "",
+    "application": "manuel"
+  },
+  "effects": [],
+  "folder": "xaG58lKGMpuXcD6x",
+  "sort": 40011,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.345",
+    "systemId": "pavillon-noir-2",
+    "systemVersion": "0.7.0",
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": null
+  }
+}

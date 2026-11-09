@@ -1,0 +1,42 @@
+{
+  "_id": "NymzW613yDvbUd1l",
+  "_key": "!items!NymzW613yDvbUd1l",
+  "name": "Omniscience du Dagda",
+  "type": "pouvoir",
+  "img": "icons/svg/aura.svg",
+  "system": {
+    "description": "<p><strong>Visions</strong></p><ul><li>Vision globale du passé sur le lieu où il se trouve.</li><li>Aperçu immédiat du présent sur le monde entier.</li><li>Trouver la localisation d&#x27;une personne à un moment présent, passé ou futur.</li><li>du futur.</li><li>Compréhension complète de la personnalité d&#x27;une personne et facilité pour prédire ses actions.</li></ul><p><strong>Compulsions.</strong> Acquérir toutes les connaissances disponibles à 100 milles à la ronde sur un sujet académique particulier.</p>",
+    "source": "Entre ciel et terre, p. 254",
+    "voie": "voie-du-druidisme",
+    "voieUuid": "Compendium.pavillon-noir-2.voies.Item.444Fft7a0LtvOMIS",
+    "puissance": 8,
+    "nomNatif": "",
+    "compulsion": "Acquérir toutes les connaissances disponibles à 100 milles à la ronde sur un sujet académique particulier.",
+    "accessible": true,
+    "visions": "Vision globale du passé sur le lieu où il se trouve. · Aperçu immédiat du présent sur le monde entier. · Trouver la localisation d'une personne à un moment présent, passé ou futur. · du futur. · Compréhension complète de la personnalité d'une personne et facilité pour prédire ses actions.",
+    "portee": "Terre",
+    "cible": "Eux",
+    "impact": "",
+    "duree": "30 min",
+    "conditions": "",
+    "references": "",
+    "application": "manuel"
+  },
+  "effects": [],
+  "folder": "GhMxnwLVYmucd3Qt",
+  "sort": 80048,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.345",
+    "systemId": "pavillon-noir-2",
+    "systemVersion": "0.7.0",
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": null
+  }
+}

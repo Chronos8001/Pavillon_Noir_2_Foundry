@@ -1,0 +1,42 @@
+{
+  "_id": "Tt78pOa4Q3fKpD1g",
+  "_key": "!items!Tt78pOa4Q3fKpD1g",
+  "name": "Esclaves de ses désirs",
+  "type": "pouvoir",
+  "img": "icons/svg/aura.svg",
+  "system": {
+    "description": "<p><strong>Visions</strong></p><ul><li>Ajoute un esclave à son harem : tant qu&#x27;on ne le satisfait pas, il fera tout ce qu&#x27;on lui demande.</li><li>Rend une personne esclave de ses pulsions et de ses désirs, ou d&#x27;une pulsion ou d&#x27;un désir en particulier : elle ne pense et n&#x27;agit qu&#x27;en fonction de ça.</li></ul><p><strong>Compulsions.</strong> Frustrer quelqu&#x27;un sans cesse tout en trouvant moyen de le faire revenir. S&#x27;abandonner à un désir fou quelles qu&#x27;en soient les conséquences.</p>",
+    "source": "Entre ciel et terre, p. 288",
+    "voie": "voie-d-erzulie",
+    "voieUuid": "Compendium.pavillon-noir-2.voies.Item.0cPd7IIiO1TgbK81",
+    "puissance": 6,
+    "nomNatif": "viktim li konwatis",
+    "compulsion": "Frustrer quelqu'un sans cesse tout en trouvant moyen de le faire revenir. S'abandonner à un désir fou quelles qu'en soient les conséquences.",
+    "accessible": true,
+    "visions": "Ajoute un esclave à son harem : tant qu'on ne le satisfait pas, il fera tout ce qu'on lui demande. · Rend une personne esclave de ses pulsions et de ses désirs, ou d'une pulsion ou d'un désir en particulier : elle ne pense et n'agit qu'en fonction de ça.",
+    "portee": "Là-bas",
+    "cible": "Vous",
+    "impact": "",
+    "duree": "1 semaine",
+    "conditions": "",
+    "references": "",
+    "application": "manuel"
+  },
+  "effects": [],
+  "folder": "46EaXMNeQpoA9M1j",
+  "sort": 60027,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.345",
+    "systemId": "pavillon-noir-2",
+    "systemVersion": "0.7.0",
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": null
+  }
+}

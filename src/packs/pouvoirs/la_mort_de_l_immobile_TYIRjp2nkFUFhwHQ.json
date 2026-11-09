@@ -1,0 +1,42 @@
+{
+  "_id": "TYIRjp2nkFUFhwHQ",
+  "_key": "!items!TYIRjp2nkFUFhwHQ",
+  "name": "La mort de l'immobile",
+  "type": "pouvoir",
+  "img": "icons/svg/aura.svg",
+  "system": {
+    "description": "<p><strong>Visions</strong></p><ul><li>Tout ce qui est immobile meurt lentement, mais la cible le sait.</li><li>Rend impossible de s&#x27;arrêter, de se reposer, de dormir.</li><li>Crée une révolution.</li></ul><p><strong>Compulsions.</strong> Tuer un dormeur de sorte que la mort paraisse naturelle. Changer le commandement d&#x27;un groupe ou le chef d&#x27;une nation.</p>",
+    "source": "Entre ciel et terre, p. 208",
+    "voie": "voie-des-cinq-soleils",
+    "voieUuid": "Compendium.pavillon-noir-2.voies.Item.LIzof8tOOXvNP2kT",
+    "puissance": 8,
+    "nomNatif": "miquitzli ayollinco",
+    "compulsion": "Tuer un dormeur de sorte que la mort paraisse naturelle. Changer le commandement d'un groupe ou le chef d'une nation.",
+    "accessible": true,
+    "visions": "Tout ce qui est immobile meurt lentement, mais la cible le sait. · Rend impossible de s'arrêter, de se reposer, de dormir. · Crée une révolution.",
+    "portee": "Là-bas",
+    "cible": "Eux",
+    "impact": "",
+    "duree": "24 h",
+    "conditions": "",
+    "references": "",
+    "application": "manuel"
+  },
+  "effects": [],
+  "folder": "hUdmcEpw2ErgQ3ld",
+  "sort": 80038,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.345",
+    "systemId": "pavillon-noir-2",
+    "systemVersion": "0.7.0",
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": null
+  }
+}

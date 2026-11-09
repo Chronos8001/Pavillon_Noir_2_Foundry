@@ -1,0 +1,42 @@
+{
+  "_id": "tdqcbBuIXJYwei6N",
+  "_key": "!items!tdqcbBuIXJYwei6N",
+  "name": "Tourbillons",
+  "type": "pouvoir",
+  "img": "icons/svg/aura.svg",
+  "system": {
+    "description": "<p><strong>Visions</strong></p><ul><li>Crée un climat social chaotique.</li><li>Tourbillons de vent.</li><li>Contrôle de la direction prise par une tornade : elle se renforce sur mer et s&#x27;affaiblit sur terre.</li><li>Tourbillons d&#x27;eau.</li></ul><p><strong>Compulsions.</strong> Plonger dans un tourbillon. Traverser de fortes instabilités du vent.</p>",
+    "source": "Entre ciel et terre, p. 194",
+    "voie": "voie-des-zemis",
+    "voieUuid": "Compendium.pavillon-noir-2.voies.Item.adV2aUWhmHXDCarX",
+    "puissance": 7,
+    "nomNatif": "illi",
+    "compulsion": "Plonger dans un tourbillon. Traverser de fortes instabilités du vent.",
+    "accessible": true,
+    "visions": "Crée un climat social chaotique. · Tourbillons de vent. · Contrôle de la direction prise par une tornade : elle se renforce sur mer et s'affaiblit sur terre. · Tourbillons d'eau.",
+    "portee": "Là-bas",
+    "cible": "Eux",
+    "impact": "",
+    "duree": "24 h",
+    "conditions": "",
+    "references": "",
+    "application": "manuel"
+  },
+  "effects": [],
+  "folder": "pdOB4V6FtlhUIRJ0",
+  "sort": 70029,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.345",
+    "systemId": "pavillon-noir-2",
+    "systemVersion": "0.7.0",
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": null
+  }
+}

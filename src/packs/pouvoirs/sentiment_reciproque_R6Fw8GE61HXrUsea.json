@@ -1,0 +1,42 @@
+{
+  "_id": "R6Fw8GE61HXrUsea",
+  "_key": "!items!R6Fw8GE61HXrUsea",
+  "name": "Sentiment réciproque",
+  "type": "pouvoir",
+  "img": "icons/svg/aura.svg",
+  "system": {
+    "description": "<p><strong>Visions</strong></p><ul><li>L&#x27;un sait ce que l&#x27;autre ressent pour lui.</li><li>Tu ressentiras ce que je ressens !</li><li>Coup de foudre amoureux ou amical.</li><li>Seuls se développeront des sentiments réciproques.</li></ul><p><strong>Compulsions.</strong> Cultiver la réciprocité d&#x27;une relation. Créer une situation de coup de foudre.</p>",
+    "source": "Entre ciel et terre, p. 283",
+    "voie": "voie-de-dambala",
+    "voieUuid": "Compendium.pavillon-noir-2.voies.Item.fVIeiRnBn8ADVFE2",
+    "puissance": 5,
+    "nomNatif": "santiman resipwok",
+    "compulsion": "Cultiver la réciprocité d'une relation. Créer une situation de coup de foudre.",
+    "accessible": true,
+    "visions": "L'un sait ce que l'autre ressent pour lui. · Tu ressentiras ce que je ressens ! · Coup de foudre amoureux ou amical. · Seuls se développeront des sentiments réciproques.",
+    "portee": "Là",
+    "cible": "Vous",
+    "impact": "",
+    "duree": "1 mois",
+    "conditions": "",
+    "references": "",
+    "application": "manuel"
+  },
+  "effects": [],
+  "folder": "BsFkHFCdWu35mdPn",
+  "sort": 50019,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.345",
+    "systemId": "pavillon-noir-2",
+    "systemVersion": "0.7.0",
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": null
+  }
+}

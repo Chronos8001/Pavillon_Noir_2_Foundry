@@ -1,0 +1,42 @@
+{
+  "_id": "8HCE4pIxoWR8L0qb",
+  "_key": "!items!8HCE4pIxoWR8L0qb",
+  "name": "Multiplication",
+  "type": "pouvoir",
+  "img": "icons/svg/aura.svg",
+  "system": {
+    "description": "<p><strong>Visions</strong></p><ul><li>Multiplication des objets.</li><li>Multiplication de la nourriture.</li><li>Multiplication des alliés.</li><li>Multiplication des ennemis.</li></ul><p><strong>Compulsions.</strong> Compter toutes les racines de yucca plantées dans une petite île.</p>",
+    "source": "Entre ciel et terre, p. 195",
+    "voie": "voie-des-zemis",
+    "voieUuid": "Compendium.pavillon-noir-2.voies.Item.adV2aUWhmHXDCarX",
+    "puissance": 9,
+    "nomNatif": "libamouli",
+    "compulsion": "Compter toutes les racines de yucca plantées dans une petite île.",
+    "accessible": true,
+    "visions": "Multiplication des objets. · Multiplication de la nourriture. · Multiplication des alliés. · Multiplication des ennemis.",
+    "portee": "Vue",
+    "cible": "Eux",
+    "impact": "",
+    "duree": "1 semaine",
+    "conditions": "",
+    "references": "",
+    "application": "manuel"
+  },
+  "effects": [],
+  "folder": "pdOB4V6FtlhUIRJ0",
+  "sort": 90037,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.345",
+    "systemId": "pavillon-noir-2",
+    "systemVersion": "0.7.0",
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": null
+  }
+}

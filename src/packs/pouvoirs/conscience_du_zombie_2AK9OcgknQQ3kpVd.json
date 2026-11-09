@@ -1,0 +1,42 @@
+{
+  "_id": "2AK9OcgknQQ3kpVd",
+  "_key": "!items!2AK9OcgknQQ3kpVd",
+  "name": "Conscience du zombie",
+  "type": "pouvoir",
+  "img": "icons/svg/aura.svg",
+  "system": {
+    "description": "<p><strong>Visions</strong></p><ul><li>Rend au zombie sa conscience, afin qu&#x27;il soit libéré et s&#x27;attaque à son maître.</li><li>Fait retourner un zombie mort à sa tombe.</li><li>Engourdit l&#x27;esprit d&#x27;une personne pour qu&#x27;elle agisse dans un état second et ensuite ne se rappelle plus rien.</li><li>Transforme quelqu&#x27;un en un tueur froid et désordonné.</li></ul><p><strong>Compulsions.</strong> Ingérer le poison psychotrope produit par le tétrodon, un poisson exotique à quatre dents.</p>",
+    "source": "Entre ciel et terre, p. 292",
+    "voie": "voie-des-guedes",
+    "voieUuid": "Compendium.pavillon-noir-2.voies.Item.BJZUi8OCwtnsr9Ow",
+    "puissance": 5,
+    "nomNatif": "konsyans zonbi",
+    "compulsion": "Ingérer le poison psychotrope produit par le tétrodon, un poisson exotique à quatre dents.",
+    "accessible": true,
+    "visions": "Rend au zombie sa conscience, afin qu'il soit libéré et s'attaque à son maître. · Fait retourner un zombie mort à sa tombe. · Engourdit l'esprit d'une personne pour qu'elle agisse dans un état second et ensuite ne se rappelle plus rien. · Transforme quelqu'un en un tueur froid et désordonné.",
+    "portee": "Toucher",
+    "cible": "Toi",
+    "impact": "",
+    "duree": "1 semaine",
+    "conditions": "",
+    "references": "",
+    "application": "manuel"
+  },
+  "effects": [],
+  "folder": "JpLFK1RzFtuXLx0v",
+  "sort": 50017,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.345",
+    "systemId": "pavillon-noir-2",
+    "systemVersion": "0.7.0",
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": null
+  }
+}

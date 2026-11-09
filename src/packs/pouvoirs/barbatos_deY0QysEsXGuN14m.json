@@ -1,0 +1,42 @@
+{
+  "_id": "deY0QysEsXGuN14m",
+  "_key": "!items!deY0QysEsXGuN14m",
+  "name": "Barbatos",
+  "type": "pouvoir",
+  "img": "icons/svg/aura.svg",
+  "system": {
+    "description": "<p><strong>Visions</strong></p><ul><li>Connaissance d&#x27;un élément passé ou futur lié à l&#x27;animal que l&#x27;on côtoie à l&#x27;heure où on lui parle (le jour pouvant être différent), pour un événement à une distance temporelle d&#x27;une semaine au plus.</li><li>Dialogue avec un animal.</li><li>Réconciliation avec un ami ou un dirigeant.</li><li>Découverte de trésors cachés par la magie.</li><li>Blasphème contre Dieu.</li><li>Flétrissure de la végétation.</li><li>Stérilité des récoltes.</li><li>Attirer les mauvais esprits.</li><li>Chasse infructueuse.</li><li>Paresse.</li><li>Phobie des zones rurales.</li><li>Contrer les pouvoirs de l&#x27;ange Cahethel.</li></ul><ul><li><strong>Aspect.</strong> Vieil homme.</li><li><strong>Heure.</strong> 2h20 à 2h40.</li><li><strong>Jours.</strong> 26 au 30 avril. 29 mars, 11 juin, 26 août, 7 novembre, 17 janvier.</li><li><strong>Couleurs/Cristal.</strong> Orange ou jaune/Jaspe léopard.</li></ul>",
+    "source": "Entre ciel et terre, p. 231",
+    "voie": "voie-des-qlipoth",
+    "voieUuid": "Compendium.pavillon-noir-2.voies.Item.28cj5d17pp6tLLr8",
+    "puissance": 1,
+    "nomNatif": "Faux dieu",
+    "compulsion": "",
+    "accessible": true,
+    "visions": "Connaissance d'un élément passé ou futur lié à l'animal que l'on côtoie à l'heure où on lui parle (le jour pouvant être différent), pour un événement à une distance temporelle d'une semaine au plus. · Dialogue avec un animal. · Réconciliation avec un ami ou un dirigeant. · Découverte de trésors cachés par la magie. · Blasphème contre Dieu. · Flétrissure de la végétation. · Stérilité des récoltes. · Attirer les mauvais esprits. · Chasse infructueuse. · Paresse. · Phobie des zones rurales. · Contrer les pouvoirs de l'ange Cahethel.",
+    "portee": "Toucher",
+    "cible": "Toi",
+    "impact": "",
+    "duree": "2 min",
+    "conditions": "",
+    "references": "",
+    "application": "manuel"
+  },
+  "effects": [],
+  "folder": "I3FQOgCqphyIoMbm",
+  "sort": 10008,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.345",
+    "systemId": "pavillon-noir-2",
+    "systemVersion": "0.7.0",
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": null
+  }
+}

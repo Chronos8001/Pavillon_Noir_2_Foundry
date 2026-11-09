@@ -1,0 +1,42 @@
+{
+  "_id": "3sBwfIRrosPfRy9g",
+  "_key": "!items!3sBwfIRrosPfRy9g",
+  "name": "Masque de blessure",
+  "type": "pouvoir",
+  "img": "icons/svg/aura.svg",
+  "system": {
+    "description": "<p><strong>Visions</strong></p><ul><li>Trace de fausses blessures sur la peau.</li><li>Convainc une personne qu&#x27;elle est plus gravement blessée qu&#x27;elle n&#x27;est.</li><li>Fausses blessures intimidantes ou effrayantes.</li></ul><p><strong>Compulsions.</strong> Simuler une blessure. Aggraver la blessure d&#x27;un blessé.</p>",
+    "source": "Entre ciel et terre, p. 300",
+    "voie": "voie-des-freres-marassa",
+    "voieUuid": "Compendium.pavillon-noir-2.voies.Item.g0bMhkfFArVT77cy",
+    "puissance": 1,
+    "nomNatif": "krizokal blesi",
+    "compulsion": "Simuler une blessure. Aggraver la blessure d'un blessé.",
+    "accessible": true,
+    "visions": "Trace de fausses blessures sur la peau. · Convainc une personne qu'elle est plus gravement blessée qu'elle n'est. · Fausses blessures intimidantes ou effrayantes.",
+    "portee": "Toucher",
+    "cible": "Toi",
+    "impact": "",
+    "duree": "1 semaine",
+    "conditions": "",
+    "references": "",
+    "application": "manuel"
+  },
+  "effects": [],
+  "folder": "44qmjJBQHiy5XpLM",
+  "sort": 10003,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.345",
+    "systemId": "pavillon-noir-2",
+    "systemVersion": "0.7.0",
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": null
+  }
+}

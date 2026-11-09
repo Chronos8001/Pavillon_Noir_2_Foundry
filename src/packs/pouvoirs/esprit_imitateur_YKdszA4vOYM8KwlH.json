@@ -1,0 +1,42 @@
+{
+  "_id": "YKdszA4vOYM8KwlH",
+  "_key": "!items!YKdszA4vOYM8KwlH",
+  "name": "Esprit imitateur",
+  "type": "pouvoir",
+  "img": "icons/svg/aura.svg",
+  "system": {
+    "description": "<p><strong>Visions</strong></p><ul><li>Imitation de n&#x27;importe quel son.</li><li>Imitation de la voix.</li><li>Se faire passer pour quelqu&#x27;un d&#x27;autre.</li><li>Fait chanter les oiseaux pour imiter une ambiance.</li></ul><p><strong>Compulsions.</strong> Imiter avec succès le bruit d&#x27;un animal à un moment utile. Mission d&#x27;infiltration.</p>",
+    "source": "Entre ciel et terre, p. 186",
+    "voie": "voie-des-xapiripe",
+    "voieUuid": "Compendium.pavillon-noir-2.voies.Item.uLmNntdGMAtLAIsE",
+    "puissance": 3,
+    "nomNatif": "Ayakõrari",
+    "compulsion": "Imiter avec succès le bruit d'un animal à un moment utile. Mission d'infiltration.",
+    "accessible": true,
+    "visions": "Imitation de n'importe quel son. · Imitation de la voix. · Se faire passer pour quelqu'un d'autre. · Fait chanter les oiseaux pour imiter une ambiance.",
+    "portee": "Voix",
+    "cible": "Vous",
+    "impact": "",
+    "duree": "1 cycle",
+    "conditions": "",
+    "references": "",
+    "application": "manuel"
+  },
+  "effects": [],
+  "folder": "MTKTGwYLgyfOOhl1",
+  "sort": 30012,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.345",
+    "systemId": "pavillon-noir-2",
+    "systemVersion": "0.7.0",
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": null
+  }
+}

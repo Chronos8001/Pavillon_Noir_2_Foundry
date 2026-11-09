@@ -1,0 +1,42 @@
+{
+  "_id": "8Fdauk4MHouCrPn9",
+  "_key": "!items!8Fdauk4MHouCrPn9",
+  "name": "Lelahel",
+  "type": "pouvoir",
+  "img": "icons/svg/aura.svg",
+  "system": {
+    "description": "<p><strong>Visions</strong></p><ul><li>Chance dans les affaires.</li><li>Stabilisation des situations et blessures critiques.</li><li>Efface l&#x27;envie de recourir à des moyens particuliers.</li><li>Renommée dans l&#x27;art et les sciences.</li><li>Guérison d&#x27;une maladie (définitif ).</li><li>Contrer les pouvoirs du démon Valefor.</li></ul><ul><li><strong>Attribut.</strong> Dieu louable.</li><li><strong>Heure.</strong> 1h40 à 2h00.</li><li><strong>Jours.</strong> 15 au 20 avril. 27 mars, 9 juin, 24 août, 5 novembre, 15 janvier.</li><li><strong>Couleurs/Cristal.</strong> Magenta ou bleu/Pierre de lune.</li><li><strong>Prière.</strong> « Psallite Domino, qui habitat in Sion : annuntiate inter gentes studia ejus. »</li></ul>",
+    "source": "Entre ciel et terre, p. 215",
+    "voie": "voie-des-sephiroth",
+    "voieUuid": "Compendium.pavillon-noir-2.voies.Item.5soP14P6cbQPMX5I",
+    "puissance": 1,
+    "nomNatif": "Séraphin",
+    "compulsion": "",
+    "accessible": true,
+    "visions": "Chance dans les affaires. · Stabilisation des situations et blessures critiques. · Efface l'envie de recourir à des moyens particuliers. · Renommée dans l'art et les sciences. · Guérison d'une maladie (définitif ). · Contrer les pouvoirs du démon Valefor.",
+    "portee": "Personnelle",
+    "cible": "Moi",
+    "impact": "",
+    "duree": "1 h",
+    "conditions": "",
+    "references": "",
+    "application": "manuel"
+  },
+  "effects": [],
+  "folder": "bbVpwWTAqt36UWdh",
+  "sort": 10006,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.345",
+    "systemId": "pavillon-noir-2",
+    "systemVersion": "0.7.0",
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": null
+  }
+}

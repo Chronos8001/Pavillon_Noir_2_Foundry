@@ -1,0 +1,42 @@
+{
+  "_id": "1DPYXQ407YVN8t9s",
+  "_key": "!items!1DPYXQ407YVN8t9s",
+  "name": "Engloutissement",
+  "type": "pouvoir",
+  "img": "icons/svg/aura.svg",
+  "system": {
+    "description": "<p><strong>Visions</strong></p><ul><li>Bouche démesurée pour avaler une proie d&#x27;un mètre de diamètre.</li><li>Cacher un objet en l&#x27;avalant, puis le recracher.</li><li>Avaler une personne.</li><li>Crachat d&#x27;une boule de poils (sur un ennemi, pour faire du fil).</li></ul><p><strong>Compulsions.</strong> Avaler une souris vivante sans la mâcher. Vomir un objet qu&#x27;on avait avalé.</p>",
+    "source": "Entre ciel et terre, p. 284",
+    "voie": "voie-de-dambala",
+    "voieUuid": "Compendium.pavillon-noir-2.voies.Item.fVIeiRnBn8ADVFE2",
+    "puissance": 6,
+    "nomNatif": "vale koulèv",
+    "compulsion": "Avaler une souris vivante sans la mâcher. Vomir un objet qu'on avait avalé.",
+    "accessible": true,
+    "visions": "Bouche démesurée pour avaler une proie d'un mètre de diamètre. · Cacher un objet en l'avalant, puis le recracher. · Avaler une personne. · Crachat d'une boule de poils (sur un ennemi, pour faire du fil).",
+    "portee": "Personnelle",
+    "cible": "Lui",
+    "impact": "",
+    "duree": "1 cycle",
+    "conditions": "",
+    "references": "",
+    "application": "manuel"
+  },
+  "effects": [],
+  "folder": "BsFkHFCdWu35mdPn",
+  "sort": 60025,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.345",
+    "systemId": "pavillon-noir-2",
+    "systemVersion": "0.7.0",
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": null
+  }
+}

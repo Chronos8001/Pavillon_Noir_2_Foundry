@@ -1,0 +1,42 @@
+{
+  "_id": "2U41dRiq0Pv9YEfW",
+  "_key": "!items!2U41dRiq0Pv9YEfW",
+  "name": "Douleur",
+  "type": "pouvoir",
+  "img": "icons/svg/aura.svg",
+  "system": {
+    "description": "<p><strong>Visions</strong></p><ul><li>Inflige une douleur sourde et tenace.</li><li>Inflige une douleur vive et éphémère.</li><li>Fait lâcher son arme ou un objet, voire déséquilibre sous l&#x27;effet de la douleur.</li><li>Apaise la douleur.</li><li>Insensibilité à la douleur.</li></ul><p><strong>Compulsions.</strong> Torturer. Subir une douleur atroce.</p>",
+    "source": "Entre ciel et terre, p. 301",
+    "voie": "voie-des-freres-marassa",
+    "voieUuid": "Compendium.pavillon-noir-2.voies.Item.g0bMhkfFArVT77cy",
+    "puissance": 4,
+    "nomNatif": "doulè",
+    "compulsion": "Torturer. Subir une douleur atroce.",
+    "accessible": true,
+    "visions": "Inflige une douleur sourde et tenace. · Inflige une douleur vive et éphémère. · Fait lâcher son arme ou un objet, voire déséquilibre sous l'effet de la douleur. · Apaise la douleur. · Insensibilité à la douleur.",
+    "portee": "Ici",
+    "cible": "Lui",
+    "impact": "",
+    "duree": "1 cycle",
+    "conditions": "",
+    "references": "",
+    "application": "manuel"
+  },
+  "effects": [],
+  "folder": "44qmjJBQHiy5XpLM",
+  "sort": 40016,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.345",
+    "systemId": "pavillon-noir-2",
+    "systemVersion": "0.7.0",
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": null
+  }
+}

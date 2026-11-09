@@ -1,0 +1,42 @@
+{
+  "_id": "GO6bcHaSLx4pXeL3",
+  "_key": "!items!GO6bcHaSLx4pXeL3",
+  "name": "Ogmos, rassembleur et civilisateur",
+  "type": "pouvoir",
+  "img": "icons/svg/aura.svg",
+  "system": {
+    "description": "<p><strong>Visions</strong></p><ul><li>Révélation de l&#x27;écriture (apprendre à quelqu&#x27;un à lire et à écrire).</li><li>Attirer un grand nombre de personnes autour de soi.</li><li>Trouver les points communs à un groupe de personnes.</li><li>Éloquence pour générer une unité au sein d&#x27;un groupe.</li><li>Stopper les instincts meurtriers.</li><li>Donner à un groupe une envie de construire quelque chose ensemble.</li></ul><p><strong>Compulsions.</strong> Apprendre à lire à quelqu&#x27;un. Donner merci à qui ne le mérite pas.</p>",
+    "source": "Entre ciel et terre, p. 252",
+    "voie": "voie-du-druidisme",
+    "voieUuid": "Compendium.pavillon-noir-2.voies.Item.444Fft7a0LtvOMIS",
+    "puissance": 5,
+    "nomNatif": "",
+    "compulsion": "Apprendre à lire à quelqu'un. Donner merci à qui ne le mérite pas.",
+    "accessible": true,
+    "visions": "Révélation de l'écriture (apprendre à quelqu'un à lire et à écrire). · Attirer un grand nombre de personnes autour de soi. · Trouver les points communs à un groupe de personnes. · Éloquence pour générer une unité au sein d'un groupe. · Stopper les instincts meurtriers. · Donner à un groupe une envie de construire quelque chose ensemble.",
+    "portee": "Vue/Voix/Ouïe",
+    "cible": "Vous",
+    "impact": "",
+    "duree": "Permanent ou 2 min",
+    "conditions": "",
+    "references": "",
+    "application": "manuel"
+  },
+  "effects": [],
+  "folder": "GhMxnwLVYmucd3Qt",
+  "sort": 50033,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.345",
+    "systemId": "pavillon-noir-2",
+    "systemVersion": "0.7.0",
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": null
+  }
+}

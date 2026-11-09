@@ -1,0 +1,42 @@
+{
+  "_id": "prhqe05RpuAR7XRi",
+  "_key": "!items!prhqe05RpuAR7XRi",
+  "name": "Baiser apaisant",
+  "type": "pouvoir",
+  "img": "icons/svg/aura.svg",
+  "system": {
+    "description": "<p><strong>Visions</strong></p><ul><li>Baiser qui apaise la douleur.</li><li>Baiser qui fait régresser définitivement une blessure.</li><li>Baiser qui redonne du courage.</li><li>Baiser qui fait tomber la colère.</li></ul><p><strong>Compulsions.</strong> Embrasser un enfant qui s&#x27;est fait mal. Réaliser un baume pour une blessure.</p>",
+    "source": "Entre ciel et terre, p. 285",
+    "voie": "voie-d-erzulie",
+    "voieUuid": "Compendium.pavillon-noir-2.voies.Item.0cPd7IIiO1TgbK81",
+    "puissance": 1,
+    "nomNatif": "bo lapè",
+    "compulsion": "Embrasser un enfant qui s'est fait mal. Réaliser un baume pour une blessure.",
+    "accessible": true,
+    "visions": "Baiser qui apaise la douleur. · Baiser qui fait régresser définitivement une blessure. · Baiser qui redonne du courage. · Baiser qui fait tomber la colère.",
+    "portee": "Toucher",
+    "cible": "Toi",
+    "impact": "",
+    "duree": "1 cycle",
+    "conditions": "",
+    "references": "",
+    "application": "manuel"
+  },
+  "effects": [],
+  "folder": "46EaXMNeQpoA9M1j",
+  "sort": 10001,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.345",
+    "systemId": "pavillon-noir-2",
+    "systemVersion": "0.7.0",
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": null
+  }
+}

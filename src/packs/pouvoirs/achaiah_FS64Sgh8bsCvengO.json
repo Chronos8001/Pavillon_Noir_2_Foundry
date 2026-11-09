@@ -1,0 +1,42 @@
+{
+  "_id": "FS64Sgh8bsCvengO",
+  "_key": "!items!FS64Sgh8bsCvengO",
+  "name": "Achaiah",
+  "type": "pouvoir",
+  "img": "icons/svg/aura.svg",
+  "system": {
+    "description": "<p><strong>Visions</strong></p><ul><li>Bonté et patience.</li><li>Lutte contre la paresse.</li><li>Redonner un sens à sa vie.</li><li>Secrets de la nature.</li><li>Aide pour les travaux difficiles.</li><li>Contrer les pouvoirs du démon Amon.</li></ul><ul><li><strong>Attribut.</strong> Dieu bon et patient.</li><li><strong>Heure.</strong> 2h00 à 2h20.</li><li><strong>Jours.</strong> 21 au 25 avril. 28 mars, 10 juin, 25 août, 6 novembre, 16 janvier.</li><li><strong>Couleurs/Cristal.</strong> Couleur claire ou violet/Rubis.</li><li><strong>Prière.</strong> « Miserator et misericors Dominus : longanimis et multum misericors. »</li></ul>",
+    "source": "Entre ciel et terre, p. 216",
+    "voie": "voie-des-sephiroth",
+    "voieUuid": "Compendium.pavillon-noir-2.voies.Item.5soP14P6cbQPMX5I",
+    "puissance": 1,
+    "nomNatif": "Séraphin",
+    "compulsion": "",
+    "accessible": true,
+    "visions": "Bonté et patience. · Lutte contre la paresse. · Redonner un sens à sa vie. · Secrets de la nature. · Aide pour les travaux difficiles. · Contrer les pouvoirs du démon Amon.",
+    "portee": "Personnelle",
+    "cible": "Moi",
+    "impact": "",
+    "duree": "4 h",
+    "conditions": "",
+    "references": "",
+    "application": "manuel"
+  },
+  "effects": [],
+  "folder": "bbVpwWTAqt36UWdh",
+  "sort": 10007,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.345",
+    "systemId": "pavillon-noir-2",
+    "systemVersion": "0.7.0",
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": null
+  }
+}

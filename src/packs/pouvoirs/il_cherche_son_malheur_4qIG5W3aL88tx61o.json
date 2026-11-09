@@ -1,0 +1,42 @@
+{
+  "_id": "4qIG5W3aL88tx61o",
+  "_key": "!items!4qIG5W3aL88tx61o",
+  "name": "Il cherche son malheur",
+  "type": "pouvoir",
+  "img": "icons/svg/aura.svg",
+  "system": {
+    "description": "<p><strong>Visions</strong></p><ul><li>Attribution à la victime des malheurs dont elle se croit affublée.</li><li>Pousse une personne à sa perte.</li><li>Assigne comme quête de rechercher les causes de son mal.</li></ul><p><strong>Compulsions.</strong> Tout faire pour échouer lors de la tâche en cours. Donner les plus mauvais conseils qui soient tout en restant convaincant.</p>",
+    "source": "Entre ciel et terre, p. 182",
+    "voie": "voie-d-icheiricou-pour-la-protection-et-la-punition",
+    "voieUuid": "Compendium.pavillon-noir-2.voies.Item.yH60f20rPKBEP9j4",
+    "puissance": 4,
+    "nomNatif": "kibicoüati laboüa",
+    "compulsion": "Tout faire pour échouer lors de la tâche en cours. Donner les plus mauvais conseils qui soient tout en restant convaincant.",
+    "accessible": true,
+    "visions": "Attribution à la victime des malheurs dont elle se croit affublée. · Pousse une personne à sa perte. · Assigne comme quête de rechercher les causes de son mal.",
+    "portee": "Voix",
+    "cible": "Lui",
+    "impact": "",
+    "duree": "1 mois",
+    "conditions": "",
+    "references": "",
+    "application": "manuel"
+  },
+  "effects": [],
+  "folder": "aNYZvvAOkWDjlSbd",
+  "sort": 40010,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.345",
+    "systemId": "pavillon-noir-2",
+    "systemVersion": "0.7.0",
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": null
+  }
+}

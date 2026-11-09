@@ -1,0 +1,42 @@
+{
+  "_id": "K9gfEx7AMW8DJoCc",
+  "_key": "!items!K9gfEx7AMW8DJoCc",
+  "name": "Piège végétal",
+  "type": "pouvoir",
+  "img": "icons/svg/aura.svg",
+  "system": {
+    "description": "<p><strong>Visions</strong></p><ul><li>Cache une fosse sous les végétaux.</li><li>Buissons inextricables.</li><li>Amène une proie à soi.</li><li>Collets.</li><li>Enchevêtrement dans les végétaux.</li><li>Donne la sensation d&#x27;être perdu ou piégé dans les bois.</li></ul><p><strong>Compulsions.</strong> Tomber dans la fosse qu&#x27;on a creusée. S&#x27;enfoncer dans un taillis inextricable.</p>",
+    "source": "Entre ciel et terre, p. 309",
+    "voie": "voie-de-cousin-zaka",
+    "voieUuid": "Compendium.pavillon-noir-2.voies.Item.lP05NKFNMs90d9GB",
+    "puissance": 2,
+    "nomNatif": "plant piyèje",
+    "compulsion": "Tomber dans la fosse qu'on a creusée. S'enfoncer dans un taillis inextricable.",
+    "accessible": true,
+    "visions": "Cache une fosse sous les végétaux. · Buissons inextricables. · Amène une proie à soi. · Collets. · Enchevêtrement dans les végétaux. · Donne la sensation d'être perdu ou piégé dans les bois.",
+    "portee": "Là",
+    "cible": "Toi",
+    "impact": "",
+    "duree": "1 semaine ou 1 cycle (sensation d'être perdu, enchevêtrement)",
+    "conditions": "",
+    "references": "",
+    "application": "manuel"
+  },
+  "effects": [],
+  "folder": "Ha5xoeLM6LLXX7ma",
+  "sort": 20008,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.345",
+    "systemId": "pavillon-noir-2",
+    "systemVersion": "0.7.0",
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": null
+  }
+}

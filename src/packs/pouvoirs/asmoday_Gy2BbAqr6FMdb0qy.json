@@ -1,0 +1,42 @@
+{
+  "_id": "Gy2BbAqr6FMdb0qy",
+  "_key": "!items!Gy2BbAqr6FMdb0qy",
+  "name": "Asmoday",
+  "type": "pouvoir",
+  "img": "icons/svg/aura.svg",
+  "system": {
+    "description": "<p><strong>Visions</strong></p><ul><li>Apparence effrayante d&#x27;Asmoday (même effet qu&#x27;Intimidation de groupe avec un Niveau 6 en Infamie), mais Échec automatique en Persuasion et en Comédie.</li><li>Mémoire seulement des événements mauvais et douloureux.</li><li>Sadisme et masochisme.</li><li>Règne de l&#x27;injustice.</li><li>Corps monstrueux.</li><li>Un corps qui nuit à son propriétaire.</li><li>Penchant pour les péchés capitaux et la violation des commandements divins.</li><li>Contrer les pouvoirs de l&#x27;ange Vaiariah.</li></ul><ul><li><strong>Aspect.</strong> Créature à trois têtes, une de taureau, une d&#x27;homme et une de bélier dont sortent des flammes, avec une queue de serpent. Asmoday tient une lance avec une bannière, et monte un dragon infernal.</li><li><strong>Heure.</strong> 10h20 à 10h40.</li><li><strong>Jours.</strong> 28 août au 2 septembre. 22 avril, 6 juillet, 19 septembre, 1er décembre, 9 février.</li><li><strong>Couleurs/Cristal.</strong> Couleur claire ou bleu/Saphir</li></ul>",
+    "source": "Entre ciel et terre, p. 238",
+    "voie": "voie-des-qlipoth",
+    "voieUuid": "Compendium.pavillon-noir-2.voies.Item.28cj5d17pp6tLLr8",
+    "puissance": 4,
+    "nomNatif": "Vengeur des Crimes",
+    "compulsion": "",
+    "accessible": true,
+    "visions": "Apparence effrayante d'Asmoday (même effet qu'Intimidation de groupe avec un Niveau 6 en Infamie), mais Échec automatique en Persuasion et en Comédie. · Mémoire seulement des événements mauvais et douloureux. · Sadisme et masochisme. · Règne de l'injustice. · Corps monstrueux. · Un corps qui nuit à son propriétaire. · Penchant pour les péchés capitaux et la violation des commandements divins. · Contrer les pouvoirs de l'ange Vaiariah.",
+    "portee": "Vue/Voix/Ouïe",
+    "cible": "Lui ou Eux (Règne...)",
+    "impact": "",
+    "duree": "4 h ou 1 mois (Règne...)",
+    "conditions": "",
+    "references": "",
+    "application": "manuel"
+  },
+  "effects": [],
+  "folder": "I3FQOgCqphyIoMbm",
+  "sort": 40031,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.345",
+    "systemId": "pavillon-noir-2",
+    "systemVersion": "0.7.0",
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": null
+  }
+}

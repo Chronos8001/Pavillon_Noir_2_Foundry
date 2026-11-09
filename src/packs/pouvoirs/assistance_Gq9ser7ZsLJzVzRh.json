@@ -1,0 +1,42 @@
+{
+  "_id": "Gq9ser7ZsLJzVzRh",
+  "_key": "!items!Gq9ser7ZsLJzVzRh",
+  "name": "Assistance",
+  "type": "pouvoir",
+  "img": "icons/svg/aura.svg",
+  "system": {
+    "description": "<p><strong>Visions</strong></p><ul><li>Demande d&#x27;assistance à un allié éloigné.</li><li>Force l&#x27;ennemi à stopper le combat pour prêter une courte assistance.</li><li>Assure l&#x27;efficacité d&#x27;une collaboration.</li></ul><p><strong>Compulsions.</strong> Ne pas assister quelqu&#x27;un dans le besoin. Assister une personne au mépris du danger.</p>",
+    "source": "Entre ciel et terre, p. 192",
+    "voie": "voie-des-zemis",
+    "voieUuid": "Compendium.pavillon-noir-2.voies.Item.adV2aUWhmHXDCarX",
+    "puissance": 3,
+    "nomNatif": "banattêti",
+    "compulsion": "Ne pas assister quelqu'un dans le besoin. Assister une personne au mépris du danger.",
+    "accessible": true,
+    "visions": "Demande d'assistance à un allié éloigné. · Force l'ennemi à stopper le combat pour prêter une courte assistance. · Assure l'efficacité d'une collaboration.",
+    "portee": "Là ou Continent/Océan (demande d'assistance)",
+    "cible": "Eux",
+    "impact": "",
+    "duree": "24 h ou 1 semaine (demande d'assistance)",
+    "conditions": "",
+    "references": "",
+    "application": "manuel"
+  },
+  "effects": [],
+  "folder": "pdOB4V6FtlhUIRJ0",
+  "sort": 30010,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.345",
+    "systemId": "pavillon-noir-2",
+    "systemVersion": "0.7.0",
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": null
+  }
+}

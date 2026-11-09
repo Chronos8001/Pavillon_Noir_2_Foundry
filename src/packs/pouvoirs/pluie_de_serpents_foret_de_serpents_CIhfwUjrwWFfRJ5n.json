@@ -1,0 +1,42 @@
+{
+  "_id": "CIhfwUjrwWFfRJ5n",
+  "_key": "!items!CIhfwUjrwWFfRJ5n",
+  "name": "Pluie de serpents / Forêt de serpents",
+  "type": "pouvoir",
+  "img": "icons/svg/aura.svg",
+  "system": {
+    "description": "<p><strong>Visions</strong></p><ul><li>Des serpents semblent tomber avec la pluie et grouillent sur le sol.</li><li>Toutes les branches des arbres d&#x27;une forêt semblent se changer en serpents. Ils sont attachés à l&#x27;arbre et ne peuvent se déplacer.</li><li>Transforme une ambiance dans une communauté en un nid de complots.</li></ul><p><strong>Compulsions.</strong> Participer à une hallucination collective.</p>",
+    "source": "Entre ciel et terre, p. 285",
+    "voie": "voie-de-dambala",
+    "voieUuid": "Compendium.pavillon-noir-2.voies.Item.fVIeiRnBn8ADVFE2",
+    "puissance": 10,
+    "nomNatif": "lapli koulèv / rakbwa koulèv",
+    "compulsion": "Participer à une hallucination collective.",
+    "accessible": true,
+    "visions": "Des serpents semblent tomber avec la pluie et grouillent sur le sol. · Toutes les branches des arbres d'une forêt semblent se changer en serpents. Ils sont attachés à l'arbre et ne peuvent se déplacer. · Transforme une ambiance dans une communauté en un nid de complots.",
+    "portee": "Là-bas",
+    "cible": "Vous",
+    "impact": "",
+    "duree": "24 h",
+    "conditions": "",
+    "references": "",
+    "application": "manuel"
+  },
+  "effects": [],
+  "folder": "BsFkHFCdWu35mdPn",
+  "sort": 100032,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.345",
+    "systemId": "pavillon-noir-2",
+    "systemVersion": "0.7.0",
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": null
+  }
+}

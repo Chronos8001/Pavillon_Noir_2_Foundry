@@ -1,0 +1,42 @@
+{
+  "_id": "9XV73R6qvFyLcvpE",
+  "_key": "!items!9XV73R6qvFyLcvpE",
+  "name": "Défection",
+  "type": "pouvoir",
+  "img": "icons/svg/aura.svg",
+  "system": {
+    "description": "<p><strong>Visions</strong></p><ul><li>Un groupe perd un membre particulier.</li><li>Un mécanisme perd un élément.</li><li>Recrutement par l&#x27;ancien ennemi.</li><li>Sait qui est susceptible de quitter le groupe, et s&#x27;il ira chez l &#x27;ennemi.</li></ul><p><strong>Compulsions.</strong> Quitter son groupe au mauvais moment. Jeter subrepticement un objet éminemment utile.</p>",
+    "source": "Entre ciel et terre, p. 307",
+    "voie": "voie-d-ogou",
+    "voieUuid": "Compendium.pavillon-noir-2.voies.Item.nT1z9NA3nij69fC3",
+    "puissance": 7,
+    "nomNatif": "dezèsyon",
+    "compulsion": "Quitter son groupe au mauvais moment. Jeter subrepticement un objet éminemment utile.",
+    "accessible": true,
+    "visions": "Un groupe perd un membre particulier. · Un mécanisme perd un élément. · Recrutement par l'ancien ennemi. · Sait qui est susceptible de quitter le groupe, et s'il ira chez l 'ennemi.",
+    "portee": "Vue/Voix/Ouïe",
+    "cible": "Eux",
+    "impact": "",
+    "duree": "24 h ou Permanent",
+    "conditions": "",
+    "references": "",
+    "application": "manuel"
+  },
+  "effects": [],
+  "folder": "jrCp3TXiMnGmStXb",
+  "sort": 70027,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.345",
+    "systemId": "pavillon-noir-2",
+    "systemVersion": "0.7.0",
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": null
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "_id": "Zwdf4bg6UrenhaCl",
+  "_key": "!items!Zwdf4bg6UrenhaCl",
+  "name": "Incarnation du Soleil",
+  "type": "pouvoir",
+  "img": "icons/svg/aura.svg",
+  "system": {
+    "description": "<p><strong>Visions</strong></p><ul><li>Devient un être indestructible fait d&#x27;eau, d&#x27;air, de pierre, de boue, de feu ou de lumière.</li><li>Contrôle le mouvement d&#x27;un autre être.</li></ul><p><strong>Compulsions.</strong> Faire tomber quelqu&#x27;un en utilisant son propre mouvement contre lui. Embraser tous ses vêtements sur soi.</p>",
+    "source": "Entre ciel et terre, p. 207",
+    "voie": "voie-des-cinq-soleils",
+    "voieUuid": "Compendium.pavillon-noir-2.voies.Item.LIzof8tOOXvNP2kT",
+    "puissance": 8,
+    "nomNatif": "nacayotia Tonatiuh",
+    "compulsion": "Faire tomber quelqu'un en utilisant son propre mouvement contre lui. Embraser tous ses vêtements sur soi.",
+    "accessible": true,
+    "visions": "Devient un être indestructible fait d'eau, d'air, de pierre, de boue, de feu ou de lumière. · Contrôle le mouvement d'un autre être.",
+    "portee": "Personnelle ou Vue (contrôle du mouvement)",
+    "cible": "Lui",
+    "impact": "",
+    "duree": "1 cycle",
+    "conditions": "",
+    "references": "",
+    "application": "manuel"
+  },
+  "effects": [],
+  "folder": "hUdmcEpw2ErgQ3ld",
+  "sort": 80037,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.345",
+    "systemId": "pavillon-noir-2",
+    "systemVersion": "0.7.0",
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": null
+  }
+}

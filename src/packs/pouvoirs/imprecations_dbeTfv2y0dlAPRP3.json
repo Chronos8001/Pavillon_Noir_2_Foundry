@@ -1,0 +1,42 @@
+{
+  "_id": "dbeTfv2y0dlAPRP3",
+  "_key": "!items!dbeTfv2y0dlAPRP3",
+  "name": "Imprécations",
+  "type": "pouvoir",
+  "img": "icons/svg/aura.svg",
+  "system": {
+    "description": "<p><strong>Visions</strong></p><ul><li>Sait lorsque des maléfices sont en train d&#x27;être lancés contre quelqu&#x27;un qu&#x27;il connaît.</li><li>Pousse sa proie à lancer des imprécations contre tout le monde.</li><li>Lance une petite malédiction qui n&#x27;est valable que tant que sa cible y croit (autosuggestion).</li></ul><p><strong>Compulsions.</strong> Maudire une personne et étudier sa réaction à long terme. Pousser une personne à souhaiter du mal à une autre.</p>",
+    "source": "Entre ciel et terre, p. 291",
+    "voie": "voie-des-guedes",
+    "voieUuid": "Compendium.pavillon-noir-2.voies.Item.BJZUi8OCwtnsr9Ow",
+    "puissance": 3,
+    "nomNatif": "move mo, move vle",
+    "compulsion": "Maudire une personne et étudier sa réaction à long terme. Pousser une personne à souhaiter du mal à une autre.",
+    "accessible": true,
+    "visions": "Sait lorsque des maléfices sont en train d'être lancés contre quelqu'un qu'il connaît. · Pousse sa proie à lancer des imprécations contre tout le monde. · Lance une petite malédiction qui n'est valable que tant que sa cible y croit (autosuggestion).",
+    "portee": "Là-bas",
+    "cible": "Toi",
+    "impact": "",
+    "duree": "1 semaine",
+    "conditions": "",
+    "references": "",
+    "application": "manuel"
+  },
+  "effects": [],
+  "folder": "JpLFK1RzFtuXLx0v",
+  "sort": 30008,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.345",
+    "systemId": "pavillon-noir-2",
+    "systemVersion": "0.7.0",
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": null
+  }
+}

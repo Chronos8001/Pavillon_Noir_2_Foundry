@@ -1,0 +1,42 @@
+{
+  "_id": "9aHNKgGyHYq10Uig",
+  "_key": "!items!9aHNKgGyHYq10Uig",
+  "name": "Lève-toi et marche",
+  "type": "pouvoir",
+  "img": "icons/svg/aura.svg",
+  "system": {
+    "description": "<p><strong>Visions</strong></p><ul><li>Réveille les morts, qui ont leur volonté propre mais continuent à pourrir.</li><li>Force à agir les immobilistes.</li><li>Invitation au voyage.</li></ul><p><strong>Compulsions.</strong> Marcher malgré de profondes blessures ou une maladie incapacitante. Effectuer un voyage de plusieurs jours sans s&#x27;arrêter ni se reposer.</p>",
+    "source": "Entre ciel et terre, p. 213",
+    "voie": "voie-de-dieu",
+    "voieUuid": "Compendium.pavillon-noir-2.voies.Item.SPlB5GslKnZdeWKG",
+    "puissance": 7,
+    "nomNatif": "",
+    "compulsion": "Marcher malgré de profondes blessures ou une maladie incapacitante. Effectuer un voyage de plusieurs jours sans s'arrêter ni se reposer.",
+    "accessible": true,
+    "visions": "Réveille les morts, qui ont leur volonté propre mais continuent à pourrir. · Force à agir les immobilistes. · Invitation au voyage.",
+    "portee": "Voix",
+    "cible": "Toi",
+    "impact": "",
+    "duree": "Permanent",
+    "conditions": "Christianisme uniquement.",
+    "references": "",
+    "application": "manuel"
+  },
+  "effects": [],
+  "folder": "3eghhFTqBb7T4d5D",
+  "sort": 70032,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.345",
+    "systemId": "pavillon-noir-2",
+    "systemVersion": "0.7.0",
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": null
+  }
+}

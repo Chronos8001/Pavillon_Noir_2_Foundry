@@ -1,0 +1,42 @@
+{
+  "_id": "4Np0hFbMmFOU03wc",
+  "_key": "!items!4Np0hFbMmFOU03wc",
+  "name": "Jusqu'à la mort",
+  "type": "pouvoir",
+  "img": "icons/svg/aura.svg",
+  "system": {
+    "description": "<p><strong>Visions</strong></p><ul><li>Insensibilité à la douleur et résistance à l&#x27;inconscience.</li><li>Courage féroce indéfectible.</li><li>Pousse à se battre jusqu&#x27;au dernier.</li><li>Montre le massacre comme l&#x27;issue évidente d&#x27;un combat.</li></ul><p><strong>Compulsions.</strong> Laisser s&#x27;enfuir un animal ou un homme grièvement blessé. Dissuader ses compagnons de se lancer dans une bataille qui a toutes les chances de tourner au massacre.</p>",
+    "source": "Entre ciel et terre, p. 172",
+    "voie": "voie-d-icheiricou-pour-la-guerre",
+    "voieUuid": "Compendium.pavillon-noir-2.voies.Item.ua948TzRBv4MWuy4",
+    "puissance": 4,
+    "nomNatif": "ekébouli nao",
+    "compulsion": "Laisser s'enfuir un animal ou un homme grièvement blessé. Dissuader ses compagnons de se lancer dans une bataille qui a toutes les chances de tourner au massacre.",
+    "accessible": true,
+    "visions": "Insensibilité à la douleur et résistance à l'inconscience. · Courage féroce indéfectible. · Pousse à se battre jusqu'au dernier. · Montre le massacre comme l'issue évidente d'un combat.",
+    "portee": "Ici",
+    "cible": "Nous",
+    "impact": "",
+    "duree": "24 h",
+    "conditions": "",
+    "references": "",
+    "application": "manuel"
+  },
+  "effects": [],
+  "folder": "tYn7s19RmGg8GMUR",
+  "sort": 40013,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.345",
+    "systemId": "pavillon-noir-2",
+    "systemVersion": "0.7.0",
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": null
+  }
+}

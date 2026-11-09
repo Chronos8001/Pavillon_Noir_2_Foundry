@@ -1,0 +1,42 @@
+{
+  "_id": "4qFyQdY6D2P6Rmai",
+  "_key": "!items!4qFyQdY6D2P6Rmai",
+  "name": "Teutatès (Le Dagda), le très divin",
+  "type": "pouvoir",
+  "img": "icons/svg/aura.svg",
+  "system": {
+    "description": "<p><strong>Visions</strong></p><ul><li>Retour en arrière.</li><li>Éternité en un instant (le temps s&#x27;arrête et les personnes sont des statues indestructibles, aucun mécanisme ne peut s&#x27;actionner, ni aucune réaction chimique se produire).</li><li>Disparaître en s&#x27;éclipsant vers le futur proche.</li><li>Voyager vers le futur.</li><li>Contrôle des éléments (tempêtes, taille des feux, vagues, fracture des rochers).</li></ul><p><strong>Compulsions.</strong> Prédire avec justesse l&#x27;arrivée d&#x27;un événement non prédictible une semaine plus tôt. Ne pas s&#x27;abriter en pleine tempête (ni son navire).</p>",
+    "source": "Entre ciel et terre, p. 254",
+    "voie": "voie-du-druidisme",
+    "voieUuid": "Compendium.pavillon-noir-2.voies.Item.444Fft7a0LtvOMIS",
+    "puissance": 9,
+    "nomNatif": "",
+    "compulsion": "Prédire avec justesse l'arrivée d'un événement non prédictible une semaine plus tôt. Ne pas s'abriter en pleine tempête (ni son navire).",
+    "accessible": true,
+    "visions": "Retour en arrière. · Éternité en un instant (le temps s'arrête et les personnes sont des statues indestructibles, aucun mécanisme ne peut s'actionner, ni aucune réaction chimique se produire). · Disparaître en s'éclipsant vers le futur proche. · Voyager vers le futur. · Contrôle des éléments (tempêtes, taille des feux, vagues, fracture des rochers).",
+    "portee": "Terre",
+    "cible": "Eux",
+    "impact": "",
+    "duree": "30 min",
+    "conditions": "",
+    "references": "",
+    "application": "manuel"
+  },
+  "effects": [],
+  "folder": "GhMxnwLVYmucd3Qt",
+  "sort": 90051,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.345",
+    "systemId": "pavillon-noir-2",
+    "systemVersion": "0.7.0",
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": null
+  }
+}

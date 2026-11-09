@@ -1,0 +1,42 @@
+{
+  "_id": "iM6NkXzRecINQjjs",
+  "_key": "!items!iM6NkXzRecINQjjs",
+  "name": "Hahahel",
+  "type": "pouvoir",
+  "img": "icons/svg/aura.svg",
+  "system": {
+    "description": "<p><strong>Visions</strong></p><ul><li>Protection dans les missions commandées.</li><li>Inspiration religieuse.</li><li>Protection dans les pratiques religieuses.</li><li>Retrouver la foi.</li><li>Convaincre les incroyants.</li><li>Contrer les pouvoirs du démon Focalor.</li></ul><ul><li><strong>Attribut.</strong> Dieu en trois personnes.</li><li><strong>Heure.</strong> 13h20 à 13h40.</li><li><strong>Jours.</strong> 14 au 18 octobre. 1er mai, 15 juillet, 28 septembre, 10 décembre, 18 février.</li><li><strong>Couleurs/Cristal.</strong> Bleu ou rose/Quartz rutile.</li><li><strong>Prière.</strong> « Audivit Dominus, et misertus est mei. Dominus factus est meus adjutor. »</li></ul>",
+    "source": "Entre ciel et terre, p. 222",
+    "voie": "voie-des-sephiroth",
+    "voieUuid": "Compendium.pavillon-noir-2.voies.Item.5soP14P6cbQPMX5I",
+    "puissance": 6,
+    "nomNatif": "Vertu",
+    "compulsion": "",
+    "accessible": true,
+    "visions": "Protection dans les missions commandées. · Inspiration religieuse. · Protection dans les pratiques religieuses. · Retrouver la foi. · Convaincre les incroyants. · Contrer les pouvoirs du démon Focalor.",
+    "portee": "Voix",
+    "cible": "Toi",
+    "impact": "",
+    "duree": "1 semaine",
+    "conditions": "",
+    "references": "",
+    "application": "manuel"
+  },
+  "effects": [],
+  "folder": "bbVpwWTAqt36UWdh",
+  "sort": 60041,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.345",
+    "systemId": "pavillon-noir-2",
+    "systemVersion": "0.7.0",
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": null
+  }
+}

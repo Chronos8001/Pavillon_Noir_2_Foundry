@@ -1,0 +1,42 @@
+{
+  "_id": "vhFtNs9cZIZbiEsq",
+  "_key": "!items!vhFtNs9cZIZbiEsq",
+  "name": "Bourreau",
+  "type": "pouvoir",
+  "img": "icons/svg/aura.svg",
+  "system": {
+    "description": "<p><strong>Visions</strong></p><ul><li>Enlève les remords du meurtrier ou lui en donne.</li><li>Pousse sa proie à tuer une personne particulière.</li><li>Fait revivre à sa proie tous les meurtres qu&#x27;elle a commis.</li><li>Fait voir à sa proie la personne qui la tuera... ou le lui fait croire.</li><li>Fait passer une personne pour un bourreau (tyran, bourreau des coeurs, assassin froid ou sadique).</li></ul><p><strong>Compulsions.</strong> Fait passer quelqu&#x27;un pour un infâme bourreau. Discussion avec un bourreau officiel.</p>",
+    "source": "Entre ciel et terre, p. 292",
+    "voie": "voie-des-guedes",
+    "voieUuid": "Compendium.pavillon-noir-2.voies.Item.BJZUi8OCwtnsr9Ow",
+    "puissance": 5,
+    "nomNatif": "moun malmannen",
+    "compulsion": "Fait passer quelqu'un pour un infâme bourreau. Discussion avec un bourreau officiel.",
+    "accessible": true,
+    "visions": "Enlève les remords du meurtrier ou lui en donne. · Pousse sa proie à tuer une personne particulière. · Fait revivre à sa proie tous les meurtres qu'elle a commis. · Fait voir à sa proie la personne qui la tuera... ou le lui fait croire. · Fait passer une personne pour un bourreau (tyran, bourreau des coeurs, assassin froid ou sadique).",
+    "portee": "Voix",
+    "cible": "Lui",
+    "impact": "",
+    "duree": "24 h",
+    "conditions": "",
+    "references": "",
+    "application": "manuel"
+  },
+  "effects": [],
+  "folder": "JpLFK1RzFtuXLx0v",
+  "sort": 50016,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.345",
+    "systemId": "pavillon-noir-2",
+    "systemVersion": "0.7.0",
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": null
+  }
+}

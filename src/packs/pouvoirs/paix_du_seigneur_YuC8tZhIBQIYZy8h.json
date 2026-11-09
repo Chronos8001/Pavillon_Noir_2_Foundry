@@ -1,0 +1,42 @@
+{
+  "_id": "YuC8tZhIBQIYZy8h",
+  "_key": "!items!YuC8tZhIBQIYZy8h",
+  "name": "Paix du Seigneur",
+  "type": "pouvoir",
+  "img": "icons/svg/aura.svg",
+  "system": {
+    "description": "<p><strong>Visions</strong></p><ul><li>Paix de l&#x27;âme.</li><li>Paix du corps (Réduction d&#x27;un Niveau de blessure une seule fois par blessure).</li><li>Apaise les esprits échauffés par la colère.</li></ul><p><strong>Compulsions.</strong> Réconforter une âme torturée. Soigner un blessé.</p>",
+    "source": "Entre ciel et terre, p. 209",
+    "voie": "voie-de-dieu",
+    "voieUuid": "Compendium.pavillon-noir-2.voies.Item.SPlB5GslKnZdeWKG",
+    "puissance": 2,
+    "nomNatif": "",
+    "compulsion": "Réconforter une âme torturée. Soigner un blessé.",
+    "accessible": true,
+    "visions": "Paix de l'âme. · Paix du corps (Réduction d'un Niveau de blessure une seule fois par blessure). · Apaise les esprits échauffés par la colère.",
+    "portee": "Toucher",
+    "cible": "Toi",
+    "impact": "",
+    "duree": "Permanent",
+    "conditions": "",
+    "references": "",
+    "application": "manuel"
+  },
+  "effects": [],
+  "folder": "3eghhFTqBb7T4d5D",
+  "sort": 20007,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.345",
+    "systemId": "pavillon-noir-2",
+    "systemVersion": "0.7.0",
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": null
+  }
+}

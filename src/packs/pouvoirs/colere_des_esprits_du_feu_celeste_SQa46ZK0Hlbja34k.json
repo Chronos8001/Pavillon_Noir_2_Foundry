@@ -1,0 +1,42 @@
+{
+  "_id": "SQa46ZK0Hlbja34k",
+  "_key": "!items!SQa46ZK0Hlbja34k",
+  "name": "Colère des esprits du feu céleste",
+  "type": "pouvoir",
+  "img": "icons/svg/aura.svg",
+  "system": {
+    "description": "<p><strong>Visions</strong></p><ul><li>Pluie de météorites.</li><li>Menace ultime pour ne pas être mis à mort.</li><li>Éclair d&#x27;étoile (un éclat mystique vient frapper le principe vital de quelqu&#x27;un, qui ne pourra jamais en guérir).</li></ul><p><strong>Compulsions.</strong> Trouver un morceau de météorite. Être é alors qu&#x27;on était menacé de mort.</p>",
+    "source": "Entre ciel et terre, p. 190",
+    "voie": "voie-des-xapiripe",
+    "voieUuid": "Compendium.pavillon-noir-2.voies.Item.uLmNntdGMAtLAIsE",
+    "puissance": 10,
+    "nomNatif": "thorumari",
+    "compulsion": "Trouver un morceau de météorite. Être é alors qu'on était menacé de mort.",
+    "accessible": true,
+    "visions": "Pluie de météorites. · Menace ultime pour ne pas être mis à mort. · Éclair d'étoile (un éclat mystique vient frapper le principe vital de quelqu'un, qui ne pourra jamais en guérir).",
+    "portee": "Là-bas",
+    "cible": "Lui (éclair d'étoile) ou Vous",
+    "impact": "",
+    "duree": "1 semaine ou Permanent (éclair d'étoile)",
+    "conditions": "",
+    "references": "",
+    "application": "manuel"
+  },
+  "effects": [],
+  "folder": "MTKTGwYLgyfOOhl1",
+  "sort": 100040,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.345",
+    "systemId": "pavillon-noir-2",
+    "systemVersion": "0.7.0",
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": null
+  }
+}

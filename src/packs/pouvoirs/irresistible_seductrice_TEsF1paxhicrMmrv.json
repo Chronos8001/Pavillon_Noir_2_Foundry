@@ -1,0 +1,42 @@
+{
+  "_id": "TEsF1paxhicrMmrv",
+  "_key": "!items!TEsF1paxhicrMmrv",
+  "name": "Irrésistible séductrice",
+  "type": "pouvoir",
+  "img": "icons/svg/aura.svg",
+  "system": {
+    "description": "<p><strong>Visions</strong></p><ul><li>Faire croire à une personne qu&#x27;elle est irrésistible.</li><li>Pousser quelqu&#x27;un à séduire.</li><li>Se rendre irrésistible en matière de séduction.</li><li>Donner à une femme une réputation de séductrice.</li></ul><p><strong>Compulsions.</strong> Séduire quelqu&#x27;un. Donner des conseils en matière de séduction.</p>",
+    "source": "Entre ciel et terre, p. 262",
+    "voie": "voie-du-folklore",
+    "voieUuid": "Compendium.pavillon-noir-2.voies.Item.Iy4OYyIN7hI6KjNY",
+    "puissance": 1,
+    "nomNatif": "",
+    "compulsion": "Séduire quelqu'un. Donner des conseils en matière de séduction.",
+    "accessible": true,
+    "visions": "Faire croire à une personne qu'elle est irrésistible. · Pousser quelqu'un à séduire. · Se rendre irrésistible en matière de séduction. · Donner à une femme une réputation de séductrice.",
+    "portee": "Ici",
+    "cible": "Lui",
+    "impact": "",
+    "duree": "1 cycle ou Permanent (donner une réputation)",
+    "conditions": "",
+    "references": "",
+    "application": "manuel"
+  },
+  "effects": [],
+  "folder": "aLFfT6IKRuY7TugP",
+  "sort": 10001,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.345",
+    "systemId": "pavillon-noir-2",
+    "systemVersion": "0.7.0",
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": null
+  }
+}

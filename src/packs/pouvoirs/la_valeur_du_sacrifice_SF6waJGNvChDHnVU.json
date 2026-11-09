@@ -1,0 +1,42 @@
+{
+  "_id": "SF6waJGNvChDHnVU",
+  "_key": "!items!SF6waJGNvChDHnVU",
+  "name": "La valeur du sacrifice",
+  "type": "pouvoir",
+  "img": "icons/svg/aura.svg",
+  "system": {
+    "description": "<p><strong>Visions</strong></p><ul><li>Donne un attrait tout particulier au sacrifice de soi (physique, moral).</li><li>Fait accorder beaucoup d&#x27;importance à un sacrifice passé ou à l&#x27;absence de sacrifice.</li><li>Sait si un sacrifice plaira à un dieu.</li><li>Rend un sacrifice encore plus appréciable aux yeux d&#x27;un dieu.</li></ul><p><strong>Compulsions.</strong> Se sacrifier pour ses amis. Pousser un ami à se sacrifier pour soi.</p>",
+    "source": "Entre ciel et terre, p. 205",
+    "voie": "voie-des-cinq-soleils",
+    "voieUuid": "Compendium.pavillon-noir-2.voies.Item.LIzof8tOOXvNP2kT",
+    "puissance": 3,
+    "nomNatif": "huellazohnextlahualli",
+    "compulsion": "Se sacrifier pour ses amis. Pousser un ami à se sacrifier pour soi.",
+    "accessible": true,
+    "visions": "Donne un attrait tout particulier au sacrifice de soi (physique, moral). · Fait accorder beaucoup d'importance à un sacrifice passé ou à l'absence de sacrifice. · Sait si un sacrifice plaira à un dieu. · Rend un sacrifice encore plus appréciable aux yeux d'un dieu.",
+    "portee": "Vue/Voix/Ouïe",
+    "cible": "Toi",
+    "impact": "",
+    "duree": "24 h",
+    "conditions": "",
+    "references": "",
+    "application": "manuel"
+  },
+  "effects": [],
+  "folder": "hUdmcEpw2ErgQ3ld",
+  "sort": 30015,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.345",
+    "systemId": "pavillon-noir-2",
+    "systemVersion": "0.7.0",
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": null
+  }
+}

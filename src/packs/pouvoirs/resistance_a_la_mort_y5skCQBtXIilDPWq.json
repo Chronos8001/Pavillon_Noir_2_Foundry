@@ -1,0 +1,42 @@
+{
+  "_id": "y5skCQBtXIilDPWq",
+  "_key": "!items!y5skCQBtXIilDPWq",
+  "name": "Résistance à la mort",
+  "type": "pouvoir",
+  "img": "icons/svg/aura.svg",
+  "system": {
+    "description": "<p><strong>Visions</strong></p><ul><li>Test de Résistance pour ne pas mourir.</li><li>Passage à la postérité.</li><li>Facilite le deuil.</li><li>Ignore les blessures ou la maladie.</li><li>Prolonge la vie dans un état de non-mort (zombie).</li></ul><p><strong>Compulsions.</strong> Se gaver de substance hallucinogène. Faire le deuil d&#x27;un être proche.</p>",
+    "source": "Entre ciel et terre, p. 303",
+    "voie": "voie-des-freres-marassa",
+    "voieUuid": "Compendium.pavillon-noir-2.voies.Item.g0bMhkfFArVT77cy",
+    "puissance": 8,
+    "nomNatif": "reziste la lanmo",
+    "compulsion": "Se gaver de substance hallucinogène. Faire le deuil d'un être proche.",
+    "accessible": true,
+    "visions": "Test de Résistance pour ne pas mourir. · Passage à la postérité. · Facilite le deuil. · Ignore les blessures ou la maladie. · Prolonge la vie dans un état de non-mort (zombie).",
+    "portee": "Toucher",
+    "cible": "Toi",
+    "impact": "",
+    "duree": "24 h ou Permanent (zombie)",
+    "conditions": "",
+    "references": "",
+    "application": "manuel"
+  },
+  "effects": [],
+  "folder": "44qmjJBQHiy5XpLM",
+  "sort": 80032,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.345",
+    "systemId": "pavillon-noir-2",
+    "systemVersion": "0.7.0",
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": null
+  }
+}

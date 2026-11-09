@@ -9,3 +9,7 @@ packs/*/LOG
 packs/*/LOG.old
 .DS_Store
 Thumbs.db
+
+# Extraction brute (contient du texte du livre)
+tools/extraction/pouvoirs-brut.json
+tools/extraction/__pycache__/

@@ -1,0 +1,42 @@
+{
+  "_id": "dNn5ca1ivTv52Daq",
+  "_key": "!items!dNn5ca1ivTv52Daq",
+  "name": "Richesses incommensurables",
+  "type": "pouvoir",
+  "img": "icons/svg/aura.svg",
+  "system": {
+    "description": "<p><strong>Visions</strong></p><ul><li>Accroît la chance de trouver des richesses ou la quantité des richesses.</li><li>Donne l&#x27;illusion d&#x27;une grande richesse.</li><li>Donne l&#x27;aspect de l&#x27;or.</li><li>Attise l&#x27;appât du gain.</li></ul><p><strong>Compulsions.</strong> Fabriquer de la fausse monnaie. Trouver un grand trésor.</p>",
+    "source": "Entre ciel et terre, p. 284",
+    "voie": "voie-de-dambala",
+    "voieUuid": "Compendium.pavillon-noir-2.voies.Item.fVIeiRnBn8ADVFE2",
+    "puissance": 5,
+    "nomNatif": "gwo trezo",
+    "compulsion": "Fabriquer de la fausse monnaie. Trouver un grand trésor.",
+    "accessible": true,
+    "visions": "Accroît la chance de trouver des richesses ou la quantité des richesses. · Donne l'illusion d'une grande richesse. · Donne l'aspect de l'or. · Attise l'appât du gain.",
+    "portee": "Vue/Voix",
+    "cible": "Toi",
+    "impact": "",
+    "duree": "1 mois",
+    "conditions": "",
+    "references": "",
+    "application": "manuel"
+  },
+  "effects": [],
+  "folder": "BsFkHFCdWu35mdPn",
+  "sort": 50022,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.345",
+    "systemId": "pavillon-noir-2",
+    "systemVersion": "0.7.0",
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": null
+  }
+}

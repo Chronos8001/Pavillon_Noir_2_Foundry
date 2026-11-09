@@ -1,0 +1,42 @@
+{
+  "_id": "Fp6wCMJOw79VjfJw",
+  "_key": "!items!Fp6wCMJOw79VjfJw",
+  "name": "Fiel",
+  "type": "pouvoir",
+  "img": "icons/svg/aura.svg",
+  "system": {
+    "description": "<p><strong>Visions</strong></p><ul><li>Trouver les mots qui blessent.</li><li>Introduire dans les propos d&#x27;autrui de la méchanceté involontaire.</li><li>Percevoir les intentions mauvaises dans des propos.</li><li>Empoisonner l&#x27;esprit de quelqu&#x27;un par ses paroles.</li><li>Morsure empoisonnée.</li></ul><p><strong>Compulsions.</strong> Blesser ou humilier profondément quelqu&#x27;un par ses paroles. Empoisonner quelqu&#x27;un. Créer une obsession chez quelqu&#x27;un.</p>",
+    "source": "Entre ciel et terre, p. 283",
+    "voie": "voie-de-dambala",
+    "voieUuid": "Compendium.pavillon-noir-2.voies.Item.fVIeiRnBn8ADVFE2",
+    "puissance": 4,
+    "nomNatif": "move mo",
+    "compulsion": "Blesser ou humilier profondément quelqu'un par ses paroles. Empoisonner quelqu'un. Créer une obsession chez quelqu'un.",
+    "accessible": true,
+    "visions": "Trouver les mots qui blessent. · Introduire dans les propos d'autrui de la méchanceté involontaire. · Percevoir les intentions mauvaises dans des propos. · Empoisonner l'esprit de quelqu'un par ses paroles. · Morsure empoisonnée.",
+    "portee": "Vue/Voix/Ouïe ou Toucher",
+    "cible": "Lui",
+    "impact": "",
+    "duree": "1 cycle",
+    "conditions": "",
+    "references": "",
+    "application": "manuel"
+  },
+  "effects": [],
+  "folder": "BsFkHFCdWu35mdPn",
+  "sort": 40016,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.345",
+    "systemId": "pavillon-noir-2",
+    "systemVersion": "0.7.0",
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": null
+  }
+}

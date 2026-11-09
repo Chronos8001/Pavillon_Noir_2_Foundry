@@ -1,0 +1,42 @@
+{
+  "_id": "Lm4rp3fusVH9cWE1",
+  "_key": "!items!Lm4rp3fusVH9cWE1",
+  "name": "Commandement",
+  "type": "pouvoir",
+  "img": "icons/svg/aura.svg",
+  "system": {
+    "description": "<p><strong>Visions</strong></p><ul><li>Prend le commandement d&#x27;un groupe.</li><li>Donne un ordre sans réplique.</li><li>Dénature ou change un ordre.</li><li>Fait passer une parole pour un commandement déplacé.</li></ul><p><strong>Compulsions.</strong> Prendre le commandement d&#x27;une troupe. N&#x27;abattre que les commandants adverses, sans toucher aux simples guerriers.</p>",
+    "source": "Entre ciel et terre, p. 179",
+    "voie": "voie-d-icheiricou-pour-le-conseil",
+    "voieUuid": "Compendium.pavillon-noir-2.voies.Item.wiw3plsp6sATryBq",
+    "puissance": 6,
+    "nomNatif": "aonacani",
+    "compulsion": "Prendre le commandement d'une troupe. N'abattre que les commandants adverses, sans toucher aux simples guerriers.",
+    "accessible": true,
+    "visions": "Prend le commandement d'un groupe. · Donne un ordre sans réplique. · Dénature ou change un ordre. · Fait passer une parole pour un commandement déplacé.",
+    "portee": "Voix",
+    "cible": "Nous",
+    "impact": "",
+    "duree": "1 cycle",
+    "conditions": "",
+    "references": "",
+    "application": "manuel"
+  },
+  "effects": [],
+  "folder": "ZyTz3Sqh4HxLti9u",
+  "sort": 60021,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.345",
+    "systemId": "pavillon-noir-2",
+    "systemVersion": "0.7.0",
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": null
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "_id": "wHgTrGmJQ7e5sahV",
+  "_key": "!items!wHgTrGmJQ7e5sahV",
+  "name": "Airiel",
+  "type": "pouvoir",
+  "img": "icons/svg/aura.svg",
+  "system": {
+    "description": "<p><strong>Visions</strong></p><ul><li>Rendre visible ce qui est caché.</li><li>Rêves prémonitoires.</li><li>Découvertes scientifiques ou géographiques.</li><li>Lien entre deux événements apparemment distincts.</li><li>Idées originales et surprenantes pour les autres.</li><li>Illumination de la voie à suivre.</li><li>Élévation de la pensée rationnelle.</li><li>Solidité du corps, du coeur, de l&#x27;esprit et de l&#x27;âme.</li><li>Contrer les pouvoirs du démon Bifrons.</li></ul><ul><li><strong>Attribut.</strong> Dieu révélateur.</li><li><strong>Heure.</strong> 15h00 à 15h20.</li><li><strong>Jours.</strong> 8 au 12 novembre. 6 mai, 20 juillet, 3 octobre, 15 décembre, 23 février.</li><li><strong>Couleurs/Cristal.</strong> Magenta ou vert/Péridot</li><li><strong>Prière.</strong> « Suavis Dominus universis. Et miserationes ejus super omnia opera ejus. »</li></ul>",
+    "source": "Entre ciel et terre, p. 223",
+    "voie": "voie-des-sephiroth",
+    "voieUuid": "Compendium.pavillon-noir-2.voies.Item.5soP14P6cbQPMX5I",
+    "puissance": 6,
+    "nomNatif": "Vertu",
+    "compulsion": "",
+    "accessible": true,
+    "visions": "Rendre visible ce qui est caché. · Rêves prémonitoires. · Découvertes scientifiques ou géographiques. · Lien entre deux événements apparemment distincts. · Idées originales et surprenantes pour les autres. · Illumination de la voie à suivre. · Élévation de la pensée rationnelle. · Solidité du corps, du coeur, de l'esprit et de l'âme. · Contrer les pouvoirs du démon Bifrons.",
+    "portee": "Personnelle",
+    "cible": "Moi",
+    "impact": "",
+    "duree": "24 h",
+    "conditions": "",
+    "references": "",
+    "application": "manuel"
+  },
+  "effects": [],
+  "folder": "bbVpwWTAqt36UWdh",
+  "sort": 60046,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.345",
+    "systemId": "pavillon-noir-2",
+    "systemVersion": "0.7.0",
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": null
+  }
+}

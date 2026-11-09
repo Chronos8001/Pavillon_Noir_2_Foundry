@@ -1,0 +1,42 @@
+{
+  "_id": "QvxSXyytfbCF6T9b",
+  "_key": "!items!QvxSXyytfbCF6T9b",
+  "name": "Morax",
+  "type": "pouvoir",
+  "img": "icons/svg/aura.svg",
+  "system": {
+    "description": "<p><strong>Visions</strong></p><ul><li>Enseignement*** des sciences humaines (+1D dans les compétences sociales).</li><li>Don d&#x27;un familier fiable et sage qui connaît les vertus des herbes et des plantes (Niveau 3 en Herboristerie).</li><li>Envoûtement. La cible est sous le contrôle partiel du Mage Noir. Pour faire faire ou dire quelque chose à la cible, il faut la convaincre : Test de Persuasion (Charisme) efficace et facile +2D/+2, avec un modificateur de difficulté dépendant de l&#x27;opposition de la tâche avec l&#x27;éthique et les intérêts de la cible.</li><li>Protection de l&#x27;ignorant et de l&#x27;ignorance.</li><li>Persévérance dans l&#x27;erreur.</li><li>Déchaînement des préjugés.</li><li>Attire les mauvais esprits.</li><li>Perte de la route suivie.</li><li>Contrer les pouvoirs de l&#x27;ange Nelchael.</li></ul><ul><li><strong>Aspect.</strong> Grand taureau à tête d&#x27;homme.</li><li><strong>Heure.</strong> 6h40 à 7h00.</li><li><strong>Jours.</strong> 2 au 6 juillet. 11 avril, 24 juin, 8 septembre, 20 novembre, 29 janvier.</li><li><strong>Couleurs/Cristal.</strong> Bleu pâle ou corail/Fluorine violette.</li></ul>",
+    "source": "Entre ciel et terre, p. 235",
+    "voie": "voie-des-qlipoth",
+    "voieUuid": "Compendium.pavillon-noir-2.voies.Item.28cj5d17pp6tLLr8",
+    "puissance": 3,
+    "nomNatif": "Vase d'Iniquité",
+    "compulsion": "",
+    "accessible": true,
+    "visions": "Enseignement*** des sciences humaines (+1D dans les compétences sociales). · Don d'un familier fiable et sage qui connaît les vertus des herbes et des plantes (Niveau 3 en Herboristerie). · Envoûtement. La cible est sous le contrôle partiel du Mage Noir. Pour faire faire ou dire quelque chose à la cible, il faut la convaincre : Test de Persuasion (Charisme) efficace et facile +2D/+2, avec un modificateur de difficulté dépendant de l'opposition de la tâche avec l'éthique et les intérêts de la cible. · Protection de l'ignorant et de l'ignorance. · Persévérance dans l'erreur. · Déchaînement des préjugés. · Attire les mauvais esprits. · Perte de la route suivie. · Contrer les pouvoirs de l'ange Nelchael.",
+    "portee": "Voix",
+    "cible": "Moi (Don d'un familier...) ou Lui",
+    "impact": "",
+    "duree": "30 min ou 1 semaine (Don d'un familier...)",
+    "conditions": "",
+    "references": "",
+    "application": "manuel"
+  },
+  "effects": [],
+  "folder": "I3FQOgCqphyIoMbm",
+  "sort": 30021,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.345",
+    "systemId": "pavillon-noir-2",
+    "systemVersion": "0.7.0",
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": null
+  }
+}

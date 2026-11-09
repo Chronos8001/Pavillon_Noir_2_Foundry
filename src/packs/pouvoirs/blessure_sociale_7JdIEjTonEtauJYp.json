@@ -1,0 +1,42 @@
+{
+  "_id": "7JdIEjTonEtauJYp",
+  "_key": "!items!7JdIEjTonEtauJYp",
+  "name": "Blessure sociale",
+  "type": "pouvoir",
+  "img": "icons/svg/aura.svg",
+  "system": {
+    "description": "<p><strong>Visions</strong></p><ul><li>Cause / Soigne un chagrin d&#x27;amour.</li><li>Brouille / Réconcilie deux personnes.</li><li>Fait perdre / retrouver son travail ou de la clientèle.</li><li>Ternit / Redore la réputation de quelqu&#x27;un.</li><li>Fait perdre / Redonne l&#x27;amour paternel, maternel, fraternel ou filial.</li></ul><p><strong>Compulsions.</strong> Dire une parole blessante à un ami. Soigner un petit chagrin.</p>",
+    "source": "Entre ciel et terre, p. 264",
+    "voie": "voie-du-folklore",
+    "voieUuid": "Compendium.pavillon-noir-2.voies.Item.Iy4OYyIN7hI6KjNY",
+    "puissance": 3,
+    "nomNatif": "",
+    "compulsion": "Dire une parole blessante à un ami. Soigner un petit chagrin.",
+    "accessible": true,
+    "visions": "Cause / Soigne un chagrin d'amour. · Brouille / Réconcilie deux personnes. · Fait perdre / retrouver son travail ou de la clientèle. · Ternit / Redore la réputation de quelqu'un. · Fait perdre / Redonne l'amour paternel, maternel, fraternel ou filial.",
+    "portee": "Voix",
+    "cible": "Lui",
+    "impact": "",
+    "duree": "1 semaine",
+    "conditions": "",
+    "references": "",
+    "application": "manuel"
+  },
+  "effects": [],
+  "folder": "aLFfT6IKRuY7TugP",
+  "sort": 30011,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.345",
+    "systemId": "pavillon-noir-2",
+    "systemVersion": "0.7.0",
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": null
+  }
+}

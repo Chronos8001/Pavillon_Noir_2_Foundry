@@ -1,0 +1,22 @@
+{
+  "_id": "jrCp3TXiMnGmStXb",
+  "_key": "!folders!jrCp3TXiMnGmStXb",
+  "name": "Voie d'Ogou",
+  "type": "Item",
+  "folder": null,
+  "sorting": "m",
+  "sort": 2000000,
+  "color": null,
+  "description": "",
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.345",
+    "systemId": "pavillon-noir-2",
+    "systemVersion": "0.7.0",
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": null
+  }
+}

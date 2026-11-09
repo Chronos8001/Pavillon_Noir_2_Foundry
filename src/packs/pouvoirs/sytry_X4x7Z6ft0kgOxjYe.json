@@ -1,0 +1,42 @@
+{
+  "_id": "X4x7Z6ft0kgOxjYe",
+  "_key": "!items!X4x7Z6ft0kgOxjYe",
+  "name": "Sytry",
+  "type": "pouvoir",
+  "img": "icons/svg/aura.svg",
+  "system": {
+    "description": "<p><strong>Visions</strong></p><ul><li>Première étincelle de l&#x27;amour entre un homme et une femme.</li><li>Forcer une personne à se déshabiller en public.</li><li>Mystère indéchiffrable.</li><li>Cauchemars récurrents.</li><li>Indiscrétion.</li><li>Mensonge.</li><li>Manières déplaisantes.</li><li>Domination sur ceux qui abusent de la confiance des autres.</li><li>Contrer les pouvoirs de l&#x27;ange Hahaiah.</li></ul><ul><li><strong>Aspect.</strong> Visage de léopard et ailes de griffon, mais peut se changer en homme de grande beauté sur la demande du Mage Noir.</li><li><strong>Heure.</strong> 3h40 à 4h00.</li><li><strong>Jours.</strong> 16 au 20 mai. 2 avril, 15 juin, 30 août, 11 novembre, 20 janvier.</li><li><strong>Couleurs/Cristal.</strong> Violet ou rouge/Ambre.</li></ul>",
+    "source": "Entre ciel et terre, p. 232",
+    "voie": "voie-des-qlipoth",
+    "voieUuid": "Compendium.pavillon-noir-2.voies.Item.28cj5d17pp6tLLr8",
+    "puissance": 2,
+    "nomNatif": "Esprit de Mensonge",
+    "compulsion": "",
+    "accessible": true,
+    "visions": "Première étincelle de l'amour entre un homme et une femme. · Forcer une personne à se déshabiller en public. · Mystère indéchiffrable. · Cauchemars récurrents. · Indiscrétion. · Mensonge. · Manières déplaisantes. · Domination sur ceux qui abusent de la confiance des autres. · Contrer les pouvoirs de l'ange Hahaiah.",
+    "portee": "Voix",
+    "cible": "Lui",
+    "impact": "",
+    "duree": "2 min",
+    "conditions": "",
+    "references": "",
+    "application": "manuel"
+  },
+  "effects": [],
+  "folder": "I3FQOgCqphyIoMbm",
+  "sort": 20012,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.345",
+    "systemId": "pavillon-noir-2",
+    "systemVersion": "0.7.0",
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": null
+  }
+}

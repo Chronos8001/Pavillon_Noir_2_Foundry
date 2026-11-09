@@ -1,0 +1,42 @@
+{
+  "_id": "ezeuchDcldTZFmBT",
+  "_key": "!items!ezeuchDcldTZFmBT",
+  "name": "Lug, le conseiller",
+  "type": "pouvoir",
+  "img": "icons/svg/aura.svg",
+  "system": {
+    "description": "<p><strong>Visions</strong></p><ul><li>Conseil répondant à une question.</li><li>Capacité à donner confiance en son avis.</li><li>Pousser à demander des conseils.</li><li>Tendance à se tourner vers la religion pour obtenir un conseil.</li></ul><p><strong>Compulsions.</strong> Donner des conseils à qui n&#x27;en a pas besoin. Donner sciemment de mauvais conseils à un mi ou allié.</p>",
+    "source": "Entre ciel et terre, p. 248",
+    "voie": "voie-du-druidisme",
+    "voieUuid": "Compendium.pavillon-noir-2.voies.Item.444Fft7a0LtvOMIS",
+    "puissance": 2,
+    "nomNatif": "",
+    "compulsion": "Donner des conseils à qui n'en a pas besoin. Donner sciemment de mauvais conseils à un mi ou allié.",
+    "accessible": true,
+    "visions": "Conseil répondant à une question. · Capacité à donner confiance en son avis. · Pousser à demander des conseils. · Tendance à se tourner vers la religion pour obtenir un conseil.",
+    "portee": "Ici",
+    "cible": "Toi",
+    "impact": "",
+    "duree": "30 min ou 1 semaine",
+    "conditions": "",
+    "references": "",
+    "application": "manuel"
+  },
+  "effects": [],
+  "folder": "GhMxnwLVYmucd3Qt",
+  "sort": 20005,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.345",
+    "systemId": "pavillon-noir-2",
+    "systemVersion": "0.7.0",
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": null
+  }
+}

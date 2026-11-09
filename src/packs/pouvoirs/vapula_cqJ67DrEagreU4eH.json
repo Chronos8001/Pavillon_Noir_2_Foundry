@@ -1,0 +1,42 @@
+{
+  "_id": "cqJ67DrEagreU4eH",
+  "_key": "!items!cqJ67DrEagreU4eH",
+  "name": "Vapula",
+  "type": "pouvoir",
+  "img": "icons/svg/aura.svg",
+  "system": {
+    "description": "<p><strong>Visions</strong></p><ul><li>Savant et adroit (+4D dans les compétences de connaissances et dans les compétences techniques).</li><li>Persécutions.</li><li>Insubordination.</li><li>Aggravation des handicaps physiques.</li><li>Aggravation de la propension aux mauvaises actions.</li><li>Maladie de l&#x27;esprit.</li><li>Révélation scandaleuse sur une personne prestigieuse.</li><li>Domination** des êtres insubordonnés.</li><li>Contrer les pouvoirs de l&#x27;ange Mizrael.</li></ul><ul><li><strong>Aspect.</strong> Lion avec des ailes de griffon.</li><li><strong>Heure.</strong> 19h40 à 20h00.</li><li><strong>Jours.</strong> 15 au 20 janvier. 20 mai, 3 août, 17 octobre, 29 décembre, 9 mars.</li><li><strong>Couleurs/Cristal.</strong> Violet ou vert/OEil de tigre.</li></ul>",
+    "source": "Entre ciel et terre, p. 244",
+    "voie": "voie-des-qlipoth",
+    "voieUuid": "Compendium.pavillon-noir-2.voies.Item.28cj5d17pp6tLLr8",
+    "puissance": 8,
+    "nomNatif": "Accusateur ou Exécuteur",
+    "compulsion": "",
+    "accessible": true,
+    "visions": "Savant et adroit (+4D dans les compétences de connaissances et dans les compétences techniques). · Persécutions. · Insubordination. · Aggravation des handicaps physiques. · Aggravation de la propension aux mauvaises actions. · Maladie de l'esprit. · Révélation scandaleuse sur une personne prestigieuse. · Domination** des êtres insubordonnés. · Contrer les pouvoirs de l'ange Mizrael.",
+    "portee": "Toucher (Aggravation des handicaps...) ou Voix",
+    "cible": "Eux",
+    "impact": "",
+    "duree": "1 mois ou Permanent (Aggravation..., Maladie)",
+    "conditions": "",
+    "references": "",
+    "application": "manuel"
+  },
+  "effects": [],
+  "folder": "I3FQOgCqphyIoMbm",
+  "sort": 80059,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.345",
+    "systemId": "pavillon-noir-2",
+    "systemVersion": "0.7.0",
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": null
+  }
+}

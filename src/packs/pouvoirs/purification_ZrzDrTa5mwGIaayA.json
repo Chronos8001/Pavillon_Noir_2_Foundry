@@ -1,0 +1,42 @@
+{
+  "_id": "ZrzDrTa5mwGIaayA",
+  "_key": "!items!ZrzDrTa5mwGIaayA",
+  "name": "Purification",
+  "type": "pouvoir",
+  "img": "icons/svg/aura.svg",
+  "system": {
+    "description": "<p><strong>Visions</strong></p><ul><li>Purifie par le feu une personne de ses péchés, de ses remords ou de ses sentiments négatifs.</li><li>Purifie par le feu une personne, un animal ou une plante de ses maladies ou de ses impuretés.</li><li>Purifie par le feu des aliments pour les rendre comestibles.</li></ul><p><strong>Compulsions.</strong> Faire bouillir de l&#x27;eau croupie avant de la boire. Cautériser une plaie.</p>",
+    "source": "Entre ciel et terre, p. 204",
+    "voie": "voie-des-cinq-soleils",
+    "voieUuid": "Compendium.pavillon-noir-2.voies.Item.LIzof8tOOXvNP2kT",
+    "puissance": 3,
+    "nomNatif": "tlachipahualiztli",
+    "compulsion": "Faire bouillir de l'eau croupie avant de la boire. Cautériser une plaie.",
+    "accessible": true,
+    "visions": "Purifie par le feu une personne de ses péchés, de ses remords ou de ses sentiments négatifs. · Purifie par le feu une personne, un animal ou une plante de ses maladies ou de ses impuretés. · Purifie par le feu des aliments pour les rendre comestibles.",
+    "portee": "Toucher",
+    "cible": "Toi",
+    "impact": "",
+    "duree": "Permanent",
+    "conditions": "",
+    "references": "",
+    "application": "manuel"
+  },
+  "effects": [],
+  "folder": "hUdmcEpw2ErgQ3ld",
+  "sort": 30012,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.345",
+    "systemId": "pavillon-noir-2",
+    "systemVersion": "0.7.0",
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": null
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "_id": "jWvgHRHya1yRxI4l",
+  "_key": "!items!jWvgHRHya1yRxI4l",
+  "name": "Peuple aérien",
+  "type": "pouvoir",
+  "img": "icons/svg/aura.svg",
+  "system": {
+    "description": "<p><strong>Visions</strong></p><ul><li>Vision des oiseaux.</li><li>Contrôle des oiseaux.</li><li>Respect des oiseaux.</li><li>Fait tourner les centres d&#x27;intérêt vers les arts.</li><li>Oubli des contingences matérielles.</li></ul><p><strong>Compulsions.</strong> Rester dressé tout au bord d&#x27;une falaise. Plonger de très haut.</p>",
+    "source": "Entre ciel et terre, p. 311",
+    "voie": "voie-de-cousin-zaka",
+    "voieUuid": "Compendium.pavillon-noir-2.voies.Item.lP05NKFNMs90d9GB",
+    "puissance": 6,
+    "nomNatif": "pè syèl",
+    "compulsion": "Rester dressé tout au bord d'une falaise. Plonger de très haut.",
+    "accessible": true,
+    "visions": "Vision des oiseaux. · Contrôle des oiseaux. · Respect des oiseaux. · Fait tourner les centres d'intérêt vers les arts. · Oubli des contingences matérielles.",
+    "portee": "Là-bas",
+    "cible": "Vous",
+    "impact": "",
+    "duree": "24 h",
+    "conditions": "",
+    "references": "",
+    "application": "manuel"
+  },
+  "effects": [],
+  "folder": "Ha5xoeLM6LLXX7ma",
+  "sort": 60027,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.345",
+    "systemId": "pavillon-noir-2",
+    "systemVersion": "0.7.0",
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": null
+  }
+}

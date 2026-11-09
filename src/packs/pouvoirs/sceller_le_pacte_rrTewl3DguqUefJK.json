@@ -1,0 +1,42 @@
+{
+  "_id": "rrTewl3DguqUefJK",
+  "_key": "!items!rrTewl3DguqUefJK",
+  "name": "Sceller le pacte",
+  "type": "pouvoir",
+  "img": "icons/svg/aura.svg",
+  "system": {
+    "description": "<p><strong>Visions</strong></p><ul><li>Obligation de respecter le pacte.</li><li>Ce qui est éprouvé au moment de sceller le pacte le restera.</li><li>Grave le texte du pacte de façon indestructible sur de la pierre ou sur la peau des contractants.</li></ul><p><strong>Compulsions.</strong> Briser un pacte. Veiller à ce que des ctants respectent un contrat simple.</p>",
+    "source": "Entre ciel et terre, p. 282",
+    "voie": "voie-de-dambala",
+    "voieUuid": "Compendium.pavillon-noir-2.voies.Item.fVIeiRnBn8ADVFE2",
+    "puissance": 3,
+    "nomNatif": "sele sèman",
+    "compulsion": "Briser un pacte. Veiller à ce que des ctants respectent un contrat simple.",
+    "accessible": true,
+    "visions": "Obligation de respecter le pacte. · Ce qui est éprouvé au moment de sceller le pacte le restera. · Grave le texte du pacte de façon indestructible sur de la pierre ou sur la peau des contractants.",
+    "portee": "Toucher",
+    "cible": "Vous",
+    "impact": "",
+    "duree": "Durée du pacte",
+    "conditions": "",
+    "references": "",
+    "application": "manuel"
+  },
+  "effects": [],
+  "folder": "BsFkHFCdWu35mdPn",
+  "sort": 30012,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.345",
+    "systemId": "pavillon-noir-2",
+    "systemVersion": "0.7.0",
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": null
+  }
+}

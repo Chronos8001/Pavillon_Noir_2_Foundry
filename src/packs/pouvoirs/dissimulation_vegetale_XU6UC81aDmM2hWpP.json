@@ -1,0 +1,42 @@
+{
+  "_id": "XU6UC81aDmM2hWpP",
+  "_key": "!items!XU6UC81aDmM2hWpP",
+  "name": "Dissimulation végétale",
+  "type": "pouvoir",
+  "img": "icons/svg/aura.svg",
+  "system": {
+    "description": "<p><strong>Visions</strong></p><ul><li>Cacher un végétal aux yeux des hommes.</li><li>Invisibilité dans la nature.</li><li>Cacher des armes en bois.</li><li>Les végétaux se retirent sous la terre.</li></ul><p><strong>Compulsions.</strong> S&#x27;embusquer dans les bois. Trouver une plante carnivore.</p>",
+    "source": "Entre ciel et terre, p. 308",
+    "voie": "voie-de-cousin-zaka",
+    "voieUuid": "Compendium.pavillon-noir-2.voies.Item.lP05NKFNMs90d9GB",
+    "puissance": 1,
+    "nomNatif": "kach nan le plant",
+    "compulsion": "S'embusquer dans les bois. Trouver une plante carnivore.",
+    "accessible": true,
+    "visions": "Cacher un végétal aux yeux des hommes. · Invisibilité dans la nature. · Cacher des armes en bois. · Les végétaux se retirent sous la terre.",
+    "portee": "Toucher",
+    "cible": "Vous",
+    "impact": "",
+    "duree": "1 cycle",
+    "conditions": "",
+    "references": "",
+    "application": "manuel"
+  },
+  "effects": [],
+  "folder": "Ha5xoeLM6LLXX7ma",
+  "sort": 10002,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.345",
+    "systemId": "pavillon-noir-2",
+    "systemVersion": "0.7.0",
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": null
+  }
+}

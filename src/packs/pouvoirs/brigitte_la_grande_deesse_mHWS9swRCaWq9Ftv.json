@@ -1,0 +1,42 @@
+{
+  "_id": "mHWS9swRCaWq9Ftv",
+  "_key": "!items!mHWS9swRCaWq9Ftv",
+  "name": "Brigitte, la Grande Déesse",
+  "type": "pouvoir",
+  "img": "icons/svg/aura.svg",
+  "system": {
+    "description": "<p><strong>Visions</strong></p><ul><li>Purification du corps.</li><li>Purification des aliments.</li><li>Fécondité végétale.</li><li>Prospérité.</li><li>Protection des troupeaux.</li></ul><p><strong>Compulsions.</strong> Traverser un feu. Faire pousser une plante depuis la graine.</p>",
+    "source": "Entre ciel et terre, p. 249",
+    "voie": "voie-du-druidisme",
+    "voieUuid": "Compendium.pavillon-noir-2.voies.Item.444Fft7a0LtvOMIS",
+    "puissance": 2,
+    "nomNatif": "",
+    "compulsion": "Traverser un feu. Faire pousser une plante depuis la graine.",
+    "accessible": true,
+    "visions": "Purification du corps. · Purification des aliments. · Fécondité végétale. · Prospérité. · Protection des troupeaux.",
+    "portee": "Toucher",
+    "cible": "Toi",
+    "impact": "",
+    "duree": "1 semaine",
+    "conditions": "",
+    "references": "",
+    "application": "manuel"
+  },
+  "effects": [],
+  "folder": "GhMxnwLVYmucd3Qt",
+  "sort": 20010,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.345",
+    "systemId": "pavillon-noir-2",
+    "systemVersion": "0.7.0",
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": null
+  }
+}

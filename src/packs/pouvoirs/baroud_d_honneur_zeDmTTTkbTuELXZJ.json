@@ -1,0 +1,42 @@
+{
+  "_id": "zeDmTTTkbTuELXZJ",
+  "_key": "!items!zeDmTTTkbTuELXZJ",
+  "name": "Baroud d'honneur",
+  "type": "pouvoir",
+  "img": "icons/svg/aura.svg",
+  "system": {
+    "description": "<p><strong>Visions</strong></p><ul><li>Tout le monde se battra jusqu&#x27;au dernier.</li><li>Combat après la mort même, jusqu&#x27;à la fin du combat.</li><li>Donne du courage dans une situation désespérée.</li><li>Renversement d&#x27;une situation désespérée alors que le camp en infériorité se bat férocement.</li></ul><p><strong>Compulsions.</strong> Voir un animal se battre après avoir été mortellement blessé. Continuer à se battre alors que l&#x27;issue du combat penche en faveur de l&#x27;adversaire.</p>",
+    "source": "Entre ciel et terre, p. 308",
+    "voie": "voie-d-ogou",
+    "voieUuid": "Compendium.pavillon-noir-2.voies.Item.nT1z9NA3nij69fC3",
+    "puissance": 8,
+    "nomNatif": "dènye batay",
+    "compulsion": "Voir un animal se battre après avoir été mortellement blessé. Continuer à se battre alors que l'issue du combat penche en faveur de l'adversaire.",
+    "accessible": true,
+    "visions": "Tout le monde se battra jusqu'au dernier. · Combat après la mort même, jusqu'à la fin du combat. · Donne du courage dans une situation désespérée. · Renversement d'une situation désespérée alors que le camp en infériorité se bat férocement.",
+    "portee": "Là",
+    "cible": "Eux",
+    "impact": "",
+    "duree": "24 h",
+    "conditions": "",
+    "references": "",
+    "application": "manuel"
+  },
+  "effects": [],
+  "folder": "jrCp3TXiMnGmStXb",
+  "sort": 80030,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.345",
+    "systemId": "pavillon-noir-2",
+    "systemVersion": "0.7.0",
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": null
+  }
+}

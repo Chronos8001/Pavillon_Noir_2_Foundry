@@ -1,0 +1,42 @@
+{
+  "_id": "2mFKf15mgNBQUKgO",
+  "_key": "!items!2mFKf15mgNBQUKgO",
+  "name": "OEil du diplomate",
+  "type": "pouvoir",
+  "img": "icons/svg/aura.svg",
+  "system": {
+    "description": "<p><strong>Visions</strong></p><ul><li>Savoir de ce qui permettrait de convaincre.</li><li>Voir le talon d&#x27;Achille social de quelqu&#x27;un ou d&#x27;une organisation.</li><li>Découvrir les alliances et les complots secrets.</li></ul><p><strong>Compulsions.</strong> Comprendre les enjeux économiques d&#x27;une ville. Découvrir ce dont une personne réservée a désespérément besoin. Faire chanter quelqu&#x27;un de son entourage.</p>",
+    "source": "Entre ciel et terre, p. 283",
+    "voie": "voie-de-dambala",
+    "voieUuid": "Compendium.pavillon-noir-2.voies.Item.fVIeiRnBn8ADVFE2",
+    "puissance": 4,
+    "nomNatif": "zye machanday",
+    "compulsion": "Comprendre les enjeux économiques d'une ville. Découvrir ce dont une personne réservée a désespérément besoin. Faire chanter quelqu'un de son entourage.",
+    "accessible": true,
+    "visions": "Savoir de ce qui permettrait de convaincre. · Voir le talon d'Achille social de quelqu'un ou d'une organisation. · Découvrir les alliances et les complots secrets.",
+    "portee": "Vue/Voix/Ouïe",
+    "cible": "Lui",
+    "impact": "",
+    "duree": "1 semaine",
+    "conditions": "",
+    "references": "",
+    "application": "manuel"
+  },
+  "effects": [],
+  "folder": "BsFkHFCdWu35mdPn",
+  "sort": 40017,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.345",
+    "systemId": "pavillon-noir-2",
+    "systemVersion": "0.7.0",
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": null
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "_id": "IY1cimWGMDSJKKfc",
+  "_key": "!items!IY1cimWGMDSJKKfc",
+  "name": "Belial",
+  "type": "pouvoir",
+  "img": "icons/svg/aura.svg",
+  "system": {
+    "description": "<p><strong>Visions</strong></p><ul><li>Don d&#x27;un serviteur oracle.</li><li>Suivi au combat par quatre-vingt légions de démons : 522280 démons, la plus grande armée de l&#x27;enfer.</li><li>Cité de mensonges.</li><li>Illusion de la beauté, de l&#x27;ordre et de la vertu sous une vérité opposée.</li><li>Famine.</li><li>Peste.</li><li>Terre stérile, tant aux plantations qu&#x27;aux villes ou aux pensées nobles.</li><li>Démultiplication, agrandissement et combat de la vermine pour la suprématie.</li><li>Contrer les pouvoirs de l&#x27;ange Habuiah.</li></ul><ul><li><strong>Aspect.</strong> Ange magnifique sur un char de feu.</li><li><strong>Heure.</strong> 22h20 à 22h40.</li><li><strong>Jours.</strong> 24 février au 1er mars. 28 mai, 11 août, 25 octobre, 6 janvier, 18 mars.</li><li><strong>Couleurs/Cristal.</strong> Violet ou turquoise/OEil de faucon.</li></ul>",
+    "source": "Entre ciel et terre, p. 246",
+    "voie": "voie-des-qlipoth",
+    "voieUuid": "Compendium.pavillon-noir-2.voies.Item.28cj5d17pp6tLLr8",
+    "puissance": 9,
+    "nomNatif": "Tentateur ou Guetteur",
+    "compulsion": "",
+    "accessible": true,
+    "visions": "Don d'un serviteur oracle. · Suivi au combat par quatre-vingt légions de démons : 522280 démons, la plus grande armée de l'enfer. · Cité de mensonges. · Illusion de la beauté, de l'ordre et de la vertu sous une vérité opposée. · Famine. · Peste. · Terre stérile, tant aux plantations qu'aux villes ou aux pensées nobles. · Démultiplication, agrandissement et combat de la vermine pour la suprématie. · Contrer les pouvoirs de l'ange Habuiah.",
+    "portee": "Là-bas",
+    "cible": "Eux",
+    "impact": "",
+    "duree": "2 min (Suivi...), 1 année",
+    "conditions": "",
+    "references": "",
+    "application": "manuel"
+  },
+  "effects": [],
+  "folder": "I3FQOgCqphyIoMbm",
+  "sort": 90067,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.345",
+    "systemId": "pavillon-noir-2",
+    "systemVersion": "0.7.0",
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": null
+  }
+}

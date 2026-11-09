@@ -1,0 +1,42 @@
+{
+  "_id": "p6gvrKv58ILbvufF",
+  "_key": "!items!p6gvrKv58ILbvufF",
+  "name": "Damabiah",
+  "type": "pouvoir",
+  "img": "icons/svg/aura.svg",
+  "system": {
+    "description": "<p><strong>Visions</strong></p><ul><li>Domination des animaux aquatiques.</li><li>Domination des marins.</li><li>Contrôle des navires.</li><li>Protection contre les Pouvoirs d&#x27;autres religions.</li><li>Maîtrise de la Science des fluides (+5D aux Tests de Science et d&#x27;Ingénierie Navale pour tout ce qui concerne l&#x27;eau et les liquides).</li><li>Contrer les pouvoirs du démon Andrealphus.</li></ul><ul><li><strong>Attribut.</strong> Dieu fontaine de sagesse.</li><li><strong>Heure.</strong> 21h20 à 21h40.</li><li><strong>Jours.</strong> 10 au 14 février. 25 mai, 8 août, 22 octobre, 3 r, 15 mars.</li><li><strong>Couleurs/Cristal.</strong> Couleur claire ou vert/Labradorite.</li><li><strong>Prière.</strong> « Convertere Domine, et usque qua et deprecabilis esto super savos tuos. »</li></ul>",
+    "source": "Entre ciel et terre, p. 227",
+    "voie": "voie-des-sephiroth",
+    "voieUuid": "Compendium.pavillon-noir-2.voies.Item.5soP14P6cbQPMX5I",
+    "puissance": 9,
+    "nomNatif": "Ange",
+    "compulsion": "",
+    "accessible": true,
+    "visions": "Domination des animaux aquatiques. · Domination des marins. · Contrôle des navires. · Protection contre les Pouvoirs d'autres religions. · Maîtrise de la Science des fluides (+5D aux Tests de Science et d'Ingénierie Navale pour tout ce qui concerne l'eau et les liquides). · Contrer les pouvoirs du démon Andrealphus.",
+    "portee": "Vue/Voix/Ouïe",
+    "cible": "Eux",
+    "impact": "",
+    "duree": "1 semaine",
+    "conditions": "",
+    "references": "",
+    "application": "manuel"
+  },
+  "effects": [],
+  "folder": "bbVpwWTAqt36UWdh",
+  "sort": 90065,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.345",
+    "systemId": "pavillon-noir-2",
+    "systemVersion": "0.7.0",
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": null
+  }
+}

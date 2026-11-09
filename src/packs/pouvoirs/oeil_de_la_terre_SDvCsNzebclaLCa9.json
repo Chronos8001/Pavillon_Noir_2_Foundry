@@ -1,0 +1,42 @@
+{
+  "_id": "SDvCsNzebclaLCa9",
+  "_key": "!items!SDvCsNzebclaLCa9",
+  "name": "OEil de la terre",
+  "type": "pouvoir",
+  "img": "icons/svg/aura.svg",
+  "system": {
+    "description": "<p><strong>Visions</strong></p><ul><li>Suivre des traces.</li><li>Donne la sensation d&#x27;être au-dessous de quelqu&#x27;un.</li><li>Donne la sensation d&#x27;être foulé aux pieds.</li><li>Interrogation des végétaux sur ce qu&#x27;ils ont senti.</li></ul><p><strong>Compulsions.</strong> Percer des trous dans un plancher et regarder par en dessous.</p>",
+    "source": "Entre ciel et terre, p. 310",
+    "voie": "voie-de-cousin-zaka",
+    "voieUuid": "Compendium.pavillon-noir-2.voies.Item.lP05NKFNMs90d9GB",
+    "puissance": 3,
+    "nomNatif": "zye la tè",
+    "compulsion": "Percer des trous dans un plancher et regarder par en dessous.",
+    "accessible": true,
+    "visions": "Suivre des traces. · Donne la sensation d'être au-dessous de quelqu'un. · Donne la sensation d'être foulé aux pieds. · Interrogation des végétaux sur ce qu'ils ont senti.",
+    "portee": "Toucher ou Voix (donner la sensation d'être foulé aux pieds ou en dessous)",
+    "cible": "Vous",
+    "impact": "",
+    "duree": "1 cycle",
+    "conditions": "",
+    "references": "",
+    "application": "manuel"
+  },
+  "effects": [],
+  "folder": "Ha5xoeLM6LLXX7ma",
+  "sort": 30011,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.345",
+    "systemId": "pavillon-noir-2",
+    "systemVersion": "0.7.0",
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": null
+  }
+}

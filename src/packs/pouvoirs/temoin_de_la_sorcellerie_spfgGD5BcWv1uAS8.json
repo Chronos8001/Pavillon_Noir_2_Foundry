@@ -1,0 +1,42 @@
+{
+  "_id": "spfgGD5BcWv1uAS8",
+  "_key": "!items!spfgGD5BcWv1uAS8",
+  "name": "Témoin de la sorcellerie",
+  "type": "pouvoir",
+  "img": "icons/svg/aura.svg",
+  "system": {
+    "description": "<p><strong>Visions</strong></p><ul><li>Repère les traces de la magie.</li><li>Trouve ceux qui ont vu de la magie.</li><li>Voit les actes magiques d&#x27;une autre religion en un endroit donné dans un passé proche.</li><li>Repère les rites religieux d&#x27;une autre religion.</li></ul><p><strong>Compulsions.</strong> Persuader quelqu&#x27;un qu&#x27;il a été témoin des agissements de Satan. Faire stopper les rites d&#x27;une autre religion.</p>",
+    "source": "Entre ciel et terre, p. 209",
+    "voie": "voie-de-dieu",
+    "voieUuid": "Compendium.pavillon-noir-2.voies.Item.SPlB5GslKnZdeWKG",
+    "puissance": 1,
+    "nomNatif": "",
+    "compulsion": "Persuader quelqu'un qu'il a été témoin des agissements de Satan. Faire stopper les rites d'une autre religion.",
+    "accessible": true,
+    "visions": "Repère les traces de la magie. · Trouve ceux qui ont vu de la magie. · Voit les actes magiques d'une autre religion en un endroit donné dans un passé proche. · Repère les rites religieux d'une autre religion.",
+    "portee": "Là-bas",
+    "cible": "Lui",
+    "impact": "",
+    "duree": "1 cycle",
+    "conditions": "",
+    "references": "",
+    "application": "manuel"
+  },
+  "effects": [],
+  "folder": "3eghhFTqBb7T4d5D",
+  "sort": 10004,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.345",
+    "systemId": "pavillon-noir-2",
+    "systemVersion": "0.7.0",
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": null
+  }
+}

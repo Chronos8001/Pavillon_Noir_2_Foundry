@@ -1,0 +1,42 @@
+{
+  "_id": "i52aXiTvUZSQUBtY",
+  "_key": "!items!i52aXiTvUZSQUBtY",
+  "name": "Berith",
+  "type": "pouvoir",
+  "img": "icons/svg/aura.svg",
+  "system": {
+    "description": "<p><strong>Visions</strong></p><ul><li>Don d&#x27;une dignité.</li><li>Murmures de meurtre et de blasphème.</li><li>Véritable réponse à une unique question sur une personne.</li><li>Transformation de métal en or.</li><li>Bâtiment en ruine.</li><li>Absence de jugement.</li><li>Domination de l&#x27;esprit impulsif.</li><li>Chute, accident grave ou apoplexie.</li><li>Contrer les pouvoirs de l&#x27;ange Seehiah.</li></ul><ul><li><strong>Aspect.</strong> Soldat habillé de rouge portant une couronne dorée et montant un cheval rouge.</li><li><strong>Heure.</strong> 9h00 à 9h20.</li><li><strong>Jours.</strong> 8 au 13 août. 18 avril, 2 juillet, 15 septembre, 27 novembre, 5 février.</li><li><strong>Couleurs/Cristal.</strong> Magenta ou pourpre/Jaspe rouge.</li></ul>",
+    "source": "Entre ciel et terre, p. 237",
+    "voie": "voie-des-qlipoth",
+    "voieUuid": "Compendium.pavillon-noir-2.voies.Item.28cj5d17pp6tLLr8",
+    "puissance": 4,
+    "nomNatif": "Vengeur des Crimes",
+    "compulsion": "",
+    "accessible": true,
+    "visions": "Don d'une dignité. · Murmures de meurtre et de blasphème. · Véritable réponse à une unique question sur une personne. · Transformation de métal en or. · Bâtiment en ruine. · Absence de jugement. · Domination de l'esprit impulsif. · Chute, accident grave ou apoplexie. · Contrer les pouvoirs de l'ange Seehiah.",
+    "portee": "Personnelle (Don...), Toucher (Transformation...), Voix",
+    "cible": "Moi (Don...), Lui (Chute..., Transformation...) ou Vous",
+    "impact": "",
+    "duree": "30 min ou 1 mois (Don..., Transformation)",
+    "conditions": "",
+    "references": "",
+    "application": "manuel"
+  },
+  "effects": [],
+  "folder": "I3FQOgCqphyIoMbm",
+  "sort": 40027,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.345",
+    "systemId": "pavillon-noir-2",
+    "systemVersion": "0.7.0",
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": null
+  }
+}

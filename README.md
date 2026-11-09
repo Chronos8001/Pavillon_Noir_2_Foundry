@@ -79,7 +79,8 @@ Installation manuelle : télécharger `pavillon-noir-2.zip` depuis la dernière 
 - Rituels : le joueur prépare (Voie, Pouvoir, souhait, rites), le MJ fixe la Puissance (éventuellement secrète) et les Auspices puis autorise ; fenêtre de Rituel avec lancers d'1d10, résolution, améliorations et validation de l'intervention par le MJ.
 - Transes : fenêtre dédiée (entrée, ascension, activation, renforcement, détachement, Rejet, Cycle et temps restant).
 - Bibliothèque de magie : religions, Voies et Pouvoirs des compendiums, filtres, ajout et retrait sur le personnage, import de données (MJ).
-- Compendium « Magie : religions et Voies » : 11 religions et les 21 Voies du supplément (les Pouvoirs ne sont pas fournis).
+- Compendium « Magie : religions et Voies » : 11 religions et les 21 Voies du supplément.
+- Compendium « Magie : Pouvoirs des Voies » (réservé au MJ) : 785 Pouvoirs de 20 Voies, rangés par Voie, avec Puissance, nom natif, Portée, Cible, Durée, visions et compulsions. La Voie de la Cartomancie (Lames du tarot) n'est pas incluse.
 - Effets des Pouvoirs (Active Effects) appliqués aux cibles avec la Durée de la table officielle ; historique des actes sacrés et journal des interventions du MJ ; import sans doublon.
 - Événements divins (panneau MJ) : Aléas, révélations (équivalent du Mat), Quêtes mystiques, Rejets, séquelles et pénitences, Cycles échus, perte de concentration ; secrets tirés en d10 par le MJ et chiffrés.
 - Documentation : `docs/magie.md` (technique), `docs/magie-mj.md` (MJ), `docs/magie-joueur.md` (joueurs), `docs/simulation-magie.md` (probabilités).

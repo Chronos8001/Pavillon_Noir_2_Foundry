@@ -1,0 +1,42 @@
+{
+  "_id": "Q0SShJseCsfvCptO",
+  "_key": "!items!Q0SShJseCsfvCptO",
+  "name": "Invincible guerrier",
+  "type": "pouvoir",
+  "img": "icons/svg/aura.svg",
+  "system": {
+    "description": "<p><strong>Visions</strong></p><ul><li>Rend pendant un court instant intouchable au corps à corps.</li><li>Aide au combat au corps à corps.</li><li>Donne l&#x27;impression à l&#x27;adversaire qu&#x27;on ne peut être vaincu.</li><li>Révèle une faille chez un ennemi d&#x27;apparence invincible.</li></ul><p><strong>Compulsions.</strong> Combat seul contre un grand nombre d&#x27;ennemis. Continuer à se battre quelles que soient ses blessures.</p>",
+    "source": "Entre ciel et terre, p. 173",
+    "voie": "voie-d-icheiricou-pour-la-guerre",
+    "voieUuid": "Compendium.pavillon-noir-2.voies.Item.ua948TzRBv4MWuy4",
+    "puissance": 6,
+    "nomNatif": "oüáïtúmpti oüa",
+    "compulsion": "Combat seul contre un grand nombre d'ennemis. Continuer à se battre quelles que soient ses blessures.",
+    "accessible": true,
+    "visions": "Rend pendant un court instant intouchable au corps à corps. · Aide au combat au corps à corps. · Donne l'impression à l'adversaire qu'on ne peut être vaincu. · Révèle une faille chez un ennemi d'apparence invincible.",
+    "portee": "Vue",
+    "cible": "Lui",
+    "impact": "",
+    "duree": "1 cycle",
+    "conditions": "",
+    "references": "",
+    "application": "manuel"
+  },
+  "effects": [],
+  "folder": "tYn7s19RmGg8GMUR",
+  "sort": 60022,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.345",
+    "systemId": "pavillon-noir-2",
+    "systemVersion": "0.7.0",
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": null
+  }
+}

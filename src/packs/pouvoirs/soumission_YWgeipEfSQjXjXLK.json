@@ -1,0 +1,42 @@
+{
+  "_id": "YWgeipEfSQjXjXLK",
+  "_key": "!items!YWgeipEfSQjXjXLK",
+  "name": "Soumission",
+  "type": "pouvoir",
+  "img": "icons/svg/aura.svg",
+  "system": {
+    "description": "<p><strong>Visions</strong></p><ul><li>Suscite un comportement de soumission.</li><li>Rend la soumission acceptable ou insupportable.</li><li>Demande l&#x27;avis des lwas quant à la qualité d&#x27;une décision.</li><li>Mise en danger de l&#x27;homme de tête.</li><li>Protection de l&#x27;homme de tête.</li><li>Reconnaissance de celui qui prend des initiatives comme leader.</li><li>Les difficultés ou les broussailles s&#x27;ouvrent devant le prêtre.</li></ul><p><strong>Compulsions.</strong> Ouvrir le chemin dans la jungle. Se perdre dans un milieu hostile.</p>",
+    "source": "Entre ciel et terre, p. 306",
+    "voie": "voie-d-ogou",
+    "voieUuid": "Compendium.pavillon-noir-2.voies.Item.nT1z9NA3nij69fC3",
+    "puissance": 4,
+    "nomNatif": "soumèt",
+    "compulsion": "Ouvrir le chemin dans la jungle. Se perdre dans un milieu hostile.",
+    "accessible": true,
+    "visions": "Suscite un comportement de soumission. · Rend la soumission acceptable ou insupportable. · Demande l'avis des lwas quant à la qualité d'une décision. · Mise en danger de l'homme de tête. · Protection de l'homme de tête. · Reconnaissance de celui qui prend des initiatives comme leader. · Les difficultés ou les broussailles s'ouvrent devant le prêtre.",
+    "portee": "Ici",
+    "cible": "Lui",
+    "impact": "",
+    "duree": "1 cycle",
+    "conditions": "",
+    "references": "",
+    "application": "manuel"
+  },
+  "effects": [],
+  "folder": "jrCp3TXiMnGmStXb",
+  "sort": 40019,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.345",
+    "systemId": "pavillon-noir-2",
+    "systemVersion": "0.7.0",
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": null
+  }
+}

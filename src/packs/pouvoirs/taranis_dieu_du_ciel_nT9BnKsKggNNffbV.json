@@ -1,0 +1,42 @@
+{
+  "_id": "nT9BnKsKggNNffbV",
+  "_key": "!items!nT9BnKsKggNNffbV",
+  "name": "Taranis, dieu du ciel",
+  "type": "pouvoir",
+  "img": "icons/svg/aura.svg",
+  "system": {
+    "description": "<p><strong>Visions</strong></p><ul><li>Contrôle des mouvements du soleil et de la force de ses rayons.</li><li>Roue cosmique (changement de destin).</li><li>Venue ou dispersion des nuages.</li><li>Appel de la tempête et foudre.</li><li>Contrôle des feux.</li></ul><p><strong>Compulsions.</strong> Se faire foudroyer, soi ou le lieu où l&#x27;on vit.</p>",
+    "source": "Entre ciel et terre, p. 254",
+    "voie": "voie-du-druidisme",
+    "voieUuid": "Compendium.pavillon-noir-2.voies.Item.444Fft7a0LtvOMIS",
+    "puissance": 7,
+    "nomNatif": "",
+    "compulsion": "Se faire foudroyer, soi ou le lieu où l'on vit.",
+    "accessible": true,
+    "visions": "Contrôle des mouvements du soleil et de la force de ses rayons. · Roue cosmique (changement de destin). · Venue ou dispersion des nuages. · Appel de la tempête et foudre. · Contrôle des feux.",
+    "portee": "Là-bas",
+    "cible": "Vous",
+    "impact": "",
+    "duree": "1 semaine",
+    "conditions": "",
+    "references": "",
+    "application": "manuel"
+  },
+  "effects": [],
+  "folder": "GhMxnwLVYmucd3Qt",
+  "sort": 70046,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.345",
+    "systemId": "pavillon-noir-2",
+    "systemVersion": "0.7.0",
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": null
+  }
+}

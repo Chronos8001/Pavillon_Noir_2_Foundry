@@ -1,0 +1,42 @@
+{
+  "_id": "eQmsfWt42LRNJe06",
+  "_key": "!items!eQmsfWt42LRNJe06",
+  "name": "Amour",
+  "type": "pouvoir",
+  "img": "icons/svg/aura.svg",
+  "system": {
+    "description": "<p><strong>Visions</strong></p><ul><li>Création, altération ou destruction de l&#x27;amour.</li><li>Visualiser l&#x27;amour, sa forme et les liens qui lient les amoureux.</li><li>Accélération du rythme cardiaque, rougeur, pâleur.</li><li>Pousser quelqu&#x27;un à mourir ou à se sacrifier par amour.</li><li>Scelle les émotions pour que leur intensité demeure immortelle.</li><li>Pousse à des folies pour entrer dans l&#x27;Histoire.</li><li>Double les effets de la gloire.</li><li>Savoir le détail des relations amoureuses propres à une personne ou à un lieu.</li></ul><p><strong>Compulsions.</strong> Action d&#x27;éclat qui entrera dans l&#x27;Histoire. Laisser un souvenir mémorable à une communauté.</p>",
+    "source": "Entre ciel et terre, p. 287",
+    "voie": "voie-d-erzulie",
+    "voieUuid": "Compendium.pavillon-noir-2.voies.Item.0cPd7IIiO1TgbK81",
+    "puissance": 5,
+    "nomNatif": "lanmou",
+    "compulsion": "Action d'éclat qui entrera dans l'Histoire. Laisser un souvenir mémorable à une communauté.",
+    "accessible": true,
+    "visions": "Création, altération ou destruction de l'amour. · Visualiser l'amour, sa forme et les liens qui lient les amoureux. · Accélération du rythme cardiaque, rougeur, pâleur. · Pousser quelqu'un à mourir ou à se sacrifier par amour. · Scelle les émotions pour que leur intensité demeure immortelle. · Pousse à des folies pour entrer dans l'Histoire. · Double les effets de la gloire. · Savoir le détail des relations amoureuses propres à une personne ou à un lieu.",
+    "portee": "Vue/Voix/Ouïe",
+    "cible": "Vous",
+    "impact": "",
+    "duree": "Permanent",
+    "conditions": "",
+    "references": "",
+    "application": "manuel"
+  },
+  "effects": [],
+  "folder": "46EaXMNeQpoA9M1j",
+  "sort": 50020,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.345",
+    "systemId": "pavillon-noir-2",
+    "systemVersion": "0.7.0",
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": null
+  }
+}

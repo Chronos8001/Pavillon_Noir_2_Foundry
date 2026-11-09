@@ -1,0 +1,42 @@
+{
+  "_id": "50wem283hQop27Hl",
+  "_key": "!items!50wem283hQop27Hl",
+  "name": "Héroïsme de Cuchulainn",
+  "type": "pouvoir",
+  "img": "icons/svg/aura.svg",
+  "system": {
+    "description": "<p><strong>Visions</strong></p><ul><li>Peau brûlant comme le magma en fusion.</li><li>Fonte des neiges.</li><li>Mer bouillante.</li><li>Contorsions.</li><li>Prendre n&#x27;importe quelle forme.</li><li>Vigueur surhumaine.</li><li>Courage.</li><li>Coup infaillible.</li></ul><p><strong>Compulsions.</strong> Entrer dans de l&#x27;eau bouillante. Affronter seul plus de cinq ennemis armés.</p>",
+    "source": "Entre ciel et terre, p. 253",
+    "voie": "voie-du-druidisme",
+    "voieUuid": "Compendium.pavillon-noir-2.voies.Item.444Fft7a0LtvOMIS",
+    "puissance": 6,
+    "nomNatif": "",
+    "compulsion": "Entrer dans de l'eau bouillante. Affronter seul plus de cinq ennemis armés.",
+    "accessible": true,
+    "visions": "Peau brûlant comme le magma en fusion. · Fonte des neiges. · Mer bouillante. · Contorsions. · Prendre n'importe quelle forme. · Vigueur surhumaine. · Courage. · Coup infaillible.",
+    "portee": "Personnelle",
+    "cible": "Moi",
+    "impact": "",
+    "duree": "4 h",
+    "conditions": "",
+    "references": "",
+    "application": "manuel"
+  },
+  "effects": [],
+  "folder": "GhMxnwLVYmucd3Qt",
+  "sort": 60040,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.345",
+    "systemId": "pavillon-noir-2",
+    "systemVersion": "0.7.0",
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": null
+  }
+}

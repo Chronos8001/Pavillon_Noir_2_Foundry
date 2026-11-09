@@ -1,0 +1,42 @@
+{
+  "_id": "ur7E5LDKi0H6fUca",
+  "_key": "!items!ur7E5LDKi0H6fUca",
+  "name": "Celui qui est au milieu",
+  "type": "pouvoir",
+  "img": "icons/svg/aura.svg",
+  "system": {
+    "description": "<p><strong>Visions</strong></p><ul><li>Fait assumer la tâche de médiateur.</li><li>Celui qui est au milieu devient l&#x27;ennemi de chaque camp.</li><li>Donne à celui qui est au milieu une image de vertu.</li></ul><p><strong>Compulsions.</strong> Prendre la défense du camp adverse. Régler un différend en douceur.</p>",
+    "source": "Entre ciel et terre, p. 191",
+    "voie": "voie-des-zemis",
+    "voieUuid": "Compendium.pavillon-noir-2.voies.Item.adV2aUWhmHXDCarX",
+    "puissance": 2,
+    "nomNatif": "abatenari",
+    "compulsion": "Prendre la défense du camp adverse. Régler un différend en douceur.",
+    "accessible": true,
+    "visions": "Fait assumer la tâche de médiateur. · Celui qui est au milieu devient l'ennemi de chaque camp. · Donne à celui qui est au milieu une image de vertu.",
+    "portee": "Ici",
+    "cible": "Lui",
+    "impact": "",
+    "duree": "24 h",
+    "conditions": "",
+    "references": "",
+    "application": "manuel"
+  },
+  "effects": [],
+  "folder": "pdOB4V6FtlhUIRJ0",
+  "sort": 20004,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.345",
+    "systemId": "pavillon-noir-2",
+    "systemVersion": "0.7.0",
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": null
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "_id": "D4LKAmMaM62pYwpi",
+  "_key": "!items!D4LKAmMaM62pYwpi",
+  "name": "Victoire dans la mort",
+  "type": "pouvoir",
+  "img": "icons/svg/aura.svg",
+  "system": {
+    "description": "<p><strong>Visions</strong></p><ul><li>Les hommes continuent à se battre, même morts, jusqu&#x27;à la fin du combat.</li><li>Donne l&#x27;impression que c&#x27;est en mourant que l&#x27;on trouvera la victoire.</li><li>Incite à se soumettre plutôt que de se faire massacrer.</li><li>Conséquences néfastes pour le vainqueur d&#x27;une bataille.</li></ul><p><strong>Compulsions.</strong> Expérimenter une cuisante défaite. Se rendre alors qu&#x27;on était en train de gagner.</p>",
+    "source": "Entre ciel et terre, p. 294",
+    "voie": "voie-des-guedes",
+    "voieUuid": "Compendium.pavillon-noir-2.voies.Item.BJZUi8OCwtnsr9Ow",
+    "puissance": 8,
+    "nomNatif": "victwa nan lanmo",
+    "compulsion": "Expérimenter une cuisante défaite. Se rendre alors qu'on était en train de gagner.",
+    "accessible": true,
+    "visions": "Les hommes continuent à se battre, même morts, jusqu'à la fin du combat. · Donne l'impression que c'est en mourant que l'on trouvera la victoire. · Incite à se soumettre plutôt que de se faire massacrer. · Conséquences néfastes pour le vainqueur d'une bataille.",
+    "portee": "Là",
+    "cible": "Nous",
+    "impact": "",
+    "duree": "1 semaine",
+    "conditions": "",
+    "references": "",
+    "application": "manuel"
+  },
+  "effects": [],
+  "folder": "JpLFK1RzFtuXLx0v",
+  "sort": 80030,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.345",
+    "systemId": "pavillon-noir-2",
+    "systemVersion": "0.7.0",
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": null
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "_id": "KggjiuNd4l7MF0o5",
+  "_key": "!items!KggjiuNd4l7MF0o5",
+  "name": "Handicap",
+  "type": "pouvoir",
+  "img": "icons/svg/aura.svg",
+  "system": {
+    "description": "<p><strong>Visions</strong></p><ul><li>Crée un handicap physique (pied bot, bec de lièvre, boitement, haleine pestilentielle, paralysie, etc.).</li><li>Lève un handicap physique ou fait disparaître des séquelles de blessure.</li><li>Crée un handicap mental (stupidité, obsessions, dépression, cyclothymie, etc.).</li><li>Fait disparaître un handicap mental.</li></ul><p><strong>Compulsions.</strong> Handicaper quelqu&#x27;un physiquement. Démontrer à quelqu&#x27;un qu&#x27;il handicape son groupe.</p>",
+    "source": "Entre ciel et terre, p. 266",
+    "voie": "voie-du-folklore",
+    "voieUuid": "Compendium.pavillon-noir-2.voies.Item.Iy4OYyIN7hI6KjNY",
+    "puissance": 6,
+    "nomNatif": "",
+    "compulsion": "Handicaper quelqu'un physiquement. Démontrer à quelqu'un qu'il handicape son groupe.",
+    "accessible": true,
+    "visions": "Crée un handicap physique (pied bot, bec de lièvre, boitement, haleine pestilentielle, paralysie, etc.). · Lève un handicap physique ou fait disparaître des séquelles de blessure. · Crée un handicap mental (stupidité, obsessions, dépression, cyclothymie, etc.). · Fait disparaître un handicap mental.",
+    "portee": "Toucher",
+    "cible": "Lui",
+    "impact": "",
+    "duree": "Permanent",
+    "conditions": "",
+    "references": "",
+    "application": "manuel"
+  },
+  "effects": [],
+  "folder": "aLFfT6IKRuY7TugP",
+  "sort": 60024,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.345",
+    "systemId": "pavillon-noir-2",
+    "systemVersion": "0.7.0",
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": null
+  }
+}

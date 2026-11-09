@@ -1,0 +1,42 @@
+{
+  "_id": "6QYhHqgfbjQgMesn",
+  "_key": "!items!6QYhHqgfbjQgMesn",
+  "name": "Amon",
+  "type": "pouvoir",
+  "img": "icons/svg/aura.svg",
+  "system": {
+    "description": "<p><strong>Visions</strong></p><ul><li>Connaissance d&#x27;un élément passé ou futur lié à la personne à laquelle on parle à l&#x27;heure où on lui parle (le jour pouvant être différent), pour un événement à une distance temporelle d&#x27;une semaine au plus.</li><li>Recherche de la querelle.</li><li>Entente entre ennemis.</li><li>Ignorance stupide.</li><li>Négligence et paresse.</li><li>Désintérêt pour l&#x27;apprentissage.</li><li>Impatience.</li><li>Frein aux découvertes bénéfiques à l&#x27;Homme.</li><li>Contrer les pouvoirs de l&#x27;ange Achaiah.</li></ul><ul><li><strong>Aspect.</strong> Loup à queue de serpent pouvant cracher du feu, ou homme à tête de corbeau, parfois avec des dents de chien.</li><li><strong>Heure.</strong> 2h00 à 2h20.</li><li><strong>Jours.</strong> 21 au 25 avril. 28 mars, 10 juin, 25 août, 6 novembre, 16 janvier.</li><li><strong>Couleurs/Cristal.</strong> Couleur claire ou violet/Rubis.</li></ul>",
+    "source": "Entre ciel et terre, p. 231",
+    "voie": "voie-des-qlipoth",
+    "voieUuid": "Compendium.pavillon-noir-2.voies.Item.28cj5d17pp6tLLr8",
+    "puissance": 1,
+    "nomNatif": "Faux dieu",
+    "compulsion": "",
+    "accessible": true,
+    "visions": "Connaissance d'un élément passé ou futur lié à la personne à laquelle on parle à l'heure où on lui parle (le jour pouvant être différent), pour un événement à une distance temporelle d'une semaine au plus. · Recherche de la querelle. · Entente entre ennemis. · Ignorance stupide. · Négligence et paresse. · Désintérêt pour l'apprentissage. · Impatience. · Frein aux découvertes bénéfiques à l'Homme. · Contrer les pouvoirs de l'ange Achaiah.",
+    "portee": "Voix",
+    "cible": "Toi",
+    "impact": "",
+    "duree": "2 min",
+    "conditions": "",
+    "references": "",
+    "application": "manuel"
+  },
+  "effects": [],
+  "folder": "I3FQOgCqphyIoMbm",
+  "sort": 10007,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.345",
+    "systemId": "pavillon-noir-2",
+    "systemVersion": "0.7.0",
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": null
+  }
+}

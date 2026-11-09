@@ -1,0 +1,42 @@
+{
+  "_id": "0OFID07W8GH3YNuT",
+  "_key": "!items!0OFID07W8GH3YNuT",
+  "name": "Cuirasse",
+  "type": "pouvoir",
+  "img": "icons/svg/aura.svg",
+  "system": {
+    "description": "<p><strong>Visions</strong></p><ul><li>Permet de toucher systématiquement le défaut d&#x27;une armure.</li><li>Donne la sensation qu&#x27;une armure est truffée de défauts.</li><li>Forme une cuirasse à partir de vêtements (1 point de protection).</li><li>Forme une carapace sur la peau ou sur la coque d&#x27;un navire (1 point de protection).</li><li>Alourdit des vêtements et les rend incommodes.</li></ul><p><strong>Compulsions.</strong> Se vêtir en armure. Disséquer un insecte.</p>",
+    "source": "Entre ciel et terre, p. 305",
+    "voie": "voie-d-ogou",
+    "voieUuid": "Compendium.pavillon-noir-2.voies.Item.nT1z9NA3nij69fC3",
+    "puissance": 3,
+    "nomNatif": "protèj",
+    "compulsion": "Se vêtir en armure. Disséquer un insecte.",
+    "accessible": true,
+    "visions": "Permet de toucher systématiquement le défaut d'une armure. · Donne la sensation qu'une armure est truffée de défauts. · Forme une cuirasse à partir de vêtements (1 point de protection). · Forme une carapace sur la peau ou sur la coque d'un navire (1 point de protection). · Alourdit des vêtements et les rend incommodes.",
+    "portee": "Toucher",
+    "cible": "Lui",
+    "impact": "",
+    "duree": "1 cycle",
+    "conditions": "",
+    "references": "",
+    "application": "manuel"
+  },
+  "effects": [],
+  "folder": "jrCp3TXiMnGmStXb",
+  "sort": 30010,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.345",
+    "systemId": "pavillon-noir-2",
+    "systemVersion": "0.7.0",
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": null
+  }
+}

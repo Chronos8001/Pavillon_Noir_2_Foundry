@@ -1,0 +1,42 @@
+{
+  "_id": "0MDNyJyNKKdAewl8",
+  "_key": "!items!0MDNyJyNKKdAewl8",
+  "name": "Pahaliah",
+  "type": "pouvoir",
+  "img": "icons/svg/aura.svg",
+  "system": {
+    "description": "<p><strong>Visions</strong></p><ul><li>Révélation de la vérité.</li><li>Savoir et sagesse.</li><li>Retour des égarés.</li><li>Stimulation de la chasteté.</li><li>Ramener à une bonne conduite.</li><li>Contrer les pouvoirs du démon Purson.</li></ul><ul><li><strong>Attribut.</strong> Dieu rédempteur.</li><li><strong>Heure.</strong> 6h20 à 6h40.</li><li><strong>Jours.</strong> 28 juin au 2 juillet. 10 avril, 23 juin, 7 septembre, 19 novembre, 28 janvier.</li><li><strong>Couleurs/Cristal.</strong> Bleu ou rouge/Malachite.</li><li><strong>Prière.</strong> « Domine libera animam meam a labiis iniquis, et a lingua dolosa. »</li></ul>",
+    "source": "Entre ciel et terre, p. 218",
+    "voie": "voie-des-sephiroth",
+    "voieUuid": "Compendium.pavillon-noir-2.voies.Item.5soP14P6cbQPMX5I",
+    "puissance": 3,
+    "nomNatif": "Trône",
+    "compulsion": "",
+    "accessible": true,
+    "visions": "Révélation de la vérité. · Savoir et sagesse. · Retour des égarés. · Stimulation de la chasteté. · Ramener à une bonne conduite. · Contrer les pouvoirs du démon Purson.",
+    "portee": "Vue/Voix/Ouïe",
+    "cible": "Toi",
+    "impact": "",
+    "duree": "24 h",
+    "conditions": "",
+    "references": "",
+    "application": "manuel"
+  },
+  "effects": [],
+  "folder": "bbVpwWTAqt36UWdh",
+  "sort": 30020,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.345",
+    "systemId": "pavillon-noir-2",
+    "systemVersion": "0.7.0",
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": null
+  }
+}

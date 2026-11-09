@@ -1,0 +1,42 @@
+{
+  "_id": "enwmogNC2DasRK3U",
+  "_key": "!items!enwmogNC2DasRK3U",
+  "name": "Infatigable voyageur",
+  "type": "pouvoir",
+  "img": "icons/svg/aura.svg",
+  "system": {
+    "description": "<p><strong>Visions</strong></p><ul><li>Endurance du voyageur.</li><li>Redonner courage.</li><li>Moyen de transport adéquat.</li><li>Moyen de transport résistant.</li></ul><p><strong>Compulsions.</strong> Saboter un moyen de transport. Fournir un effort jusqu&#x27;à tomber d&#x27;épuisement.</p>",
+    "source": "Entre ciel et terre, p. 277",
+    "voie": "voie-d-agwe",
+    "voieUuid": "Compendium.pavillon-noir-2.voies.Item.6bwsVNHhFxnjtf9Q",
+    "puissance": 4,
+    "nomNatif": "pa fatige v waya j e",
+    "compulsion": "Saboter un moyen de transport. Fournir un effort jusqu'à tomber d'épuisement.",
+    "accessible": true,
+    "visions": "Endurance du voyageur. · Redonner courage. · Moyen de transport adéquat. · Moyen de transport résistant.",
+    "portee": "Toucher",
+    "cible": "Toi",
+    "impact": "",
+    "duree": "Voyage",
+    "conditions": "",
+    "references": "",
+    "application": "manuel"
+  },
+  "effects": [],
+  "folder": "xaG58lKGMpuXcD6x",
+  "sort": 40009,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.345",
+    "systemId": "pavillon-noir-2",
+    "systemVersion": "0.7.0",
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": null
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "_id": "peNh5NDFY5fJ4d7m",
+  "_key": "!items!peNh5NDFY5fJ4d7m",
+  "name": "Envoyés d'Ichéiricou",
+  "type": "pouvoir",
+  "img": "icons/svg/aura.svg",
+  "system": {
+    "description": "<p><strong>Visions</strong></p><ul><li>Fait parler un oiseau.</li><li>Demande de l&#x27;aide aux oiseaux.</li><li>Fait passer des personnes pour des envoyés du divin.</li><li>Donne à quelqu&#x27;un le statut d&#x27;envoyé d&#x27;Ichéiricou, si bien qu&#x27;il ne pourra ni mentir ni trahir.</li></ul><p><strong>Compulsions.</strong> Arriver à comprendre les besoins ou désirs d&#x27;un oiseau. Donner comme mission à un oiseau de transmettre un message important.</p>",
+    "source": "Entre ciel et terre, p. 182",
+    "voie": "voie-d-icheiricou-pour-la-protection-et-la-punition",
+    "voieUuid": "Compendium.pavillon-noir-2.voies.Item.yH60f20rPKBEP9j4",
+    "puissance": 4,
+    "nomNatif": "Ichéiricou chatomancae lianum",
+    "compulsion": "Arriver à comprendre les besoins ou désirs d'un oiseau. Donner comme mission à un oiseau de transmettre un message important.",
+    "accessible": true,
+    "visions": "Fait parler un oiseau. · Demande de l'aide aux oiseaux. · Fait passer des personnes pour des envoyés du divin. · Donne à quelqu'un le statut d'envoyé d'Ichéiricou, si bien qu'il ne pourra ni mentir ni trahir.",
+    "portee": "Là",
+    "cible": "Vous",
+    "impact": "",
+    "duree": "24 h",
+    "conditions": "",
+    "references": "",
+    "application": "manuel"
+  },
+  "effects": [],
+  "folder": "aNYZvvAOkWDjlSbd",
+  "sort": 40008,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.345",
+    "systemId": "pavillon-noir-2",
+    "systemVersion": "0.7.0",
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": null
+  }
+}

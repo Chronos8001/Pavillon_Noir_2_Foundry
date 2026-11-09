@@ -1,0 +1,42 @@
+{
+  "_id": "laqh5zDdJTXem9Xe",
+  "_key": "!items!laqh5zDdJTXem9Xe",
+  "name": "Tintamarre",
+  "type": "pouvoir",
+  "img": "icons/svg/aura.svg",
+  "system": {
+    "description": "<p><strong>Visions</strong></p><ul><li>Fait passer un tintamarre pour le bruit du vent dans les branches.</li><li>Illusion d&#x27;un tintamarre.</li><li>Pousser à faire beaucoup de bruit.</li></ul><p><strong>Compulsions.</strong> Réveiller tout le monde par un boucan d&#x27;enfer. Trouver un buisson de casse (plante médicinale laxative dont le buisson produit un bruit de métal entrechoqué).</p>",
+    "source": "Entre ciel et terre, p. 171",
+    "voie": "voie-d-icheiricou-pour-la-guerre",
+    "voieUuid": "Compendium.pavillon-noir-2.voies.Item.ua948TzRBv4MWuy4",
+    "puissance": 1,
+    "nomNatif": "laroulouchagoni",
+    "compulsion": "Réveiller tout le monde par un boucan d'enfer. Trouver un buisson de casse (plante médicinale laxative dont le buisson produit un bruit de métal entrechoqué).",
+    "accessible": true,
+    "visions": "Fait passer un tintamarre pour le bruit du vent dans les branches. · Illusion d'un tintamarre. · Pousser à faire beaucoup de bruit.",
+    "portee": "Ouïe, Ici",
+    "cible": "Vous",
+    "impact": "",
+    "duree": "30 s",
+    "conditions": "",
+    "references": "",
+    "application": "manuel"
+  },
+  "effects": [],
+  "folder": "tYn7s19RmGg8GMUR",
+  "sort": 10004,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.345",
+    "systemId": "pavillon-noir-2",
+    "systemVersion": "0.7.0",
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": null
+  }
+}

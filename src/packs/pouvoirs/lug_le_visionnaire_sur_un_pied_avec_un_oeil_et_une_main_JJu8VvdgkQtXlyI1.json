@@ -1,0 +1,42 @@
+{
+  "_id": "JJu8VvdgkQtXlyI1",
+  "_key": "!items!JJu8VvdgkQtXlyI1",
+  "name": "Lug le visionnaire, sur un pied, avec un oeil et une main",
+  "type": "pouvoir",
+  "img": "icons/svg/aura.svg",
+  "system": {
+    "description": "<p><strong>Visions</strong></p><ul><li>Prononçant une phrase de poésie, le druide lui confère un caractère à la fois prophétique et cryptique.</li><li>Prophétie sur le futur d&#x27;une personne.</li><li>Prophétie sur l&#x27;arrivée d&#x27;un événement.</li><li>Prophétie sur la conduite d&#x27;une rencontre.</li></ul><p><strong>Compulsions.</strong> Combattre avec un oeil fermé, à cloche-pied et une main dans le dos. Amputer alors que ce n&#x27;était pas nécessaire.</p>",
+    "source": "Entre ciel et terre, p. 251",
+    "voie": "voie-du-druidisme",
+    "voieUuid": "Compendium.pavillon-noir-2.voies.Item.444Fft7a0LtvOMIS",
+    "puissance": 4,
+    "nomNatif": "",
+    "compulsion": "Combattre avec un oeil fermé, à cloche-pied et une main dans le dos. Amputer alors que ce n'était pas nécessaire.",
+    "accessible": true,
+    "visions": "Prononçant une phrase de poésie, le druide lui confère un caractère à la fois prophétique et cryptique. · Prophétie sur le futur d'une personne. · Prophétie sur l'arrivée d'un événement. · Prophétie sur la conduite d'une rencontre.",
+    "portee": "Voix",
+    "cible": "Toi",
+    "impact": "",
+    "duree": "1 mois",
+    "conditions": "",
+    "references": "",
+    "application": "manuel"
+  },
+  "effects": [],
+  "folder": "GhMxnwLVYmucd3Qt",
+  "sort": 40027,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.345",
+    "systemId": "pavillon-noir-2",
+    "systemVersion": "0.7.0",
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": null
+  }
+}

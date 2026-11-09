@@ -1,0 +1,42 @@
+{
+  "_id": "iBoreygjCkhWrwc5",
+  "_key": "!items!iBoreygjCkhWrwc5",
+  "name": "Chéri des lwas",
+  "type": "pouvoir",
+  "img": "icons/svg/aura.svg",
+  "system": {
+    "description": "<p><strong>Visions</strong></p><ul><li>Protection contre tout ce qui pourrait faire du mal à une femme : physiquement, psychologiquement et sentimentalement.</li><li>Jalousie envers plus chanceux.</li><li>Compréhension instinctive des lois naturelles (mécanique, physique, biologie).</li></ul><p><strong>Compulsions.</strong> Avancer au hasard dans le danger. Faire courir des bruits sur sa chance suscitant une forte jalousie.</p>",
+    "source": "Entre ciel et terre, p. 289",
+    "voie": "voie-d-erzulie",
+    "voieUuid": "Compendium.pavillon-noir-2.voies.Item.0cPd7IIiO1TgbK81",
+    "puissance": 7,
+    "nomNatif": "lwas pran swen",
+    "compulsion": "Avancer au hasard dans le danger. Faire courir des bruits sur sa chance suscitant une forte jalousie.",
+    "accessible": true,
+    "visions": "Protection contre tout ce qui pourrait faire du mal à une femme : physiquement, psychologiquement et sentimentalement. · Jalousie envers plus chanceux. · Compréhension instinctive des lois naturelles (mécanique, physique, biologie).",
+    "portee": "Là-bas",
+    "cible": "Eux",
+    "impact": "",
+    "duree": "1 cycle",
+    "conditions": "",
+    "references": "",
+    "application": "manuel"
+  },
+  "effects": [],
+  "folder": "46EaXMNeQpoA9M1j",
+  "sort": 70031,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.345",
+    "systemId": "pavillon-noir-2",
+    "systemVersion": "0.7.0",
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": null
+  }
+}

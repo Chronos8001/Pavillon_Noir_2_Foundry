@@ -1,0 +1,42 @@
+{
+  "_id": "ZDsHZce6ZYrUesGl",
+  "_key": "!items!ZDsHZce6ZYrUesGl",
+  "name": "Pierre de David",
+  "type": "pouvoir",
+  "img": "icons/svg/aura.svg",
+  "system": {
+    "description": "<p><strong>Visions</strong></p><ul><li>Donne la sensation que le petit peut vaincre le grand.</li><li>Découvre une faille chez un adversaire supérieur.</li><li>Une pierre qui tuera net la personne qu&#x27;elle percutera.</li></ul><p><strong>Compulsions.</strong> Abattre l&#x27;ennemi le plus puissant avec lus simple possible. Se battre avec des pierres.</p>",
+    "source": "Entre ciel et terre, p. 212",
+    "voie": "voie-de-dieu",
+    "voieUuid": "Compendium.pavillon-noir-2.voies.Item.SPlB5GslKnZdeWKG",
+    "puissance": 6,
+    "nomNatif": "",
+    "compulsion": "Abattre l'ennemi le plus puissant avec lus simple possible. Se battre avec des pierres.",
+    "accessible": true,
+    "visions": "Donne la sensation que le petit peut vaincre le grand. · Découvre une faille chez un adversaire supérieur. · Une pierre qui tuera net la personne qu'elle percutera.",
+    "portee": "Personnelle",
+    "cible": "Moi",
+    "impact": "",
+    "duree": "1 cycle",
+    "conditions": "",
+    "references": "",
+    "application": "manuel"
+  },
+  "effects": [],
+  "folder": "3eghhFTqBb7T4d5D",
+  "sort": 60027,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.345",
+    "systemId": "pavillon-noir-2",
+    "systemVersion": "0.7.0",
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": null
+  }
+}

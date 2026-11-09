@@ -1,0 +1,42 @@
+{
+  "_id": "e4KRViQ4Ya7xdbOt",
+  "_key": "!items!e4KRViQ4Ya7xdbOt",
+  "name": "Mange ton ennemi",
+  "type": "pouvoir",
+  "img": "icons/svg/aura.svg",
+  "system": {
+    "description": "<p><strong>Visions</strong></p><ul><li>Pousse au cannibalisme.</li><li>Se protège des congénères (chiques, poux, puces, requins) de ce ou celui qu&#x27;on a mangé.</li><li>Suscite la terreur pour celui qui mange ses ennemis.</li><li>Absorbe de la force vitale de l&#x27;adversaire dont on consomme la chair (donne un bonus dans la Caractéristique maîtresse de l&#x27;adversaire).</li></ul><p><strong>Compulsions.</strong> Lacérer à mort, boucaner et manger un ennemi (arawak de préférence).</p>",
+    "source": "Entre ciel et terre, p. 173",
+    "voie": "voie-d-icheiricou-pour-la-guerre",
+    "voieUuid": "Compendium.pavillon-noir-2.voies.Item.ua948TzRBv4MWuy4",
+    "puissance": 6,
+    "nomNatif": "narribeletacayem",
+    "compulsion": "Lacérer à mort, boucaner et manger un ennemi (arawak de préférence).",
+    "accessible": true,
+    "visions": "Pousse au cannibalisme. · Se protège des congénères (chiques, poux, puces, requins) de ce ou celui qu'on a mangé. · Suscite la terreur pour celui qui mange ses ennemis. · Absorbe de la force vitale de l'adversaire dont on consomme la chair (donne un bonus dans la Caractéristique maîtresse de l'adversaire).",
+    "portee": "Manger",
+    "cible": "Vous",
+    "impact": "",
+    "duree": "24 h ou 1 lune (absorber la force vitale)",
+    "conditions": "",
+    "references": "",
+    "application": "manuel"
+  },
+  "effects": [],
+  "folder": "tYn7s19RmGg8GMUR",
+  "sort": 60024,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.345",
+    "systemId": "pavillon-noir-2",
+    "systemVersion": "0.7.0",
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": null
+  }
+}

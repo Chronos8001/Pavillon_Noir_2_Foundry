@@ -1,0 +1,42 @@
+{
+  "_id": "pcfd4IReUmjpXkd6",
+  "_key": "!items!pcfd4IReUmjpXkd6",
+  "name": "Souplesse du serpent",
+  "type": "pouvoir",
+  "img": "icons/svg/aura.svg",
+  "system": {
+    "description": "<p><strong>Visions</strong></p><ul><li>Déboîter ses articulations.</li><li>Diminuer un impact.</li><li>Devenir petit et gros ou grand et mince.</li></ul><p><strong>Compulsions.</strong> Se luxer volontairement la main. Préparer un pain, une galette ou une cassave démesurément long. Se contorsionner sur le sol comme un serpent.</p><p><em>Règles particulières : voir Entre ciel et terre, p. 280.</em></p>",
+    "source": "Entre ciel et terre, p. 280",
+    "voie": "voie-de-dambala",
+    "voieUuid": "Compendium.pavillon-noir-2.voies.Item.fVIeiRnBn8ADVFE2",
+    "puissance": 1,
+    "nomNatif": "ajil koulèv",
+    "compulsion": "Se luxer volontairement la main. Préparer un pain, une galette ou une cassave démesurément long. Se contorsionner sur le sol comme un serpent.",
+    "accessible": true,
+    "visions": "Déboîter ses articulations. · Diminuer un impact. · Devenir petit et gros ou grand et mince.",
+    "portee": "Personnelle",
+    "cible": "Moi",
+    "impact": "",
+    "duree": "1 cycle",
+    "conditions": "",
+    "references": "",
+    "application": "manuel"
+  },
+  "effects": [],
+  "folder": "BsFkHFCdWu35mdPn",
+  "sort": 10002,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.345",
+    "systemId": "pavillon-noir-2",
+    "systemVersion": "0.7.0",
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": null
+  }
+}

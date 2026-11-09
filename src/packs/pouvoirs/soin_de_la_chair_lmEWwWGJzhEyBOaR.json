@@ -1,0 +1,42 @@
+{
+  "_id": "lmEWwWGJzhEyBOaR",
+  "_key": "!items!lmEWwWGJzhEyBOaR",
+  "name": "Soin de la chair",
+  "type": "pouvoir",
+  "img": "icons/svg/aura.svg",
+  "system": {
+    "description": "<p><strong>Visions</strong></p><ul><li>Soin d&#x27;une blessure légère, sérieuse ou grave.</li><li>Embellit la peau et la forme de l&#x27;enveloppe corporelle.</li><li>Protection contre les moustiques.</li><li>Donne une obsession pour le soin porté à sa peau et à sa beauté.</li></ul><p><strong>Compulsions.</strong> Soigner une blessure. Prendre soin de son corps.</p>",
+    "source": "Entre ciel et terre, p. 181",
+    "voie": "voie-d-icheiricou-pour-la-protection-et-la-punition",
+    "voieUuid": "Compendium.pavillon-noir-2.voies.Item.yH60f20rPKBEP9j4",
+    "puissance": 2,
+    "nomNatif": "nanhaognacayem",
+    "compulsion": "Soigner une blessure. Prendre soin de son corps.",
+    "accessible": true,
+    "visions": "Soin d'une blessure légère, sérieuse ou grave. · Embellit la peau et la forme de l'enveloppe corporelle. · Protection contre les moustiques. · Donne une obsession pour le soin porté à sa peau et à sa beauté.",
+    "portee": "Toucher ou Voix",
+    "cible": "Toi",
+    "impact": "",
+    "duree": "24 h ou Permanent (soin)",
+    "conditions": "",
+    "references": "",
+    "application": "manuel"
+  },
+  "effects": [],
+  "folder": "aNYZvvAOkWDjlSbd",
+  "sort": 20004,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.345",
+    "systemId": "pavillon-noir-2",
+    "systemVersion": "0.7.0",
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": null
+  }
+}

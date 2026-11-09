@@ -1,0 +1,42 @@
+{
+  "_id": "QXR2ToQLnjXpcD7m",
+  "_key": "!items!QXR2ToQLnjXpcD7m",
+  "name": "Vision de l'au-delà",
+  "type": "pouvoir",
+  "img": "icons/svg/aura.svg",
+  "system": {
+    "description": "<p><strong>Visions</strong></p><ul><li>Donne un aperçu (effrayant ou apaisant) de sa prochaine vie.</li><li>Permet de voir les lwas à l&#x27;oeuvre dans le monde lors d&#x27;une hallucination (conversion possible de la cible au vaudou).</li><li>Fait voir des morts et des esprits partout.</li><li>Permet de voir ce que voit un mort particulier.</li></ul><p><strong>Compulsions.</strong> Disséquer un corps. Arracher les yeux d&#x27;un mort et fabriquer un masque avec.</p>",
+    "source": "Entre ciel et terre, p. 292",
+    "voie": "voie-des-guedes",
+    "voieUuid": "Compendium.pavillon-noir-2.voies.Item.BJZUi8OCwtnsr9Ow",
+    "puissance": 3,
+    "nomNatif": "visyon lotbo",
+    "compulsion": "Disséquer un corps. Arracher les yeux d'un mort et fabriquer un masque avec.",
+    "accessible": true,
+    "visions": "Donne un aperçu (effrayant ou apaisant) de sa prochaine vie. · Permet de voir les lwas à l'oeuvre dans le monde lors d'une hallucination (conversion possible de la cible au vaudou). · Fait voir des morts et des esprits partout. · Permet de voir ce que voit un mort particulier.",
+    "portee": "Vue",
+    "cible": "Lui",
+    "impact": "",
+    "duree": "24 h",
+    "conditions": "",
+    "references": "",
+    "application": "manuel"
+  },
+  "effects": [],
+  "folder": "JpLFK1RzFtuXLx0v",
+  "sort": 30010,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.345",
+    "systemId": "pavillon-noir-2",
+    "systemVersion": "0.7.0",
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": null
+  }
+}

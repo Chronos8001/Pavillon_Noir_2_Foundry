@@ -1,0 +1,42 @@
+{
+  "_id": "kbWzwCNXGtRgfCso",
+  "_key": "!items!kbWzwCNXGtRgfCso",
+  "name": "Univers féerique",
+  "type": "pouvoir",
+  "img": "icons/svg/aura.svg",
+  "system": {
+    "description": "<p><strong>Visions</strong></p><ul><li>Incarner tout être proche du monde humain en son double féerique.</li><li>Échanger les doubles féeriques de deux personnes.</li><li>Vulnérabilité d&#x27;un humain à l&#x27;incrédulité dont souffrent les fées.</li><li>Levée de l&#x27;incrédulité des humains envers les fées.</li><li>Se métamorphoser à volonté en n&#x27;importe quelle fée.</li></ul><p><strong>Compulsions.</strong> Faire cohabiter un grand nombre de fées avec un grand nombre d&#x27;humains.</p><p><em>Règles particulières : voir Entre ciel et terre, p. 269.</em></p>",
+    "source": "Entre ciel et terre, p. 269",
+    "voie": "voie-du-folklore",
+    "voieUuid": "Compendium.pavillon-noir-2.voies.Item.Iy4OYyIN7hI6KjNY",
+    "puissance": 10,
+    "nomNatif": "",
+    "compulsion": "Faire cohabiter un grand nombre de fées avec un grand nombre d'humains.",
+    "accessible": true,
+    "visions": "Incarner tout être proche du monde humain en son double féerique. · Échanger les doubles féeriques de deux personnes. · Vulnérabilité d'un humain à l'incrédulité dont souffrent les fées. · Levée de l'incrédulité des humains envers les fées. · Se métamorphoser à volonté en n'importe quelle fée.",
+    "portee": "Là-bas",
+    "cible": "Eux",
+    "impact": "",
+    "duree": "Permanent",
+    "conditions": "",
+    "references": "",
+    "application": "manuel"
+  },
+  "effects": [],
+  "folder": "aLFfT6IKRuY7TugP",
+  "sort": 100036,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.345",
+    "systemId": "pavillon-noir-2",
+    "systemVersion": "0.7.0",
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": null
+  }
+}

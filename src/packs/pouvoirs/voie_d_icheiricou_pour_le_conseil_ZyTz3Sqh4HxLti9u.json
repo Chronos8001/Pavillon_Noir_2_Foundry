@@ -1,0 +1,22 @@
+{
+  "_id": "ZyTz3Sqh4HxLti9u",
+  "_key": "!folders!ZyTz3Sqh4HxLti9u",
+  "name": "Voie d'Ichéiricou pour le conseil",
+  "type": "Item",
+  "folder": null,
+  "sorting": "m",
+  "sort": 200000,
+  "color": null,
+  "description": "",
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.345",
+    "systemId": "pavillon-noir-2",
+    "systemVersion": "0.7.0",
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": null
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "_id": "4XtHkhcxeVsUm3rX",
+  "_key": "!items!4XtHkhcxeVsUm3rX",
+  "name": "Esprit rapace",
+  "type": "pouvoir",
+  "img": "icons/svg/aura.svg",
+  "system": {
+    "description": "<p><strong>Visions</strong></p><ul><li>Lacère l&#x27;image vitale de l&#x27;ennemi.</li><li>Métamorphose en rapace.</li><li>Exacerbe la pulsion pour l&#x27;argent et le pouvoir.</li><li>Ligote de son fil de coton incandescent (donne la fièvre).</li></ul><p><strong>Compulsions.</strong> Fondre sur un animal depuis une hauteur. Voler le bien d&#x27;un proche.</p><p><em>Règles particulières : voir Entre ciel et terre, p. 188.</em></p>",
+    "source": "Entre ciel et terre, p. 188",
+    "voie": "voie-des-xapiripe",
+    "voieUuid": "Compendium.pavillon-noir-2.voies.Item.uLmNntdGMAtLAIsE",
+    "puissance": 6,
+    "nomNatif": "koimari",
+    "compulsion": "Fondre sur un animal depuis une hauteur. Voler le bien d'un proche.",
+    "accessible": true,
+    "visions": "Lacère l'image vitale de l'ennemi. · Métamorphose en rapace. · Exacerbe la pulsion pour l'argent et le pouvoir. · Ligote de son fil de coton incandescent (donne la fièvre).",
+    "portee": "Là-bas",
+    "cible": "Lui",
+    "impact": "",
+    "duree": "24 h",
+    "conditions": "",
+    "references": "",
+    "application": "manuel"
+  },
+  "effects": [],
+  "folder": "MTKTGwYLgyfOOhl1",
+  "sort": 60028,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.345",
+    "systemId": "pavillon-noir-2",
+    "systemVersion": "0.7.0",
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": null
+  }
+}

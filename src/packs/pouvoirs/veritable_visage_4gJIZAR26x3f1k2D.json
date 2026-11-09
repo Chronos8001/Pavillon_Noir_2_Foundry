@@ -1,0 +1,42 @@
+{
+  "_id": "4gJIZAR26x3f1k2D",
+  "_key": "!items!4gJIZAR26x3f1k2D",
+  "name": "Véritable visage",
+  "type": "pouvoir",
+  "img": "icons/svg/aura.svg",
+  "system": {
+    "description": "<p><strong>Visions</strong></p><ul><li>Émotions visibles sur le visage.</li><li>Émotions feintes convaincantes.</li><li>Le rôle de chaque personne apparaît clairement.</li><li>Les visages cachés deviennent visibles.</li><li>Rend incapable de jouer la comédie.</li><li>Reconnaître une forme ténue ou floue.</li></ul><p><strong>Compulsions.</strong> Révéler sa présence lors d&#x27;une mission secrète. Sur-jouer une émotion ressentie.</p>",
+    "source": "Entre ciel et terre, p. 282",
+    "voie": "voie-de-dambala",
+    "voieUuid": "Compendium.pavillon-noir-2.voies.Item.fVIeiRnBn8ADVFE2",
+    "puissance": 3,
+    "nomNatif": "vre figi",
+    "compulsion": "Révéler sa présence lors d'une mission secrète. Sur-jouer une émotion ressentie.",
+    "accessible": true,
+    "visions": "Émotions visibles sur le visage. · Émotions feintes convaincantes. · Le rôle de chaque personne apparaît clairement. · Les visages cachés deviennent visibles. · Rend incapable de jouer la comédie. · Reconnaître une forme ténue ou floue.",
+    "portee": "Là",
+    "cible": "Lui",
+    "impact": "",
+    "duree": "1 semaine",
+    "conditions": "",
+    "references": "",
+    "application": "manuel"
+  },
+  "effects": [],
+  "folder": "BsFkHFCdWu35mdPn",
+  "sort": 30013,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.345",
+    "systemId": "pavillon-noir-2",
+    "systemVersion": "0.7.0",
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": null
+  }
+}

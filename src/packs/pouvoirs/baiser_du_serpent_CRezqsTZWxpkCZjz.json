@@ -1,0 +1,42 @@
+{
+  "_id": "CRezqsTZWxpkCZjz",
+  "_key": "!items!CRezqsTZWxpkCZjz",
+  "name": "Baiser du serpent",
+  "type": "pouvoir",
+  "img": "icons/svg/aura.svg",
+  "system": {
+    "description": "<p><strong>Visions</strong></p><ul><li>Venin mortel inoculé par morsure.</li><li>Aspirer le venin d&#x27;une blessure.</li><li>Soin immédiat de toute blessure subie dans l&#x27;heure par une personne.</li><li>Baiser envoûtant et addictif.</li></ul><p><strong>Compulsions.</strong> Embrasser une inconnue et arriver à la koulèv) faire revenir. Mordre un ami jusqu&#x27;au sang.</p>",
+    "source": "Entre ciel et terre, p. 284",
+    "voie": "voie-de-dambala",
+    "voieUuid": "Compendium.pavillon-noir-2.voies.Item.fVIeiRnBn8ADVFE2",
+    "puissance": 6,
+    "nomNatif": "bo koulèv",
+    "compulsion": "Embrasser une inconnue et arriver à la koulèv) faire revenir. Mordre un ami jusqu'au sang.",
+    "accessible": true,
+    "visions": "Venin mortel inoculé par morsure. · Aspirer le venin d'une blessure. · Soin immédiat de toute blessure subie dans l'heure par une personne. · Baiser envoûtant et addictif.",
+    "portee": "Personnelle",
+    "cible": "Toi",
+    "impact": "",
+    "duree": "1 cycle ou Permanent (soin)",
+    "conditions": "",
+    "references": "",
+    "application": "manuel"
+  },
+  "effects": [],
+  "folder": "BsFkHFCdWu35mdPn",
+  "sort": 60023,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.345",
+    "systemId": "pavillon-noir-2",
+    "systemVersion": "0.7.0",
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": null
+  }
+}

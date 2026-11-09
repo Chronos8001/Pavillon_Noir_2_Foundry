@@ -1,0 +1,42 @@
+{
+  "_id": "MxKIzcKHfkREOWOQ",
+  "_key": "!items!MxKIzcKHfkREOWOQ",
+  "name": "Enfant des fées",
+  "type": "pouvoir",
+  "img": "icons/svg/aura.svg",
+  "system": {
+    "description": "<p><strong>Visions</strong></p><ul><li>Initie à la Voie du Folklore (la Connaissance des mystères passe de 0 à 1, et un pouvoir de niveau 1 est immédiatement connu).</li><li>Consacre un enfant de deux fées, ou d&#x27;une fée et d&#x27;un être humain, pour qu&#x27;il puisse interagir avec les deux mondes sans souffrir de l&#x27;incrédulité.</li><li>Se fait passer auprès d&#x27;une fée pour son enfant.</li></ul><p><strong>Compulsions.</strong> Expliquer la nature des fées à un chrétien. Faire rencontrer des fées à un enfant.</p><p><em>Règles particulières : voir Entre ciel et terre, p. 264.</em></p>",
+    "source": "Entre ciel et terre, p. 264",
+    "voie": "voie-du-folklore",
+    "voieUuid": "Compendium.pavillon-noir-2.voies.Item.Iy4OYyIN7hI6KjNY",
+    "puissance": 3,
+    "nomNatif": "",
+    "compulsion": "Expliquer la nature des fées à un chrétien. Faire rencontrer des fées à un enfant.",
+    "accessible": true,
+    "visions": "Initie à la Voie du Folklore (la Connaissance des mystères passe de 0 à 1, et un pouvoir de niveau 1 est immédiatement connu). · Consacre un enfant de deux fées, ou d'une fée et d'un être humain, pour qu'il puisse interagir avec les deux mondes sans souffrir de l'incrédulité. · Se fait passer auprès d'une fée pour son enfant.",
+    "portee": "Voix",
+    "cible": "Toi",
+    "impact": "",
+    "duree": "Permanent",
+    "conditions": "",
+    "references": "",
+    "application": "manuel"
+  },
+  "effects": [],
+  "folder": "aLFfT6IKRuY7TugP",
+  "sort": 30013,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.345",
+    "systemId": "pavillon-noir-2",
+    "systemVersion": "0.7.0",
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": null
+  }
+}

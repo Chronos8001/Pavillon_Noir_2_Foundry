@@ -1,0 +1,42 @@
+{
+  "_id": "80hjdhGWaIGK1UrZ",
+  "_key": "!items!80hjdhGWaIGK1UrZ",
+  "name": "Blâme",
+  "type": "pouvoir",
+  "img": "icons/svg/aura.svg",
+  "system": {
+    "description": "<p><strong>Visions</strong></p><ul><li>Punir quelqu&#x27;un ayant transgressé ses interdits moraux en lui infligeant une déconsidération sociale importante.</li><li>Pousser les cibles à blâmer les personnes présentes qui le méritent.</li><li>Supprimer les effets négatifs d&#x27;un blâme (non magique) en termes de réputation.</li></ul><p><strong>Compulsions.</strong> S&#x27;arranger pour qu&#x27;une personne agissant mal soit déconsidérée sans qu&#x27;elle s&#x27;en aperçoive.</p>",
+    "source": "Entre ciel et terre, p. 251",
+    "voie": "voie-du-druidisme",
+    "voieUuid": "Compendium.pavillon-noir-2.voies.Item.444Fft7a0LtvOMIS",
+    "puissance": 4,
+    "nomNatif": "",
+    "compulsion": "S'arranger pour qu'une personne agissant mal soit déconsidérée sans qu'elle s'en aperçoive.",
+    "accessible": true,
+    "visions": "Punir quelqu'un ayant transgressé ses interdits moraux en lui infligeant une déconsidération sociale importante. · Pousser les cibles à blâmer les personnes présentes qui le méritent. · Supprimer les effets négatifs d'un blâme (non magique) en termes de réputation.",
+    "portee": "Voix",
+    "cible": "Toi",
+    "impact": "",
+    "duree": "1 semaine",
+    "conditions": "",
+    "references": "",
+    "application": "manuel"
+  },
+  "effects": [],
+  "folder": "GhMxnwLVYmucd3Qt",
+  "sort": 40022,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.345",
+    "systemId": "pavillon-noir-2",
+    "systemVersion": "0.7.0",
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": null
+  }
+}

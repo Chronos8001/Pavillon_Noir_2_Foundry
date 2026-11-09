@@ -1,0 +1,42 @@
+{
+  "_id": "3PqtS28qtyiG0l0m",
+  "_key": "!items!3PqtS28qtyiG0l0m",
+  "name": "Cri des oiseaux",
+  "type": "pouvoir",
+  "img": "icons/svg/aura.svg",
+  "system": {
+    "description": "<p><strong>Visions</strong></p><ul><li>Signification divinatoire du cri d&#x27;un oiseau.</li></ul><p><strong>Compulsions.</strong> Faire le lien entre un cri d&#x27;oiseau et un guille événement donné.</p><p><em>Règles particulières : voir Entre ciel et terre, p. 187.</em></p>",
+    "source": "Entre ciel et terre, p. 187",
+    "voie": "voie-des-xapiripe",
+    "voieUuid": "Compendium.pavillon-noir-2.voies.Item.uLmNntdGMAtLAIsE",
+    "puissance": 4,
+    "nomNatif": "rea",
+    "compulsion": "Faire le lien entre un cri d'oiseau et un guille événement donné.",
+    "accessible": true,
+    "visions": "Signification divinatoire du cri d'un oiseau.",
+    "portee": "Personnelle",
+    "cible": "Moi",
+    "impact": "",
+    "duree": "Permanent",
+    "conditions": "",
+    "references": "",
+    "application": "manuel"
+  },
+  "effects": [],
+  "folder": "MTKTGwYLgyfOOhl1",
+  "sort": 40020,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.345",
+    "systemId": "pavillon-noir-2",
+    "systemVersion": "0.7.0",
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": null
+  }
+}

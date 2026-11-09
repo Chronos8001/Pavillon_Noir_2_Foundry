@@ -1,0 +1,42 @@
+{
+  "_id": "YuDCBHgZNrrdgRme",
+  "_key": "!items!YuDCBHgZNrrdgRme",
+  "name": "Bathin",
+  "type": "pouvoir",
+  "img": "icons/svg/aura.svg",
+  "system": {
+    "description": "<p><strong>Visions</strong></p><ul><li>Vertus des pierres précieuses.</li><li>Transportation immédiate dans une région voisine (au choix) appartenant à une nationalité différente, mais sans choisir le lieu, puis retour au lieu de départ à la fin de la durée.</li><li>Protection contre le pouvoir ou la capacité spéciale d&#x27;un familier de Mage.</li><li>Issue scandaleuse d&#x27;un procès.</li><li>Domination de l&#x27;être obséquieux.</li><li>Basses magouilles.</li><li>Enrichissement aux dépends des autres.</li><li>Procédures embrouillées et écrasantes.</li><li>Protection du faux-témoin.</li><li>Contrer les pouvoirs de l&#x27;ange Caliel.</li></ul><ul><li><strong>Aspect.</strong> Homme fort à la queue de serpent montant un cheval pâle.</li><li><strong>Heure.</strong> 5h40 à 6h00.</li><li><strong>Jours.</strong> 16 au 21 juin. 8 avril, 21 juin, 5 septembre, 17 novembre, 26 janvier.</li><li><strong>Couleurs/Cristal.</strong> Jaune pâle ou vert pâle/Amazonite.</li></ul>",
+    "source": "Entre ciel et terre, p. 234",
+    "voie": "voie-des-qlipoth",
+    "voieUuid": "Compendium.pavillon-noir-2.voies.Item.28cj5d17pp6tLLr8",
+    "puissance": 3,
+    "nomNatif": "Vase d'Iniquité",
+    "compulsion": "",
+    "accessible": true,
+    "visions": "Vertus des pierres précieuses. · Transportation immédiate dans une région voisine (au choix) appartenant à une nationalité différente, mais sans choisir le lieu, puis retour au lieu de départ à la fin de la durée. · Protection contre le pouvoir ou la capacité spéciale d'un familier de Mage. · Issue scandaleuse d'un procès. · Domination de l'être obséquieux. · Basses magouilles. · Enrichissement aux dépends des autres. · Procédures embrouillées et écrasantes. · Protection du faux-témoin. · Contrer les pouvoirs de l'ange Caliel.",
+    "portee": "Ici",
+    "cible": "Lui",
+    "impact": "",
+    "duree": "4 h",
+    "conditions": "",
+    "references": "",
+    "application": "manuel"
+  },
+  "effects": [],
+  "folder": "I3FQOgCqphyIoMbm",
+  "sort": 30018,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.345",
+    "systemId": "pavillon-noir-2",
+    "systemVersion": "0.7.0",
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": null
+  }
+}

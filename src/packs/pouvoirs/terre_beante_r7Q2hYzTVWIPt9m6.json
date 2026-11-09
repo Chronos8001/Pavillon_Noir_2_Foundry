@@ -1,0 +1,42 @@
+{
+  "_id": "r7Q2hYzTVWIPt9m6",
+  "_key": "!items!r7Q2hYzTVWIPt9m6",
+  "name": "Terre béante",
+  "type": "pouvoir",
+  "img": "icons/svg/aura.svg",
+  "system": {
+    "description": "<p><strong>Visions</strong></p><ul><li>Découverte d&#x27;une grotte menant dans les entrailles de la un vill terre.</li><li>Découverte d&#x27;un terrier.</li><li>Ouverture d&#x27;une faille dans le sol.</li></ul><p><strong>Compulsions.</strong> Détacher un pan d&#x27;une falaise. Descendre dans le cratère d&#x27;un volcan.</p>",
+    "source": "Entre ciel et terre, p. 195",
+    "voie": "voie-des-zemis",
+    "voieUuid": "Compendium.pavillon-noir-2.voies.Item.adV2aUWhmHXDCarX",
+    "puissance": 8,
+    "nomNatif": "iahali",
+    "compulsion": "Détacher un pan d'une falaise. Descendre dans le cratère d'un volcan.",
+    "accessible": true,
+    "visions": "Découverte d'une grotte menant dans les entrailles de la un vill terre. · Découverte d'un terrier. · Ouverture d'une faille dans le sol.",
+    "portee": "Là",
+    "cible": "Toi",
+    "impact": "",
+    "duree": "1 cycle ou Permanent (faille)",
+    "conditions": "",
+    "references": "",
+    "application": "manuel"
+  },
+  "effects": [],
+  "folder": "pdOB4V6FtlhUIRJ0",
+  "sort": 80034,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.345",
+    "systemId": "pavillon-noir-2",
+    "systemVersion": "0.7.0",
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": null
+  }
+}
