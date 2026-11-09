@@ -15,27 +15,6 @@ from ect_pnj_avantages import PNJ, SOURCE, acteur, dossier_compendium, e, ecrire
 
 EQ = "src/packs/equipement"
 
-UTILISATION = (
-    "Utilisation (p. 160) : tenir l'objet, formuler un souhait lié à son Pouvoir et accomplir le rite pendant toute la Durée "
-    "d'activation, puis réussir un Test d'Objets de pouvoir (Charisme) avec au moins 2 Succès (sinon la divinité reste muette). "
-    "Le MJ déclenche les effets dans les 24 heures, comme pour un Rituel. Il faut ensuite attendre la Fréquence d'utilisation, "
-    "que le possesseur ignore souvent, avant de recommencer. Actif : exige l'Avantage Versé dans les arcanes ; passif : utilisable "
-    "par un profane ; autonome : l'objet décide lui-même d'utiliser ses pouvoirs."
-)
-CREATION_PERMANENT = (
-    "Création (p. 160-161) : connaître le Pouvoir qui permet de créer ce type d'objet, façonner l'objet, puis invoquer par un "
-    "Rituel le Pouvoir à y insuffler et obtenir au moins autant de Succès sacrés que sa Puissance. Les Succès sacrés en plus "
-    "améliorent, au choix du MJ, la Fréquence d'utilisation (0 : un jour précis de l'année ; 1 : une fois par an ; 2 : un jour "
-    "précis du mois ; 3 : une fois par mois ; 4 : une fois par semaine ; 5 : à une heure précise ; 6 : une fois par jour ; "
-    "7 : trois fois par jour) et la Durée d'activation (0 : 24 h ; 1 : 4 h ; 2 : 1 h ; 3 : 30 min ; 4 : 10 min ; 5 : 1 min ; "
-    "6 : 10 s ; 8 : instantanée). Coûts relus sur la table de la p. 161, à vérifier. Le Pouvoir garde les paramètres de la Voie."
-)
-CREATION_EPHEMERE = (
-    "Création (p. 161) : connaître le Pouvoir qui permet de créer ce type d'objet, préparer les doses, puis les consacrer. "
-    "Par un Rituel invoquant le Pouvoir à insuffler : une dose par Succès sacré. Par une Transe (Pouvoir dans le Chemin "
-    "d'illumination) : une dose par Succès sacré au-delà de la Puissance. Chaque dose s'utilise une fois ; la réussite est "
-    "automatique et l'effet est celui qui convient le mieux à la situation, ou le souhait de l'utilisateur."
-)
 
 # (nom, mode, résumé)
 EPHEMERES = [
@@ -65,24 +44,26 @@ PERMANENTS = [
 
 
 def objets():
+    """Modèles d'Objets de pouvoir (type « objetPouvoir ») : le MJ y glisse le Pouvoir contenu."""
     base = modele(EQ, lambda d: d.get("type") == "equipement")
     fid = dossier_compendium(EQ, "Objets de pouvoir (Entre ciel et terre)", 1100000, "objets-pouvoir")
     n = 0
-    for groupe, liste, creation, page in (("éphémère", EPHEMERES, CREATION_EPHEMERE, 158), ("permanent", PERMANENTS, CREATION_PERMANENT, 159)):
+    for groupe, liste in (("ephemere", EPHEMERES), ("permanent", PERMANENTS)):
         for i, (nom, mode, resume) in enumerate(liste):
             d = copy.deepcopy(base)
             iid = ident("objet", nom)
-            d.update({"_id": iid, "_key": f"!items!{iid}", "name": nom, "folder": fid, "effects": [], "flags": {},
-                      "sort": (100000 if groupe == "permanent" else 0) + (i + 1) * 100})
-            d["system"].update({
-                "description": (f"<p><strong>Objet de pouvoir {groupe} ({e(mode)}).</strong> {e(resume)}</p>"
-                                "<p>Le MJ choisit le Pouvoir contenu, que le possesseur ne connaît en général pas ; la divinité "
-                                "peut lui envoyer des rêves cryptiques.</p>"
-                                f"<p><em>{e(UTILISATION if groupe == 'permanent' else '')}</em></p>".replace("<p><em></em></p>", "")
-                                + f"<p><em>{e(creation)}</em></p>"),
-                "source": f"{SOURCE}, p. {page if groupe == 'éphémère' else (159 if nom != 'Zémi' and nom not in ('Poupée vaudoue', 'Relique', 'Wanga') else 160)}",
-                "categorie": f"Objet de pouvoir {groupe}", "quantite": 1, "prix": "", "modificateur": "",
-            })
+            d.update({"_id": iid, "_key": f"!items!{iid}", "name": nom, "type": "objetPouvoir", "img": "icons/svg/chest.svg",
+                      "folder": fid, "effects": [], "flags": {}, "sort": (100000 if groupe == "permanent" else 0) + (i + 1) * 100})
+            page = 158 if nom in ("Baume", "Charme", "Herbe", "Huile", "Philtre", "Poudre") else 160 if nom in ("Poupée vaudoue", "Relique", "Wanga", "Zémi") else 159
+            note = " Peut aussi être passif." if mode == "actif ou passif" else ""
+            d["system"] = {
+                "description": f"<p>{e(resume)}{e(note)}</p><p>Modèle : glissez-y le Pouvoir contenu (MJ), puis réglez la Fréquence et la Durée d'activation.</p>",
+                "source": f"{SOURCE}, p. {page}",
+                "nature": groupe, "forme": nom, "mode": mode.split()[0],
+                "pouvoirUuid": "", "pouvoir": "", "voie": "", "puissance": 1, "portee": "", "cible": "", "duree": "",
+                "pouvoirConnu": False, "frequence": "mois", "dureeActivation": "h24", "rites": "", "derniereUtilisation": "",
+                "doses": 1,
+            }
             ecrire(EQ, d)
             n += 1
     return n

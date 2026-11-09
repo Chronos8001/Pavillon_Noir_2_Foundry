@@ -153,7 +153,7 @@ export class PN2PersonnageSheet extends HandlebarsApplicationMixin(foundry.appli
       id: i.id, name: i.name, img: i.img, system: i.system,
       locs: PN2.locKeys.filter(k => i.system.localisations[k]).map(k => PN2.locLabels[k]).join(", ")
     }));
-    context.equipements = items.filter(i => i.type === "equipement");
+    context.equipements = items.filter(i => ["equipement", "objetPouvoir"].includes(i.type));
     const ordreEtapes = { peuple: 0, origine: 1, jeunesse: 2, profession: 3, religion: 4 };
     const nomEtapes = { peuple: "Peuple", origine: "Origine sociale", jeunesse: "Jeunesse", profession: "Profession", religion: "Religion" };
     context.historiques = items.filter(i => i.type === "historique")
@@ -266,7 +266,7 @@ export class PN2PersonnageSheet extends HandlebarsApplicationMixin(foundry.appli
     const sys = {};
     if (target.dataset.nature) sys.nature = target.dataset.nature;
     if (target.dataset.escrime) sys.escrime = target.dataset.escrime;
-    const name = { arme: "Nouvelle arme", armure: "Nouvelle armure", equipement: "Nouvel objet", avantage: target.dataset.nature === "faiblesse" ? "Nouvelle faiblesse" : "Nouvel avantage", manoeuvre: "Nouvelle manœuvre" }[type] ?? "Nouvel objet";
+    const name = { arme: "Nouvelle arme", armure: "Nouvelle armure", equipement: "Nouvel objet", avantage: target.dataset.nature === "faiblesse" ? "Nouvelle faiblesse" : "Nouvel avantage", manoeuvre: "Nouvelle manœuvre", objetPouvoir: "Nouvel objet de pouvoir" }[type] ?? "Nouvel objet";
     const [item] = await this.document.createEmbeddedDocuments("Item", [{ name, type, system: sys }]);
     item?.sheet.render(true);
   }

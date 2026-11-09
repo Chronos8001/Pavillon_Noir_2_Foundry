@@ -16,7 +16,8 @@
       "religion": "Religion (magie)",
       "alea": "Aléa divin",
       "voie": "Voie d'illumination",
-      "pouvoir": "Pouvoir sacré"
+      "pouvoir": "Pouvoir sacré",
+      "objetPouvoir": "Objet de pouvoir"
     }
   }
 }

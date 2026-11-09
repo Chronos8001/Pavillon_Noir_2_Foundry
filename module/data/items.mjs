@@ -2,6 +2,8 @@ import { PN2 } from "../config.mjs";
 import { cleVoie } from "../magie/regles.mjs";
 
 export { cleVoie };
+export { FREQUENCES_OBJET, DUREES_ACTIVATION_OBJET, NATURES_OBJET, MODES_OBJET, FORMES_OBJET, coutCreationObjet } from "../magie/objets.mjs";
+import { coutCreationObjet } from "../magie/objets.mjs";
 
 const f = foundry.data.fields;
 const int = (initial = 0, opts = {}) => new f.NumberField({ required: true, integer: true, initial, ...opts });
@@ -245,6 +247,47 @@ export class PouvoirData extends BaseItemData {
       // Application des effets : manuel (MJ seul), assisté (bouton du MJ), automatique (dès la validation ou l'activation)
       application: str("manuel")
     };
+  }
+}
+
+export class ObjetPouvoirData extends BaseItemData {
+  static defineSchema() {
+    return {
+      ...super.defineSchema(),
+      nature: str("permanent"),                // permanent | ephemere
+      forme: str(""),                          // Baume, Zémi, Wanga… (texte libre)
+      mode: str("actif"),                      // actif | passif | autonome
+      // Pouvoir contenu (connu du MJ ; le possesseur l'ignore en général)
+      pouvoirUuid: str(""),
+      pouvoir: str(""),
+      voie: str(""),
+      puissance: int(1, { min: 1, max: 10 }),
+      portee: str(""),
+      cible: str(""),
+      duree: str(""),
+      pouvoirConnu: bool(false),               // le possesseur connaît le Pouvoir
+      // Objet permanent
+      frequence: str("mois"),
+      dureeActivation: str("h24"),
+      rites: str(""),                          // rites d'activation
+      derniereUtilisation: str(""),            // repère libre (date du jeu)
+      // Objet éphémère
+      doses: int(1, { min: 0 })
+    };
+  }
+
+  /** Libellé de catégorie pour la liste d'équipement du personnage. */
+  get categorie() {
+    return `Objet de pouvoir ${this.nature === "ephemere" ? "éphémère" : "permanent"}${this.forme ? ` — ${this.forme}` : ""}`;
+  }
+
+  /** Quantité affichée : les doses d'un objet éphémère. */
+  get quantite() {
+    return this.nature === "ephemere" ? this.doses : 1;
+  }
+
+  get coutCreation() {
+    return coutCreationObjet(this);
   }
 }
 

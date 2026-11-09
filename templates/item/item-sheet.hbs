@@ -247,6 +247,56 @@
   {{/if}}
   {{/if}}
 
+  {{#if isType.objetPouvoir}}
+  <div class="grid-2">
+    <div class="ligne"><label>Nature</label><select name="system.nature">{{selectOptions naturesObjet selected=system.nature}}</select></div>
+    <div class="ligne"><label>Forme</label><input type="text" name="system.forme" value="{{system.forme}}" list="formes-{{item.id}}" placeholder="Baume, Wanga, Relique…">
+      <datalist id="formes-{{item.id}}">{{#each formesObjet}}<option value="{{this}}">{{/each}}</datalist></div>
+    <div class="ligne"><label>Mode</label><select name="system.mode">{{selectOptions modesObjet selected=system.mode}}</select></div>
+    {{#if ephemere}}
+    <div class="ligne"><label>Doses restantes</label><input type="number" name="system.doses" value="{{system.doses}}" min="0"></div>
+    {{else}}
+    <div class="ligne"><label>Durée d'activation <span class="hint">(coût)</span></label><select name="system.dureeActivation">{{selectOptions dureesObjet selected=system.dureeActivation}}</select></div>
+    {{/if}}
+  </div>
+  {{#unless ephemere}}
+  <div class="ligne"><label>Rites d'activation</label><input type="text" name="system.rites" value="{{system.rites}}" placeholder="Sacrifice, danse, drogue… pendant toute la Durée d'activation"></div>
+  <div class="ligne"><label>Dernière utilisation</label><input type="text" name="system.derniereUtilisation" value="{{system.derniereUtilisation}}" placeholder="Date du jeu"></div>
+  {{/unless}}
+
+  {{#if isGM}}
+  <fieldset><legend>Pouvoir contenu (MJ)</legend>
+    <div class="grid-2">
+      <div class="ligne pn2-drop"><label>Pouvoir</label>
+        {{#if pouvoirRef}}<span class="{{#if pouvoirRef.cassee}}alerte{{/if}}"><a data-action="ouvrirReference" data-uuid="{{pouvoirRef.uuid}}">{{pouvoirRef.nom}}</a>
+          {{#if editable}}<a class="pn2-mini-btn" data-action="effacerReference" data-champ="pouvoirUuid" title="Effacer la référence"><i class="fa-solid fa-xmark"></i></a>{{/if}}</span>
+        {{else}}<input type="text" name="system.pouvoir" value="{{system.pouvoir}}" placeholder="Glissez un Pouvoir ici">{{/if}}</div>
+      <div class="ligne"><label>Voie</label><input type="text" name="system.voie" value="{{system.voie}}"></div>
+      <div class="ligne"><label>Puissance <span class="hint">(= Impact)</span></label><input type="number" name="system.puissance" value="{{system.puissance}}" min="1" max="10"></div>
+      <div class="ligne"><label>Le possesseur connaît le Pouvoir</label><input type="checkbox" name="system.pouvoirConnu" {{checked system.pouvoirConnu}}></div>
+      <div class="ligne"><label>Portée</label><input type="text" name="system.portee" value="{{system.portee}}"></div>
+      <div class="ligne"><label>Cible</label><input type="text" name="system.cible" value="{{system.cible}}"></div>
+      <div class="ligne"><label>Durée</label><input type="text" name="system.duree" value="{{system.duree}}"></div>
+      {{#unless ephemere}}
+      <div class="ligne"><label>Fréquence d'utilisation <span class="hint">(coût)</span></label><select name="system.frequence">{{selectOptions frequencesObjet selected=system.frequence}}</select></div>
+      {{/unless}}
+    </div>
+    <p class="hint">
+      {{#if ephemere}}
+        Création : par un Rituel invoquant le Pouvoir, une dose par Succès sacré ; par une Transe (Pouvoir dans le Chemin), une dose par Succès sacré au-delà de la Puissance ({{cout.puissance}}).
+      {{else}}
+        Création : un Rituel invoquant le Pouvoir avec au moins <strong>{{cout.total}} Succès sacrés</strong>
+        (Puissance {{cout.puissance}} + Fréquence {{cout.frequence}} + Durée d'activation {{cout.duree}}).
+      {{/if}}
+      Il faut aussi connaître le Pouvoir qui permet de créer ce type d'objet (Entre ciel et terre, p. 160-161).
+    </p>
+  </fieldset>
+  {{else}}
+    {{#if system.pouvoirConnu}}<p><strong>Pouvoir :</strong> {{system.pouvoir}}{{#if system.voie}} ({{system.voie}}){{/if}}</p>{{/if}}
+  {{/if}}
+  <p class="hint">Utilisation : {{#if ephemere}}consommer une dose ; la réussite est automatique.{{else}}tenir l'objet, formuler un souhait, accomplir les rites pendant toute la Durée d'activation, puis réussir un Test d'Objets de pouvoir (Charisme) avec au moins 2 Succès ; le MJ déclenche l'effet dans les 24 h. Attendre ensuite la Fréquence d'utilisation.{{/if}}</p>
+  {{/if}}
+
   <h3>Description</h3>
   <div class="description-apercu">{{{descriptionHTML}}}</div>
   <textarea name="system.description" rows="6">{{system.description}}</textarea>

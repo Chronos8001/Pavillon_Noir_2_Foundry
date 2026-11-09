@@ -33,7 +33,8 @@
       "religion": { "htmlFields": ["description"] },
       "alea": { "htmlFields": ["description"] },
       "voie": { "htmlFields": ["description"] },
-      "pouvoir": { "htmlFields": ["description"] }
+      "pouvoir": { "htmlFields": ["description"] },
+      "objetPouvoir": { "htmlFields": ["description"] }
     }
   },
   "packs": [

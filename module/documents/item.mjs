@@ -34,7 +34,8 @@ export class PN2Item extends Item {
       religion: "icons/svg/temple.svg",
       alea: "icons/svg/lightning.svg",
       voie: "icons/svg/sun.svg",
-      pouvoir: "icons/svg/aura.svg"
+      pouvoir: "icons/svg/aura.svg",
+      objetPouvoir: "icons/svg/chest.svg"
     };
     if (icons[this.type]) this.updateSource({ img: icons[this.type] });
   }

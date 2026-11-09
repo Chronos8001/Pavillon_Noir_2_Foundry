@@ -7,6 +7,7 @@ import { readdirSync, readFileSync } from "node:fs";
 import { join } from "node:path";
 import { MAGIE } from "../../module/magie/config-magie.mjs";
 import { cleVoie } from "../../module/magie/regles.mjs";
+import { coutCreationObjet, FREQUENCES_OBJET, DUREES_ACTIVATION_OBJET, MODES_OBJET, FORMES_OBJET } from "../../module/magie/objets.mjs";
 
 const lire = dossier => readdirSync(dossier).filter(f => f.endsWith(".json"))
   .map(f => JSON.parse(readFileSync(join(dossier, f), "utf8")));
@@ -122,19 +123,33 @@ test("PNJ surnaturels d'Entre ciel et terre : zombie, loup-garou vaudou et 24 f�
   assert.equal(new Set(ids).size, ids.length, "identifiants uniques");
 });
 
-test("Objets de pouvoir d'Entre ciel et terre : 8 éphémères et 12 permanents, au modèle de l'équipement", () => {
+test("Objets de pouvoir d'Entre ciel et terre : 8 éphémères et 12 permanents, au type « objetPouvoir »", () => {
   const pack = lire("src/packs/equipement");
   const dossier = pack.find(d => d._key.startsWith("!folders!") && d.name === "Objets de pouvoir (Entre ciel et terre)");
   const objets = pack.filter(d => d.folder === dossier?._id);
-  const reference = pack.find(d => d.type === "equipement" && d.folder !== dossier?._id);
-  assert.equal(objets.filter(o => o.system.categorie === "Objet de pouvoir éphémère").length, 8);
-  assert.equal(objets.filter(o => o.system.categorie === "Objet de pouvoir permanent").length, 12);
+  assert.equal(objets.filter(o => o.system.nature === "ephemere").length, 8);
+  assert.equal(objets.filter(o => o.system.nature === "permanent").length, 12);
+  const champs = ["description", "source", "nature", "forme", "mode", "pouvoirUuid", "pouvoir", "voie", "puissance", "portee", "cible",
+    "duree", "pouvoirConnu", "frequence", "dureeActivation", "rites", "derniereUtilisation", "doses"];
   for (const o of objets) {
-    assert.equal(o.type, "equipement");
-    assert.deepEqual(Object.keys(o.system).sort(), Object.keys(reference.system).sort(), o.name);
+    assert.equal(o.type, "objetPouvoir");
+    assert.deepEqual(Object.keys(o.system).sort(), [...champs].sort(), o.name);
+    assert.ok(o.system.mode in MODES_OBJET && o.system.frequence in FREQUENCES_OBJET && o.system.dureeActivation in DUREES_ACTIVATION_OBJET, o.name);
+    assert.ok(FORMES_OBJET[o.system.nature].includes(o.system.forme), o.name);
     // Règle maison : aucune carte
     assert.doesNotMatch(o.system.description, /Lame|cartes/, o.name);
   }
+});
+
+test("coût de création d'un Objet de pouvoir (exemple « Brume », ECT p. 161)", () => {
+  // Puissance 4, une fois par mois (3), activation de 4 h (1) : 8 Succès sacrés
+  assert.deepEqual(coutCreationObjet({ nature: "permanent", puissance: 4, frequence: "mois", dureeActivation: "h4" }),
+    { total: 8, puissance: 4, frequence: 3, duree: 1, ephemere: false });
+  assert.equal(coutCreationObjet({ nature: "permanent", puissance: 10, frequence: "troisJour", dureeActivation: "instantane" }).total, 25);
+  // Éphémère : une dose par Succès sacré ; la Puissance sert de seuil en Transe
+  assert.equal(coutCreationObjet({ nature: "ephemere", puissance: 4, frequence: "troisJour" }).total, 4);
+  // Valeurs inconnues : coût nul, Puissance au moins 1
+  assert.equal(coutCreationObjet({ puissance: 0, frequence: "?", dureeActivation: "?" }).total, 1);
 });
 
 test("Suivants d'Entre ciel et terre : disciple, servant et six familiers, sans cartes", () => {

@@ -5,7 +5,7 @@ import { PN2 } from "./config.mjs";
 import { PersonnageData } from "./data/actor-personnage.mjs";
 import { PNJData } from "./data/actor-pnj.mjs";
 import { NavireData } from "./data/actor-navire.mjs";
-import { ArmeData, ArmureData, EquipementData, AvantageData, ManoeuvreData, MarchandiseData, HistoriqueData, ReligionData, VoieData, PouvoirData, AleaData } from "./data/items.mjs";
+import { ArmeData, ArmureData, EquipementData, AvantageData, ManoeuvreData, MarchandiseData, HistoriqueData, ReligionData, VoieData, PouvoirData, AleaData, ObjetPouvoirData } from "./data/items.mjs";
 import { PN2Actor } from "./documents/actor.mjs";
 import { PN2Item } from "./documents/item.mjs";
 import { PN2PersonnageSheet } from "./sheets/actor-personnage-sheet.mjs";
@@ -58,7 +58,7 @@ Hooks.once("init", () => {
   CONFIG.Actor.dataModels = { personnage: PersonnageData, pnj: PNJData, navire: NavireData };
   CONFIG.Item.dataModels = {
     arme: ArmeData, armure: ArmureData, equipement: EquipementData, avantage: AvantageData, manoeuvre: ManoeuvreData, marchandise: MarchandiseData, historique: HistoriqueData,
-    religion: ReligionData, voie: VoieData, pouvoir: PouvoirData, alea: AleaData
+    religion: ReligionData, voie: VoieData, pouvoir: PouvoirData, alea: AleaData, objetPouvoir: ObjetPouvoirData
   };
   CONFIG.Actor.trackableAttributes = {
     personnage: { bar: [], value: ["initiative", "chance"] },

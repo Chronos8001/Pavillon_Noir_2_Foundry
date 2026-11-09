@@ -1,6 +1,6 @@
 import { PN2 } from "../config.mjs";
 import { comboHTML } from "../documents/item.mjs";
-import { EFFETS_AVANTAGE } from "../data/items.mjs";
+import { EFFETS_AVANTAGE, FREQUENCES_OBJET, DUREES_ACTIVATION_OBJET, NATURES_OBJET, MODES_OBJET, FORMES_OBJET } from "../data/items.mjs";
 import * as Magie from "../magie/service.mjs";
 
 const { HandlebarsApplicationMixin } = foundry.applications.api;
@@ -35,7 +35,7 @@ export class PN2ItemSheet extends HandlebarsApplicationMixin(foundry.application
     context.config = PN2;
     context.editable = this.isEditable;
     context.type = item.type;
-    context.isType = Object.fromEntries(["arme", "armure", "equipement", "avantage", "manoeuvre", "marchandise", "historique", "religion", "voie", "pouvoir", "alea"].map(t => [t, item.type === t]));
+    context.isType = Object.fromEntries(["arme", "armure", "equipement", "avantage", "manoeuvre", "marchandise", "historique", "religion", "voie", "pouvoir", "alea", "objetPouvoir"].map(t => [t, item.type === t]));
     context.caracOptions = Object.fromEntries(Object.entries(PN2.caracs).map(([k, d]) => [k, d.label]));
     const comps = { mainsNues: "Combat à mains nues", mousquet: "Mousquet", pistolet: "Pistolet", grenade: "Grenade", armesBlanches: "Armes blanches (spécialité)", armesJet: "Armes de jet/trait (spécialité)" };
     context.competences = comps;
@@ -72,6 +72,18 @@ export class PN2ItemSheet extends HandlebarsApplicationMixin(foundry.application
       context.categoriesAlea = { "": "—", tirage: "Tirage", activation: "Activation", duree: "Durée des effets", consequences: "Conséquences des effets" };
       context.sensAlea = { "": "Les deux", droit: "Droit (Succès)", renverse: "Renversé (Colère)" };
       context.visibilitesAlea = { mj: "MJ seulement", joueur: "Joueur" };
+    }
+    if (item.type === "objetPouvoir") {
+      const s = item.system;
+      context.isGM = game.user.isGM;
+      context.naturesObjet = NATURES_OBJET;
+      context.modesObjet = MODES_OBJET;
+      context.formesObjet = FORMES_OBJET[s.nature] ?? [];
+      context.frequencesObjet = Object.fromEntries(Object.entries(FREQUENCES_OBJET).map(([k, d]) => [k, `${d.label} (${d.cout})`]));
+      context.dureesObjet = Object.fromEntries(Object.entries(DUREES_ACTIVATION_OBJET).map(([k, d]) => [k, `${d.label} (${d.cout})`]));
+      context.ephemere = s.nature === "ephemere";
+      context.cout = s.coutCreation;
+      context.pouvoirRef = PN2ItemSheet.resoudre(s.pouvoirUuid);
     }
     context.descriptionHTML = await foundry.applications.ux.TextEditor.implementation.enrichHTML(item.system.description ?? "", { async: true, relativeTo: item });
     return context;
@@ -125,7 +137,7 @@ export class PN2ItemSheet extends HandlebarsApplicationMixin(foundry.application
 
   _onRender(context, options) {
     super._onRender(context, options);
-    if (!this.isEditable || !["religion", "voie", "pouvoir"].includes(this.document.type)) return;
+    if (!this.isEditable || !["religion", "voie", "pouvoir", "objetPouvoir"].includes(this.document.type)) return;
     new foundry.applications.ux.DragDrop.implementation({
       dropSelector: ".pn2-drop",
       callbacks: { drop: this.#onDropReference.bind(this) }
@@ -149,6 +161,15 @@ export class PN2ItemSheet extends HandlebarsApplicationMixin(foundry.application
     if (item.type === "pouvoir" && doc.type === "voie") {
       return item.update({ "system.voieUuid": doc.uuid, "system.voie": doc.system.cleEffective });
     }
+    if (item.type === "objetPouvoir" && doc.type === "pouvoir") {
+      const s = doc.system;
+      const voie = s.voieUuid ? fromUuidSync(s.voieUuid, { strict: false }) : null;
+      return item.update({
+        "system.pouvoirUuid": doc.uuid, "system.pouvoir": doc.name, "system.voie": voie?.name ?? s.voie ?? "",
+        "system.puissance": s.puissance, "system.portee": s.portee, "system.cible": s.cible, "system.duree": s.duree
+      });
+    }
+    if (item.type === "objetPouvoir") return ui.notifications.warn("Déposez un Pouvoir sur cet Objet de pouvoir.");
     ui.notifications.warn(`Déposez ${item.type === "religion" ? "une Voie" : item.type === "voie" ? "une Religion" : "une Voie"} sur cette fiche.`);
   }
 
