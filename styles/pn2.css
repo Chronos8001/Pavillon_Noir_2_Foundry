@@ -52,6 +52,7 @@
 }
 .pn2 .pn2-btn:hover { background: var(--pn2-rouge); }
 .pn2 .pn2-btn.petit { font-size: 11px; padding: 1px 6px; }
+.pn2 .pn2-btn.magie-bascule.inactive { background: #777; border-color: #555; }
 
 /* En-tête */
 .pn2 .pn2-header { display: flex; gap: 10px; align-items: flex-start; border-bottom: 3px double var(--pn2-bord); padding-bottom: 6px; }

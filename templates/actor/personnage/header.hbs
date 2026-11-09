@@ -16,6 +16,10 @@
         <label>Profession <input type="text" name="system.infos.profession" value="{{system.infos.profession}}"></label>
         <a class="pn2-btn petit" data-action="creation" title="Assistant de création de personnage (étapes 1 à 9)"><i class="fa-solid fa-wand-magic-sparkles"></i> Création</a>
       {{/if}}
+      {{#if isGM}}
+        <a class="pn2-btn petit magie-bascule {{#unless magieActive}}inactive{{/unless}}" data-action="basculerMagie"
+          title="MJ : {{#if magieActive}}désactiver{{else}}activer{{/if}} la section Magie de cette fiche"><i class="fa-solid {{#if magieActive}}fa-hands-praying{{else}}fa-ban{{/if}}"></i> Magie : {{#if magieActive}}activée{{else}}désactivée{{/if}}</a>
+      {{/if}}
     </div>
     <div class="badges">
       <a class="badge rollable" data-action="rollChance" title="Test de Chance (Pouvoir - 5)"><span>Chance</span><strong>{{pn2Signed system.chance}}</strong></a>

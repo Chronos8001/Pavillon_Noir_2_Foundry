@@ -38,6 +38,7 @@ export class PN2PersonnageSheet extends HandlebarsApplicationMixin(foundry.appli
       bourse: PN2PersonnageSheet.#onBourse,
       creation: PN2PersonnageSheet.#onCreation,
       magie: PN2PersonnageSheet.#onMagie,
+      basculerMagie: PN2PersonnageSheet.#onBasculerMagie,
       bourseToutes: PN2PersonnageSheet.#onBourseToutes,
       acheterManoeuvres: PN2PersonnageSheet.#onAcheterManoeuvres
     }
@@ -60,6 +61,18 @@ export class PN2PersonnageSheet extends HandlebarsApplicationMixin(foundry.appli
   /** Onglet Magie : état de préparation des actes sacrés (propre à cette fiche, non enregistré). */
   magie = new ControleurMagie();
 
+  /** Section Magie activée sur ce personnage (réglée par le MJ ; activée par défaut). */
+  get magieActive() {
+    return this.document.getFlag(PN2.id, "magieActive") !== false;
+  }
+
+  /** @override : la partie Magie n'est pas rendue quand la section est désactivée. */
+  _configureRenderParts(options) {
+    const parts = super._configureRenderParts(options);
+    if (!this.magieActive) delete parts.magie;
+    return parts;
+  }
+
   /** @override */
   async _prepareContext(options) {
     const context = await super._prepareContext(options);
@@ -70,6 +83,9 @@ export class PN2PersonnageSheet extends HandlebarsApplicationMixin(foundry.appli
     context.config = PN2;
     context.editable = this.isEditable;
     context.isPNJ = actor.type === "pnj";
+    context.isGM = game.user.isGM;
+    context.magieActive = this.magieActive;
+    if (!context.magieActive && this.tabGroups.primary === "magie") this.tabGroups.primary = "principal";
     context.tab = this.tabGroups.primary;
     context.tabs = [
       { id: "principal", label: "Personnage", icon: "fa-solid fa-user" },
@@ -79,7 +95,7 @@ export class PN2PersonnageSheet extends HandlebarsApplicationMixin(foundry.appli
       { id: "equipement", label: "Équipement", icon: "fa-solid fa-sack-dollar" },
       { id: "magie", label: "Magie", icon: "fa-solid fa-hands-praying" },
       { id: "notes", label: "Notes", icon: "fa-solid fa-feather" }
-    ].map(t => ({ ...t, active: t.id === context.tab }));
+    ].filter(t => t.id !== "magie" || context.magieActive).map(t => ({ ...t, active: t.id === context.tab }));
 
     // Caractéristiques (rose des vents)
     context.caracs = Object.entries(PN2.caracs).map(([k, d]) => ({
@@ -218,7 +234,9 @@ export class PN2PersonnageSheet extends HandlebarsApplicationMixin(foundry.appli
   _onRender(context, options) {
     super._onRender(context, options);
     const onglet = this.element.querySelector('section[data-tab="magie"]');
-    if (onglet) this.magie.lier(onglet, () => this.render({ parts: ["magie"] }));
+    // Section désactivée : la partie n'est plus rendue, on retire l'ancienne du DOM
+    if (onglet && !this.magieActive) onglet.remove();
+    else if (onglet) this.magie.lier(onglet, () => this.render({ parts: ["magie"] }));
   }
 
   /* -------------------------------------------- */
@@ -325,6 +343,15 @@ export class PN2PersonnageSheet extends HandlebarsApplicationMixin(foundry.appli
   /** Boutons de l'onglet Magie (data-op = opération). */
   static async #onMagie(event, target) {
     await this.magie.action(this.document, target, () => this.render({ parts: ["magie"] }));
+  }
+
+  /** Bouton du MJ : active ou désactive la section Magie de ce personnage. */
+  static async #onBasculerMagie() {
+    if (!game.user.isGM) return;
+    const active = !this.magieActive;
+    if (!active && this.tabGroups.primary === "magie") this.tabGroups.primary = "principal";
+    await this.document.setFlag(PN2.id, "magieActive", active);
+    ui.notifications.info(`Magie ${active ? "activée" : "désactivée"} pour ${this.document.name}.`);
   }
 
   static async #onBourse(event, target) {

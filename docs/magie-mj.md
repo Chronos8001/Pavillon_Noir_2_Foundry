@@ -8,6 +8,8 @@ Règles officielles (*Entre ciel et terre*) et adaptations maison : voir le tabl
 2. **Réglages du système** : validation du MJ, Seuil visible, paramètres des Pouvoirs visibles, mode et chance des Aléas, chance de révélation, récupération de la Colère.
 3. **Contenu** : le compendium *Magie : religions et Voies* fournit 11 religions et 21 Voies ; le compendium *Magie : Pouvoirs des Voies*, visible du seul MJ, fournit 785 Pouvoirs (toutes les Voies sauf la Cartomancie). Les effets mécaniques (Active Effects) et les Aléas officiels ne sont pas fournis : ajoutez-les vous-même ou importez-les (Bibliothèque → *Compendiums du monde*, puis *Importer*).
 
+4. **Activer la magie par personnage** : le bouton *Magie : activée / désactivée* de l'en-tête de la fiche (visible du seul MJ) affiche ou masque l'onglet Magie de ce personnage. Il est activé par défaut.
+
 ## Pendant la partie
 
 | Situation | Où | Action |
